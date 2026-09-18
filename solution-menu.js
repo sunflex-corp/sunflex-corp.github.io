@@ -1,7 +1,7 @@
 const original=document.querySelector('#mega-solutions');
 if(original){
  const links=new Map([...original.querySelectorAll('li a')].map(a=>[a.textContent.trim(),a.getAttribute('href')]));
- const functions=[['시각·관제','현장 영상과 통합 관제'],['청각·경보','방송과 위험 알림'],['공간','작업 환경과 현장 상태 확인'],['보호·안전장구','작업자 보호와 착용 안전'],['기록·콘텐츠','점검 기록과 안전 정보 관리']];
+ const functions=[['감지','현장 영상과 환경·구조물 상태를 통합 관제'],['경보','방송과 위험 알림, 작업자 위치 확인'],['대응','작업자 보호와 착용 안전'],['기록','점검 기록과 안전 정보 관리']];
  const roles=[['현장 운영',['안전관리자','현장소장','환경·보건 담당','안전교육·출입관리 담당']],['기술·설비',['기술검토 담당','생산·설비 담당','플랜트 정비 담당','시설 유지관리 담당']],['관리·지원',['구매·조달 담당','본사 안전보건 담당']]];
  const node=(tag,cls,text)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(text)e.textContent=text;return e};
  function build(prefix){

@@ -8,12 +8,11 @@ const plans={
  '/company':{selector:'#company-title em',word:'안전',indices:[0,1],images:['helmet','/assets/construction-cutout-480.webp']},
  '/cases':{selector:'#support-title em',word:'안전이 연결되는 곳.',indices:[0,4,9],images:['helmet','call','location']},
  '/products':{selector:'.catalog-spectrum',marks:'.catalog-spectrum__mark',images:['camera','radio','wind','helmet','curing'],kind:'catalog'},
- '/solutions':{selector:'#solutions-title em',word:'오감으로',indices:[0,1,2,3],images:['camera','radio','wind','helmet'],variants:{0:['camera','curing']}},
- '/solutions/eyes':{selector:'.solution-hero__key',word:'VISUAL',indices:[0,2,4],images:['camera','cameraM','cameraL']},
- '/solutions/sound':{selector:'.solution-hero__key',word:'HEAR',indices:[0,2],images:['radio','location']},
- '/solutions/air':{selector:'.solution-hero__key',word:'SPACE',indices:[0,2],images:['wind','/assets/plant-cutout-480.webp']},
- '/solutions/guard':{selector:'.solution-hero__key',word:'PROTECT',indices:[0,3],images:['helmet','/assets/manufacturing-cutout-480.webp']},
- '/solutions/story':{selector:'.solution-hero__key',word:'RECORD',indices:[0,2,4],images:['assessment','curing','/assets/construction-cutout-480.webp']},
+ '/solutions':{selector:'#solutions-title em',word:'4단계로',indices:[0,1,2,3],images:['camera','radio','helmet','assessment']},
+ '/solutions/detect':{selector:'.solution-hero__key',word:'DETECT',indices:[0,2,4],images:['camera','cameraM','cameraL']},
+ '/solutions/alert':{selector:'.solution-hero__key',word:'ALERT',indices:[0,2],images:['radio','location']},
+ '/solutions/respond':{selector:'.solution-hero__key',word:'RESPOND',indices:[0,3],images:['helmet','/assets/manufacturing-cutout-480.webp']},
+ '/solutions/record':{selector:'.solution-hero__key',word:'RECORD',indices:[0,2,4],images:['assessment','curing','/assets/construction-cutout-480.webp']},
  '/products/mobile-cctv':{selector:'#mobile-cctv-lineup-title',word:'S. M. L.',indices:[0,3,6],images:['camera','cameraM','cameraL'],kind:'detail'},
  '/products/emergency-signal-location':{selector:'#emergency-problem-title',word:'응급호출에 위치 정보를 더합니다.',indices:[2,6],images:['call','location'],kind:'detail'},
  '/products/ai-quick-risk-assessment':{selector:'.expansion-intro h2',word:'현장 사진에서 위험성평가 초안까지.',indices:[3,14],images:['/assets/construction-cutout-480.webp','assessment'],kind:'detail'}
@@ -21,7 +20,7 @@ const plans={
 Object.assign(plans,window.JiyouProductMotionPlans||{});
 const productLinks={camera:['mobile-cctv','무빙캠 S'],cameraM:['mobile-cctv','무빙캠 M'],cameraL:['mobile-cctv','무빙캠 L'],radio:['digital-radio','SE-400 디지털 무전기'],wind:['lte-anemometer','LTE 풍속계'],helmet:['smart-helmet','스마트 안전모'],curing:['concrete-curing','콘크리트 양생 계측기']};
 function linkInfo(name){return productLinks[name]||null}
-const linkedPage=path==='/solutions'||/^\/solutions\/(eyes|sound|air|guard|story)$/.test(path);
+const linkedPage=path==='/solutions'||/^\/solutions\/(detect|alert|respond|record)$/.test(path);
 const plan=plans[path],group=plan&&document.querySelector(plan.selector);if(!group)return;
 let paused=false;try{paused=localStorage.getItem('jiyou-motion-paused')==='yes'}catch{}
 const slots=[];
