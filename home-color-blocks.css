@@ -83,7 +83,7 @@
 
 /* Block 3 — 대응 (RESPOND): dark tone with a warm respond-accent tint, distinct from block 1. */
 .home-color-blocks__block--respond {
-  background: color-mix(in oklch, var(--moving-respond-badge) 22%, var(--color-ink));
+  background: color-mix(in oklch, var(--moving-respond-badge) 34%, var(--color-ink));
   color: var(--color-paper);
   --block-accent: var(--moving-respond-badge);
 }
