@@ -10,7 +10,7 @@ EXCLUDE_DIRS = {".git", "brand/sunflex-ci"}
 REPLACEMENTS = [
     ("brand/jiyou-wordmark.svg", "brand/sunflex-wordmark.svg"),
     ("brand/jiyou-wordmark.png", "brand/sunflex-wordmark.png"),
-    ("jiyoueng.com", "jiyou-eng.github.io/sunflex-site"),
+    ("jiyoueng.com", "sunflex-corp.github.io"),
     ("지유이엔지", "썬플렉스"),
 ]
 

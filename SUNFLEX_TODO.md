@@ -15,7 +15,7 @@
 
 ## 도메인
 
-- [ ] 실제 도메인 확정 시 `scripts/rebrand.py`의 `jiyou-eng.github.io/sunflex-site` 규칙을
+- [ ] 실제 도메인 확정 시 `scripts/rebrand.py`의 `sunflex-corp.github.io` 규칙을
       새 도메인으로 바꿔 재실행하고, 레포 루트에 `CNAME` 파일 추가
 
 ## 콘텐츠
