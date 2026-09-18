@@ -1,8 +1,8 @@
 export default [
   {
-    "key": "eyes",
-    "label": "시각·관제",
-    "mark": "V",
+    "key": "detect",
+    "label": "감지",
+    "mark": "01",
     "categories": [
       {
         "label": "CCTV·카메라",
@@ -58,13 +58,73 @@ export default [
             "href": "/products/vehicle-entry-alert"
           }
         ]
+      },
+      {
+        "label": "환경·가스 측정",
+        "products": [
+          {
+            "slug": "co2-temp-humidity",
+            "name": "CO₂·온습도 탐지 시스템",
+            "href": "/products/co2-temp-humidity"
+          },
+          {
+            "slug": "iot-mist",
+            "name": "IoT 기반 미스트 분사 시스템",
+            "href": "/products/iot-mist"
+          },
+          {
+            "slug": "lte-anemometer",
+            "name": "네트워크(LTE) 풍속계",
+            "href": "/products/lte-anemometer"
+          },
+          {
+            "slug": "smart-environment-board",
+            "name": "스마트 환경전광판 · IoT 원격관리",
+            "href": "/products/smart-environment-board"
+          },
+          {
+            "slug": "compact-gas-detector",
+            "name": "소형 복합가스 측정기",
+            "href": "/products/compact-gas-detector"
+          },
+          {
+            "slug": "gas-alarm",
+            "name": "유해가스 및 폭발성 가스 경보 시스템",
+            "href": "/products/gas-alarm"
+          }
+        ]
+      },
+      {
+        "label": "구조물 계측",
+        "products": [
+          {
+            "slug": "tilt-acceleration-sensor",
+            "name": "기울기변위 · 가속도변화 알림센서",
+            "href": "/products/tilt-acceleration-sensor"
+          }
+        ]
+      },
+      {
+        "label": "화재·불꽃 감지",
+        "products": [
+          {
+            "slug": "fire-detection",
+            "name": "화재 발생 감지 시스템",
+            "href": "/products/fire-detection"
+          },
+          {
+            "slug": "ir3-flame-detector",
+            "name": "스마트 화재감지기",
+            "href": "/products/ir3-flame-detector"
+          }
+        ]
       }
     ]
   },
   {
-    "key": "sound",
-    "label": "청각·경보",
-    "mark": "H",
+    "key": "alert",
+    "label": "경보",
+    "mark": "02",
     "categories": [
       {
         "label": "방송·소통",
@@ -130,48 +190,6 @@ export default [
             "href": "/products/hazard-area-broadcast"
           }
         ]
-      }
-    ]
-  },
-  {
-    "key": "air",
-    "label": "공간",
-    "mark": "S",
-    "categories": [
-      {
-        "label": "환경·가스 측정",
-        "products": [
-          {
-            "slug": "co2-temp-humidity",
-            "name": "CO₂·온습도 탐지 시스템",
-            "href": "/products/co2-temp-humidity"
-          },
-          {
-            "slug": "iot-mist",
-            "name": "IoT 기반 미스트 분사 시스템",
-            "href": "/products/iot-mist"
-          },
-          {
-            "slug": "lte-anemometer",
-            "name": "네트워크(LTE) 풍속계",
-            "href": "/products/lte-anemometer"
-          },
-          {
-            "slug": "smart-environment-board",
-            "name": "스마트 환경전광판 · IoT 원격관리",
-            "href": "/products/smart-environment-board"
-          },
-          {
-            "slug": "compact-gas-detector",
-            "name": "소형 복합가스 측정기",
-            "href": "/products/compact-gas-detector"
-          },
-          {
-            "slug": "gas-alarm",
-            "name": "유해가스 및 폭발성 가스 경보 시스템",
-            "href": "/products/gas-alarm"
-          }
-        ]
       },
       {
         "label": "작업자 안전·위치",
@@ -194,16 +212,6 @@ export default [
         ]
       },
       {
-        "label": "구조물 계측",
-        "products": [
-          {
-            "slug": "tilt-acceleration-sensor",
-            "name": "기울기변위 · 가속도변화 알림센서",
-            "href": "/products/tilt-acceleration-sensor"
-          }
-        ]
-      },
-      {
         "label": "현장 통신",
         "products": [
           {
@@ -212,28 +220,13 @@ export default [
             "href": "/products/wireless-network"
           }
         ]
-      },
-      {
-        "label": "화재·불꽃 감지",
-        "products": [
-          {
-            "slug": "fire-detection",
-            "name": "화재 발생 감지 시스템",
-            "href": "/products/fire-detection"
-          },
-          {
-            "slug": "ir3-flame-detector",
-            "name": "스마트 화재감지기",
-            "href": "/products/ir3-flame-detector"
-          }
-        ]
       }
     ]
   },
   {
-    "key": "guard",
-    "label": "보호·안전장구",
-    "mark": "P",
+    "key": "respond",
+    "label": "대응",
+    "mark": "03",
     "categories": [
       {
         "label": "착용 보호구",
@@ -288,9 +281,9 @@ export default [
     ]
   },
   {
-    "key": "story",
-    "label": "기록·콘텐츠",
-    "mark": "R",
+    "key": "record",
+    "label": "기록",
+    "mark": "04",
     "categories": [
       {
         "label": "AI 안전관리",
