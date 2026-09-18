@@ -107,28 +107,28 @@
 
 @media(forced-colors:active){#sense-circle-title mark{color:HighlightText;background:Highlight}}
 
-/* Glazed ceramic contact controls pair with the white employee shortcut. */
+/* Phase 1 Figma design system: flat monochrome primary CTA (was a green "glazed ceramic" gradient). */
 .site-header .header-cta[data-astro-cid-6stfpryv],
 #mobile-drawer .drawer__cta{
- color:#fff;border:1px solid #216747;
- background:#246d4c;
- background-image:linear-gradient(180deg,#559271 0%,#367f59 38%,#216b48 72%,#1e6042 100%);
- box-shadow:inset 0 1px 1px rgba(255,255,255,.7),inset 0 -1px 2px rgba(8,49,30,.25),0 2px 4px rgba(15,55,32,.13),0 7px 16px -10px rgba(15,55,32,.3);
+ color:#fff;border:1px solid #000;
+ background:#000;
+ background-image:none;
+ box-shadow:none;
 }
 .site-header .header-cta[data-astro-cid-6stfpryv]::before,
 .site-header .header-cta[data-astro-cid-6stfpryv]::after{content:none}
 @media(hover:hover){
  .site-header .header-cta[data-astro-cid-6stfpryv]:hover,
  #mobile-drawer .drawer__cta:hover{
-  background:#287752;
-  background-image:linear-gradient(180deg,#609d7b 0%,#3a865f 38%,#25724d 72%,#216747 100%);
-  box-shadow:inset 0 1px 1px rgba(255,255,255,.8),inset 0 -1px 2px rgba(8,49,30,.2),0 4px 8px rgba(15,55,32,.14),0 10px 20px -10px rgba(15,55,32,.34);
+  background:#242424;
+  background-image:none;
+  box-shadow:none;
  }
 }
 .site-header .header-cta[data-astro-cid-6stfpryv]:active,
-#mobile-drawer .drawer__cta:active{box-shadow:inset 0 2px 4px rgba(8,49,30,.28),inset 0 -1px 0 rgba(255,255,255,.3)}
+#mobile-drawer .drawer__cta:active{box-shadow:none}
 @media(prefers-reduced-transparency:reduce),(prefers-contrast:more){
- .site-header .header-cta[data-astro-cid-6stfpryv],#mobile-drawer .drawer__cta{background:#216747;background-image:none;box-shadow:none}
+ .site-header .header-cta[data-astro-cid-6stfpryv],#mobile-drawer .drawer__cta{background:#000;background-image:none;box-shadow:none}
 }
 @media(forced-colors:active){
  .site-header .header-cta[data-astro-cid-6stfpryv],#mobile-drawer .drawer__cta{color:ButtonText;background:ButtonFace;border-color:ButtonText;box-shadow:none}
