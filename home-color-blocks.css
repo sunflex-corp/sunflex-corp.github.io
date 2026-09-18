@@ -1,0 +1,113 @@
+/* Phase 2: homepage 4-block color section (감지/경보/대응/기록), inserted right after the hero. */
+
+.home-color-blocks {
+  margin-block: var(--section-gap);
+}
+
+.home-color-blocks__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-20);
+}
+
+.home-color-blocks__block {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-16);
+  padding: var(--space-40);
+  min-height: 320px;
+  border-top: 2px solid var(--block-accent, currentColor);
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.2s var(--ease-out, ease);
+}
+
+.home-color-blocks__block:hover,
+.home-color-blocks__block:focus-visible {
+  opacity: 0.88;
+}
+
+.home-color-blocks__block:focus-visible {
+  outline: 2px solid var(--block-accent, currentColor);
+  outline-offset: 4px;
+}
+
+.home-color-blocks__mark {
+  font-family: var(--font-mono);
+  font-size: var(--font-small);
+  font-weight: 600;
+  color: var(--block-accent, currentColor);
+  letter-spacing: 0.04em;
+}
+
+.home-color-blocks__domain {
+  margin: 0;
+  font-family: var(--font-mono);
+  font-size: var(--font-small);
+  letter-spacing: 0.05em;
+  opacity: 0.72;
+}
+
+.home-color-blocks__heading {
+  margin: 0;
+  color: inherit;
+  font-family: var(--font-display-family);
+  font-weight: 500;
+  font-size: clamp(1.5rem, 1.2rem + 1.2vw, 2rem);
+  line-height: 1.32;
+  letter-spacing: -0.01em;
+  word-break: keep-all;
+}
+
+.home-color-blocks__positioning {
+  margin: auto 0 0;
+  font-size: var(--font-small);
+  line-height: 1.6;
+  opacity: 0.8;
+  word-break: keep-all;
+}
+
+/* Block 1 — 감지 (DETECT): near-black, matches the hero's own background token. */
+.home-color-blocks__block--detect {
+  background: var(--color-ink);
+  color: var(--color-paper);
+  --block-accent: var(--moving-detect-badge);
+}
+
+/* Block 2 — 경보 (ALERT): SUNFLEX CI blue (brand/sunflex-wordmark.svg fill). */
+.home-color-blocks__block--alert {
+  background: #4351d8;
+  color: var(--color-paper);
+  --block-accent: color-mix(in srgb, #4351d8 35%, white);
+}
+
+/* Block 3 — 대응 (RESPOND): dark tone with a warm respond-accent tint, distinct from block 1. */
+.home-color-blocks__block--respond {
+  background: color-mix(in oklch, var(--moving-respond-badge) 22%, var(--color-ink));
+  color: var(--color-paper);
+  --block-accent: var(--moving-respond-badge);
+}
+
+/* Block 4 — 기록 (RECORD): white surface, dark ink text. */
+.home-color-blocks__block--record {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  --block-accent: var(--moving-record-badge);
+}
+
+@media (width<=899px) {
+  .home-color-blocks__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width<=599px) {
+  .home-color-blocks__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-color-blocks__block {
+    min-height: 0;
+    padding: var(--space-32) var(--space-24);
+  }
+}

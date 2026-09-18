@@ -1,6 +1,11 @@
-/* Use the same IBM typeface as the MOVING RECORD heading. */
-#main-content .home-hero #home-title,
+/* Phase 2: headline uses the Asta Sans display face (weight 500, per typography hierarchy). */
+#main-content .home-hero #home-title {
+  font-family: var(--font-display-family);
+  font-weight: 500;
+}
+
+/* Phase 2: eyebrow uses the JetBrains Mono caption style. */
 #main-content .home-hero .home-hero__eyebrow {
-  font-family: "Jiyou Record", "Pretendard Variable", sans-serif;
-  font-weight: 600;
+  font-family: var(--font-mono);
+  letter-spacing: 0.05em;
 }
