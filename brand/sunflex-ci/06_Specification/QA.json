@@ -1,0 +1,538 @@
+{
+  "svg_count": 44,
+  "all_paths_no_font_files": true,
+  "raster_images_in_individual_logo_pdfs": false,
+  "issues": [],
+  "checks": [
+    {
+      "file": "01_SOLAR/svg/SOLAR_Lineup_Distinct_Flat.svg",
+      "sha256": "cf474aefc09e59888ef29e58ec99225ffe41492e2a900d82453db6c67958bb44",
+      "raster_content": false,
+      "live_text": false,
+      "png_bbox": [
+        49,
+        31,
+        1922,
+        401
+      ]
+    },
+    {
+      "file": "01_SOLAR/svg/SOLAR_Lineup_Distinct_Ink.svg",
+      "sha256": "89223ccce917e83adf70ebb50b7f907865b536b7a58508c0184da199b1b016f0",
+      "raster_content": false,
+      "live_text": false,
+      "png_bbox": [
+        49,
+        31,
+        1922,
+        401
+      ]
+    },
+    {
+      "file": "01_SOLAR/svg/SOLAR_Lineup_Distinct_Primary.svg",
+      "sha256": "1d89b1cdf25091522cf27765a6c60933bd0e8d8392dbedd27d307e808be3b8c9",
+      "raster_content": false,
+      "live_text": false,
+      "png_bbox": [
+        49,
+        31,
+        1922,
+        401
+      ]
+    },
+    {
+      "file": "01_SOLAR/svg/SOLAR_Lineup_Distinct_White.svg",
+      "sha256": "2c3505dc5b34aad180d03b846382d0fa9772bde0dff6d2e0fb48c58791da9696",
+      "raster_content": false,
+      "live_text": false,
+      "png_bbox": [
+        49,
+        31,
+        1922,
+        401
+      ]
+    },
+    {
+      "file": "01_SOLAR/svg/SOLAR_Lineup_Horizontal_Flat.svg",
+      "sha256": "c0aed07a09eec5fe09fb347fcba71e97c14111b53d11bca7ef2972bafb8cbec9",
+      "raster_content": false,
+      "live_text": false,
+      "png_bbox": [
+        66,
+        55,
+        1972,
+        657
+      ]
+    },
+    {
+      "file": "01_SOLAR/svg/SOLAR_Lineup_Horizontal_Ink.svg",
+      "sha256": "501d64fc617d67d250dab91e9351441c7a31f6010d8a3a94bf7a64e91aa33d31",
+      "raster_content": false,
+      "live_text": false,
+      "png_bbox": [
+        66,
+        55,
+        1972,
+        657
+      ]
+    },
+    {
+      "file": "01_SOLAR/svg/SOLAR_Lineup_Horizontal_Primary.svg",
+      "sha256": "cfb8954a443fe11db4526116660ad19e8d6d9e5725df9d14e444d9e86bf414da",
+      "raster_content": false,
+      "live_text": false,
+      "png_bbox": [
+        66,
+        55,
+        1972,
+        657
+      ]
+    },
+    {
+      "file": "01_SOLAR/svg/SOLAR_Lineup_Horizontal_White.svg",
+      "sha256": "dfdaf52b66f4da59aba9a2c37908b129d9deb53a39d8f457f5e5e640962c1595",
+      "raster_content": false,
+      "live_text": false,
+      "png_bbox": [
+        66,
+        55,
+        1972,
+        657
+      ]
+    },
+    {
+      "file": "01_SOLAR/svg/SOLAR_Reference_Wordmark_Blue.svg",
+      "sha256": "1f47235c7782cd9699bbcbca15e26f1ab4eb4b757c1db4b18cee1a2f4315312c",
+      "raster_content": false,
+      "live_text": false,
+      "png_bbox": [
+        48,
+        51,
+        1460,
+        341
+      ]
+    },
+    {
+      "file": "01_SOLAR/svg/SOLAR_Reference_Wordmark_Ink.svg",
+      "sha256": "a00d70fd633902f6d071c31da44e4fe18e0a4293b3bf5e989b39d6a614d1280a",
+      "raster_content": false,
+      "live_text": false,
+      "png_bbox": [
+        48,
+        51,
+        1460,
+        341
+      ]
+    },
+    {
+      "file": "01_SOLAR/svg/SOLAR_Reference_Wordmark_White.svg",
+      "sha256": "9c1892b4931b9eac862609396582801ab321429c51e4f5706dac3cfc12cb571c",
+      "raster_content": false,
+      "live_text": false,
+      "png_bbox": [
+        48,
+        51,
+        1460,
+        341
+      ]
+    },
+    {
+      "file": "01_SOLAR/svg/SOLAR_Solution_Distinct_Flat.svg",
+      "sha256": "d1d37205947166eb4f3c706c8d953471eb0a23621fc1bff3bba157850fce2de1",
+      "raster_content": false,
+      "live_text": false,
+      "png_bbox": [
+        96,
+        59,
+        1266,
+        1164
+      ]
+    },
+    {
+      "file": "01_SOLAR/svg/SOLAR_Solution_Distinct_Ink.svg",
+      "sha256": "1a2ada8271cf0f500b0d199df575717cbfd3113243b2704977372a3a72c20176",
+      "raster_content": false,
+      "live_text": false,
+      "png_bbox": [
+        96,
+        59,
+        1266,
+        1164
+      ]
+    },
+    {
+      "file": "01_SOLAR/svg/SOLAR_Solution_Distinct_Primary.svg",
+      "sha256": "5d9f70685adcaf8748ce49d11d616b090918c08145dfa29ff75178e4d6062f30",
+      "raster_content": false,
+      "live_text": false,
+      "png_bbox": [
+        96,
+        59,
+        1266,
+        1164
+      ]
+    },
+    {
+      "file": "01_SOLAR/svg/SOLAR_Solution_Distinct_White.svg",
+      "sha256": "58237cd715e0a41ae53cc233c45d2e410bf765e036a7fcaedd4c9b81a2b0b021",
+      "raster_content": false,
+      "live_text": false,
+      "png_bbox": [
+        96,
+        59,
+        1266,
+        1164
+      ]
+    },
+    {
+      "file": "01_SOLAR/svg/SOLAR_Solution_Horizontal_Flat.svg",
+      "sha256": "761da0108422e7f6b0e79e61d5ef00f51cd50eea4b364aa183e741164582646b",
+      "raster_content": false,
+      "live_text": false,
+      "png_bbox": [
+        66,
+        55,
+        1972,
+        657
+      ]
+    },
+    {
+      "file": "01_SOLAR/svg/SOLAR_Solution_Horizontal_Ink.svg",
+      "sha256": "86d3338d0457fd3f8c5d4dff53be82310cef66c9905e910109c2ac65fa0e2257",
+      "raster_content": false,
+      "live_text": false,
+      "png_bbox": [
+        66,
+        55,
+        1972,
+        657
+      ]
+    },
+    {
+      "file": "01_SOLAR/svg/SOLAR_Solution_Horizontal_Primary.svg",
+      "sha256": "7b0a4b3b3d8dd0c53c412c3df443672a878ac9374d8a4f41959ecb3a006bb686",
+      "raster_content": false,
+      "live_text": false,
+      "png_bbox": [
+        66,
+        55,
+        1972,
+        657
+      ]
+    },
+    {
+      "file": "01_SOLAR/svg/SOLAR_Solution_Horizontal_White.svg",
+      "sha256": "710ef04bd80b0d0d65ce63a0ea920dc56c240539dd7c0675554c0befe0b6403e",
+      "raster_content": false,
+      "live_text": false,
+      "png_bbox": [
+        66,
+        55,
+        1972,
+        657
+      ]
+    },
+    {
+      "file": "01_SOLAR/svg/SOLAR_Symbol_Flat.svg",
+      "sha256": "19f4a143b0b4d828a19143cfc4465ac3a09843d25f5adffd7879ceecc0f79935",
+      "raster_content": false,
+      "live_text": false,
+      "png_bbox": [
+        52,
+        47,
+        660,
+        881
+      ]
+    },
+    {
+      "file": "01_SOLAR/svg/SOLAR_Symbol_Ink.svg",
+      "sha256": "d4f0ad5cd73548aa5086550702b9609a747448e4366973d36e15f0f59061dde6",
+      "raster_content": false,
+      "live_text": false,
+      "png_bbox": [
+        52,
+        47,
+        660,
+        881
+      ]
+    },
+    {
+      "file": "01_SOLAR/svg/SOLAR_Symbol_Primary.svg",
+      "sha256": "9a560e448db44138f881568e2b5942b37887b031ef253cdd698c383c58b81660",
+      "raster_content": false,
+      "live_text": false,
+      "png_bbox": [
+        52,
+        47,
+        660,
+        881
+      ]
+    },
+    {
+      "file": "01_SOLAR/svg/SOLAR_Symbol_White.svg",
+      "sha256": "0a5ec32ab6a8a75c6d1eb14fa5f4a1174fffdc7692a89c6f5d30de9a2e392ef4",
+      "raster_content": false,
+      "live_text": false,
+      "png_bbox": [
+        52,
+        47,
+        660,
+        881
+      ]
+    },
+    {
+      "file": "01_SOLAR/svg/SOLAR_System_Distinct_Flat.svg",
+      "sha256": "a111410c7bb6557882cbede6a81bdddc655835c4820ab7b1b620cf47edadb9b6",
+      "raster_content": false,
+      "live_text": false,
+      "png_bbox": [
+        50,
+        47,
+        1739,
+        585
+      ]
+    },
+    {
+      "file": "01_SOLAR/svg/SOLAR_System_Distinct_Ink.svg",
+      "sha256": "c3f24da2c202b14e96e06b01808709d616613a865ce33a8fc6b4b4444a4b58f4",
+      "raster_content": false,
+      "live_text": false,
+      "png_bbox": [
+        50,
+        47,
+        1739,
+        585
+      ]
+    },
+    {
+      "file": "01_SOLAR/svg/SOLAR_System_Distinct_Primary.svg",
+      "sha256": "8b9c92943001e12da176009f5f0cbcf299ca300c5c87c19885d95e575e2ab5c4",
+      "raster_content": false,
+      "live_text": false,
+      "png_bbox": [
+        50,
+        47,
+        1739,
+        585
+      ]
+    },
+    {
+      "file": "01_SOLAR/svg/SOLAR_System_Distinct_White.svg",
+      "sha256": "54a0075ad9560ce2b6b0d10da0dc75b5c63c58738971a6d17d789b1e3852e2df",
+      "raster_content": false,
+      "live_text": false,
+      "png_bbox": [
+        50,
+        47,
+        1739,
+        585
+      ]
+    },
+    {
+      "file": "01_SOLAR/svg/SOLAR_System_Horizontal_Flat.svg",
+      "sha256": "dc8b81dd70f0b366e8b0fcfcacbb2d4970ca53e5e9f6bdb0f4a1ff23921d2618",
+      "raster_content": false,
+      "live_text": false,
+      "png_bbox": [
+        66,
+        55,
+        1972,
+        657
+      ]
+    },
+    {
+      "file": "01_SOLAR/svg/SOLAR_System_Horizontal_Ink.svg",
+      "sha256": "390112cd0be1666eb9f52794f8a629cc02d28a304f59b815f74143ff4f875584",
+      "raster_content": false,
+      "live_text": false,
+      "png_bbox": [
+        66,
+        55,
+        1972,
+        657
+      ]
+    },
+    {
+      "file": "01_SOLAR/svg/SOLAR_System_Horizontal_Primary.svg",
+      "sha256": "7cfab660e12bd69fa4a43a7df187b0fcaf5dde9bfa909c74c7c2ab1fe09a3758",
+      "raster_content": false,
+      "live_text": false,
+      "png_bbox": [
+        66,
+        55,
+        1972,
+        657
+      ]
+    },
+    {
+      "file": "01_SOLAR/svg/SOLAR_System_Horizontal_White.svg",
+      "sha256": "c15fedd3f3a819ae8d5bbff53eb1d9934924e0ff87331a775826b479dff5fe61",
+      "raster_content": false,
+      "live_text": false,
+      "png_bbox": [
+        66,
+        55,
+        1972,
+        657
+      ]
+    },
+    {
+      "file": "02_SUNFLEX/svg/SUNFLEX_EN_Reference_Flat.svg",
+      "sha256": "f58888d6208d3d4282ae3ae6dfb25cdf1f82692a519af64c06b220c9f3977549",
+      "raster_content": false,
+      "live_text": false,
+      "png_bbox": [
+        56,
+        64,
+        2047,
+        424
+      ]
+    },
+    {
+      "file": "02_SUNFLEX/svg/SUNFLEX_EN_Reference_Ink.svg",
+      "sha256": "0eba63dd538dd4915ba9c518df1a6cc26c1dbc998ba22a0cafc68302ce290a23",
+      "raster_content": false,
+      "live_text": false,
+      "png_bbox": [
+        56,
+        64,
+        2047,
+        424
+      ]
+    },
+    {
+      "file": "02_SUNFLEX/svg/SUNFLEX_EN_Reference_Primary.svg",
+      "sha256": "f58888d6208d3d4282ae3ae6dfb25cdf1f82692a519af64c06b220c9f3977549",
+      "raster_content": false,
+      "live_text": false,
+      "png_bbox": [
+        56,
+        64,
+        2047,
+        424
+      ]
+    },
+    {
+      "file": "02_SUNFLEX/svg/SUNFLEX_EN_Reference_White.svg",
+      "sha256": "e95a8fbd6eb6930894a1cdd0eb527e50d7d5dbb081e45af575f151ec03319446",
+      "raster_content": false,
+      "live_text": false,
+      "png_bbox": [
+        56,
+        64,
+        2047,
+        424
+      ]
+    },
+    {
+      "file": "02_SUNFLEX/svg/SUNFLEX_KO_Flat.svg",
+      "sha256": "6e3b76fb79a887130610f4ab84056182a3a41b80cf5e12e9264f5556fd8f6b85",
+      "raster_content": false,
+      "live_text": false,
+      "png_bbox": [
+        47,
+        38,
+        1389,
+        357
+      ]
+    },
+    {
+      "file": "02_SUNFLEX/svg/SUNFLEX_KO_Ink.svg",
+      "sha256": "3fab0a4fcb5d84140197ca43e80e5a9303dcb09c97860d5a5bcec2c521d7039a",
+      "raster_content": false,
+      "live_text": false,
+      "png_bbox": [
+        47,
+        38,
+        1389,
+        357
+      ]
+    },
+    {
+      "file": "02_SUNFLEX/svg/SUNFLEX_KO_Primary.svg",
+      "sha256": "6e3b76fb79a887130610f4ab84056182a3a41b80cf5e12e9264f5556fd8f6b85",
+      "raster_content": false,
+      "live_text": false,
+      "png_bbox": [
+        47,
+        38,
+        1389,
+        357
+      ]
+    },
+    {
+      "file": "02_SUNFLEX/svg/SUNFLEX_KO_White.svg",
+      "sha256": "f9ded262886612433886809cf1c1bbf6987fe82ea309d6454e88fcdca28c4df2",
+      "raster_content": false,
+      "live_text": false,
+      "png_bbox": [
+        47,
+        38,
+        1389,
+        357
+      ]
+    },
+    {
+      "file": "02_SUNFLEX/svg/SUNFLEX_Reference_Wordmark_Blue.svg",
+      "sha256": "6b450b15db35892b33de066a5d922c7752ed86dac23a5c31011cd0fc60818510",
+      "raster_content": false,
+      "live_text": false,
+      "png_bbox": [
+        48,
+        51,
+        1976,
+        340
+      ]
+    },
+    {
+      "file": "02_SUNFLEX/svg/SUNFLEX_Reference_Wordmark_Ink.svg",
+      "sha256": "c286e9ee2dba9c7c26504e09c86f59ba6457856f5595eabaabe56b2941ffcc95",
+      "raster_content": false,
+      "live_text": false,
+      "png_bbox": [
+        48,
+        51,
+        1976,
+        340
+      ]
+    },
+    {
+      "file": "02_SUNFLEX/svg/SUNFLEX_Reference_Wordmark_White.svg",
+      "sha256": "567dd8a5dc0c681fce3161352b2a1b642f8b9ff5f55271b8dbcf21010897d937",
+      "raster_content": false,
+      "live_text": false,
+      "png_bbox": [
+        48,
+        51,
+        1976,
+        340
+      ]
+    },
+    {
+      "file": "03_App_Icons/svg/SOLAR_App_Icon_Blue_Enlarged.svg",
+      "sha256": "2802daa8d5c6313b07e0756de4ecfa847edbb75eb4066119a2d1b84f46be0d5c",
+      "raster_content": false,
+      "live_text": false,
+      "png_bbox": [
+        32,
+        32,
+        2016,
+        2016
+      ]
+    },
+    {
+      "file": "03_App_Icons/svg/SOLAR_App_Icon_White_Enlarged.svg",
+      "sha256": "16ad823a5a01ec244ecfead33def515bf6fed54e0ac9e3fe83b09178df7a8c11",
+      "raster_content": false,
+      "live_text": false,
+      "png_bbox": [
+        32,
+        32,
+        2016,
+        2016
+      ]
+    }
+  ],
+  "guide_pages": 3,
+  "guide_renderer_checked": "pdftoppm"
+}

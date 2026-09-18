@@ -1,0 +1,281 @@
+{
+  "version": "1.1",
+  "source": "생성된 이미지 1.png",
+  "english": "Reference-based custom lettering, not an identified font",
+  "korean": "Original IBM Plex-based outline paths retained",
+  "icon_old_symbol_height": 306,
+  "icon_new_symbol_height": 342.72,
+  "icon_linear_scale_factor": 1.12,
+  "symbol_geometry": "Original SOLAR and SUNFLEX source paths retained; layout scale and positions changed",
+  "primary_layouts": {
+    "Lineup": "Wide inline",
+    "System": "Module with label rail",
+    "Solution": "Centered stacked"
+  },
+  "assets": [
+    {
+      "name": "SOLAR_Lineup_Horizontal_Primary",
+      "folder": "01_SOLAR",
+      "width": 514.9143,
+      "height": 178.0
+    },
+    {
+      "name": "SOLAR_Lineup_Distinct_Primary",
+      "folder": "01_SOLAR",
+      "width": 499.3839,
+      "height": 110.0
+    },
+    {
+      "name": "SOLAR_Lineup_Horizontal_Flat",
+      "folder": "01_SOLAR",
+      "width": 514.9143,
+      "height": 178.0
+    },
+    {
+      "name": "SOLAR_Lineup_Distinct_Flat",
+      "folder": "01_SOLAR",
+      "width": 499.3839,
+      "height": 110.0
+    },
+    {
+      "name": "SOLAR_Lineup_Horizontal_Ink",
+      "folder": "01_SOLAR",
+      "width": 514.9143,
+      "height": 178.0
+    },
+    {
+      "name": "SOLAR_Lineup_Distinct_Ink",
+      "folder": "01_SOLAR",
+      "width": 499.3839,
+      "height": 110.0
+    },
+    {
+      "name": "SOLAR_Lineup_Horizontal_White",
+      "folder": "01_SOLAR",
+      "width": 514.9143,
+      "height": 178.0
+    },
+    {
+      "name": "SOLAR_Lineup_Distinct_White",
+      "folder": "01_SOLAR",
+      "width": 499.3839,
+      "height": 110.0
+    },
+    {
+      "name": "SOLAR_System_Horizontal_Primary",
+      "folder": "01_SOLAR",
+      "width": 514.9143,
+      "height": 178.0
+    },
+    {
+      "name": "SOLAR_System_Distinct_Primary",
+      "folder": "01_SOLAR",
+      "width": 455.5714,
+      "height": 159.0
+    },
+    {
+      "name": "SOLAR_System_Horizontal_Flat",
+      "folder": "01_SOLAR",
+      "width": 514.9143,
+      "height": 178.0
+    },
+    {
+      "name": "SOLAR_System_Distinct_Flat",
+      "folder": "01_SOLAR",
+      "width": 455.5714,
+      "height": 159.0
+    },
+    {
+      "name": "SOLAR_System_Horizontal_Ink",
+      "folder": "01_SOLAR",
+      "width": 514.9143,
+      "height": 178.0
+    },
+    {
+      "name": "SOLAR_System_Distinct_Ink",
+      "folder": "01_SOLAR",
+      "width": 455.5714,
+      "height": 159.0
+    },
+    {
+      "name": "SOLAR_System_Horizontal_White",
+      "folder": "01_SOLAR",
+      "width": 514.9143,
+      "height": 178.0
+    },
+    {
+      "name": "SOLAR_System_Distinct_White",
+      "folder": "01_SOLAR",
+      "width": 455.5714,
+      "height": 159.0
+    },
+    {
+      "name": "SOLAR_Solution_Horizontal_Primary",
+      "folder": "01_SOLAR",
+      "width": 514.9143,
+      "height": 178.0
+    },
+    {
+      "name": "SOLAR_Solution_Distinct_Primary",
+      "folder": "01_SOLAR",
+      "width": 340.4857,
+      "height": 311.0
+    },
+    {
+      "name": "SOLAR_Solution_Horizontal_Flat",
+      "folder": "01_SOLAR",
+      "width": 514.9143,
+      "height": 178.0
+    },
+    {
+      "name": "SOLAR_Solution_Distinct_Flat",
+      "folder": "01_SOLAR",
+      "width": 340.4857,
+      "height": 311.0
+    },
+    {
+      "name": "SOLAR_Solution_Horizontal_Ink",
+      "folder": "01_SOLAR",
+      "width": 514.9143,
+      "height": 178.0
+    },
+    {
+      "name": "SOLAR_Solution_Distinct_Ink",
+      "folder": "01_SOLAR",
+      "width": 340.4857,
+      "height": 311.0
+    },
+    {
+      "name": "SOLAR_Solution_Horizontal_White",
+      "folder": "01_SOLAR",
+      "width": 514.9143,
+      "height": 178.0
+    },
+    {
+      "name": "SOLAR_Solution_Distinct_White",
+      "folder": "01_SOLAR",
+      "width": 340.4857,
+      "height": 311.0
+    },
+    {
+      "name": "SOLAR_Reference_Wordmark_Ink",
+      "folder": "01_SOLAR",
+      "width": 377.0,
+      "height": 100.0
+    },
+    {
+      "name": "SOLAR_Reference_Wordmark_White",
+      "folder": "01_SOLAR",
+      "width": 377.0,
+      "height": 100.0
+    },
+    {
+      "name": "SOLAR_Reference_Wordmark_Blue",
+      "folder": "01_SOLAR",
+      "width": 377.0,
+      "height": 100.0
+    },
+    {
+      "name": "SUNFLEX_Reference_Wordmark_Ink",
+      "folder": "02_SUNFLEX",
+      "width": 507.0,
+      "height": 100.0
+    },
+    {
+      "name": "SUNFLEX_Reference_Wordmark_White",
+      "folder": "02_SUNFLEX",
+      "width": 507.0,
+      "height": 100.0
+    },
+    {
+      "name": "SUNFLEX_Reference_Wordmark_Blue",
+      "folder": "02_SUNFLEX",
+      "width": 507.0,
+      "height": 100.0
+    },
+    {
+      "name": "SUNFLEX_EN_Reference_Primary",
+      "folder": "02_SUNFLEX",
+      "width": 534.4,
+      "height": 122.0
+    },
+    {
+      "name": "SUNFLEX_KO_Primary",
+      "folder": "02_SUNFLEX",
+      "width": 359.0662,
+      "height": 100.0
+    },
+    {
+      "name": "SUNFLEX_EN_Reference_Flat",
+      "folder": "02_SUNFLEX",
+      "width": 534.4,
+      "height": 122.0
+    },
+    {
+      "name": "SUNFLEX_KO_Flat",
+      "folder": "02_SUNFLEX",
+      "width": 359.0662,
+      "height": 100.0
+    },
+    {
+      "name": "SUNFLEX_EN_Reference_Ink",
+      "folder": "02_SUNFLEX",
+      "width": 534.4,
+      "height": 122.0
+    },
+    {
+      "name": "SUNFLEX_KO_Ink",
+      "folder": "02_SUNFLEX",
+      "width": 359.0662,
+      "height": 100.0
+    },
+    {
+      "name": "SUNFLEX_EN_Reference_White",
+      "folder": "02_SUNFLEX",
+      "width": 534.4,
+      "height": 122.0
+    },
+    {
+      "name": "SUNFLEX_KO_White",
+      "folder": "02_SUNFLEX",
+      "width": 359.0662,
+      "height": 100.0
+    },
+    {
+      "name": "SOLAR_App_Icon_Blue_Enlarged",
+      "folder": "03_App_Icons",
+      "width": 512.0,
+      "height": 512.0
+    },
+    {
+      "name": "SOLAR_App_Icon_White_Enlarged",
+      "folder": "03_App_Icons",
+      "width": 512.0,
+      "height": 512.0
+    },
+    {
+      "name": "SOLAR_Symbol_Primary",
+      "folder": "01_SOLAR",
+      "width": 178.0,
+      "height": 232.0
+    },
+    {
+      "name": "SOLAR_Symbol_Flat",
+      "folder": "01_SOLAR",
+      "width": 178.0,
+      "height": 232.0
+    },
+    {
+      "name": "SOLAR_Symbol_Ink",
+      "folder": "01_SOLAR",
+      "width": 178.0,
+      "height": 232.0
+    },
+    {
+      "name": "SOLAR_Symbol_White",
+      "folder": "01_SOLAR",
+      "width": 178.0,
+      "height": 232.0
+    }
+  ]
+}
