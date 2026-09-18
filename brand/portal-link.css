@@ -134,6 +134,10 @@
  .site-header .header-cta[data-astro-cid-6stfpryv],#mobile-drawer .drawer__cta{color:ButtonText;background:ButtonFace;border-color:ButtonText;box-shadow:none}
 }
 
+/* Phase 2 Figma design system: the header bar itself is now black, so the black CTA
+   needs a light edge or it disappears into the bar (docs/superpowers/specs/2026-09-18-figma-design-system-phase2.md). */
+.site-header .header-cta[data-astro-cid-6stfpryv]{border-color:rgba(255,255,255,.6)}
+
 /* Shared reflection scale: restrained surfaces, local edges, original imagery. */
 [data-jglow]{--jg-rx:240px;--jg-ry:170px;--jg-strength:.13;isolation:isolate}
 [data-jglow]:not([data-field-point]),[data-jglow-body]:not([data-field-point]):not(.product-card__content){position:relative}
