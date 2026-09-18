@@ -12,6 +12,7 @@ REPLACEMENTS = [
     ("brand/jiyou-wordmark.png", "brand/sunflex-wordmark.png"),
     ("jiyoueng.com", "sunflex-corp.github.io"),
     ("지유이엔지", "썬플렉스"),
+    ("JIYOU ENG CO., LTD.", "SUNFLEX CO., LTD."),
 ]
 
 
