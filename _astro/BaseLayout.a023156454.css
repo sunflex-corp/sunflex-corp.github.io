@@ -21,3 +21,12 @@
 .desktop-nav[data-astro-cid-6stfpryv] a[data-astro-cid-6stfpryv]{color:#fff}
 .desktop-nav__trigger[data-astro-cid-6stfpryv]{color:#fff}
 .site-header[data-astro-cid-6stfpryv] .wordmark[data-astro-cid-iwd2mrac]{background:var(--paper);border-radius:var(--r-12);padding:7px 10px}
+
+/* Phase 3 Figma design-system overrides: Asta Sans on product-card titles + company page headlines (docs/superpowers/specs/2026-09-18-figma-design-system-phase3.md) */
+.product-card[data-astro-cid-jzaxfnwo] h3[data-astro-cid-jzaxfnwo]{font-family:var(--font-display-family);font-weight:500}
+.company-hero[data-astro-cid-zpwr3yl4] h1[data-astro-cid-zpwr3yl4]{font-family:var(--font-display-family)}
+.company-definition[data-astro-cid-pznmcd2o] h2[data-astro-cid-pznmcd2o]{font-family:var(--font-display-family);font-weight:500}
+.company-promise[data-astro-cid-loifexnf] h2[data-astro-cid-loifexnf]{font-family:var(--font-display-family);font-weight:500}
+.signal-path[data-astro-cid-5srz3hri] h2[data-astro-cid-5srz3hri]{font-family:var(--font-display-family);font-weight:500}
+.company-place[data-astro-cid-zpwr3yl4] h2[data-astro-cid-zpwr3yl4]{font-family:var(--font-display-family);font-weight:500}
+.company-next[data-astro-cid-4ckk4j3x] h2[data-astro-cid-4ckk4j3x]{font-family:var(--font-display-family);font-weight:500}
