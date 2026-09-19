@@ -20,7 +20,7 @@
 @media(prefers-reduced-motion:reduce){.site-header[data-astro-cid-6stfpryv]{transition:none}}
 .desktop-nav[data-astro-cid-6stfpryv] a[data-astro-cid-6stfpryv]{color:#fff}
 .desktop-nav__trigger[data-astro-cid-6stfpryv]{color:#fff}
-.site-header[data-astro-cid-6stfpryv] .wordmark[data-astro-cid-iwd2mrac]{background:var(--paper);border-radius:var(--r-12);padding:7px 10px}
+.site-header[data-astro-cid-6stfpryv] 
 
 /* Phase 3 Figma design-system overrides: Asta Sans on product-card titles + company page headlines (docs/superpowers/specs/2026-09-18-figma-design-system-phase3.md) */
 .product-card[data-astro-cid-jzaxfnwo] h3[data-astro-cid-jzaxfnwo]{font-family:var(--font-display-family);font-weight:500}
