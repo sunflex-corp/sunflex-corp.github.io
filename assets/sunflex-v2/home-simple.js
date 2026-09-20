@@ -29,16 +29,30 @@
   const ramp = (p, a, b) => { const t = clamp((p-a)/(b-a)); return t*t*(3-2*t); };
   let frame = 0, current = 0, last = 0;
   const progress = () => clamp(-story.getBoundingClientRect().top / Math.max(1, story.offsetHeight-stage.offsetHeight));
+  const aperture = story.querySelector('.solar-aperture');
+  const cutout = story.querySelector('.solar-cutout');
+  const white = story.querySelector('.solar-white');
+  const photo = story.querySelector('.solar-backdrop');
+  const shade = story.querySelector('.solar-shade');
+  const hint = story.querySelector('.solar-story-hint');
+  // Write only changed leaf properties, avoiding inherited variable invalidation.
+  const set = (node, key, value) => {
+    if (node.style[key] !== value) node.style[key] = value;
+  };
   const paint = p => {
     const reveal = ramp(p,.68,.84);
-    story.style.setProperty('--word-scale', Math.exp(Math.log(24)*ramp(p,.12,.69)).toFixed(5));
-    story.style.setProperty('--white-opacity', (1-ramp(p,.09,.24)).toFixed(5));
-    story.style.setProperty('--mask-opacity', (1-ramp(p,.51,.69)).toFixed(5));
-    story.style.setProperty('--photo-scale', (1.09-.09*ramp(p,.15,.78)).toFixed(5));
-    story.style.setProperty('--copy-opacity', reveal.toFixed(5));
-    story.style.setProperty('--hint-opacity', (1-ramp(p,.05,.18)).toFixed(5));
-    // Invisible links must not receive focus; visible copy remains semantic.
-    copy.inert = reveal < .05;
+    const scale = Math.exp(Math.log(24)*ramp(p,.12,.69)).toFixed(5);
+    const transform = `scale(${scale})`;
+    set(cutout, 'transform', transform);
+    set(white, 'transform', transform);
+    set(white, 'opacity', (1-ramp(p,.09,.24)).toFixed(5));
+    set(aperture, 'opacity', (1-ramp(p,.51,.69)).toFixed(5));
+    set(photo, 'transform', `scale(${(1.09-.09*ramp(p,.15,.78)).toFixed(5)})`);
+    set(copy, 'opacity', reveal.toFixed(5));
+    set(copy, 'transform', `translate3d(0,${((1-reveal)*35).toFixed(5)}px,0)`);
+    set(shade, 'opacity', reveal.toFixed(5));
+    set(hint, 'opacity', (1-ramp(p,.05,.18)).toFixed(5));
+    if (copy.inert !== (reveal < .05)) copy.inert = reveal < .05;
   };
   const tick = time => {
     frame = 0;
@@ -56,7 +70,10 @@
   const reset = () => {
     cancelAnimationFrame(frame);frame=0;last=0;
     story.classList.toggle('is-scrubbing',!reduced.matches);
-    if(reduced.matches){copy.inert=false;return;}
+    if(reduced.matches){
+      [cutout,white,aperture,photo,copy,shade,hint].forEach(node=>{node.style.transform='';node.style.opacity='';});
+      stage.classList.remove('is-motion-active');copy.inert=false;return;
+    }
     current=progress();paint(current);
   };
   window.addEventListener('scroll',schedule,{passive:true});
@@ -64,5 +81,13 @@
   window.addEventListener('pageshow',reset);
   document.addEventListener('visibilitychange',()=>{if(document.hidden){cancelAnimationFrame(frame);frame=0;last=0;}else reset();});
   reduced.addEventListener('change',reset);
+  // Promote only while this section is near the viewport; release GPU memory away from it.
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(entries => {
+      stage.classList.toggle('is-motion-active', entries[0].isIntersecting && !reduced.matches);
+    }, {rootMargin:'100% 0px'});
+    observer.observe(story);
+    reduced.addEventListener('change',()=>{observer.unobserve(story);observer.observe(story);});
+  }
   reset();
 })();

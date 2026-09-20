@@ -1,0 +1,7 @@
+# Solar scroll performance correction
+
+The previous implementation scaled SVG text inside a viewport-sized luminance mask every frame. This invalidates mask content rather than simply compositing a cached layer. It also wrote six inherited custom properties on the entire story subtree each frame. These are code-confirmed sources of avoidable raster/style work; cost grows with viewport area and pixel density. No hardware-specific FPS improvement is claimed without a trace.
+
+The new implementation retains the original font, anchor, transform origin, 1–24 scale curve, 85ms smoothing, thresholds, background photograph and section heights. The static cutout SVG and static white SVG are independent HTML layers. Only their transform/opacity changes. Leaf styles are deduplicated; invisible/unchanged progress makes no repeated style writes. IntersectionObserver limits transform promotion to the nearby story and reduced motion clears inline overrides. Paint containment bounds the stage.
+
+Validation: home-simple behavior tests (including no unchanged style writes), home-motion regression tests, generated-site links/assets/IDs check, static mask/layer structure assertions and git diff --check passed. Visible Chrome keyboard scroll confirmed white text, photo-filled text, full photograph, directory reveal and reverse travel. A native 4K/5K GPU trace and cross-device FPS comparison were not available in this pass.
