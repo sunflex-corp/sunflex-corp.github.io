@@ -8,7 +8,10 @@ assert len(scenes)==48
 for slug,spec in scenes.items():
     page=BeautifulSoup((R/'products'/slug/'index.html').read_text(),'html.parser')
     assert page.select_one('[data-story-revision="20260920"]'),slug
-    assert len(page.select('[data-scroll-flow]'))==1,slug
+    assert len(page.select('[data-scroll-flow]'))>=1,slug
+    for flow in page.select('[data-scroll-flow]'):
+        assert len(flow.select('.product-flow-tabs button'))==len(flow.select('[data-flow-panel]'))>=2,slug
+    assert not page.select('.benefit-operation-list'),slug
     assert not page.select('[data-product-motion], [data-cctv-process]'),slug
     assert len(page.select('.revision-criteria li'))==3,slug
     assert page.select_one('.product-story > .revision-source'),slug
@@ -25,4 +28,4 @@ assert [x['src'] for x in cms.select('#product-benefits img')]==[f'/media/derive
 for slug in ['smart-airbag','chatgpt-cctv','inspectcut','safebridge']:
     page=BeautifulSoup((R/'products'/slug/'index.html').read_text(),'html.parser')
     assert page.select_one('.revision-proof img'),slug
-print('PASS: 48 revised pages, one story each, original detail access, SVG assets, three CMS phases and four proof sources.')
+print('PASS: 48 revised pages, primary and operating stories retained, original detail access, SVG assets, three CMS phases and four proof sources.')

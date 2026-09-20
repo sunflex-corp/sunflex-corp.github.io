@@ -12,7 +12,7 @@ PROOF={
  'inspectcut':('manual-inspectcut-figure-1280.webp','건설 현장 영상과 재생 컨트롤이 있는 인스펙트컷 화면','필요한 장면을 찾는 실제 작업 화면.'),
  'safebridge':('manual-safebridge-figure-1280.webp','중국어·힌디어·영어 번역 패널이 나란히 표시된 세이프브릿지 화면','한 화면에 나란히, 언어별 자막.')}
 # Key choices remain open; duplicate explanations become a single compact specification area.
-KEEP={'mobile-cctv':['mobile-cctv-lineup','movingcam-network'],'ir3-flame-detector':['ir3-configurations'],'mobile-bodycam':['bodycam-use'],'pedestrian-collision-prevention':['blind-corner']}
+KEEP={'mobile-cctv':['mobile-cctv-lineup','movingcam-engineering','movingcam-network'],'ir3-flame-detector':['ir3-configurations'],'mobile-bodycam':['bodycam-use'],'pedestrian-collision-prevention':['blind-corner']}
 
 def refine(body,slug):
  s=BeautifulSoup(body,'html.parser');spec=SCENES[slug];root=s.select_one('.product-story');root['data-story-revision']='20260920'
@@ -24,15 +24,23 @@ def refine(body,slug):
  hero=root.select_one('.editorial-hero');hero['data-story-family']=spec['reference'][0]
  # Fix nested source wrapper widths while keeping factual hero content.
  for node in hero.select('.content-wrap,.content-copy'):node['class']=node.get('class',[])+['revision-hero-content']
- for track in root.select('[data-scroll-flow]'):
-  if track.find_parent(class_='benefit-chapter') or slug=='pedestrian-collision-prevention' and track.find_parent(id='blind-corner'):continue
-  track.attrs.pop('data-scroll-flow',None)
-  controls=track.select_one('.product-flow-tabs')
-  if controls:controls.decompose()
-  for panel in track.select('[data-flow-panel]'):panel.attrs.pop('data-flow-panel',None)
- # Old CCTV scroll sequence is now a static optional reference, not another pin.
- for node in root.select('[data-cctv-process]'):node.attrs.pop('data-cctv-process',None)
- for controls in root.select('.cctv-step-controls'):controls.decompose()
+ # Existing operating sequences retain their numbered, pinned navigation.
+ # Convert the older CCTV scene markup to the same controller to avoid competing scroll owners.
+ for old in root.select('[data-cctv-process]'):
+  old.attrs.pop('data-cctv-process',None)
+  track=old.select_one('.cctv-scroll-track');stage=old.select_one('.cctv-scroll-stage')
+  controls=old.select_one('.cctv-step-controls')
+  if track and stage and controls:
+   track['class']=['product-flow-track'];track['data-scroll-flow']=''
+   stage['class']=['product-flow-stage'];controls['class']=['product-flow-tabs']
+   listing=s.new_tag('ol',attrs={'class':'editorial-flow benefit-panels'})
+   for panel in list(stage.select('.cctv-stage')):
+    panel.name='li';panel['class']=['benefit-panel'];panel['data-flow-panel']=''
+    image=panel.find('img');visual=s.new_tag('figure',attrs={'class':'benefit-visual story-photo-scene'})
+    visual.append(image.extract());panel.insert(0,visual)
+    panel.select_one('.cctv-stage-caption')['class']=['benefit-copy']
+    listing.append(panel.extract())
+   stage.append(listing)
  summary=s.new_tag('section',attrs={'class':'editorial-chapter revision-choices','id':'product-fit'})
  inner=s.new_tag('div',attrs={'class':'editorial-section-inner'})
  inner.append(BeautifulSoup('<p class="editorial-kicker">현장에 맞는 구성</p><h2>도입 전에 확인할 세 가지.</h2><p>설치할 곳과 운영 방식을 함께 살펴보세요. 상담할 때 아래 조건을 알려주시면 구성을 검토하는 데 도움이 됩니다.</p>','html.parser'))
@@ -73,6 +81,17 @@ def refine(body,slug):
     grid['data-composition']=layout
   for grid in section.select('.content-grid'):
    if len(grid.find_all('article',recursive=False))>=3:grid['data-composition']='mosaic'
+ # Preserve parallel comparisons as actual columns instead of tall nested boxes.
+ for diagram in root.select('.editorial-diagram'):
+  children=diagram.find_all(recursive=False)
+  if len(children)==3 and children[1].get('aria-hidden')=='true' and all(c.get('aria-hidden')!='true' for c in [children[0],children[2]]):
+   diagram['data-diagram-layout']='transfer-2'
+  elif len(children)==5 and all(children[i].get('aria-hidden')=='true' for i in [1,3]):
+   diagram['data-diagram-layout']='transfer-3'
+  elif len(children)==2 and children[0].name=='ul' and 'editorial-step-card' in children[1].get('class',[]):
+   diagram['data-diagram-layout']='summary-2'
+ for empty in root.select('dl:empty'):empty.decompose()
+ for br in root.select('#movingcam-engineering h2 br'):br.replace_with(' ')
  # Lead software pages with available actual output, before the operating story.
  if family in ['workspace','workflow']:
   proof=root.select_one('.revision-proof')

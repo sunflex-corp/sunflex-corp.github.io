@@ -140,7 +140,8 @@ def build(p,group,g):
                 ident=f'{slug}-flow-{i}'
                 step['id']=ident;step['data-flow-panel']=''
                 button=soup.new_tag('button',attrs={'type':'button','role':'tab','id':ident+'-tab','aria-controls':ident,'aria-selected':'true' if i==0 else 'false','tabindex':'0' if i==0 else '-1'})
-                button.string=f'{i+1:02}  {label}';controls.append(button)
+                number=soup.new_tag('span',attrs={'class':'benefit-tab-number'});number.string=f'{i+1:02}';button.append(number)
+                caption=soup.new_tag('span');caption.string=label;button.append(caption);controls.append(button)
                 if step.find('img'):addclass(step,'flow-with-image')
             flow.wrap(stage);stage.wrap(track);stage.insert(0,controls)
     # A short, visual overview points to real chapters, not invented capabilities.

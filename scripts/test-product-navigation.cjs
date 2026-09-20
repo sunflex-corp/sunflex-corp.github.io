@@ -1,0 +1,13 @@
+const assert=require('node:assert/strict'),vm=require('node:vm'),fs=require('node:fs');
+let clicks=0,scrolls=[],pushes=[],handlers={},prevented=false;
+const media={matches:false};const target={getBoundingClientRect:()=>({top:1200}),closest:()=>null,hasAttribute:()=>false};
+const doc={querySelector:s=>s==='.product-local-nav'?{offsetHeight:66}:{click(){clicks++}},querySelectorAll:()=>[],getElementById:id=>id==='detail'?target:null,addEventListener:(key,fn)=>handlers[key]=fn};
+const win={scrollY:100,scrollTo:p=>scrolls.push(p),addEventListener:(key,fn)=>handlers[key]=fn};
+vm.runInNewContext(fs.readFileSync('assets/sunflex-v2/product-revision.js','utf8'),{document:doc,window:win,location:{hash:''},history:{pushState:(a,b,c)=>pushes.push(c)},matchMedia:()=>media,requestAnimationFrame:fn=>fn(),Promise});
+handlers.click({target:{closest:()=>({hash:'#detail'})},preventDefault(){prevented=true;}});
+assert(prevented);assert.deepEqual(pushes,['#detail']);assert.equal(scrolls.length,1,'one click produces one scroll, no native duplicate');assert.equal(scrolls[0].top,1210);assert.equal(scrolls[0].behavior,'smooth');
+media.matches=true;handlers.click({target:{closest:()=>({hash:'#detail'})},preventDefault(){}});assert.equal(scrolls.at(-1).behavior,'instant');
+handlers.click({target:{closest:()=>({hash:'#detail'})},metaKey:true,preventDefault(){throw Error('modified click intercepted')}});assert.equal(scrolls.length,2);
+target.closest=selector=>selector==='[data-flow-panel]'?{id:'phase-2'}:null;
+handlers.click({target:{closest:()=>({hash:'#detail'})},preventDefault(){}});assert.equal(clicks,1);assert.equal(scrolls.length,2,'flow deep links have a single scroll owner');
+console.log('PASS: single anchor scroll, nav offset, reduced motion, modified links, flow deep-link delegation');

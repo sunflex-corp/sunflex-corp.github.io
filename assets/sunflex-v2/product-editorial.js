@@ -46,13 +46,13 @@
     prev.addEventListener('click',()=>move(-1));next.addEventListener('click',()=>move(1));rail.addEventListener('scroll',update,{passive:true});
     window.addEventListener('resize',update);update();
   });
-  if('IntersectionObserver' in window&&!reduced.matches){
+  if('IntersectionObserver' in window&&!reduced.matches&&!document.querySelector('[data-motion-profile]')){
     const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('is-entering');observer.unobserve(entry.target);}}),{threshold:.08});
     document.querySelectorAll('.editorial-chapter').forEach(section=>observer.observe(section));
   }
   const motionSections=[...document.querySelectorAll('[data-product-motion]')];
-  const sceneSections=[...document.querySelectorAll('[data-archetype="wearable"] .chapter-focus.chapter-media')];
-  const flows=[...document.querySelectorAll('.editorial-flow')];
+  const sceneSections=document.querySelector('[data-motion-profile]')?[]:[...document.querySelectorAll('[data-archetype="wearable"] .chapter-focus.chapter-media')];
+  const flows=document.querySelector('[data-motion-profile]')?[]:[...document.querySelectorAll('.editorial-flow')];
   const clamp=value=>Math.min(1,Math.max(0,value));
   const ease=value=>{const t=clamp(value);return t*t*(3-2*t);};
   const compact=window.matchMedia('(max-height: 650px)');
@@ -100,5 +100,5 @@
   configure();
   // Fragment links into hidden model panels also work on direct arrival and back/forward.
   const revealHash=()=>{let id;try{id=decodeURIComponent(location.hash.slice(1));}catch{return;}const target=document.getElementById(id);if(!target)return;const panel=target.closest('[data-model-panel],[data-use-panel]');if(panel?.hidden){const button=document.querySelector(`[aria-controls="${panel.id}"]`);button?.click();target.scrollIntoView({block:'start'});}};
-  window.addEventListener('hashchange',revealHash);revealHash();
+  if(!document.querySelector('[data-motion-profile]')){window.addEventListener('hashchange',revealHash);revealHash();}
 })();

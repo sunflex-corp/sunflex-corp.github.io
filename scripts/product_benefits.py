@@ -10,17 +10,7 @@ IMAGES=json.loads((ROOT/'data/product-editorial-images.json').read_text())
 def build(slug, name, kind, soup):
     if slug not in BENEFITS:return ''
     stages=BENEFITS[slug]['stages']
-    # Detailed operating procedures stay accessible without another forced scroll journey.
-    for track in list(soup.select('[data-scroll-flow]')):
-        flow=track.select_one('.editorial-flow')
-        if not flow:continue
-        details=soup.new_tag('details',attrs={'class':'benefit-operation-details'})
-        summary=soup.new_tag('summary');summary.string='작동 순서와 운영 방법 살펴보기';details.append(summary)
-        flow.extract()
-        flow['class']=['benefit-operation-list']
-        for li in flow.find_all('li',recursive=False):
-            li.attrs.pop('data-flow-panel',None)
-        details.append(flow);track.replace_with(details)
+    # Preserve operating sequences; the shared controller sizes each story safely.
     tabs='';panels=''
     for i,s in enumerate(stages):
         ident=f'{slug}-benefit-{i}'
