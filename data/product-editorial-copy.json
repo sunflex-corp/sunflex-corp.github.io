@@ -577,6 +577,55 @@
         "before": "가려진 출입로, 서로의 접근을 알도록.",
         "after": "서로 보이지 않는 곳에 알림을.",
         "role": "chapter"
+      },
+      {
+        "selector": "#blind-corner h2",
+        "index": 0,
+        "before": "보행자 접근을 차량 쪽에도 알립니다.",
+        "after": "보이지 않아도, 접근은 알 수 있도록.",
+        "role": "chapter"
+      },
+      {
+        "selector": "#blind-corner ol li > span",
+        "index": 0,
+        "before": "시야 차단",
+        "after": "모퉁이 너머, 서로 보이지 않을 때.",
+        "role": "chapter"
+      },
+      {
+        "selector": "#blind-corner ol li > span",
+        "index": 1,
+        "before": "접근 감지",
+        "after": "사람의 접근을 먼저 감지하고.",
+        "role": "chapter"
+      },
+      {
+        "selector": "#blind-corner ol li > span",
+        "index": 2,
+        "before": "양쪽 경고",
+        "after": "알림은, 양쪽에 함께.",
+        "role": "chapter"
+      },
+      {
+        "selector": "#blind-corner ol li > p",
+        "index": 0,
+        "before": "방음벽 등 구조물 뒤에서 서로의 접근이 가려짐",
+        "after": "방음벽에 가려진 출입구. 운전자와 보행자는 가까워져도 서로의 접근을 보기 어렵습니다.",
+        "role": "chapter"
+      },
+      {
+        "selector": "#blind-corner ol li > p",
+        "index": 1,
+        "before": "센서 구간에 들어오는 보행자와 자전거를 감지",
+        "after": "인체감지 센서가 감지 구간으로 들어오는 보행자와 자전거의 접근을 감지합니다.",
+        "role": "chapter"
+      },
+      {
+        "selector": "#blind-corner ol li > p",
+        "index": 2,
+        "before": "차량과 보행자 쪽 전광판과 경광등이 함께 켜짐",
+        "after": "차량 쪽과 보행자 쪽 LED 전광판·경광등이 함께 알립니다. 모퉁이를 지나기 전, 양쪽에서 주변을 확인하도록 돕습니다.",
+        "role": "chapter"
       }
     ]
   },

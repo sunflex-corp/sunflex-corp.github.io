@@ -123,6 +123,9 @@ def build(p,group,g):
     if slug=='mobile-cctv':
         from mobile_cctv_editorial import enhance
         enhance(soup,rest)
+    if slug=='pedestrian-collision-prevention':
+        from pedestrian_editorial import enhance as enhance_pedestrian
+        enhance_pedestrian(soup)
     # Sequential workflows use one shared scroll story. Parallel choices stay side by side.
     if slug not in ['digital-radio','lte-anemometer','iot-small-tower-crane']:
         for flow in soup.select('.editorial-flow'):
@@ -132,7 +135,7 @@ def build(p,group,g):
             steps=flow.find_all('li',recursive=False)
             for i,step in enumerate(steps):
                 title=step.find('h3') or step.find('strong')
-                label=title.get_text(' ',strip=True) if title else f'{i+1}단계'
+                label=step.get('data-flow-label') or (title.get_text(' ',strip=True) if title else f'{i+1}단계')
                 ident=f'{slug}-flow-{i}'
                 step['id']=ident;step['data-flow-panel']=''
                 button=soup.new_tag('button',attrs={'type':'button','role':'tab','id':ident+'-tab','aria-controls':ident,'aria-selected':'true' if i==0 else 'false','tabindex':'0' if i==0 else '-1'})
