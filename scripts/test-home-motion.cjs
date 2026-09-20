@@ -10,7 +10,7 @@ function setup(reduce=false){
  const hero=element(),map=element(),play=element(),caption=element(),mapMotion=element();
  const slides=Array.from({length:3},()=>{const s=element();s.children.img={decode:()=>Promise.resolve()};return s});
  const buttons=Array.from({length:3},()=>{const b=element();b.children.i=element();return b});
- const choices=Array.from({length:3},element),panels=Array.from({length:3},element);
+ const choices=Array.from({length:4},element),panels=Array.from({length:4},element);
  const next=element(),prev=element(),status=element();
  hero.children={'.scene':slides,'[data-select]':buttons,'[data-play]':play,'.scene-caption':caption,'[data-next]':next,'[data-prev]':prev,'#scene-status':status,'.scene-controls':element()};
  caption.children={'.scene-topic':element(),'.scene-title':element(),'.scene-description':element()};
@@ -29,6 +29,7 @@ const flush=()=>new Promise(resolve=>setImmediate(resolve));
  t.prev.handlers.click();await flush();assert.equal(t.hero.dataset.current,'0');assert.equal(t.timers.size,0);
  t.prev.handlers.click();await flush();assert.equal(t.hero.dataset.current,'2');assert.equal(t.buttons[2].attrs['aria-pressed'],'true');
  t.choices[2].handlers.click();assert.equal(t.map.dataset.mode,'2');assert.equal(t.panels[2].hidden,false);assert.equal(t.panels[0].hidden,true);
+ t.choices[3].handlers.click();assert.equal(t.map.dataset.mode,'3');assert.equal(t.panels[3].hidden,false);assert.equal(t.panels[2].hidden,true);
  t.mapMotion.handlers.click();assert.equal(t.map.classList.contains('motion-off'),true);
  t.play.handlers.click();t.doc.hidden=true;t.doc.handlers.visibilitychange();assert.equal(t.timers.size,0);
  t.doc.hidden=false;t.doc.handlers.visibilitychange();assert.equal(t.timers.size,1);

@@ -16,7 +16,7 @@ This script targets THREE byte-identical shared blocks that appear on all
      product-menu-data.js (single source of truth for which products now
      belong to which of the 4 stages, including the air/detect+alert
      split), preserving product name/href text verbatim.
-  3. The mobile drawer's "MOVING 제품군" quick-filter list (5 axis-dot
+  3. The mobile drawer's "Solar 제품군" quick-filter list (5 axis-dot
      links to /products?category=X) -> 4 links using the new stage keys.
 
 Then, a second pass does a plain literal href replace for any remaining
@@ -80,7 +80,7 @@ def build_new_mega_solutions():
 
 OLD_MOBILE_DRAWER = (
     '<nav class="drawer__axes" aria-label="제품 축 바로가기" data-astro-cid-3xbwrhqs>'
-    '<p class="drawer__axes-label" data-astro-cid-3xbwrhqs>MOVING 제품군</p>'
+    '<p class="drawer__axes-label" data-astro-cid-3xbwrhqs>Solar 제품군</p>'
     '<div data-astro-cid-3xbwrhqs><ul data-astro-cid-3xbwrhqs>'
     '<li style="--axis-dot:var(--moving-eyes-badge)" data-astro-cid-3xbwrhqs>'
     '<a href="/products?category=eyes" data-astro-cid-3xbwrhqs>시각·관제</a></li>'
@@ -104,7 +104,7 @@ def build_new_mobile_drawer():
     )
     return (
         '<nav class="drawer__axes" aria-label="제품 축 바로가기" data-astro-cid-3xbwrhqs>'
-        '<p class="drawer__axes-label" data-astro-cid-3xbwrhqs>MOVING 제품군</p>'
+        '<p class="drawer__axes-label" data-astro-cid-3xbwrhqs>Solar 제품군</p>'
         f"<div data-astro-cid-3xbwrhqs><ul data-astro-cid-3xbwrhqs>{lis}</ul></div></nav>"
     )
 

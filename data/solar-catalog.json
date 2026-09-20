@@ -1,0 +1,2834 @@
+[
+  {
+    "slug": "mobile-cctv",
+    "name": "이동식 CCTV",
+    "category": "detect",
+    "subgroup": "CCTV·카메라",
+    "outcome": "이동식 CCTV 전원도 통신선도 없는 자리에 카메라를 세우고 공정이 옮겨 가면 함께 옮깁니다. ",
+    "problem": [
+      "monitoring"
+    ],
+    "process": [],
+    "installation": [
+      "mobile"
+    ],
+    "connectivity": [],
+    "images": [
+      {
+        "src": "/media/derived/product-mobile-cctv-device-768.avif",
+        "alt": "무빙캠 S 소형 제품 정면",
+        "width": "768",
+        "height": "960"
+      },
+      {
+        "src": "/media/derived/product-movingcam-m-768.avif",
+        "alt": "무빙캠 M 중형 제품 정면",
+        "width": "768",
+        "height": "1024"
+      },
+      {
+        "src": "/media/derived/product-mobile-cctv-max-studio-768.avif",
+        "alt": "무빙캠 L 대형 제품 정면",
+        "width": "768",
+        "height": "1365"
+      },
+      {
+        "src": "/media/derived/movingcam-l-front-tall-20260915-768.avif",
+        "alt": "긴 중앙 기둥과 지지 와이어, 태양광 패널 및 바퀴 4개를 갖춘 무빙캠 L 정면",
+        "width": "768",
+        "height": "1536"
+      },
+      {
+        "src": "/media/derived/product-mobile-cctv-problem-2560.avif",
+        "alt": "공정 이동 뒤 사각지대를 대조하는 현장 관리자",
+        "width": "2560",
+        "height": "1441"
+      },
+      {
+        "src": "/media/derived/product-mobile-cctv-scene-768.avif",
+        "alt": "흰 배경에서 정면으로 본 무빙캠 S",
+        "width": "768",
+        "height": "960"
+      }
+    ],
+    "sections": [
+      {
+        "id": "detail-1",
+        "title": "제품 개요"
+      },
+      {
+        "id": "mobile-cctv-lineup",
+        "title": "무빙캠 S. M. L."
+      },
+      {
+        "id": "movingcam-network",
+        "title": "크기는 S·M·L. 통신은 W·L."
+      },
+      {
+        "id": "movingcam-engineering",
+        "title": "현장마다 쓰임이 다르니까. 무빙캠도 다르게."
+      },
+      {
+        "id": "movingcam-site-view",
+        "title": "작업 구간이 바뀌면, CCTV도 그곳으로."
+      },
+      {
+        "id": "moving-control-pin",
+        "title": "달라진 작업면에 맞춰 카메라를 옮깁니다."
+      },
+      {
+        "id": "movingcam-coverage",
+        "title": "옮긴 뒤에는 촬영 범위와 연결 상태 확인."
+      },
+      {
+        "id": "detail-8",
+        "title": "사이즈는 셋. 구성은 현장에 맞게."
+      },
+      {
+        "id": "highlights",
+        "title": "주요 특징"
+      }
+    ],
+    "related": [
+      "chatgpt-cctv",
+      "mobile-bodycam"
+    ]
+  },
+  {
+    "slug": "mobile-bodycam",
+    "name": "이동식 바디캠 (일반 / WiFi & LTE)",
+    "category": "detect",
+    "subgroup": "CCTV·카메라",
+    "outcome": "이동식 바디캠 (일반 / WiFi & LTE) 관리자와 검측 담당자가 움직이는 곳에서 영상을 함께 기록합니다. ",
+    "problem": [
+      "inspection-record"
+    ],
+    "process": [
+      "record"
+    ],
+    "installation": [
+      "wearable"
+    ],
+    "connectivity": [],
+    "images": [
+      {
+        "src": "/media/derived/product-mobile-bodycam-restored-white-20260912-1082.webp",
+        "alt": "이동식 바디캠 제품",
+        "width": "1082",
+        "height": "1454"
+      },
+      {
+        "src": "/media/derived/product-mobile-bodycam-problem-2560.avif",
+        "alt": "검측 도구와 촬영 장비를 동시에 다루는 현장 담당자",
+        "width": "2560",
+        "height": "1441"
+      },
+      {
+        "src": "/media/derived/inspectcut-field-review-generated-2560.avif",
+        "alt": "현장에서 견고한 PC로 촬영한 기록을 다시 확인하는 담당자",
+        "width": "2560",
+        "height": "1441"
+      }
+    ],
+    "sections": [
+      {
+        "id": "detail-1",
+        "title": "제품 개요"
+      },
+      {
+        "id": "detail-2",
+        "title": "작업자의 시선에서 남기는 현장 기록."
+      },
+      {
+        "id": "bodycam-film",
+        "title": "고정 CCTV가 담지 못한 작업 장면까지."
+      },
+      {
+        "id": "detail-4",
+        "title": "검측과 작업 확인에 쓰는 촬영 기록."
+      },
+      {
+        "id": "highlights",
+        "title": "주요 특징"
+      }
+    ],
+    "related": [
+      "mobile-cctv",
+      "site-cms"
+    ]
+  },
+  {
+    "slug": "hook-bottom-camera",
+    "name": "이동형 크레인 후크 하방 카메라",
+    "category": "detect",
+    "subgroup": "CCTV·카메라",
+    "outcome": "이동형 크레인 후크 하방 카메라 후크 아래의 화물과 작업자를 운전석 화면에서 확인합니다. ",
+    "problem": [
+      "crane-lifting"
+    ],
+    "process": [
+      "lifting"
+    ],
+    "installation": [
+      "equipment-mounted"
+    ],
+    "connectivity": [],
+    "images": [
+      {
+        "src": "/media/derived/product-hook-bottom-camera-reference-white-20260912-1254.webp",
+        "alt": "이동형 크레인 후크 하방 카메라 제품",
+        "width": "1254",
+        "height": "1254"
+      },
+      {
+        "src": "/media/derived/product-hook-bottom-camera-problem-2560.avif",
+        "alt": "벽체 뒤 인양물 착지점을 유도하는 신호수",
+        "width": "2560",
+        "height": "1441"
+      }
+    ],
+    "sections": [
+      {
+        "id": "detail-1",
+        "title": "제품 개요"
+      },
+      {
+        "id": "detail-2",
+        "title": "운전석에서 가려진 후크 아래까지."
+      },
+      {
+        "id": "hook-two-views",
+        "title": "후크 아래 영상이 운전석 화면으로."
+      },
+      {
+        "id": "hook-checkpoints",
+        "title": "줄걸이부터 착지 주변까지 영상으로."
+      },
+      {
+        "id": "detail-5",
+        "title": "운전석의 영상과 지상의 유도를 함께."
+      },
+      {
+        "id": "detail-6",
+        "title": "인양 전, 부착 상태와 영상 수신부터."
+      },
+      {
+        "id": "highlights",
+        "title": "주요 특징"
+      }
+    ],
+    "related": [
+      "tower-crane-hook-collision",
+      "iot-small-tower-crane"
+    ]
+  },
+  {
+    "slug": "chatgpt-cctv",
+    "name": "챗GPT 기반 지능형 CCTV",
+    "category": "detect",
+    "subgroup": "CCTV·카메라",
+    "outcome": "챗GPT 기반 지능형 CCTV 위험 후보 장면을 알리고, 하루치 현장·안전 보고서 초안을 만듭니다. ",
+    "problem": [
+      "monitoring"
+    ],
+    "process": [],
+    "installation": [
+      "fixed"
+    ],
+    "connectivity": [],
+    "images": [
+      {
+        "src": "/media/derived/product-chatgpt-cctv-scene-2560.avif",
+        "alt": "안전관리자가 현장 CCTV 장면과 보고서 초안을 함께 보는 모습",
+        "width": "2560",
+        "height": "1441"
+      },
+      {
+        "src": "/media/derived/product-chatgpt-cctv-problem-2560.avif",
+        "alt": "여러 CCTV 화면과 안전 기록을 동시에 보는 안전관리자",
+        "width": "2560",
+        "height": "1441"
+      }
+    ],
+    "sections": [
+      {
+        "id": "detail-1",
+        "title": "제품 개요"
+      },
+      {
+        "id": "detail-2",
+        "title": "CCTV를 확인한 뒤, 보고서 초안까지."
+      },
+      {
+        "id": "scene-to-record",
+        "title": "CCTV 장면에서, 보고서 초안 까지"
+      },
+      {
+        "id": "detail-4",
+        "title": "AI는 장면을 정리하고 안전관리자는 현장을 판단하도록."
+      },
+      {
+        "id": "highlights",
+        "title": "주요 특징"
+      }
+    ],
+    "related": [
+      "mobile-cctv",
+      "site-cms"
+    ]
+  },
+  {
+    "slug": "safety-box",
+    "name": "안전종합상황판",
+    "category": "detect",
+    "subgroup": "통합 관제",
+    "outcome": "안전종합상황판 본사와 현장이 한 화면에서 출역·장비·안전 통계와 CCTV를 함께 봅니다. ",
+    "problem": [
+      "monitoring"
+    ],
+    "process": [],
+    "installation": [
+      "fixed"
+    ],
+    "connectivity": [],
+    "images": [
+      {
+        "src": "/media/derived/product-safety-box-scene-2560.avif",
+        "alt": "현장사무실에서 담당자 세 사람이 벽에 걸린 큰 화면을 함께 보며 현황을 논의하는 연출 이미지",
+        "width": "2560",
+        "height": "1441"
+      }
+    ],
+    "sections": [
+      {
+        "id": "detail-1",
+        "title": "제품 개요"
+      },
+      {
+        "id": "safety-summary",
+        "title": "현장 현황과 CCTV, 한 화면에."
+      },
+      {
+        "id": "control-screen",
+        "title": "자료를 오가는 수고는 줄이고, 현장 확인은 한 화면에서."
+      },
+      {
+        "id": "safety-decision",
+        "title": "현장 관리에 필요한 정보를 한곳에."
+      },
+      {
+        "id": "highlights",
+        "title": "주요 특징"
+      }
+    ],
+    "related": [
+      "site-cms",
+      "worker-access-gate"
+    ]
+  },
+  {
+    "slug": "site-cms",
+    "name": "현장 CMS 구축",
+    "category": "detect",
+    "subgroup": "통합 관제",
+    "outcome": "현장 CMS 구축 공정이 바뀔 때마다 CCTV 자리와 대수를 다시 잡습니다. ",
+    "problem": [
+      "monitoring"
+    ],
+    "process": [],
+    "installation": [
+      "fixed"
+    ],
+    "connectivity": [],
+    "images": [
+      {
+        "src": "/media/derived/product-site-cms-scene-2560.avif",
+        "alt": "공사 단계에 맞춰 자리를 옮긴 현장 CCTV와 관제 화면 모습",
+        "width": "2560",
+        "height": "1441"
+      },
+      {
+        "src": "/media/derived/site-cms-stage-early-768.avif",
+        "alt": "",
+        "width": "768",
+        "height": "1111"
+      },
+      {
+        "src": "/media/derived/site-cms-stage-mid-768.avif",
+        "alt": "",
+        "width": "768",
+        "height": "1111"
+      },
+      {
+        "src": "/media/derived/site-cms-stage-late-768.avif",
+        "alt": "",
+        "width": "768",
+        "height": "1111"
+      }
+    ],
+    "sections": [
+      {
+        "id": "detail-1",
+        "title": "제품 개요"
+      },
+      {
+        "id": "process-transition-line",
+        "title": "공정에 맞춰 달라지는 CCTV 배치."
+      },
+      {
+        "id": "detail-3",
+        "title": "착공부터 준공까지, 공정별 촬영 구간."
+      },
+      {
+        "id": "highlights",
+        "title": "주요 특징"
+      }
+    ],
+    "related": [
+      "safety-box",
+      "mobile-cctv",
+      "mobile-bodycam"
+    ]
+  },
+  {
+    "slug": "led-logo-light",
+    "name": "안전 사각지대 LED 로고라이트",
+    "category": "detect",
+    "subgroup": "시각 안내",
+    "outcome": "안전 사각지대 LED 로고라이트 어두운 사각지대 바닥에 안전 안내가 빛으로 그려집니다. ",
+    "problem": [
+      "monitoring"
+    ],
+    "process": [],
+    "installation": [
+      "fixed"
+    ],
+    "connectivity": [],
+    "images": [
+      {
+        "src": "/media/derived/product-led-logo-light-reference-white-20260912-1254.webp",
+        "alt": "안전 사각지대 LED 로고라이트 제품",
+        "width": "1254",
+        "height": "1254"
+      },
+      {
+        "src": "/media/derived/product-led-logo-light-problem-2560.avif",
+        "alt": "어두운 통로에서 안전 경계를 확인하는 현장 관리자",
+        "width": "2560",
+        "height": "1441"
+      }
+    ],
+    "sections": [
+      {
+        "id": "detail-1",
+        "title": "제품 개요"
+      },
+      {
+        "id": "detail-2",
+        "title": "어두운 보행로, 빛으로 전하는 안전 안내."
+      },
+      {
+        "id": "night-route-plan",
+        "title": "바닥에 남는 한 줄의 안내."
+      },
+      {
+        "id": "detail-4",
+        "title": "안내가 필요한 바닥에 빛으로 표시."
+      },
+      {
+        "id": "highlights",
+        "title": "주요 특징"
+      }
+    ],
+    "related": [
+      "pedestrian-collision-prevention",
+      "vehicle-entry-alert"
+    ]
+  },
+  {
+    "slug": "vehicle-entry-alert",
+    "name": "출입게이트 차량 진출입 알림",
+    "category": "detect",
+    "subgroup": "시각 안내",
+    "outcome": "출입게이트 차량 진출입 알림 쓰던 게이트를 그대로 두고 차와 사람이 만나는 지점마다 경고가 나뉩니다. ",
+    "problem": [
+      "crane-lifting"
+    ],
+    "process": [
+      "lifting"
+    ],
+    "installation": [
+      "fixed"
+    ],
+    "connectivity": [],
+    "images": [
+      {
+        "src": "/media/derived/product-vehicle-entry-alert-reference-white-stage3-20260912-1222.webp",
+        "alt": "차량 진출입 알림용 카메라 2대와 방송 스피커",
+        "width": "1222",
+        "height": "1287"
+      }
+    ],
+    "sections": [
+      {
+        "id": "detail-1",
+        "title": "제품 개요"
+      },
+      {
+        "id": "detail-2",
+        "title": "차량이 드나드는 순간, 보행자에게도 알림."
+      },
+      {
+        "id": "entry-alert-flow",
+        "title": "차량과 보행자의 접근을 감지해 경고합니다."
+      },
+      {
+        "id": "detail-4",
+        "title": "차량과 사람이 마주치는 곳에 경고를."
+      },
+      {
+        "id": "detail-5",
+        "title": "기존 게이트 추가 적용 구성"
+      },
+      {
+        "id": "highlights",
+        "title": "주요 특징"
+      }
+    ],
+    "related": [
+      "led-logo-light",
+      "pedestrian-collision-prevention"
+    ]
+  },
+  {
+    "slug": "co2-temp-humidity",
+    "name": "CO₂·온습도 탐지 시스템",
+    "category": "detect",
+    "subgroup": "환경·가스 측정",
+    "outcome": "CO₂·온습도 탐지 시스템 이산화탄소 농도와 온습도를 측정하고 기준을 넘으면 경고 방송을 보냅니다. ",
+    "problem": [
+      "environment"
+    ],
+    "process": [],
+    "installation": [
+      "fixed"
+    ],
+    "connectivity": [
+      "lte"
+    ],
+    "images": [
+      {
+        "src": "/media/derived/product-co2-temp-humidity-device-1280.avif",
+        "alt": "밀폐공간 입구에 설치한 이산화탄소·온습도 측정기와 LTE 모뎀 연출 이미지",
+        "width": "1280",
+        "height": "960"
+      },
+      {
+        "src": "/media/derived/product-co2-temp-humidity-scene-2560.avif",
+        "alt": "밀폐공간 입구에 이산화탄소·온습도 측정기를 설치하고 값을 확인하는 모습",
+        "width": "2560",
+        "height": "1441"
+      },
+      {
+        "src": "/media/derived/product-co2-temp-humidity-problem-2560.avif",
+        "alt": "문을 열어도 공기 상태를 눈으로 알기 어려운 밀폐공간 진입 전 상황",
+        "width": "2560",
+        "height": "1441"
+      }
+    ],
+    "sections": [
+      {
+        "id": "detail-1",
+        "title": "제품 개요"
+      },
+      {
+        "id": "detail-2",
+        "title": "공기 상태를 수치로 확인하는 방법."
+      },
+      {
+        "id": "air-check-line",
+        "title": "측정하고, 알리고, 기록으로 남깁니다."
+      },
+      {
+        "id": "detail-4",
+        "title": "관리자 화면에서 보는 측정값과 기록."
+      },
+      {
+        "id": "detail-5",
+        "title": "측정할 공간에 맞춘 센서 배치."
+      },
+      {
+        "id": "highlights",
+        "title": "주요 특징"
+      }
+    ],
+    "related": [
+      "gas-alarm",
+      "smart-environment-board"
+    ]
+  },
+  {
+    "slug": "iot-mist",
+    "name": "IoT 기반 미스트 분사 시스템",
+    "category": "detect",
+    "subgroup": "환경·가스 측정",
+    "outcome": "IoT 기반 미스트 분사 시스템 출입구에서 이는 먼지가 물입자에 붙어 바닥으로 가라앉습니다. ",
+    "problem": [
+      "environment"
+    ],
+    "process": [],
+    "installation": [
+      "fixed"
+    ],
+    "connectivity": [],
+    "images": [
+      {
+        "src": "/media/derived/product-iot-mist-device-1280.avif",
+        "alt": "물안개가 깔린 현장 진출입 도로를 걸어 이동하는 작업자 두 명 연출 이미지",
+        "width": "1280",
+        "height": "960"
+      },
+      {
+        "src": "/media/derived/product-iot-mist-scene-2560.avif",
+        "alt": "현장 출입구 상부 노즐에서 미세 물안개가 내려오는 모습",
+        "width": "2560",
+        "height": "1441"
+      },
+      {
+        "src": "/media/derived/product-iot-mist-problem-2560.avif",
+        "alt": "넓은 현장 도로의 분진을 호스 한 대로 따라가며 대응하는 작업자",
+        "width": "2560",
+        "height": "1441"
+      }
+    ],
+    "sections": [
+      {
+        "id": "detail-1",
+        "title": "제품 개요"
+      },
+      {
+        "id": "detail-2",
+        "title": "차량이 일으킨 먼지를 가라앉히는 미스트."
+      },
+      {
+        "id": "dust-gate",
+        "title": "출입구 위에서 분사하는 고압 미스트."
+      },
+      {
+        "id": "detail-4",
+        "title": "먼지에 붙어 함께 내려앉는 미세 물입자."
+      },
+      {
+        "id": "detail-5",
+        "title": "차량이 지나는 폭에 맞춰 노즐을 배치."
+      },
+      {
+        "id": "highlights",
+        "title": "주요 특징"
+      }
+    ],
+    "related": [
+      "smart-environment-board",
+      "co2-temp-humidity"
+    ]
+  },
+  {
+    "slug": "lte-anemometer",
+    "name": "네트워크(LTE) 풍속계",
+    "category": "detect",
+    "subgroup": "환경·가스 측정",
+    "outcome": "네트워크(LTE) 풍속계 크레인 꼭대기에서 잰 순간풍속과 평균풍속을 작업 판단 화면으로 보냅니다. ",
+    "problem": [
+      "environment"
+    ],
+    "process": [],
+    "installation": [
+      "fixed"
+    ],
+    "connectivity": [
+      "lte"
+    ],
+    "images": [
+      {
+        "src": "/media/derived/product-lte-anemometer-white-approved-20260912-1002.webp",
+        "alt": "LTE 풍속계 제품",
+        "width": "1002",
+        "height": "1570"
+      },
+      {
+        "src": "/media/derived/product-lte-anemometer-problem-2560.avif",
+        "alt": "고소 작업 구역의 바람을 수동으로 확인하는 현장",
+        "width": "2560",
+        "height": "1441"
+      }
+    ],
+    "sections": [
+      {
+        "id": "detail-1",
+        "title": "제품 개요"
+      },
+      {
+        "id": "detail-2",
+        "title": "높은 곳의 바람을, 지상에서 확인."
+      },
+      {
+        "id": "vertical-wind-section",
+        "title": "상부의 풍속이 지상의 화면으로."
+      },
+      {
+        "id": "detail-4",
+        "title": "측정할 높이와 위치에 맞춘 설치."
+      },
+      {
+        "id": "detail-5",
+        "title": "교대할 때도 같은 위치와 기준으로 확인."
+      },
+      {
+        "id": "highlights",
+        "title": "주요 특징"
+      }
+    ],
+    "related": [
+      "iot-small-tower-crane",
+      "smart-environment-board"
+    ]
+  },
+  {
+    "slug": "smart-environment-board",
+    "name": "스마트 환경전광판 · IoT 원격관리",
+    "category": "detect",
+    "subgroup": "환경·가스 측정",
+    "outcome": "스마트 환경전광판 · IoT 원격관리 먼지·소음·진동을 전광판에 띄우고 기준을 넘으면 미스트를 가동합니다. ",
+    "problem": [
+      "environment"
+    ],
+    "process": [],
+    "installation": [
+      "fixed"
+    ],
+    "connectivity": [],
+    "images": [
+      {
+        "src": "/media/derived/product-smart-environment-board-reference-white-20260912-1280.webp",
+        "alt": "스마트 환경전광판 제품",
+        "width": "1280",
+        "height": "1487"
+      },
+      {
+        "src": "/media/derived/product-smart-environment-board-problem-2560.avif",
+        "alt": "현장 경계에서 환경 수치를 확인하는 담당자",
+        "width": "2560",
+        "height": "1441"
+      }
+    ],
+    "sections": [
+      {
+        "id": "detail-1",
+        "title": "제품 개요"
+      },
+      {
+        "id": "detail-2",
+        "title": "환경 수치 확인과 장비 제어를 한곳에서."
+      },
+      {
+        "id": "environment-link",
+        "title": "환경 수치 확인부터 원격 장비 제어까지."
+      },
+      {
+        "id": "detail-4",
+        "title": "환경 측정값 옆에 장비 작동 상태도."
+      },
+      {
+        "id": "highlights",
+        "title": "주요 특징"
+      }
+    ],
+    "related": [
+      "co2-temp-humidity",
+      "iot-mist"
+    ]
+  },
+  {
+    "slug": "compact-gas-detector",
+    "name": "소형 복합가스 측정기",
+    "category": "detect",
+    "subgroup": "환경·가스 측정",
+    "outcome": "소형 복합가스 측정기 작업 전에 옮겨 설치해 가스 농도를 측정하고, LTE로 관리자 화면에 전송합니다. ",
+    "problem": [
+      "environment"
+    ],
+    "process": [],
+    "installation": [
+      "mobile"
+    ],
+    "connectivity": [
+      "lte"
+    ],
+    "images": [
+      {
+        "src": "/media/derived/product-compact-gas-detector-reference-white-stage3-20260912-1083.webp",
+        "alt": "소형 복합가스측정기 제품",
+        "width": "1083",
+        "height": "1452"
+      },
+      {
+        "src": "/media/derived/product-compact-gas-detector-diagram-453.avif",
+        "alt": "주황색 소형 복합가스 측정기와 LTE 원격 확인 구성도",
+        "width": "453",
+        "height": "255"
+      }
+    ],
+    "sections": [
+      {
+        "id": "detail-1",
+        "title": "제품 개요"
+      },
+      {
+        "id": "detail-2",
+        "title": "작업할 구역에 먼저 설치하는 측정기"
+      },
+      {
+        "id": "gas-measurement-flow",
+        "title": "측정한 가스 농도는 관리자 화면으로"
+      },
+      {
+        "id": "detail-4",
+        "title": "지난 측정값도 엑셀로 내려받아 검토"
+      },
+      {
+        "id": "detail-5",
+        "title": "어디에 설치하고, 누가 경고를 확인할지."
+      },
+      {
+        "id": "highlights",
+        "title": "주요 특징"
+      }
+    ],
+    "related": [
+      "gas-alarm",
+      "co2-temp-humidity",
+      "safety-box"
+    ]
+  },
+  {
+    "slug": "gas-alarm",
+    "name": "유해가스 및 폭발성 가스 경보 시스템",
+    "category": "detect",
+    "subgroup": "환경·가스 측정",
+    "outcome": "유해가스 및 폭발성 가스 경보 시스템 밀폐공간의 가스 농도를 재고 기준값에 닿으면 현장과 관리자에게 알립니다. ",
+    "problem": [
+      "environment"
+    ],
+    "process": [],
+    "installation": [
+      "fixed"
+    ],
+    "connectivity": [],
+    "images": [
+      {
+        "src": "/media/derived/product-gas-alarm-white-approved-20260912-933.webp",
+        "alt": "가스 경보기 제품",
+        "width": "933",
+        "height": "1686"
+      },
+      {
+        "src": "/media/derived/product-gas-alarm-problem-2560.avif",
+        "alt": "보이지 않는 위험을 판단하기 어려운 밀폐공간 진입 전 점검",
+        "width": "2560",
+        "height": "1441"
+      }
+    ],
+    "sections": [
+      {
+        "id": "detail-1",
+        "title": "제품 개요"
+      },
+      {
+        "id": "detail-2",
+        "title": "들어가기 전, 가스 농도부터."
+      },
+      {
+        "id": "entrance-decision-line",
+        "title": "가스를 측정하고, 현장 기준에 따라 판단."
+      },
+      {
+        "id": "detail-4",
+        "title": "전광판에서 웹·앱까지, 같은 측정값을."
+      },
+      {
+        "id": "detail-5",
+        "title": "측정할 가스에 맞춘 센서 구성."
+      },
+      {
+        "id": "highlights",
+        "title": "주요 특징"
+      }
+    ],
+    "related": [
+      "compact-gas-detector",
+      "co2-temp-humidity",
+      "hazard-area-broadcast"
+    ]
+  },
+  {
+    "slug": "tilt-acceleration-sensor",
+    "name": "기울기변위 · 가속도변화 알림센서",
+    "category": "detect",
+    "subgroup": "구조물 계측",
+    "outcome": "기울기변위 · 가속도변화 알림센서 가설구조물이 기울기 시작하면 기록에 남고 기준을 넘으면 현장 사이렌이 울립니다. ",
+    "problem": [
+      "environment"
+    ],
+    "process": [],
+    "installation": [
+      "fixed"
+    ],
+    "connectivity": [],
+    "images": [
+      {
+        "src": "/media/derived/product-tilt-acceleration-sensor-reference-white-20260912-1254.webp",
+        "alt": "기울기·가속도 변화 알림센서 제품",
+        "width": "1254",
+        "height": "1254"
+      },
+      {
+        "src": "/media/derived/product-tilt-acceleration-sensor-problem-2560.avif",
+        "alt": "가설구조물의 작은 변화를 수평계와 이전 표시로 대조하는 담당자",
+        "width": "2560",
+        "height": "1441"
+      },
+      {
+        "src": "/media/derived/field-tilt-sensor-mount-generated-2560.avif",
+        "alt": "흙막이 벽체와 버팀보를 올려다보며 계측 지점을 짚어 이야기하는 담당자 두 명 연출 이미지",
+        "width": "2560",
+        "height": "1441"
+      },
+      {
+        "src": "/media/derived/field-tilt-sensor-zero-generated-2560.avif",
+        "alt": "계측 담당자가 태블릿으로 센서 영점을 잡는 모습",
+        "width": "2560",
+        "height": "1440"
+      }
+    ],
+    "sections": [
+      {
+        "id": "detail-1",
+        "title": "제품 개요"
+      },
+      {
+        "id": "detail-2",
+        "title": "구조물의 작은 기울기 변화까지 기록."
+      },
+      {
+        "id": "tilt-decision-record",
+        "title": "계측값과 알림을 확인하고 구조물 상태를 점검합니다."
+      },
+      {
+        "id": "detail-4",
+        "title": "설치부터 영점 조정까지, 계측의 준비."
+      },
+      {
+        "id": "detail-5",
+        "title": "변화는 기록으로, 기준 초과는 알림으로."
+      },
+      {
+        "id": "highlights",
+        "title": "주요 특징"
+      }
+    ],
+    "related": [
+      "ai-drone-inspection",
+      "site-cms"
+    ]
+  },
+  {
+    "slug": "fire-detection",
+    "name": "화재 발생 감지 시스템",
+    "category": "detect",
+    "subgroup": "화재·불꽃 감지",
+    "outcome": "화재 발생 감지 시스템 불꽃을 감지하면 대피 안내 방송과 관리자 알림이 함께 나갑니다. ",
+    "problem": [
+      "environment"
+    ],
+    "process": [],
+    "installation": [
+      "fixed"
+    ],
+    "connectivity": [],
+    "images": [
+      {
+        "src": "/media/derived/product-fire-detection-device-1280.avif",
+        "alt": "기둥과 벽에 설치한 불꽃감지 센서와 중계기 연출 이미지",
+        "width": "1280",
+        "height": "960"
+      },
+      {
+        "src": "/media/derived/product-fire-detection-scene-2560.avif",
+        "alt": "자재와 전기 설비가 몰린 자리에 불꽃감지 센서를 설치하고 상태를 확인하는 모습",
+        "width": "2560",
+        "height": "1441"
+      },
+      {
+        "src": "/media/derived/product-fire-detection-problem-2560.avif",
+        "alt": "자재와 전기 설비가 몰린 자리에서 불꽃을 살피는 현장",
+        "width": "2560",
+        "height": "1441"
+      }
+    ],
+    "sections": [
+      {
+        "id": "detail-1",
+        "title": "제품 개요"
+      },
+      {
+        "id": "detail-2",
+        "title": "불꽃 감지 신호를 대피 안내로."
+      },
+      {
+        "id": "first-signal-line",
+        "title": "불꽃 감지에서, 대피 안내까지."
+      },
+      {
+        "id": "detail-4",
+        "title": "현장에는 대피 방송, 관리자에게는 알림."
+      },
+      {
+        "id": "detail-5",
+        "title": "감지가 필요한 위치부터 확인합니다."
+      },
+      {
+        "id": "highlights",
+        "title": "주요 특징"
+      }
+    ],
+    "related": [
+      "wireless-emergency-broadcast",
+      "gas-alarm"
+    ]
+  },
+  {
+    "slug": "ir3-flame-detector",
+    "name": "스마트 화재감지기",
+    "category": "detect",
+    "subgroup": "화재·불꽃 감지",
+    "outcome": "스마트 화재감지기 현장 경보·관리자 알림 중심의 기본형과 CCTV 영상 관제 중심의 결합형으로 준비합니다. 기본형: 현장 경보와 클라우드 관리자 알림 이동식 CCTV 결합형: 관제실 화재 영상 팝업",
+    "problem": [
+      "environment"
+    ],
+    "process": [],
+    "installation": [
+      "fixed",
+      "mobile"
+    ],
+    "connectivity": [
+      "lte"
+    ],
+    "images": [
+      {
+        "src": "/media/derived/product-ir3-flame-detector-461.avif",
+        "alt": "창성에이스산업 CS-TIE-C30 스마트 화재감지기",
+        "width": "461",
+        "height": "425"
+      },
+      {
+        "src": "/media/derived/product-ir3-cctv-clean-934d88cde7d0.png",
+        "alt": "무빙캠 S에 불꽃감지기를 정면으로 장착한 구성",
+        "width": "768",
+        "height": "960"
+      }
+    ],
+    "sections": [
+      {
+        "id": "detail-1",
+        "title": "제품 개요"
+      },
+      {
+        "id": "detail-2",
+        "title": "불꽃을 감지하고. 현장에 맞게 확인하고."
+      },
+      {
+        "id": "ir3-system",
+        "title": "불꽃 감지부터 현장 경보와 관리자 알림까지."
+      },
+      {
+        "id": "ir3-configurations",
+        "title": "같은 감지 기술. 확인 방식은 두 가지."
+      },
+      {
+        "id": "ir3-signal",
+        "title": "현장에는 경고를. 떨어진 관리자에게는 알림을."
+      },
+      {
+        "id": "ir3-video",
+        "title": "경보가 울린 현장, 영상으로 확인하세요."
+      },
+      {
+        "id": "detail-7",
+        "title": "현장에 필요한 확인 방식을 고르세요."
+      },
+      {
+        "id": "ir3-specs",
+        "title": "CS-TIE-C30. 3파장 적외선으로 불꽃을 감지합니다."
+      },
+      {
+        "id": "ir3-conditions",
+        "title": "현장에 맞는 구성, 세 가지부터 확인하세요."
+      }
+    ],
+    "related": [
+      "mobile-cctv",
+      "fire-detection"
+    ]
+  },
+  {
+    "slug": "ai-broadcast",
+    "name": "AI 방송시스템 · 다국어 자동번역",
+    "category": "alert",
+    "subgroup": "방송·소통",
+    "outcome": "AI 방송시스템 · 다국어 자동번역 한 번 입력한 안전 공지를 여러 언어의 음성과 화면으로 전달합니다. ",
+    "problem": [
+      "education-translation"
+    ],
+    "process": [],
+    "installation": [
+      "fixed"
+    ],
+    "connectivity": [],
+    "images": [
+      {
+        "src": "/media/derived/product-ai-broadcast-restored-white-20260912-1173.webp",
+        "alt": "AI 방송시스템 · 다국어 자동번역 제품",
+        "width": "1173",
+        "height": "1341"
+      }
+    ],
+    "sections": [
+      {
+        "id": "detail-1",
+        "title": "제품 개요"
+      },
+      {
+        "id": "language-lanes",
+        "title": "같은 안전 안내를, 각자의 언어로."
+      },
+      {
+        "id": "detail-3",
+        "title": "안내를 고르면, 다국어 음성으로 방송."
+      },
+      {
+        "id": "highlights",
+        "title": "주요 특징"
+      }
+    ],
+    "related": [
+      "hazard-area-broadcast",
+      "tbm-solution"
+    ]
+  },
+  {
+    "slug": "wireless-emergency-broadcast",
+    "name": "무선방송장치(비상방송)",
+    "category": "alert",
+    "subgroup": "방송·소통",
+    "outcome": "무선방송장치(비상방송) 케이블을 깔지 않고도 고소 구간까지 비상경고음과 안내방송을 내보냅니다. ",
+    "problem": [
+      "emergency-alert"
+    ],
+    "process": [],
+    "installation": [
+      "fixed"
+    ],
+    "connectivity": [],
+    "images": [
+      {
+        "src": "/media/derived/product-wireless-emergency-broadcast-reference-white-20260912-707.webp",
+        "alt": "무선 비상방송 장치 제품",
+        "width": "707",
+        "height": "548"
+      }
+    ],
+    "sections": [
+      {
+        "id": "detail-1",
+        "title": "제품 개요"
+      },
+      {
+        "id": "detail-2",
+        "title": "작업층이 올라가면, 방송도 그곳으로."
+      },
+      {
+        "id": "broadcast-reach-line",
+        "title": "통신 케이블 없이 방송 신호를 전송합니다."
+      },
+      {
+        "id": "detail-4",
+        "title": "일상 안내부터 비상경고음까지 전달."
+      },
+      {
+        "id": "detail-5",
+        "title": "작업 구간에 맞춰 옮기는 방송 장치."
+      },
+      {
+        "id": "highlights",
+        "title": "주요 특징"
+      }
+    ],
+    "related": [
+      "digital-radio",
+      "emergency-signal-location"
+    ]
+  },
+  {
+    "slug": "digital-radio",
+    "name": "유니모 SE-400 디지털 무전기",
+    "category": "alert",
+    "subgroup": "방송·소통",
+    "outcome": "유니모 SE-400 디지털 무전기 주변 소음을 걸러낸 디지털 음성이라, 장비가 도는 자리에서도 무전이 또렷합니다. ",
+    "problem": [
+      "emergency-alert"
+    ],
+    "process": [
+      "alert"
+    ],
+    "installation": [
+      "mobile"
+    ],
+    "connectivity": [
+      "offline-capable"
+    ],
+    "images": [
+      {
+        "src": "/media/derived/product-digital-radio-white-approved-20260912-1254.webp",
+        "alt": "디지털 무전기 제품",
+        "width": "1254",
+        "height": "1254"
+      },
+      {
+        "src": "/media/derived/product-digital-radio-problem-2560.avif",
+        "alt": "비와 소음 속에서 끊긴 교신을 다시 확인하는 작업자",
+        "width": "2560",
+        "height": "1441"
+      }
+    ],
+    "sections": [
+      {
+        "id": "detail-1",
+        "title": "제품 개요"
+      },
+      {
+        "id": "detail-2",
+        "title": "작업조 연락부터 전체 공지까지."
+      },
+      {
+        "id": "radio-paths",
+        "title": "버튼 한 번으로, 통화 대상은 다르게."
+      },
+      {
+        "id": "detail-4",
+        "title": "지급과 회수부터 충전 상태까지 관리."
+      },
+      {
+        "id": "highlights",
+        "title": "주요 특징"
+      }
+    ],
+    "related": [
+      "wireless-emergency-broadcast",
+      "emergency-signal-location"
+    ]
+  },
+  {
+    "slug": "tbm-solution",
+    "name": "안전 조회장 & TBM 솔루션 구축",
+    "category": "alert",
+    "subgroup": "방송·소통",
+    "outcome": "안전 조회장 & TBM 솔루션 구축 작업 전 안전점검(TBM) 화면과 방송을 조회장과 지하 작업 구간에 맞춰 전달합니다. ",
+    "problem": [
+      "education-translation"
+    ],
+    "process": [],
+    "installation": [
+      "fixed"
+    ],
+    "connectivity": [],
+    "images": [
+      {
+        "src": "/media/derived/product-tbm-solution-reference-white-20260912-941.webp",
+        "alt": "안전 조회장· TBM 솔루션 제품",
+        "width": "941",
+        "height": "1672"
+      },
+      {
+        "src": "/media/derived/product-tbm-solution-problem-2560.avif",
+        "alt": "야외 조회에서 작업 내용을 전달하는 모습",
+        "width": "2560",
+        "height": "1441"
+      }
+    ],
+    "sections": [
+      {
+        "id": "detail-1",
+        "title": "제품 개요"
+      },
+      {
+        "id": "detail-2",
+        "title": "오늘의 안전교육, 화면과 소리로 함께."
+      },
+      {
+        "id": "tbm-delivery-flow",
+        "title": "오늘의 위험을 함께 보고, 작업 전 주의사항을 확인하세요."
+      },
+      {
+        "id": "detail-4",
+        "title": "교육자는 설명하고, 작업자는 화면으로 확인합니다."
+      },
+      {
+        "id": "tbm-essentials",
+        "title": "야외·지하·공종별 교육, 현장에 맞는 구성을 선택하세요."
+      },
+      {
+        "id": "highlights",
+        "title": "주요 특징"
+      }
+    ],
+    "related": [
+      "ai-similar-accident-alert",
+      "ai-quick-risk-assessment"
+    ]
+  },
+  {
+    "slug": "ai-equipment-collision",
+    "name": "AI 중장비 충돌 감지기",
+    "category": "alert",
+    "subgroup": "접근·위험 경보",
+    "outcome": "AI 중장비 충돌 감지기 장비 주변에 사람이 접근하면 운전자와 보행자에게 경고합니다. ",
+    "problem": [
+      "crane-lifting"
+    ],
+    "process": [
+      "lifting"
+    ],
+    "installation": [
+      "equipment-mounted"
+    ],
+    "connectivity": [],
+    "images": [
+      {
+        "src": "/media/derived/product-ai-equipment-collision-scene-2560.avif",
+        "alt": "중장비 뒤쪽에 붙인 카메라가 접근하는 작업자를 잡아 경고하는 모습",
+        "width": "2560",
+        "height": "1441"
+      },
+      {
+        "src": "/media/derived/product-ai-equipment-collision-problem-2560.avif",
+        "alt": "적재물 때문에 중장비 뒤쪽 시야를 확인하기 어려운 현장",
+        "width": "2560",
+        "height": "1441"
+      }
+    ],
+    "sections": [
+      {
+        "id": "detail-1",
+        "title": "제품 개요"
+      },
+      {
+        "id": "detail-2",
+        "title": "장비 사각지대의 사람을 감지합니다."
+      },
+      {
+        "id": "warning-state",
+        "title": "사각지대에 들어선 순간, 운전석과 보행자 동시 경고 ."
+      },
+      {
+        "id": "detail-4",
+        "title": "운전자와 보행자가 장비 접근을 함께 확인합니다."
+      },
+      {
+        "id": "highlights",
+        "title": "주요 특징"
+      }
+    ],
+    "related": [
+      "equipment-approach-alarm",
+      "pedestrian-collision-prevention"
+    ]
+  },
+  {
+    "slug": "opening-open-close-sensor",
+    "name": "개구부 개폐 감지 시스템",
+    "category": "alert",
+    "subgroup": "접근·위험 경보",
+    "outcome": "개구부 개폐 감지 시스템 개구부가 열리면 경고 방송과 상황판·앱 알림을 함께 보냅니다. ",
+    "problem": [
+      "emergency-alert"
+    ],
+    "process": [],
+    "installation": [
+      "fixed"
+    ],
+    "connectivity": [],
+    "images": [
+      {
+        "src": "/media/derived/product-opening-open-close-sensor-device-1280.avif",
+        "alt": "개구부 덮개에 부착한 마그네틱 센서와 LoRa 중계기 연출 이미지",
+        "width": "1280",
+        "height": "960"
+      },
+      {
+        "src": "/media/derived/product-opening-open-close-sensor-scene-2560.avif",
+        "alt": "슬래브 개구부 덮개에 마그네틱 센서를 설치하고 확인하는 모습",
+        "width": "2560",
+        "height": "1441"
+      },
+      {
+        "src": "/media/derived/product-opening-open-close-sensor-problem-2560.avif",
+        "alt": "작업 중 열어 둔 개구부가 다시 덮였는지 확인하기 어려운 상황",
+        "width": "2560",
+        "height": "1441"
+      }
+    ],
+    "sections": [
+      {
+        "id": "detail-1",
+        "title": "제품 개요"
+      },
+      {
+        "id": "detail-2",
+        "title": "열린 덮개, 방송과 알림으로 확인."
+      },
+      {
+        "id": "opening-alert-line",
+        "title": "덮개가 열리면, 방송과 알림으로."
+      },
+      {
+        "id": "detail-4",
+        "title": "덮개 열림 상태를 현장과 관리자가 함께 확인."
+      },
+      {
+        "id": "detail-5",
+        "title": "덮개 형태에 맞춰 설치합니다."
+      },
+      {
+        "id": "highlights",
+        "title": "주요 특징"
+      }
+    ],
+    "related": [
+      "smart-safety-hook",
+      "hazard-area-broadcast"
+    ]
+  },
+  {
+    "slug": "equipment-approach-alarm",
+    "name": "건설장비 접근경보 시스템",
+    "category": "alert",
+    "subgroup": "접근·위험 경보",
+    "outcome": "건설장비 접근경보 시스템 작업 반경 안의 접근을 감지해 운전자와 보행자에게 경고합니다. ",
+    "problem": [
+      "crane-lifting"
+    ],
+    "process": [
+      "lifting"
+    ],
+    "installation": [
+      "equipment-mounted"
+    ],
+    "connectivity": [],
+    "images": [
+      {
+        "src": "/media/derived/product-equipment-approach-alarm-restored-white-20260912-1254.webp",
+        "alt": "건설장비 접근경보 시스템 제품",
+        "width": "1254",
+        "height": "1254"
+      },
+      {
+        "src": "/media/derived/product-equipment-approach-alarm-problem-2560.avif",
+        "alt": "운전석 사각에 가려 작업 반경 안의 보행자가 보이지 않는 상황",
+        "width": "2560",
+        "height": "1441"
+      }
+    ],
+    "sections": [
+      {
+        "id": "detail-1",
+        "title": "제품 개요"
+      },
+      {
+        "id": "detail-2",
+        "title": "작업 반경 안의 접근, 양쪽에 경고."
+      },
+      {
+        "id": "work-radius-line",
+        "title": "접근을 감지하면, 양쪽에 경고합니다."
+      },
+      {
+        "id": "detail-4",
+        "title": "운전석에도, 장비 주변에도."
+      },
+      {
+        "id": "detail-5",
+        "title": "보기 어려운 방향에 맞춰 설치합니다."
+      },
+      {
+        "id": "highlights",
+        "title": "주요 특징"
+      }
+    ],
+    "related": [
+      "ai-equipment-collision",
+      "pedestrian-collision-prevention"
+    ]
+  },
+  {
+    "slug": "tower-crane-hook-collision",
+    "name": "타워크레인 후크 이동 경고방송",
+    "category": "alert",
+    "subgroup": "접근·위험 경보",
+    "outcome": "타워크레인 후크 이동 경고방송 후크 아래에서 일하던 사람이 소리로 먼저 알아차립니다. ",
+    "problem": [
+      "crane-lifting"
+    ],
+    "process": [
+      "lifting"
+    ],
+    "installation": [
+      "equipment-mounted"
+    ],
+    "connectivity": [],
+    "images": [
+      {
+        "src": "/media/derived/product-tower-crane-hook-collision-reference-white-20260912-1080.webp",
+        "alt": "타워크레인 후크 이동 경고방송 제품",
+        "width": "1080",
+        "height": "1080"
+      }
+    ],
+    "sections": [
+      {
+        "id": "detail-1",
+        "title": "제품 개요"
+      },
+      {
+        "id": "detail-2",
+        "title": "후크 이동을 아래 작업자에게 알립니다."
+      },
+      {
+        "id": "hook-warning-flow",
+        "title": "후크가 움직일 때, 하부에는 경고방송."
+      },
+      {
+        "id": "detail-4",
+        "title": "3개국어로 전하는 후크 이동 경고."
+      },
+      {
+        "id": "detail-5",
+        "title": "후크 아래에서도 이동을 알아차리도록."
+      },
+      {
+        "id": "detail-6",
+        "title": "방송과 카메라를 함께 활용하는 구성."
+      },
+      {
+        "id": "highlights",
+        "title": "주요 특징"
+      }
+    ],
+    "related": [
+      "hook-bottom-camera",
+      "lte-anemometer"
+    ]
+  },
+  {
+    "slug": "emergency-signal-location",
+    "name": "안전모 응급호출·위치알림",
+    "category": "alert",
+    "subgroup": "응급·위험 안내",
+    "outcome": "안전모 응급호출·위치알림 쓰러진 사람이 어디인지 말하지 않아도, 위치는 이미 전화와 문자로 가 있습니다. ",
+    "problem": [
+      "emergency-alert"
+    ],
+    "process": [],
+    "installation": [
+      "wearable"
+    ],
+    "connectivity": [],
+    "images": [
+      {
+        "src": "/media/derived/product-emergency-signal-location-restored-20260913-1280.webp",
+        "alt": "안전모 응급호출·위치알림 제품",
+        "width": "1281",
+        "height": "1227"
+      },
+      {
+        "src": "/media/derived/product-emergency-signal-location-problem-2560.avif",
+        "alt": "넓은 구조물 안에서 자신의 위치를 설명하며 도움을 요청하는 작업자",
+        "width": "2560",
+        "height": "1441"
+      }
+    ],
+    "sections": [
+      {
+        "id": "detail-1",
+        "title": "제품 개요"
+      },
+      {
+        "id": "detail-2",
+        "title": "응급호출에 위치 정보를 더합니다."
+      },
+      {
+        "id": "tunnel-call",
+        "title": "버튼 하나로 전화 시도와 위치 문자 전송."
+      },
+      {
+        "id": "detail-4",
+        "title": "호출 신호와 위치 정보로 대응을 준비."
+      },
+      {
+        "id": "highlights",
+        "title": "주요 특징"
+      }
+    ],
+    "related": [
+      "digital-radio",
+      "wireless-emergency-broadcast"
+    ]
+  },
+  {
+    "slug": "hazard-area-broadcast",
+    "name": "위험지역 안내방송 장치",
+    "category": "alert",
+    "subgroup": "응급·위험 안내",
+    "outcome": "위험지역 안내방송 장치 글자를 읽지 않고 지나가는 사람에게도 경고가 귀로 닿습니다. ",
+    "problem": [
+      "emergency-alert"
+    ],
+    "process": [],
+    "installation": [
+      "mobile"
+    ],
+    "connectivity": [],
+    "images": [
+      {
+        "src": "/media/derived/product-hazard-area-broadcast-reference-white-20260912-1254.webp",
+        "alt": "위험지역 안내방송 장치 제품",
+        "width": "1254",
+        "height": "1254"
+      },
+      {
+        "src": "/media/derived/product-hazard-area-broadcast-problem-2560.avif",
+        "alt": "소음이 큰 위험구역에서 사람의 목소리와 손짓으로 통제하는 모습",
+        "width": "2560",
+        "height": "1441"
+      }
+    ],
+    "sections": [
+      {
+        "id": "detail-1",
+        "title": "제품 개요"
+      },
+      {
+        "id": "detail-2",
+        "title": "위험 구역에 다가서면, 음성으로 경고."
+      },
+      {
+        "id": "walking-boundary",
+        "title": "위험 구역 접근을 감지해 음성으로 알립니다."
+      },
+      {
+        "id": "detail-4",
+        "title": "구역마다 다른 위험, 안내 문구도 다르게."
+      },
+      {
+        "id": "detail-5",
+        "title": "설치 위치에 맞춰 고르는 전원 방식."
+      },
+      {
+        "id": "highlights",
+        "title": "주요 특징"
+      }
+    ],
+    "related": [
+      "ai-broadcast",
+      "wireless-emergency-broadcast"
+    ]
+  },
+  {
+    "slug": "pedestrian-collision-prevention",
+    "name": "공사현장 주변 보행자 충돌방지 시스템",
+    "category": "alert",
+    "subgroup": "작업자 안전·위치",
+    "outcome": "공사현장 주변 보행자 충돌방지 시스템 가려진 교차로의 보행자를 감지해 양쪽에 경고합니다. ",
+    "problem": [
+      "crane-lifting"
+    ],
+    "process": [
+      "lifting"
+    ],
+    "installation": [
+      "equipment-mounted"
+    ],
+    "connectivity": [],
+    "images": [
+      {
+        "src": "/media/derived/product-pedestrian-collision-prevention-reference-white-stage3-20260912-1280.webp",
+        "alt": "보행자 충돌방지용 경고 전광판",
+        "width": "1280",
+        "height": "720"
+      },
+      {
+        "src": "/media/derived/product-pedestrian-collision-prevention-problem-2560.avif",
+        "alt": "방음벽 모서리에서 차량과 보행자 동선을 살피는 신호수",
+        "width": "2560",
+        "height": "1441"
+      }
+    ],
+    "sections": [
+      {
+        "id": "detail-1",
+        "title": "제품 개요"
+      },
+      {
+        "id": "detail-2",
+        "title": "가려진 출입로, 서로의 접근을 알도록."
+      },
+      {
+        "id": "blind-corner",
+        "title": "보행자 접근을 차량 쪽에도 알립니다."
+      },
+      {
+        "id": "detail-4",
+        "title": "현장 출입구에서 인접 보행로까지."
+      },
+      {
+        "id": "highlights",
+        "title": "주요 특징"
+      }
+    ],
+    "related": [
+      "ai-equipment-collision",
+      "vehicle-entry-alert"
+    ]
+  },
+  {
+    "slug": "alcohol-detection",
+    "name": "근로자 스마트 음주감지 시스템",
+    "category": "alert",
+    "subgroup": "작업자 안전·위치",
+    "outcome": "근로자 스마트 음주감지 시스템 출입게이트에서 음주 여부를 확인하고 결과를 관제 화면으로 보냅니다. ",
+    "problem": [
+      "worker-protection"
+    ],
+    "process": [],
+    "installation": [
+      "fixed",
+      "mobile"
+    ],
+    "connectivity": [],
+    "images": [
+      {
+        "src": "/media/derived/product-alcohol-studio-20260910-768.avif",
+        "alt": "흰 배경의 음주감지기: 검은 단말기, 초록색 감지부, 적녹 경광등과 노란 제어함",
+        "width": "768",
+        "height": "1152"
+      },
+      {
+        "src": "/media/derived/product-alcohol-detection-problem-2560.avif",
+        "alt": "교대 시작 전 출입 게이트 앞에서 대기 중인 근로자와 관리자",
+        "width": "2560",
+        "height": "1441"
+      }
+    ],
+    "sections": [
+      {
+        "id": "detail-1",
+        "title": "제품 개요"
+      },
+      {
+        "id": "detail-2",
+        "title": "작업 전 음주 측정, 결과 확인까지."
+      },
+      {
+        "id": "shift-start-gate",
+        "title": "출입 전에 측정하고, 재확인은 한 번 더."
+      },
+      {
+        "id": "detail-4",
+        "title": "측정은 게이트에서, 결과 확인은 관제 화면에서"
+      },
+      {
+        "id": "highlights",
+        "title": "주요 특징"
+      }
+    ],
+    "related": [
+      "worker-access-gate",
+      "healthcare-heart-band"
+    ]
+  },
+  {
+    "slug": "smart-beacon",
+    "name": "위험지역 근로자 위치확인 · 스마트 비콘",
+    "category": "alert",
+    "subgroup": "작업자 안전·위치",
+    "outcome": "위험지역 근로자 위치확인 · 스마트 비콘 위험지역에 들어선 근로자가 경고를 받고, 안전관리자는 그 구역 인원을 화면에서 셉니다. ",
+    "problem": [
+      "access-location"
+    ],
+    "process": [],
+    "installation": [
+      "fixed"
+    ],
+    "connectivity": [],
+    "images": [
+      {
+        "src": "/media/derived/product-smart-beacon-white-approved-20260912-1254.webp",
+        "alt": "스마트 비콘 제품",
+        "width": "1254",
+        "height": "1254"
+      }
+    ],
+    "sections": [
+      {
+        "id": "detail-1",
+        "title": "제품 개요"
+      },
+      {
+        "id": "detail-2",
+        "title": "보이지 않는 구역의 작업 인원까지."
+      },
+      {
+        "id": "beacon-flow",
+        "title": "비콘으로 구역별 작업 인원을 확인합니다."
+      },
+      {
+        "id": "detail-4",
+        "title": "구역 진입부터 인원 확인까지."
+      },
+      {
+        "id": "detail-5",
+        "title": "구역별 인원 확인과 접근 경고."
+      },
+      {
+        "id": "detail-6",
+        "title": "작업자와 담당자가 함께 확인하는 접근 신호."
+      },
+      {
+        "id": "highlights",
+        "title": "주요 특징"
+      }
+    ],
+    "related": [
+      "worker-attendance-card",
+      "emergency-signal-location"
+    ]
+  },
+  {
+    "slug": "wireless-network",
+    "name": "통신 음영지역 무선 네트워크망 구성",
+    "category": "alert",
+    "subgroup": "현장 통신",
+    "outcome": "통신 음영지역 무선 네트워크망 구성 터널 안 무선망으로 영상·도면·사람 위치 정보를 주고받습니다. ",
+    "problem": [
+      "monitoring"
+    ],
+    "process": [],
+    "installation": [
+      "fixed"
+    ],
+    "connectivity": [],
+    "images": [
+      {
+        "src": "/media/derived/product-wireless-network-device-1280.avif",
+        "alt": "통신이 닿지 않던 터널 구간에서 작업자 두 사람이 태블릿으로 도면을 확인하는 연출 이미지",
+        "width": "1280",
+        "height": "960"
+      },
+      {
+        "src": "/media/derived/product-wireless-network-scene-2560.avif",
+        "alt": "터널 안에 설치한 무선 AP와 통신함으로 신호가 이어진 모습",
+        "width": "2560",
+        "height": "1441"
+      },
+      {
+        "src": "/media/derived/product-wireless-network-problem-2560.avif",
+        "alt": "터널 안 통신 음영 구간에서 연결을 확인하는 현장 담당자",
+        "width": "2560",
+        "height": "1441"
+      }
+    ],
+    "sections": [
+      {
+        "id": "detail-1",
+        "title": "제품 개요"
+      },
+      {
+        "id": "detail-2",
+        "title": "통신이 필요한 작업 구간까지 연결."
+      },
+      {
+        "id": "network-signal-path",
+        "title": "통신 음영 구간으로 넓히는 무선망."
+      },
+      {
+        "id": "detail-4",
+        "title": "작업자와 관리자가 함께 보는 영상과 도면."
+      },
+      {
+        "id": "detail-5",
+        "title": "사 진·영 상·도 면이 음영지역에서도 통하다."
+      },
+      {
+        "id": "highlights",
+        "title": "주요 특징"
+      }
+    ],
+    "related": [
+      "mobile-cctv",
+      "site-cms"
+    ]
+  },
+  {
+    "slug": "power-assist-suit",
+    "name": "근력보조 웨어러블 슈트",
+    "category": "respond",
+    "subgroup": "착용 보호구",
+    "outcome": "근력보조 웨어러블 슈트 반복해서 자재를 들어 올리는 작업에서 허리를 보조합니다. ",
+    "problem": [
+      "worker-protection"
+    ],
+    "process": [],
+    "installation": [
+      "wearable"
+    ],
+    "connectivity": [],
+    "images": [
+      {
+        "src": "/media/derived/product-power-assist-suit-restored-white-20260912-902.webp",
+        "alt": "근력보조 웨어러블 슈트 제품",
+        "width": "902",
+        "height": "1744"
+      },
+      {
+        "src": "/media/derived/product-power-assist-suit-problem-2560.avif",
+        "alt": "허리를 굽혀 자재를 반복해 들어올리며 부담이 쌓이는 작업 상황",
+        "width": "2560",
+        "height": "1441"
+      }
+    ],
+    "sections": [
+      {
+        "id": "detail-1",
+        "title": "제품 개요"
+      },
+      {
+        "id": "detail-2",
+        "title": "반복되는 작업, 허리의 부담은 가볍게."
+      },
+      {
+        "id": "back-support-line",
+        "title": "들어 올리는 동작에 더하는 허리 보조."
+      },
+      {
+        "id": "detail-4",
+        "title": "배터리 없이, 탄성 구조로."
+      },
+      {
+        "id": "detail-5",
+        "title": "평소 작업 자세로, 먼저 입어 보세요."
+      },
+      {
+        "id": "highlights",
+        "title": "주요 특징"
+      }
+    ],
+    "related": [
+      "smart-safety-hook",
+      "healthcare-heart-band"
+    ]
+  },
+  {
+    "slug": "smart-safety-hook",
+    "name": "스마트 안전고리",
+    "category": "respond",
+    "subgroup": "착용 보호구",
+    "outcome": "스마트 안전고리 안전고리 미체결을 음성으로 알리고 관리자 화면에 표시합니다. ",
+    "problem": [
+      "worker-protection"
+    ],
+    "process": [],
+    "installation": [
+      "wearable"
+    ],
+    "connectivity": [],
+    "images": [
+      {
+        "src": "/media/derived/product-smart-safety-hook-device-1280.avif",
+        "alt": "작업 위치를 옮기기 전 죔줄을 정리하며 다음 걸이점을 올려다보는 작업자 연출 이미지",
+        "width": "1280",
+        "height": "960"
+      },
+      {
+        "src": "/media/derived/product-smart-safety-hook-scene-2560.avif",
+        "alt": "비계 위에서 죔줄 고리를 수평재에 거는 작업자의 손동작 연출 이미지",
+        "width": "2560",
+        "height": "1441"
+      }
+    ],
+    "sections": [
+      {
+        "id": "detail-1",
+        "title": "제품 개요"
+      },
+      {
+        "id": "detail-2",
+        "title": "위험 구역에선 안전고리 체결부터."
+      },
+      {
+        "id": "hook-signal-line",
+        "title": "작업자에게 체결 안내, 담당자에게 미체결 알림."
+      },
+      {
+        "id": "detail-4",
+        "title": "작업 구간에 맞춘 감지와 통신 구성."
+      },
+      {
+        "id": "detail-5",
+        "title": "미체결 상태를 관리자 화면에서도."
+      },
+      {
+        "id": "highlights",
+        "title": "주요 특징"
+      }
+    ],
+    "related": [
+      "smart-airbag",
+      "opening-open-close-sensor"
+    ]
+  },
+  {
+    "slug": "smart-helmet",
+    "name": "스마트 안전모 · 착용 · 턱끈 체결 감지",
+    "category": "respond",
+    "subgroup": "착용 보호구",
+    "outcome": "스마트 안전모 · 착용 · 턱끈 체결 감지 턱끈 체결과 무동작을 감지해 관리자 화면으로 알립니다. ",
+    "problem": [
+      "worker-protection"
+    ],
+    "process": [],
+    "installation": [
+      "wearable"
+    ],
+    "connectivity": [],
+    "images": [
+      {
+        "src": "/media/derived/product-smart-helmet-reference-white-20260912-1254.webp",
+        "alt": "스마트 안전모 제품",
+        "width": "1254",
+        "height": "1254"
+      }
+    ],
+    "sections": [
+      {
+        "id": "detail-1",
+        "title": "제품 개요"
+      },
+      {
+        "id": "detail-2",
+        "title": "안전모 착용부터 턱끈 체결까지 확인."
+      },
+      {
+        "id": "helmet-signal-line",
+        "title": "착용과 턱끈 체결, 모듈로 함께 확인."
+      },
+      {
+        "id": "detail-4",
+        "title": "작업자의 착용 상태를 담당자 화면에서도."
+      },
+      {
+        "id": "detail-5",
+        "title": "모듈 부착과 충전 상태를 점검합니다."
+      },
+      {
+        "id": "highlights",
+        "title": "주요 특징"
+      }
+    ],
+    "related": [
+      "mobile-bodycam",
+      "emergency-signal-location"
+    ]
+  },
+  {
+    "slug": "smart-airbag",
+    "name": "스마트 에어백 · 추락위험 대응",
+    "category": "respond",
+    "subgroup": "착용 보호구",
+    "outcome": "스마트 에어백 · 추락위험 대응 추락 움직임을 감지하면 에어백이 머리·목·척추 주변을 감쌉니다. ",
+    "problem": [
+      "worker-protection"
+    ],
+    "process": [],
+    "installation": [
+      "wearable"
+    ],
+    "connectivity": [],
+    "images": [
+      {
+        "src": "/media/derived/product-smart-airbag-reference-white-stage3-20260912-1024.webp",
+        "alt": "스마트 에어백 미팽창 상태 정면",
+        "width": "1024",
+        "height": "1536"
+      }
+    ],
+    "sections": [
+      {
+        "id": "detail-1",
+        "title": "제품 개요"
+      },
+      {
+        "id": "detail-2",
+        "title": "몸에 착용하는 충격 완화 장비."
+      },
+      {
+        "id": "workwear-day-journey",
+        "title": "감지 신호에 따라 펼쳐지는 에어백."
+      },
+      {
+        "id": "detail-4",
+        "title": "작업 조건에 맞는 용량과 착용 상태."
+      },
+      {
+        "id": "highlights",
+        "title": "주요 특징"
+      }
+    ],
+    "related": [
+      "smart-safety-hook",
+      "emergency-signal-location"
+    ]
+  },
+  {
+    "slug": "worker-attendance-card",
+    "name": "근로자 출역관리 · 전자카드 시스템",
+    "category": "respond",
+    "subgroup": "출입·출역 관리",
+    "outcome": "근로자 출역관리 · 전자카드 시스템 전자카드 출입 기록으로 현재 현장 인원과 대피 확인 명단을 봅니다. ",
+    "problem": [
+      "access-location"
+    ],
+    "process": [],
+    "installation": [
+      "fixed"
+    ],
+    "connectivity": [],
+    "images": [
+      {
+        "src": "/media/derived/product-worker-attendance-card-reference-white-20260912-1109.webp",
+        "alt": "근로자 출역관리 전자카드 시스템 제품",
+        "width": "1109",
+        "height": "673"
+      },
+      {
+        "src": "/media/derived/product-worker-attendance-card-problem-2560.avif",
+        "alt": "종이 출역 명부와 현장 인원을 대조하는 담당자",
+        "width": "2560",
+        "height": "1441"
+      },
+      {
+        "src": "/media/derived/worker-attendance-card-scan-generated-2560.avif",
+        "alt": "출입구 리더기에 전자카드를 인식하는 모습",
+        "width": "2560",
+        "height": "1441"
+      },
+      {
+        "src": "/media/derived/worker-attendance-control-room-generated-2560.avif",
+        "alt": "현장 인원과 대피 준비 상태를 확인하는 안전관리자",
+        "width": "2560",
+        "height": "1441"
+      }
+    ],
+    "sections": [
+      {
+        "id": "detail-1",
+        "title": "제품 개요"
+      },
+      {
+        "id": "detail-2",
+        "title": "카드로 남기는 출퇴근, 명단 확인은 간편하게."
+      },
+      {
+        "id": "attendance-card-flow",
+        "title": "전자카드 인식으로 출퇴근 내역을 기록합니다."
+      },
+      {
+        "id": "detail-4",
+        "title": "근로자는 카드 인식, 담당자는 명단 확인."
+      },
+      {
+        "id": "detail-5",
+        "title": "출역 관리와 비상 시 인원 대조에 같은 기록을."
+      },
+      {
+        "id": "highlights",
+        "title": "주요 특징"
+      }
+    ],
+    "related": [
+      "worker-access-gate",
+      "ai-subcontractor-safety"
+    ]
+  },
+  {
+    "slug": "worker-access-gate",
+    "name": "근로자 출입관리 게이트 · 출역현황 실시간관리",
+    "category": "respond",
+    "subgroup": "출입·출역 관리",
+    "outcome": "근로자 출입관리 게이트 · 출역현황 실시간관리 얼굴이나 QR로 확인을 마치면 문이 열리고 그 순간 출역 현황이 바뀝니다. ",
+    "problem": [
+      "access-location"
+    ],
+    "process": [],
+    "installation": [
+      "fixed"
+    ],
+    "connectivity": [],
+    "images": [
+      {
+        "src": "/media/derived/product-worker-access-gate-device-1280.avif",
+        "alt": "이른 아침 현장 출입구에서 근로자들이 한 줄로 서서 차례로 들어가는 연출 이미지",
+        "width": "1280",
+        "height": "960"
+      },
+      {
+        "src": "/media/derived/product-worker-access-gate-scene-2560.avif",
+        "alt": "근로자가 출입 게이트에서 인증을 마치고 통과하는 모습",
+        "width": "2560",
+        "height": "1441"
+      }
+    ],
+    "sections": [
+      {
+        "id": "detail-1",
+        "title": "제품 개요"
+      },
+      {
+        "id": "detail-2",
+        "title": "게이트를 통과하면, 출역 기록까지."
+      },
+      {
+        "id": "access-gate-rhythm",
+        "title": "한 번의 통과로, 인증과 출역 기록을 한꺼번에."
+      },
+      {
+        "id": "detail-4",
+        "title": "출입 권한과 통과 기록을 함께 확인."
+      },
+      {
+        "id": "detail-5",
+        "title": "출입 동선에 맞춘 게이트 설치."
+      },
+      {
+        "id": "highlights",
+        "title": "주요 특징"
+      }
+    ],
+    "related": [
+      "worker-attendance-card",
+      "alcohol-detection"
+    ]
+  },
+  {
+    "slug": "healthcare-heart-band",
+    "name": "스마트 헬스케어 심박수밴드",
+    "category": "respond",
+    "subgroup": "건강 관리",
+    "outcome": "스마트 헬스케어 심박수밴드 심박이 정해 둔 범위를 벗어나면 근로자와 관리자에게 알립니다. ",
+    "problem": [
+      "worker-protection"
+    ],
+    "process": [],
+    "installation": [
+      "wearable"
+    ],
+    "connectivity": [],
+    "images": [
+      {
+        "src": "/media/derived/product-healthcare-heart-band-white-approved-20260912-1622.webp",
+        "alt": "심박수밴드 제품",
+        "width": "1622",
+        "height": "969"
+      },
+      {
+        "src": "/media/derived/product-healthcare-heart-band-problem-2560.avif",
+        "alt": "현장에서 작업자의 상태를 대화로 확인하는 관리자",
+        "width": "2560",
+        "height": "1441"
+      }
+    ],
+    "sections": [
+      {
+        "id": "detail-1",
+        "title": "제품 개요"
+      },
+      {
+        "id": "detail-2",
+        "title": "손목에서 측정한 심박 신호를 담당자에게."
+      },
+      {
+        "id": "band-functions",
+        "title": "심박 신호가 설정 범위를 벗어났을 때."
+      },
+      {
+        "id": "detail-4",
+        "title": "착용자에겐 진동, 담당자에겐 알림."
+      },
+      {
+        "id": "detail-5",
+        "title": "응급버튼으로 지정 연락처에 연결 시도."
+      },
+      {
+        "id": "highlights",
+        "title": "주요 특징"
+      }
+    ],
+    "related": [
+      "alcohol-detection",
+      "emergency-signal-location"
+    ]
+  },
+  {
+    "slug": "ai-quick-risk-assessment",
+    "name": "AI 1분 위험성평가",
+    "category": "record",
+    "subgroup": "AI 안전관리",
+    "outcome": "AI 1분 위험성평가 현장 사진과 작업 설명으로 위험성평가 초안을 작성합니다. ",
+    "problem": [
+      "inspection-record"
+    ],
+    "process": [],
+    "installation": [
+      "software"
+    ],
+    "connectivity": [],
+    "images": [
+      {
+        "src": "/media/derived/product-ai-quick-risk-assessment-scene-1280.avif",
+        "alt": "현장 담당자가 작업 구간과 기록 자료를 확인하는 모습",
+        "width": "1280",
+        "height": "720"
+      }
+    ],
+    "sections": [
+      {
+        "id": "detail-1",
+        "title": "제품 개요"
+      },
+      {
+        "id": "detail-2",
+        "title": "현장 사진에서 위험성평가 초안까지."
+      },
+      {
+        "id": "ai-quick-risk-assessment-flow",
+        "title": "사진을 올리고, 초안을 확인하세요."
+      },
+      {
+        "id": "detail-4",
+        "title": "검토한 결과는, 서명과 기록으로."
+      },
+      {
+        "id": "detail-5",
+        "title": "자료와 확인 절차를 현장에 맞게"
+      }
+    ],
+    "related": [
+      "ai-risk-assessment-review",
+      "chatgpt-cctv"
+    ]
+  },
+  {
+    "slug": "ai-risk-assessment-review",
+    "name": "AI 위험성평가 누락 검토 시스템",
+    "category": "record",
+    "subgroup": "AI 안전관리",
+    "outcome": "AI 위험성평가 누락 검토 시스템 작성한 위험성평가에서 빠진 위험요인과 보완할 대책을 제안합니다. ",
+    "problem": [
+      "inspection-record"
+    ],
+    "process": [],
+    "installation": [
+      "software"
+    ],
+    "connectivity": [],
+    "images": [
+      {
+        "src": "/media/derived/product-ai-risk-assessment-review-scene-1280.avif",
+        "alt": "사무실에서 현장 기록과 문서를 검토하는 담당자",
+        "width": "1280",
+        "height": "720"
+      }
+    ],
+    "sections": [
+      {
+        "id": "detail-1",
+        "title": "제품 개요"
+      },
+      {
+        "id": "detail-2",
+        "title": "작성한 위험성평가, 빠진 항목은 없는지."
+      },
+      {
+        "id": "ai-risk-assessment-review-flow",
+        "title": "AI가 비교하고, 담당자가 확인합니다."
+      },
+      {
+        "id": "detail-4",
+        "title": "다시 검토할 때도, 지난 기록부터."
+      },
+      {
+        "id": "detail-5",
+        "title": "자료와 확인 절차를 현장에 맞게"
+      }
+    ],
+    "related": [
+      "ai-quick-risk-assessment",
+      "ai-safety-index"
+    ]
+  },
+  {
+    "slug": "ai-safety-index",
+    "name": "AI 종합안전평가 시스템",
+    "category": "record",
+    "subgroup": "AI 안전관리",
+    "outcome": "AI 종합안전평가 시스템 현장별 안전지수와 우선관리 대상을 보여줍니다. ",
+    "problem": [
+      "monitoring"
+    ],
+    "process": [],
+    "installation": [
+      "software"
+    ],
+    "connectivity": [],
+    "images": [
+      {
+        "src": "/media/derived/product-ai-safety-index-scene-2560.avif",
+        "alt": "관제실에서 현장별 위험도 순위 대시보드를 확인하는 안전 책임자",
+        "width": "2560",
+        "height": "1441"
+      }
+    ],
+    "sections": [
+      {
+        "id": "detail-1",
+        "title": "제품 개요"
+      },
+      {
+        "id": "detail-2",
+        "title": "먼저 살펴볼 현장을 데이터로 찾습니다."
+      },
+      {
+        "id": "morning-index-line",
+        "title": "현장 데이터를 모아, 점검 우선순위를."
+      },
+      {
+        "id": "detail-4",
+        "title": "현재 쓰는 안전 자료부터 차근차근."
+      },
+      {
+        "id": "highlights",
+        "title": "주요 특징"
+      }
+    ],
+    "related": [
+      "ai-risk-assessment-review",
+      "ai-subcontractor-safety"
+    ]
+  },
+  {
+    "slug": "ai-subcontractor-safety",
+    "name": "AI 협력업체 안전관리",
+    "category": "record",
+    "subgroup": "AI 안전관리",
+    "outcome": "AI 협력업체 안전관리 협력업체의 작업 계획과 진행 기록을 한곳에서 확인합니다. ",
+    "problem": [
+      "monitoring"
+    ],
+    "process": [],
+    "installation": [
+      "software"
+    ],
+    "connectivity": [],
+    "images": [
+      {
+        "src": "/media/derived/product-ai-subcontractor-safety-scene-1280.avif",
+        "alt": "현장사무실에서 여러 담당자가 작업 현황을 함께 논의하는 모습",
+        "width": "1280",
+        "height": "720"
+      }
+    ],
+    "sections": [
+      {
+        "id": "detail-1",
+        "title": "제품 개요"
+      },
+      {
+        "id": "detail-2",
+        "title": "업체마다 다른 작업 계획, 한곳에서 확인."
+      },
+      {
+        "id": "ai-subcontractor-safety-flow",
+        "title": "오늘의 계획부터, 작업 기록까지."
+      },
+      {
+        "id": "detail-4",
+        "title": "현장에서는 모바일로, 사무실에서는 PC로."
+      },
+      {
+        "id": "detail-5",
+        "title": "자료와 확인 절차를 현장에 맞게"
+      }
+    ],
+    "related": [
+      "safety-box",
+      "ai-safety-index"
+    ]
+  },
+  {
+    "slug": "ai-drone-inspection",
+    "name": "AI 드론 구조물 진단",
+    "category": "record",
+    "subgroup": "영상 점검·기록",
+    "outcome": "AI 드론 구조물 진단 사람이 오르기 어려운 구조물을 촬영해 균열과 보수 물량을 보고서로 남깁니다. ",
+    "problem": [
+      "inspection-record"
+    ],
+    "process": [
+      "record"
+    ],
+    "installation": [
+      "mobile"
+    ],
+    "connectivity": [],
+    "images": [
+      {
+        "src": "/media/derived/product-ai-drone-inspection-scene-2560.avif",
+        "alt": "드론이 고층 구조물 외벽을 따라 올라가며 외관을 촬영하는 모습",
+        "width": "2560",
+        "height": "1441"
+      },
+      {
+        "src": "/media/derived/product-ai-drone-inspection-problem-2560.avif",
+        "alt": "높고 넓은 구조물 외관을 지상에서 확인하는 점검 담당자",
+        "width": "2560",
+        "height": "1441"
+      }
+    ],
+    "sections": [
+      {
+        "id": "detail-1",
+        "title": "제품 개요"
+      },
+      {
+        "id": "detail-2",
+        "title": "구조물 사진에 촬영 위치를 더하다."
+      },
+      {
+        "id": "flight-route",
+        "title": "촬영 장면과 위치 정보를 한 기록에."
+      },
+      {
+        "id": "detail-4",
+        "title": "드론 영상으로 살펴보는 구조물 외관."
+      },
+      {
+        "id": "highlights",
+        "title": "주요 특징"
+      }
+    ],
+    "related": [
+      "inspectcut",
+      "site-cms"
+    ]
+  },
+  {
+    "slug": "inspectcut",
+    "name": "인스펙트컷",
+    "category": "record",
+    "subgroup": "영상 점검·기록",
+    "outcome": "인스펙트컷 편집을 배운 적 없어도 검측 영상을 제출본으로 만듭니다. ",
+    "problem": [
+      "inspection-record"
+    ],
+    "process": [
+      "record"
+    ],
+    "installation": [
+      "software"
+    ],
+    "connectivity": [],
+    "images": [
+      {
+        "src": "/media/derived/product-inspectcut-scene-2560.avif",
+        "alt": "현장사무실 PC에서 검측 영상에 자막과 시간을 넣는 모습",
+        "width": "2560",
+        "height": "1441"
+      },
+      {
+        "src": "/media/derived/product-inspectcut-problem-2560.avif",
+        "alt": "검측 뒤 영상과 기록을 정리하는 현장 담당자",
+        "width": "2560",
+        "height": "1441"
+      },
+      {
+        "src": "/media/derived/inspectcut-field-review-generated-2560.avif",
+        "alt": "현장 PC에서 검측 자료를 확인하는 담당자",
+        "width": "2560",
+        "height": "1441"
+      }
+    ],
+    "sections": [
+      {
+        "id": "detail-1",
+        "title": "제품 개요"
+      },
+      {
+        "id": "detail-2",
+        "title": "검측 영상 편집, 필요한 장면부터."
+      },
+      {
+        "id": "inspectcut-editing-desk",
+        "title": "한 편의 검측 영상, 필요한 장면만 남깁니다."
+      },
+      {
+        "id": "detail-4",
+        "title": "촬영 원본은 보관하고, 제출 영상은 따로."
+      },
+      {
+        "id": "detail-5",
+        "title": "구간 선택부터 검측 자막까지 한 프로그램에서."
+      },
+      {
+        "id": "highlights",
+        "title": "주요 특징"
+      }
+    ],
+    "related": [
+      "ai-drone-inspection",
+      "ai-risk-assessment-review"
+    ]
+  },
+  {
+    "slug": "ai-similar-accident-alert",
+    "name": "AI 작업 공종별 유사사망사고 알림·전파",
+    "category": "record",
+    "subgroup": "안전교육·사례",
+    "outcome": "AI 작업 공종별 유사사망사고 알림·전파 오늘 작업과 관련된 유사 사망사고를 찾아 현장에 전달합니다. ",
+    "problem": [
+      "education-translation"
+    ],
+    "process": [],
+    "installation": [
+      "software"
+    ],
+    "connectivity": [],
+    "images": [
+      {
+        "src": "/media/derived/product-ai-similar-accident-alert-scene-1280.avif",
+        "alt": "근로자에게 작업 전 안전 내용을 안내하는 조회장",
+        "width": "1280",
+        "height": "720"
+      }
+    ],
+    "sections": [
+      {
+        "id": "detail-1",
+        "title": "제품 개요"
+      },
+      {
+        "id": "detail-2",
+        "title": "오늘 작업과 닮은 사고사례를 미리."
+      },
+      {
+        "id": "ai-similar-accident-alert-flow",
+        "title": "오늘의 TBM에서, 관련 사고사례까지."
+      },
+      {
+        "id": "detail-4",
+        "title": "같은 공종을 다시 할 때도, 사례를 이어서."
+      },
+      {
+        "id": "detail-5",
+        "title": "자료와 확인 절차를 현장에 맞게"
+      }
+    ],
+    "related": [
+      "tbm-solution",
+      "ai-quick-risk-assessment"
+    ]
+  },
+  {
+    "slug": "safebridge",
+    "name": "세이프브릿지",
+    "category": "record",
+    "subgroup": "안전교육·사례",
+    "outcome": "세이프브릿지 교육자가 한국어로 말하면 근로자는 최대 15개 언어로 뜬 자막을 읽습니다. 모바일 앱에서 통역 화면 확인 소규모 TBM·이동 중 안전지시 활용 PC 버전과 연계한 기록·문서화",
+    "problem": [
+      "education-translation"
+    ],
+    "process": [],
+    "installation": [
+      "software"
+    ],
+    "connectivity": [],
+    "images": [
+      {
+        "src": "/media/derived/product-safebridge-scene-2560.avif",
+        "alt": "안전교육장 화면에 여러 언어 통역 패널이 나란히 뜬 모습",
+        "width": "2560",
+        "height": "1441"
+      }
+    ],
+    "sections": [
+      {
+        "id": "detail-1",
+        "title": "제품 개요"
+      },
+      {
+        "id": "detail-2",
+        "title": "한국어로 설명해도, 자막은 각자의 언어로."
+      },
+      {
+        "id": "safebridge-training-timeline",
+        "title": "안전교육의 말과 화면을 각자의 언어로."
+      },
+      {
+        "id": "detail-4",
+        "title": "교육자료 옆에 나란히 뜨는 번역 자막."
+      },
+      {
+        "id": "highlights",
+        "title": "주요 특징"
+      }
+    ],
+    "related": [
+      "tbm-solution"
+    ]
+  },
+  {
+    "slug": "iot-small-tower-crane",
+    "name": "IoT 소형 타워크레인 운영관리",
+    "category": "record",
+    "subgroup": "시공·운영 관리",
+    "outcome": "IoT 소형 타워크레인 운영관리 바람과 무게를 따로 보러 자리를 옮기지 않습니다. ",
+    "problem": [
+      "crane-lifting"
+    ],
+    "process": [
+      "lifting"
+    ],
+    "installation": [
+      "equipment-mounted"
+    ],
+    "connectivity": [],
+    "images": [
+      {
+        "src": "/media/derived/product-iot-small-tower-crane-reference-white-20260912-1280.webp",
+        "alt": "IoT 소형 타워크레인 운영관리 제품",
+        "width": "1280",
+        "height": "772"
+      },
+      {
+        "src": "/media/derived/product-iot-small-tower-crane-problem-2560.avif",
+        "alt": "여러 계기와 종이 기록을 번갈아 보는 소형 타워크레인 운전원",
+        "width": "2560",
+        "height": "1441"
+      }
+    ],
+    "sections": [
+      {
+        "id": "detail-1",
+        "title": "제품 개요"
+      },
+      {
+        "id": "detail-2",
+        "title": "인양 하중과 작업반경, 풍속을 한눈에."
+      },
+      {
+        "id": "lifting-decision",
+        "title": "인양 전에 확인할 주요 측정값을 한곳에."
+      },
+      {
+        "id": "detail-4",
+        "title": "조종석의 측정값을 현장사무실에서도."
+      },
+      {
+        "id": "detail-5",
+        "title": "표시값과 현장 기준을 대조해 인양 작업을 판단합니다."
+      },
+      {
+        "id": "highlights",
+        "title": "주요 특징"
+      }
+    ],
+    "related": [
+      "lte-anemometer",
+      "tower-crane-hook-collision"
+    ]
+  },
+  {
+    "slug": "concrete-curing",
+    "name": "스마트 콘크리트 양생 솔루션",
+    "category": "record",
+    "subgroup": "시공·운영 관리",
+    "outcome": "스마트 콘크리트 양생 솔루션 타설 위치의 온도와 강도 기록으로 거푸집 해체 시점을 검토합니다. ",
+    "problem": [
+      "inspection-record"
+    ],
+    "process": [
+      "record"
+    ],
+    "installation": [
+      "fixed"
+    ],
+    "connectivity": [],
+    "images": [
+      {
+        "src": "/media/derived/product-concrete-curing-restored-white-20260912-1280.webp",
+        "alt": "스마트 콘크리트 양생 솔루션 제품",
+        "width": "1280",
+        "height": "1225"
+      },
+      {
+        "src": "/media/derived/product-concrete-curing-problem-2560.avif",
+        "alt": "넓은 양생 구간에서 측정 위치를 확인하는 품질관리자",
+        "width": "2560",
+        "height": "1441"
+      }
+    ],
+    "sections": [
+      {
+        "id": "detail-1",
+        "title": "제품 개요"
+      },
+      {
+        "id": "detail-2",
+        "title": "온도 기록으로 살펴보는 양생 상태."
+      },
+      {
+        "id": "curing-rail",
+        "title": "타설부터 해체 검토까지, 계측 기록과 함께."
+      },
+      {
+        "id": "detail-4",
+        "title": "타설 위치별 양생 기록을 함께 확인."
+      },
+      {
+        "id": "highlights",
+        "title": "주요 특징"
+      }
+    ],
+    "related": [
+      "co2-temp-humidity",
+      "smart-environment-board"
+    ]
+  }
+]
