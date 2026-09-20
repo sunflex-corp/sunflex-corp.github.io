@@ -42,15 +42,12 @@ def refine(body,slug):
  inner.append(listing);summary.append(inner)
  appendix=s.new_tag('section',attrs={'class':'editorial-chapter revision-details','id':'product-specifications'})
  inset=s.new_tag('div',attrs={'class':'editorial-section-inner'})
- inset.append(BeautifulSoup('<p class="editorial-kicker">제품 상세</p><h2>구성과 운영, 더 자세히.</h2><p>필요한 항목을 펼쳐 제품 구성과 설치 조건을 확인하세요.</p>','html.parser'))
+ inset.append(BeautifulSoup('<p class="editorial-kicker">제품 상세</p><h2>구성과 운영, 더 자세히.</h2><p>제품 구성부터 설치 조건까지, 아래에서 차례로 확인하세요.</p>','html.parser'))
  for sec in list(root.find_all('section',recursive=False)):
   ident=sec.get('id','')
   if sec==hero or ident in ['product-benefits']+KEEP.get(slug,[]):continue
-  details=s.new_tag('details',attrs={'class':'revision-disclosure'})
-  h=sec.find('h2');label=h.get_text(' ',strip=True) if h else '제품 구성과 운영 안내'
-  title=s.new_tag('summary');title.string=label;details.append(title)
   sec['class']=sec.get('class',[])+['revision-source']
-  details.append(sec.extract());inset.append(details)
+  inset.append(sec.extract())
  appendix.append(inset)
  if slug in PROOF:
   filename,alt,title=PROOF[slug]
@@ -59,7 +56,16 @@ def refine(body,slug):
   evidence=f'<section class="editorial-chapter revision-proof"><div class="editorial-section-inner"><p class="editorial-kicker">제품 자료로 살펴보기</p><h2>{e(title)}</h2><a href="/media/derived/{filename}" target="_blank" rel="noopener" aria-label="{e(alt)} — 원본 크게 보기"><img src="/media/derived/{filename}" alt="{e(alt)}" width="{w}" height="{h}" loading="lazy" decoding="async"><span>자료 크게 보기 ↗</span></a></div></section>'
   root.append(BeautifulSoup(evidence,'html.parser'))
  root.append(summary);root.append(appendix)
- # Links into optional details must reveal their targets; progressive enhancement in revision.js.
+ # Product information stays visible without disclosure controls, including nested source details.
+ for detail in list(s.select('details:not(.solar-menu)')):
+  detail.name='div'
+  detail.attrs.pop('open',None)
+  detail['class']=detail.get('class',[])+['revision-visible-detail']
+  title=detail.find('summary',recursive=False)
+  if title:
+   title.name='p'
+   title['class']=['revision-detail-label']
+ # Existing section IDs continue to support direct navigation.
  nav=s.select_one('.product-local-nav nav')
  if nav:
   links=nav.find_all('a');links[1]['href']='#product-specifications';links[1].string='구성·사양'
