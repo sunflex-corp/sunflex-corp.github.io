@@ -68,6 +68,10 @@ def render(path,title,desc,body,active=''):
         for ext in ['css','js']:
             v=hashlib.sha256((ROOT/f'assets/sunflex-v2/product-editorial.{ext}').read_bytes()).hexdigest()[:10]
             extra+=f'<link rel="stylesheet" href="/assets/sunflex-v2/product-editorial.css?v={v}">' if ext=='css' else f'<script defer src="/assets/sunflex-v2/product-editorial.js?v={v}"></script>'
+    if path.startswith('products/') and path!='products/index.html':
+        for ext in ['css','js']:
+            v=hashlib.sha256((ROOT/f'assets/sunflex-v2/product-flow.{ext}').read_bytes()).hexdigest()[:10]
+            extra+=f'<link rel="stylesheet" href="/assets/sunflex-v2/product-flow.css?v={v}">' if ext=='css' else f'<script defer src="/assets/sunflex-v2/product-flow.js?v={v}"></script>'
     if path == 'products/mobile-cctv/index.html':
         for ext in ['css','js']:
             v=hashlib.sha256((ROOT/f'assets/sunflex-v2/mobile-cctv.{ext}').read_bytes()).hexdigest()[:10]

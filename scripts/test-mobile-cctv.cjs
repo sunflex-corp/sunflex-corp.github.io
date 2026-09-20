@@ -2,7 +2,7 @@ const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('nod
 const buttons=Array.from({length:3},(_,i)=>({id:'tab'+i,events:{},setAttribute(k,v){this[k]=v},addEventListener(k,v){this.events[k]=v},focus(){this.focused=true}}));
 const panels=buttons.map(()=>({setAttribute(k,v){this[k]=v}}));
 const controls={querySelectorAll:()=>buttons,hidden:true};
-const root={querySelector:()=>controls,querySelectorAll:()=>panels};
+const root={querySelector:s=>s==='.cctv-step-controls'?controls:null,querySelectorAll:()=>panels};
 const detail={open:false};
 const handlers={};
 vm.runInNewContext(fs.readFileSync('assets/sunflex-v2/mobile-cctv.js','utf8'),{document:{querySelector:()=>root,getElementById:()=>({closest:()=>null,querySelector:()=>detail})},location:{hash:'#detail-8'},window:{addEventListener(k,v){handlers[k]=v}}});

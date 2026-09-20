@@ -77,7 +77,7 @@
       section.style.setProperty('--screen-tilt',`${8*(1-progress)}deg`);
     });
     sceneSections.forEach(section=>{const p=ease((window.innerHeight-section.getBoundingClientRect().top)/(window.innerHeight*.9));section.style.setProperty('--scene-inset',`${12*(1-p)}%`);});
-    flows.forEach(flow=>{const steps=[...flow.children],rect=flow.getBoundingClientRect();const p=clamp((window.innerHeight*.65-rect.top)/Math.max(rect.height,1));const active=Math.min(steps.length-1,Math.floor(p*steps.length));steps.forEach((step,i)=>step.classList.toggle('is-current-step',i===active));});
+    flows.forEach(flow=>{if(flow.closest('[data-scroll-flow]'))return;const steps=[...flow.children],rect=flow.getBoundingClientRect();const p=clamp((window.innerHeight*.65-rect.top)/Math.max(rect.height,1));const active=Math.min(steps.length-1,Math.floor(p*steps.length));steps.forEach((step,i)=>step.classList.toggle('is-current-step',i===active));});
     if(unsettled)raf=requestAnimationFrame(draw);else lastTime=0;
   };
   const schedule=()=>{if(!raf&&!reduced.matches&&!compact.matches&&!document.hidden)raf=requestAnimationFrame(draw);};

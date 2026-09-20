@@ -44,3 +44,14 @@
 @media(prefers-reduced-motion:reduce){.cctv-stage{animation:none}.cctv-step-controls button,.cctv-step-controls button::after{transition:none}}
 .product-editorial #movingcam-network table{min-width:0;width:100%;table-layout:fixed}
 .product-editorial #movingcam-network th,.product-editorial #movingcam-network td{padding:18px 12px}
+/* Native scrolling: hold one scene while the user reads the three stages. */
+.cctv-scroll-track.is-scroll-driven{height:calc(var(--process-view) - var(--process-top) + var(--process-span));position:relative}
+.is-scroll-driven .cctv-scroll-stage{position:sticky;top:var(--process-top);padding-top:10px;background:#101114}
+.product-editorial .is-scroll-driven .cctv-stage>img{height:clamp(180px,calc(var(--process-view) - var(--process-top) - 260px),650px);aspect-ratio:auto;object-fit:contain;background:#15171b}
+.is-scroll-driven .cctv-stage{margin-bottom:0}
+@media(max-width:760px){.product-editorial .is-scroll-driven .cctv-stage>img{height:clamp(180px,calc(var(--process-view) - var(--process-top) - 320px),420px)}}
+.cctv-step-controls button{transition:opacity .35s,color .35s}
+.cctv-step-controls button[data-step-state=upcoming]{opacity:.4}
+.cctv-step-controls button[data-step-state=previous]{opacity:.65}
+.cctv-step-controls button[data-step-state=current],.cctv-step-controls button:hover,.cctv-step-controls button:focus-visible{opacity:1}
+@media(prefers-reduced-motion:reduce){.cctv-step-controls button{transition:none}}

@@ -35,6 +35,10 @@ def enhance(soup, rest):
         large_width=1280 if i==0 else 1536
         panel.append(fragment(f'<img src="{assets[i]}" srcset="{small} 768w, {assets[i]} {large_width}w" sizes="(max-width:760px) 92vw, min(88vw, 1400px)" alt="{alts[i]}" width="1536" height="864" loading="lazy" decoding="async"><div class="cctv-stage-caption"><h3>{titles[i]}</h3><p>{descriptions[i]}</p></div>'))
         diagram.append(panel)
+    track=soup.new_tag('div',attrs={'class':'cctv-scroll-track'})
+    sticky=soup.new_tag('div',attrs={'class':'cctv-scroll-stage'})
+    for node in list(diagram.select('.cctv-step-controls, .cctv-stage')):sticky.append(node.extract())
+    track.append(sticky);diagram.insert(0,track)
     detail=soup.new_tag('details',attrs={'class':'cctv-process-detail'})
     summary=soup.new_tag('summary');summary.string='설치 흐름 자세히 보기';detail.append(summary)
     for child in children:detail.append(child)

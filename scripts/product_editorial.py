@@ -123,6 +123,22 @@ def build(p,group,g):
     if slug=='mobile-cctv':
         from mobile_cctv_editorial import enhance
         enhance(soup,rest)
+    # Sequential workflows use one shared scroll story. Parallel choices stay side by side.
+    if slug not in ['digital-radio','lte-anemometer','iot-small-tower-crane']:
+        for flow in soup.select('.editorial-flow'):
+            track=soup.new_tag('div',attrs={'class':'product-flow-track','data-scroll-flow':''})
+            stage=soup.new_tag('div',attrs={'class':'product-flow-stage'})
+            controls=soup.new_tag('div',attrs={'class':'product-flow-tabs','role':'tablist','aria-label':'작동 단계 선택','hidden':''})
+            steps=flow.find_all('li',recursive=False)
+            for i,step in enumerate(steps):
+                title=step.find('h3') or step.find('strong')
+                label=title.get_text(' ',strip=True) if title else f'{i+1}단계'
+                ident=f'{slug}-flow-{i}'
+                step['id']=ident;step['data-flow-panel']=''
+                button=soup.new_tag('button',attrs={'type':'button','role':'tab','id':ident+'-tab','aria-controls':ident,'aria-selected':'true' if i==0 else 'false','tabindex':'0' if i==0 else '-1'})
+                button.string=f'{i+1:02}  {label}';controls.append(button)
+                if step.find('img'):addclass(step,'flow-with-image')
+            flow.wrap(stage);stage.wrap(track);stage.insert(0,controls)
     # A short, visual overview points to real chapters, not invented capabilities.
     overview=[]
     for sec in rest:
