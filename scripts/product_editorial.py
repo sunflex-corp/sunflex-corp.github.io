@@ -38,7 +38,8 @@ def build(p,group,g):
     for child in children:(media if child.find('img') or child.name=='figure' else copy).append(child.extract())
     hero.append(copy);hero.append(media)
     for image in media.find_all('img'):image['loading']='eager';image['sizes']='(max-width:760px) 90vw, 1100px'
-    actions=BeautifulSoup(f'<div class="editorial-actions"><a class="editorial-button" href="/contact/?product={slug}">도입 문의</a><a href="#{profile["focus"]}">핵심 기능 살펴보기 <span aria-hidden="true">↓</span></a></div>','html.parser')
+    benefit_target='product-benefits' if slug!='pedestrian-collision-prevention' else profile['focus']
+    actions=BeautifulSoup(f'<div class="editorial-actions"><a class="editorial-button" href="/contact/?product={slug}">도입 문의</a><a href="#{benefit_target}">핵심 기능 살펴보기 <span aria-hidden="true">↓</span></a></div>','html.parser')
     copy.append(actions)
     # Move the longer introduction below the concise first-screen lead.
     if slug=='safebridge':
@@ -155,14 +156,16 @@ def build(p,group,g):
         visual=f'<img src="{e(asset["src"])}" srcset="{e(asset["srcset"])}" sizes="(max-width:760px) 82vw, (max-width:900px) 65vw, 380px" alt="{e(asset["alt"])}" loading="lazy" decoding="async" width="{asset["width"]}" height="{asset["height"]}" style="object-position:{asset["position"]};object-fit:{asset["fit"]}">'
         rail+=f'<a class="overview-card" href="#{ident}"><span>{e(title)}</span>{visual}<span class="overview-arrow" aria-hidden="true">↗</span></a>'
     rail+='</div></div></section>'
-    firsttarget='mobile-cctv-lineup' if slug=='mobile-cctv' else 'product-content'
-    firstlabel='라인업' if slug=='mobile-cctv' else '주요 기능'
+    from product_benefits import build as build_benefits
+    benefits=build_benefits(slug,p['name'],kind,soup)
+    firsttarget='product-benefits' if benefits else 'product-content'
+    firstlabel='제품 강점' if benefits else '주요 기능'
     body=f'<div class="product-local-nav"><div class="wrap"><a class="product-local-name" href="#detail-1">{e(p["name"])}</a><nav aria-label="제품 메뉴"><a href="#{firsttarget}">{firstlabel}</a><a href="#{profile["focus"]}">자세히 보기</a><a class="editorial-button" href="/contact/?product={slug}">문의</a></nav></div></div>'
     hero_html=str(hero)
     if slug=='mobile-cctv' or kind in ['wearable','workspace']:
         motion='lineup' if slug=='mobile-cctv' else kind
         hero_html=f'<div class="editorial-hero-scroll" data-product-motion="{motion}">{hero}</div>'
-    body+=f'<div class="product-story editorial-story" data-archetype="{kind}">{hero_html}{rail}'
+    body+=f'<div class="product-story editorial-story" data-archetype="{kind}">{hero_html}{rail}{benefits}'
     for i,sec in enumerate(rest):
         body+=str(sec)
         if kind=='wearable' and i==0:body+=special

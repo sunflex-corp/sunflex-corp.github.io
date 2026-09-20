@@ -33,6 +33,16 @@
   }
   window.addEventListener('scroll',schedule,{passive:true});window.addEventListener('resize',configure);reduced.addEventListener('change',configure);
   track.querySelectorAll('img').forEach(image=>image.addEventListener('load',configure));
+  // Warm the adjacent benefit scenes before the pinned story enters view.
+  if(typeof IntersectionObserver!=='undefined'&&track.closest?.('.benefit-chapter')){
+   const preload=new IntersectionObserver(entries=>{
+    if(entries.some(entry=>entry.isIntersecting)){
+     track.querySelectorAll('img').forEach(image=>{image.loading='eager';});
+     preload.disconnect();
+    }
+   },{rootMargin:'600px 0px'});
+   preload.observe(track);
+  }
   if(document.fonts)document.fonts.ready.then(configure);
   configure();
  });

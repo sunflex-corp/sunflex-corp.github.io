@@ -34,3 +34,27 @@
 @keyframes pedestrian-halo{from{transform:scale(.55);opacity:.2}to{transform:scale(1);opacity:1}}
 @media(max-width:760px){.product-editorial .flow-enhanced .editorial-flow>.pedestrian-story-panel{grid-template-columns:1fr;gap:18px;padding:18px!important}.product-editorial .pedestrian-story-copy h3{font-size:25px!important;margin-top:0}.product-editorial .pedestrian-story-copy p{font-size:15px}.pedestrian-scene{max-height:300px}}
 @media(prefers-reduced-motion:reduce){.pedestrian-story-panel .scene-sense,.pedestrian-story-panel .scene-alert,.pedestrian-story-panel .scene-halo{animation:none}}
+/* Benefit chapters: meaningful product imagery and one benefit at a time. */
+.product-editorial .benefit-chapter{background:#101216;color:#f5f5f7;padding-block:96px 72px}
+.benefit-heading{margin-bottom:40px;max-width:900px}
+.product-editorial .benefit-heading h2{font-size:clamp(30px,4vw,52px);line-height:1.25;margin:16px 0;color:#f5f5f7;letter-spacing:-.035em}
+.benefit-heading .editorial-kicker{color:#aeb8c8}
+.benefit-tab-number{display:inline-block;margin-right:14px;font-variant-numeric:tabular-nums}
+.product-editorial .benefit-panels>.benefit-panel,.product-editorial .flow-enhanced .editorial-flow>.benefit-panel{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:0;padding:0!important;overflow:hidden;background:#1c2028;border:0;border-radius:24px;align-items:stretch}
+.benefit-photo{margin:0!important;min-width:0;background:#e9edf1;overflow:hidden}
+.benefit-photo[data-fit=contain]{background:#fff}
+.product-editorial .benefit-photo img{display:block;width:100%;height:clamp(280px,calc(var(--flow-view,900px) - 330px),480px);max-height:none;border-radius:0;transition:transform .8s cubic-bezier(.2,.65,.3,1)}
+.benefit-copy{display:flex;flex-direction:column;justify-content:center;padding:clamp(26px,3vw,48px);min-width:0}
+.product-editorial .benefit-chapter .benefit-kicker{font-size:14px;line-height:1.5;color:#9bbef1;margin:0 0 18px}
+.product-editorial .benefit-copy h3{font-size:clamp(27px,2.8vw,40px)!important;line-height:1.28!important;letter-spacing:-.035em;color:#f5f5f7;margin:0 0 24px;text-wrap:balance;word-break:keep-all;overflow-wrap:anywhere}
+.product-editorial .benefit-chapter .benefit-description{font-size:18px;line-height:1.75;color:#c3c8d1;margin:0;word-break:keep-all;overflow-wrap:anywhere}
+.benefit-detail-link{font-size:14px;color:#9bbef1!important;margin-top:28px;align-self:flex-start;line-height:1.6;text-decoration:none}
+.benefit-detail-link:focus-visible{outline:2px solid #a7c9ff;outline-offset:6px}
+.benefit-operation-details{border-block:1px solid #89919f55;padding-block:24px;margin-top:36px}
+.benefit-operation-details summary{cursor:pointer;font-size:18px;line-height:1.6;padding:8px 0}
+.benefit-operation-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:24px;padding:24px 0 0;list-style:none}
+.benefit-operation-list>li{padding:24px!important;background:#89919f10;border-radius:16px;min-width:0}
+@media(max-width:760px){.product-editorial .benefit-chapter{padding-block:60px 48px}.benefit-heading{margin-bottom:24px}.product-editorial .benefit-panels>.benefit-panel,.product-editorial .flow-enhanced .editorial-flow>.benefit-panel{grid-template-columns:1fr;border-radius:20px}.product-editorial .benefit-photo img{height:clamp(180px,calc(var(--flow-view,850px) - 490px),280px)}.benefit-copy{padding:24px}.product-editorial .benefit-copy h3{font-size:27px!important;margin-bottom:16px}.product-editorial .benefit-chapter .benefit-description{font-size:16px;line-height:1.7}.product-editorial .benefit-chapter .benefit-kicker{margin-bottom:12px}.benefit-detail-link{margin-top:20px}.benefit-tab-number{margin-right:7px}.benefit-chapter .product-flow-tabs{gap:8px}.benefit-chapter .product-flow-tabs button{font-size:12px;padding-block:14px;min-width:90px}}
+@media(prefers-reduced-motion:reduce){.product-editorial .benefit-photo img{transition:none}}
+
+.product-editorial .benefit-chapter .benefit-heading>.editorial-kicker{color:#aeb8c8}
