@@ -66,18 +66,22 @@
   updatePlayback();
 
   const map = document.querySelector('.map-visual');
+  if (!map) return;
   const mapMotion = document.querySelector('.map-motion-toggle');
+  if (mapMotion) {
   mapMotion.hidden = false;
   mapMotion.addEventListener('click', () => {
     const off = map.classList.toggle('motion-off');
     mapMotion.setAttribute('aria-pressed', String(off));
     mapMotion.textContent = off ? '그래픽 재생' : '그래픽 정지';
   });
+  }
   const choices = [...document.querySelectorAll('[data-map-choice]')];
   const panels = [...document.querySelectorAll('.map-panel')];
   choices.forEach((button,index) => button.addEventListener('click', () => {
     choices.forEach((b,i) => b.setAttribute('aria-pressed',String(i === index)));
     panels.forEach((panel,i) => { panel.hidden = i !== index; });
+    document.querySelectorAll('.family-scene').forEach((scene,i) => scene.setAttribute('aria-hidden',String(i !== index)));
     map.dataset.mode = String(index);
   }));
   if ('IntersectionObserver' in window) {

@@ -55,6 +55,12 @@ def render(path,title,desc,body,active=''):
     for ext in ['css','js']:
         v=hashlib.sha256((ROOT/f'assets/sunflex-v2/solar-site.{ext}').read_bytes()).hexdigest()[:10]
         extra+=f'<link rel="stylesheet" href="/assets/sunflex-v2/solar-site.css?v={v}">' if ext=='css' else f'<script defer src="/assets/sunflex-v2/solar-site.js?v={v}"></script>'
+    if path == 'index.html':
+        s=s.replace('class="sunflex-v2"','class="sunflex-v2 home-simple"')
+        s=re.sub(r'<details class="solar-menu">.*?</details>','',s,flags=re.S)
+        for ext in ['css','js']:
+            v=hashlib.sha256((ROOT/f'assets/sunflex-v2/home-simple.{ext}').read_bytes()).hexdigest()[:10]
+            extra+=f'<link rel="stylesheet" href="/assets/sunflex-v2/home-simple.css?v={v}">' if ext=='css' else f'<script defer src="/assets/sunflex-v2/home-simple.js?v={v}"></script>'
     s=s.replace('</head>',extra+'</head>')
     s=s.replace('적용 분야 보기','Solar 솔루션 보기').replace('적용 분야 살펴보기','Solar 솔루션 살펴보기')
     p.write_text(s)
