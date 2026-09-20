@@ -24,16 +24,21 @@ def enhance(soup, rest):
     children=diagram.find_all(recursive=False)
     controls=fragment('<div class="cctv-step-controls" role="tablist" aria-label="촬영 위치 변경 과정" hidden>'+''.join(f'<button type="button" role="tab" id="cctv-step-{i}" aria-controls="cctv-stage-{i}" aria-selected="{str(i==0).lower()}" tabindex="{0 if i==0 else -1}">0{i+1} <span>{label}</span></button>' for i,label in enumerate(['작업면 확인','위치 이동','영상 확인']))+'</div>')
     diagram.insert(0,controls)
-    assets=['/media/derived/product-mobile-cctv-problem-1280.webp','/media/editorial/network-field-1536.webp','/media/editorial/control-review-1536.webp']
-    descriptions=['공정이 달라지면, 확인할 구간부터 다시 살핍니다.','담당자가 장비를 옮기고 전원과 통신을 연결합니다.','관제 화면에서 촬영 범위와 연결 상태를 확인합니다.']
-    alts=['건설 현장에서 작업 구간을 살피는 관리자','현장에서 장비 연결을 확인하는 작업자','관제 화면을 확인하는 담당자']
+    assets=['/media/derived/product-mobile-cctv-problem-1280.webp','/media/editorial/cctv-relocation-1536.webp','/media/editorial/cctv-monitor-1536.webp']
+    titles=['오늘 살펴볼 곳부터.','필요한 자리로, 다시.','바뀐 시야를 화면에서.']
+    descriptions=['공정이 달라지면 작업 동선과 장비 주변을 살펴, 촬영할 구간을 정합니다.','담당자가 무빙캠을 옮겨 세우고, 설치 위치에 맞춰 전원과 통신을 연결합니다.','관제 화면에서 필요한 작업 구간이 보이는지, 영상이 연결되는지 확인합니다.']
+    alts=['건설 현장에서 작업 구간을 살피는 관리자','같은 건설 현장에서 노란 삼각대형 무빙캠을 새 위치에 세우는 담당자','같은 건설 현장의 작업 동선을 크게 보여주는 관제 모니터']
+    for child in children:child.extract()
     for i in range(3):
         panel=soup.new_tag('article',attrs={'class':'cctv-stage','id':f'cctv-stage-{i}','data-cctv-stage':''})
-        panel.append(fragment(f'<img src="{assets[i]}" alt="{alts[i]}" width="1536" height="1024" loading="lazy" decoding="async"><div class="cctv-stage-caption"><span>0{i+1} / 촬영 위치 변경</span><h3>{descriptions[i]}</h3></div>'))
-        copy=soup.new_tag('div',attrs={'class':'cctv-stage-facts'})
-        copy.append(children[[0,1,3][i]].extract())
-        if i==2:copy.append(children[2].extract())
-        panel.append(copy);diagram.append(panel)
-    diagram.append(fragment('<p class="cctv-process-note">설치 과정을 설명하는 현장 연출 이미지입니다. 장비의 이동과 재설치는 담당자가 진행합니다.</p>'))
+        small=assets[i].replace('-1536.webp','-768.webp').replace('-1280.webp','-768.webp')
+        large_width=1280 if i==0 else 1536
+        panel.append(fragment(f'<img src="{assets[i]}" srcset="{small} 768w, {assets[i]} {large_width}w" sizes="(max-width:760px) 92vw, min(88vw, 1400px)" alt="{alts[i]}" width="1536" height="864" loading="lazy" decoding="async"><div class="cctv-stage-caption"><h3>{titles[i]}</h3><p>{descriptions[i]}</p></div>'))
+        diagram.append(panel)
+    detail=soup.new_tag('details',attrs={'class':'cctv-process-detail'})
+    summary=soup.new_tag('summary');summary.string='설치 흐름 자세히 보기';detail.append(summary)
+    for child in children:detail.append(child)
+    diagram.append(detail)
+    diagram.append(fragment('<p class="cctv-process-note">현장 이해를 돕는 연출 이미지입니다. 실제 설치 구성은 현장 조건에 따라 달라집니다.</p>'))
     # Close the story with configuration, not a second oversized lineup presentation.
     choice=soup.find(id='detail-8');rest.remove(choice);rest.append(choice)

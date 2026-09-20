@@ -16,3 +16,23 @@
 
 ## 시각 검수
 Chrome 데스크톱에서 세 단계 사진과 클릭/방향키 전환 확인. 390px/768px 프레임에서 첫 화면부터 푸터까지 820px 간격으로 내려보며 검수. 실기기 Safari/Android 검수는 수행하지 않음.
+
+## 후속 수정: 01·02·03 장면과 조작부
+
+계획: (1) 같은 현장 사진으로 장면 연결 (2) 낮은 탭과 선택선 (3) 사진/문구 분리 (4) 중복 설명 정리 (5) 반응형 검수와 배포.
+
+- 상자형 탭을 텍스트와 2px 선택선으로 변경. 클릭·방향키·Home/End 동작 유지.
+- 02를 통신함 연결 사진에서 실제 제품 사진을 참고한 무빙캠 재설치 장면으로 변경.
+- 03을 여러 모니터의 관제실에서 동일한 공사 현장을 보여주는 단일 모니터 근접 장면으로 변경.
+- 텍스트는 사진 아래 제목/설명의 독립 영역에 배치. 반복 번호 삭제. 기존 상세 텍스트는 네이티브 펼침에 보존.
+- 16:9 이미지와 공통 설명 영역 높이로 탭 전환 시 높이 변화 억제. 일반 이미지 스타일의 max-height와 흰 배경이 가장자리를 만드는 문제도 제거.
+- 데스크톱 02/03 클릭, 390px 모바일 01→02→03 클릭, 768px 배치 확인. 실기기 검수 및 4K 프레임 계측은 아님.
+
+### 생성 이미지 기록
+내장 image_gen 사용. PNG 원본은 Codex generated_images에 보존하고 cwebp로 768/1536px 웹용 변환. 공개 자산:
+- media/editorial/cctv-relocation-{768,1536}.webp
+- media/editorial/cctv-monitor-{768,1536}.webp
+
+프롬프트 02: Reference 1 establishes the SAME Korean construction site: gray perimeter mesh fence, stacked metal forms, steel frame to right, overcast natural light. Reference 2 is the exact mobile CCTV product whose geometry must be preserved: yellow tripod, white slim vertical box, gray top case, dome camera. Show a Korean technician with white hardhat, navy workwear, reflective safety vest, gloves and safety boots carefully repositioning and setting this portable tripod CCTV at a new firm flat location. Product fully visible including all three tripod feet, technician beside it not obscuring the device. No dragging, no autonomous motion, no invented wheels, no additional camera. Medium wide realistic 35mm composition centered safe for crop, product and person occupy middle 65 percent. Natural brighter exposure than reference1, industrial editorial quality. No text, UI, arrows, logos added or watermark. Wide 16:9 photograph.
+
+프롬프트 03: One photorealistic wide 16:9 website editorial image, continuation of SAME Korean construction project shown in reference. Inside the temporary site office, close over-shoulder view of a supervisor reviewing ONE large landscape CCTV monitor that fills 70 percent of composition. The monitor shows a clear single elevated-camera view of this same construction yard with gray perimeter fence, stacks of silver metal formwork, steel structure on right and open work route through middle. A small unbranded dark UI border only, no text, no invented detection boxes or analytics. Monitor image is the dominant subject, straight enough to see details, not a distant small screen. Supervisor navy sleeve and gloved-free hand at lower right pointing at the open route, a little shoulder at right edge, no face covering screen. Natural daylight through office window, realistic sharp monitor content, balanced exposure, dark neutral desk. No text overlay, brand, watermark, collage, multiple monitors. Premium industrial documentary photograph.
