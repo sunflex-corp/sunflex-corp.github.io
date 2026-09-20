@@ -126,6 +126,24 @@ def safety_box():
         if x.name=='img':x['loading']='lazy';x['decoding']='async'
     for a in main.find_all('a',href=True):
         if a['href']=='/solutions#process': a['href']='/solutions/#solar-families'
+    # Give the preserved platform content explicit, responsive visual structure.
+    for fig in main.select('figure figure'): fig.parent.unwrap()
+    for node in main.select('[aria-busy]'): del node['aria-busy']
+    for node in main.select('source:not([srcset])'): node.decompose()
+    for node in main.select('p'):
+        if not node.get_text(strip=True): node.decompose()
+    consultation=main.find(id='consultation')
+    if consultation: consultation.decompose()
+    for section in main.find_all('section',recursive=False): section['class']=['platform-chapter']
+    scenes=['control-review','risk-review-desk','signed-record','field-photo-input']
+    for li,scene in zip(main.select('#process li'),scenes):
+        pic=li.find('picture')
+        if pic:
+            pic.clear()
+            image=soup.new_tag('img',src=f'/media/editorial/{scene}-960.webp',alt=li.find('h3').get_text()+' 업무 장면',loading='lazy',width='1536',height='1024')
+            pic.append(image)
+    for a in main.select('a[href^="/products/"]'):
+        a['href']=a['href'].rstrip('/')+'/'
     body=g.head('SOLAR / 현장 정보 관리','안전종합상황판','현장에서 확인할 정보를 한곳에서 살펴보세요. 제품의 구성과 연동 범위는 별도 확인이 필요합니다.')+f'<div class="wrap platform-story product-story"><section class="detail-block">{main.decode_contents()}</section></div>'+g.cta()
     render('solutions/safety-box/index.html','안전종합상황판','현장 안전정보를 확인하는 안전종합상황판의 구성과 주요 기능을 살펴보세요.',body,'/solutions/')
 

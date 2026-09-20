@@ -1,0 +1,347 @@
+{
+  "mist-droplets": {
+    "method": "built-in image_gen",
+    "prompt": "docs/design/image-prompts/mist-droplets.txt",
+    "source_sha256": "9d9c65e84361a052f15f25ba899b6cc5f64f53e3efcf2e003ec51153b69a2780",
+    "exports": [
+      {
+        "file": "media/editorial/mist-droplets-480.webp",
+        "bytes": 24354,
+        "sha256": "5ad4460a79e20ca656fb52af8312ec97b134de2ec5e41e1c0e9fbeb6ed63166d"
+      },
+      {
+        "file": "media/editorial/mist-droplets-960.webp",
+        "bytes": 82050,
+        "sha256": "5738a85ed82dd755c0df5e1b9e2e8401763e35bf2d5f2ae4fdca8d12c4b60f9c"
+      },
+      {
+        "file": "media/editorial/mist-droplets-1536.webp",
+        "bytes": 195296,
+        "sha256": "c2e351fb2f77b0af35bba17d4a2eaadde88aaa3174fab5f2c62fe9166cedc3f0"
+      }
+    ],
+    "review": "Accepted: relevant scene, plausible people/PPE, central crop; illustrative screens, not actual product UI."
+  },
+  "mist-gate": {
+    "method": "built-in image_gen",
+    "prompt": "docs/design/image-prompts/mist-gate.txt",
+    "source_sha256": "f9e34c4c0c8e2b9a53e0698f1cd74a4ad4fedc90335c86443c64438c14421198",
+    "exports": [
+      {
+        "file": "media/editorial/mist-gate-480.webp",
+        "bytes": 34914,
+        "sha256": "7c938f4a602c8b9fe52e81b156e63a5520e687caccf34b852b6fb69461db48c6"
+      },
+      {
+        "file": "media/editorial/mist-gate-960.webp",
+        "bytes": 114920,
+        "sha256": "5ae8b056e081418922035ff9a2ad3afb1c398571a0012d83e012694a866797b5"
+      },
+      {
+        "file": "media/editorial/mist-gate-1536.webp",
+        "bytes": 280874,
+        "sha256": "97da2d06faeb4081733383b1e8ba6e38f21a1d342d57959f9c953f89b50c717e"
+      }
+    ],
+    "review": "Accepted: relevant scene, plausible people/PPE, central crop; illustrative screens, not actual product UI."
+  },
+  "field-photo-input": {
+    "method": "built-in image_gen",
+    "prompt": "docs/design/image-prompts/field-photo-input.txt",
+    "source_sha256": "55c4ce5add956669bb0d3cbb9f1a9bac74bf231e7c17c14c586d49e3ff78cfb2",
+    "exports": [
+      {
+        "file": "media/editorial/field-photo-input-480.webp",
+        "bytes": 23168,
+        "sha256": "8515c7ddb117f55703ae0015d119cc5bb5909223c73b90c1fdab737afe41c63d"
+      },
+      {
+        "file": "media/editorial/field-photo-input-960.webp",
+        "bytes": 53646,
+        "sha256": "abe4201838315e39101695a7344aceeff57260ae81ba297514cdf1819194fde5"
+      },
+      {
+        "file": "media/editorial/field-photo-input-1536.webp",
+        "bytes": 98118,
+        "sha256": "591a0739f85d11655ef7956d71718be87671d0de8c3f2ba70d5d914cb34dc3d3"
+      }
+    ],
+    "review": "Accepted: relevant scene, plausible people/PPE, central crop; illustrative screens, not actual product UI."
+  },
+  "risk-review-desk": {
+    "method": "built-in image_gen",
+    "prompt": "docs/design/image-prompts/risk-review-desk.txt",
+    "source_sha256": "ee68da0ea6d00c83413d00de44f48cbc049e4ffd68971080c0d45758e0aa5f6f",
+    "exports": [
+      {
+        "file": "media/editorial/risk-review-desk-480.webp",
+        "bytes": 22036,
+        "sha256": "4b811883864dcc38090764fc0f7fa0870985b62eabfc1df42561388e378f7429"
+      },
+      {
+        "file": "media/editorial/risk-review-desk-960.webp",
+        "bytes": 53586,
+        "sha256": "4c692d1fb52535835bc5a6648f6433eab6fdbdbd984b41efdf86094c73e5ccf9"
+      },
+      {
+        "file": "media/editorial/risk-review-desk-1536.webp",
+        "bytes": 104910,
+        "sha256": "59bbe90a0aedf35687a3bc974eebdfb1a4982e70707220611e0a53402cc4a5d1"
+      }
+    ],
+    "review": "Accepted: relevant scene, plausible people/PPE, central crop; illustrative screens, not actual product UI."
+  },
+  "signed-record": {
+    "method": "built-in image_gen",
+    "prompt": "docs/design/image-prompts/signed-record.txt",
+    "source_sha256": "48ff8f86b679bf3fc30769ccf44c8ee06497ba7b636dcccaae212771f1b418a4",
+    "exports": [
+      {
+        "file": "media/editorial/signed-record-480.webp",
+        "bytes": 20896,
+        "sha256": "ec577e07d2df64b6fa2773c6f8a8ec438e613da8c4b22aa073a51b2c29854388"
+      },
+      {
+        "file": "media/editorial/signed-record-960.webp",
+        "bytes": 51158,
+        "sha256": "87eb113288a374820f60c6fe487b4602fa5fe57dc524fb248de1d9895863c4e1"
+      },
+      {
+        "file": "media/editorial/signed-record-1536.webp",
+        "bytes": 101906,
+        "sha256": "b0b5d18b92eba4ae16e7ccc9c77b8ec5ac5e9fb0be75f20b84257e6340ca8c98"
+      }
+    ],
+    "review": "Accepted: relevant scene, plausible people/PPE, central crop; illustrative screens, not actual product UI."
+  },
+  "control-review": {
+    "method": "built-in image_gen",
+    "prompt": "docs/design/image-prompts/control-review.txt",
+    "source_sha256": "1acb4c4d618275b4c5a660f717ccc646a385f5fb170a9b8d4b0aa1efbd6eb82a",
+    "exports": [
+      {
+        "file": "media/editorial/control-review-480.webp",
+        "bytes": 21188,
+        "sha256": "3329e90a1cf637079c59b8a0ac6430ca31de099f56c6910a702506fced14fa54"
+      },
+      {
+        "file": "media/editorial/control-review-960.webp",
+        "bytes": 51512,
+        "sha256": "b8153debd8451907759f77088ba6648a3f45229bca41f719491e0a6cdae640d4"
+      },
+      {
+        "file": "media/editorial/control-review-1536.webp",
+        "bytes": 95776,
+        "sha256": "2a2911b625f928b88c8fe96f6ce3a36747534b647d0972462a08e4b8363f6577"
+      }
+    ],
+    "review": "Accepted: relevant scene, plausible people/PPE, central crop; illustrative screens, not actual product UI."
+  },
+  "multilingual-briefing": {
+    "method": "built-in image_gen",
+    "prompt": "docs/design/image-prompts/multilingual-briefing.txt",
+    "source_sha256": "dce366fd6d3fd5d4f7515414410a59c32a3796afde5dedc140529e75d709a375",
+    "exports": [
+      {
+        "file": "media/editorial/multilingual-briefing-480.webp",
+        "bytes": 22682,
+        "sha256": "8edec1bd25e762367c7cf40c3efd6226ba9568b11c7fc8cf042d9fbb86611063"
+      },
+      {
+        "file": "media/editorial/multilingual-briefing-960.webp",
+        "bytes": 59902,
+        "sha256": "4f8d99428fd12295ed28a4a7ac63d2a790288a743363492f6b1dc9ed435e2188"
+      },
+      {
+        "file": "media/editorial/multilingual-briefing-1536.webp",
+        "bytes": 121596,
+        "sha256": "714ea547dc4e66cd73e2bb6cf790e65f0628d4f2198ad560dc4b3573a92269fa"
+      }
+    ],
+    "review": "Accepted: relevant scene, plausible people/PPE, central crop; illustrative screens, not actual product UI."
+  },
+  "gas-remote-review": {
+    "method": "built-in image_gen",
+    "prompt": "docs/design/image-prompts/gas-remote-review.txt",
+    "source_sha256": "547562d0a065c43b1708e4a59db3d8c90dacd02c7d8616163b6386ccaa076033",
+    "exports": [
+      {
+        "file": "media/editorial/gas-remote-review-480.webp",
+        "bytes": 23796,
+        "sha256": "57961a5fb22d19ce015d0f6e49ac23d52ea1b399a6b7ce8ca74f3a7e19f5353d"
+      },
+      {
+        "file": "media/editorial/gas-remote-review-960.webp",
+        "bytes": 58332,
+        "sha256": "52a2650e95cf0dc698ac2441fbb06791d4ab401ea22d023e2d0397b4869da024"
+      },
+      {
+        "file": "media/editorial/gas-remote-review-1536.webp",
+        "bytes": 117492,
+        "sha256": "8d6033d6dd3bf3fad3b6ea1966c2f908a813dc012464e022b83cbd89e7af7fd0"
+      }
+    ],
+    "review": "Accepted: relevant scene, plausible people/PPE, central crop; illustrative screens, not actual product UI."
+  },
+  "crane-operator": {
+    "method": "built-in image_gen",
+    "prompt": "docs/design/image-prompts/crane-operator.txt",
+    "source_sha256": "e9e4b1b4eaaa36502adc3ae6d60043315016d0dc7af7f2d2269071ded444c932",
+    "exports": [
+      {
+        "file": "media/editorial/crane-operator-480.webp",
+        "bytes": 19200,
+        "sha256": "9bb611d068ccc06b83ec4ddb44f5f95dd9af546e17ab87f0d3a5aac5b217a1e8"
+      },
+      {
+        "file": "media/editorial/crane-operator-960.webp",
+        "bytes": 45138,
+        "sha256": "471208e18b838202b9d38726f9c78579fd83bb755177b89fe0b7ba258c9bd673"
+      },
+      {
+        "file": "media/editorial/crane-operator-1536.webp",
+        "bytes": 86086,
+        "sha256": "1d6c300a2f04d30fc86b9d14b9c7a1eabe2066a5e3ef6970669173fc05b7eeec"
+      }
+    ],
+    "review": "Accepted: relevant scene, plausible people/PPE, central crop; illustrative screens, not actual product UI."
+  },
+  "pedestrian-gate": {
+    "method": "built-in image_gen",
+    "prompt": "docs/design/image-prompts/pedestrian-gate.txt",
+    "source_sha256": "75d790013d66bf349ed644c6e81107572947224527ff747e9e5360677f3a2410",
+    "exports": [
+      {
+        "file": "media/editorial/pedestrian-gate-480.webp",
+        "bytes": 24292,
+        "sha256": "e41b352f7f4e40f3ea839c39befc636c50c47e0662fc4ba950177e32e03a1e5f"
+      },
+      {
+        "file": "media/editorial/pedestrian-gate-960.webp",
+        "bytes": 57666,
+        "sha256": "e94d30c765be3a213c1ee74c6444e914b83db8c730cd14237da297c0be83c8d7"
+      },
+      {
+        "file": "media/editorial/pedestrian-gate-1536.webp",
+        "bytes": 110164,
+        "sha256": "b42ba36b94f7b2318a2f0542736ebb824d52a543cdc9953ec8793970b52b6816"
+      }
+    ],
+    "review": "Accepted: relevant scene, plausible people/PPE, central crop; illustrative screens, not actual product UI."
+  },
+  "fire-response": {
+    "method": "built-in image_gen",
+    "prompt": "docs/design/image-prompts/fire-response.txt",
+    "source_sha256": "6fdd41e068932d4492dc839f3aed77d5062ae4e5cec109848ec946324652ab2a",
+    "exports": [
+      {
+        "file": "media/editorial/fire-response-480.webp",
+        "bytes": 25602,
+        "sha256": "7d36fc61b98b8cf78e94a7eca79531c33a82f79b90d5ec68bb4a782c3f6f36f2"
+      },
+      {
+        "file": "media/editorial/fire-response-960.webp",
+        "bytes": 69622,
+        "sha256": "018e0067e78ee731898a4df5e79cfb48aa2565a0ce8cb8f1130867cfa2bb111f"
+      },
+      {
+        "file": "media/editorial/fire-response-1536.webp",
+        "bytes": 140562,
+        "sha256": "e47fa406d500c7567cab2ae66498c4904ed1c8cdc1e4fe93789a61e6f712b79e"
+      }
+    ],
+    "review": "Accepted: relevant scene, plausible people/PPE, central crop; illustrative screens, not actual product UI."
+  },
+  "network-field": {
+    "method": "built-in image_gen",
+    "prompt": "docs/design/image-prompts/network-field.txt",
+    "source_sha256": "8bbddfd6ff6d0ec60ffb5d819d9e780cab81cbfc244c074a521c98db1e1392dd",
+    "exports": [
+      {
+        "file": "media/editorial/network-field-480.webp",
+        "bytes": 22032,
+        "sha256": "6a3f4b471f436b57ee032f1c0ae5e077bf08cb01f3001e61d8fae09724f7feff"
+      },
+      {
+        "file": "media/editorial/network-field-960.webp",
+        "bytes": 54630,
+        "sha256": "a198516f2727f06e1f51bfe0e2139da1312dc0cd8a2ebc35c175b8670ec04b3c"
+      },
+      {
+        "file": "media/editorial/network-field-1536.webp",
+        "bytes": 111336,
+        "sha256": "252a2dd8b8ec81c841aefc6ebc1a07f6077efdb003aa6207ddfbcf4ab5d7e59c"
+      }
+    ],
+    "review": "Accepted: relevant scene, plausible people/PPE, central crop; illustrative screens, not actual product UI."
+  },
+  "helmet-check": {
+    "method": "built-in image_gen",
+    "prompt": "docs/design/image-prompts/helmet-check.txt",
+    "source_sha256": "5549dfa96b51a837d8cbf70efdcad262ebab833c66517fd3ae7b5fd825d848f6",
+    "exports": [
+      {
+        "file": "media/editorial/helmet-check-480.webp",
+        "bytes": 19034,
+        "sha256": "86048759bb6a702f420f0c9e4ad93b4212b2b2cd5d5393565632393b255d5e8b"
+      },
+      {
+        "file": "media/editorial/helmet-check-960.webp",
+        "bytes": 48396,
+        "sha256": "e4f9c7558a931c4329aab6a8deb9604ab0b8f342ae387432bd8d7a9d44b41029"
+      },
+      {
+        "file": "media/editorial/helmet-check-1536.webp",
+        "bytes": 101828,
+        "sha256": "5bb72595284e9d717f4e50f281e88a4036f683794d5786f37408cc8e82e71373"
+      }
+    ],
+    "review": "Accepted: relevant scene, plausible people/PPE, central crop; illustrative screens, not actual product UI."
+  },
+  "beacon-zone": {
+    "method": "built-in image_gen",
+    "prompt": "docs/design/image-prompts/beacon-zone.txt",
+    "source_sha256": "5456fd1d398d46622e5957aaebf36227092c562684be4d1cd21eb314b806f41c",
+    "exports": [
+      {
+        "file": "media/editorial/beacon-zone-480.webp",
+        "bytes": 29406,
+        "sha256": "bf7bab91df590230d2a13c131d5d3bd8db94f450291260aaff44414e3896f34c"
+      },
+      {
+        "file": "media/editorial/beacon-zone-960.webp",
+        "bytes": 79048,
+        "sha256": "e2b37c742ff4ceaae83b2fe027063411e9008445bc2e97a2c90e8f647eb2a4e6"
+      },
+      {
+        "file": "media/editorial/beacon-zone-1536.webp",
+        "bytes": 150764,
+        "sha256": "3899b63947a02f4b7306198e4712b277887fa7fabaae25460eab6c77f391e7fb"
+      }
+    ],
+    "review": "Accepted: relevant scene, plausible people/PPE, central crop; illustrative screens, not actual product UI."
+  },
+  "curing-record": {
+    "method": "built-in image_gen",
+    "prompt": "docs/design/image-prompts/curing-record.txt",
+    "source_sha256": "c06eca80398ecea2e87ba6908bc6e8bd0803a25ec5d7c3daecdd2f59d0e713fa",
+    "exports": [
+      {
+        "file": "media/editorial/curing-record-480.webp",
+        "bytes": 27960,
+        "sha256": "8221d8a21462bf5b50e83a3bdfd5ad157463cdf1e256a567f44adf012ddeaca9"
+      },
+      {
+        "file": "media/editorial/curing-record-960.webp",
+        "bytes": 80020,
+        "sha256": "0064137515feecec87338999a0df763f13c3cb8b95388de66a8f8481f8dff801"
+      },
+      {
+        "file": "media/editorial/curing-record-1536.webp",
+        "bytes": 172316,
+        "sha256": "5366ba777bc21e98877d280f2d7a3571e982a10ac6e6709192bd83cd7b880345"
+      }
+    ],
+    "review": "Accepted: relevant scene, plausible people/PPE, central crop; illustrative screens, not actual product UI."
+  }
+}

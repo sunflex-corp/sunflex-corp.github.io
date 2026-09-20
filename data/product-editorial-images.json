@@ -1,0 +1,1802 @@
+{
+  "mobile-cctv": {
+    "mobile-cctv-lineup": {
+      "src": "/media/derived/product-mobile-cctv-device-768.webp",
+      "asset": "product-mobile-cctv-device",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "contain",
+      "purpose": "쓰임이 다른 세 가지 시야.",
+      "alt": "삼각대 위에 카메라를 올리고 컨트롤 박스를 함께 둔 이동식 CCTV",
+      "width": 768,
+      "height": 960,
+      "srcset": "/media/derived/product-mobile-cctv-device-480.webp 480w, /media/derived/product-mobile-cctv-device-768.webp 768w"
+    },
+    "movingcam-network": {
+      "src": "/media/editorial/network-field-960.webp",
+      "asset": "network-field",
+      "generated": true,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "크기는 S·M·L. 통신은 W·L.",
+      "alt": "터널 입구에서 통신함의 케이블 연결을 점검하는 기술자",
+      "width": 960,
+      "height": 640,
+      "srcset": "/media/editorial/network-field-480.webp 480w, /media/editorial/network-field-960.webp 960w, /media/editorial/network-field-1536.webp 1536w"
+    },
+    "movingcam-engineering": {
+      "src": "/media/derived/product-movingcam-m-768.webp",
+      "asset": "product-movingcam-m",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "contain",
+      "purpose": "현장마다 쓰임이 다르니까. 무빙캠도 다르게.",
+      "alt": "중형 삼각대형 무빙캠 M",
+      "width": 768,
+      "height": 1024,
+      "srcset": "/media/derived/product-movingcam-m-480.webp 480w, /media/derived/product-movingcam-m-768.webp 768w"
+    }
+  },
+  "mobile-bodycam": {
+    "detail-2": {
+      "src": "/media/derived/product-mobile-bodycam-scene-768.webp",
+      "asset": "product-mobile-bodycam-scene",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "작업하는 곳이, 기록하는 곳.",
+      "alt": "작업하는 곳이, 기록하는 곳. 관련 현장 장면",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/product-mobile-bodycam-scene-480.webp 480w, /media/derived/product-mobile-bodycam-scene-768.webp 768w, /media/derived/product-mobile-bodycam-scene-1280.webp 1280w"
+    },
+    "bodycam-film": {
+      "src": "/media/derived/product-mobile-bodycam-problem-768.webp",
+      "asset": "product-mobile-bodycam-problem",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "고정 CCTV가 담지 못한 작업 장면까지.",
+      "alt": "복구 전 검측 과정을 촬영하는 현장",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/product-mobile-bodycam-problem-480.webp 480w, /media/derived/product-mobile-bodycam-problem-768.webp 768w, /media/derived/product-mobile-bodycam-problem-1280.webp 1280w"
+    },
+    "detail-4": {
+      "src": "/media/derived/inspectcut-field-review-generated-768.webp",
+      "asset": "inspectcut-field-review-generated",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "검측과 작업 확인에 쓰는 촬영 기록.",
+      "alt": "현장에서 견고한 PC로 촬영한 기록을 다시 확인하는 담당자",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/inspectcut-field-review-generated-480.webp 480w, /media/derived/inspectcut-field-review-generated-768.webp 768w, /media/derived/inspectcut-field-review-generated-1280.webp 1280w"
+    }
+  },
+  "hook-bottom-camera": {
+    "hook-two-views": {
+      "src": "/media/editorial/crane-operator-960.webp",
+      "asset": "crane-operator",
+      "generated": true,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "후크 아래 영상이 운전석 화면으로.",
+      "alt": "조종석에서 후크 주변 영상을 확인하는 작업자",
+      "width": 960,
+      "height": 640,
+      "srcset": "/media/editorial/crane-operator-480.webp 480w, /media/editorial/crane-operator-960.webp 960w, /media/editorial/crane-operator-1536.webp 1536w"
+    },
+    "detail-2": {
+      "src": "/media/derived/product-hook-bottom-camera-device-768.webp",
+      "asset": "product-hook-bottom-camera-device",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "contain",
+      "purpose": "가려진 작업면을 화면으로.",
+      "alt": "가려진 작업면을 화면으로. 관련 현장 장면",
+      "width": 768,
+      "height": 1024,
+      "srcset": "/media/derived/product-hook-bottom-camera-device-480.webp 480w, /media/derived/product-hook-bottom-camera-device-768.webp 768w, /media/derived/product-hook-bottom-camera-device-1280.webp 1280w"
+    },
+    "hook-checkpoints": {
+      "src": "/media/derived/field-crane-hook-rigging-generated-768.webp",
+      "asset": "field-crane-hook-rigging-generated",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "줄걸이부터 착지 주변까지 영상으로.",
+      "alt": "안전모와 형광 조끼를 착용한 신호수가 내려온 크레인 후크의 줄걸이를 확인하는 모습",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/field-crane-hook-rigging-generated-480.webp 480w, /media/derived/field-crane-hook-rigging-generated-768.webp 768w, /media/derived/field-crane-hook-rigging-generated-1280.webp 1280w"
+    }
+  },
+  "chatgpt-cctv": {
+    "scene-to-record": {
+      "src": "/media/editorial/control-review-960.webp",
+      "asset": "control-review",
+      "generated": true,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "CCTV 장면에서, 보고서 초안 까지",
+      "alt": "관제 화면의 현장 영상과 배치도를 함께 확인하는 담당자들",
+      "width": 960,
+      "height": 640,
+      "srcset": "/media/editorial/control-review-480.webp 480w, /media/editorial/control-review-960.webp 960w, /media/editorial/control-review-1536.webp 1536w"
+    },
+    "detail-2": {
+      "src": "/media/derived/product-chatgpt-cctv-scene-768.webp",
+      "asset": "product-chatgpt-cctv-scene",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "영상 확인 다음은, 초안 검토.",
+      "alt": "안전관리자가 현장 CCTV 장면과 보고서 초안을 함께 보는 모습",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/product-chatgpt-cctv-scene-480.webp 480w, /media/derived/product-chatgpt-cctv-scene-768.webp 768w, /media/derived/product-chatgpt-cctv-scene-1280.webp 1280w"
+    },
+    "detail-4": {
+      "src": "/media/editorial/risk-review-desk-960.webp",
+      "asset": "risk-review-desk",
+      "generated": true,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "AI는 장면을 정리하고 안전관리자는 현장을 판단하도록.",
+      "alt": "현장 사진과 점검표를 함께 대조하는 두 명의 안전 담당자",
+      "width": 960,
+      "height": 640,
+      "srcset": "/media/editorial/risk-review-desk-480.webp 480w, /media/editorial/risk-review-desk-960.webp 960w, /media/editorial/risk-review-desk-1536.webp 1536w"
+    }
+  },
+  "safety-box": {
+    "safety-summary": {
+      "src": "/media/editorial/control-review-960.webp",
+      "asset": "control-review",
+      "generated": true,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "화면을 오가는 수고를 덜다.",
+      "alt": "관제 화면의 현장 영상과 배치도를 함께 확인하는 담당자들",
+      "width": 960,
+      "height": 640,
+      "srcset": "/media/editorial/control-review-480.webp 480w, /media/editorial/control-review-960.webp 960w, /media/editorial/control-review-1536.webp 1536w"
+    },
+    "control-screen": {
+      "src": "/media/derived/product-safety-box-scene-768.webp",
+      "asset": "product-safety-box-scene",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "자료를 오가는 수고는 줄이고, 현장 확인은 한 화면에서.",
+      "alt": "현장사무실에서 담당자 세 사람이 벽에 걸린 큰 화면을 함께 보며 현황을 논의하는 연출 이미지",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/product-safety-box-scene-480.webp 480w, /media/derived/product-safety-box-scene-768.webp 768w, /media/derived/product-safety-box-scene-1280.webp 1280w"
+    },
+    "safety-decision": {
+      "src": "/media/derived/field-office-handover-generated-768.webp",
+      "asset": "field-office-handover-generated",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "현장 관리에 필요한 정보를 한곳에.",
+      "alt": "현장사무실에서 담당자 두 사람이 태블릿으로 기록을 함께 보는 모습",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/field-office-handover-generated-480.webp 480w, /media/derived/field-office-handover-generated-768.webp 768w, /media/derived/field-office-handover-generated-1280.webp 1280w"
+    }
+  },
+  "site-cms": {
+    "process-transition-line": {
+      "src": "/media/derived/product-site-cms-scene-768.webp",
+      "asset": "product-site-cms-scene",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "지금 공정에 맞는 시야.",
+      "alt": "공사 단계에 맞춰 자리를 옮긴 현장 CCTV와 관제 화면 모습",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/product-site-cms-scene-480.webp 480w, /media/derived/product-site-cms-scene-768.webp 768w, /media/derived/product-site-cms-scene-1280.webp 1280w"
+    },
+    "detail-3": {
+      "src": "/media/derived/site-cms-stage-early-768.webp",
+      "asset": "site-cms-stage-early",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "착공부터 준공까지, 공정별 촬영 구간.",
+      "alt": "착공부터 준공까지, 공정별 촬영 구간. 관련 현장 장면",
+      "width": 768,
+      "height": 1111,
+      "srcset": "/media/derived/site-cms-stage-early-480.webp 480w, /media/derived/site-cms-stage-early-768.webp 768w"
+    }
+  },
+  "led-logo-light": {
+    "night-route-plan": {
+      "src": "/media/derived/product-led-logo-light-scene-768.webp",
+      "asset": "product-led-logo-light-scene",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "바닥에 남는 한 줄의 안내.",
+      "alt": "바닥에 남는 한 줄의 안내. 관련 현장 장면",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/product-led-logo-light-scene-480.webp 480w, /media/derived/product-led-logo-light-scene-768.webp 768w, /media/derived/product-led-logo-light-scene-1280.webp 1280w"
+    },
+    "detail-2": {
+      "src": "/media/derived/product-led-logo-light-device-768.webp",
+      "asset": "product-led-logo-light-device",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "contain",
+      "purpose": "발길 닿는 곳에, 빛나는 안내.",
+      "alt": "발길 닿는 곳에, 빛나는 안내. 관련 현장 장면",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/product-led-logo-light-device-480.webp 480w, /media/derived/product-led-logo-light-device-768.webp 768w, /media/derived/product-led-logo-light-device-1280.webp 1280w"
+    },
+    "detail-4": {
+      "src": "/media/derived/product-led-logo-light-reference-white-20260912-768.webp",
+      "asset": "product-led-logo-light-reference-white-20260912",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "contain",
+      "purpose": "안내가 필요한 바닥에 빛으로 표시.",
+      "alt": "안전 사각지대 LED 로고라이트 제품",
+      "width": 768,
+      "height": 768,
+      "srcset": "/media/derived/product-led-logo-light-reference-white-20260912-480.webp 480w, /media/derived/product-led-logo-light-reference-white-20260912-768.webp 768w"
+    }
+  },
+  "vehicle-entry-alert": {
+    "entry-alert-flow": {
+      "src": "/media/editorial/pedestrian-gate-960.webp",
+      "asset": "pedestrian-gate",
+      "generated": true,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "차량과 보행자의 접근을 감지해 경고합니다.",
+      "alt": "차량 통로와 분리된 보행 구간의 작업자와 게이트 경광등",
+      "width": 960,
+      "height": 640,
+      "srcset": "/media/editorial/pedestrian-gate-480.webp 480w, /media/editorial/pedestrian-gate-960.webp 960w, /media/editorial/pedestrian-gate-1536.webp 1536w"
+    },
+    "detail-2": {
+      "src": "/media/derived/product-vehicle-entry-alert-scene-768.webp",
+      "asset": "product-vehicle-entry-alert-scene",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "다가오는 차량을 알아차리도록.",
+      "alt": "다가오는 차량을 알아차리도록. 관련 현장 장면",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/product-vehicle-entry-alert-scene-480.webp 480w, /media/derived/product-vehicle-entry-alert-scene-768.webp 768w, /media/derived/product-vehicle-entry-alert-scene-1280.webp 1280w"
+    },
+    "detail-4": {
+      "src": "/media/derived/field-vehicle-pedestrian-generated-768.webp",
+      "asset": "field-vehicle-pedestrian-generated",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "차량과 사람이 마주치는 곳에 경고를.",
+      "alt": "차량 동선과 보행자 동선이 나뉘어 있는 현장 모습",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/field-vehicle-pedestrian-generated-480.webp 480w, /media/derived/field-vehicle-pedestrian-generated-768.webp 768w, /media/derived/field-vehicle-pedestrian-generated-1280.webp 1280w"
+    }
+  },
+  "co2-temp-humidity": {
+    "air-check-line": {
+      "src": "/media/derived/product-co2-temp-humidity-device-768.webp",
+      "asset": "product-co2-temp-humidity-device",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "contain",
+      "purpose": "측정하고, 알리고, 기록으로 남깁니다.",
+      "alt": "밀폐공간 입구에 설치한 이산화탄소·온습도 측정기와 LTE 모뎀 연출 이미지",
+      "width": 768,
+      "height": 576,
+      "srcset": "/media/derived/product-co2-temp-humidity-device-480.webp 480w, /media/derived/product-co2-temp-humidity-device-768.webp 768w, /media/derived/product-co2-temp-humidity-device-1280.webp 1280w"
+    },
+    "detail-2": {
+      "src": "/media/derived/product-co2-temp-humidity-scene-768.webp",
+      "asset": "product-co2-temp-humidity-scene",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "공기의 변화를 읽는 방법.",
+      "alt": "밀폐공간 입구에 이산화탄소·온습도 측정기를 설치하고 값을 확인하는 모습",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/product-co2-temp-humidity-scene-480.webp 480w, /media/derived/product-co2-temp-humidity-scene-768.webp 768w, /media/derived/product-co2-temp-humidity-scene-1280.webp 1280w"
+    },
+    "detail-4": {
+      "src": "/media/editorial/gas-remote-review-960.webp",
+      "asset": "gas-remote-review",
+      "generated": true,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "관리자 화면에서 보는 측정값과 기록.",
+      "alt": "출입이 통제된 공간 밖에서 측정 기록을 확인하는 담당자",
+      "width": 960,
+      "height": 640,
+      "srcset": "/media/editorial/gas-remote-review-480.webp 480w, /media/editorial/gas-remote-review-960.webp 960w, /media/editorial/gas-remote-review-1536.webp 1536w"
+    }
+  },
+  "iot-mist": {
+    "dust-gate": {
+      "src": "/media/editorial/mist-gate-960.webp",
+      "asset": "mist-gate",
+      "generated": true,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "출입구 위에서 분사하는 고압 미스트.",
+      "alt": "상부 미스트 아래를 지나는 차량과 분리된 통로의 관리 담당자",
+      "width": 960,
+      "height": 640,
+      "srcset": "/media/editorial/mist-gate-480.webp 480w, /media/editorial/mist-gate-960.webp 960w, /media/editorial/mist-gate-1536.webp 1536w"
+    },
+    "detail-2": {
+      "src": "/media/derived/product-iot-mist-scene-768.webp",
+      "asset": "product-iot-mist-scene",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "물입자로 다스리는 비산먼지.",
+      "alt": "현장 출입구 상부 노즐에서 미세 물안개가 내려오는 모습",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/product-iot-mist-scene-480.webp 480w, /media/derived/product-iot-mist-scene-768.webp 768w, /media/derived/product-iot-mist-scene-1280.webp 1280w"
+    },
+    "detail-4": {
+      "src": "/media/editorial/mist-droplets-960.webp",
+      "asset": "mist-droplets",
+      "generated": true,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "먼지에 붙어 함께 내려앉는 미세 물입자.",
+      "alt": "출입구 노즐에서 퍼지는 미세 물입자와 젖은 바닥",
+      "width": 960,
+      "height": 640,
+      "srcset": "/media/editorial/mist-droplets-480.webp 480w, /media/editorial/mist-droplets-960.webp 960w, /media/editorial/mist-droplets-1536.webp 1536w"
+    }
+  },
+  "lte-anemometer": {
+    "vertical-wind-section": {
+      "src": "/media/derived/product-lte-anemometer-device-768.webp",
+      "asset": "product-lte-anemometer-device",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "contain",
+      "purpose": "상부의 풍속이 지상의 화면으로.",
+      "alt": "상부의 풍속이 지상의 화면으로. 관련 현장 장면",
+      "width": 768,
+      "height": 576,
+      "srcset": "/media/derived/product-lte-anemometer-device-480.webp 480w, /media/derived/product-lte-anemometer-device-768.webp 768w, /media/derived/product-lte-anemometer-device-1280.webp 1280w"
+    },
+    "detail-2": {
+      "src": "/media/derived/product-lte-anemometer-scene-768.webp",
+      "asset": "product-lte-anemometer-scene",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "바람은 위에서. 확인은 아래서.",
+      "alt": "바람은 위에서. 확인은 아래서. 관련 현장 장면",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/product-lte-anemometer-scene-480.webp 480w, /media/derived/product-lte-anemometer-scene-768.webp 768w, /media/derived/product-lte-anemometer-scene-1280.webp 1280w"
+    },
+    "detail-4": {
+      "src": "/media/derived/product-lte-anemometer-problem-768.webp",
+      "asset": "product-lte-anemometer-problem",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "측정할 높이와 위치에 맞춘 설치.",
+      "alt": "고소 작업 구역의 바람을 수동으로 확인하는 현장",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/product-lte-anemometer-problem-480.webp 480w, /media/derived/product-lte-anemometer-problem-768.webp 768w, /media/derived/product-lte-anemometer-problem-1280.webp 1280w"
+    }
+  },
+  "smart-environment-board": {
+    "environment-link": {
+      "src": "/media/derived/product-smart-environment-board-scene-768.webp",
+      "asset": "product-smart-environment-board-scene",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "환경 수치 확인부터 원격 장비 제어까지.",
+      "alt": "환경 수치 확인부터 원격 장비 제어까지. 관련 현장 장면",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/product-smart-environment-board-scene-480.webp 480w, /media/derived/product-smart-environment-board-scene-768.webp 768w, /media/derived/product-smart-environment-board-scene-1280.webp 1280w"
+    },
+    "detail-2": {
+      "src": "/media/derived/product-smart-environment-board-device-768.webp",
+      "asset": "product-smart-environment-board-device",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "contain",
+      "purpose": "환경 확인과 설비 관리가 한자리에.",
+      "alt": "환경 확인과 설비 관리가 한자리에. 관련 현장 장면",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/product-smart-environment-board-device-480.webp 480w, /media/derived/product-smart-environment-board-device-768.webp 768w, /media/derived/product-smart-environment-board-device-1280.webp 1280w"
+    },
+    "detail-4": {
+      "src": "/media/editorial/gas-remote-review-960.webp",
+      "asset": "gas-remote-review",
+      "generated": true,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "환경 측정값 옆에 장비 작동 상태도.",
+      "alt": "출입이 통제된 공간 밖에서 측정 기록을 확인하는 담당자",
+      "width": 960,
+      "height": 640,
+      "srcset": "/media/editorial/gas-remote-review-480.webp 480w, /media/editorial/gas-remote-review-960.webp 960w, /media/editorial/gas-remote-review-1536.webp 1536w"
+    }
+  },
+  "compact-gas-detector": {
+    "gas-measurement-flow": {
+      "src": "/media/editorial/gas-remote-review-960.webp",
+      "asset": "gas-remote-review",
+      "generated": true,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "측정한 가스 농도는 관리자 화면으로",
+      "alt": "출입이 통제된 공간 밖에서 측정 기록을 확인하는 담당자",
+      "width": 960,
+      "height": 640,
+      "srcset": "/media/editorial/gas-remote-review-480.webp 480w, /media/editorial/gas-remote-review-960.webp 960w, /media/editorial/gas-remote-review-1536.webp 1536w"
+    },
+    "detail-2": {
+      "src": "/media/derived/product-compact-gas-detector-reference-white-stage3-20260912-768.webp",
+      "asset": "product-compact-gas-detector-reference-white-stage3-20260912",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "contain",
+      "purpose": "들어가기 전에, 측정부터.",
+      "alt": "소형 복합가스측정기 제품",
+      "width": 768,
+      "height": 1030,
+      "srcset": "/media/derived/product-compact-gas-detector-reference-white-stage3-20260912-480.webp 480w, /media/derived/product-compact-gas-detector-reference-white-stage3-20260912-768.webp 768w"
+    },
+    "detail-4": {
+      "src": "/media/derived/alcohol-record-ledger-generated-768.webp",
+      "asset": "alcohol-record-ledger-generated",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "지난 측정값도 엑셀로 내려받아 검토",
+      "alt": "지난 측정값도 엑셀로 내려받아 검토 관련 현장 장면",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/alcohol-record-ledger-generated-480.webp 480w, /media/derived/alcohol-record-ledger-generated-768.webp 768w, /media/derived/alcohol-record-ledger-generated-1280.webp 1280w"
+    }
+  },
+  "gas-alarm": {
+    "entrance-decision-line": {
+      "src": "/media/derived/product-gas-alarm-scene-768.webp",
+      "asset": "product-gas-alarm-scene",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "가스를 측정하고, 현장 기준에 따라 판단.",
+      "alt": "가스를 측정하고, 현장 기준에 따라 판단. 관련 현장 장면",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/product-gas-alarm-scene-480.webp 480w, /media/derived/product-gas-alarm-scene-768.webp 768w, /media/derived/product-gas-alarm-scene-1280.webp 1280w"
+    },
+    "detail-2": {
+      "src": "/media/derived/product-gas-alarm-device-768.webp",
+      "asset": "product-gas-alarm-device",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "contain",
+      "purpose": "측정값을 확인하는 것이 먼저.",
+      "alt": "측정값을 확인하는 것이 먼저. 관련 현장 장면",
+      "width": 768,
+      "height": 576,
+      "srcset": "/media/derived/product-gas-alarm-device-480.webp 480w, /media/derived/product-gas-alarm-device-768.webp 768w, /media/derived/product-gas-alarm-device-1280.webp 1280w"
+    },
+    "detail-4": {
+      "src": "/media/editorial/gas-remote-review-960.webp",
+      "asset": "gas-remote-review",
+      "generated": true,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "전광판에서 웹·앱까지, 같은 측정값을.",
+      "alt": "출입이 통제된 공간 밖에서 측정 기록을 확인하는 담당자",
+      "width": 960,
+      "height": 640,
+      "srcset": "/media/editorial/gas-remote-review-480.webp 480w, /media/editorial/gas-remote-review-960.webp 960w, /media/editorial/gas-remote-review-1536.webp 1536w"
+    }
+  },
+  "tilt-acceleration-sensor": {
+    "tilt-decision-record": {
+      "src": "/media/derived/field-tilt-sensor-zero-generated-768.webp",
+      "asset": "field-tilt-sensor-zero-generated",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "계측값과 알림을 확인하고 구조물 상태를 점검합니다.",
+      "alt": "계측 담당자가 태블릿으로 센서 영점을 잡는 모습",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/field-tilt-sensor-zero-generated-480.webp 480w, /media/derived/field-tilt-sensor-zero-generated-768.webp 768w, /media/derived/field-tilt-sensor-zero-generated-1280.webp 1280w"
+    },
+    "detail-2": {
+      "src": "/media/derived/field-tilt-sensor-mount-generated-768.webp",
+      "asset": "field-tilt-sensor-mount-generated",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "변화를 측정하고, 상태를 점검하고.",
+      "alt": "흙막이 벽체와 버팀보를 올려다보며 계측 지점을 짚어 이야기하는 담당자 두 명 연출 이미지",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/field-tilt-sensor-mount-generated-480.webp 480w, /media/derived/field-tilt-sensor-mount-generated-768.webp 768w, /media/derived/field-tilt-sensor-mount-generated-1280.webp 1280w"
+    },
+    "detail-4": {
+      "src": "/media/derived/product-tilt-acceleration-sensor-device-768.webp",
+      "asset": "product-tilt-acceleration-sensor-device",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "contain",
+      "purpose": "설치부터 영점 조정까지, 계측의 준비.",
+      "alt": "설치부터 영점 조정까지, 계측의 준비. 관련 현장 장면",
+      "width": 768,
+      "height": 576,
+      "srcset": "/media/derived/product-tilt-acceleration-sensor-device-480.webp 480w, /media/derived/product-tilt-acceleration-sensor-device-768.webp 768w, /media/derived/product-tilt-acceleration-sensor-device-1280.webp 1280w"
+    }
+  },
+  "fire-detection": {
+    "first-signal-line": {
+      "src": "/media/editorial/fire-response-960.webp",
+      "asset": "fire-response",
+      "generated": true,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "불꽃 감지에서, 대피 안내까지.",
+      "alt": "지정된 통로로 이동하며 비상 대응 절차를 확인하는 작업자들",
+      "width": 960,
+      "height": 640,
+      "srcset": "/media/editorial/fire-response-480.webp 480w, /media/editorial/fire-response-960.webp 960w, /media/editorial/fire-response-1536.webp 1536w"
+    },
+    "detail-2": {
+      "src": "/media/derived/product-fire-detection-scene-768.webp",
+      "asset": "product-fire-detection-scene",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "감지 다음에 필요한 안내.",
+      "alt": "자재와 전기 설비가 몰린 자리에 불꽃감지 센서를 설치하고 상태를 확인하는 모습",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/product-fire-detection-scene-480.webp 480w, /media/derived/product-fire-detection-scene-768.webp 768w, /media/derived/product-fire-detection-scene-1280.webp 1280w"
+    },
+    "detail-4": {
+      "src": "/media/editorial/control-review-960.webp",
+      "asset": "control-review",
+      "generated": true,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "현장에는 대피 방송, 관리자에게는 알림.",
+      "alt": "관제 화면의 현장 영상과 배치도를 함께 확인하는 담당자들",
+      "width": 960,
+      "height": 640,
+      "srcset": "/media/editorial/control-review-480.webp 480w, /media/editorial/control-review-960.webp 960w, /media/editorial/control-review-1536.webp 1536w"
+    }
+  },
+  "ir3-flame-detector": {
+    "ir3-configurations": {
+      "src": "/media/derived/product-ir3-cctv-combined-768.webp",
+      "asset": "product-ir3-cctv-combined",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "contain",
+      "purpose": "같은 감지 기술. 확인 방식은 두 가지.",
+      "alt": "같은 감지 기술. 확인 방식은 두 가지. 관련 현장 장면",
+      "width": 768,
+      "height": 960,
+      "srcset": "/media/derived/product-ir3-cctv-combined-480.webp 480w, /media/derived/product-ir3-cctv-combined-768.webp 768w"
+    },
+    "detail-2": {
+      "src": "/media/derived/product-ir3-flame-detector-461.webp",
+      "asset": "product-ir3-flame-detector",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "contain",
+      "purpose": "불꽃 감지에서 알림까지.",
+      "alt": "창성에이스산업 CS-TIE-C30 스마트 화재감지기",
+      "width": 461,
+      "height": 425,
+      "srcset": "/media/derived/product-ir3-flame-detector-461.webp 461w"
+    },
+    "ir3-system": {
+      "src": "/media/editorial/fire-response-960.webp",
+      "asset": "fire-response",
+      "generated": true,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "불꽃 감지부터 현장 경보와 관리자 알림까지.",
+      "alt": "지정된 통로로 이동하며 비상 대응 절차를 확인하는 작업자들",
+      "width": 960,
+      "height": 640,
+      "srcset": "/media/editorial/fire-response-480.webp 480w, /media/editorial/fire-response-960.webp 960w, /media/editorial/fire-response-1536.webp 1536w"
+    }
+  },
+  "ai-broadcast": {
+    "language-lanes": {
+      "src": "/media/editorial/multilingual-briefing-960.webp",
+      "asset": "multilingual-briefing",
+      "generated": true,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "현장의 언어가 달라도.",
+      "alt": "안전교육 화면을 함께 보며 설명을 듣는 작업자들",
+      "width": 960,
+      "height": 640,
+      "srcset": "/media/editorial/multilingual-briefing-480.webp 480w, /media/editorial/multilingual-briefing-960.webp 960w, /media/editorial/multilingual-briefing-1536.webp 1536w"
+    },
+    "detail-3": {
+      "src": "/media/derived/product-ai-broadcast-device-768.webp",
+      "asset": "product-ai-broadcast-device",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "contain",
+      "purpose": "안내를 고르면, 다국어 음성으로 방송.",
+      "alt": "안내를 고르면, 다국어 음성으로 방송. 관련 현장 장면",
+      "width": 768,
+      "height": 576,
+      "srcset": "/media/derived/product-ai-broadcast-device-480.webp 480w, /media/derived/product-ai-broadcast-device-768.webp 768w, /media/derived/product-ai-broadcast-device-1280.webp 1280w"
+    }
+  },
+  "wireless-emergency-broadcast": {
+    "broadcast-reach-line": {
+      "src": "/media/derived/field-broadcast-generated-768.webp",
+      "asset": "field-broadcast-generated",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "통신 케이블 없이 방송 신호를 전송합니다.",
+      "alt": "콘크리트 기둥에 고정한 방송 스피커와 경보등, 그 앞을 지나는 작업자",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/field-broadcast-generated-480.webp 480w, /media/derived/field-broadcast-generated-768.webp 768w, /media/derived/field-broadcast-generated-1280.webp 1280w"
+    },
+    "detail-2": {
+      "src": "/media/derived/product-wireless-emergency-broadcast-scene-768.webp",
+      "asset": "product-wireless-emergency-broadcast-scene",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "안내가 필요한 층으로.",
+      "alt": "안내가 필요한 층으로. 관련 현장 장면",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/product-wireless-emergency-broadcast-scene-480.webp 480w, /media/derived/product-wireless-emergency-broadcast-scene-768.webp 768w, /media/derived/product-wireless-emergency-broadcast-scene-1280.webp 1280w"
+    },
+    "detail-4": {
+      "src": "/media/editorial/fire-response-960.webp",
+      "asset": "fire-response",
+      "generated": true,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "일상 안내부터 비상경고음까지 전달.",
+      "alt": "지정된 통로로 이동하며 비상 대응 절차를 확인하는 작업자들",
+      "width": 960,
+      "height": 640,
+      "srcset": "/media/editorial/fire-response-480.webp 480w, /media/editorial/fire-response-960.webp 960w, /media/editorial/fire-response-1536.webp 1536w"
+    }
+  },
+  "digital-radio": {
+    "radio-paths": {
+      "src": "/media/derived/field-radio-wet-site-generated-768.webp",
+      "asset": "field-radio-wet-site-generated",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "버튼 한 번으로, 통화 대상은 다르게.",
+      "alt": "버튼 한 번으로, 통화 대상은 다르게. 관련 현장 장면",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/field-radio-wet-site-generated-480.webp 480w, /media/derived/field-radio-wet-site-generated-768.webp 768w, /media/derived/field-radio-wet-site-generated-1280.webp 1280w"
+    },
+    "detail-2": {
+      "src": "/media/derived/product-digital-radio-device-768.webp",
+      "asset": "product-digital-radio-device",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "contain",
+      "purpose": "작업조에서 현장 전체까지.",
+      "alt": "작업조에서 현장 전체까지. 관련 현장 장면",
+      "width": 768,
+      "height": 576,
+      "srcset": "/media/derived/product-digital-radio-device-480.webp 480w, /media/derived/product-digital-radio-device-768.webp 768w, /media/derived/product-digital-radio-device-1280.webp 1280w"
+    },
+    "detail-4": {
+      "src": "/media/derived/field-radio-handover-generated-768.webp",
+      "asset": "field-radio-handover-generated",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "지급과 회수부터 충전 상태까지 관리.",
+      "alt": "안전모와 형광 조끼 차림의 관리자가 가설계단 위에서 무전기로 아래 작업 구간에 상황을 전하는 모습",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/field-radio-handover-generated-480.webp 480w, /media/derived/field-radio-handover-generated-768.webp 768w, /media/derived/field-radio-handover-generated-1280.webp 1280w"
+    }
+  },
+  "tbm-solution": {
+    "tbm-delivery-flow": {
+      "src": "/media/editorial/multilingual-briefing-960.webp",
+      "asset": "multilingual-briefing",
+      "generated": true,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "오늘의 위험을 함께 보고, 작업 전 주의사항을 확인하세요.",
+      "alt": "안전교육 화면을 함께 보며 설명을 듣는 작업자들",
+      "width": 960,
+      "height": 640,
+      "srcset": "/media/editorial/multilingual-briefing-480.webp 480w, /media/editorial/multilingual-briefing-960.webp 960w, /media/editorial/multilingual-briefing-1536.webp 1536w"
+    },
+    "detail-2": {
+      "src": "/media/derived/field-tbm-briefing-generated-768.webp",
+      "asset": "field-tbm-briefing-generated",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "작업 전, 같은 내용을 함께.",
+      "alt": "작업 전, 같은 내용을 함께. 관련 현장 장면",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/field-tbm-briefing-generated-480.webp 480w, /media/derived/field-tbm-briefing-generated-768.webp 768w, /media/derived/field-tbm-briefing-generated-1280.webp 1280w"
+    },
+    "detail-4": {
+      "src": "/media/derived/product-tbm-solution-scene-768.webp",
+      "asset": "product-tbm-solution-scene",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "교육자는 설명하고, 작업자는 화면으로 확인합니다.",
+      "alt": "교육자는 설명하고, 작업자는 화면으로 확인합니다. 관련 현장 장면",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/product-tbm-solution-scene-480.webp 480w, /media/derived/product-tbm-solution-scene-768.webp 768w, /media/derived/product-tbm-solution-scene-1280.webp 1280w"
+    }
+  },
+  "ai-equipment-collision": {
+    "warning-state": {
+      "src": "/media/derived/field-equipment-stop-generated-768.webp",
+      "asset": "field-equipment-stop-generated",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "사각지대에 들어선 순간, 운전석과 보행자 동시 경고 .",
+      "alt": "사각지대에 들어선 순간, 운전석과 보행자 동시 경고 . 관련 현장 장면",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/field-equipment-stop-generated-480.webp 480w, /media/derived/field-equipment-stop-generated-768.webp 768w, /media/derived/field-equipment-stop-generated-1280.webp 1280w"
+    },
+    "detail-2": {
+      "src": "/media/derived/product-ai-equipment-collision-device-768.webp",
+      "asset": "product-ai-equipment-collision-device",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "contain",
+      "purpose": "사각지대에 더하는 접근 경고.",
+      "alt": "카메라와 운전석 화면, 경고 스피커와 경광등, 제어기가 함께 놓인 AI 중장비 충돌 감지기 구성품",
+      "width": 768,
+      "height": 576,
+      "srcset": "/media/derived/product-ai-equipment-collision-device-480.webp 480w, /media/derived/product-ai-equipment-collision-device-768.webp 768w, /media/derived/product-ai-equipment-collision-device-1280.webp 1280w"
+    },
+    "detail-4": {
+      "src": "/media/derived/product-ai-equipment-collision-scene-768.webp",
+      "asset": "product-ai-equipment-collision-scene",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "운전자와 보행자가 장비 접근을 함께 확인합니다.",
+      "alt": "중장비 뒤쪽에 붙인 카메라가 접근하는 작업자를 잡아 경고하는 모습",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/product-ai-equipment-collision-scene-480.webp 480w, /media/derived/product-ai-equipment-collision-scene-768.webp 768w, /media/derived/product-ai-equipment-collision-scene-1280.webp 1280w"
+    }
+  },
+  "opening-open-close-sensor": {
+    "opening-alert-line": {
+      "src": "/media/derived/product-opening-open-close-sensor-device-768.webp",
+      "asset": "product-opening-open-close-sensor-device",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "contain",
+      "purpose": "덮개가 열리면, 방송과 알림으로.",
+      "alt": "개구부 덮개에 부착한 마그네틱 센서와 LoRa 중계기 연출 이미지",
+      "width": 768,
+      "height": 576,
+      "srcset": "/media/derived/product-opening-open-close-sensor-device-480.webp 480w, /media/derived/product-opening-open-close-sensor-device-768.webp 768w, /media/derived/product-opening-open-close-sensor-device-1280.webp 1280w"
+    },
+    "detail-2": {
+      "src": "/media/derived/product-opening-open-close-sensor-scene-768.webp",
+      "asset": "product-opening-open-close-sensor-scene",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "덮개가 열리면, 알림으로.",
+      "alt": "슬래브 개구부 덮개에 마그네틱 센서를 설치하고 확인하는 모습",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/product-opening-open-close-sensor-scene-480.webp 480w, /media/derived/product-opening-open-close-sensor-scene-768.webp 768w, /media/derived/product-opening-open-close-sensor-scene-1280.webp 1280w"
+    },
+    "detail-4": {
+      "src": "/media/editorial/control-review-960.webp",
+      "asset": "control-review",
+      "generated": true,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "덮개 열림 상태를 현장과 관리자가 함께 확인.",
+      "alt": "관제 화면의 현장 영상과 배치도를 함께 확인하는 담당자들",
+      "width": 960,
+      "height": 640,
+      "srcset": "/media/editorial/control-review-480.webp 480w, /media/editorial/control-review-960.webp 960w, /media/editorial/control-review-1536.webp 1536w"
+    }
+  },
+  "equipment-approach-alarm": {
+    "work-radius-line": {
+      "src": "/media/derived/field-equipment-stop-generated-768.webp",
+      "asset": "field-equipment-stop-generated",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "접근을 감지하면, 양쪽에 경고합니다.",
+      "alt": "접근을 감지하면, 양쪽에 경고합니다. 관련 현장 장면",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/field-equipment-stop-generated-480.webp 480w, /media/derived/field-equipment-stop-generated-768.webp 768w, /media/derived/field-equipment-stop-generated-1280.webp 1280w"
+    },
+    "detail-2": {
+      "src": "/media/derived/product-equipment-approach-alarm-scene-768.webp",
+      "asset": "product-equipment-approach-alarm-scene",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "다가오는 사람을 함께 알도록.",
+      "alt": "다가오는 사람을 함께 알도록. 관련 현장 장면",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/product-equipment-approach-alarm-scene-480.webp 480w, /media/derived/product-equipment-approach-alarm-scene-768.webp 768w, /media/derived/product-equipment-approach-alarm-scene-1280.webp 1280w"
+    },
+    "detail-4": {
+      "src": "/media/derived/product-equipment-approach-alarm-device-768.webp",
+      "asset": "product-equipment-approach-alarm-device",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "contain",
+      "purpose": "운전석에도, 장비 주변에도.",
+      "alt": "운전석에도, 장비 주변에도. 관련 현장 장면",
+      "width": 768,
+      "height": 576,
+      "srcset": "/media/derived/product-equipment-approach-alarm-device-480.webp 480w, /media/derived/product-equipment-approach-alarm-device-768.webp 768w, /media/derived/product-equipment-approach-alarm-device-1280.webp 1280w"
+    }
+  },
+  "tower-crane-hook-collision": {
+    "hook-warning-flow": {
+      "src": "/media/derived/field-lifting-zone-generated-768.webp",
+      "asset": "field-lifting-zone-generated",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "후크가 움직일 때, 하부에는 경고방송.",
+      "alt": "크레인 양중 구역과 장비·보행 동선이 나뉘어 있는 건설 현장",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/field-lifting-zone-generated-480.webp 480w, /media/derived/field-lifting-zone-generated-768.webp 768w, /media/derived/field-lifting-zone-generated-1280.webp 1280w"
+    },
+    "detail-2": {
+      "src": "/media/derived/product-tower-crane-hook-collision-scene-768.webp",
+      "asset": "product-tower-crane-hook-collision-scene",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "위의 움직임을 아래의 안내로.",
+      "alt": "위의 움직임을 아래의 안내로. 관련 현장 장면",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/product-tower-crane-hook-collision-scene-480.webp 480w, /media/derived/product-tower-crane-hook-collision-scene-768.webp 768w, /media/derived/product-tower-crane-hook-collision-scene-1280.webp 1280w"
+    },
+    "detail-4": {
+      "src": "/media/editorial/multilingual-briefing-960.webp",
+      "asset": "multilingual-briefing",
+      "generated": true,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "3개국어로 전하는 후크 이동 경고.",
+      "alt": "안전교육 화면을 함께 보며 설명을 듣는 작업자들",
+      "width": 960,
+      "height": 640,
+      "srcset": "/media/editorial/multilingual-briefing-480.webp 480w, /media/editorial/multilingual-briefing-960.webp 960w, /media/editorial/multilingual-briefing-1536.webp 1536w"
+    }
+  },
+  "emergency-signal-location": {
+    "detail-2": {
+      "src": "/media/derived/product-emergency-signal-location-device-768.webp",
+      "asset": "product-emergency-signal-location-device",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "contain",
+      "purpose": "호출에 더하는 위치 정보.",
+      "alt": "호출에 더하는 위치 정보. 관련 현장 장면",
+      "width": 768,
+      "height": 576,
+      "srcset": "/media/derived/product-emergency-signal-location-device-480.webp 480w, /media/derived/product-emergency-signal-location-device-768.webp 768w, /media/derived/product-emergency-signal-location-device-1280.webp 1280w"
+    },
+    "tunnel-call": {
+      "src": "/media/editorial/control-review-960.webp",
+      "asset": "control-review",
+      "generated": true,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "버튼 하나로 전화 시도와 위치 문자 전송.",
+      "alt": "관제 화면의 현장 영상과 배치도를 함께 확인하는 담당자들",
+      "width": 960,
+      "height": 640,
+      "srcset": "/media/editorial/control-review-480.webp 480w, /media/editorial/control-review-960.webp 960w, /media/editorial/control-review-1536.webp 1536w"
+    },
+    "detail-4": {
+      "src": "/media/derived/product-emergency-signal-location-scene-768.webp",
+      "asset": "product-emergency-signal-location-scene",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "호출 신호와 위치 정보로 대응을 준비.",
+      "alt": "호출 신호와 위치 정보로 대응을 준비. 관련 현장 장면",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/product-emergency-signal-location-scene-480.webp 480w, /media/derived/product-emergency-signal-location-scene-768.webp 768w, /media/derived/product-emergency-signal-location-scene-1280.webp 1280w"
+    }
+  },
+  "hazard-area-broadcast": {
+    "walking-boundary": {
+      "src": "/media/derived/product-hazard-area-broadcast-scene-768.webp",
+      "asset": "product-hazard-area-broadcast-scene",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "위험 구역 접근을 감지해 음성으로 알립니다.",
+      "alt": "위험 구역 접근을 감지해 음성으로 알립니다. 관련 현장 장면",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/product-hazard-area-broadcast-scene-480.webp 480w, /media/derived/product-hazard-area-broadcast-scene-768.webp 768w, /media/derived/product-hazard-area-broadcast-scene-1280.webp 1280w"
+    },
+    "detail-2": {
+      "src": "/media/derived/field-broadcast-generated-768.webp",
+      "asset": "field-broadcast-generated",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "경계 가까이, 필요한 한마디.",
+      "alt": "콘크리트 기둥에 고정한 방송 스피커와 경보등, 그 앞을 지나는 작업자",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/field-broadcast-generated-480.webp 480w, /media/derived/field-broadcast-generated-768.webp 768w, /media/derived/field-broadcast-generated-1280.webp 1280w"
+    },
+    "detail-4": {
+      "src": "/media/editorial/pedestrian-gate-960.webp",
+      "asset": "pedestrian-gate",
+      "generated": true,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "구역마다 다른 위험, 안내 문구도 다르게.",
+      "alt": "차량 통로와 분리된 보행 구간의 작업자와 게이트 경광등",
+      "width": 960,
+      "height": 640,
+      "srcset": "/media/editorial/pedestrian-gate-480.webp 480w, /media/editorial/pedestrian-gate-960.webp 960w, /media/editorial/pedestrian-gate-1536.webp 1536w"
+    }
+  },
+  "pedestrian-collision-prevention": {
+    "blind-corner": {
+      "src": "/media/editorial/pedestrian-gate-960.webp",
+      "asset": "pedestrian-gate",
+      "generated": true,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "보행자 접근을 차량 쪽에도 알립니다.",
+      "alt": "차량 통로와 분리된 보행 구간의 작업자와 게이트 경광등",
+      "width": 960,
+      "height": 640,
+      "srcset": "/media/editorial/pedestrian-gate-480.webp 480w, /media/editorial/pedestrian-gate-960.webp 960w, /media/editorial/pedestrian-gate-1536.webp 1536w"
+    },
+    "detail-2": {
+      "src": "/media/derived/product-pedestrian-collision-prevention-scene-768.webp",
+      "asset": "product-pedestrian-collision-prevention-scene",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "서로 보이지 않는 곳에 알림을.",
+      "alt": "서로 보이지 않는 곳에 알림을. 관련 현장 장면",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/product-pedestrian-collision-prevention-scene-480.webp 480w, /media/derived/product-pedestrian-collision-prevention-scene-768.webp 768w, /media/derived/product-pedestrian-collision-prevention-scene-1280.webp 1280w"
+    },
+    "detail-4": {
+      "src": "/media/derived/field-vehicle-pedestrian-generated-768.webp",
+      "asset": "field-vehicle-pedestrian-generated",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "현장 출입구에서 인접 보행로까지.",
+      "alt": "차량 동선과 보행자 동선이 나뉘어 있는 현장 모습",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/field-vehicle-pedestrian-generated-480.webp 480w, /media/derived/field-vehicle-pedestrian-generated-768.webp 768w, /media/derived/field-vehicle-pedestrian-generated-1280.webp 1280w"
+    }
+  },
+  "alcohol-detection": {
+    "shift-start-gate": {
+      "src": "/media/derived/alcohol-check-detected-generated-768.webp",
+      "asset": "alcohol-check-detected-generated",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "출입 전에 측정하고, 재확인은 한 번 더.",
+      "alt": "출입 전에 측정하고, 재확인은 한 번 더. 관련 현장 장면",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/alcohol-check-detected-generated-480.webp 480w, /media/derived/alcohol-check-detected-generated-768.webp 768w, /media/derived/alcohol-check-detected-generated-1280.webp 1280w"
+    },
+    "detail-2": {
+      "src": "/media/derived/product-alcohol-detection-scene-768.webp",
+      "asset": "product-alcohol-detection-scene",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "측정에서 결과 확인까지.",
+      "alt": "측정에서 결과 확인까지. 관련 현장 장면",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/product-alcohol-detection-scene-480.webp 480w, /media/derived/product-alcohol-detection-scene-768.webp 768w, /media/derived/product-alcohol-detection-scene-1280.webp 1280w"
+    },
+    "detail-4": {
+      "src": "/media/derived/alcohol-control-transfer-generated-768.webp",
+      "asset": "alcohol-control-transfer-generated",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "측정은 게이트에서, 결과 확인은 관제 화면에서",
+      "alt": "측정은 게이트에서, 결과 확인은 관제 화면에서 관련 현장 장면",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/alcohol-control-transfer-generated-480.webp 480w, /media/derived/alcohol-control-transfer-generated-768.webp 768w, /media/derived/alcohol-control-transfer-generated-1280.webp 1280w"
+    }
+  },
+  "smart-beacon": {
+    "beacon-flow": {
+      "src": "/media/editorial/beacon-zone-960.webp",
+      "asset": "beacon-zone",
+      "generated": true,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "비콘으로 구역별 작업 인원을 확인합니다.",
+      "alt": "작업 구역과 태블릿의 구역 정보를 함께 확인하는 담당자",
+      "width": 960,
+      "height": 640,
+      "srcset": "/media/editorial/beacon-zone-480.webp 480w, /media/editorial/beacon-zone-960.webp 960w, /media/editorial/beacon-zone-1536.webp 1536w"
+    },
+    "detail-2": {
+      "src": "/media/derived/product-smart-beacon-scene-768.webp",
+      "asset": "product-smart-beacon-scene",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "구역마다 누가 있는지.",
+      "alt": "구역마다 누가 있는지. 관련 현장 장면",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/product-smart-beacon-scene-480.webp 480w, /media/derived/product-smart-beacon-scene-768.webp 768w, /media/derived/product-smart-beacon-scene-1280.webp 1280w"
+    },
+    "detail-4": {
+      "src": "/media/derived/product-smart-beacon-device-768.webp",
+      "asset": "product-smart-beacon-device",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "contain",
+      "purpose": "구역 진입부터 인원 확인까지.",
+      "alt": "구역 진입부터 인원 확인까지. 관련 현장 장면",
+      "width": 768,
+      "height": 576,
+      "srcset": "/media/derived/product-smart-beacon-device-480.webp 480w, /media/derived/product-smart-beacon-device-768.webp 768w, /media/derived/product-smart-beacon-device-1280.webp 1280w"
+    }
+  },
+  "wireless-network": {
+    "network-signal-path": {
+      "src": "/media/editorial/network-field-960.webp",
+      "asset": "network-field",
+      "generated": true,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "통신 음영 구간으로 넓히는 무선망.",
+      "alt": "터널 입구에서 통신함의 케이블 연결을 점검하는 기술자",
+      "width": 960,
+      "height": 640,
+      "srcset": "/media/editorial/network-field-480.webp 480w, /media/editorial/network-field-960.webp 960w, /media/editorial/network-field-1536.webp 1536w"
+    },
+    "detail-2": {
+      "src": "/media/derived/product-wireless-network-scene-768.webp",
+      "asset": "product-wireless-network-scene",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "작업 구간으로 이어지는 무선망.",
+      "alt": "터널 안에 설치한 무선 AP와 통신함으로 신호가 이어진 모습",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/product-wireless-network-scene-480.webp 480w, /media/derived/product-wireless-network-scene-768.webp 768w, /media/derived/product-wireless-network-scene-1280.webp 1280w"
+    },
+    "detail-4": {
+      "src": "/media/derived/field-review-tunnel-generated-768.webp",
+      "asset": "field-review-tunnel-generated",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "작업자와 관리자가 함께 보는 영상과 도면.",
+      "alt": "작업자와 관리자가 함께 보는 영상과 도면. 관련 현장 장면",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/field-review-tunnel-generated-480.webp 480w, /media/derived/field-review-tunnel-generated-768.webp 768w, /media/derived/field-review-tunnel-generated-1280.webp 1280w"
+    }
+  },
+  "power-assist-suit": {
+    "detail-2": {
+      "src": "/media/derived/product-power-assist-suit-device-768.webp",
+      "asset": "product-power-assist-suit-device",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "contain",
+      "purpose": "허리를 쓰는 작업에 더하는 보조.",
+      "alt": "허리를 쓰는 작업에 더하는 보조. 관련 현장 장면",
+      "width": 768,
+      "height": 576,
+      "srcset": "/media/derived/product-power-assist-suit-device-480.webp 480w, /media/derived/product-power-assist-suit-device-768.webp 768w, /media/derived/product-power-assist-suit-device-1280.webp 1280w"
+    },
+    "back-support-line": {
+      "src": "/media/derived/product-power-assist-suit-scene-768.webp",
+      "asset": "product-power-assist-suit-scene",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "들어 올리는 동작에 더하는 허리 보조.",
+      "alt": "들어 올리는 동작에 더하는 허리 보조. 관련 현장 장면",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/product-power-assist-suit-scene-480.webp 480w, /media/derived/product-power-assist-suit-scene-768.webp 768w, /media/derived/product-power-assist-suit-scene-1280.webp 1280w"
+    },
+    "detail-4": {
+      "src": "/media/derived/field-ppe-check-generated-768.webp",
+      "asset": "field-ppe-check-generated",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "배터리 없이, 탄성 구조로.",
+      "alt": "배터리 없이, 탄성 구조로. 관련 현장 장면",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/field-ppe-check-generated-480.webp 480w, /media/derived/field-ppe-check-generated-768.webp 768w, /media/derived/field-ppe-check-generated-1280.webp 1280w"
+    }
+  },
+  "smart-safety-hook": {
+    "detail-2": {
+      "src": "/media/derived/field-hook-safety-check-generated-768.webp",
+      "asset": "field-hook-safety-check-generated",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "체결은 작업자가. 확인은 함께.",
+      "alt": "작업자가 구조물 수평재의 걸이점에 안전고리를 거는 모습",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/field-hook-safety-check-generated-480.webp 480w, /media/derived/field-hook-safety-check-generated-768.webp 768w, /media/derived/field-hook-safety-check-generated-1280.webp 1280w"
+    },
+    "hook-signal-line": {
+      "src": "/media/derived/product-smart-safety-hook-device-768.webp",
+      "asset": "product-smart-safety-hook-device",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "contain",
+      "purpose": "작업자에게 체결 안내, 담당자에게 미체결 알림.",
+      "alt": "작업 위치를 옮기기 전 죔줄을 정리하며 다음 걸이점을 올려다보는 작업자 연출 이미지",
+      "width": 768,
+      "height": 576,
+      "srcset": "/media/derived/product-smart-safety-hook-device-480.webp 480w, /media/derived/product-smart-safety-hook-device-768.webp 768w, /media/derived/product-smart-safety-hook-device-1280.webp 1280w"
+    },
+    "detail-4": {
+      "src": "/media/derived/product-smart-safety-hook-scene-768.webp",
+      "asset": "product-smart-safety-hook-scene",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "작업 구간에 맞춘 감지와 통신 구성.",
+      "alt": "비계 위에서 죔줄 고리를 수평재에 거는 작업자의 손동작 연출 이미지",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/product-smart-safety-hook-scene-480.webp 480w, /media/derived/product-smart-safety-hook-scene-768.webp 768w, /media/derived/product-smart-safety-hook-scene-1280.webp 1280w"
+    }
+  },
+  "smart-helmet": {
+    "detail-2": {
+      "src": "/media/editorial/helmet-check-960.webp",
+      "asset": "helmet-check",
+      "generated": true,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "착용 확인, 턱끈 체결까지.",
+      "alt": "작업을 시작하기 전 안전모 턱끈을 조정하는 작업자",
+      "width": 960,
+      "height": 640,
+      "srcset": "/media/editorial/helmet-check-480.webp 480w, /media/editorial/helmet-check-960.webp 960w, /media/editorial/helmet-check-1536.webp 1536w"
+    },
+    "helmet-signal-line": {
+      "src": "/media/derived/product-smart-helmet-device-768.webp",
+      "asset": "product-smart-helmet-device",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "contain",
+      "purpose": "착용과 턱끈 체결, 모듈로 함께 확인.",
+      "alt": "착용과 턱끈 체결, 모듈로 함께 확인. 관련 현장 장면",
+      "width": 768,
+      "height": 576,
+      "srcset": "/media/derived/product-smart-helmet-device-480.webp 480w, /media/derived/product-smart-helmet-device-768.webp 768w, /media/derived/product-smart-helmet-device-1280.webp 1280w"
+    },
+    "detail-4": {
+      "src": "/media/editorial/control-review-960.webp",
+      "asset": "control-review",
+      "generated": true,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "작업자의 착용 상태를 담당자 화면에서도.",
+      "alt": "관제 화면의 현장 영상과 배치도를 함께 확인하는 담당자들",
+      "width": 960,
+      "height": 640,
+      "srcset": "/media/editorial/control-review-480.webp 480w, /media/editorial/control-review-960.webp 960w, /media/editorial/control-review-1536.webp 1536w"
+    }
+  },
+  "smart-airbag": {
+    "detail-2": {
+      "src": "/media/derived/product-smart-airbag-problem-768.webp",
+      "asset": "product-smart-airbag-problem",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "착용하는 충격 완화 장비.",
+      "alt": "착용하는 충격 완화 장비. 관련 현장 장면",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/product-smart-airbag-problem-480.webp 480w, /media/derived/product-smart-airbag-problem-768.webp 768w, /media/derived/product-smart-airbag-problem-1280.webp 1280w"
+    },
+    "workwear-day-journey": {
+      "src": "/media/derived/product-smart-airbag-device-768.webp",
+      "asset": "product-smart-airbag-device",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "contain",
+      "purpose": "감지 신호에 따라 펼쳐지는 에어백.",
+      "alt": "감지 신호에 따라 펼쳐지는 에어백. 관련 현장 장면",
+      "width": 768,
+      "height": 576,
+      "srcset": "/media/derived/product-smart-airbag-device-480.webp 480w, /media/derived/product-smart-airbag-device-768.webp 768w, /media/derived/product-smart-airbag-device-1280.webp 1280w"
+    },
+    "detail-4": {
+      "src": "/media/derived/field-ppe-check-generated-768.webp",
+      "asset": "field-ppe-check-generated",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "작업 조건에 맞는 용량과 착용 상태.",
+      "alt": "작업 조건에 맞는 용량과 착용 상태. 관련 현장 장면",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/field-ppe-check-generated-480.webp 480w, /media/derived/field-ppe-check-generated-768.webp 768w, /media/derived/field-ppe-check-generated-1280.webp 1280w"
+    }
+  },
+  "worker-attendance-card": {
+    "attendance-card-flow": {
+      "src": "/media/derived/worker-attendance-card-scan-generated-768.webp",
+      "asset": "worker-attendance-card-scan-generated",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "전자카드 인식으로 출퇴근 내역을 기록합니다.",
+      "alt": "출입구 리더기에 전자카드를 인식하는 모습",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/worker-attendance-card-scan-generated-480.webp 480w, /media/derived/worker-attendance-card-scan-generated-768.webp 768w, /media/derived/worker-attendance-card-scan-generated-1280.webp 1280w"
+    },
+    "detail-2": {
+      "src": "/media/derived/worker-attendance-control-room-generated-768.webp",
+      "asset": "worker-attendance-control-room-generated",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "출퇴근은 카드로, 확인은 명단으로.",
+      "alt": "현장 인원과 대피 준비 상태를 확인하는 안전관리자",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/worker-attendance-control-room-generated-480.webp 480w, /media/derived/worker-attendance-control-room-generated-768.webp 768w, /media/derived/worker-attendance-control-room-generated-1280.webp 1280w"
+    },
+    "detail-4": {
+      "src": "/media/derived/worker-attendance-overview-generated-768.webp",
+      "asset": "worker-attendance-overview-generated",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "근로자는 카드 인식, 담당자는 명단 확인.",
+      "alt": "근로자는 카드 인식, 담당자는 명단 확인. 관련 현장 장면",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/worker-attendance-overview-generated-480.webp 480w, /media/derived/worker-attendance-overview-generated-768.webp 768w, /media/derived/worker-attendance-overview-generated-1280.webp 1280w"
+    }
+  },
+  "worker-access-gate": {
+    "access-gate-rhythm": {
+      "src": "/media/derived/product-worker-access-gate-scene-768.webp",
+      "asset": "product-worker-access-gate-scene",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "한 번의 통과로, 인증과 출역 기록을 한꺼번에.",
+      "alt": "근로자가 출입 게이트에서 인증을 마치고 통과하는 모습",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/product-worker-access-gate-scene-480.webp 480w, /media/derived/product-worker-access-gate-scene-768.webp 768w, /media/derived/product-worker-access-gate-scene-1280.webp 1280w"
+    },
+    "detail-2": {
+      "src": "/media/derived/field-worker-entry-generated-768.webp",
+      "asset": "field-worker-entry-generated",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "게이트를 지나면 기록으로.",
+      "alt": "현장 출입구 게이트를 지나 들어가는 작업자들과 옆에서 출입을 살피는 관리자",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/field-worker-entry-generated-480.webp 480w, /media/derived/field-worker-entry-generated-768.webp 768w, /media/derived/field-worker-entry-generated-1280.webp 1280w"
+    },
+    "detail-4": {
+      "src": "/media/derived/worker-attendance-control-room-generated-768.webp",
+      "asset": "worker-attendance-control-room-generated",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "출입 권한과 통과 기록을 함께 확인.",
+      "alt": "현장 인원과 대피 준비 상태를 확인하는 안전관리자",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/worker-attendance-control-room-generated-480.webp 480w, /media/derived/worker-attendance-control-room-generated-768.webp 768w, /media/derived/worker-attendance-control-room-generated-1280.webp 1280w"
+    }
+  },
+  "healthcare-heart-band": {
+    "detail-2": {
+      "src": "/media/derived/field-heart-band-wrist-generated-768.webp",
+      "asset": "field-heart-band-wrist-generated",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "측정한 심박 신호를 함께 확인.",
+      "alt": "한여름 그늘막 휴게 공간에서 물을 마시며 서로의 상태를 살피는 근로자들 연출 이미지",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/field-heart-band-wrist-generated-480.webp 480w, /media/derived/field-heart-band-wrist-generated-768.webp 768w, /media/derived/field-heart-band-wrist-generated-1280.webp 1280w"
+    },
+    "band-functions": {
+      "src": "/media/derived/product-healthcare-heart-band-device-768.webp",
+      "asset": "product-healthcare-heart-band-device",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "contain",
+      "purpose": "심박 신호가 설정 범위를 벗어났을 때.",
+      "alt": "심박 신호가 설정 범위를 벗어났을 때. 관련 현장 장면",
+      "width": 768,
+      "height": 576,
+      "srcset": "/media/derived/product-healthcare-heart-band-device-480.webp 480w, /media/derived/product-healthcare-heart-band-device-768.webp 768w, /media/derived/product-healthcare-heart-band-device-1280.webp 1280w"
+    },
+    "detail-4": {
+      "src": "/media/editorial/control-review-960.webp",
+      "asset": "control-review",
+      "generated": true,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "착용자에겐 진동, 담당자에겐 알림.",
+      "alt": "관제 화면의 현장 영상과 배치도를 함께 확인하는 담당자들",
+      "width": 960,
+      "height": 640,
+      "srcset": "/media/editorial/control-review-480.webp 480w, /media/editorial/control-review-960.webp 960w, /media/editorial/control-review-1536.webp 1536w"
+    }
+  },
+  "ai-quick-risk-assessment": {
+    "ai-quick-risk-assessment-flow": {
+      "src": "/media/editorial/field-photo-input-960.webp",
+      "asset": "field-photo-input",
+      "generated": true,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "사진을 올리고, 초안을 확인하세요.",
+      "alt": "보호된 점검 통로에서 태블릿으로 작업 구간을 촬영하는 담당자",
+      "width": 960,
+      "height": 640,
+      "srcset": "/media/editorial/field-photo-input-480.webp 480w, /media/editorial/field-photo-input-960.webp 960w, /media/editorial/field-photo-input-1536.webp 1536w"
+    },
+    "detail-2": {
+      "src": "/media/editorial/risk-review-desk-960.webp",
+      "asset": "risk-review-desk",
+      "generated": true,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "사진을 올리고, 초안을 살펴보고.",
+      "alt": "현장 사진과 점검표를 함께 대조하는 두 명의 안전 담당자",
+      "width": 960,
+      "height": 640,
+      "srcset": "/media/editorial/risk-review-desk-480.webp 480w, /media/editorial/risk-review-desk-960.webp 960w, /media/editorial/risk-review-desk-1536.webp 1536w"
+    },
+    "detail-4": {
+      "src": "/media/editorial/signed-record-960.webp",
+      "asset": "signed-record",
+      "generated": true,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "검토한 결과는, 서명과 기록으로.",
+      "alt": "작업 기록을 검토하며 서명하는 담당자",
+      "width": 960,
+      "height": 640,
+      "srcset": "/media/editorial/signed-record-480.webp 480w, /media/editorial/signed-record-960.webp 960w, /media/editorial/signed-record-1536.webp 1536w"
+    }
+  },
+  "ai-risk-assessment-review": {
+    "ai-risk-assessment-review-flow": {
+      "src": "/media/editorial/risk-review-desk-960.webp",
+      "asset": "risk-review-desk",
+      "generated": true,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "AI가 비교하고, 담당자가 확인합니다.",
+      "alt": "현장 사진과 점검표를 함께 대조하는 두 명의 안전 담당자",
+      "width": 960,
+      "height": 640,
+      "srcset": "/media/editorial/risk-review-desk-480.webp 480w, /media/editorial/risk-review-desk-960.webp 960w, /media/editorial/risk-review-desk-1536.webp 1536w"
+    },
+    "detail-2": {
+      "src": "/media/derived/product-ai-risk-assessment-review-scene-768.webp",
+      "asset": "product-ai-risk-assessment-review-scene",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "빠진 항목은 없는지, 다시 한번.",
+      "alt": "사무실에서 현장 기록과 문서를 검토하는 담당자",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/product-ai-risk-assessment-review-scene-480.webp 480w, /media/derived/product-ai-risk-assessment-review-scene-768.webp 768w, /media/derived/product-ai-risk-assessment-review-scene-1280.webp 1280w"
+    },
+    "detail-4": {
+      "src": "/media/editorial/signed-record-960.webp",
+      "asset": "signed-record",
+      "generated": true,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "다시 검토할 때도, 지난 기록부터.",
+      "alt": "작업 기록을 검토하며 서명하는 담당자",
+      "width": 960,
+      "height": 640,
+      "srcset": "/media/editorial/signed-record-480.webp 480w, /media/editorial/signed-record-960.webp 960w, /media/editorial/signed-record-1536.webp 1536w"
+    }
+  },
+  "ai-safety-index": {
+    "morning-index-line": {
+      "src": "/media/derived/product-ai-safety-index-scene-768.webp",
+      "asset": "product-ai-safety-index-scene",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "현장 데이터를 모아, 점검 우선순위를.",
+      "alt": "관제실에서 현장별 위험도 순위 대시보드를 확인하는 안전 책임자",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/product-ai-safety-index-scene-480.webp 480w, /media/derived/product-ai-safety-index-scene-768.webp 768w, /media/derived/product-ai-safety-index-scene-1280.webp 1280w"
+    },
+    "detail-2": {
+      "src": "/media/editorial/control-review-960.webp",
+      "asset": "control-review",
+      "generated": true,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "점검의 순서를 생각하는 데이터.",
+      "alt": "관제 화면의 현장 영상과 배치도를 함께 확인하는 담당자들",
+      "width": 960,
+      "height": 640,
+      "srcset": "/media/editorial/control-review-480.webp 480w, /media/editorial/control-review-960.webp 960w, /media/editorial/control-review-1536.webp 1536w"
+    },
+    "detail-4": {
+      "src": "/media/editorial/risk-review-desk-960.webp",
+      "asset": "risk-review-desk",
+      "generated": true,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "현재 쓰는 안전 자료부터 차근차근.",
+      "alt": "현장 사진과 점검표를 함께 대조하는 두 명의 안전 담당자",
+      "width": 960,
+      "height": 640,
+      "srcset": "/media/editorial/risk-review-desk-480.webp 480w, /media/editorial/risk-review-desk-960.webp 960w, /media/editorial/risk-review-desk-1536.webp 1536w"
+    }
+  },
+  "ai-subcontractor-safety": {
+    "ai-subcontractor-safety-flow": {
+      "src": "/media/derived/product-ai-subcontractor-safety-scene-768.webp",
+      "asset": "product-ai-subcontractor-safety-scene",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "오늘의 계획부터, 작업 기록까지.",
+      "alt": "현장사무실에서 여러 담당자가 작업 현황을 함께 논의하는 모습",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/product-ai-subcontractor-safety-scene-480.webp 480w, /media/derived/product-ai-subcontractor-safety-scene-768.webp 768w, /media/derived/product-ai-subcontractor-safety-scene-1280.webp 1280w"
+    },
+    "detail-2": {
+      "src": "/media/editorial/risk-review-desk-960.webp",
+      "asset": "risk-review-desk",
+      "generated": true,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "작업 계획을 한자리에 모으다.",
+      "alt": "현장 사진과 점검표를 함께 대조하는 두 명의 안전 담당자",
+      "width": 960,
+      "height": 640,
+      "srcset": "/media/editorial/risk-review-desk-480.webp 480w, /media/editorial/risk-review-desk-960.webp 960w, /media/editorial/risk-review-desk-1536.webp 1536w"
+    },
+    "detail-4": {
+      "src": "/media/editorial/field-photo-input-960.webp",
+      "asset": "field-photo-input",
+      "generated": true,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "현장에서는 모바일로, 사무실에서는 PC로.",
+      "alt": "보호된 점검 통로에서 태블릿으로 작업 구간을 촬영하는 담당자",
+      "width": 960,
+      "height": 640,
+      "srcset": "/media/editorial/field-photo-input-480.webp 480w, /media/editorial/field-photo-input-960.webp 960w, /media/editorial/field-photo-input-1536.webp 1536w"
+    }
+  },
+  "ai-drone-inspection": {
+    "flight-route": {
+      "src": "/media/derived/product-ai-drone-inspection-scene-768.webp",
+      "asset": "product-ai-drone-inspection-scene",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "촬영 장면과 위치 정보를 한 기록에.",
+      "alt": "드론이 고층 구조물 외벽을 따라 올라가며 외관을 촬영하는 모습",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/product-ai-drone-inspection-scene-480.webp 480w, /media/derived/product-ai-drone-inspection-scene-768.webp 768w, /media/derived/product-ai-drone-inspection-scene-1280.webp 1280w"
+    },
+    "detail-2": {
+      "src": "/media/derived/field-drone-inspection-generated-768.webp",
+      "asset": "field-drone-inspection-generated",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "장면에 위치를 더한 기록.",
+      "alt": "장면에 위치를 더한 기록. 관련 현장 장면",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/field-drone-inspection-generated-480.webp 480w, /media/derived/field-drone-inspection-generated-768.webp 768w, /media/derived/field-drone-inspection-generated-1280.webp 1280w"
+    },
+    "detail-4": {
+      "src": "/media/derived/product-ai-drone-inspection-problem-768.webp",
+      "asset": "product-ai-drone-inspection-problem",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "드론 영상으로 살펴보는 구조물 외관.",
+      "alt": "높고 넓은 구조물 외관을 지상에서 확인하는 점검 담당자",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/product-ai-drone-inspection-problem-480.webp 480w, /media/derived/product-ai-drone-inspection-problem-768.webp 768w, /media/derived/product-ai-drone-inspection-problem-1280.webp 1280w"
+    }
+  },
+  "inspectcut": {
+    "inspectcut-editing-desk": {
+      "src": "/media/derived/product-inspectcut-scene-768.webp",
+      "asset": "product-inspectcut-scene",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "한 편의 검측 영상, 필요한 장면만 남깁니다.",
+      "alt": "현장사무실 PC에서 검측 영상에 자막과 시간을 넣는 모습",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/product-inspectcut-scene-480.webp 480w, /media/derived/product-inspectcut-scene-768.webp 768w, /media/derived/product-inspectcut-scene-1280.webp 1280w"
+    },
+    "detail-2": {
+      "src": "/media/derived/inspectcut-field-review-generated-768.webp",
+      "asset": "inspectcut-field-review-generated",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "검측에 필요한 장면을 고르다.",
+      "alt": "현장에서 견고한 PC로 촬영한 기록을 다시 확인하는 담당자",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/inspectcut-field-review-generated-480.webp 480w, /media/derived/inspectcut-field-review-generated-768.webp 768w, /media/derived/inspectcut-field-review-generated-1280.webp 1280w"
+    },
+    "detail-4": {
+      "src": "/media/editorial/signed-record-960.webp",
+      "asset": "signed-record",
+      "generated": true,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "원본은 보관하고. 제출본은 필요한 만큼.",
+      "alt": "작업 기록을 검토하며 서명하는 담당자",
+      "width": 960,
+      "height": 640,
+      "srcset": "/media/editorial/signed-record-480.webp 480w, /media/editorial/signed-record-960.webp 960w, /media/editorial/signed-record-1536.webp 1536w"
+    }
+  },
+  "ai-similar-accident-alert": {
+    "ai-similar-accident-alert-flow": {
+      "src": "/media/editorial/multilingual-briefing-960.webp",
+      "asset": "multilingual-briefing",
+      "generated": true,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "오늘의 TBM에서, 관련 사고사례까지.",
+      "alt": "안전교육 화면을 함께 보며 설명을 듣는 작업자들",
+      "width": 960,
+      "height": 640,
+      "srcset": "/media/editorial/multilingual-briefing-480.webp 480w, /media/editorial/multilingual-briefing-960.webp 960w, /media/editorial/multilingual-briefing-1536.webp 1536w"
+    },
+    "detail-2": {
+      "src": "/media/derived/field-tbm-briefing-generated-768.webp",
+      "asset": "field-tbm-briefing-generated",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "오늘의 작업과 함께 살펴볼 사례.",
+      "alt": "오늘의 작업과 함께 살펴볼 사례. 관련 현장 장면",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/field-tbm-briefing-generated-480.webp 480w, /media/derived/field-tbm-briefing-generated-768.webp 768w, /media/derived/field-tbm-briefing-generated-1280.webp 1280w"
+    },
+    "detail-4": {
+      "src": "/media/editorial/risk-review-desk-960.webp",
+      "asset": "risk-review-desk",
+      "generated": true,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "같은 공종을 다시 할 때도, 사례를 이어서.",
+      "alt": "현장 사진과 점검표를 함께 대조하는 두 명의 안전 담당자",
+      "width": 960,
+      "height": 640,
+      "srcset": "/media/editorial/risk-review-desk-480.webp 480w, /media/editorial/risk-review-desk-960.webp 960w, /media/editorial/risk-review-desk-1536.webp 1536w"
+    }
+  },
+  "safebridge": {
+    "safebridge-training-timeline": {
+      "src": "/media/editorial/multilingual-briefing-960.webp",
+      "asset": "multilingual-briefing",
+      "generated": true,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "안전교육의 말과 화면을 각자의 언어로.",
+      "alt": "안전교육 화면을 함께 보며 설명을 듣는 작업자들",
+      "width": 960,
+      "height": 640,
+      "srcset": "/media/editorial/multilingual-briefing-480.webp 480w, /media/editorial/multilingual-briefing-960.webp 960w, /media/editorial/multilingual-briefing-1536.webp 1536w"
+    },
+    "detail-2": {
+      "src": "/media/derived/product-safebridge-scene-768.webp",
+      "asset": "product-safebridge-scene",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "같은 교육, 각자의 언어로.",
+      "alt": "안전교육장 화면에 여러 언어 통역 패널이 나란히 뜬 모습",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/product-safebridge-scene-480.webp 480w, /media/derived/product-safebridge-scene-768.webp 768w, /media/derived/product-safebridge-scene-1280.webp 1280w"
+    },
+    "detail-4": {
+      "src": "/media/derived/product-safebridge-device-768.webp",
+      "asset": "product-safebridge-device",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "contain",
+      "purpose": "교육자료 옆에 나란히 뜨는 번역 자막.",
+      "alt": "세이프브릿지 실행 화면. 같은 안전 설명이 중국어 · 힌디어 · 영어 패널에 나란히 번역되어 떠 있다",
+      "width": 768,
+      "height": 480,
+      "srcset": "/media/derived/product-safebridge-device-480.webp 480w, /media/derived/product-safebridge-device-768.webp 768w, /media/derived/product-safebridge-device-1280.webp 1280w"
+    }
+  },
+  "iot-small-tower-crane": {
+    "lifting-decision": {
+      "src": "/media/editorial/crane-operator-960.webp",
+      "asset": "crane-operator",
+      "generated": true,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "인양 전에 확인할 주요 측정값을 한곳에.",
+      "alt": "조종석에서 후크 주변 영상을 확인하는 작업자",
+      "width": 960,
+      "height": 640,
+      "srcset": "/media/editorial/crane-operator-480.webp 480w, /media/editorial/crane-operator-960.webp 960w, /media/editorial/crane-operator-1536.webp 1536w"
+    },
+    "detail-2": {
+      "src": "/media/derived/product-iot-small-tower-crane-device-768.webp",
+      "asset": "product-iot-small-tower-crane-device",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "contain",
+      "purpose": "하중부터 풍속까지 한눈에.",
+      "alt": "하중부터 풍속까지 한눈에. 관련 현장 장면",
+      "width": 768,
+      "height": 576,
+      "srcset": "/media/derived/product-iot-small-tower-crane-device-480.webp 480w, /media/derived/product-iot-small-tower-crane-device-768.webp 768w, /media/derived/product-iot-small-tower-crane-device-1280.webp 1280w"
+    },
+    "detail-4": {
+      "src": "/media/editorial/control-review-960.webp",
+      "asset": "control-review",
+      "generated": true,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "조종석의 측정값을 현장사무실에서도.",
+      "alt": "관제 화면의 현장 영상과 배치도를 함께 확인하는 담당자들",
+      "width": 960,
+      "height": 640,
+      "srcset": "/media/editorial/control-review-480.webp 480w, /media/editorial/control-review-960.webp 960w, /media/editorial/control-review-1536.webp 1536w"
+    }
+  },
+  "concrete-curing": {
+    "curing-rail": {
+      "src": "/media/editorial/curing-record-960.webp",
+      "asset": "curing-record",
+      "generated": true,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "타설부터 해체 검토까지, 계측 기록과 함께.",
+      "alt": "콘크리트의 계측 연결부와 온도 기록을 확인하는 담당자",
+      "width": 960,
+      "height": 640,
+      "srcset": "/media/editorial/curing-record-480.webp 480w, /media/editorial/curing-record-960.webp 960w, /media/editorial/curing-record-1536.webp 1536w"
+    },
+    "detail-2": {
+      "src": "/media/derived/field-concrete-curing-generated-768.webp",
+      "asset": "field-concrete-curing-generated",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "양생의 시간을 기록으로 읽다.",
+      "alt": "양생의 시간을 기록으로 읽다. 관련 현장 장면",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/field-concrete-curing-generated-480.webp 480w, /media/derived/field-concrete-curing-generated-768.webp 768w, /media/derived/field-concrete-curing-generated-1280.webp 1280w"
+    },
+    "detail-4": {
+      "src": "/media/derived/product-concrete-curing-scene-768.webp",
+      "asset": "product-concrete-curing-scene",
+      "generated": false,
+      "position": "50% 50%",
+      "fit": "cover",
+      "purpose": "타설 위치별 양생 기록을 함께 확인.",
+      "alt": "타설 위치별 양생 기록을 함께 확인. 관련 현장 장면",
+      "width": 768,
+      "height": 432,
+      "srcset": "/media/derived/product-concrete-curing-scene-480.webp 480w, /media/derived/product-concrete-curing-scene-768.webp 768w, /media/derived/product-concrete-curing-scene-1280.webp 1280w"
+    }
+  }
+}

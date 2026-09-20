@@ -109,3 +109,138 @@ body.product-editorial{--paper:#f5f5f7;--ink:#1d1d1f;--secondary:#63636b;--accen
 .product-editorial .final-cta .eyebrow{color:var(--accent)}
 
 html:has(body.product-editorial){scroll-padding-top:66px}
+
+/* Shared geometry: nested source copy must use the same axis as its actions. */
+.product-editorial .editorial-hero-copy{width:min(100%,940px);min-width:0}
+.product-editorial .editorial-hero-copy .content-copy{max-width:none;width:100%;margin-inline:auto}
+.product-editorial [data-archetype=communication] .editorial-hero-copy{width:min(100%,1050px)}
+.product-editorial .editorial-hero h1,.product-editorial .editorial-tagline,.product-editorial .editorial-chapter h2,.product-editorial .overview-card>span:first-child{word-break:keep-all;overflow-wrap:break-word}
+.product-editorial .editorial-hero-copy .editorial-lead{word-break:keep-all;overflow-wrap:break-word}
+.product-editorial .editorial-actions{flex-wrap:wrap}
+.product-editorial .overview-card{min-height:0;align-self:stretch}
+.product-editorial .overview-card>span:first-child{min-height:136px;padding:28px 26px;line-height:1.45}
+.product-editorial .overview-card img{height:250px;flex:0 0 250px;display:block;background:#edf0f3}
+.product-editorial .overview-arrow{border:2px solid #fff;box-shadow:0 2px 12px #0003}
+.product-editorial .editorial-section-inner>*{min-width:0}
+.product-editorial .editorial-table{max-width:100%}
+@media(max-width:760px){
+ .product-editorial .editorial-hero-copy{width:100%}
+ .product-editorial .overview-card>span:first-child{font-size:22px;min-height:120px;padding:24px}
+ .product-editorial .overview-card img{height:230px;flex-basis:230px}
+ .product-editorial .product-local-name{overflow-wrap:anywhere}
+}
+
+/* Match the grid to the actual content, including two-card and five-card pages. */
+@media(min-width:901px){
+ .overview-rail:has(>.overview-card:nth-child(2):last-child){grid-auto-columns:calc((100% - 20px)/2)}
+ .product-editorial .editorial-chapter .content-grid[data-items="3"]:has(>article){grid-template-columns:repeat(3,minmax(0,1fr))}
+ .product-editorial .chapter-highlights .content-grid[data-items="4"]{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .product-editorial .chapter-highlights .content-grid[data-items="5"]>.highlight-visual{grid-row:span 2}
+ .product-editorial .chapter-highlights .content-grid[data-items="5"]{align-items:stretch}
+}
+.product-editorial .editorial-chapter .content-tile+.content-tile{margin-top:20px}
+.product-editorial .editorial-chapter .content-grid>.content-tile+.content-tile{margin-top:0}
+.product-editorial .chapter-highlights .content-grid>article{background:var(--paper)}
+.product-editorial .chapter-soft.chapter-highlights .content-grid>article{background:#fff}
+.product-editorial .chapter-highlights .content-grid>article>p:first-child{margin-top:0}
+.product-editorial .editorial-chapter details{border-block:1px solid #ccd1d8;padding:20px 0;margin-top:28px}
+.product-editorial .editorial-chapter summary{font-size:16px;font-weight:600;cursor:pointer;padding:6px 0}
+.product-editorial .editorial-chapter summary:focus-visible{outline-offset:3px}
+
+.product-editorial .editorial-chapter .editorial-number{display:block;font-size:13px;font-weight:600;letter-spacing:.04em;line-height:1.4;color:var(--accent);margin-bottom:16px;font-variant-numeric:tabular-nums}
+.product-editorial .editorial-chapter .editorial-step-grid>.content-tile+.content-tile{margin-top:0}
+.product-editorial .editorial-chapter ol>li>strong{display:block;font-size:19px;line-height:1.5}
+.product-editorial .editorial-chapter ol>li>span:only-of-type:not(.editorial-number){display:block;line-height:1.5;margin-bottom:12px}
+.product-editorial .editorial-hero-media{min-width:0}
+.product-editorial .motion-enabled[data-product-motion=wearable]>.editorial-hero{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+.product-editorial .motion-enabled[data-product-motion=wearable] .editorial-hero-media{max-width:90%;margin-inline:auto}
+
+.product-editorial main em{color:var(--accent)}
+.product-editorial .editorial-table caption{padding:18px 22px;text-align:left;font-size:14px;line-height:1.6;color:var(--secondary)}
+.product-editorial .editorial-mixed-grid> :last-child{grid-column:1/-1}
+.product-editorial .editorial-mixed-grid> :last-child img{max-height:480px}
+
+/* Keep semantic source illustrations legible after the editorial reskin. */
+.product-editorial .editorial-chapter .content-copy{max-width:none}
+.product-editorial .editorial-chapter .content-grid .editorial-step-grid{display:grid;grid-template-columns:1fr}
+.product-editorial .editorial-chapter .content-grid:has(>li:nth-child(3):last-child){grid-template-columns:repeat(3,minmax(0,1fr))}
+.product-editorial .editorial-chapter .editorial-step-grid>.content-tile{margin:0}
+.product-editorial .editorial-chapter dt>span{display:block;margin-bottom:8px}
+.product-editorial .editorial-chapter dl:has(>div:nth-child(2):last-child){grid-template-columns:repeat(2,minmax(0,1fr))}
+.product-editorial .editorial-diagram{padding:clamp(22px,3vw,36px);margin-block:28px;border:1px solid #8c9aaf45;border-radius:24px;background:#8c9aaf0a}
+.product-editorial .editorial-diagram>div:has(>strong){padding:22px;border:1px solid #8c9aaf45;border-radius:16px;min-width:0}
+.product-editorial .editorial-diagram strong{display:block;font-size:19px;line-height:1.5;margin-top:10px}
+.product-editorial .editorial-diagram span{line-height:1.7}
+.product-editorial [aria-label="무빙캠 S·M·L 구성"]{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;padding:0;border:0;background:none}
+.product-editorial [aria-label="무빙캠 S·M·L 구성"] img{height:320px}
+.product-editorial [aria-label="무빙캠 S·M·L 구성"]>div{text-align:center}
+.product-editorial [aria-label="인증 방식"]{display:grid;grid-template-columns:1fr auto 1fr;gap:22px;align-items:center}
+.product-editorial [aria-label="인증 방식"]>.editorial-step-card{margin:0}
+.product-editorial [aria-label="위험구역 비콘 배치와 인원 확인 예시"]>div:nth-child(2){display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:24px}
+.product-editorial [aria-label="위험구역 비콘 배치와 인원 확인 예시"]>div:nth-child(2)>:not([aria-hidden]){padding:24px;background:#fff;border-radius:16px}
+.product-editorial [aria-label="위험구역 비콘 배치와 인원 확인 예시"]>div:nth-child(2)>[aria-hidden]{display:none}
+.product-editorial #dust-gate .editorial-diagram{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;align-items:center}
+.product-editorial #dust-gate .editorial-diagram>div:nth-child(2){text-align:center;padding:28px;background:linear-gradient(#bddeee80,#bddeee00);border-top:4px solid #2b79b9}
+.product-editorial #control-screen .editorial-diagram>div{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.product-editorial #control-screen .editorial-diagram>div>div,.product-editorial #control-screen aside{padding:24px;background:#fff;border-radius:16px}
+.product-editorial #control-screen .editorial-diagram dl{grid-template-columns:1fr;gap:0;margin:0}
+.product-editorial #control-screen .editorial-diagram dl>div{padding:14px 0}
+.product-editorial #control-screen aside>div{padding:18px 0;border-bottom:1px solid #ddd}
+.product-editorial #control-screen aside span{display:block;color:var(--secondary)}
+@media(max-width:760px){
+ .product-editorial .editorial-chapter .content-grid:has(>li:nth-child(3):last-child),.product-editorial .editorial-chapter dl:has(>div:nth-child(2):last-child),.product-editorial #control-screen .editorial-diagram>div,.product-editorial [aria-label="위험구역 비콘 배치와 인원 확인 예시"]>div:nth-child(2){grid-template-columns:1fr}
+ .product-editorial [aria-label="무빙캠 S·M·L 구성"]{gap:10px}
+ .product-editorial [aria-label="무빙캠 S·M·L 구성"] img{height:180px}
+ .product-editorial [aria-label="인증 방식"]{grid-template-columns:1fr;gap:12px}
+ .product-editorial #dust-gate .editorial-diagram{grid-template-columns:1fr}
+ .product-editorial .editorial-diagram{padding:20px}
+}
+.product-editorial.product-catalog .catalog-search input{padding:16px 18px;line-height:1.5}
+.product-editorial .editorial-chapter ol>.content-tile+.content-tile{margin-top:0}
+@media(min-width:761px) and (max-width:900px){
+ .product-editorial .chapter-highlights .content-grid[data-items="5"]>article:last-child{grid-column:1 / -1}
+}
+/* Give communication diagrams an explicit label/value rhythm. */
+.product-editorial .editorial-flow-step>div+div{margin-top:24px}
+.product-editorial .editorial-flow-step>div>span,
+.product-editorial .editorial-flow-step>div>strong,
+.product-editorial .editorial-flow-step>div>small{display:block}
+.product-editorial .editorial-flow-step>div>span{font-size:12px;opacity:.75;margin-bottom:6px}
+.product-editorial .editorial-flow-step>div>strong{font-size:19px;line-height:1.5;margin-bottom:5px}
+.product-editorial .editorial-flow-step>div>small{font-size:14px;line-height:1.7}
+@media(min-width:761px){
+ .product-editorial .editorial-chapter ol:has(>li:nth-child(4):last-child){grid-template-columns:repeat(2,minmax(0,1fr))}
+ .product-editorial .editorial-chapter ol:has(>li:nth-child(5):last-child)>li:last-child{grid-column:1 / -1}
+}
+.product-editorial .editorial-chapter svg.content-svg{width:32px;height:32px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;color:var(--accent);margin-block:8px 16px}
+.product-editorial .editorial-chapter svg.content-svg{color:#2867aa}
+.product-editorial .chapter-focus.chapter-information svg.content-svg{color:#a9c9f4}
+
+.product-editorial .editorial-stat{display:flex;flex-direction:column;gap:10px;padding:28px;margin-block:24px;text-align:center;border:1px solid #8c9aaf45;border-radius:20px}
+.product-editorial .editorial-stat strong{font-size:clamp(36px,5vw,64px);line-height:1.1}
+.product-editorial .editorial-stat span{font-size:14px;line-height:1.6}
+
+.product-editorial .editorial-label-pair{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 12px;margin-block:14px;line-height:1.7}
+.product-editorial .editorial-label-pair>strong,.product-editorial .editorial-label-pair>b{font-size:18px}
+.product-editorial .editorial-label-pair>small{font-size:14px}
+.product-editorial .editorial-icon-list{list-style:none;padding:0;display:grid;gap:16px;margin-block:28px}
+.product-editorial .editorial-icon-list>li{display:flex;align-items:center;gap:18px;padding:18px 22px;border:1px solid #8c9aaf45;border-radius:16px}
+.product-editorial .editorial-icon-list svg.content-svg{flex-shrink:0;margin:0}
+.product-editorial .editorial-icon-list p{margin:0}
+.product-editorial #movingcam-network .editorial-table{grid-column:1/-1}
+
+.product-editorial .chapter-highlights .editorial-number{font-size:36px;font-weight:650;line-height:1.1;margin-bottom:12px}
+.product-editorial .content-grid article>span+span{margin-inline-start:.3em}
+
+/* Final reading rhythm: separate inline labels and balance small data groups. */
+.product-editorial .editorial-chapter ul>li>strong,
+.product-editorial .editorial-chapter ul>li>b{margin-inline-end:.45em}
+.product-editorial .editorial-chapter ul:not(.editorial-icon-list)>li{line-height:1.8;margin-block:8px}
+.product-editorial #ir3-video-detail>figure{padding:28px;border:1px solid #cdd3db;border-radius:20px;background:#fff}
+.product-editorial #ir3-video-detail>figure>div:first-child{display:flex;justify-content:space-between;gap:16px;padding-bottom:20px;border-bottom:1px solid #d8dde4}
+.product-editorial #ir3-video-detail .editorial-label-pair{flex-direction:column;align-items:flex-start;padding-block:20px}
+.product-editorial [aria-label="터널 단면 속 신호 경로"]>div:has(>span){display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px}
+@media(min-width:761px){
+ .product-editorial .editorial-chapter dl:has(>div:nth-child(4):last-child){grid-template-columns:repeat(2,minmax(0,1fr))}
+ .product-editorial .editorial-chapter .content-grid[data-items="3"]:has(>div.editorial-step-card:last-child)>div.editorial-step-card:last-child{grid-column:1/-1}
+}

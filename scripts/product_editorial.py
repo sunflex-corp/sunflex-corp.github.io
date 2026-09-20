@@ -6,6 +6,8 @@ from bs4 import BeautifulSoup
 ROOT=Path(__file__).resolve().parents[1]
 PROFILES=json.loads((ROOT/'data/product-editorial-map.json').read_text())
 
+IMAGES=json.loads((ROOT/'data/product-editorial-images.json').read_text())
+
 COPY=json.loads((ROOT/'data/product-editorial-copy.json').read_text())
 
 def apply_copy(soup,slug):
@@ -38,6 +40,11 @@ def build(p,group,g):
     for image in media.find_all('img'):image['loading']='eager';image['sizes']='(max-width:760px) 90vw, 1100px'
     actions=BeautifulSoup(f'<div class="editorial-actions"><a class="editorial-button" href="/contact/?product={slug}">도입 문의</a><a href="#{profile["focus"]}">핵심 기능 살펴보기 <span aria-hidden="true">↓</span></a></div>','html.parser')
     copy.append(actions)
+    # Move the longer introduction below the concise first-screen lead.
+    if slug=='safebridge':
+        intro=hero.select_one('.editorial-lead').find_next_sibling('p')
+        if intro:
+            sections[1].append(intro.extract())
     # All source sections and anchors stay available; only the reading sequence changes.
     rest=sections[1:];focus=next(x for x in rest if x['id']==profile['focus'])
     if kind in ['lineup','workflow','workspace','communication','sensing']:
@@ -55,8 +62,31 @@ def build(p,group,g):
                 addclass(node,'editorial-step-card')
         for node in section.find_all('div'):
             children=node.find_all(recursive=False)
-            if len(children)>=2 and all('editorial-step-card' in c.get('class',[]) for c in children):
+            if len(children)>=2 and all('editorial-step-card' in c.get('class',[]) or 'content-tile' in c.get('class',[]) for c in children):
                 addclass(node,'editorial-step-grid')
+        for node in section.find_all('span'):
+            if node.get_text(strip=True).isdigit() and len(node.get_text(strip=True))<=2:
+                addclass(node,'editorial-number')
+        for grid in section.select('.content-grid'):
+            children=grid.find_all(recursive=False)
+            grid['data-items']=str(len(children))
+            if len(children)==3 and not all(c.name=='article' for c in children) and children[-1].find('img'):
+                addclass(grid,'editorial-mixed-grid')
+            if section['id']=='highlights':
+                for child in children:
+                    if child.find('img'):addclass(child,'highlight-visual')
+        for diagram in section.select('div[aria-label]'):
+            if not diagram.find(['button','input','table']) and not 'content-grid' in diagram.get('class',[]):
+                addclass(diagram,'editorial-diagram')
+        for stat in section.select('div[aria-hidden="true"]'):
+            if stat.find('strong',recursive=False) and stat.find('span',recursive=False):
+                addclass(stat,'editorial-stat')
+        for node in section.find_all('div'):
+            children=node.find_all(recursive=False)
+            if 'editorial-stat' not in node.get('class',[]) and len(children)>=2 and all(c.name in ['span','strong','b','small'] for c in children) and any(c.name in ['strong','b'] for c in children):
+                addclass(node,'editorial-label-pair')
+        for listing in section.find_all('ul'):
+            if listing.find('svg'):addclass(listing,'editorial-icon-list')
         # The source's meaningful figure/table structure remains intact.
         for table in section.find_all('table'):
             holder=soup.new_tag('div',attrs={'class':'editorial-table','tabindex':'0','role':'region','aria-label':'제품 구성 비교표'})
@@ -99,7 +129,8 @@ def build(p,group,g):
         if len(overview)==3:break
     rail='<section class="editorial-overview" id="product-content"><div class="editorial-section-inner"><div class="overview-heading"><h2>주요 기능 살펴보기.</h2><div class="overview-controls" hidden><button type="button" data-rail-prev aria-label="이전 기능">←</button><button type="button" data-rail-next aria-label="다음 기능">→</button></div></div><div class="overview-rail" tabindex="0" role="region" aria-label="주요 기능 바로가기">'
     for ident,title,image in overview:
-        visual=f'<img src="{e(image["src"])}" alt="" loading="lazy" width="640" height="400">' if image else '<span class="overview-solar" aria-hidden="true">Solar.</span>'
+        asset=IMAGES[slug][ident]
+        visual=f'<img src="{e(asset["src"])}" srcset="{e(asset["srcset"])}" sizes="(max-width:760px) 82vw, (max-width:900px) 65vw, 380px" alt="{e(asset["alt"])}" loading="lazy" decoding="async" width="{asset["width"]}" height="{asset["height"]}" style="object-position:{asset["position"]};object-fit:{asset["fit"]}">'
         rail+=f'<a class="overview-card" href="#{ident}"><span>{e(title)}</span>{visual}<span class="overview-arrow" aria-hidden="true">↗</span></a>'
     rail+='</div></div></section>'
     firsttarget='mobile-cctv-lineup' if slug=='mobile-cctv' else 'product-content'

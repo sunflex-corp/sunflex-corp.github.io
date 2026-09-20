@@ -1,0 +1,1549 @@
+{
+  "/": {
+    "route": "/",
+    "states": [
+      {
+        "width": 390,
+        "scrollY": 820,
+        "height": 6453,
+        "bottom": false,
+        "seen": 2,
+        "sections": 6,
+        "overflow": [
+          "IMG.",
+          "IMG.",
+          "IMG.",
+          "PICTURE.",
+          "IMG."
+        ],
+        "broken": []
+      },
+      {
+        "width": 768,
+        "scrollY": 820,
+        "height": 6572,
+        "bottom": false,
+        "seen": 2,
+        "sections": 6,
+        "overflow": [
+          "IMG.",
+          "IMG.",
+          "IMG.",
+          "PICTURE.",
+          "IMG."
+        ],
+        "broken": []
+      }
+    ]
+  },
+  "/company/": {
+    "route": "/company/",
+    "states": [
+      {
+        "width": 390,
+        "scrollY": 3744,
+        "height": 4744,
+        "bottom": true,
+        "seen": 10,
+        "sections": 10,
+        "overflow": [
+          "A.",
+          "A.",
+          "SMALL.",
+          "A.",
+          "SMALL."
+        ],
+        "broken": []
+      },
+      {
+        "width": 768,
+        "scrollY": 3031,
+        "height": 4031,
+        "bottom": true,
+        "seen": 10,
+        "sections": 10,
+        "overflow": [
+          "A."
+        ],
+        "broken": []
+      }
+    ]
+  },
+  "/cases/": {
+    "route": "/cases/",
+    "states": [
+      {
+        "width": 390,
+        "scrollY": 2685,
+        "height": 3685,
+        "bottom": true,
+        "seen": 7,
+        "sections": 7,
+        "overflow": [],
+        "broken": []
+      },
+      {
+        "width": 768,
+        "scrollY": 2092,
+        "height": 3092,
+        "bottom": true,
+        "seen": 10,
+        "sections": 7,
+        "overflow": [],
+        "broken": []
+      }
+    ]
+  },
+  "/contact/": {
+    "route": "/contact/",
+    "states": [
+      {
+        "width": 390,
+        "scrollY": 2588,
+        "height": 3588,
+        "bottom": true,
+        "seen": 5,
+        "sections": 5,
+        "overflow": [],
+        "broken": []
+      },
+      {
+        "width": 768,
+        "scrollY": 1925.5,
+        "height": 2925,
+        "bottom": true,
+        "seen": 7,
+        "sections": 5,
+        "overflow": [],
+        "broken": []
+      }
+    ]
+  },
+  "/privacy/": {
+    "route": "/privacy/",
+    "states": [
+      {
+        "width": 390,
+        "scrollY": 1640,
+        "height": 2643,
+        "bottom": true,
+        "seen": 7,
+        "sections": 7,
+        "overflow": [
+          "A."
+        ],
+        "broken": []
+      },
+      {
+        "width": 768,
+        "scrollY": 1224,
+        "height": 2224,
+        "bottom": true,
+        "seen": 7,
+        "sections": 7,
+        "overflow": [],
+        "broken": []
+      }
+    ]
+  },
+  "/solutions/": {
+    "route": "/solutions/",
+    "states": [
+      {
+        "width": 390,
+        "scrollY": 5408,
+        "height": 6408,
+        "bottom": true,
+        "seen": 11,
+        "sections": 11,
+        "overflow": [],
+        "broken": []
+      },
+      {
+        "width": 768,
+        "scrollY": 4412.5,
+        "height": 5412,
+        "bottom": true,
+        "seen": 11,
+        "sections": 11,
+        "overflow": [],
+        "broken": []
+      }
+    ]
+  },
+  "/solutions/alert/": {
+    "route": "/solutions/alert/",
+    "states": [
+      {
+        "width": 390,
+        "scrollY": 8809,
+        "height": 9809,
+        "bottom": true,
+        "seen": 7,
+        "sections": 7,
+        "overflow": [],
+        "broken": []
+      },
+      {
+        "width": 768,
+        "scrollY": 5838,
+        "height": 6838,
+        "bottom": true,
+        "seen": 11,
+        "sections": 7,
+        "overflow": [],
+        "broken": []
+      }
+    ]
+  },
+  "/solutions/detect/": {
+    "route": "/solutions/detect/",
+    "states": [
+      {
+        "width": 390,
+        "scrollY": 10269.5,
+        "height": 11269,
+        "bottom": true,
+        "seen": 7,
+        "sections": 7,
+        "overflow": [],
+        "broken": []
+      },
+      {
+        "width": 768,
+        "scrollY": 6793.5,
+        "height": 7793,
+        "bottom": true,
+        "seen": 7,
+        "sections": 7,
+        "overflow": [],
+        "broken": []
+      }
+    ]
+  },
+  "/solutions/record/": {
+    "route": "/solutions/record/",
+    "states": [
+      {
+        "width": 390,
+        "scrollY": 7068.5,
+        "height": 8068,
+        "bottom": true,
+        "seen": 7,
+        "sections": 7,
+        "overflow": [],
+        "broken": []
+      },
+      {
+        "width": 768,
+        "scrollY": 4824.5,
+        "height": 5824,
+        "bottom": true,
+        "seen": 7,
+        "sections": 7,
+        "overflow": [],
+        "broken": []
+      }
+    ]
+  },
+  "/solutions/respond/": {
+    "route": "/solutions/respond/",
+    "states": [
+      {
+        "width": 390,
+        "scrollY": 5760,
+        "height": 6760,
+        "bottom": true,
+        "seen": 7,
+        "sections": 7,
+        "overflow": [],
+        "broken": []
+      },
+      {
+        "width": 768,
+        "scrollY": 4385,
+        "height": 5385,
+        "bottom": true,
+        "seen": 7,
+        "sections": 7,
+        "overflow": [],
+        "broken": []
+      }
+    ]
+  },
+  "/solutions/safety-box/": {
+    "route": "/solutions/safety-box/",
+    "states": [
+      {
+        "width": 390,
+        "scrollY": 9156,
+        "height": 10156,
+        "bottom": true,
+        "seen": 12,
+        "sections": 12,
+        "overflow": [],
+        "broken": []
+      },
+      {
+        "width": 768,
+        "scrollY": 5604.5,
+        "height": 6604,
+        "bottom": true,
+        "seen": 12,
+        "sections": 12,
+        "overflow": [],
+        "broken": []
+      }
+    ]
+  },
+  "/products/": {
+    "route": "/products/",
+    "states": [
+      {
+        "width": 390,
+        "scrollY": 23924.5,
+        "height": 24924,
+        "bottom": true,
+        "seen": 5,
+        "sections": 5,
+        "overflow": [],
+        "broken": []
+      },
+      {
+        "width": 768,
+        "scrollY": 13283.5,
+        "height": 14283,
+        "bottom": true,
+        "seen": 8,
+        "sections": 5,
+        "overflow": [],
+        "broken": []
+      }
+    ]
+  },
+  "/products/ai-broadcast/": {
+    "route": "/products/ai-broadcast/",
+    "states": [
+      {
+        "width": 390,
+        "scrollY": 6953.5,
+        "height": 7953,
+        "bottom": true,
+        "seen": 11,
+        "sections": 11,
+        "overflow": [],
+        "broken": []
+      },
+      {
+        "width": 768,
+        "scrollY": 5835,
+        "height": 6835,
+        "bottom": true,
+        "seen": 11,
+        "sections": 11,
+        "overflow": [],
+        "broken": []
+      }
+    ]
+  },
+  "/products/ai-drone-inspection/": {
+    "route": "/products/ai-drone-inspection/",
+    "states": [
+      {
+        "width": 390,
+        "scrollY": 7769,
+        "height": 8769,
+        "bottom": true,
+        "seen": 12,
+        "sections": 12,
+        "overflow": [],
+        "broken": []
+      },
+      {
+        "width": 768,
+        "scrollY": 6382,
+        "height": 7382,
+        "bottom": true,
+        "seen": 12,
+        "sections": 12,
+        "overflow": [],
+        "broken": []
+      }
+    ]
+  },
+  "/products/ai-equipment-collision/": {
+    "route": "/products/ai-equipment-collision/",
+    "states": [
+      {
+        "width": 390,
+        "scrollY": 8248,
+        "height": 9248,
+        "bottom": true,
+        "seen": 12,
+        "sections": 12,
+        "overflow": [],
+        "broken": []
+      },
+      {
+        "width": 768,
+        "scrollY": 7248,
+        "height": 8248,
+        "bottom": true,
+        "seen": 12,
+        "sections": 12,
+        "overflow": [],
+        "broken": []
+      }
+    ]
+  },
+  "/products/ai-quick-risk-assessment/": {
+    "route": "/products/ai-quick-risk-assessment/",
+    "states": [
+      {
+        "width": 390,
+        "scrollY": 5854.5,
+        "height": 6854,
+        "bottom": true,
+        "seen": 12,
+        "sections": 12,
+        "overflow": [],
+        "broken": []
+      },
+      {
+        "width": 768,
+        "scrollY": 5320.5,
+        "height": 6320,
+        "bottom": true,
+        "seen": 12,
+        "sections": 12,
+        "overflow": [],
+        "broken": []
+      }
+    ]
+  },
+  "/products/ai-risk-assessment-review/": {
+    "route": "/products/ai-risk-assessment-review/",
+    "states": [
+      {
+        "width": 390,
+        "scrollY": 6049.5,
+        "height": 7049,
+        "bottom": true,
+        "seen": 12,
+        "sections": 12,
+        "overflow": [],
+        "broken": []
+      },
+      {
+        "width": 768,
+        "scrollY": 5512.5,
+        "height": 6512,
+        "bottom": true,
+        "seen": 12,
+        "sections": 12,
+        "overflow": [],
+        "broken": []
+      }
+    ]
+  },
+  "/products/ai-safety-index/": {
+    "route": "/products/ai-safety-index/",
+    "states": [
+      {
+        "width": 390,
+        "scrollY": 6781,
+        "height": 7781,
+        "bottom": true,
+        "seen": 12,
+        "sections": 12,
+        "overflow": [],
+        "broken": []
+      },
+      {
+        "width": 768,
+        "scrollY": 5653,
+        "height": 6653,
+        "bottom": true,
+        "seen": 12,
+        "sections": 12,
+        "overflow": [],
+        "broken": []
+      }
+    ]
+  },
+  "/products/ai-similar-accident-alert/": {
+    "route": "/products/ai-similar-accident-alert/",
+    "states": [
+      {
+        "width": 390,
+        "scrollY": 6099,
+        "height": 7099,
+        "bottom": true,
+        "seen": 12,
+        "sections": 12,
+        "overflow": [],
+        "broken": []
+      },
+      {
+        "width": 768,
+        "scrollY": 5475,
+        "height": 6475,
+        "bottom": true,
+        "seen": 12,
+        "sections": 12,
+        "overflow": [],
+        "broken": []
+      }
+    ]
+  },
+  "/products/ai-subcontractor-safety/": {
+    "route": "/products/ai-subcontractor-safety/",
+    "states": [
+      {
+        "width": 390,
+        "scrollY": 5937,
+        "height": 6937,
+        "bottom": true,
+        "seen": 12,
+        "sections": 12,
+        "overflow": [],
+        "broken": []
+      },
+      {
+        "width": 768,
+        "scrollY": 5367,
+        "height": 6367,
+        "bottom": true,
+        "seen": 12,
+        "sections": 12,
+        "overflow": [],
+        "broken": []
+      }
+    ]
+  },
+  "/products/alcohol-detection/": {
+    "route": "/products/alcohol-detection/",
+    "states": [
+      {
+        "width": 390,
+        "scrollY": 7768.5,
+        "height": 8768,
+        "bottom": true,
+        "seen": 12,
+        "sections": 12,
+        "overflow": [],
+        "broken": []
+      },
+      {
+        "width": 768,
+        "scrollY": 6264,
+        "height": 7264,
+        "bottom": true,
+        "seen": 12,
+        "sections": 12,
+        "overflow": [],
+        "broken": []
+      }
+    ]
+  },
+  "/products/chatgpt-cctv/": {
+    "route": "/products/chatgpt-cctv/",
+    "states": [
+      {
+        "width": 390,
+        "scrollY": 7332,
+        "height": 8332,
+        "bottom": true,
+        "seen": 12,
+        "sections": 12,
+        "overflow": [],
+        "broken": []
+      },
+      {
+        "width": 768,
+        "scrollY": 6198.5,
+        "height": 7198,
+        "bottom": true,
+        "seen": 12,
+        "sections": 12,
+        "overflow": [],
+        "broken": []
+      }
+    ]
+  },
+  "/products/co2-temp-humidity/": {
+    "route": "/products/co2-temp-humidity/",
+    "states": [
+      {
+        "width": 390,
+        "scrollY": 8138,
+        "height": 9138,
+        "bottom": true,
+        "seen": 13,
+        "sections": 13,
+        "overflow": [],
+        "broken": []
+      },
+      {
+        "width": 768,
+        "scrollY": 6725.5,
+        "height": 7725,
+        "bottom": true,
+        "seen": 13,
+        "sections": 13,
+        "overflow": [],
+        "broken": []
+      }
+    ]
+  },
+  "/products/compact-gas-detector/": {
+    "route": "/products/compact-gas-detector/",
+    "states": [
+      {
+        "width": 390,
+        "scrollY": 8181,
+        "height": 9181,
+        "bottom": true,
+        "seen": 13,
+        "sections": 13,
+        "overflow": [],
+        "broken": []
+      },
+      {
+        "width": 768,
+        "scrollY": 6933.5,
+        "height": 7933,
+        "bottom": true,
+        "seen": 13,
+        "sections": 13,
+        "overflow": [],
+        "broken": []
+      }
+    ]
+  },
+  "/products/concrete-curing/": {
+    "route": "/products/concrete-curing/",
+    "states": [
+      {
+        "width": 390,
+        "scrollY": 8438.5,
+        "height": 9438,
+        "bottom": true,
+        "seen": 12,
+        "sections": 12,
+        "overflow": [],
+        "broken": []
+      },
+      {
+        "width": 768,
+        "scrollY": 6821.5,
+        "height": 7821,
+        "bottom": true,
+        "seen": 12,
+        "sections": 12,
+        "overflow": [],
+        "broken": []
+      }
+    ]
+  },
+  "/products/digital-radio/": {
+    "route": "/products/digital-radio/",
+    "states": [
+      {
+        "width": 390,
+        "scrollY": 7884.5,
+        "height": 8884,
+        "bottom": true,
+        "seen": 12,
+        "sections": 12,
+        "overflow": [],
+        "broken": []
+      },
+      {
+        "width": 768,
+        "scrollY": 6856,
+        "height": 7856,
+        "bottom": true,
+        "seen": 12,
+        "sections": 12,
+        "overflow": [],
+        "broken": []
+      }
+    ]
+  },
+  "/products/emergency-signal-location/": {
+    "route": "/products/emergency-signal-location/",
+    "states": [
+      {
+        "width": 390,
+        "scrollY": 8904.5,
+        "height": 9904,
+        "bottom": true,
+        "seen": 12,
+        "sections": 12,
+        "overflow": [],
+        "broken": []
+      },
+      {
+        "width": 768,
+        "scrollY": 7876.5,
+        "height": 8876,
+        "bottom": true,
+        "seen": 12,
+        "sections": 12,
+        "overflow": [],
+        "broken": []
+      }
+    ]
+  },
+  "/products/equipment-approach-alarm/": {
+    "route": "/products/equipment-approach-alarm/",
+    "states": [
+      {
+        "width": 390,
+        "scrollY": 9008.5,
+        "height": 10008,
+        "bottom": true,
+        "seen": 13,
+        "sections": 13,
+        "overflow": [],
+        "broken": []
+      },
+      {
+        "width": 768,
+        "scrollY": 7811,
+        "height": 8811,
+        "bottom": true,
+        "seen": 13,
+        "sections": 13,
+        "overflow": [],
+        "broken": []
+      }
+    ]
+  },
+  "/products/fire-detection/": {
+    "route": "/products/fire-detection/",
+    "states": [
+      {
+        "width": 390,
+        "scrollY": 8162,
+        "height": 9162,
+        "bottom": true,
+        "seen": 13,
+        "sections": 13,
+        "overflow": [],
+        "broken": []
+      },
+      {
+        "width": 768,
+        "scrollY": 6846,
+        "height": 7846,
+        "bottom": true,
+        "seen": 13,
+        "sections": 13,
+        "overflow": [],
+        "broken": []
+      }
+    ]
+  },
+  "/products/gas-alarm/": {
+    "route": "/products/gas-alarm/",
+    "states": [
+      {
+        "width": 390,
+        "scrollY": 9077,
+        "height": 10077,
+        "bottom": true,
+        "seen": 13,
+        "sections": 13,
+        "overflow": [],
+        "broken": []
+      },
+      {
+        "width": 768,
+        "scrollY": 7304.5,
+        "height": 8304,
+        "bottom": true,
+        "seen": 13,
+        "sections": 13,
+        "overflow": [],
+        "broken": []
+      }
+    ]
+  },
+  "/products/hazard-area-broadcast/": {
+    "route": "/products/hazard-area-broadcast/",
+    "states": [
+      {
+        "width": 390,
+        "scrollY": 8448,
+        "height": 9448,
+        "bottom": true,
+        "seen": 13,
+        "sections": 13,
+        "overflow": [],
+        "broken": []
+      },
+      {
+        "width": 768,
+        "scrollY": 6759,
+        "height": 7759,
+        "bottom": true,
+        "seen": 13,
+        "sections": 13,
+        "overflow": [],
+        "broken": []
+      }
+    ]
+  },
+  "/products/healthcare-heart-band/": {
+    "route": "/products/healthcare-heart-band/",
+    "states": [
+      {
+        "width": 390,
+        "scrollY": 9581.5,
+        "height": 10581,
+        "bottom": true,
+        "seen": 13,
+        "sections": 13,
+        "overflow": [],
+        "broken": []
+      },
+      {
+        "width": 768,
+        "scrollY": 8462,
+        "height": 9462,
+        "bottom": true,
+        "seen": 13,
+        "sections": 13,
+        "overflow": [],
+        "broken": []
+      }
+    ]
+  },
+  "/products/hook-bottom-camera/": {
+    "route": "/products/hook-bottom-camera/",
+    "states": [
+      {
+        "width": 390,
+        "scrollY": 11043,
+        "height": 12043,
+        "bottom": true,
+        "seen": 14,
+        "sections": 14,
+        "overflow": [],
+        "broken": []
+      },
+      {
+        "width": 768,
+        "scrollY": 9889.5,
+        "height": 10889,
+        "bottom": true,
+        "seen": 14,
+        "sections": 14,
+        "overflow": [],
+        "broken": []
+      }
+    ]
+  },
+  "/products/inspectcut/": {
+    "route": "/products/inspectcut/",
+    "states": [
+      {
+        "width": 390,
+        "scrollY": 8366,
+        "height": 9366,
+        "bottom": true,
+        "seen": 13,
+        "sections": 13,
+        "overflow": [],
+        "broken": []
+      },
+      {
+        "width": 768,
+        "scrollY": 7044.5,
+        "height": 8044,
+        "bottom": true,
+        "seen": 14,
+        "sections": 13,
+        "overflow": [],
+        "broken": []
+      }
+    ]
+  },
+  "/products/iot-mist/": {
+    "route": "/products/iot-mist/",
+    "states": [
+      {
+        "width": 390,
+        "scrollY": 9135.5,
+        "height": 10135,
+        "bottom": true,
+        "seen": 13,
+        "sections": 13,
+        "overflow": [],
+        "broken": []
+      },
+      {
+        "width": 768,
+        "scrollY": 7054.5,
+        "height": 8054,
+        "bottom": true,
+        "seen": 13,
+        "sections": 13,
+        "overflow": [],
+        "broken": []
+      }
+    ]
+  },
+  "/products/iot-small-tower-crane/": {
+    "route": "/products/iot-small-tower-crane/",
+    "states": [
+      {
+        "width": 390,
+        "scrollY": 9529,
+        "height": 10529,
+        "bottom": true,
+        "seen": 13,
+        "sections": 13,
+        "overflow": [],
+        "broken": []
+      },
+      {
+        "width": 768,
+        "scrollY": 8304.5,
+        "height": 9304,
+        "bottom": true,
+        "seen": 13,
+        "sections": 13,
+        "overflow": [],
+        "broken": []
+      }
+    ]
+  },
+  "/products/ir3-flame-detector/": {
+    "route": "/products/ir3-flame-detector/",
+    "states": [
+      {
+        "width": 390,
+        "scrollY": 12290.5,
+        "height": 13290,
+        "bottom": true,
+        "seen": 16,
+        "sections": 16,
+        "overflow": [],
+        "broken": []
+      },
+      {
+        "width": 768,
+        "scrollY": 10892,
+        "height": 11892,
+        "bottom": true,
+        "seen": 16,
+        "sections": 16,
+        "overflow": [],
+        "broken": []
+      }
+    ]
+  },
+  "/products/led-logo-light/": {
+    "route": "/products/led-logo-light/",
+    "states": [
+      {
+        "width": 390,
+        "scrollY": 8581,
+        "height": 9581,
+        "bottom": true,
+        "seen": 12,
+        "sections": 12,
+        "overflow": [],
+        "broken": []
+      },
+      {
+        "width": 768,
+        "scrollY": 7505.5,
+        "height": 8505,
+        "bottom": true,
+        "seen": 12,
+        "sections": 12,
+        "overflow": [],
+        "broken": []
+      }
+    ]
+  },
+  "/products/lte-anemometer/": {
+    "route": "/products/lte-anemometer/",
+    "states": [
+      {
+        "width": 390,
+        "scrollY": 8952.5,
+        "height": 9952,
+        "bottom": true,
+        "seen": 13,
+        "sections": 13,
+        "overflow": [],
+        "broken": []
+      },
+      {
+        "width": 768,
+        "scrollY": 7661.5,
+        "height": 8661,
+        "bottom": true,
+        "seen": 13,
+        "sections": 13,
+        "overflow": [],
+        "broken": []
+      }
+    ]
+  },
+  "/products/mobile-bodycam/": {
+    "route": "/products/mobile-bodycam/",
+    "states": [
+      {
+        "width": 390,
+        "scrollY": 10181,
+        "height": 11181,
+        "bottom": true,
+        "seen": 13,
+        "sections": 13,
+        "overflow": [],
+        "broken": []
+      },
+      {
+        "width": 768,
+        "scrollY": 10044.5,
+        "height": 11044,
+        "bottom": true,
+        "seen": 13,
+        "sections": 13,
+        "overflow": [],
+        "broken": []
+      }
+    ]
+  },
+  "/products/mobile-cctv/": {
+    "route": "/products/mobile-cctv/",
+    "states": [
+      {
+        "width": 390,
+        "scrollY": 13994.5,
+        "height": 14994,
+        "bottom": true,
+        "seen": 16,
+        "sections": 16,
+        "overflow": [],
+        "broken": []
+      },
+      {
+        "width": 768,
+        "scrollY": 12704,
+        "height": 13704,
+        "bottom": true,
+        "seen": 16,
+        "sections": 16,
+        "overflow": [],
+        "broken": []
+      }
+    ]
+  },
+  "/products/opening-open-close-sensor/": {
+    "route": "/products/opening-open-close-sensor/",
+    "states": [
+      {
+        "width": 390,
+        "scrollY": 8179.5,
+        "height": 9179,
+        "bottom": true,
+        "seen": 13,
+        "sections": 13,
+        "overflow": [],
+        "broken": []
+      },
+      {
+        "width": 768,
+        "scrollY": 6798.5,
+        "height": 7798,
+        "bottom": true,
+        "seen": 16,
+        "sections": 13,
+        "overflow": [],
+        "broken": []
+      }
+    ]
+  },
+  "/products/pedestrian-collision-prevention/": {
+    "route": "/products/pedestrian-collision-prevention/",
+    "states": [
+      {
+        "width": 390,
+        "scrollY": 8573.5,
+        "height": 9573,
+        "bottom": true,
+        "seen": 12,
+        "sections": 12,
+        "overflow": [],
+        "broken": []
+      },
+      {
+        "width": 768,
+        "scrollY": 7746,
+        "height": 8746,
+        "bottom": true,
+        "seen": 12,
+        "sections": 12,
+        "overflow": [],
+        "broken": []
+      }
+    ]
+  },
+  "/products/power-assist-suit/": {
+    "route": "/products/power-assist-suit/",
+    "states": [
+      {
+        "width": 390,
+        "scrollY": 9328.5,
+        "height": 10328,
+        "bottom": true,
+        "seen": 13,
+        "sections": 13,
+        "overflow": [],
+        "broken": []
+      },
+      {
+        "width": 768,
+        "scrollY": 8096,
+        "height": 9096,
+        "bottom": true,
+        "seen": 13,
+        "sections": 13,
+        "overflow": [],
+        "broken": []
+      }
+    ]
+  },
+  "/products/safebridge/": {
+    "route": "/products/safebridge/",
+    "states": [
+      {
+        "width": 390,
+        "scrollY": 7298,
+        "height": 8298,
+        "bottom": true,
+        "seen": 12,
+        "sections": 12,
+        "overflow": [],
+        "broken": []
+      },
+      {
+        "width": 768,
+        "scrollY": 6244,
+        "height": 7244,
+        "bottom": true,
+        "seen": 12,
+        "sections": 12,
+        "overflow": [],
+        "broken": []
+      }
+    ]
+  },
+  "/products/safety-box/": {
+    "route": "/products/safety-box/",
+    "states": [
+      {
+        "width": 390,
+        "scrollY": 9590.5,
+        "height": 10590,
+        "bottom": true,
+        "seen": 12,
+        "sections": 12,
+        "overflow": [],
+        "broken": []
+      },
+      {
+        "width": 768,
+        "scrollY": 8205,
+        "height": 9205,
+        "bottom": true,
+        "seen": 12,
+        "sections": 12,
+        "overflow": [],
+        "broken": []
+      }
+    ]
+  },
+  "/products/site-cms/": {
+    "route": "/products/site-cms/",
+    "states": [
+      {
+        "width": 390,
+        "scrollY": 9851.5,
+        "height": 10851,
+        "bottom": true,
+        "seen": 11,
+        "sections": 11,
+        "overflow": [],
+        "broken": []
+      },
+      {
+        "width": 768,
+        "scrollY": 7268.5,
+        "height": 8268,
+        "bottom": true,
+        "seen": 11,
+        "sections": 11,
+        "overflow": [],
+        "broken": []
+      }
+    ]
+  },
+  "/products/smart-airbag/": {
+    "route": "/products/smart-airbag/",
+    "states": [
+      {
+        "width": 390,
+        "scrollY": 8945.5,
+        "height": 9945,
+        "bottom": true,
+        "seen": 12,
+        "sections": 12,
+        "overflow": [],
+        "broken": []
+      },
+      {
+        "width": 768,
+        "scrollY": 7770,
+        "height": 8770,
+        "bottom": true,
+        "seen": 12,
+        "sections": 12,
+        "overflow": [],
+        "broken": []
+      }
+    ]
+  },
+  "/products/smart-beacon/": {
+    "route": "/products/smart-beacon/",
+    "states": [
+      {
+        "width": 390,
+        "scrollY": 9776,
+        "height": 10776,
+        "bottom": true,
+        "seen": 14,
+        "sections": 14,
+        "overflow": [],
+        "broken": []
+      },
+      {
+        "width": 768,
+        "scrollY": 7901,
+        "height": 8901,
+        "bottom": true,
+        "seen": 14,
+        "sections": 14,
+        "overflow": [],
+        "broken": []
+      }
+    ]
+  },
+  "/products/smart-environment-board/": {
+    "route": "/products/smart-environment-board/",
+    "states": [
+      {
+        "width": 390,
+        "scrollY": 9116.5,
+        "height": 10116,
+        "bottom": true,
+        "seen": 12,
+        "sections": 12,
+        "overflow": [],
+        "broken": []
+      },
+      {
+        "width": 768,
+        "scrollY": 7729,
+        "height": 8729,
+        "bottom": true,
+        "seen": 12,
+        "sections": 12,
+        "overflow": [],
+        "broken": []
+      }
+    ]
+  },
+  "/products/smart-helmet/": {
+    "route": "/products/smart-helmet/",
+    "states": [
+      {
+        "width": 390,
+        "scrollY": 8844,
+        "height": 9844,
+        "bottom": true,
+        "seen": 13,
+        "sections": 13,
+        "overflow": [],
+        "broken": []
+      },
+      {
+        "width": 768,
+        "scrollY": 7662,
+        "height": 8662,
+        "bottom": true,
+        "seen": 13,
+        "sections": 13,
+        "overflow": [],
+        "broken": []
+      }
+    ]
+  },
+  "/products/smart-safety-hook/": {
+    "route": "/products/smart-safety-hook/",
+    "states": [
+      {
+        "width": 390,
+        "scrollY": 9317,
+        "height": 10317,
+        "bottom": true,
+        "seen": 13,
+        "sections": 13,
+        "overflow": [],
+        "broken": []
+      },
+      {
+        "width": 768,
+        "scrollY": 8189.5,
+        "height": 9189,
+        "bottom": true,
+        "seen": 13,
+        "sections": 13,
+        "overflow": [],
+        "broken": []
+      }
+    ]
+  },
+  "/products/tbm-solution/": {
+    "route": "/products/tbm-solution/",
+    "states": [
+      {
+        "width": 390,
+        "scrollY": 9464,
+        "height": 10464,
+        "bottom": true,
+        "seen": 13,
+        "sections": 13,
+        "overflow": [],
+        "broken": []
+      },
+      {
+        "width": 768,
+        "scrollY": 7703.5,
+        "height": 8703,
+        "bottom": true,
+        "seen": 13,
+        "sections": 13,
+        "overflow": [],
+        "broken": []
+      }
+    ]
+  },
+  "/products/tilt-acceleration-sensor/": {
+    "route": "/products/tilt-acceleration-sensor/",
+    "states": [
+      {
+        "width": 390,
+        "scrollY": 9522.5,
+        "height": 10522,
+        "bottom": true,
+        "seen": 13,
+        "sections": 13,
+        "overflow": [],
+        "broken": []
+      },
+      {
+        "width": 768,
+        "scrollY": 7358,
+        "height": 8358,
+        "bottom": true,
+        "seen": 13,
+        "sections": 13,
+        "overflow": [],
+        "broken": []
+      }
+    ]
+  },
+  "/products/tower-crane-hook-collision/": {
+    "route": "/products/tower-crane-hook-collision/",
+    "states": [
+      {
+        "width": 390,
+        "scrollY": 9754.5,
+        "height": 10754,
+        "bottom": true,
+        "seen": 14,
+        "sections": 14,
+        "overflow": [],
+        "broken": []
+      },
+      {
+        "width": 768,
+        "scrollY": 8081.5,
+        "height": 9081,
+        "bottom": true,
+        "seen": 14,
+        "sections": 14,
+        "overflow": [],
+        "broken": []
+      }
+    ]
+  },
+  "/products/vehicle-entry-alert/": {
+    "route": "/products/vehicle-entry-alert/",
+    "states": [
+      {
+        "width": 390,
+        "scrollY": 8711,
+        "height": 9711,
+        "bottom": true,
+        "seen": 13,
+        "sections": 13,
+        "overflow": [],
+        "broken": []
+      },
+      {
+        "width": 768,
+        "scrollY": 7479.5,
+        "height": 8479,
+        "bottom": true,
+        "seen": 14,
+        "sections": 13,
+        "overflow": [],
+        "broken": []
+      }
+    ]
+  },
+  "/products/wireless-emergency-broadcast/": {
+    "route": "/products/wireless-emergency-broadcast/",
+    "states": [
+      {
+        "width": 390,
+        "scrollY": 9106.5,
+        "height": 10106,
+        "bottom": true,
+        "seen": 13,
+        "sections": 13,
+        "overflow": [],
+        "broken": []
+      },
+      {
+        "width": 768,
+        "scrollY": 7837,
+        "height": 8837,
+        "bottom": true,
+        "seen": 13,
+        "sections": 13,
+        "overflow": [],
+        "broken": []
+      }
+    ]
+  },
+  "/products/wireless-network/": {
+    "route": "/products/wireless-network/",
+    "states": [
+      {
+        "width": 390,
+        "scrollY": 8956,
+        "height": 9956,
+        "bottom": true,
+        "seen": 13,
+        "sections": 13,
+        "overflow": [],
+        "broken": []
+      },
+      {
+        "width": 768,
+        "scrollY": 7510,
+        "height": 8510,
+        "bottom": true,
+        "seen": 13,
+        "sections": 13,
+        "overflow": [],
+        "broken": []
+      }
+    ]
+  },
+  "/products/worker-access-gate/": {
+    "route": "/products/worker-access-gate/",
+    "states": [
+      {
+        "width": 390,
+        "scrollY": 10415.5,
+        "height": 11415,
+        "bottom": true,
+        "seen": 13,
+        "sections": 13,
+        "overflow": [],
+        "broken": []
+      },
+      {
+        "width": 768,
+        "scrollY": 9057.5,
+        "height": 10057,
+        "bottom": true,
+        "seen": 13,
+        "sections": 13,
+        "overflow": [],
+        "broken": []
+      }
+    ]
+  },
+  "/products/worker-attendance-card/": {
+    "route": "/products/worker-attendance-card/",
+    "states": [
+      {
+        "width": 390,
+        "scrollY": 9801.5,
+        "height": 10801,
+        "bottom": true,
+        "seen": 13,
+        "sections": 13,
+        "overflow": [],
+        "broken": []
+      },
+      {
+        "width": 768,
+        "scrollY": 8676.5,
+        "height": 9676,
+        "bottom": true,
+        "seen": 13,
+        "sections": 13,
+        "overflow": [],
+        "broken": []
+      }
+    ]
+  },
+  "/404.html": {
+    "route": "/404.html",
+    "states": [
+      {
+        "width": 390,
+        "scrollY": 512,
+        "height": 1512,
+        "bottom": true,
+        "seen": 2,
+        "sections": 2,
+        "overflow": [],
+        "broken": []
+      },
+      {
+        "width": 768,
+        "scrollY": 451.5,
+        "height": 1451,
+        "bottom": true,
+        "seen": 5,
+        "sections": 2,
+        "overflow": [],
+        "broken": []
+      }
+    ]
+  }
+}
