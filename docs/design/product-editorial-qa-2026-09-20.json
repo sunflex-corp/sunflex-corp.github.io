@@ -1,0 +1,31 @@
+{
+  "date": "2026-09-20",
+  "baseline": "8c4eb6e47c820142e368bc6e54f7515eab38049a",
+  "scope": "48 product detail pages and product catalog",
+  "static_checks": "PASS: 66 routes, original snapshots, explicit source-matched copy substitutions, images, internal links, IDs, one h1, inquiries, all 48 profile mappings",
+  "behavior_tests": [
+    "test-product-editorial.cjs",
+    "test-home-simple.cjs",
+    "test-home-motion.cjs",
+    "test-solar-site.cjs",
+    "test-sunflex-v2.cjs"
+  ],
+  "behavior_result": "PASS",
+  "browser_method": "Visible native Chrome via Computer Use",
+  "manual_cases": [
+    "mobile-cctv: desktop forward/reverse fan, M/L tabs, keyboard, compare; mobile 320px",
+    "mobile-bodycam: desktop hero, scrolling, usage tabs; mobile 320x900 width and scrollHeight measured without overflow",
+    "safety-box: mobile 320px hero",
+    "co2-temp-humidity: mobile 320px hero and highlighted steps",
+    "ai-broadcast: mobile 320px dark chapter and final desktop step cards",
+    "ai-quick-risk-assessment: mobile 320px hero and reviewed draft steps",
+    "healthcare-heart-band: long title at 320px and 700px height visual inspection",
+    "products: desktop/mobile list, desktop bodycam query returns one result"
+  ],
+  "limitations": "Representative visual checks across all six structures; not an individual screenshot review of all 48 pages. Reduced-motion/short-screen behavior tested with runtime unit tests and CSS, not an OS preference change.",
+  "artifacts": {
+    "assets/sunflex-v2/product-editorial.css": "f25f824b615a5c65155a2f640cf98a034a1549b102adb9445e6a63167504e50d",
+    "assets/sunflex-v2/product-editorial.js": "ea87dbc7ea6848c3f00e59e0367c9374599003774c4f0acf85530eaa617e6ae7",
+    "data/product-editorial-copy.json": "ef2b2d58711f559522043ba5f68bf83fb3b7649d8c5be76adbd7a9c7d89fae87"
+  }
+}

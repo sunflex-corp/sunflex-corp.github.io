@@ -1,0 +1,338 @@
+{
+  "mobile-cctv": {
+    "archetype": "lineup",
+    "reference": "MacBook Pro",
+    "url": "https://www.apple.com/kr/macbook-pro/",
+    "structure": "전체 라인업 → 모델 선택 → 통신 비교 → 지지 구조 → 현장 적용",
+    "focus": "mobile-cctv-lineup"
+  },
+  "ir3-flame-detector": {
+    "archetype": "lineup",
+    "reference": "MacBook Pro",
+    "url": "https://www.apple.com/kr/macbook-pro/",
+    "structure": "전체 라인업 → 모델 선택 → 통신 비교 → 지지 구조 → 현장 적용",
+    "focus": "ir3-configurations"
+  },
+  "mobile-bodycam": {
+    "archetype": "wearable",
+    "reference": "AirPods Pro · Apple Watch",
+    "url": "https://www.apple.com/kr/airpods-pro/",
+    "structure": "제품 클로즈업 → 착용/사용 장면 → 동작 방식 → 관리 조건",
+    "focus": "detail-2"
+  },
+  "emergency-signal-location": {
+    "archetype": "wearable",
+    "reference": "AirPods Pro · Apple Watch",
+    "url": "https://www.apple.com/kr/airpods-pro/",
+    "structure": "제품 클로즈업 → 착용/사용 장면 → 동작 방식 → 관리 조건",
+    "focus": "detail-2"
+  },
+  "power-assist-suit": {
+    "archetype": "wearable",
+    "reference": "AirPods Pro · Apple Watch",
+    "url": "https://www.apple.com/kr/airpods-pro/",
+    "structure": "제품 클로즈업 → 착용/사용 장면 → 동작 방식 → 관리 조건",
+    "focus": "detail-2"
+  },
+  "smart-safety-hook": {
+    "archetype": "wearable",
+    "reference": "AirPods Pro · Apple Watch",
+    "url": "https://www.apple.com/kr/airpods-pro/",
+    "structure": "제품 클로즈업 → 착용/사용 장면 → 동작 방식 → 관리 조건",
+    "focus": "detail-2"
+  },
+  "smart-helmet": {
+    "archetype": "wearable",
+    "reference": "AirPods Pro · Apple Watch",
+    "url": "https://www.apple.com/kr/airpods-pro/",
+    "structure": "제품 클로즈업 → 착용/사용 장면 → 동작 방식 → 관리 조건",
+    "focus": "detail-2"
+  },
+  "smart-airbag": {
+    "archetype": "wearable",
+    "reference": "AirPods Pro · Apple Watch",
+    "url": "https://www.apple.com/kr/airpods-pro/",
+    "structure": "제품 클로즈업 → 착용/사용 장면 → 동작 방식 → 관리 조건",
+    "focus": "detail-2"
+  },
+  "healthcare-heart-band": {
+    "archetype": "wearable",
+    "reference": "AirPods Pro · Apple Watch",
+    "url": "https://www.apple.com/kr/airpods-pro/",
+    "structure": "제품 클로즈업 → 착용/사용 장면 → 동작 방식 → 관리 조건",
+    "focus": "detail-2"
+  },
+  "co2-temp-humidity": {
+    "archetype": "sensing",
+    "reference": "Apple Watch · AirTag",
+    "url": "https://www.apple.com/kr/apple-watch-series-12/",
+    "structure": "기기 소개 → 감지 대상과 알림 흐름 → 설치 위치 → 확인 조건",
+    "focus": "air-check-line"
+  },
+  "lte-anemometer": {
+    "archetype": "sensing",
+    "reference": "Apple Watch · AirTag",
+    "url": "https://www.apple.com/kr/apple-watch-series-12/",
+    "structure": "기기 소개 → 감지 대상과 알림 흐름 → 설치 위치 → 확인 조건",
+    "focus": "vertical-wind-section"
+  },
+  "compact-gas-detector": {
+    "archetype": "sensing",
+    "reference": "Apple Watch · AirTag",
+    "url": "https://www.apple.com/kr/apple-watch-series-12/",
+    "structure": "기기 소개 → 감지 대상과 알림 흐름 → 설치 위치 → 확인 조건",
+    "focus": "gas-measurement-flow"
+  },
+  "gas-alarm": {
+    "archetype": "sensing",
+    "reference": "Apple Watch · AirTag",
+    "url": "https://www.apple.com/kr/apple-watch-series-12/",
+    "structure": "기기 소개 → 감지 대상과 알림 흐름 → 설치 위치 → 확인 조건",
+    "focus": "entrance-decision-line"
+  },
+  "tilt-acceleration-sensor": {
+    "archetype": "sensing",
+    "reference": "Apple Watch · AirTag",
+    "url": "https://www.apple.com/kr/apple-watch-series-12/",
+    "structure": "기기 소개 → 감지 대상과 알림 흐름 → 설치 위치 → 확인 조건",
+    "focus": "tilt-decision-record"
+  },
+  "fire-detection": {
+    "archetype": "sensing",
+    "reference": "Apple Watch · AirTag",
+    "url": "https://www.apple.com/kr/apple-watch-series-12/",
+    "structure": "기기 소개 → 감지 대상과 알림 흐름 → 설치 위치 → 확인 조건",
+    "focus": "first-signal-line"
+  },
+  "opening-open-close-sensor": {
+    "archetype": "sensing",
+    "reference": "Apple Watch · AirTag",
+    "url": "https://www.apple.com/kr/apple-watch-series-12/",
+    "structure": "기기 소개 → 감지 대상과 알림 흐름 → 설치 위치 → 확인 조건",
+    "focus": "opening-alert-line"
+  },
+  "alcohol-detection": {
+    "archetype": "sensing",
+    "reference": "Apple Watch · AirTag",
+    "url": "https://www.apple.com/kr/apple-watch-series-12/",
+    "structure": "기기 소개 → 감지 대상과 알림 흐름 → 설치 위치 → 확인 조건",
+    "focus": "shift-start-gate"
+  },
+  "smart-beacon": {
+    "archetype": "sensing",
+    "reference": "Apple Watch · AirTag",
+    "url": "https://www.apple.com/kr/apple-watch-series-12/",
+    "structure": "기기 소개 → 감지 대상과 알림 흐름 → 설치 위치 → 확인 조건",
+    "focus": "beacon-flow"
+  },
+  "concrete-curing": {
+    "archetype": "sensing",
+    "reference": "Apple Watch · AirTag",
+    "url": "https://www.apple.com/kr/apple-watch-series-12/",
+    "structure": "기기 소개 → 감지 대상과 알림 흐름 → 설치 위치 → 확인 조건",
+    "focus": "curing-rail"
+  },
+  "led-logo-light": {
+    "archetype": "communication",
+    "reference": "HomePod · AirPods",
+    "url": "https://www.apple.com/homepod-2nd-generation/",
+    "structure": "기기 소개 → 전달/연결 방식 → 공간별 사용 → 설치 구성",
+    "focus": "night-route-plan"
+  },
+  "vehicle-entry-alert": {
+    "archetype": "communication",
+    "reference": "HomePod · AirPods",
+    "url": "https://www.apple.com/homepod-2nd-generation/",
+    "structure": "기기 소개 → 전달/연결 방식 → 공간별 사용 → 설치 구성",
+    "focus": "entry-alert-flow"
+  },
+  "iot-mist": {
+    "archetype": "communication",
+    "reference": "HomePod · AirPods",
+    "url": "https://www.apple.com/homepod-2nd-generation/",
+    "structure": "기기 소개 → 전달/연결 방식 → 공간별 사용 → 설치 구성",
+    "focus": "dust-gate"
+  },
+  "ai-broadcast": {
+    "archetype": "communication",
+    "reference": "HomePod · AirPods",
+    "url": "https://www.apple.com/homepod-2nd-generation/",
+    "structure": "기기 소개 → 전달/연결 방식 → 공간별 사용 → 설치 구성",
+    "focus": "language-lanes"
+  },
+  "wireless-emergency-broadcast": {
+    "archetype": "communication",
+    "reference": "HomePod · AirPods",
+    "url": "https://www.apple.com/homepod-2nd-generation/",
+    "structure": "기기 소개 → 전달/연결 방식 → 공간별 사용 → 설치 구성",
+    "focus": "broadcast-reach-line"
+  },
+  "digital-radio": {
+    "archetype": "communication",
+    "reference": "HomePod · AirPods",
+    "url": "https://www.apple.com/homepod-2nd-generation/",
+    "structure": "기기 소개 → 전달/연결 방식 → 공간별 사용 → 설치 구성",
+    "focus": "radio-paths"
+  },
+  "tbm-solution": {
+    "archetype": "communication",
+    "reference": "HomePod · AirPods",
+    "url": "https://www.apple.com/homepod-2nd-generation/",
+    "structure": "기기 소개 → 전달/연결 방식 → 공간별 사용 → 설치 구성",
+    "focus": "tbm-delivery-flow"
+  },
+  "tower-crane-hook-collision": {
+    "archetype": "communication",
+    "reference": "HomePod · AirPods",
+    "url": "https://www.apple.com/homepod-2nd-generation/",
+    "structure": "기기 소개 → 전달/연결 방식 → 공간별 사용 → 설치 구성",
+    "focus": "hook-warning-flow"
+  },
+  "hazard-area-broadcast": {
+    "archetype": "communication",
+    "reference": "HomePod · AirPods",
+    "url": "https://www.apple.com/homepod-2nd-generation/",
+    "structure": "기기 소개 → 전달/연결 방식 → 공간별 사용 → 설치 구성",
+    "focus": "walking-boundary"
+  },
+  "wireless-network": {
+    "archetype": "communication",
+    "reference": "HomePod · AirPods",
+    "url": "https://www.apple.com/homepod-2nd-generation/",
+    "structure": "기기 소개 → 전달/연결 방식 → 공간별 사용 → 설치 구성",
+    "focus": "network-signal-path"
+  },
+  "hook-bottom-camera": {
+    "archetype": "workspace",
+    "reference": "iPad Pro · Mac Studio",
+    "url": "https://www.apple.com/kr/ipad-pro/",
+    "structure": "화면/현장 전체상 → 정보 흐름 → 구성 요소 → 운영 조건",
+    "focus": "hook-two-views"
+  },
+  "safety-box": {
+    "archetype": "workspace",
+    "reference": "iPad Pro · Mac Studio",
+    "url": "https://www.apple.com/kr/ipad-pro/",
+    "structure": "화면/현장 전체상 → 정보 흐름 → 구성 요소 → 운영 조건",
+    "focus": "safety-summary"
+  },
+  "site-cms": {
+    "archetype": "workspace",
+    "reference": "iPad Pro · Mac Studio",
+    "url": "https://www.apple.com/kr/ipad-pro/",
+    "structure": "화면/현장 전체상 → 정보 흐름 → 구성 요소 → 운영 조건",
+    "focus": "process-transition-line"
+  },
+  "smart-environment-board": {
+    "archetype": "workspace",
+    "reference": "iPad Pro · Mac Studio",
+    "url": "https://www.apple.com/kr/ipad-pro/",
+    "structure": "화면/현장 전체상 → 정보 흐름 → 구성 요소 → 운영 조건",
+    "focus": "environment-link"
+  },
+  "ai-equipment-collision": {
+    "archetype": "workspace",
+    "reference": "iPad Pro · Mac Studio",
+    "url": "https://www.apple.com/kr/ipad-pro/",
+    "structure": "화면/현장 전체상 → 정보 흐름 → 구성 요소 → 운영 조건",
+    "focus": "warning-state"
+  },
+  "equipment-approach-alarm": {
+    "archetype": "workspace",
+    "reference": "iPad Pro · Mac Studio",
+    "url": "https://www.apple.com/kr/ipad-pro/",
+    "structure": "화면/현장 전체상 → 정보 흐름 → 구성 요소 → 운영 조건",
+    "focus": "work-radius-line"
+  },
+  "pedestrian-collision-prevention": {
+    "archetype": "workspace",
+    "reference": "iPad Pro · Mac Studio",
+    "url": "https://www.apple.com/kr/ipad-pro/",
+    "structure": "화면/현장 전체상 → 정보 흐름 → 구성 요소 → 운영 조건",
+    "focus": "blind-corner"
+  },
+  "worker-attendance-card": {
+    "archetype": "workspace",
+    "reference": "iPad Pro · Mac Studio",
+    "url": "https://www.apple.com/kr/ipad-pro/",
+    "structure": "화면/현장 전체상 → 정보 흐름 → 구성 요소 → 운영 조건",
+    "focus": "attendance-card-flow"
+  },
+  "worker-access-gate": {
+    "archetype": "workspace",
+    "reference": "iPad Pro · Mac Studio",
+    "url": "https://www.apple.com/kr/ipad-pro/",
+    "structure": "화면/현장 전체상 → 정보 흐름 → 구성 요소 → 운영 조건",
+    "focus": "access-gate-rhythm"
+  },
+  "iot-small-tower-crane": {
+    "archetype": "workspace",
+    "reference": "iPad Pro · Mac Studio",
+    "url": "https://www.apple.com/kr/ipad-pro/",
+    "structure": "화면/현장 전체상 → 정보 흐름 → 구성 요소 → 운영 조건",
+    "focus": "lifting-decision"
+  },
+  "chatgpt-cctv": {
+    "archetype": "workflow",
+    "reference": "Apple Intelligence · iPad Pro",
+    "url": "https://www.apple.com/kr/apple-intelligence/",
+    "structure": "사용 결과 → 입력/처리/검토 단계 → 담당자 역할 → 적용 조건",
+    "focus": "scene-to-record"
+  },
+  "ai-quick-risk-assessment": {
+    "archetype": "workflow",
+    "reference": "Apple Intelligence · iPad Pro",
+    "url": "https://www.apple.com/kr/apple-intelligence/",
+    "structure": "사용 결과 → 입력/처리/검토 단계 → 담당자 역할 → 적용 조건",
+    "focus": "ai-quick-risk-assessment-flow"
+  },
+  "ai-risk-assessment-review": {
+    "archetype": "workflow",
+    "reference": "Apple Intelligence · iPad Pro",
+    "url": "https://www.apple.com/kr/apple-intelligence/",
+    "structure": "사용 결과 → 입력/처리/검토 단계 → 담당자 역할 → 적용 조건",
+    "focus": "ai-risk-assessment-review-flow"
+  },
+  "ai-safety-index": {
+    "archetype": "workflow",
+    "reference": "Apple Intelligence · iPad Pro",
+    "url": "https://www.apple.com/kr/apple-intelligence/",
+    "structure": "사용 결과 → 입력/처리/검토 단계 → 담당자 역할 → 적용 조건",
+    "focus": "morning-index-line"
+  },
+  "ai-subcontractor-safety": {
+    "archetype": "workflow",
+    "reference": "Apple Intelligence · iPad Pro",
+    "url": "https://www.apple.com/kr/apple-intelligence/",
+    "structure": "사용 결과 → 입력/처리/검토 단계 → 담당자 역할 → 적용 조건",
+    "focus": "ai-subcontractor-safety-flow"
+  },
+  "ai-drone-inspection": {
+    "archetype": "workflow",
+    "reference": "Apple Intelligence · iPad Pro",
+    "url": "https://www.apple.com/kr/apple-intelligence/",
+    "structure": "사용 결과 → 입력/처리/검토 단계 → 담당자 역할 → 적용 조건",
+    "focus": "flight-route"
+  },
+  "inspectcut": {
+    "archetype": "workflow",
+    "reference": "Apple Intelligence · iPad Pro",
+    "url": "https://www.apple.com/kr/apple-intelligence/",
+    "structure": "사용 결과 → 입력/처리/검토 단계 → 담당자 역할 → 적용 조건",
+    "focus": "inspectcut-editing-desk"
+  },
+  "ai-similar-accident-alert": {
+    "archetype": "workflow",
+    "reference": "Apple Intelligence · iPad Pro",
+    "url": "https://www.apple.com/kr/apple-intelligence/",
+    "structure": "사용 결과 → 입력/처리/검토 단계 → 담당자 역할 → 적용 조건",
+    "focus": "ai-similar-accident-alert-flow"
+  },
+  "safebridge": {
+    "archetype": "workflow",
+    "reference": "Apple Intelligence · iPad Pro",
+    "url": "https://www.apple.com/kr/apple-intelligence/",
+    "structure": "사용 결과 → 입력/처리/검토 단계 → 담당자 역할 → 적용 조건",
+    "focus": "safebridge-training-timeline"
+  }
+}

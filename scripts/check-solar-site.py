@@ -4,6 +4,7 @@ from pathlib import Path
 from bs4 import BeautifulSoup
 from urllib.parse import urlsplit, unquote
 import json,re,sys,subprocess,hashlib
+from product_editorial import apply_copy, COPY, PROFILES
 ROOT=Path(__file__).resolve().parents[1]
 paths=[ROOT/'index.html',ROOT/'404.html']+[p for d in ['company','cases','contact','privacy','products','solutions'] for p in (ROOT/d).rglob('index.html')]
 errors=[];cache={p:BeautifulSoup(p.read_text(),'html.parser') for p in paths}
@@ -38,6 +39,7 @@ for name,digest in manifest['pages'].items():
     assert hashlib.sha256(baseline).hexdigest()==digest,'Baseline mismatch: '+name
 catalog=json.loads((ROOT/'data/solar-catalog.json').read_text())
 assert len(catalog)==48
+assert set(COPY)==set(PROFILES)=={p["slug"] for p in catalog}
 for item in catalog:
     p=ROOT/f'products/{item["slug"]}/index.html';soup=cache[p]
     source=BeautifulSoup((ROOT/f'data/solar-products/{item["slug"]}.html').read_text(),'html.parser')
@@ -46,7 +48,8 @@ for item in catalog:
     snapshot=' '.join(source.stripped_strings)
     for text in original.stripped_strings:
         if text not in snapshot:fail(p,'lost baseline text '+text[:70])
-    # Every preserved text node (including model codes, numbers, units, tables) must remain.
+    # Only explicit, source-matched editorial edits are allowed; all other facts remain.
+    apply_copy(source,item["slug"])
     actual=' '.join(soup.select_one('.product-story').stripped_strings)
     for text in source.stripped_strings:
         if text not in actual:fail(p,'lost source text '+text[:70])
@@ -57,4 +60,4 @@ if len(cache[ROOT/'products/index.html'].select('[data-catalog-card]'))!=48:erro
 if len(cache[ROOT/'index.html'].select('[data-map-choice]'))!=4:errors.append('Solar infographic requires 4 choices')
 if errors:
     print('\n'.join(errors));sys.exit(1)
-print(f'PASS: {len(paths)} pages, 48 preserved product sources, four Solar families, links, assets, IDs, headings, metadata and contact routes.')
+print(f'PASS: {len(paths)} pages, 48 preserved product sources with explicit editorial substitutions, four Solar families, links, assets, IDs, headings, metadata and contact routes.')

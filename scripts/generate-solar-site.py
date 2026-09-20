@@ -4,6 +4,7 @@ import importlib.util, json, re, hashlib
 from pathlib import Path
 from html import escape as e
 from bs4 import BeautifulSoup
+import product_editorial
 ROOT=Path(__file__).resolve().parents[1]
 spec=importlib.util.spec_from_file_location('corporate',ROOT/'scripts/generate-sunflex-v2.py')
 g=importlib.util.module_from_spec(spec);spec.loader.exec_module(g)
@@ -29,11 +30,12 @@ def summary(p):
 def img(p,lazy=True):
     im=p['images'][0]
     return f'<img src="{e(im["src"])}" alt="{e(im["alt"] or p["name"])}" width="{im["width"]}" height="{im["height"]}" loading="{"lazy" if lazy else "eager"}" decoding="async">'
-def card(p,filterable=False):
+def card(p,filterable=False,editorial=False):
+    description=product_editorial.COPY[p["slug"]]["lead"] if editorial else summary(p)
     attrs=''
     if filterable:
         attrs=' data-catalog-card '+ ' '.join(f'data-{k}="{e(" ".join(p[k]) if isinstance(p[k],list) else p[k])}"' for k in ['category','problem','installation','connectivity','process'])+f' data-search="{e(p["name"]+" "+summary(p)+" "+p["subgroup"])}"'
-    return f'<article class="solar-card"{attrs}><a href="/products/{p["slug"]}/"><div class="solar-card-image">{img(p)}<span aria-hidden="true" class="card-arrow">↗</span></div><div class="solar-card-copy"><span class="eyebrow">Solar {GROUPS[p["category"]][0]} · {p["subgroup"]}</span><h3>{e(p["name"])}</h3><p>{e(summary(p))}</p></div></a></article>'
+    return f'<article class="solar-card"{attrs}><a href="/products/{p["slug"]}/"><div class="solar-card-image">{img(p)}<span aria-hidden="true" class="card-arrow">↗</span></div><div class="solar-card-copy"><span class="eyebrow">Solar {GROUPS[p["category"]][0]} · {p["subgroup"]}</span><h3>{e(p["name"])}</h3><p>{e(description)}</p></div></a></article>'
 def family_links():
     return ''.join(f'<a href="/solutions/{k}/"><span>0{i+1} / {v[1]}</span><strong>Solar {v[0]}</strong><span aria-hidden="true">↗</span></a>' for i,(k,v) in enumerate(GROUPS.items()))
 old_header=g.header
@@ -61,6 +63,11 @@ def render(path,title,desc,body,active=''):
         for ext in ['css','js']:
             v=hashlib.sha256((ROOT/f'assets/sunflex-v2/home-simple.{ext}').read_bytes()).hexdigest()[:10]
             extra+=f'<link rel="stylesheet" href="/assets/sunflex-v2/home-simple.css?v={v}">' if ext=='css' else f'<script defer src="/assets/sunflex-v2/home-simple.js?v={v}"></script>'
+    if path.startswith('products/'):
+        s=s.replace('class="sunflex-v2"','class="sunflex-v2 product-editorial'+(' product-catalog' if path=='products/index.html' else '')+'"')
+        for ext in ['css','js']:
+            v=hashlib.sha256((ROOT/f'assets/sunflex-v2/product-editorial.{ext}').read_bytes()).hexdigest()[:10]
+            extra+=f'<link rel="stylesheet" href="/assets/sunflex-v2/product-editorial.css?v={v}">' if ext=='css' else f'<script defer src="/assets/sunflex-v2/product-editorial.js?v={v}"></script>'
     s=s.replace('</head>',extra+'</head>')
     s=s.replace('적용 분야 보기','Solar 솔루션 보기').replace('적용 분야 살펴보기','Solar 솔루션 살펴보기')
     p.write_text(s)
@@ -73,22 +80,18 @@ def catalog():
     tabs='<button type="button" data-category="" aria-pressed="true">전체 <small>48</small></button>'+''.join(f'<button type="button" data-category="{k}" aria-pressed="false">Solar {v[0]} <small>{sum(p["category"]==k for p in CAT)}</small></button>' for k,v in GROUPS.items())
     filters=''.join(f'<label>{label}<select name="{key}"><option value="">전체</option>'+''.join(f'<option value="{val}">{lab}</option>' for val,lab in values.items() if any(val in p[key] for p in CAT))+'</select></label>' for key,(label,values) in FACETS.items())
     body=g.head('SUNPLEX / SOLAR PRODUCTS','현장을 위한<br><em>솔라 솔루션.</em>','보고, 듣고, 살피고, 지키고, 기록하는 제품.<br>우리 현장에 필요한 솔라 솔루션을 찾아보세요.',cls='solar-catalog-head')
-    body+=f'<section class="wrap catalog-section" id="catalog"><div class="catalog-tools" hidden><label class="catalog-search">제품 검색<input name="q" type="search" placeholder="제품명 또는 필요한 기능을 입력하세요" autocomplete="off"></label><div class="catalog-tabs" role="group" aria-label="Solar 제품군">{tabs}</div><details class="catalog-filters"><summary>현장 조건으로 좁혀보기 <span aria-hidden="true">＋</span></summary><div class="filter-grid">{filters}</div></details><div class="catalog-count"><p role="status" aria-live="polite"><strong id="result-count">48</strong>개 제품</p><button type="button" data-reset>조건 초기화 ↺</button></div></div><div class="solar-grid">'+''.join(card(p,True) for p in CAT)+'</div><div class="catalog-empty" hidden><h2>조건에 맞는 제품이 없습니다.</h2><p>검색어를 짧게 입력하거나 선택한 조건을 줄여보세요.</p><button class="btn" type="button" data-reset>전체 제품 보기</button></div></section>'+g.cta()
+    body+=f'<section class="wrap catalog-section" id="catalog"><div class="catalog-tools" hidden><label class="catalog-search">제품 검색<input name="q" type="search" placeholder="제품명 또는 필요한 기능을 입력하세요" autocomplete="off"></label><div class="catalog-tabs" role="group" aria-label="Solar 제품군">{tabs}</div><details class="catalog-filters"><summary>현장 조건으로 좁혀보기 <span aria-hidden="true">＋</span></summary><div class="filter-grid">{filters}</div></details><div class="catalog-count"><p role="status" aria-live="polite"><strong id="result-count">48</strong>개 제품</p><button type="button" data-reset>조건 초기화 ↺</button></div></div><div class="solar-grid">'+''.join(card(p,True,True) for p in CAT)+'</div><div class="catalog-empty" hidden><h2>조건에 맞는 제품이 없습니다.</h2><p>검색어를 짧게 입력하거나 선택한 조건을 줄여보세요.</p><button class="btn" type="button" data-reset>전체 제품 보기</button></div></section>'+g.cta()
     render('products/index.html','Solar 제품','Solar Detect, Alert, Respond, Record. 현장 조건과 필요한 기능으로 48개 산업안전 제품을 찾아보세요.',body,'/products/')
 
 def detail(p):
     group=GROUPS[p['category']];slug=p['slug']
-    thumbs=''.join(f'<button type="button" data-gallery-src="{e(im["src"])}" data-gallery-alt="{e(im["alt"])}" aria-label="제품 이미지 {i+1}: {e(im["alt"])}" aria-pressed="{str(i==0).lower()}"><img src="{e(im["src"])}" alt="" width="80" height="80" loading="lazy"></button>' for i,im in enumerate(p['images'][:4]))
-    body=f'<div class="wrap breadcrumbs"><a href="/products/">제품</a><span>/</span><a href="/solutions/{p["category"]}/">Solar {group[0]}</a><span>/</span><span>{e(p["name"])}</span></div><section class="wrap product-hero"><div class="product-hero-copy"><span class="eyebrow">Solar {group[0]} / {group[1]}</span><h1>{e(p["name"])}</h1><p class="product-summary">{e(summary(p))}</p><span class="product-type">{e(p["subgroup"])}</span><div class="actions">{g.link("/contact/?product="+slug,"이 제품 문의","btn")}{g.link("#product-content","제품 상세 보기")}</div><p class="spec-note">구성과 적용 범위는 제품 사양 및 설치 환경에 따라 확인이 필요합니다.</p></div><div class="product-gallery"><div class="gallery-stage">{img(p,False)}</div><div class="gallery-thumbs" aria-label="제품 이미지 선택" hidden>{thumbs}</div></div></section>'
-    nav=''.join(f'<a href="#{s["id"]}"><span>{i+1:02}</span>{e(s["title"])}</a>' for i,s in enumerate(p['sections']))
-    content=(ROOT/f'data/solar-products/{slug}.html').read_text()
-    body+=f'<div class="product-body wrap" id="product-content"><aside class="product-index"><span class="eyebrow">제품 상세</span><nav aria-label="제품 상세 목차">{nav}</nav>{g.link("/contact/?product="+slug,"도입 문의")}</aside><div class="product-story">{content}</div></div>'
+    body=product_editorial.build(p,group,g)
     related=[BY[s] for s in p['related'] if s in BY][:3]
     if len(related)<3:
         related += [x for x in CAT if x['category']==p['category'] and x!=p and x not in related][:3-len(related)]
-    body+='<section class="section wrap" id="related"><div class="lead"><h2>함께 살펴볼 제품</h2><p>관리할 구역과 필요한 기능을 기준으로 비교해 보세요.</p></div><div class="solar-grid">'+''.join(card(x) for x in related)+'</div></section>'
+    body+='<section class="section wrap" id="related"><div class="lead"><h2>함께 살펴볼 제품</h2><p>관리할 구역과 필요한 기능을 기준으로 비교해 보세요.</p></div><div class="solar-grid">'+''.join(card(x,editorial=True) for x in related)+'</div></section>'
     body+=f'<div class="wrap" id="consultation"><section class="final-cta"><div><span class="eyebrow">{e(p["name"])}</span><h2>우리 현장에 적용할 수 있을까요?</h2><p>설치 위치와 사용 목적을 알려주세요.</p></div>{g.link("/contact/?product="+slug,"이 제품 문의","btn")}</section></div>'
-    render(f'products/{slug}/index.html',p['name'],summary(p),body,'/products/')
+    render(f'products/{slug}/index.html',p['name'],product_editorial.COPY[slug]['lead'],body,'/products/')
 
 def category(k):
     name,ko,title,desc,scene=GROUPS[k];products=[p for p in CAT if p['category']==k]

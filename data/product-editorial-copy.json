@@ -1,0 +1,1011 @@
+{
+  "mobile-cctv": {
+    "lead": "자주 옮기는 곳부터 높이 살펴야 하는 곳까지. 휴대 방식과 지지 구조, 촬영 높이에 맞춰 무빙캠 S·M·L을 선택하세요.",
+    "source": "data/solar-products/mobile-cctv.html",
+    "edits": [
+      {
+        "selector": "#detail-1 p",
+        "index": 1,
+        "before": "현장이 바뀌면, 무빙캠도 함께. 휴대와 고정, 촬영 높이에 맞춰 고르는 이동식 CCTV.",
+        "after": "공정은 바뀌어도. 시야는 이어지도록.",
+        "role": "headline"
+      },
+      {
+        "selector": "#mobile-cctv-lineup h2",
+        "index": 0,
+        "before": "무빙캠 S. M. L.",
+        "after": "쓰임이 다른 세 가지 시야.",
+        "role": "chapter"
+      },
+      {
+        "selector": "#highlights p",
+        "index": 6,
+        "before": "오늘 촬영 범위에 작업 동선과 장비 접근 구간을 담아서 화면에 올릴수 있습니다.",
+        "after": "작업 동선과 장비 접근 구간이 촬영 범위에 들어오도록 카메라를 배치하고, 관제 화면에서 확인합니다.",
+        "role": "copy"
+      }
+    ]
+  },
+  "mobile-bodycam": {
+    "lead": "몸에 착용한 카메라로 작업 장면을 남깁니다. 고정 CCTV가 보기 어려운 구간도 작업자의 시선에서 기록할 수 있죠.",
+    "source": "data/solar-products/mobile-bodycam.html",
+    "edits": [
+      {
+        "selector": "#detail-1 p",
+        "index": 1,
+        "before": "고정 CCTV가 담기 어려운 작업을 몸에 착용한 카메라로 기록합니다.",
+        "after": "작업은 두 손으로. 기록은 몸으로.",
+        "role": "headline"
+      },
+      {
+        "selector": "#detail-2 h2",
+        "index": 0,
+        "before": "작업자의 시선에서 남기는 현장 기록.",
+        "after": "작업하는 곳이, 기록하는 곳.",
+        "role": "chapter"
+      }
+    ]
+  },
+  "hook-bottom-camera": {
+    "lead": "후크 아래에서 촬영한 영상을 운전석으로 전송합니다. 직접 보기 어려운 인양 구간을 확인하고 작업을 보조합니다.",
+    "source": "data/solar-products/hook-bottom-camera.html",
+    "edits": [
+      {
+        "selector": "#detail-1 p",
+        "index": 0,
+        "before": "후크 아래 영상을 운전석으로 보내 인양 작업을 보조합니다.",
+        "after": "시선은 운전석에. 시야는 후크 아래까지.",
+        "role": "headline"
+      },
+      {
+        "selector": "#detail-2 h2",
+        "index": 0,
+        "before": "운전석에서 가려진 후크 아래까지.",
+        "after": "가려진 작업면을 화면으로.",
+        "role": "chapter"
+      }
+    ]
+  },
+  "chatgpt-cctv": {
+    "lead": "CCTV 장면을 선택하면 AI가 보고서 초안을 작성합니다. 안전관리자는 장면과 초안을 함께 검토하고 현장을 판단합니다.",
+    "source": "data/solar-products/chatgpt-cctv.html",
+    "edits": [
+      {
+        "selector": "#detail-1 p",
+        "index": 0,
+        "before": "CCTV 장면을 고르면, AI가 보고서 초안을 씁니다.",
+        "after": "살펴본 장면을, 읽을 수 있는 기록으로.",
+        "role": "headline"
+      },
+      {
+        "selector": "#detail-2 h2",
+        "index": 0,
+        "before": "CCTV를 확인한 뒤, 보고서 초안까지.",
+        "after": "영상 확인 다음은, 초안 검토.",
+        "role": "chapter"
+      }
+    ]
+  },
+  "safety-box": {
+    "lead": "출역과 장비, 점검 현황에 CCTV까지. 따로 확인하던 정보를 한 화면에 모아 현장 상황을 살펴봅니다.",
+    "source": "data/solar-products/safety-box.html",
+    "edits": [
+      {
+        "selector": "#detail-1 p",
+        "index": 1,
+        "before": "출역·장비·점검 현황과 CCTV를 한 화면에 모아 보여줍니다.",
+        "after": "여러 현장 정보. 하나의 시야.",
+        "role": "headline"
+      },
+      {
+        "selector": "#safety-summary h2",
+        "index": 0,
+        "before": "현장 현황과 CCTV, 한 화면에.",
+        "after": "화면을 오가는 수고를 덜다.",
+        "role": "chapter"
+      }
+    ]
+  },
+  "site-cms": {
+    "lead": "착공부터 준공까지, 공사 단계별 위험 구간을 고려해 CCTV 배치와 관제 구성을 계획합니다.",
+    "source": "data/solar-products/site-cms.html",
+    "edits": [
+      {
+        "selector": "#detail-1 strong",
+        "index": 0,
+        "before": "공사 단계별 위험 구간에 맞춰 CCTV와 관제 구성을 계획합니다.",
+        "after": "공정이 달라지면. 관제도 달라져야 하니까.",
+        "role": "headline"
+      },
+      {
+        "selector": "#process-transition-line h2",
+        "index": 0,
+        "before": "공정에 맞춰 달라지는 CCTV 배치.",
+        "after": "지금 공정에 맞는 시야.",
+        "role": "chapter"
+      }
+    ]
+  },
+  "led-logo-light": {
+    "lead": "바닥에 빛으로 통행 방향과 안전 안내를 표시합니다. 어두운 보행로에서 안내가 필요한 위치에 맞춰 설치하세요.",
+    "source": "data/solar-products/led-logo-light.html",
+    "edits": [
+      {
+        "selector": "#detail-1 p",
+        "index": 1,
+        "before": "어두운 바닥에 빛으로 표시하는 통행 방향과 안전 안내.",
+        "after": "어두운 길에, 안내를 비추다.",
+        "role": "headline"
+      },
+      {
+        "selector": "#detail-2 h2",
+        "index": 0,
+        "before": "어두운 보행로, 빛으로 전하는 안전 안내.",
+        "after": "발길 닿는 곳에, 빛나는 안내.",
+        "role": "chapter"
+      }
+    ]
+  },
+  "vehicle-entry-alert": {
+    "lead": "출입구의 차량 움직임을 감지해 주변에 경고합니다. 차량과 보행자가 마주치는 구간에 접근 신호를 전달합니다.",
+    "source": "data/solar-products/vehicle-entry-alert.html",
+    "edits": [
+      {
+        "selector": "#detail-1 p",
+        "index": 1,
+        "before": "출입구의 차량 움직임을 감지해 주변에 경고합니다.",
+        "after": "차가 드나드는 곳. 알림이 필요한 순간.",
+        "role": "headline"
+      },
+      {
+        "selector": "#detail-2 h2",
+        "index": 0,
+        "before": "차량이 드나드는 순간, 보행자에게도 알림.",
+        "after": "다가오는 차량을 알아차리도록.",
+        "role": "chapter"
+      }
+    ]
+  },
+  "co2-temp-humidity": {
+    "lead": "CO₂ 농도와 온도, 습도를 함께 측정합니다. 지금의 측정값과 지난 기록을 살펴 공간의 변화를 확인하세요.",
+    "source": "data/solar-products/co2-temp-humidity.html",
+    "edits": [
+      {
+        "selector": "#detail-1 p",
+        "index": 0,
+        "before": "CO₂ 농도와 온습도를 함께 측정하고 변화까지 기록합니다.",
+        "after": "보이지 않는 공기. 확인할 수 있는 수치.",
+        "role": "headline"
+      },
+      {
+        "selector": "#detail-2 h2",
+        "index": 0,
+        "before": "공기 상태를 수치로 확인하는 방법.",
+        "after": "공기의 변화를 읽는 방법.",
+        "role": "chapter"
+      }
+    ]
+  },
+  "iot-mist": {
+    "lead": "출입구에 미스트를 분사해 차량이 이동할 때 생기는 비산먼지를 줄입니다. 차량이 지나는 폭에 맞춰 노즐을 배치합니다.",
+    "source": "data/solar-products/iot-mist.html",
+    "edits": [
+      {
+        "selector": "#detail-1 p",
+        "index": 0,
+        "before": "출입구에 분사하는 미스트로 차량 이동 때 일어나는 비산먼지를 줄입니다.",
+        "after": "먼지는 가라앉게. 현장은 한결 쾌적하게.",
+        "role": "headline"
+      },
+      {
+        "selector": "#detail-2 h2",
+        "index": 0,
+        "before": "차량이 일으킨 먼지를 가라앉히는 미스트.",
+        "after": "물입자로 다스리는 비산먼지.",
+        "role": "chapter"
+      }
+    ]
+  },
+  "lte-anemometer": {
+    "lead": "높은 곳에서 측정한 풍속을 LTE로 전달합니다. 설정한 기준을 넘으면 알림을 보내, 담당자가 상황을 확인할 수 있습니다.",
+    "source": "data/solar-products/lte-anemometer.html",
+    "edits": [
+      {
+        "selector": "#detail-1 p",
+        "index": 0,
+        "before": "높은 곳의 풍속을 LTE로 전달하고 설정 기준을 넘으면 알립니다.",
+        "after": "높은 곳의 바람도. 눈앞의 정보로.",
+        "role": "headline"
+      },
+      {
+        "selector": "#detail-2 h2",
+        "index": 0,
+        "before": "높은 곳의 바람을, 지상에서 확인.",
+        "after": "바람은 위에서. 확인은 아래서.",
+        "role": "chapter"
+      }
+    ]
+  },
+  "smart-environment-board": {
+    "lead": "환경 측정값을 확인하고 미스트와 전원을 관리합니다. 환경 정보와 장비 상태를 한 화면에서 살펴보세요.",
+    "source": "data/solar-products/smart-environment-board.html",
+    "edits": [
+      {
+        "selector": "#detail-1 p",
+        "index": 1,
+        "before": "환경 수치 표시와 미스트·전원 관리를 한 화면에서.",
+        "after": "수치를 보고. 설비까지 살피고.",
+        "role": "headline"
+      },
+      {
+        "selector": "#detail-2 h2",
+        "index": 0,
+        "before": "환경 수치 확인과 장비 제어를 한곳에서.",
+        "after": "환경 확인과 설비 관리가 한자리에.",
+        "role": "chapter"
+      }
+    ]
+  },
+  "compact-gas-detector": {
+    "lead": "작업할 구역에 측정기를 먼저 설치하고, 가스 농도는 원격으로 확인합니다.",
+    "source": "data/solar-products/compact-gas-detector.html",
+    "edits": [
+      {
+        "selector": "#detail-1 p",
+        "index": 1,
+        "before": "작업 전에 설치하고, 가스 농도는 원격으로 확인합니다.",
+        "after": "작업보다 먼저. 공기를 살피다.",
+        "role": "headline"
+      },
+      {
+        "selector": "#detail-2 h2",
+        "index": 0,
+        "before": "작업할 구역에 먼저 설치하는 측정기",
+        "after": "들어가기 전에, 측정부터.",
+        "role": "chapter"
+      }
+    ]
+  },
+  "gas-alarm": {
+    "lead": "밀폐공간의 가스 농도를 측정해 확인합니다. 측정 결과와 현장 기준을 함께 살펴 출입 여부를 판단하세요.",
+    "source": "data/solar-products/gas-alarm.html",
+    "edits": [
+      {
+        "selector": "#detail-1 p",
+        "index": 0,
+        "before": "밀폐공간에 들어가기 전, 가스 농도부터 확인합니다.",
+        "after": "들어가기 전, 먼저 알아야 할 공기.",
+        "role": "headline"
+      },
+      {
+        "selector": "#detail-2 h2",
+        "index": 0,
+        "before": "들어가기 전, 가스 농도부터.",
+        "after": "측정값을 확인하는 것이 먼저.",
+        "role": "chapter"
+      }
+    ]
+  },
+  "tilt-acceleration-sensor": {
+    "lead": "기울기와 가속도의 변화를 측정하고 기록합니다. 계측값과 알림을 확인해 구조물 상태를 점검하는 데 활용하세요.",
+    "source": "data/solar-products/tilt-acceleration-sensor.html",
+    "edits": [
+      {
+        "selector": "#detail-1 p",
+        "index": 1,
+        "before": "기울기와 가속도의 작은 변화를 측정해 알림과 기록으로 남깁니다.",
+        "after": "작은 기울기도. 살펴볼 기록으로.",
+        "role": "headline"
+      },
+      {
+        "selector": "#detail-2 h2",
+        "index": 0,
+        "before": "구조물의 작은 기울기 변화까지 기록.",
+        "after": "변화를 측정하고, 상태를 점검하고.",
+        "role": "chapter"
+      },
+      {
+        "selector": "#detail-1 h2",
+        "index": 0,
+        "before": "기울 기· 가속도 변화 알림센서",
+        "after": "기울기·가속도 변화 알림센서",
+        "role": "copy"
+      }
+    ]
+  },
+  "fire-detection": {
+    "lead": "불꽃을 감지하면 현장에 대피 방송을 보내고 관리자에게 알립니다. 감지 신호를 현장과 담당자가 함께 확인합니다.",
+    "source": "data/solar-products/fire-detection.html",
+    "edits": [
+      {
+        "selector": "#detail-1 p",
+        "index": 0,
+        "before": "불꽃을 감지하면 대피 방송과 관리자 알림을 보냅니다.",
+        "after": "불꽃의 신호를, 대피 안내로.",
+        "role": "headline"
+      },
+      {
+        "selector": "#detail-2 h2",
+        "index": 0,
+        "before": "불꽃 감지 신호를 대피 안내로.",
+        "after": "감지 다음에 필요한 안내.",
+        "role": "chapter"
+      }
+    ]
+  },
+  "ir3-flame-detector": {
+    "lead": "현장 경보와 관리자 알림, 또는 CCTV 영상 관제. 현장에서 필요한 확인 방식에 맞춰 구성을 살펴보세요.",
+    "source": "data/solar-products/ir3-flame-detector.html",
+    "edits": [
+      {
+        "selector": "#detail-1 p",
+        "index": 1,
+        "before": "현장 경보와 관리자 알림. 또는 CCTV 영상 관제로.",
+        "after": "불꽃을 살피는 기술. 현장에 맞는 구성.",
+        "role": "headline"
+      },
+      {
+        "selector": "#detail-2 h2",
+        "index": 0,
+        "before": "불꽃을 감지하고. 현장에 맞게 확인하고.",
+        "after": "불꽃 감지에서 알림까지.",
+        "role": "chapter"
+      }
+    ]
+  },
+  "ai-broadcast": {
+    "lead": "안전 안내를 여러 언어의 음성과 화면으로 전달합니다. 다양한 언어를 쓰는 작업자에게 같은 내용을 안내하세요.",
+    "source": "data/solar-products/ai-broadcast.html",
+    "edits": [
+      {
+        "selector": "#detail-1 p",
+        "index": 0,
+        "before": "안전 안내를 여러 언어의 음성과 화면으로 전달합니다.",
+        "after": "안내는 같게. 언어는 각자에게.",
+        "role": "headline"
+      },
+      {
+        "selector": "#language-lanes h2",
+        "index": 0,
+        "before": "같은 안전 안내를, 각자의 언어로.",
+        "after": "현장의 언어가 달라도.",
+        "role": "chapter"
+      }
+    ]
+  },
+  "wireless-emergency-broadcast": {
+    "lead": "무선으로 방송 신호를 보내 일상 안내와 비상경고음을 전달합니다. 달라지는 작업 구간에 맞춰 장치를 옮겨 설치하세요.",
+    "source": "data/solar-products/wireless-emergency-broadcast.html",
+    "edits": [
+      {
+        "selector": "#detail-1 p",
+        "index": 1,
+        "before": "작업층이 바뀌어도, 무선으로 안내방송을 보냅니다.",
+        "after": "작업층을 따라, 안내도 함께.",
+        "role": "headline"
+      },
+      {
+        "selector": "#detail-2 h2",
+        "index": 0,
+        "before": "작업층이 올라가면, 방송도 그곳으로.",
+        "after": "안내가 필요한 층으로.",
+        "role": "chapter"
+      }
+    ]
+  },
+  "digital-radio": {
+    "lead": "조별·개별·전체 통화로 필요한 사람에게 말을 전합니다. 작업조 연락부터 현장 전체 공지까지, 통화 대상을 선택하세요.",
+    "source": "data/solar-products/digital-radio.html",
+    "edits": [
+      {
+        "selector": "#detail-1 p",
+        "index": 0,
+        "before": "조별·개별·전체 통화로, 필요한 사람에게 말을 전합니다.",
+        "after": "할 말은 바로. 받을 사람에게.",
+        "role": "headline"
+      },
+      {
+        "selector": "#detail-2 h2",
+        "index": 0,
+        "before": "작업조 연락부터 전체 공지까지.",
+        "after": "작업조에서 현장 전체까지.",
+        "role": "chapter"
+      }
+    ]
+  },
+  "tbm-solution": {
+    "lead": "화면과 소리를 함께 활용해 안전교육을 진행합니다. 작업을 시작하기 전, 오늘의 위험과 주의사항을 함께 확인하세요.",
+    "source": "data/solar-products/tbm-solution.html",
+    "edits": [
+      {
+        "selector": "#detail-1 p",
+        "index": 1,
+        "before": "화면과 소리를 함께 활용해 안전교육 내용을 전달합니다.",
+        "after": "함께 보고 듣는, 오늘의 안전.",
+        "role": "headline"
+      },
+      {
+        "selector": "#detail-2 h2",
+        "index": 0,
+        "before": "오늘의 안전교육, 화면과 소리로 함께.",
+        "after": "작업 전, 같은 내용을 함께.",
+        "role": "chapter"
+      },
+      {
+        "selector": "#detail-1 h2",
+        "index": 0,
+        "before": "안전 조회장· TBM 솔루션",
+        "after": "안전 조회장·TBM 솔루션",
+        "role": "copy"
+      }
+    ]
+  },
+  "ai-equipment-collision": {
+    "lead": "장비 주변의 사람을 감지해 운전자와 보행자에게 함께 경고합니다. 사각지대의 접근을 알아차리는 데 도움을 줍니다.",
+    "source": "data/solar-products/ai-equipment-collision.html",
+    "edits": [
+      {
+        "selector": "#detail-1 p",
+        "index": 0,
+        "before": "장비 주변의 사람을 감지해 운전자와 보행자에게 함께 경고합니다.",
+        "after": "가려진 사람을 감지해. 양쪽에 경고를.",
+        "role": "headline"
+      },
+      {
+        "selector": "#detail-2 h2",
+        "index": 0,
+        "before": "장비 사각지대의 사람을 감지합니다.",
+        "after": "사각지대에 더하는 접근 경고.",
+        "role": "chapter"
+      }
+    ]
+  },
+  "opening-open-close-sensor": {
+    "lead": "개구부 덮개가 열리면 경고 방송과 관리자 알림을 보냅니다. 현장과 담당자가 덮개 상태를 함께 확인할 수 있습니다.",
+    "source": "data/solar-products/opening-open-close-sensor.html",
+    "edits": [
+      {
+        "selector": "#detail-1 p",
+        "index": 0,
+        "before": "덮개가 열리면, 경고 방송과 관리자 알림으로 전합니다.",
+        "after": "열린 덮개. 놓치지 않도록 알림.",
+        "role": "headline"
+      },
+      {
+        "selector": "#detail-2 h2",
+        "index": 0,
+        "before": "열린 덮개, 방송과 알림으로 확인.",
+        "after": "덮개가 열리면, 알림으로.",
+        "role": "chapter"
+      }
+    ]
+  },
+  "equipment-approach-alarm": {
+    "lead": "장비의 작업 반경으로 다가오는 사람을 감지합니다. 운전석과 장비 주변에 함께 경고해 접근 상황을 알립니다.",
+    "source": "data/solar-products/equipment-approach-alarm.html",
+    "edits": [
+      {
+        "selector": "#detail-1 p",
+        "index": 0,
+        "before": "작업 반경으로 다가오는 사람을 감지해 양쪽에 경고합니다.",
+        "after": "작업 반경 안으로. 경고는 양쪽으로.",
+        "role": "headline"
+      },
+      {
+        "selector": "#detail-2 h2",
+        "index": 0,
+        "before": "작업 반경 안의 접근, 양쪽에 경고.",
+        "after": "다가오는 사람을 함께 알도록.",
+        "role": "chapter"
+      }
+    ]
+  },
+  "tower-crane-hook-collision": {
+    "lead": "후크가 움직이면 아래 작업 구간에 음성 경고를 보냅니다. 작업자가 후크의 이동을 알아차릴 수 있도록 안내합니다.",
+    "source": "data/solar-products/tower-crane-hook-collision.html",
+    "edits": [
+      {
+        "selector": "#detail-1 p",
+        "index": 1,
+        "before": "후크가 움직이면, 아래 작업 구간에 음성 경고를 보냅니다.",
+        "after": "후크가 움직일 때. 아래에도 알립니다.",
+        "role": "headline"
+      },
+      {
+        "selector": "#detail-2 h2",
+        "index": 0,
+        "before": "후크 이동을 아래 작업자에게 알립니다.",
+        "after": "위의 움직임을 아래의 안내로.",
+        "role": "chapter"
+      }
+    ]
+  },
+  "emergency-signal-location": {
+    "lead": "안전모 버튼을 누르면 지정 연락처로 전화를 시도하고 위치 문자를 보냅니다. 호출을 받은 담당자가 위치 정보를 확인할 수 있습니다.",
+    "source": "data/solar-products/emergency-signal-location.html",
+    "edits": [
+      {
+        "selector": "#detail-1 p",
+        "index": 0,
+        "before": "안전모 버튼으로 연락을 시도하고 위치 문자를 보냅니다.",
+        "after": "도움을 부를 때, 위치도 함께.",
+        "role": "headline"
+      },
+      {
+        "selector": "#detail-2 h2",
+        "index": 0,
+        "before": "응급호출에 위치 정보를 더합니다.",
+        "after": "호출에 더하는 위치 정보.",
+        "role": "chapter"
+      }
+    ]
+  },
+  "hazard-area-broadcast": {
+    "lead": "위험 구역으로 다가오는 사람을 감지해 음성으로 안내합니다. 구역의 위험 요소에 맞춰 안내 문구를 정하세요.",
+    "source": "data/solar-products/hazard-area-broadcast.html",
+    "edits": [
+      {
+        "selector": "#detail-1 p",
+        "index": 0,
+        "before": "위험 구역의 접근을 감지해 음성으로 안내합니다.",
+        "after": "다가오는 발걸음에, 먼저 안내를.",
+        "role": "headline"
+      },
+      {
+        "selector": "#detail-2 h2",
+        "index": 0,
+        "before": "위험 구역에 다가서면, 음성으로 경고.",
+        "after": "경계 가까이, 필요한 한마디.",
+        "role": "chapter"
+      }
+    ]
+  },
+  "pedestrian-collision-prevention": {
+    "lead": "가려진 출입로의 접근을 전광판과 경광등으로 알립니다. 차량과 보행자가 서로의 접근을 확인하도록 돕습니다.",
+    "source": "data/solar-products/pedestrian-collision-prevention.html",
+    "edits": [
+      {
+        "selector": "#detail-1 p",
+        "index": 0,
+        "before": "가려진 출입로의 접근을 전광판과 경광등으로 알립니다.",
+        "after": "모퉁이 너머의 접근도, 알 수 있도록.",
+        "role": "headline"
+      },
+      {
+        "selector": "#detail-2 h2",
+        "index": 0,
+        "before": "가려진 출입로, 서로의 접근을 알도록.",
+        "after": "서로 보이지 않는 곳에 알림을.",
+        "role": "chapter"
+      }
+    ]
+  },
+  "alcohol-detection": {
+    "lead": "출입구에서 음주를 측정하고 결과를 관제 화면으로 전달합니다. 측정 결과를 확인하고 필요한 재확인 절차를 진행하세요.",
+    "source": "data/solar-products/alcohol-detection.html",
+    "edits": [
+      {
+        "selector": "#detail-1 p",
+        "index": 0,
+        "before": "출입구에서 음주를 측정하고 결과를 관제 화면으로 전달합니다.",
+        "after": "작업 시작 전. 확인해야 할 한 가지.",
+        "role": "headline"
+      },
+      {
+        "selector": "#detail-2 h2",
+        "index": 0,
+        "before": "작업 전 음주 측정, 결과 확인까지.",
+        "after": "측정에서 결과 확인까지.",
+        "role": "chapter"
+      }
+    ]
+  },
+  "smart-beacon": {
+    "lead": "위험 구역의 작업 인원과 접근 신호를 화면에서 확인합니다. 구역별 인원을 살피고 현장 대응에 활용하세요.",
+    "source": "data/solar-products/smart-beacon.html",
+    "edits": [
+      {
+        "selector": "#detail-1 p",
+        "index": 1,
+        "before": "위험 구역의 인원과 접근 신호를 화면에서 확인합니다.",
+        "after": "구역은 나뉘어도. 인원은 한눈에.",
+        "role": "headline"
+      },
+      {
+        "selector": "#detail-2 h2",
+        "index": 0,
+        "before": "보이지 않는 구역의 작업 인원까지.",
+        "after": "구역마다 누가 있는지.",
+        "role": "chapter"
+      }
+    ]
+  },
+  "wireless-network": {
+    "lead": "통신이 약한 작업 구간에 무선망을 구성합니다. 현장에서 필요한 영상과 도면을 주고받을 수 있도록 연결 환경을 마련합니다.",
+    "source": "data/solar-products/wireless-network.html",
+    "edits": [
+      {
+        "selector": "#detail-1 p",
+        "index": 1,
+        "before": "통신이 약한 작업 구간에 무선망을 구성해 영상과 도면을 전달합니다.",
+        "after": "통신이 필요한 곳까지. 연결을 넓히다.",
+        "role": "headline"
+      },
+      {
+        "selector": "#detail-2 h2",
+        "index": 0,
+        "before": "통신이 필요한 작업 구간까지 연결.",
+        "after": "작업 구간으로 이어지는 무선망.",
+        "role": "chapter"
+      },
+      {
+        "selector": "#detail-5 h2",
+        "index": 0,
+        "before": "사 진·영 상·도 면이 음영지역에서도 통하다.",
+        "after": "사진과 영상, 도면을 작업 구간으로.",
+        "role": "copy"
+      }
+    ]
+  },
+  "power-assist-suit": {
+    "lead": "자재를 들고 내리는 작업에서 허리 부담을 덜어 주는 착용형 보조 장비입니다. 평소 작업 동작에 맞춰 착용감을 확인하세요.",
+    "source": "data/solar-products/power-assist-suit.html",
+    "edits": [
+      {
+        "selector": "#detail-1 p",
+        "index": 0,
+        "before": "자재를 들고 내리는 반복 작업, 허리 부담을 덜어 줍니다.",
+        "after": "반복되는 동작에. 가벼운 보탬.",
+        "role": "headline"
+      },
+      {
+        "selector": "#detail-2 h2",
+        "index": 0,
+        "before": "반복되는 작업, 허리의 부담은 가볍게.",
+        "after": "허리를 쓰는 작업에 더하는 보조.",
+        "role": "chapter"
+      }
+    ]
+  },
+  "smart-safety-hook": {
+    "lead": "위험 구역에서 안전고리 체결을 안내하고 미체결 신호를 전달합니다. 작업자와 담당자가 체결 상태를 확인하는 데 활용합니다.",
+    "source": "data/solar-products/smart-safety-hook.html",
+    "edits": [
+      {
+        "selector": "#detail-1 p",
+        "index": 1,
+        "before": "위험 구역에서 체결을 안내하고 미체결 신호를 전달합니다.",
+        "after": "걸었는지, 한 번 더 살피도록.",
+        "role": "headline"
+      },
+      {
+        "selector": "#detail-2 h2",
+        "index": 0,
+        "before": "위험 구역에선 안전고리 체결부터.",
+        "after": "체결은 작업자가. 확인은 함께.",
+        "role": "chapter"
+      }
+    ]
+  },
+  "smart-helmet": {
+    "lead": "기존 안전모에 모듈을 더해 착용과 턱끈 체결 상태를 확인합니다. 작업자의 착용 상태를 담당자 화면에서도 살펴보세요.",
+    "source": "data/solar-products/smart-helmet.html",
+    "edits": [
+      {
+        "selector": "#detail-1 p",
+        "index": 1,
+        "before": "쓰던 안전모에 모듈을 더해, 턱끈 체결 상태까지 확인합니다.",
+        "after": "머리에 쓰고. 턱끈까지 살피고.",
+        "role": "headline"
+      },
+      {
+        "selector": "#detail-2 h2",
+        "index": 0,
+        "before": "안전모 착용부터 턱끈 체결까지 확인.",
+        "after": "착용 확인, 턱끈 체결까지.",
+        "role": "chapter"
+      }
+    ]
+  },
+  "smart-airbag": {
+    "lead": "센서가 설정 기준에 해당하는 움직임을 감지하면 에어백이 펼쳐집니다. 작업 조건에 맞는 용량과 착용 상태를 확인하세요.",
+    "source": "data/solar-products/smart-airbag.html",
+    "edits": [
+      {
+        "selector": "#detail-1 p",
+        "index": 1,
+        "before": "센서가 설정 기준에 해당하는 움직임을 감지하면 에어백이 펼쳐집니다.",
+        "after": "몸에 더하는, 충격 완화 장비.",
+        "role": "headline"
+      },
+      {
+        "selector": "#detail-2 h2",
+        "index": 0,
+        "before": "몸에 착용하는 충격 완화 장비.",
+        "after": "착용하는 충격 완화 장비.",
+        "role": "chapter"
+      }
+    ]
+  },
+  "worker-attendance-card": {
+    "lead": "전자카드를 인식해 출퇴근 내역을 남깁니다. 담당자는 같은 기록으로 명단과 현장 인원을 확인할 수 있습니다.",
+    "source": "data/solar-products/worker-attendance-card.html",
+    "edits": [
+      {
+        "selector": "#detail-1 p",
+        "index": 1,
+        "before": "카드 인식으로 출퇴근을 기록하고 현장 인원을 확인합니다.",
+        "after": "카드 한 번. 출퇴근의 기록.",
+        "role": "headline"
+      },
+      {
+        "selector": "#detail-2 h2",
+        "index": 0,
+        "before": "카드로 남기는 출퇴근, 명단 확인은 간편하게.",
+        "after": "출퇴근은 카드로, 확인은 명단으로.",
+        "role": "chapter"
+      }
+    ]
+  },
+  "worker-access-gate": {
+    "lead": "얼굴·QR 인증과 게이트 통과를 출역 기록으로 연결합니다. 출입 권한과 통과 내역을 함께 확인하세요.",
+    "source": "data/solar-products/worker-access-gate.html",
+    "edits": [
+      {
+        "selector": "#detail-1 p",
+        "index": 1,
+        "before": "얼굴·QR 인증과 게이트 통과, 출역 기록을 한 번에.",
+        "after": "출입 확인부터. 출역 기록까지.",
+        "role": "headline"
+      },
+      {
+        "selector": "#detail-2 h2",
+        "index": 0,
+        "before": "게이트를 통과하면, 출역 기록까지.",
+        "after": "게이트를 지나면 기록으로.",
+        "role": "chapter"
+      }
+    ]
+  },
+  "healthcare-heart-band": {
+    "lead": "작업 중 심박 신호를 측정하고 착용자와 관리자에게 알립니다. 설정 범위를 벗어난 신호를 확인하는 데 활용합니다.",
+    "source": "data/solar-products/healthcare-heart-band.html",
+    "edits": [
+      {
+        "selector": "#detail-1 p",
+        "index": 1,
+        "before": "작업 중 심박 신호를 측정하고 착용자와 관리자에게 알립니다.",
+        "after": "손목의 신호를, 담당자에게.",
+        "role": "headline"
+      },
+      {
+        "selector": "#detail-2 h2",
+        "index": 0,
+        "before": "손목에서 측정한 심박 신호를 담당자에게.",
+        "after": "측정한 심박 신호를 함께 확인.",
+        "role": "chapter"
+      }
+    ]
+  },
+  "ai-quick-risk-assessment": {
+    "lead": "작업 사진과 설명을 바탕으로 위험성평가 초안을 작성합니다. 담당자가 현장 상황에 맞게 검토하고 보완하세요.",
+    "source": "data/solar-products/ai-quick-risk-assessment.html",
+    "edits": [
+      {
+        "selector": "#detail-1 p",
+        "index": 0,
+        "before": "작업 사진과 설명으로, 위험성평가 초안 작성을 시작합니다.",
+        "after": "사진 한 장에서, 검토할 초안으로.",
+        "role": "headline"
+      },
+      {
+        "selector": "#detail-2 h2",
+        "index": 0,
+        "before": "현장 사진에서 위험성평가 초안까지.",
+        "after": "사진을 올리고, 초안을 살펴보고.",
+        "role": "chapter"
+      }
+    ]
+  },
+  "ai-risk-assessment-review": {
+    "lead": "작성한 위험성평가를 바탕으로 빠진 항목과 보완할 대책을 제안합니다. 제안 내용을 담당자가 확인해 평가에 반영합니다.",
+    "source": "data/solar-products/ai-risk-assessment-review.html",
+    "edits": [
+      {
+        "selector": "#detail-1 p",
+        "index": 0,
+        "before": "작성한 위험성평가에서 빠진 항목과 보완할 대책을 제안합니다.",
+        "after": "작성은 마쳤어도. 검토는 한 번 더.",
+        "role": "headline"
+      },
+      {
+        "selector": "#detail-2 h2",
+        "index": 0,
+        "before": "작성한 위험성평가, 빠진 항목은 없는지.",
+        "after": "빠진 항목은 없는지, 다시 한번.",
+        "role": "chapter"
+      }
+    ]
+  },
+  "ai-safety-index": {
+    "lead": "여러 현장의 데이터를 비교해 먼저 살펴볼 곳을 찾습니다. 분석 결과를 점검 우선순위를 정하는 데 활용하세요.",
+    "source": "data/solar-products/ai-safety-index.html",
+    "edits": [
+      {
+        "selector": "#detail-1 p",
+        "index": 0,
+        "before": "여러 현장의 데이터를 비교해 먼저 살펴볼 곳을 찾습니다.",
+        "after": "어디부터 살필지. 데이터에서 찾다.",
+        "role": "headline"
+      },
+      {
+        "selector": "#detail-2 h2",
+        "index": 0,
+        "before": "먼저 살펴볼 현장을 데이터로 찾습니다.",
+        "after": "점검의 순서를 생각하는 데이터.",
+        "role": "chapter"
+      }
+    ]
+  },
+  "ai-subcontractor-safety": {
+    "lead": "협력업체마다 다른 작업 계획과 진행 기록을 한곳에서 확인합니다. 현장과 사무실에서 필요한 정보를 살펴보세요.",
+    "source": "data/solar-products/ai-subcontractor-safety.html",
+    "edits": [
+      {
+        "selector": "#detail-1 p",
+        "index": 0,
+        "before": "협력업체의 작업 계획과 진행 기록을 한곳에서 확인합니다.",
+        "after": "업체는 여럿. 확인은 한곳에서.",
+        "role": "headline"
+      },
+      {
+        "selector": "#detail-2 h2",
+        "index": 0,
+        "before": "업체마다 다른 작업 계획, 한곳에서 확인.",
+        "after": "작업 계획을 한자리에 모으다.",
+        "role": "chapter"
+      }
+    ]
+  },
+  "ai-drone-inspection": {
+    "lead": "구조물 외관을 드론으로 촬영하고 위치 정보와 함께 남깁니다. 사진과 촬영 위치를 함께 살펴 외관 확인에 활용합니다.",
+    "source": "data/solar-products/ai-drone-inspection.html",
+    "edits": [
+      {
+        "selector": "#detail-1 p",
+        "index": 0,
+        "before": "접근하기 어려운 외관을 촬영하고 위치 정보와 함께 남깁니다.",
+        "after": "다가가기 어려운 곳도. 기록은 가까이.",
+        "role": "headline"
+      },
+      {
+        "selector": "#detail-2 h2",
+        "index": 0,
+        "before": "구조물 사진에 촬영 위치를 더하다.",
+        "after": "장면에 위치를 더한 기록.",
+        "role": "chapter"
+      }
+    ]
+  },
+  "inspectcut": {
+    "lead": "검측 구간을 고르고 자막과 시간을 더해 제출 영상을 만듭니다. 촬영 원본은 보관하고 제출할 영상은 따로 정리하세요.",
+    "source": "data/solar-products/inspectcut.html",
+    "edits": [
+      {
+        "selector": "#detail-1 p",
+        "index": 1,
+        "before": "검측 구간을 고르고 자막과 시간을 더해 제출 영상을 만듭니다.",
+        "after": "긴 영상에서, 필요한 장면으로.",
+        "role": "headline"
+      },
+      {
+        "selector": "#detail-2 h2",
+        "index": 0,
+        "before": "검측 영상 편집, 필요한 장면부터.",
+        "after": "검측에 필요한 장면을 고르다.",
+        "role": "chapter"
+      },
+      {
+        "selector": "#detail-4 h2",
+        "index": 0,
+        "before": "촬영 원본은 보관하고, 제출 영상은 따로.",
+        "after": "원본은 보관하고. 제출본은 필요한 만큼.",
+        "role": "copy"
+      }
+    ]
+  },
+  "ai-similar-accident-alert": {
+    "lead": "오늘 작업과 관련된 사고사례를 찾아 작업 전 안전조회에 활용합니다. 관련 사례를 함께 살피고 주의사항을 안내하세요.",
+    "source": "data/solar-products/ai-similar-accident-alert.html",
+    "edits": [
+      {
+        "selector": "#detail-1 p",
+        "index": 0,
+        "before": "오늘의 작업과 관련된 사고사례를 찾아 TBM에 활용합니다.",
+        "after": "오늘의 작업 전에. 닮은 사례부터.",
+        "role": "headline"
+      },
+      {
+        "selector": "#detail-2 h2",
+        "index": 0,
+        "before": "오늘 작업과 닮은 사고사례를 미리.",
+        "after": "오늘의 작업과 함께 살펴볼 사례.",
+        "role": "chapter"
+      },
+      {
+        "selector": "#detail-1 h2",
+        "index": 0,
+        "before": "AI 작업 공종별 유사사망사고 알 림· 전파",
+        "after": "AI 작업 공종별 유사사망사고 알림·전파",
+        "role": "copy"
+      }
+    ]
+  },
+  "safebridge": {
+    "lead": "한국어 설명을 여러 언어의 텍스트로 번역합니다. 기존 교육자료와 함께 번역 자막을 보여 주고, 교육 기록으로 남길 수 있습니다.",
+    "source": "data/solar-products/safebridge.html",
+    "edits": [
+      {
+        "selector": "#detail-1 p",
+        "index": 1,
+        "before": "한국어 설명을 여러 언어의 텍스트로 번역하고 교육 기록으로 남깁니다.",
+        "after": "설명은 한국어로. 이해는 각자의 언어로.",
+        "role": "headline"
+      },
+      {
+        "selector": "#detail-2 h2",
+        "index": 0,
+        "before": "한국어로 설명해도, 자막은 각자의 언어로.",
+        "after": "같은 교육, 각자의 언어로.",
+        "role": "chapter"
+      },
+      {
+        "selector": "#safebridge-training-timeline p",
+        "index": 0,
+        "before": "한 번의 안전교육을 현장의 모두에게 전달하다.",
+        "after": "같은 교육 내용을 여러 언어로 전달합니다.",
+        "role": "copy"
+      }
+    ]
+  },
+  "iot-small-tower-crane": {
+    "lead": "인양 중량과 후크 거리, 지브각, 풍속을 조종석에서 함께 확인합니다. 표시값을 현장 기준과 대조해 인양 작업을 판단하세요.",
+    "source": "data/solar-products/iot-small-tower-crane.html",
+    "edits": [
+      {
+        "selector": "#detail-1 p",
+        "index": 1,
+        "before": "인양 중량·후크 거리·지브각·풍속을 조종석에서 함께 확인합니다.",
+        "after": "인양 전에 볼 정보. 한 화면에 모으다.",
+        "role": "headline"
+      },
+      {
+        "selector": "#detail-2 h2",
+        "index": 0,
+        "before": "인양 하중과 작업반경, 풍속을 한눈에.",
+        "after": "하중부터 풍속까지 한눈에.",
+        "role": "chapter"
+      }
+    ]
+  },
+  "concrete-curing": {
+    "lead": "온도 기록과 강도 추정값으로 콘크리트 양생 상태를 살펴봅니다. 타설 위치별 기록을 확인해 현장 검토에 활용하세요.",
+    "source": "data/solar-products/concrete-curing.html",
+    "edits": [
+      {
+        "selector": "#detail-1 p",
+        "index": 0,
+        "before": "온도 기록과 강도 추정값으로 양생 상태를 살펴봅니다.",
+        "after": "굳어가는 시간도. 살펴볼 수 있도록.",
+        "role": "headline"
+      },
+      {
+        "selector": "#detail-2 h2",
+        "index": 0,
+        "before": "온도 기록으로 살펴보는 양생 상태.",
+        "after": "양생의 시간을 기록으로 읽다.",
+        "role": "chapter"
+      }
+    ]
+  }
+}
