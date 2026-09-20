@@ -18,8 +18,11 @@ for slug,story in data.items():
         assert tab['aria-controls']==panel['id'],slug
         assert panel.h3.get_text()==stage['title'] and panel.select_one('.benefit-description').get_text()==stage['body'],slug
         assert page.find(id=stage['reference']),slug
-        img=panel.img
-        assert img['alt'] and img['srcset'] and (root/img['src'].lstrip('/')).is_file(),slug
+        visual=panel.select_one('.benefit-visual svg[role=img]')
+        assert (visual and visual.get('aria-label')) or panel.select_one('.benefit-visual img[alt]'),slug
+        assert panel.select_one('.benefit-visual figcaption'),slug
+        for image in visual.find_all('image') if visual else []:
+            assert (root/image['href'].lstrip('/')).is_file(),slug
     # No orphaned ARIA relationships after replacing old tabbed procedures with disclosures.
     for tab in page.select('[role=tab][aria-controls]'):
         assert page.find(id=tab['aria-controls']),slug

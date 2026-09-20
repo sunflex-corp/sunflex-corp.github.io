@@ -170,4 +170,5 @@ def build(p,group,g):
         body+=str(sec)
         if kind=='wearable' and i==0:body+=special
     body+='</div>'
-    return body
+    from product_revision import refine
+    return refine(body,slug)
