@@ -11,8 +11,9 @@ for slug,spec in scenes.items():
     assert len(page.select('[data-scroll-flow]'))==1,slug
     assert not page.select('[data-product-motion], [data-cctv-process]'),slug
     assert len(page.select('.revision-criteria li'))==3,slug
-    assert page.select_one('.revision-details .revision-source'),slug
+    assert page.select_one('.product-story > .revision-source'),slug
     assert not page.select('main details'),slug
+    assert page.select_one('[data-layout-family]'),slug
     assert not page.select('.revision-disclosure'),slug
     for link in page.select('a[href^="#"]'):
         assert page.find(id=link['href'][1:]),(slug,link['href'])

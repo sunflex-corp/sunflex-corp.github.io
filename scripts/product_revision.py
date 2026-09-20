@@ -56,6 +56,27 @@ def refine(body,slug):
   evidence=f'<section class="editorial-chapter revision-proof"><div class="editorial-section-inner"><p class="editorial-kicker">제품 자료로 살펴보기</p><h2>{e(title)}</h2><a href="/media/derived/{filename}" target="_blank" rel="noopener" aria-label="{e(alt)} — 원본 크게 보기"><img src="/media/derived/{filename}" alt="{e(alt)}" width="{w}" height="{h}" loading="lazy" decoding="async"><span>자료 크게 보기 ↗</span></a></div></section>'
   root.append(BeautifulSoup(evidence,'html.parser'))
  root.append(summary);root.append(appendix)
+ # Give each product family its own editorial rhythm instead of a stack of identical cards.
+ family=root.get('data-archetype','workflow')
+ root['data-layout-family']=family
+ root['data-motion-profile']=spec['kind']
+ sections=list(inset.select(':scope > .revision-source'))
+ tail=appendix
+ for index,section in enumerate(sections):
+  section.extract();tail.insert_after(section);tail=section
+  section['data-layout-position']=str(index)
+  pairs=section.select('.content-grid[data-items="2"]')
+  for grid in pairs:
+   if grid.find('figure',recursive=False) and grid.select_one(':scope > .content-copy'):
+    layout={'lineup':'panorama','wearable':'portrait','sensing':'instrument','workspace':'canvas','workflow':'canvas','communication':'panorama'}.get(family,'portrait')
+    if index%2 and layout=='panorama':layout='editorial'
+    grid['data-composition']=layout
+  for grid in section.select('.content-grid'):
+   if len(grid.find_all('article',recursive=False))>=3:grid['data-composition']='mosaic'
+ # Lead software pages with available actual output, before the operating story.
+ if family in ['workspace','workflow']:
+  proof=root.select_one('.revision-proof')
+  if proof:hero.insert_after(proof.extract())
  # Product information stays visible without disclosure controls, including nested source details.
  for detail in list(s.select('details:not(.solar-menu)')):
   detail.name='div'

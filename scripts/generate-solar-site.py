@@ -98,6 +98,8 @@ def catalog():
 def detail(p):
     group=GROUPS[p['category']];slug=p['slug']
     body=product_editorial.build(p,group,g)
+    motion_version=hashlib.sha256((ROOT/'assets/sunflex-v2/product-motion.js').read_bytes()).hexdigest()[:10]
+    body+=f'<script defer src="/assets/sunflex-v2/product-motion.js?v={motion_version}"></script>'
     related=[BY[s] for s in p['related'] if s in BY][:3]
     if len(related)<3:
         related += [x for x in CAT if x['category']==p['category'] and x!=p and x not in related][:3-len(related)]
