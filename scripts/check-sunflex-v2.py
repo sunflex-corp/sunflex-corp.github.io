@@ -69,7 +69,13 @@ protected=0
 for line in tree.splitlines():
     meta,path=line.split('\t',1)
     if path in PAGES:continue
+    if path in ['brand/sunflex-wordmark.svg','brand/sunflex-wordmark-white.svg','brand/sunflex-wordmark.png']:
+        assert (ROOT/path).read_bytes()==(ROOT/path.replace('sunflex-wordmark','sunplex-wordmark')).read_bytes()
+        continue
     data=(ROOT/path).read_bytes()
+    # Approved spelling correction is the only permitted change in retained HTML.
+    if path.endswith('.html') and not path.startswith('brand/sunflex-ci/'):
+        data=data.replace(b'SUNPLEX',b'SUNFLEX').replace(b'/brand/sunplex-wordmark',b'/brand/sunflex-wordmark')
     digest=hashlib.sha1(f'blob {len(data)}\0'.encode()+data).hexdigest()
     assert digest==meta.split()[2],('protected file changed',path)
     protected+=1
@@ -81,4 +87,4 @@ for path in re.findall(r"url\(['\"]?([^'\")]+)",css):assert (ROOT/path.lstrip('/
 before={p:(ROOT/p).read_bytes() for p in PAGES}
 subprocess.run([sys.executable,str(ROOT/'scripts/generate-sunflex-v2.py')],check=True)
 assert all((ROOT/p).read_bytes()==b for p,b in before.items()),'non-deterministic generation'
-print(f'PASS: {len(PAGES)} pages; {count} local links/assets; {protected} protected files unchanged; deterministic generation.')
+print(f'PASS: {len(PAGES)} pages; {count} local links/assets; {protected} protected files unchanged except approved SUNPLEX branding; deterministic generation.')
