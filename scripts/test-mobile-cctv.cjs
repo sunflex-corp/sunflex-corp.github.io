@@ -1,0 +1,17 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
+const buttons=Array.from({length:3},(_,i)=>({id:'tab'+i,events:{},setAttribute(k,v){this[k]=v},addEventListener(k,v){this.events[k]=v},focus(){this.focused=true}}));
+const panels=buttons.map(()=>({setAttribute(k,v){this[k]=v}}));
+const controls={querySelectorAll:()=>buttons,hidden:true};
+const root={querySelector:()=>controls,querySelectorAll:()=>panels};
+const detail={open:false};
+const handlers={};
+vm.runInNewContext(fs.readFileSync('assets/sunflex-v2/mobile-cctv.js','utf8'),{document:{querySelector:()=>root,getElementById:()=>({closest:()=>null,querySelector:()=>detail})},location:{hash:'#detail-8'},window:{addEventListener(k,v){handlers[k]=v}}});
+assert.equal(controls.hidden,false);assert.equal(detail.open,true);
+assert.deepEqual(panels.map(x=>x.hidden),[false,true,true]);
+buttons[1].events.click();assert.deepEqual(panels.map(x=>x.hidden),[true,false,true]);
+buttons[1].events.keydown({key:'End',preventDefault(){}});assert.equal(buttons[2].focused,true);assert.equal(panels[2].hidden,false);
+buttons[2].events.keydown({key:'ArrowRight',preventDefault(){}});assert.equal(panels[0].hidden,false);
+buttons[0].events.keydown({key:'ArrowLeft',preventDefault(){}});assert.equal(panels[2].hidden,false);
+buttons[2].events.keydown({key:'Home',preventDefault(){}});assert.equal(buttons[0]['aria-selected'],'true');
+assert.deepEqual(buttons.map(x=>x.tabIndex),[0,-1,-1]);
+console.log('PASS: CCTV initial state, click, arrows, Home/End, focus, disclosure anchors.');

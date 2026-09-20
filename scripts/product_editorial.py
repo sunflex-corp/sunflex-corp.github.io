@@ -120,6 +120,9 @@ def build(p,group,g):
         special+='</div><div class="use-panels">'
         for i,(name,title,desc) in enumerate(modes):special+=f'<article id="use-panel-{i}" data-use-panel><span class="editorial-kicker">{name}</span><h3>{title}</h3><p>{desc}</p><a href="#bodycam-film">현장 기록 흐름 보기 ↓</a></article>'
         special+='</div></div></section>'
+    if slug=='mobile-cctv':
+        from mobile_cctv_editorial import enhance
+        enhance(soup,rest)
     # A short, visual overview points to real chapters, not invented capabilities.
     overview=[]
     for sec in rest:
