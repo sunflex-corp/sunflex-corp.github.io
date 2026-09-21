@@ -10,7 +10,11 @@
 .home-simple .home-families .map-choice:nth-child(3){--choice-color:#8dd9c1}
 .home-simple .home-families .map-choice:nth-child(4){--choice-color:#c9aff5}
 .home-simple .home-families .map-choice[aria-pressed="true"],.home-simple .home-families .map-choice:hover,.home-simple .home-families .map-choice:focus-visible{opacity:1;color:var(--choice-color)}
-.home-simple .home-families .map-choice[aria-pressed="true"]{border-color:var(--choice-color)}
+.home-simple .home-families .map-choice[aria-pressed="true"]{border-color:transparent}
+/* One line, on the existing bottom rail; no second progress track. */
+.home-simple .home-families .map-choice:after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:2px;background:var(--choice-color);opacity:0;transform-origin:left;pointer-events:none}
+.home-simple .home-families .map-choice[aria-pressed="true"]:after{opacity:1}
+.home-simple .home-families.is-pinned .map-choice[aria-pressed="true"]:after{transform:scaleX(var(--family-progress,0))}
 .home-simple .family-step{font-variant-numeric:tabular-nums;font-size:10px;letter-spacing:.06em;margin-right:7px;opacity:.8}
 .home-simple .home-families .map-panel h3,.home-simple .home-families .map-panel>.eyebrow,.home-simple .home-families .map-panel .arrow{color:var(--family-accent)}
 .home-simple .home-families .map-panel .text-link{border-color:var(--family-accent)}

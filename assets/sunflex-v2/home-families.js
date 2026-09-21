@@ -42,6 +42,10 @@
     // When natural scrolling changes the visible panel, keep keyboard focus in this region.
     if (next !== active && focusedPanel?.contains(document.activeElement)) choices[next].focus({preventScroll:true});
     select(next);
+    // Update only the active underline, at the same cadence as native scrolling.
+    const progress = Math.max(0, Math.min(1, position - active)).toFixed(4);
+    if (choices[active].style.getPropertyValue('--family-progress') !== progress)
+      choices[active].style.setProperty('--family-progress', progress);
   }
   const schedule = () => { if (!frame) frame = requestAnimationFrame(update); };
   function configure() {
