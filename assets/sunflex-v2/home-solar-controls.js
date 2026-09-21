@@ -67,14 +67,6 @@
     mapMotion.textContent = off ? '그래픽 재생' : '그래픽 정지';
   });
   }
-  const choices = [...document.querySelectorAll('[data-map-choice]')];
-  const panels = [...document.querySelectorAll('.map-panel')];
-  choices.forEach((button,index) => button.addEventListener('click', () => {
-    choices.forEach((b,i) => b.setAttribute('aria-pressed',String(i === index)));
-    panels.forEach((panel,i) => { panel.hidden = i !== index; });
-    document.querySelectorAll('.family-scene').forEach((scene,i) => scene.setAttribute('aria-hidden',String(i !== index)));
-    map.dataset.mode = String(index);
-  }));
   if ('IntersectionObserver' in window) {
     const observer = new IntersectionObserver(entries => entries.forEach(entry => {
       if (entry.isIntersecting) { entry.target.classList.add('is-visible'); entry.target.classList.remove('will-reveal'); observer.unobserve(entry.target); }
