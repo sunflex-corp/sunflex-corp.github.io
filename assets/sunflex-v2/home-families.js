@@ -11,7 +11,6 @@
   const guidance = section.querySelector('.families-guidance > span');
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
   let active = -1, pinned = false, start = 0, step = 1, frame = 0;
-  const clamp = n => Math.max(0, Math.min(1, n));
   section.querySelector('.map-panels').setAttribute('aria-live', 'off');
   // Keep both panels rendered for a real crossfade; inert prevents hidden links taking focus.
   panels.forEach(panel => { panel.hidden = false; });
@@ -43,11 +42,9 @@
     // When natural scrolling changes the visible panel, keep keyboard focus in this region.
     if (next !== active && focusedPanel?.contains(document.activeElement)) choices[next].focus({preventScroll:true});
     select(next);
-    section.style.setProperty('--step-progress', clamp(position - active).toFixed(3));
   }
   const schedule = () => { if (!frame) frame = requestAnimationFrame(update); };
   function configure() {
-    const wasPinned = pinned;
     const viewport = document.documentElement.clientHeight;
     const top = matchMedia('(max-width:760px)').matches ? 76 : 82;
     section.style.setProperty('--family-view-height', `${viewport - top}px`);
@@ -71,7 +68,6 @@
     start = section.getBoundingClientRect().top + window.scrollY - top;
     guidance.textContent = pinned ? '스크롤하여 솔루션 살펴보기' : '제품군을 선택하여 살펴보기';
     if (pinned) update();
-    else if (wasPinned) section.style.removeProperty('--step-progress');
   }
   choices.forEach((button, index) => {
     button.addEventListener('click', () => {

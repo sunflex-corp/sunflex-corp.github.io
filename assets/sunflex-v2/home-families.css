@@ -11,8 +11,6 @@
 .home-simple .home-families .map-choice:nth-child(4){--choice-color:#c9aff5}
 .home-simple .home-families .map-choice[aria-pressed="true"],.home-simple .home-families .map-choice:hover,.home-simple .home-families .map-choice:focus-visible{opacity:1;color:var(--choice-color)}
 .home-simple .home-families .map-choice[aria-pressed="true"]{border-color:var(--choice-color)}
-.home-simple .home-families .map-choice:after{content:"";position:absolute;left:12px;right:12px;bottom:7px;height:2px;background:var(--choice-color);transform:scaleX(0);transform-origin:left;opacity:.6}
-.home-simple .home-families.is-pinned .map-choice[aria-pressed="true"]:after{transform:scaleX(var(--step-progress,0))}
 .home-simple .family-step{font-variant-numeric:tabular-nums;font-size:10px;letter-spacing:.06em;margin-right:7px;opacity:.8}
 .home-simple .home-families .map-panel h3,.home-simple .home-families .map-panel>.eyebrow,.home-simple .home-families .map-panel .arrow{color:var(--family-accent)}
 .home-simple .home-families .map-panel .text-link{border-color:var(--family-accent)}
@@ -40,7 +38,6 @@
  .home-simple .families-stage{padding-block:24px}
  .home-simple .home-families .map-choice{padding-inline:5px}
  .home-simple .family-step{margin-right:3px;font-size:9px}
- .home-simple .home-families .map-choice:after{left:5px;right:5px}
  .home-simple .home-families.is-pinned .families-stage{top:76px;row-gap:14px;padding-block:16px}
  .home-simple .home-families.is-pinned .home-section-heading h2{font-size:clamp(26px,6.7vw,34px)}
  .home-simple .home-families.is-pinned .home-section-heading .eyebrow{font-size:10px;margin-bottom:8px}
