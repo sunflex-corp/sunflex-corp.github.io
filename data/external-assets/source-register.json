@@ -1,0 +1,727 @@
+{
+  "policy": "Externally authored free models only. Derived renders are distributed; downloaded source models remain outside the public repository.",
+  "assets": [
+    {
+      "id": "security_camera_01",
+      "source": "https://polyhaven.com/a/security_camera_01",
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "files": [
+        {
+          "path": "vendor/polyhaven/security_camera_01/security_camera_01.blend",
+          "sha256": "528bf769e25b94d932c6394f0397cedd5cd0f40adb1515544c191f80be8d2673"
+        },
+        {
+          "path": "vendor/polyhaven/security_camera_01/textures/security_camera_01_metal_2k.exr",
+          "sha256": "aba9c260edccc30c1520250de6504b41394754eebaebc2679fa52855487b4b5c"
+        },
+        {
+          "path": "vendor/polyhaven/security_camera_01/textures/security_camera_01_diff_2k.jpg",
+          "sha256": "9e87e4b75983636cebb4e98ea74a96f09f5a4cb9a2460385ec0e9a056a42ad6e"
+        },
+        {
+          "path": "vendor/polyhaven/security_camera_01/textures/security_camera_01_opacity_2k.png",
+          "sha256": "cae01c5d766426811961db56b0999667840f276ab4000cebe7e8a53ee268c1af"
+        },
+        {
+          "path": "vendor/polyhaven/security_camera_01/textures/security_camera_01_rough_2k.exr",
+          "sha256": "47c2ee4cea54f2ff29565ec26897a6ba7b510809d2340f290ab41d2c3f438158"
+        },
+        {
+          "path": "vendor/polyhaven/security_camera_01/textures/security_camera_01_nor_gl_2k.exr",
+          "sha256": "61ce80fe09dbb0b52ee2c89f2ee2ffc5e5d8e747b23923d167702422b0b25516"
+        }
+      ]
+    },
+    {
+      "id": "security_camera_02",
+      "source": "https://polyhaven.com/a/security_camera_02",
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "files": [
+        {
+          "path": "vendor/polyhaven/security_camera_02/security_camera_02.blend",
+          "sha256": "0090b59df1b7fe04962fe62a7d7aecebf78862b69e394acad7fc3778bb4a0ed5"
+        },
+        {
+          "path": "vendor/polyhaven/security_camera_02/textures/security_camera_02_diff_2k.jpg",
+          "sha256": "cee7add026ac8435e6229cc96e8898114859f4a77d139e9151864e123b958004"
+        },
+        {
+          "path": "vendor/polyhaven/security_camera_02/textures/security_camera_02_rough_2k.exr",
+          "sha256": "d94c4374afcf5fa8a892921dde4db8a745310ab9682f2dcb109cd0e6287bd4ba"
+        },
+        {
+          "path": "vendor/polyhaven/security_camera_02/textures/security_camera_02_metal_2k.exr",
+          "sha256": "dcf0939e048afacb9aeae176ecab18fa310e322ea5fd5218559ee3bd0bc2fe6a"
+        },
+        {
+          "path": "vendor/polyhaven/security_camera_02/textures/security_camera_02_opacity_2k.png",
+          "sha256": "6a9f2fc9f7c415994efb514e57cccd635eca69115be15c6a0a3168f0258baf37"
+        },
+        {
+          "path": "vendor/polyhaven/security_camera_02/textures/security_camera_02_nor_gl_2k.exr",
+          "sha256": "676f68cbabe078c1f2eadd0ed2d946f7b1cf70e32c263adf598ec8f59d3a041c"
+        }
+      ]
+    },
+    {
+      "id": "Megaphone_01",
+      "source": "https://polyhaven.com/a/Megaphone_01",
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "files": [
+        {
+          "path": "vendor/polyhaven/Megaphone_01/Megaphone_01.blend",
+          "sha256": "6630df5b0e92be269f16b013ac49f1fa1251b0f29c73012e1051844de3372eb4"
+        },
+        {
+          "path": "vendor/polyhaven/Megaphone_01/textures/Megaphone_01_roughness_2k.jpg",
+          "sha256": "bb79ad3859fbf4deeffe7d86e8b34673edaa04b9fb644c4691a5d3a30b527ae1"
+        },
+        {
+          "path": "vendor/polyhaven/Megaphone_01/textures/Megaphone_01_diff_2k.jpg",
+          "sha256": "8d137fc38029a0f2b7f20e37acf0bc0c9db94737574d6918a74c990ad7c76a8f"
+        },
+        {
+          "path": "vendor/polyhaven/Megaphone_01/textures/Megaphone_01_metallic_2k.exr",
+          "sha256": "fc42200f6fc14ab68f7ffb882cb97bbdfda867e2a4f2db7255329960fd1fc549"
+        },
+        {
+          "path": "vendor/polyhaven/Megaphone_01/textures/Megaphone_01_nor_gl_2k.exr",
+          "sha256": "2fa8b44ba46e45c8f69a37e0c2cac841880e5609314c3184822518387ed7e5e8"
+        }
+      ]
+    },
+    {
+      "id": "fire_alarm",
+      "source": "https://polyhaven.com/a/fire_alarm",
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "files": [
+        {
+          "path": "vendor/polyhaven/fire_alarm/fire_alarm.blend",
+          "sha256": "62b10a28364dc7f2e13a79dcfa0679bb6692fa41efaf1671c3e1b2dd6260d96f"
+        },
+        {
+          "path": "vendor/polyhaven/fire_alarm/textures/fire_alarm_diff_2k.jpg",
+          "sha256": "20dad1f8be81ed277417a49085768505eab2f6f7d9c59f526f37bbd4fd56609b"
+        },
+        {
+          "path": "vendor/polyhaven/fire_alarm/textures/fire_alarm_metal_2k.exr",
+          "sha256": "29b1374b63a75c43744763b89efa628253e03dacc5184e907f1c15613c7a4b4b"
+        },
+        {
+          "path": "vendor/polyhaven/fire_alarm/textures/fire_alarm_nor_gl_2k.exr",
+          "sha256": "10edf0af303c8f06100b5c5343498d0b21bd7da4fb04b40fb9b92d6ae3166348"
+        },
+        {
+          "path": "vendor/polyhaven/fire_alarm/textures/fire_alarm_rough_2k.exr",
+          "sha256": "f9709c1cd9f8d0b0059f25d214b24cad9e68d7fb5440110354e78b780df559e6"
+        }
+      ]
+    },
+    {
+      "id": "clipboard",
+      "source": "https://polyhaven.com/a/clipboard",
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "files": [
+        {
+          "path": "vendor/polyhaven/clipboard/clipboard.blend",
+          "sha256": "e3ea8e4260d5cf99bdca30292a2269dcf3c327c4dd48139d4639766fbe7d22da"
+        },
+        {
+          "path": "vendor/polyhaven/clipboard/textures/clipboard_diff_2k.jpg",
+          "sha256": "a2f22cf95ea8358bb47fbd3a9882b22f167e83c57775f8af8140e17d65dabc86"
+        },
+        {
+          "path": "vendor/polyhaven/clipboard/textures/clipboard_metal_2k.exr",
+          "sha256": "89f4f75c6d181cfd568d64408f42a7e2d0a022c862d4bf92c091d2f2dc50d5df"
+        },
+        {
+          "path": "vendor/polyhaven/clipboard/textures/clipboard_nor_gl_2k.exr",
+          "sha256": "6bcdbeaad08a37334f8d77de1adca875623385a4e01fa75287301104f9526433"
+        },
+        {
+          "path": "vendor/polyhaven/clipboard/textures/clipboard_rough_2k.exr",
+          "sha256": "c88e3b35f5d9511b67065250de0000f34829be9f98c734aa30aa3028f4b4b928"
+        }
+      ]
+    },
+    {
+      "id": "power_box_01",
+      "source": "https://polyhaven.com/a/power_box_01",
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "files": [
+        {
+          "path": "vendor/polyhaven/power_box_01/power_box_01.blend",
+          "sha256": "06fecde4356c9f6cb01595b203e3f3064636c3dec3638984fcacd2ed4e7c4f81"
+        },
+        {
+          "path": "vendor/polyhaven/power_box_01/textures/power_box_01_nor_gl_2k.exr",
+          "sha256": "9131bb1fffb641f9326658c23ab8471f977f57a013b8c41a0b2c34fb8ee379bb"
+        },
+        {
+          "path": "vendor/polyhaven/power_box_01/textures/power_box_01_metal_2k.exr",
+          "sha256": "3863b97a069ef332b59c3dd7ed4400a3528b6f98614a9b988414d378720ef11e"
+        },
+        {
+          "path": "vendor/polyhaven/power_box_01/textures/power_box_01_diff_2k.jpg",
+          "sha256": "045f04100a6a95bf6d43ea0989545b52008c84dd1d1d238ad0d7fa89789f8d0b"
+        },
+        {
+          "path": "vendor/polyhaven/power_box_01/textures/power_box_01_rough_2k.exr",
+          "sha256": "eca502e7f85da502df868f177dd59407c7ca55155c257391828aceff6e10bd38"
+        }
+      ]
+    },
+    {
+      "id": "utility_box_02",
+      "source": "https://polyhaven.com/a/utility_box_02",
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "files": [
+        {
+          "path": "vendor/polyhaven/utility_box_02/utility_box_02.blend",
+          "sha256": "d38c6841c62ac55a4603778ac51138b495860af62d3069e176db7b96602204b0"
+        },
+        {
+          "path": "vendor/polyhaven/utility_box_02/textures/utility_box_02_metal_2k.exr",
+          "sha256": "e53e021751b968ac1e822527b95ae1f61a6fdd958e005bdd65e5dfb5dab3904c"
+        },
+        {
+          "path": "vendor/polyhaven/utility_box_02/textures/utility_box_02_nor_gl_2k.exr",
+          "sha256": "6d6197ff6b9a6d318d96abf25edbf70641bed4f509afb58b78cd5351c5c5b3a5"
+        },
+        {
+          "path": "vendor/polyhaven/utility_box_02/textures/utility_box_02_rough_2k.exr",
+          "sha256": "55b049e6f10c908a758057c5484935dbda58014199d4ee4cc8a6ce15022eb642"
+        },
+        {
+          "path": "vendor/polyhaven/utility_box_02/textures/utility_box_02_diff_2k.jpg",
+          "sha256": "59554c019e3bf270cd59eae1ff4f105ba92383174d9b706120cc92de872751a6"
+        }
+      ]
+    },
+    {
+      "id": "classic_laptop",
+      "source": "https://polyhaven.com/a/classic_laptop",
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "files": [
+        {
+          "path": "vendor/polyhaven/classic_laptop/classic_laptop.blend",
+          "sha256": "84831dca569cf31901c71f8f825716067d030fd3533fb8196977c7fdcfb57937"
+        },
+        {
+          "path": "vendor/polyhaven/classic_laptop/textures/classic_laptop_diff_2k.jpg",
+          "sha256": "b2bb60fe0a6c9be58b670d7d21185fddf96bc45b528f73cd368269ff716c95e2"
+        },
+        {
+          "path": "vendor/polyhaven/classic_laptop/textures/classic_laptop_metal_2k.exr",
+          "sha256": "f6c019cfca8d3052a43c2a0f8ea2d845ae2d1cbf5c698d5f4435254b7d65c607"
+        },
+        {
+          "path": "vendor/polyhaven/classic_laptop/textures/classic_laptop_nor_gl_2k.exr",
+          "sha256": "6a7c60e451fdf251669b55360854019bd52841f218d445bc6ab8e96bf386d167"
+        },
+        {
+          "path": "vendor/polyhaven/classic_laptop/textures/classic_laptop_rough_2k.exr",
+          "sha256": "0278f85f7fcb3fd274b3a218553d6fbffc87cdc10f3d93b9d078d90fcd7f4ae8"
+        }
+      ]
+    },
+    {
+      "id": "overhead_crane",
+      "source": "https://polyhaven.com/a/overhead_crane",
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "files": [
+        {
+          "path": "vendor/polyhaven/overhead_crane/overhead_crane.blend",
+          "sha256": "a3f91cdfd0ce3aa9d24db4f6fdc37342dd7897f204afec5b8518d46a63b5459f"
+        },
+        {
+          "path": "vendor/polyhaven/overhead_crane/textures/overhead_crane_diff_2k.jpg",
+          "sha256": "796347fde192bf73317c88bd169e04c9d4c7b7e75d111b4ab63e835d603cc962"
+        },
+        {
+          "path": "vendor/polyhaven/overhead_crane/textures/overhead_crane_metal_2k.exr",
+          "sha256": "e067845192e03d72f2c6c9f2fd40fb2b2bc50e21afdae7ef6be9a0e4b8338e1e"
+        },
+        {
+          "path": "vendor/polyhaven/overhead_crane/textures/overhead_crane_nor_gl_2k.exr",
+          "sha256": "a1040428ec3cda6b5dcf4092990504add2b0ed58eb14f5c89da6766485fd68fe"
+        },
+        {
+          "path": "vendor/polyhaven/overhead_crane/textures/overhead_crane_rough_2k.exr",
+          "sha256": "2bdd693823bb2fb4aa880dece361891fcc2ddee9f0b81d614fc523c272d69a8b"
+        },
+        {
+          "path": "vendor/polyhaven/overhead_crane/textures/overhead_crane_trim_diff_2k.png",
+          "sha256": "cce7c8ec3eaa2340cb48c4dabaf991974d835fa653757b05d8a5bf5ed71d293c"
+        },
+        {
+          "path": "vendor/polyhaven/overhead_crane/textures/overhead_crane_trim_mask_2k.png",
+          "sha256": "18dc93fefab44794a738a55da46c23095bae632dfcd32947d80d311cd0f67360"
+        },
+        {
+          "path": "vendor/polyhaven/overhead_crane/textures/overhead_crane_trim_metal_2k.png",
+          "sha256": "9fe42ce17524ac2f0a7b007fcdca7ed868644c789183ec8668c959e149bdfc43"
+        },
+        {
+          "path": "vendor/polyhaven/overhead_crane/textures/overhead_crane_trim_nor_gl_2k.png",
+          "sha256": "a0a4ce46921e2b00b46783ab90415fd54c3d2b4739c97df5441007ff537d9ab1"
+        },
+        {
+          "path": "vendor/polyhaven/overhead_crane/textures/overhead_crane_trim_rough_2k.png",
+          "sha256": "5b0689b2d1f7a636b39b076225b7101717eb13966d7c5d2a78b7a137e6596198"
+        }
+      ]
+    },
+    {
+      "id": "modular_industrial_pipes_01",
+      "source": "https://polyhaven.com/a/modular_industrial_pipes_01",
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "files": [
+        {
+          "path": "vendor/polyhaven/modular_industrial_pipes_01/modular_industrial_pipes_01.blend",
+          "sha256": "8cda8ec37be2876c16fbc8c756d5d3628e706f6c4817661db04d8c28db80710c"
+        },
+        {
+          "path": "vendor/polyhaven/modular_industrial_pipes_01/textures/modular_industrial_pipes_01_group01_rough_2k.png",
+          "sha256": "735eb0e58648e1934365983b5c26fde3948da7a458dfe47b0f322efbad02c823"
+        },
+        {
+          "path": "vendor/polyhaven/modular_industrial_pipes_01/textures/modular_industrial_pipes_01_group02_nor_gl_2k.png",
+          "sha256": "04e6e2dde90c8a286370058ab1627e97756d209ada16cbabec172882a9950856"
+        },
+        {
+          "path": "vendor/polyhaven/modular_industrial_pipes_01/textures/modular_industrial_pipes_01_group02_rough_2k.png",
+          "sha256": "8f970811a81e0ea1615da25815a2683870863e2ee8d15c5ba3730f4720f71064"
+        },
+        {
+          "path": "vendor/polyhaven/modular_industrial_pipes_01/textures/modular_industrial_pipes_01_group02_diff_2k.png",
+          "sha256": "a3a1da123ba067bbc3ab1923bae1ac49fde5b716a74815681f3dbc7ef32efccc"
+        },
+        {
+          "path": "vendor/polyhaven/modular_industrial_pipes_01/textures/modular_industrial_pipes_01_group01_diff_2k.png",
+          "sha256": "63015cb58c5eb742432c5dc9e96f102c3a88e9848b202ede5d57f917dccaddd8"
+        },
+        {
+          "path": "vendor/polyhaven/modular_industrial_pipes_01/textures/modular_industrial_pipes_01_group01_nor_gl_2k.png",
+          "sha256": "8adf88d3e832935989c0bfd87d579b711939dc9cc568d9f49fe24fa71e9a9bcc"
+        },
+        {
+          "path": "vendor/polyhaven/modular_industrial_pipes_01/textures/modular_industrial_pipes_01_group02_metal_2k.png",
+          "sha256": "0440ddc094ad5cc9eb43372c8bc1a99c6323238f2538387118c59473051a4da8"
+        },
+        {
+          "path": "vendor/polyhaven/modular_industrial_pipes_01/textures/modular_industrial_pipes_01_group01_metal_2k.png",
+          "sha256": "8916cf713ae8e62cf80cbcb0de93ab9898b9aef19191dcba95f86c383896356b"
+        }
+      ]
+    },
+    {
+      "id": "concrete_road_barrier",
+      "source": "https://polyhaven.com/a/concrete_road_barrier",
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "files": [
+        {
+          "path": "vendor/polyhaven/concrete_road_barrier/concrete_road_barrier.blend",
+          "sha256": "ca9647acb9cc6e7d2e5de37ba0f137e12475541898f091345dcff0912f70d7c1"
+        },
+        {
+          "path": "vendor/polyhaven/concrete_road_barrier/textures/concrete_road_barrier_disp_2k.png",
+          "sha256": "82151527151ddc20001edd330d4764cc52f362fb4d9c2331fdcbf8a1808a6ac8"
+        },
+        {
+          "path": "vendor/polyhaven/concrete_road_barrier/textures/concrete_road_barrier_diff_2k.jpg",
+          "sha256": "51832691e0769a04246b61222e5df1ce7dc22e9c7162f786a314409ac76d643c"
+        },
+        {
+          "path": "vendor/polyhaven/concrete_road_barrier/textures/concrete_road_barrier_nor_gl_2k.exr",
+          "sha256": "f7ea160f3511d994b2b260327c2b7012febdff20a6db48964fc53f97f04c37fa"
+        },
+        {
+          "path": "vendor/polyhaven/concrete_road_barrier/textures/concrete_road_barrier_rough_2k.exr",
+          "sha256": "3e2677791e74e081a86010402d7f9512913e71b90fd6f84240715b3a63896942"
+        }
+      ]
+    },
+    {
+      "id": "metal_office_desk",
+      "source": "https://polyhaven.com/a/metal_office_desk",
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "files": [
+        {
+          "path": "vendor/polyhaven/metal_office_desk/metal_office_desk.blend",
+          "sha256": "fffc66d33ff283d4a3639fd5e3e457ff522c019519625ad5504e298f532f8767"
+        },
+        {
+          "path": "vendor/polyhaven/metal_office_desk/textures/metal_office_desk_diff_2k.jpg",
+          "sha256": "3f5854edc8a7979ed4576b914c184bda64d7e6ee9969357738703be49118da30"
+        },
+        {
+          "path": "vendor/polyhaven/metal_office_desk/textures/metal_office_desk_metal_2k.exr",
+          "sha256": "232380b174c2a1055cd0f9f4ce7b0807191dea86b589bbd9057aeb9f6c095a59"
+        },
+        {
+          "path": "vendor/polyhaven/metal_office_desk/textures/metal_office_desk_nor_gl_2k.exr",
+          "sha256": "e7c932f5febaacd6a4c8b5e833940ca5a2a09a8d9194152fad516ab94074aff5"
+        },
+        {
+          "path": "vendor/polyhaven/metal_office_desk/textures/metal_office_desk_rough_2k.exr",
+          "sha256": "294abc6040dec11a8c1dd19bff742afbb408d89933eb0df3335a0c2bbb7998ee"
+        }
+      ]
+    },
+    {
+      "id": "modular_factory_facade",
+      "source": "https://polyhaven.com/a/modular_factory_facade",
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "files": [
+        {
+          "path": "vendor/polyhaven/modular_factory_facade/modular_factory_facade.blend",
+          "sha256": "e3914d0ddb70f526b4c4ec84df63bcca7351a7a2761a384d938643ef9f0b7afc"
+        },
+        {
+          "path": "vendor/polyhaven/modular_factory_facade/textures/modular_factory_facade_garage_diff_2k.png",
+          "sha256": "01dfbf807981c02e8f2079792557cbf98f11875fe18ff815ced4506011977861"
+        },
+        {
+          "path": "vendor/polyhaven/modular_factory_facade/textures/modular_factory_facade_windows_rough_2k.png",
+          "sha256": "55595a3f6eeb83ef7e31546e98eb686d10a6020fdc01a59a3b92fdd3889f9591"
+        },
+        {
+          "path": "vendor/polyhaven/modular_factory_facade/textures/modular_factory_facade_doors_rough_2k.png",
+          "sha256": "2b801f04f2146313fec0b62c2422faae06562bb485c181832c5ce5cc47b608e0"
+        },
+        {
+          "path": "vendor/polyhaven/modular_factory_facade/textures/modular_factory_facade_trim_01_nor_gl_2k.png",
+          "sha256": "4aee23b656e2f3b07c062be7ec4a4765f9ee399ba29a1814d33db3298723c94c"
+        },
+        {
+          "path": "vendor/polyhaven/modular_factory_facade/textures/modular_factory_facade_brick_rough_2k.png",
+          "sha256": "e268bb7dd86d307eb59947509447e4738cda093055a1053d92f5f2044ba058bc"
+        },
+        {
+          "path": "vendor/polyhaven/modular_factory_facade/textures/modular_factory_facade_doors_diff_2k.png",
+          "sha256": "5707d503fbf795b0b913a61bb2aabdb158aba72c161e55b3cf1af51afed85607"
+        },
+        {
+          "path": "vendor/polyhaven/modular_factory_facade/textures/modular_factory_facade_brick_nor_gl_2k.png",
+          "sha256": "ea66f43ba5eb840b3cf35eea04a95f5f4b2de34b5bdf9513ede08301ddbfda16"
+        },
+        {
+          "path": "vendor/polyhaven/modular_factory_facade/textures/modular_factory_facade_trim_01_diff_2k.png",
+          "sha256": "2df9ea84749ee88a4d2f2ecb2013c91a3db45cec5da61f2df11820f4a6e9fa6b"
+        },
+        {
+          "path": "vendor/polyhaven/modular_factory_facade/textures/modular_factory_facade_windows_nor_gl_2k.png",
+          "sha256": "ee0ac855947f8e123a4b56918c1e091e8cb38bbfb54d25cea1e8d19803c38dbb"
+        },
+        {
+          "path": "vendor/polyhaven/modular_factory_facade/textures/modular_factory_facade_garage_nor_gl_2k.png",
+          "sha256": "320bcd56c10f0cdabd727fa872238506c960d9c215499f3bfd4083d75affaaf4"
+        },
+        {
+          "path": "vendor/polyhaven/modular_factory_facade/textures/modular_factory_facade_brick_disp_2k.png",
+          "sha256": "c225fef287072b113ecd821c44ced04a38039f85105fe076aa200a8c9ca6722a"
+        },
+        {
+          "path": "vendor/polyhaven/modular_factory_facade/textures/modular_factory_facade_garage_metal_2k.png",
+          "sha256": "969d60a9fa5fa6dada20a2a8880d12307148d23feb450d23dd2ebf33ba355c8f"
+        },
+        {
+          "path": "vendor/polyhaven/modular_factory_facade/textures/modular_factory_facade_trim_01_rough_2k.png",
+          "sha256": "51ca8ed08e115127a0ac7cbc5ea1951f6d334b45adf672dc4e4837dfc7a50c91"
+        },
+        {
+          "path": "vendor/polyhaven/modular_factory_facade/textures/modular_factory_facade_brick_diff_2k.png",
+          "sha256": "0b13e3f7c5abc614d64dbb51bb9df5a7d3b99996a4038bc8d15d1c908123dda2"
+        },
+        {
+          "path": "vendor/polyhaven/modular_factory_facade/textures/modular_factory_facade_garage_rough_2k.png",
+          "sha256": "ce0104793e2e34ede789649b026991e6b52d6a6de92a50f07ad54a0828fb127c"
+        },
+        {
+          "path": "vendor/polyhaven/modular_factory_facade/textures/modular_factory_facade_doors_nor_gl_2k.png",
+          "sha256": "06e4c702b2917aa28179725a059e83476725633e8bded600c8660f0ced87ada4"
+        },
+        {
+          "path": "vendor/polyhaven/modular_factory_facade/textures/modular_factory_facade_windows_alpha_2k.png",
+          "sha256": "60ca7612ca3d3ae2c27b0590a900124af01945303816a40f01bbf961ac52f6c0"
+        },
+        {
+          "path": "vendor/polyhaven/modular_factory_facade/textures/modular_factory_facade_doors_metal_2k.png",
+          "sha256": "c7e4f07e96f49ae72efefa203e4bd286177fe53875c0093c928d3cf248a5a324"
+        },
+        {
+          "path": "vendor/polyhaven/modular_factory_facade/textures/modular_factory_facade_windows_diff_2k.png",
+          "sha256": "e1298cc2635bffea1f6ef749692ba7760bc061f115b10e4229cff0565901a6d7"
+        }
+      ]
+    },
+    {
+      "id": "garden_gloves_01",
+      "source": "https://polyhaven.com/a/garden_gloves_01",
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "files": [
+        {
+          "path": "vendor/polyhaven/garden_gloves_01/garden_gloves_01.blend",
+          "sha256": "1e94e2008b902fab24ea7fab8c9753249a1ec61165c0e2da3bdd2d3d04720cf9"
+        },
+        {
+          "path": "vendor/polyhaven/garden_gloves_01/textures/garden_gloves_01_nor_gl_2k.exr",
+          "sha256": "196e9f6f2f6ebf48346dca92f568fca49190bd5ebc87b9a5f794aaa8754580e3"
+        },
+        {
+          "path": "vendor/polyhaven/garden_gloves_01/textures/garden_gloves_01_rough_2k.exr",
+          "sha256": "ced4dd018bf725223f1df04db918425aa9e6c179d3dff7c0c3402f3af1273d81"
+        },
+        {
+          "path": "vendor/polyhaven/garden_gloves_01/textures/garden_gloves_01_diff_2k.jpg",
+          "sha256": "3a02f766184adab53d85117526ec99d5234a737f733324cf4f13f2e9f8bd1705"
+        }
+      ]
+    },
+    {
+      "id": "rubber_boots",
+      "source": "https://polyhaven.com/a/rubber_boots",
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "files": [
+        {
+          "path": "vendor/polyhaven/rubber_boots/rubber_boots.blend",
+          "sha256": "290183d253cd343819fb801caa40a1c96eff4e13d41bff47274d247e2e162570"
+        },
+        {
+          "path": "vendor/polyhaven/rubber_boots/textures/rubber_boots_diff_2k.jpg",
+          "sha256": "edfa6972a7596c601a27398ad3fdaf66d294230cc145ed3b4fe7cb04e20535c5"
+        },
+        {
+          "path": "vendor/polyhaven/rubber_boots/textures/rubber_boots_dirty_diff_2k.png",
+          "sha256": "709fd9259854550c195aea7e7f48dfd65d641fea32a2a208eece51dca3cbe0ae"
+        },
+        {
+          "path": "vendor/polyhaven/rubber_boots/textures/rubber_boots_dirty_nor_gl_2k.png",
+          "sha256": "aa50c435c856efbf7d0054b2b8defbd069dbba3e88a5acce5b82ffcc2ef4532f"
+        },
+        {
+          "path": "vendor/polyhaven/rubber_boots/textures/rubber_boots_dirty_rough_2k.png",
+          "sha256": "0533d38243aa1801476b6db366c662389c0274b62fb8b37fbe02916f81e0d54b"
+        },
+        {
+          "path": "vendor/polyhaven/rubber_boots/textures/rubber_boots_nor_gl_2k.exr",
+          "sha256": "179312945b9bb4b71f002226f5cea66c4999426028f3472f5b02a722654c7757"
+        },
+        {
+          "path": "vendor/polyhaven/rubber_boots/textures/rubber_boots_rough_2k.exr",
+          "sha256": "2b5cf6ac55a63fb66218adaf93b36e5d3e886cb202b2d24e1e144dd811e6d3bb"
+        }
+      ]
+    },
+    {
+      "id": "office_notepads",
+      "source": "https://polyhaven.com/a/office_notepads",
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "files": [
+        {
+          "path": "vendor/polyhaven/office_notepads/office_notepads.blend",
+          "sha256": "b70e06c34802bf7bf9649e032be729150a2c92c00f031fcc844cc7304eacf9f8"
+        },
+        {
+          "path": "vendor/polyhaven/office_notepads/textures/office_notepads_diff_2k.jpg",
+          "sha256": "9037c4c6ffe60a123e875d2618f71bf448a25c5e87c494289c8fb0c9c52ab469"
+        },
+        {
+          "path": "vendor/polyhaven/office_notepads/textures/office_notepads_nor_gl_2k.exr",
+          "sha256": "d3059f610e4e873c061a83ac630ae2893d7e3893b3a91bf158008a4a62283dc2"
+        },
+        {
+          "path": "vendor/polyhaven/office_notepads/textures/office_notepads_rough_2k.exr",
+          "sha256": "0fe7f412e2beb06458d1d3afdde5a992d339d346e52d17428356bad90ae7f1cf"
+        }
+      ]
+    },
+    {
+      "id": "69e5d155-db39-4fbd-bd26-addfe8922c7b",
+      "name": "Office monitor hp 27 inch black",
+      "source": "https://www.blendkit.com/asset-gallery-detail/69e5d155-db39-4fbd-bd26-addfe8922c7b/",
+      "license": "royalty_free",
+      "license_url": "https://www.blendkit.com/docs/licenses/",
+      "free": true,
+      "file": "vendor/blendkit/69e5d155-db39-4fbd-bd26-addfe8922c7b/model.blend",
+      "sha256": "591fcdad77574a91d061fa8d0ce12c1d1da5a9c9ee9aef86fe995ccb1f7ed1a2"
+    },
+    {
+      "id": "d67d6a81-2117-45b2-ae06-2d5a30d9083c",
+      "name": "IPhone 16 Plus",
+      "source": "https://www.blendkit.com/asset-gallery-detail/d67d6a81-2117-45b2-ae06-2d5a30d9083c/",
+      "license": "royalty_free",
+      "license_url": "https://www.blendkit.com/docs/licenses/",
+      "free": true,
+      "file": "vendor/blendkit/d67d6a81-2117-45b2-ae06-2d5a30d9083c/model.blend",
+      "sha256": "9dec0151b61821627e99f496bf37174161b85a656e0ee925ad6a890ac9af5bc2"
+    },
+    {
+      "id": "d192855d-fcf2-4ada-bd3e-7b2a17bcdf90",
+      "name": "Handheld Walkie Talkie",
+      "source": "https://www.blendkit.com/asset-gallery-detail/d192855d-fcf2-4ada-bd3e-7b2a17bcdf90/",
+      "license": "royalty_free",
+      "license_url": "https://www.blendkit.com/docs/licenses/",
+      "free": true,
+      "file": "vendor/blendkit/d192855d-fcf2-4ada-bd3e-7b2a17bcdf90/model.blend",
+      "sha256": "f20e9fb651c8b20df6d28229165d90801b90d1419f109c26d60c8a1a1ef7ce2b"
+    },
+    {
+      "id": "29d24484-794a-4ad3-8ae9-bf1269deca93",
+      "name": "A smartwatch",
+      "source": "https://www.blendkit.com/asset-gallery-detail/29d24484-794a-4ad3-8ae9-bf1269deca93/",
+      "license": "royalty_free",
+      "license_url": "https://www.blendkit.com/docs/licenses/",
+      "free": true,
+      "file": "vendor/blendkit/29d24484-794a-4ad3-8ae9-bf1269deca93/model.blend",
+      "sha256": "4718c816980b4a8a073430f7b0006ed9594961b4770d51722e94f915d0c1ae85"
+    },
+    {
+      "id": "bcbafb5a-a09f-4218-a05e-7b784476929d",
+      "name": "DJI Mavic 3 Classic Drone",
+      "source": "https://www.blendkit.com/asset-gallery-detail/bcbafb5a-a09f-4218-a05e-7b784476929d/",
+      "license": "royalty_free",
+      "license_url": "https://www.blendkit.com/docs/licenses/",
+      "free": true,
+      "file": "vendor/blendkit/bcbafb5a-a09f-4218-a05e-7b784476929d/model.blend",
+      "sha256": "19f787de32b75ed823dcc28b6ce44dcc2239bb1339057d8be0dc3c0cdbadf10c"
+    },
+    {
+      "id": "3b9d3e13-0f83-4965-ace2-c3c1254fb90f",
+      "name": "Worn out construction helmet",
+      "source": "https://www.blendkit.com/asset-gallery-detail/3b9d3e13-0f83-4965-ace2-c3c1254fb90f/",
+      "license": "royalty_free",
+      "license_url": "https://www.blendkit.com/docs/licenses/",
+      "free": true,
+      "file": "vendor/blendkit/3b9d3e13-0f83-4965-ace2-c3c1254fb90f/model.blend",
+      "sha256": "3255bcf812f72b86019b789229e402c6a375d9502156ce5c9f01aaff5fa3737b"
+    },
+    {
+      "id": "c01eb921-f2a1-407a-8bb0-c8806cab6f2c",
+      "name": "Camera Tripod",
+      "source": "https://www.blendkit.com/asset-gallery-detail/c01eb921-f2a1-407a-8bb0-c8806cab6f2c/",
+      "license": "royalty_free",
+      "license_url": "https://www.blendkit.com/docs/licenses/",
+      "free": true,
+      "file": "vendor/blendkit/c01eb921-f2a1-407a-8bb0-c8806cab6f2c/model.blend",
+      "sha256": "b4decc81917b86bf04c0a483692453b7db177459e5bc812ec7103815373bcd88"
+    },
+    {
+      "id": "a7456f63-5b4d-434f-8a3b-3b00c631c52f",
+      "name": "New studio light",
+      "source": "https://www.blendkit.com/asset-gallery-detail/a7456f63-5b4d-434f-8a3b-3b00c631c52f/",
+      "license": "royalty_free",
+      "license_url": "https://www.blendkit.com/docs/licenses/",
+      "free": true,
+      "file": "vendor/blendkit/a7456f63-5b4d-434f-8a3b-3b00c631c52f/model.blend",
+      "sha256": "af84df94d2fc0c9e9b95bbbee6419a6ba200585c31d21a011c6ded9c5ecdd0a6"
+    },
+    {
+      "id": "5082ea09-d983-422a-b985-a37bf0c0bc08",
+      "name": "Carabiner",
+      "source": "https://www.blendkit.com/asset-gallery-detail/5082ea09-d983-422a-b985-a37bf0c0bc08/",
+      "license": "royalty_free",
+      "license_url": "https://www.blendkit.com/docs/licenses/",
+      "free": true,
+      "file": "vendor/blendkit/5082ea09-d983-422a-b985-a37bf0c0bc08/model.blend",
+      "sha256": "f11ece4ce927deace6ae3d090fae0583d41fd0dfa2c030b5da3688ac4934e35c"
+    },
+    {
+      "id": "524e66b1-a96f-4767-8d0c-b969f03e73a4",
+      "name": "Weather Station",
+      "source": "https://www.blendkit.com/asset-gallery-detail/524e66b1-a96f-4767-8d0c-b969f03e73a4/",
+      "license": "royalty_free",
+      "license_url": "https://www.blendkit.com/docs/licenses/",
+      "free": true,
+      "file": "vendor/blendkit/524e66b1-a96f-4767-8d0c-b969f03e73a4/model.blend",
+      "sha256": "0f03a95e4a04f1e82195b8bfc614e8b4fc2fabb4b2253cf0c72093a864b5ab60"
+    },
+    {
+      "id": "36ec3219-5509-42f9-af43-b08ebe2152a6",
+      "name": "Turnstile",
+      "source": "https://www.blendkit.com/asset-gallery-detail/36ec3219-5509-42f9-af43-b08ebe2152a6/",
+      "license": "royalty_free",
+      "license_url": "https://www.blendkit.com/docs/licenses/",
+      "free": true,
+      "file": "vendor/blendkit/36ec3219-5509-42f9-af43-b08ebe2152a6/model.blend",
+      "sha256": "557fdd024bdc177721922d9dbf06a129a6c294204c65126ec2a6284a2dac4e2b"
+    },
+    {
+      "id": "55bbf9ad-2d64-402d-9706-aa11f31a5e96",
+      "name": "LED Work Light",
+      "source": "https://www.blendkit.com/asset-gallery-detail/55bbf9ad-2d64-402d-9706-aa11f31a5e96/",
+      "license": "royalty_free",
+      "license_url": "https://www.blendkit.com/docs/licenses/",
+      "free": true,
+      "file": "vendor/blendkit/55bbf9ad-2d64-402d-9706-aa11f31a5e96/model.blend",
+      "sha256": "8f7ca964836af9edcd119bf1f459f2151adde516a5b2e53e4afdbfc425b32b54"
+    },
+    {
+      "id": "7a5aeacf-d088-423e-916c-f9bbdfdb9306",
+      "name": "Rigged Human Mannequin man (Rigify)",
+      "source": "https://www.blendkit.com/asset-gallery-detail/7a5aeacf-d088-423e-916c-f9bbdfdb9306/",
+      "license": "royalty_free",
+      "license_url": "https://www.blendkit.com/docs/licenses/",
+      "free": true,
+      "file": "vendor/blendkit/7a5aeacf-d088-423e-916c-f9bbdfdb9306/model.blend",
+      "sha256": "2f25e7b70eb001e5d6edb291d453658c0c0589b638e2eec80edb4628e87d11a6"
+    },
+    {
+      "id": "fbadd47b-a2c2-44c4-b0a2-9a9d3b973ebf",
+      "name": "Tplink router Archer C5 AC1200",
+      "source": "https://www.blendkit.com/asset-gallery-detail/fbadd47b-a2c2-44c4-b0a2-9a9d3b973ebf/",
+      "license": "royalty_free",
+      "license_url": "https://www.blendkit.com/docs/licenses/",
+      "free": true,
+      "file": "vendor/blendkit/fbadd47b-a2c2-44c4-b0a2-9a9d3b973ebf/model.blend",
+      "sha256": "d9802cb765ecfbdfa3ee889a38d17889647e10effd7fdee5db05f5131c12b6df"
+    },
+    {
+      "asset_base_id": "422308a0-8f5a-45cb-8132-fdcffac4a52c",
+      "title": "Excavator Liebherr 956",
+      "source_page": "https://www.blendkit.com/asset-gallery-detail/422308a0-8f5a-45cb-8132-fdcffac4a52c/",
+      "license": "royalty_free",
+      "license_url": "https://www.blendkit.com/docs/licenses/",
+      "free": true,
+      "file": "vendor/blendkit-construction/construction-excavator-liebherr-956-2k.blend",
+      "sha256": "22237f9496c87cbb90869047e6f4174e535b02ed2eb23aa3b086e9eca40fb101"
+    },
+    {
+      "asset_base_id": "eb5c137e-007e-485b-bbb9-675e76fcdac9",
+      "title": "Crane Tower",
+      "source_page": "https://www.blendkit.com/asset-gallery-detail/eb5c137e-007e-485b-bbb9-675e76fcdac9/",
+      "license": "royalty_free",
+      "license_url": "https://www.blendkit.com/docs/licenses/",
+      "free": true,
+      "file": "vendor/blendkit-construction/construction-tower-crane-2k.blend",
+      "sha256": "3148a87d488043b63848e19f4c0ffde57c000db354a0cc088c97870658d64f66"
+    },
+    {
+      "asset_base_id": "a9ba31e6-cf8f-4cad-8c8a-8df475627681",
+      "title": "Barrier with a security booth",
+      "source_page": "https://www.blendkit.com/asset-gallery-detail/a9ba31e6-cf8f-4cad-8c8a-8df475627681/",
+      "license": "royalty_free",
+      "license_url": "https://www.blendkit.com/docs/licenses/",
+      "free": true,
+      "file": "vendor/blendkit-construction/construction-security-booth-barrier-1k.blend",
+      "sha256": "e5b23daf6a87ef524c0da7f20ee900085b003f701cba7f54004942294cfce27f"
+    }
+  ]
+}

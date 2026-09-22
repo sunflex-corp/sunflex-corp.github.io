@@ -1,0 +1,896 @@
+{
+  "ai-broadcast-1": {
+    "render": "context-field-broadcast.png",
+    "alt": "다국어 안내의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "ai-broadcast-2": {
+    "render": "context-broadcast-planning.png",
+    "alt": "음성·화면의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "ai-broadcast-3": {
+    "render": "office-training-briefing.png",
+    "alt": "현장 전달의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "mobile-cctv-1": {
+    "render": "chatgpt-cctv-selection.png",
+    "alt": "작업면 확인의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "mobile-cctv-2": {
+    "render": "construction-excavator-access.png",
+    "alt": "위치 이동의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "mobile-cctv-3": {
+    "render": "chatgpt-cctv-human-review.png",
+    "alt": "영상 확인의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "mobile-bodycam-1": {
+    "render": "chatgpt-cctv-selection.png",
+    "alt": "작업자 시선의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "mobile-bodycam-2": {
+    "render": "construction-excavator-access.png",
+    "alt": "검측 기록의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "mobile-bodycam-3": {
+    "render": "chatgpt-cctv-human-review.png",
+    "alt": "기록 활용의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "hook-bottom-camera-1": {
+    "render": "construction-tower-crane-operation.png",
+    "alt": "후크의 시야의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "hook-bottom-camera-2": {
+    "render": "chatgpt-cctv-selection.png",
+    "alt": "영상 전송의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "hook-bottom-camera-3": {
+    "render": "context-prework-record.png",
+    "alt": "함께 확인의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "chatgpt-cctv-1": {
+    "render": "chatgpt-cctv-selection.png",
+    "alt": "장면 선택의 사용 상황을 설명하는 참고 장면",
+    "caption": "사용 흐름 예시이며, 실제 제품 외관·서비스 화면이 아닙니다.",
+    "context_only": true,
+    "labels": [
+      "영상 입력",
+      "장면 선택"
+    ]
+  },
+  "chatgpt-cctv-2": {
+    "render": "chatgpt-cctv-report-draft.png",
+    "alt": "AI 초안의 사용 상황을 설명하는 참고 장면",
+    "caption": "사용 흐름 예시이며, 실제 제품 외관·서비스 화면이 아닙니다.",
+    "context_only": true,
+    "labels": [
+      "선택한 장면",
+      "AI 보고서 초안"
+    ]
+  },
+  "chatgpt-cctv-3": {
+    "render": "chatgpt-cctv-human-review.png",
+    "alt": "관리자 검토의 사용 상황을 설명하는 참고 장면",
+    "caption": "사용 흐름 예시이며, 실제 제품 외관·서비스 화면이 아닙니다.",
+    "context_only": true,
+    "labels": [
+      "AI 보고서 초안",
+      "관리자 검토"
+    ]
+  },
+  "safety-box-1": {
+    "render": "office-integrated-review.png",
+    "alt": "정보 통합의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "safety-box-2": {
+    "render": "office-document-comparison.png",
+    "alt": "CCTV 연결의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "safety-box-3": {
+    "render": "context-record-review.png",
+    "alt": "함께 검토의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "site-cms-1": {
+    "render": "chatgpt-cctv-selection.png",
+    "alt": "착공 초기의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "site-cms-2": {
+    "render": "construction-excavator-access.png",
+    "alt": "공정 전환의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "site-cms-3": {
+    "render": "chatgpt-cctv-human-review.png",
+    "alt": "준공 전의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "led-logo-light-1": {
+    "render": "context-site-lighting.png",
+    "alt": "빛으로 안내의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "led-logo-light-2": {
+    "render": "context-boundary-guidance.png",
+    "alt": "경계 표시의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "led-logo-light-3": {
+    "render": "context-boundary-guidance.png",
+    "alt": "현장 배치의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "vehicle-entry-alert-1": {
+    "render": "construction-site-entry-warning.png",
+    "alt": "진출입 감지의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "vehicle-entry-alert-2": {
+    "render": "context-access-route.png",
+    "alt": "지점별 경고의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "vehicle-entry-alert-3": {
+    "render": "context-prework-record.png",
+    "alt": "유도원 안내의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "co2-temp-humidity-1": {
+    "render": "industrial-pipe-inspection.png",
+    "alt": "동시 측정의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "co2-temp-humidity-2": {
+    "render": "context-broadcast-planning.png",
+    "alt": "기준 알림의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "co2-temp-humidity-3": {
+    "render": "office-integrated-review.png",
+    "alt": "변화 기록의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "iot-mist-1": {
+    "render": "industrial-pipe-inspection.png",
+    "alt": "분사 배치의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "iot-mist-2": {
+    "render": "context-broadcast-planning.png",
+    "alt": "미스트 분사의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "iot-mist-3": {
+    "render": "office-integrated-review.png",
+    "alt": "가동 조절의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "lte-anemometer-1": {
+    "render": "construction-tower-crane-operation.png",
+    "alt": "상부 측정의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "lte-anemometer-2": {
+    "render": "office-integrated-review.png",
+    "alt": "LTE 연결의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "lte-anemometer-3": {
+    "render": "context-record-review.png",
+    "alt": "지상 확인의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "smart-environment-board-1": {
+    "render": "industrial-pipe-inspection.png",
+    "alt": "환경 측정의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "smart-environment-board-2": {
+    "render": "context-broadcast-planning.png",
+    "alt": "전광판 표시의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "smart-environment-board-3": {
+    "render": "office-integrated-review.png",
+    "alt": "설비 관리의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "compact-gas-detector-1": {
+    "render": "industrial-pipe-inspection.png",
+    "alt": "가스 측정의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true,
+    "labels": [
+      "O₂",
+      "CO",
+      "CH₄",
+      "H₂S"
+    ]
+  },
+  "compact-gas-detector-2": {
+    "render": "office-integrated-review.png",
+    "alt": "원격 확인의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "compact-gas-detector-3": {
+    "render": "context-record-review.png",
+    "alt": "기록 검토의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "gas-alarm-1": {
+    "render": "industrial-pipe-inspection.png",
+    "alt": "진입 전 측정의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "gas-alarm-2": {
+    "render": "office-integrated-review.png",
+    "alt": "현장 표시의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "gas-alarm-3": {
+    "render": "context-record-review.png",
+    "alt": "출입 판단의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "tilt-acceleration-sensor-1": {
+    "render": "industrial-concrete-record.png",
+    "alt": "변화 계측의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "tilt-acceleration-sensor-2": {
+    "render": "context-record-review.png",
+    "alt": "이상 알림의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "tilt-acceleration-sensor-3": {
+    "render": "office-document-comparison.png",
+    "alt": "기록 검토의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "fire-detection-1": {
+    "render": "industrial-utility-management.png",
+    "alt": "불꽃 감지의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "fire-detection-2": {
+    "render": "context-field-broadcast.png",
+    "alt": "대피 안내의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "fire-detection-3": {
+    "render": "office-integrated-review.png",
+    "alt": "관리자 알림의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "ir3-flame-detector-1": {
+    "render": "industrial-utility-management.png",
+    "alt": "세 파장 감지의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "ir3-flame-detector-2": {
+    "render": "context-field-broadcast.png",
+    "alt": "경보 연결의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "ir3-flame-detector-3": {
+    "render": "office-integrated-review.png",
+    "alt": "구성 선택의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "wireless-emergency-broadcast-1": {
+    "render": "context-field-broadcast.png",
+    "alt": "무선 연결의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "wireless-emergency-broadcast-2": {
+    "render": "context-broadcast-planning.png",
+    "alt": "이동 설치의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "wireless-emergency-broadcast-3": {
+    "render": "office-training-briefing.png",
+    "alt": "일상·비상의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "digital-radio-1": {
+    "render": "digital-radio-1.png",
+    "alt": "조별 통화의 사용 상황을 설명하는 참고 장면",
+    "caption": "통화 흐름 예시 · SE-400 실물 이미지가 아닙니다.",
+    "context_only": true,
+    "labels": [
+      "호출자",
+      "선택한 작업조 · 인원 예시"
+    ]
+  },
+  "digital-radio-2": {
+    "render": "digital-radio-2.png",
+    "alt": "개별 호출의 사용 상황을 설명하는 참고 장면",
+    "caption": "통화 흐름 예시 · SE-400 실물 이미지가 아닙니다.",
+    "context_only": true,
+    "labels": [
+      "호출자",
+      "지정 수신자"
+    ]
+  },
+  "digital-radio-3": {
+    "render": "digital-radio-3.png",
+    "alt": "전체 공지의 사용 상황을 설명하는 참고 장면",
+    "caption": "통화 흐름 예시 · SE-400 실물 이미지가 아닙니다.",
+    "context_only": true,
+    "labels": [
+      "호출자",
+      "여러 작업조 · 인원 예시"
+    ]
+  },
+  "tbm-solution-1": {
+    "render": "office-training-briefing.png",
+    "alt": "자료와 설명의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "tbm-solution-2": {
+    "render": "context-broadcast-planning.png",
+    "alt": "조회장 구성의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "tbm-solution-3": {
+    "render": "context-prework-record.png",
+    "alt": "공종별 안내의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "ai-equipment-collision-1": {
+    "render": "construction-excavator-access.png",
+    "alt": "사각지대의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "ai-equipment-collision-2": {
+    "render": "industrial-work-zone.png",
+    "alt": "사람 감지의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "ai-equipment-collision-3": {
+    "render": "context-field-broadcast.png",
+    "alt": "동시 경고의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "opening-open-close-sensor-1": {
+    "render": "industrial-concrete-record.png",
+    "alt": "닫힘 상태의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "opening-open-close-sensor-2": {
+    "render": "context-record-review.png",
+    "alt": "열림 감지의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "opening-open-close-sensor-3": {
+    "render": "office-document-comparison.png",
+    "alt": "방송·알림의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "equipment-approach-alarm-1": {
+    "render": "construction-excavator-access.png",
+    "alt": "접근 감지의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "equipment-approach-alarm-2": {
+    "render": "industrial-work-zone.png",
+    "alt": "양쪽 경고의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "equipment-approach-alarm-3": {
+    "render": "context-field-broadcast.png",
+    "alt": "현장 대응의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "tower-crane-hook-collision-1": {
+    "render": "construction-tower-crane-operation.png",
+    "alt": "이동 감지의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "tower-crane-hook-collision-2": {
+    "render": "context-field-broadcast.png",
+    "alt": "다국어 경고의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "tower-crane-hook-collision-3": {
+    "render": "context-prework-record.png",
+    "alt": "주변 확인의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "emergency-signal-location-1": {
+    "render": "context-safety-preparation.png",
+    "alt": "버튼 호출의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "emergency-signal-location-2": {
+    "render": "context-prework-record.png",
+    "alt": "위치 전달의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "emergency-signal-location-3": {
+    "render": "context-record-review.png",
+    "alt": "대응 준비의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "hazard-area-broadcast-1": {
+    "render": "context-field-broadcast.png",
+    "alt": "접근 감지의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "hazard-area-broadcast-2": {
+    "render": "context-broadcast-planning.png",
+    "alt": "문구 설정의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "hazard-area-broadcast-3": {
+    "render": "office-training-briefing.png",
+    "alt": "설치 구성의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "pedestrian-collision-prevention-1": {
+    "render": "construction-site-entry-warning.png",
+    "alt": "가려진 시야의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "pedestrian-collision-prevention-2": {
+    "render": "context-access-route.png",
+    "alt": "접근 감지의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "pedestrian-collision-prevention-3": {
+    "render": "context-prework-record.png",
+    "alt": "양쪽에 알림의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "alcohol-detection-1": {
+    "render": "construction-site-entry-warning.png",
+    "alt": "출입 전 측정의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "alcohol-detection-2": {
+    "render": "context-access-route.png",
+    "alt": "결과 전달의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "alcohol-detection-3": {
+    "render": "context-prework-record.png",
+    "alt": "재확인의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "smart-beacon-1": {
+    "render": "construction-site-entry-warning.png",
+    "alt": "구역 확인의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "smart-beacon-2": {
+    "render": "context-access-route.png",
+    "alt": "인원·접근의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "smart-beacon-3": {
+    "render": "context-prework-record.png",
+    "alt": "상황 대조의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "wireless-network-1": {
+    "render": "context-network-connection.png",
+    "alt": "음영 구간의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "wireless-network-2": {
+    "render": "context-network-connection.png",
+    "alt": "메시 연결의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "wireless-network-3": {
+    "render": "chatgpt-cctv-human-review.png",
+    "alt": "자료 확인의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "power-assist-suit-1": {
+    "render": "context-safety-preparation.png",
+    "alt": "착용 보조의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "power-assist-suit-2": {
+    "render": "context-prework-record.png",
+    "alt": "탄성 구조의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "power-assist-suit-3": {
+    "render": "context-record-review.png",
+    "alt": "배터리 없이의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "smart-safety-hook-1": {
+    "render": "context-attachment-check.png",
+    "alt": "이동 구간의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "smart-safety-hook-2": {
+    "render": "context-field-broadcast.png",
+    "alt": "체결 안내의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "smart-safety-hook-3": {
+    "render": "context-prework-record.png",
+    "alt": "미체결 알림의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "smart-helmet-1": {
+    "render": "context-safety-preparation.png",
+    "alt": "기존 안전모의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "smart-helmet-2": {
+    "render": "context-prework-record.png",
+    "alt": "상태 감지의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "smart-helmet-3": {
+    "render": "context-record-review.png",
+    "alt": "담당자 확인의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "smart-airbag-1": {
+    "render": "context-safety-preparation.png",
+    "alt": "착용 보호의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "smart-airbag-2": {
+    "render": "context-prework-record.png",
+    "alt": "감지·전개의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "smart-airbag-3": {
+    "render": "context-record-review.png",
+    "alt": "운영 점검의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "worker-attendance-card-1": {
+    "render": "construction-site-entry-warning.png",
+    "alt": "카드 인식의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "worker-attendance-card-2": {
+    "render": "context-access-route.png",
+    "alt": "명단 확인의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "worker-attendance-card-3": {
+    "render": "context-prework-record.png",
+    "alt": "인원 대조의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "worker-access-gate-1": {
+    "render": "construction-site-entry-warning.png",
+    "alt": "출입 인증의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "worker-access-gate-2": {
+    "render": "context-access-route.png",
+    "alt": "게이트 통과의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "worker-access-gate-3": {
+    "render": "context-prework-record.png",
+    "alt": "출역 기록의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "healthcare-heart-band-1": {
+    "render": "context-safety-preparation.png",
+    "alt": "심박 측정의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "healthcare-heart-band-2": {
+    "render": "context-prework-record.png",
+    "alt": "착용자 알림의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "healthcare-heart-band-3": {
+    "render": "context-record-review.png",
+    "alt": "관리자 확인의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "ai-quick-risk-assessment-1": {
+    "render": "chatgpt-cctv-selection.png",
+    "alt": "사진 입력의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "ai-quick-risk-assessment-2": {
+    "render": "chatgpt-cctv-report-draft.png",
+    "alt": "초안 작성의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "ai-quick-risk-assessment-3": {
+    "render": "office-document-comparison.png",
+    "alt": "현장 보완의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "ai-risk-assessment-review-1": {
+    "render": "office-integrated-review.png",
+    "alt": "평가 비교의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "ai-risk-assessment-review-2": {
+    "render": "office-document-comparison.png",
+    "alt": "누락 제안의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "ai-risk-assessment-review-3": {
+    "render": "context-record-review.png",
+    "alt": "보완 기록의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "ai-safety-index-1": {
+    "render": "office-integrated-review.png",
+    "alt": "자료 통합의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "ai-safety-index-2": {
+    "render": "office-document-comparison.png",
+    "alt": "지수 분석의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "ai-safety-index-3": {
+    "render": "context-record-review.png",
+    "alt": "우선순위의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "ai-subcontractor-safety-1": {
+    "render": "office-integrated-review.png",
+    "alt": "계획 공유의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "ai-subcontractor-safety-2": {
+    "render": "office-document-comparison.png",
+    "alt": "진행 확인의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "ai-subcontractor-safety-3": {
+    "render": "context-record-review.png",
+    "alt": "보고 정리의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "ai-drone-inspection-1": {
+    "render": "office-drone-record.png",
+    "alt": "외관 촬영의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "ai-drone-inspection-2": {
+    "render": "office-drone-record.png",
+    "alt": "위치 기록의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "ai-drone-inspection-3": {
+    "render": "office-document-comparison.png",
+    "alt": "보고서 검토의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "inspectcut-1": {
+    "render": "chatgpt-cctv-selection.png",
+    "alt": "구간 선택의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "inspectcut-2": {
+    "render": "chatgpt-cctv-report-draft.png",
+    "alt": "자막·시간의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "inspectcut-3": {
+    "render": "office-document-comparison.png",
+    "alt": "원본·제출본의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "ai-similar-accident-alert-1": {
+    "render": "office-training-briefing.png",
+    "alt": "작업 분석의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "ai-similar-accident-alert-2": {
+    "render": "context-broadcast-planning.png",
+    "alt": "사례 검색의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "ai-similar-accident-alert-3": {
+    "render": "context-prework-record.png",
+    "alt": "현장 전파의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "safebridge-1": {
+    "render": "office-training-briefing.png",
+    "alt": "교육자 설명의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "safebridge-2": {
+    "render": "context-broadcast-planning.png",
+    "alt": "언어별 자막의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "safebridge-3": {
+    "render": "context-prework-record.png",
+    "alt": "교육 기록의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "iot-small-tower-crane-1": {
+    "render": "construction-tower-crane-operation.png",
+    "alt": "인양 정보의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "iot-small-tower-crane-2": {
+    "render": "construction-tower-crane-operation.png",
+    "alt": "풍속 확인의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "iot-small-tower-crane-3": {
+    "render": "office-integrated-review.png",
+    "alt": "함께 검토의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "concrete-curing-1": {
+    "render": "industrial-concrete-record.png",
+    "alt": "온도 기록의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "concrete-curing-2": {
+    "render": "context-record-review.png",
+    "alt": "강도 추정의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  },
+  "concrete-curing-3": {
+    "render": "office-document-comparison.png",
+    "alt": "공정 검토의 사용 상황을 설명하는 참고 장면",
+    "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
+    "context_only": true
+  }
+}

@@ -38,31 +38,25 @@ def computed(m,node):
  return result
 count=0
 for width in [360,540,720]:
- m=matcher(width);large=0;renders=0;panels=0;pins=0
+ m=matcher(width);frames=0;panels=0
  for slug,figures in DATA.items():
   section='blind-corner' if slug=='pedestrian-collision-prevention' else 'product-benefits'
-  root=cssselect2.ElementWrapper.from_html_root(lxml.html.fromstring(f'<div class="product-editorial"><section id="{section}">'+''.join(figures)+'</section></div>'))
+  body=''.join('<li class="benefit-panel">'+f+'</li>' for f in figures)
+  root=cssselect2.ElementWrapper.from_html_root(lxml.html.fromstring(f'<div class="product-editorial"><section id="{section}"><ol>'+body+'</ol></section></div>'))
   for n in root.iter_subtree():
    c=n.classes;style=computed(m,n)
-   if n.local_name=='svg' and n.parent is not None and 'subject-scene' in n.parent.classes:
-    assert style['width']=='100%' and style['height']=='auto' and style['min-height']=='0',(slug,width,style)
-    large+=1
-   if n.local_name=='svg' and n.parent is not None and n.parent.classes & {'bc-chest-focus','ctx-crane','ctx-cutaway','ctx-location-plan','ctx-drone-plan'}:
-    assert style['width']=='100%' and style['height']=='auto',(slug,width,style)
-   if 'qa-lift-poses' in c:
-    assert style['width']=='100%' and style['height']=='auto',(slug,width,style)
-   if 'render-stage' in c:
-    assert style['aspect-ratio']==('4/3' if c&{'render-stage--focused','render-stage--portrait'} else '16/9'),(slug,style)
-    renders+=1
-   if 'dual-panels' in c and width<=420:assert style['grid-template-columns']=='1fr',(slug,style)
-   if 'signal-route' in c and width<=480:assert style['grid-template-columns']=='minmax(0,1fr)',(slug,style)
-   if 'diagram' in c:assert style['min-height']=='0',(slug,width,style['min-height'])
-   if 'technical-pin' in c:
-    assert style['width']=='26px' and '13px' in style['font'],(slug,width,style)
-    pins+=1
+   if 'external-render' in c:
+    assert style['display']=='flex' and style['overflow']=='visible',(slug,width,style)
+   if 'external-render-stage' in c:
+    assert style['aspect-ratio']=='3/2' and style['width']=='100%',(slug,width,style)
+    frames+=1
+   if n.local_name=='img' and n.parent is not None and 'external-render-stage' in n.parent.classes:
+    assert style['object-fit']=='contain' and style['width']=='100%',(slug,width,style)
+   if n.local_name=='figcaption' and n.parent is not None and 'external-render' in n.parent.classes:
+    assert style['font-size']=='13px' and style['order']=='-1',(slug,width,style)
+   if 'external-render-labels' in c:
+    assert int(style['font-size'].removesuffix('px'))>=14,(slug,width,style)
    if 'sunflex-infographic' in c:panels+=1
- # Heart-band now keeps one physical measurement pin; wearer/manager are output targets,
- # Suit motion now uses two poses instead of three part-location markers.
- assert large==15 and renders==29 and panels==144 and pins==10,(width,large,renders,panels,pins)
+ assert frames==panels==144,(width,frames,panels)
  count+=panels
-print(f'PASS: {count} scene/width cascade checks; 15 subject SVG scenes plus suit poses, 29 render frames, 10 component pins, readable compact card/route rules')
+print(f'PASS: {count} scene/width cascade checks; all renders contained, contextual captions and compact labels readable')

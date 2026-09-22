@@ -152,4 +152,11 @@ def refine(body,slug):
  nav=s.select_one('.product-local-nav nav')
  if nav:
   links=nav.find_all('a');links[1]['href']='#product-specifications';links[1].string='구성·사양'
+ from product_buyer_proof import refine_proof
+ refine_proof(s,root,slug)
+ if slug=='mobile-cctv':
+  from product_buyer_mobile import refine_mobile
+  refine_mobile(s,root)
+ from product_external_contexts import refine_external_contexts
+ refine_external_contexts(s,root,slug)
  return str(s)
