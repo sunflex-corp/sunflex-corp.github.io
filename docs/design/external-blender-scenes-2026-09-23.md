@@ -8,7 +8,7 @@ The product benefit illustrations now use 27 Blender compositions in 144 placeme
 - The final saved Blender scenes contain 295 visible geometry objects; all 295 carry external-source metadata. Camera, lighting, placement, material and framing adjustments provide the presentation.
 - `data/external-assets/source-register.json` records acquired sources, free status, licenses and hashes. Downloaded models and packed Blender files stay outside the published site; no credentials or signed download URLs are included.
 - `data/external-assets/final-scene-records.json` was extracted from all 27 final Blender files. It records actual object transforms, light energy/size/color/rotation, camera values, exposure, world lighting, render settings and hashes.
-- `data/external-render-assets.json` maps each placement to its contextual image and labels. All render images are 1800×1200 WebP; the 27 published files total approximately 2.37 MB.
+- `data/external-render-assets.json` maps each placement to its contextual image and labels. All render images are 1800×1200 WebP; the 27 published files total approximately 1.97 MB.
 - When an exact free product model was unavailable, the user approved a scene explaining its use context. These renders are not represented as the product's actual hardware. Original product photography and factual specifications are retained.
 
 ## Browser Pro review and implemented changes
