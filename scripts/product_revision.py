@@ -16,6 +16,11 @@ KEEP={'mobile-cctv':['mobile-cctv-lineup','movingcam-engineering','movingcam-net
 
 def refine(body,slug):
  s=BeautifulSoup(body,'html.parser');spec=SCENES[slug];root=s.select_one('.product-story');root['data-story-revision']='20260920'
+ # The adjacent checkpoint story repeats the preceding scene without new visual information.
+ if slug=='hook-bottom-camera':
+  duplicate=root.select_one('#hook-checkpoints figure')
+  if duplicate and duplicate.select_one('img[src="/media/derived/product-hook-bottom-camera-problem-2560.avif"]'):
+   duplicate.decompose()
  overview=root.select_one('.editorial-overview')
  if overview:overview.decompose()
  for link in s.select('a[href="#product-content"]'):link['href']='#blind-corner' if slug=='pedestrian-collision-prevention' else '#product-benefits'
@@ -41,7 +46,7 @@ def refine(body,slug):
     panel.select_one('.cctv-stage-caption')['class']=['benefit-copy']
     listing.append(panel.extract())
    stage.append(listing)
- summary=s.new_tag('section',attrs={'class':'editorial-chapter revision-choices','id':'product-fit'})
+ summary=s.new_tag('section',attrs={'class':'editorial-chapter revision-choices','id':'product-fit','data-revision-surface':'checklist'})
  inner=s.new_tag('div',attrs={'class':'editorial-section-inner'})
  inner.append(BeautifulSoup('<p class="editorial-kicker">현장에 맞는 구성</p><h2>도입 전에 확인할 세 가지.</h2><p>설치할 곳과 운영 방식을 함께 살펴보세요. 상담할 때 아래 조건을 알려주시면 구성을 검토하는 데 도움이 됩니다.</p>','html.parser'))
  listing=s.new_tag('ul',attrs={'class':'revision-criteria'})
@@ -80,7 +85,45 @@ def refine(body,slug):
     if index%2 and layout=='panorama':layout='editorial'
     grid['data-composition']=layout
   for grid in section.select('.content-grid'):
-   if len(grid.find_all('article',recursive=False))>=3:grid['data-composition']='mosaic'
+   cards=grid.find_all('article',recursive=False)
+   if len(cards)>=3:grid['data-composition']='mosaic'
+   if section.get('id')=='highlights' and cards:
+    grid['data-revision-surface']='highlights'
+    for card_index,card in enumerate(cards):
+     card['data-highlight-card']='feature' if card_index==0 and card.find('img') else 'detail'
+ # Replace a repeated benefit with a distinct, documented model-selection point.
+ if slug=='mobile-bodycam':
+  for card in root.select('#highlights article'):
+   title=card.find('h3')
+   if title and title.get_text(strip=True)=='지나간 장면도 기록으로':
+    title.string='운영 환경에 맞는 모델'
+    card.find('p').string='일반형·WiFi형·LTE형 중 현장의 저장·전송 방식에 맞춰 구성을 검토합니다.'
+ # Give repeated highlight statements one documented role each: mechanism, record, then use.
+ if slug=='ai-drone-inspection':
+  for card in root.select('#highlights article'):
+   title=card.find('h3')
+   if title and title.get_text(strip=True)=='이제, 위치 기록은 드론이 합니다':
+    title.string='사진과 위치를, 점검 자료로 함께'
+    card.find('p').string='촬영 위치와 사진을 함께 확인해 보수나 추가 점검이 필요한 구간을 논의합니다.'
+ if slug=='concrete-curing':
+  for card in root.select('#highlights article'):
+   title=card.find('h3')
+   if title and title.get_text(strip=True)=='감이 아니라 측정으로 보는 탈형 시점':
+    title.string='기록을 현장 기준과 대조해'
+    card.find('p').string='온도·적산온도·강도 추정값을 현장 기준과 비교해 다음 공정을 검토합니다.'
+   elif title and title.get_text(strip=True)=='위치마다 쌓이는 온도 기록':
+    title.string='위치별 기록을 비교해'
+    card.find('p').string='부재와 구간에 따른 온도 변화를 비교해 양생 상태를 살펴봅니다.'
+   elif card.get_text(' ',strip=True).startswith('적산온도 강도 추정까지'):
+    lines=card.find_all('p',recursive=False)
+    lines[0].clear();lines[0].append(BeautifulSoup('<span>온도 기록에서</span><span>강도 추정까지</span>','html.parser'))
+    lines[1].string='타설 위치별 온도 기록이 적산온도와 강도 추정값으로 이어집니다.'
+ if slug=='iot-small-tower-crane':
+  for card in root.select('#highlights article'):
+   if card.get_text(' ',strip=True).startswith('3 가지를 한 번에'):
+    lines=card.find_all('p',recursive=False)
+    lines[0].clear();lines[0].append(BeautifulSoup('<span>조종석 한 화면</span><span>에서 함께 확인</span>','html.parser'))
+    lines[1].string='인양 중량·후크 거리·지브각·풍속을 조종석에서 함께 확인합니다.'
  # Preserve parallel comparisons as actual columns instead of tall nested boxes.
  for diagram in root.select('.editorial-diagram'):
   children=diagram.find_all(recursive=False)
