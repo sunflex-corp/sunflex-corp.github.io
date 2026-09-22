@@ -1,0 +1,4674 @@
+{
+  "policy": "Only downloaded external geometry; recorded from final Blender files, not approximated from render prompts.",
+  "scenes": [
+    {
+      "scene_id": "chatgpt-cctv-human-review",
+      "blend_sha256": "239dbe8a4d7fa693035540dee73d0727df40ff2464a124913433a7017e24fe4d",
+      "render_sha256": "2938468c3147f0d140bba715cc116c1f1c8d1d16b61a1968e5b715e5d5a33f8f",
+      "resolution": [
+        1800,
+        1200
+      ],
+      "engine": "CYCLES",
+      "samples": 64,
+      "exposure_ev": 0.0,
+      "view_transform": "AgX",
+      "transparent": true,
+      "world": {
+        "color": [
+          0.105,
+          0.135,
+          0.19,
+          1.0
+        ],
+        "strength": 0.41999998688697815
+      },
+      "camera": {
+        "location": [
+          3.4,
+          -7.2,
+          3.4
+        ],
+        "rotation_xyz_radians": [
+          1.210604,
+          -0.0,
+          0.43327
+        ],
+        "type": "ORTHO",
+        "ortho_scale": 6.400000095367432
+      },
+      "lights": [
+        {
+          "name": "Key",
+          "type": "AREA",
+          "watts": 1250.0,
+          "size": 4.0,
+          "color": [
+            0.94,
+            0.97,
+            1.0
+          ],
+          "location": [
+            -3.5,
+            -4.5,
+            5.5
+          ],
+          "rotation_xyz_radians": [
+            0.846399,
+            0.0,
+            -0.645219
+          ]
+        },
+        {
+          "name": "Fill",
+          "type": "AREA",
+          "watts": 350.0,
+          "size": 4.5,
+          "color": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "location": [
+            4.0,
+            -3.0,
+            3.0
+          ],
+          "rotation_xyz_radians": [
+            1.090896,
+            -0.0,
+            0.903724
+          ]
+        },
+        {
+          "name": "Rim",
+          "type": "AREA",
+          "watts": 900.0,
+          "size": 2.5,
+          "color": [
+            0.8,
+            0.9,
+            1.0
+          ],
+          "location": [
+            1.0,
+            3.5,
+            4.5
+          ],
+          "rotation_xyz_radians": [
+            0.700081,
+            -0.0,
+            2.851506
+          ]
+        }
+      ],
+      "root_transforms": [
+        {
+          "name": "clipboard",
+          "type": "MESH",
+          "location": [
+            -1.505908,
+            -0.192039,
+            -0.002254
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            0.0,
+            -0.139626
+          ],
+          "scale": [
+            4.456988,
+            4.456988,
+            4.456988
+          ]
+        },
+        {
+          "name": "Office monitor hp 27 inch black",
+          "type": "EMPTY",
+          "location": [
+            0.65,
+            0.336814,
+            -1.024505
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "scale": [
+            6.212909,
+            6.212909,
+            6.212909
+          ]
+        }
+      ],
+      "visible_geometry_count": 2,
+      "external_sources": [
+        "https://polyhaven.com/a/clipboard",
+        "https://www.blendkit.com/asset-gallery-detail/69e5d155-db39-4fbd-bd26-addfe8922c7b/"
+      ],
+      "unattributed_geometry": []
+    },
+    {
+      "scene_id": "chatgpt-cctv-report-draft",
+      "blend_sha256": "b7b9c5fdfc0d7d45dc643903d3dae19200b0cb66015098d82b860fd0b1d3868f",
+      "render_sha256": "fbb0ccd513683be968fcf683b3e3647f40d5004e6d474b5547fd63d040775185",
+      "resolution": [
+        1800,
+        1200
+      ],
+      "engine": "CYCLES",
+      "samples": 64,
+      "exposure_ev": 0.0,
+      "view_transform": "AgX",
+      "transparent": true,
+      "world": {
+        "color": [
+          0.105,
+          0.135,
+          0.19,
+          1.0
+        ],
+        "strength": 0.41999998688697815
+      },
+      "camera": {
+        "location": [
+          3.4,
+          -7.2,
+          3.4
+        ],
+        "rotation_xyz_radians": [
+          1.210604,
+          -0.0,
+          0.43327
+        ],
+        "type": "ORTHO",
+        "ortho_scale": 6.400000095367432
+      },
+      "lights": [
+        {
+          "name": "Key",
+          "type": "AREA",
+          "watts": 1250.0,
+          "size": 4.0,
+          "color": [
+            0.94,
+            0.97,
+            1.0
+          ],
+          "location": [
+            -3.5,
+            -4.5,
+            5.5
+          ],
+          "rotation_xyz_radians": [
+            0.846399,
+            0.0,
+            -0.645219
+          ]
+        },
+        {
+          "name": "Fill",
+          "type": "AREA",
+          "watts": 350.0,
+          "size": 4.5,
+          "color": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "location": [
+            4.0,
+            -3.0,
+            3.0
+          ],
+          "rotation_xyz_radians": [
+            1.090896,
+            -0.0,
+            0.903724
+          ]
+        },
+        {
+          "name": "Rim",
+          "type": "AREA",
+          "watts": 900.0,
+          "size": 2.5,
+          "color": [
+            0.8,
+            0.9,
+            1.0
+          ],
+          "location": [
+            1.0,
+            3.5,
+            4.5
+          ],
+          "rotation_xyz_radians": [
+            0.700081,
+            -0.0,
+            2.851506
+          ]
+        }
+      ],
+      "root_transforms": [
+        {
+          "name": "Office monitor hp 27 inch black",
+          "type": "EMPTY",
+          "location": [
+            -1.311251,
+            0.371404,
+            -0.789534
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            0.0,
+            -0.087266
+          ],
+          "scale": [
+            4.91469,
+            4.91469,
+            4.914689
+          ]
+        },
+        {
+          "name": "clipboard",
+          "type": "MESH",
+          "location": [
+            1.059256,
+            -0.215862,
+            -0.048865
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            -0.0,
+            0.139626
+          ],
+          "scale": [
+            6.982615,
+            6.982615,
+            6.982615
+          ]
+        }
+      ],
+      "visible_geometry_count": 2,
+      "external_sources": [
+        "https://www.blendkit.com/asset-gallery-detail/69e5d155-db39-4fbd-bd26-addfe8922c7b/",
+        "https://polyhaven.com/a/clipboard"
+      ],
+      "unattributed_geometry": []
+    },
+    {
+      "scene_id": "chatgpt-cctv-selection",
+      "blend_sha256": "fa831085464297da67d39ebbf614851cc0e52a03003e3a89403b7672e2c28201",
+      "render_sha256": "70f29f8659bdeacca2219befb05e77ce94697ba4d8459732acc089f5caaf3b8b",
+      "resolution": [
+        1800,
+        1200
+      ],
+      "engine": "CYCLES",
+      "samples": 64,
+      "exposure_ev": 0.0,
+      "view_transform": "AgX",
+      "transparent": true,
+      "world": {
+        "color": [
+          0.105,
+          0.135,
+          0.19,
+          1.0
+        ],
+        "strength": 0.41999998688697815
+      },
+      "camera": {
+        "location": [
+          3.4,
+          -7.2,
+          3.4
+        ],
+        "rotation_xyz_radians": [
+          1.210604,
+          -0.0,
+          0.43327
+        ],
+        "type": "ORTHO",
+        "ortho_scale": 6.400000095367432
+      },
+      "lights": [
+        {
+          "name": "Key",
+          "type": "AREA",
+          "watts": 1250.0,
+          "size": 4.0,
+          "color": [
+            0.94,
+            0.97,
+            1.0
+          ],
+          "location": [
+            -3.5,
+            -4.5,
+            5.5
+          ],
+          "rotation_xyz_radians": [
+            0.846399,
+            0.0,
+            -0.645219
+          ]
+        },
+        {
+          "name": "Fill",
+          "type": "AREA",
+          "watts": 350.0,
+          "size": 4.5,
+          "color": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "location": [
+            4.0,
+            -3.0,
+            3.0
+          ],
+          "rotation_xyz_radians": [
+            1.090896,
+            -0.0,
+            0.903724
+          ]
+        },
+        {
+          "name": "Rim",
+          "type": "AREA",
+          "watts": 900.0,
+          "size": 2.5,
+          "color": [
+            0.8,
+            0.9,
+            1.0
+          ],
+          "location": [
+            1.0,
+            3.5,
+            4.5
+          ],
+          "rotation_xyz_radians": [
+            0.700081,
+            -0.0,
+            2.851506
+          ]
+        }
+      ],
+      "root_transforms": [
+        {
+          "name": "wdg_root_square",
+          "type": "MESH",
+          "location": [
+            -1.758839,
+            0.150258,
+            -0.074143
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.896425,
+            1.896425,
+            1.896425
+          ]
+        },
+        {
+          "name": "wdg_pole",
+          "type": "MESH",
+          "location": [
+            -1.758839,
+            0.150258,
+            -0.074143
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            0.0,
+            -0.174533
+          ],
+          "scale": [
+            1.896425,
+            1.896425,
+            1.896425
+          ]
+        },
+        {
+          "name": "rig_security_camera_01",
+          "type": "ARMATURE",
+          "location": [
+            -1.758839,
+            0.150258,
+            -0.074143
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            0.0,
+            -0.174533
+          ],
+          "scale": [
+            1.896425,
+            1.896425,
+            1.896425
+          ]
+        },
+        {
+          "name": "Office monitor hp 27 inch black",
+          "type": "EMPTY",
+          "location": [
+            0.8,
+            0.279507,
+            -1.074856
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "scale": [
+            6.491098,
+            6.491098,
+            6.491098
+          ]
+        }
+      ],
+      "visible_geometry_count": 2,
+      "external_sources": [
+        "https://polyhaven.com/a/security_camera_01",
+        "https://www.blendkit.com/asset-gallery-detail/69e5d155-db39-4fbd-bd26-addfe8922c7b/"
+      ],
+      "unattributed_geometry": []
+    },
+    {
+      "scene_id": "construction-excavator-access",
+      "blend_sha256": "107c4933d5df1f3658397e3900f10837e0afae07b1e947fa1f1ac08a7da3fce5",
+      "render_sha256": "d72294cf9ff47ae70c988ae861c9103a72ba94540341fba92ce5ec1598a9fff3",
+      "resolution": [
+        1800,
+        1200
+      ],
+      "engine": "CYCLES",
+      "samples": 64,
+      "exposure_ev": 0.0,
+      "view_transform": "AgX",
+      "transparent": true,
+      "world": {
+        "color": [
+          0.08,
+          0.11,
+          0.16,
+          1.0
+        ],
+        "strength": 0.800000011920929
+      },
+      "camera": {
+        "location": [
+          11.333849,
+          -16.569927,
+          11.516459
+        ],
+        "rotation_xyz_radians": [
+          1.205431,
+          0.0,
+          0.691337
+        ],
+        "type": "ORTHO",
+        "ortho_scale": 16.267744064331055
+      },
+      "lights": [
+        {
+          "name": "Key",
+          "type": "AREA",
+          "watts": 5200.0,
+          "size": 9.85923957824707,
+          "color": [
+            0.92,
+            0.96,
+            1.0
+          ],
+          "location": [
+            -8.64823,
+            -10.369003,
+            18.409912
+          ],
+          "rotation_xyz_radians": [
+            0.675493,
+            -0.0,
+            -0.588002
+          ]
+        },
+        {
+          "name": "Fill",
+          "type": "AREA",
+          "watts": 3200.0,
+          "size": 8.62683391571045,
+          "color": [
+            1.0,
+            0.77,
+            0.55
+          ],
+          "location": [
+            14.147337,
+            -5.820757,
+            12.126549
+          ],
+          "rotation_xyz_radians": [
+            1.102389,
+            -0.0,
+            1.249046
+          ]
+        },
+        {
+          "name": "Rim",
+          "type": "AREA",
+          "watts": 6800.0,
+          "size": 7.3944292068481445,
+          "color": [
+            0.52,
+            0.72,
+            1.0
+          ],
+          "location": [
+            -3.811812,
+            12.092906,
+            17.815254
+          ],
+          "rotation_xyz_radians": [
+            0.723839,
+            -0.0,
+            -2.999696
+          ]
+        }
+      ],
+      "root_transforms": [
+        {
+          "name": "Plane_stash_0",
+          "type": "MESH",
+          "location": [
+            -4.120744,
+            -0.783106,
+            3.924026
+          ],
+          "rotation_xyz_radians": [
+            -1.457856,
+            0.0,
+            -1.291543
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "name": "Excavator Liebherr 956",
+          "type": "MESH",
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            -0.0,
+            0.279253
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "name": "Examples_035.024",
+          "type": "MESH",
+          "location": [
+            -4.861198,
+            -0.935813,
+            4.562716
+          ],
+          "rotation_xyz_radians": [
+            -1.850348,
+            1.570779,
+            0.0
+          ],
+          "scale": [
+            0.062089,
+            0.062089,
+            0.062089
+          ]
+        },
+        {
+          "name": "Examples_035.023",
+          "type": "MESH",
+          "location": [
+            -4.892143,
+            -0.944687,
+            4.562716
+          ],
+          "rotation_xyz_radians": [
+            -1.850348,
+            1.570779,
+            0.0
+          ],
+          "scale": [
+            0.062089,
+            0.062089,
+            0.062089
+          ]
+        },
+        {
+          "name": "Digger",
+          "type": "MESH",
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            -0.0,
+            0.279253
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ],
+      "visible_geometry_count": 164,
+      "external_sources": [
+        "construction-excavator-liebherr-956-2k.blend"
+      ],
+      "unattributed_geometry": []
+    },
+    {
+      "scene_id": "construction-site-entry-warning",
+      "blend_sha256": "503165c4ebb1c73debcd40e4dd9257dc41d2e75130439f06e87f0e2a78ade7f9",
+      "render_sha256": "4315c7f7d56763ee8cc681820c7a6f8290ebd4beca9beb5b1a08b5dada09c796",
+      "resolution": [
+        1800,
+        1200
+      ],
+      "engine": "CYCLES",
+      "samples": 64,
+      "exposure_ev": 0.4000000059604645,
+      "view_transform": "AgX",
+      "transparent": true,
+      "world": {
+        "color": [
+          0.08,
+          0.11,
+          0.16,
+          1.0
+        ],
+        "strength": 0.800000011920929
+      },
+      "camera": {
+        "location": [
+          9.378204,
+          -10.517512,
+          7.076426
+        ],
+        "rotation_xyz_radians": [
+          1.214734,
+          0.0,
+          0.691337
+        ],
+        "type": "ORTHO",
+        "ortho_scale": 9.613450050354004
+      },
+      "lights": [
+        {
+          "name": "Key",
+          "type": "AREA",
+          "watts": 4400.0,
+          "size": 4.369750022888184,
+          "color": [
+            0.92,
+            0.96,
+            1.0
+          ],
+          "location": [
+            -5.330043,
+            -5.969972,
+            11.938342
+          ],
+          "rotation_xyz_radians": [
+            0.694738,
+            0.0,
+            -0.643501
+          ]
+        },
+        {
+          "name": "Fill",
+          "type": "AREA",
+          "watts": 2800.0,
+          "size": 4.369750022888184,
+          "color": [
+            1.0,
+            0.8,
+            0.62
+          ],
+          "location": [
+            10.286271,
+            -3.838336,
+            8.74089
+          ],
+          "rotation_xyz_radians": [
+            1.009621,
+            0.0,
+            1.138388
+          ]
+        },
+        {
+          "name": "Rim",
+          "type": "AREA",
+          "watts": 6000.0,
+          "size": 5.24370002746582,
+          "color": [
+            0.55,
+            0.72,
+            1.0
+          ],
+          "location": [
+            -0.126794,
+            10.21053,
+            11.434883
+          ],
+          "rotation_xyz_radians": [
+            0.750929,
+            -0.0,
+            -3.141593
+          ]
+        }
+      ],
+      "root_transforms": [
+        {
+          "name": "Barrier with a security booth",
+          "type": "EMPTY",
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            0.0,
+            -0.139626
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ],
+      "visible_geometry_count": 8,
+      "external_sources": [
+        "construction-security-booth-barrier-1k.blend"
+      ],
+      "unattributed_geometry": []
+    },
+    {
+      "scene_id": "construction-tower-crane-operation",
+      "blend_sha256": "fa7436eae81a2ed88f7c4bd6cf9f9527c8bbbbd918fc1c9dd1b80d3f56a54c69",
+      "render_sha256": "f46b877815971d1e05fbc5539ad1885b87e7b8a734107bc98471f9c7fd127584",
+      "resolution": [
+        1800,
+        1200
+      ],
+      "engine": "CYCLES",
+      "samples": 64,
+      "exposure_ev": 3.0,
+      "view_transform": "AgX",
+      "transparent": true,
+      "world": {
+        "color": [
+          0.08,
+          0.11,
+          0.16,
+          1.0
+        ],
+        "strength": 0.800000011920929
+      },
+      "camera": {
+        "location": [
+          56.883358,
+          -78.677338,
+          58.262447
+        ],
+        "rotation_xyz_radians": [
+          1.186405,
+          -0.0,
+          0.709845
+        ],
+        "type": "ORTHO",
+        "ortho_scale": 84.99976348876953
+      },
+      "lights": [
+        {
+          "name": "Key",
+          "type": "AREA",
+          "watts": 7200.0,
+          "size": 96.83517456054688,
+          "color": [
+            0.93,
+            0.96,
+            1.0
+          ],
+          "location": [
+            -30.819157,
+            -49.088947,
+            89.34938
+          ],
+          "rotation_xyz_radians": [
+            0.621296,
+            -0.0,
+            -0.628796
+          ]
+        },
+        {
+          "name": "Fill",
+          "type": "AREA",
+          "watts": 3600.0,
+          "size": 80.69597625732422,
+          "color": [
+            1.0,
+            0.78,
+            0.58
+          ],
+          "location": [
+            62.281731,
+            -44.593399,
+            61.27071
+          ],
+          "rotation_xyz_radians": [
+            1.074249,
+            0.0,
+            1.076855
+          ]
+        },
+        {
+          "name": "Rim",
+          "type": "AREA",
+          "watts": 9200.0,
+          "size": 96.83517456054688,
+          "color": [
+            0.58,
+            0.75,
+            1.0
+          ],
+          "location": [
+            1.382724,
+            41.31028,
+            87.303864
+          ],
+          "rotation_xyz_radians": [
+            0.662277,
+            0.0,
+            3.070285
+          ]
+        }
+      ],
+      "root_transforms": [
+        {
+          "name": "Pasarelas",
+          "type": "MESH",
+          "location": [
+            0.0,
+            0.0,
+            -2.206411
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            0.0,
+            -0.226893
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "name": "EstructuraCopia",
+          "type": "MESH",
+          "location": [
+            0.0,
+            0.0,
+            -1.832866
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            0.0,
+            -0.226893
+          ],
+          "scale": [
+            1.050672,
+            1.050672,
+            1.050672
+          ]
+        },
+        {
+          "name": "Crane Tower",
+          "type": "EMPTY",
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            0.0,
+            -0.226893
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ],
+      "visible_geometry_count": 2,
+      "external_sources": [
+        "construction-tower-crane-2k.blend"
+      ],
+      "unattributed_geometry": []
+    },
+    {
+      "scene_id": "context-access-route",
+      "blend_sha256": "90d8c77f6c667f5a1cbeffc52fe9754f89ef924e97a5352bf2c536f67e80527d",
+      "render_sha256": "b2115c61ccbaa4fbfe513cd65c6c9ac8bf20060fa3b818f658a0a261309f7291",
+      "resolution": [
+        1800,
+        1200
+      ],
+      "engine": "CYCLES",
+      "samples": 64,
+      "exposure_ev": 0.0,
+      "view_transform": "AgX",
+      "transparent": true,
+      "world": {
+        "color": [
+          0.12,
+          0.15,
+          0.2,
+          1.0
+        ],
+        "strength": 0.4000000059604645
+      },
+      "camera": {
+        "location": [
+          3.0,
+          -9.0,
+          4.5
+        ],
+        "rotation_xyz_radians": [
+          1.127885,
+          0.0,
+          0.321751
+        ],
+        "type": "ORTHO",
+        "ortho_scale": 7.400000095367432
+      },
+      "lights": [
+        {
+          "name": "Key",
+          "type": "AREA",
+          "watts": 1100.0,
+          "size": 5.0,
+          "color": [
+            0.9,
+            0.96,
+            1.0
+          ],
+          "location": [
+            -3.0,
+            -4.0,
+            6.0
+          ],
+          "rotation_xyz_radians": [
+            0.694738,
+            -0.0,
+            -0.643501
+          ]
+        },
+        {
+          "name": "Fill",
+          "type": "AREA",
+          "watts": 650.0,
+          "size": 4.0,
+          "color": [
+            1.0,
+            0.88,
+            0.72
+          ],
+          "location": [
+            4.0,
+            -2.0,
+            2.0
+          ],
+          "rotation_xyz_radians": [
+            1.150262,
+            0.0,
+            1.107149
+          ]
+        },
+        {
+          "name": "Rim",
+          "type": "AREA",
+          "watts": 1400.0,
+          "size": 3.0,
+          "color": [
+            0.7,
+            0.84,
+            1.0
+          ],
+          "location": [
+            0.0,
+            4.0,
+            5.0
+          ],
+          "rotation_xyz_radians": [
+            0.674741,
+            -0.0,
+            -3.141593
+          ]
+        }
+      ],
+      "root_transforms": [
+        {
+          "name": "Turnstile",
+          "type": "EMPTY",
+          "location": [
+            0.0,
+            1.270593,
+            -1.75
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "scale": [
+            3.07785,
+            3.07785,
+            3.07785
+          ]
+        }
+      ],
+      "visible_geometry_count": 9,
+      "external_sources": [
+        "vendor/blendkit/36ec3219-5509-42f9-af43-b08ebe2152a6/model.blend"
+      ],
+      "unattributed_geometry": []
+    },
+    {
+      "scene_id": "context-attachment-check",
+      "blend_sha256": "499cc5d25801eb471e6d22ed8ea27792d8457cd71c2ff7f29024f564d7a9b367",
+      "render_sha256": "49a42b7ffafc9cf4c77a6e3bf1116cd9755ce65e90911b9e0021f9876290f814",
+      "resolution": [
+        1800,
+        1200
+      ],
+      "engine": "CYCLES",
+      "samples": 64,
+      "exposure_ev": 0.0,
+      "view_transform": "AgX",
+      "transparent": true,
+      "world": {
+        "color": [
+          0.12,
+          0.15,
+          0.2,
+          1.0
+        ],
+        "strength": 0.4000000059604645
+      },
+      "camera": {
+        "location": [
+          3.0,
+          -9.0,
+          4.5
+        ],
+        "rotation_xyz_radians": [
+          1.127885,
+          0.0,
+          0.321751
+        ],
+        "type": "ORTHO",
+        "ortho_scale": 6.400000095367432
+      },
+      "lights": [
+        {
+          "name": "Key",
+          "type": "AREA",
+          "watts": 1100.0,
+          "size": 5.0,
+          "color": [
+            0.9,
+            0.96,
+            1.0
+          ],
+          "location": [
+            -3.0,
+            -4.0,
+            6.0
+          ],
+          "rotation_xyz_radians": [
+            0.694738,
+            -0.0,
+            -0.643501
+          ]
+        },
+        {
+          "name": "Fill",
+          "type": "AREA",
+          "watts": 650.0,
+          "size": 4.0,
+          "color": [
+            1.0,
+            0.88,
+            0.72
+          ],
+          "location": [
+            4.0,
+            -2.0,
+            2.0
+          ],
+          "rotation_xyz_radians": [
+            1.150262,
+            0.0,
+            1.107149
+          ]
+        },
+        {
+          "name": "Rim",
+          "type": "AREA",
+          "watts": 1400.0,
+          "size": 3.0,
+          "color": [
+            0.7,
+            0.84,
+            1.0
+          ],
+          "location": [
+            0.0,
+            4.0,
+            5.0
+          ],
+          "rotation_xyz_radians": [
+            0.674741,
+            -0.0,
+            -3.141593
+          ]
+        }
+      ],
+      "root_transforms": [
+        {
+          "name": "Carabiner",
+          "type": "MESH",
+          "location": [
+            -1.282597,
+            -0.114161,
+            0.037704
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            -0.0,
+            0.261799
+          ],
+          "scale": [
+            84.866112,
+            84.866112,
+            84.866119
+          ]
+        },
+        {
+          "name": "Worn out construction helmet",
+          "type": "MESH",
+          "location": [
+            1.295612,
+            0.074624,
+            -0.535106
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            6.095973,
+            6.095973,
+            6.095973
+          ]
+        }
+      ],
+      "visible_geometry_count": 2,
+      "external_sources": [
+        "vendor/blendkit/5082ea09-d983-422a-b985-a37bf0c0bc08/model.blend",
+        "vendor/blendkit/3b9d3e13-0f83-4965-ace2-c3c1254fb90f/model.blend"
+      ],
+      "unattributed_geometry": []
+    },
+    {
+      "scene_id": "context-boundary-guidance",
+      "blend_sha256": "af6a0c275bc7c311c276b73232ed979c457c26d22cc25a98a5dcfcf02ac8fb24",
+      "render_sha256": "150806b22c740ef33880de25da997ab854b6e991bfefd3c22beb3ed2b6da4b81",
+      "resolution": [
+        1800,
+        1200
+      ],
+      "engine": "CYCLES",
+      "samples": 64,
+      "exposure_ev": 0.0,
+      "view_transform": "AgX",
+      "transparent": true,
+      "world": {
+        "color": [
+          0.12,
+          0.15,
+          0.2,
+          1.0
+        ],
+        "strength": 0.4000000059604645
+      },
+      "camera": {
+        "location": [
+          3.0,
+          -9.0,
+          4.5
+        ],
+        "rotation_xyz_radians": [
+          1.127885,
+          0.0,
+          0.321751
+        ],
+        "type": "ORTHO",
+        "ortho_scale": 6.400000095367432
+      },
+      "lights": [
+        {
+          "name": "Key",
+          "type": "AREA",
+          "watts": 1100.0,
+          "size": 5.0,
+          "color": [
+            0.9,
+            0.96,
+            1.0
+          ],
+          "location": [
+            -3.0,
+            -4.0,
+            6.0
+          ],
+          "rotation_xyz_radians": [
+            0.694738,
+            -0.0,
+            -0.643501
+          ]
+        },
+        {
+          "name": "Fill",
+          "type": "AREA",
+          "watts": 650.0,
+          "size": 4.0,
+          "color": [
+            1.0,
+            0.88,
+            0.72
+          ],
+          "location": [
+            4.0,
+            -2.0,
+            2.0
+          ],
+          "rotation_xyz_radians": [
+            1.150262,
+            0.0,
+            1.107149
+          ]
+        },
+        {
+          "name": "Rim",
+          "type": "AREA",
+          "watts": 1400.0,
+          "size": 3.0,
+          "color": [
+            0.7,
+            0.84,
+            1.0
+          ],
+          "location": [
+            0.0,
+            4.0,
+            5.0
+          ],
+          "rotation_xyz_radians": [
+            0.674741,
+            -0.0,
+            -3.141593
+          ]
+        }
+      ],
+      "root_transforms": [
+        {
+          "name": "concrete_road_barrier_LOD5",
+          "type": "MESH",
+          "location": [
+            0.005034,
+            0.063734,
+            -1.053723
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "scale": [
+            2.588399,
+            2.588399,
+            2.588399
+          ]
+        },
+        {
+          "name": "concrete_road_barrier_LOD4",
+          "type": "MESH",
+          "location": [
+            0.005034,
+            0.063734,
+            -1.053723
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "scale": [
+            2.588399,
+            2.588399,
+            2.588399
+          ]
+        },
+        {
+          "name": "concrete_road_barrier_LOD3",
+          "type": "MESH",
+          "location": [
+            0.005034,
+            0.063734,
+            -1.053723
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "scale": [
+            2.588399,
+            2.588399,
+            2.588399
+          ]
+        },
+        {
+          "name": "concrete_road_barrier_LOD2",
+          "type": "MESH",
+          "location": [
+            0.005034,
+            0.063734,
+            -1.053723
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "scale": [
+            2.588399,
+            2.588399,
+            2.588399
+          ]
+        },
+        {
+          "name": "concrete_road_barrier_LOD1",
+          "type": "MESH",
+          "location": [
+            0.005034,
+            0.063734,
+            -1.053723
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "scale": [
+            2.588399,
+            2.588399,
+            2.588399
+          ]
+        },
+        {
+          "name": "concrete_road_barrier_LOD0",
+          "type": "MESH",
+          "location": [
+            0.005034,
+            0.063734,
+            -1.053723
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "scale": [
+            2.588399,
+            2.588399,
+            2.588399
+          ]
+        }
+      ],
+      "visible_geometry_count": 1,
+      "external_sources": [
+        "vendor/polyhaven/concrete_road_barrier/concrete_road_barrier.blend"
+      ],
+      "unattributed_geometry": []
+    },
+    {
+      "scene_id": "context-broadcast-planning",
+      "blend_sha256": "204034d12add6240fb79cc4f00e16242934a77ebcd75ec0d8a7c0c855ca80628",
+      "render_sha256": "56098e05803adea2c781833f592ead558130efba98e1841a2222f4b4d41f8899",
+      "resolution": [
+        1800,
+        1200
+      ],
+      "engine": "CYCLES",
+      "samples": 64,
+      "exposure_ev": 0.0,
+      "view_transform": "AgX",
+      "transparent": true,
+      "world": {
+        "color": [
+          0.12,
+          0.15,
+          0.2,
+          1.0
+        ],
+        "strength": 0.4000000059604645
+      },
+      "camera": {
+        "location": [
+          3.0,
+          -9.0,
+          4.5
+        ],
+        "rotation_xyz_radians": [
+          1.127885,
+          0.0,
+          0.321751
+        ],
+        "type": "ORTHO",
+        "ortho_scale": 6.400000095367432
+      },
+      "lights": [
+        {
+          "name": "Key",
+          "type": "AREA",
+          "watts": 1100.0,
+          "size": 5.0,
+          "color": [
+            0.9,
+            0.96,
+            1.0
+          ],
+          "location": [
+            -3.0,
+            -4.0,
+            6.0
+          ],
+          "rotation_xyz_radians": [
+            0.694738,
+            -0.0,
+            -0.643501
+          ]
+        },
+        {
+          "name": "Fill",
+          "type": "AREA",
+          "watts": 650.0,
+          "size": 4.0,
+          "color": [
+            1.0,
+            0.88,
+            0.72
+          ],
+          "location": [
+            4.0,
+            -2.0,
+            2.0
+          ],
+          "rotation_xyz_radians": [
+            1.150262,
+            0.0,
+            1.107149
+          ]
+        },
+        {
+          "name": "Rim",
+          "type": "AREA",
+          "watts": 1400.0,
+          "size": 3.0,
+          "color": [
+            0.7,
+            0.84,
+            1.0
+          ],
+          "location": [
+            0.0,
+            4.0,
+            5.0
+          ],
+          "rotation_xyz_radians": [
+            0.674741,
+            -0.0,
+            -3.141593
+          ]
+        }
+      ],
+      "root_transforms": [
+        {
+          "name": "Megaphone_01",
+          "type": "MESH",
+          "location": [
+            -0.81577,
+            -0.049668,
+            0.239802
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            0.0,
+            -0.174533
+          ],
+          "scale": [
+            6.744625,
+            6.744625,
+            6.744625
+          ]
+        },
+        {
+          "name": "clipboard",
+          "type": "MESH",
+          "location": [
+            1.299054,
+            0.194637,
+            -0.135651
+          ],
+          "rotation_xyz_radians": [
+            0.436332,
+            0.0,
+            -0.174533
+          ],
+          "scale": [
+            6.536916,
+            6.536916,
+            6.536917
+          ]
+        }
+      ],
+      "visible_geometry_count": 2,
+      "external_sources": [
+        "vendor/polyhaven/Megaphone_01/Megaphone_01.blend",
+        "vendor/polyhaven/clipboard/clipboard.blend"
+      ],
+      "unattributed_geometry": []
+    },
+    {
+      "scene_id": "context-field-broadcast",
+      "blend_sha256": "b1027b28dd1305a26a88506bfdf8c1722111bfd33d0da1a37db9b1c1fd081b68",
+      "render_sha256": "f4b8fb5449d59512b901254f7ab1b54559e8871d813bc9ff1619db44044585f8",
+      "resolution": [
+        1800,
+        1200
+      ],
+      "engine": "CYCLES",
+      "samples": 64,
+      "exposure_ev": 0.0,
+      "view_transform": "AgX",
+      "transparent": true,
+      "world": {
+        "color": [
+          0.12,
+          0.15,
+          0.2,
+          1.0
+        ],
+        "strength": 0.4000000059604645
+      },
+      "camera": {
+        "location": [
+          3.0,
+          -9.0,
+          4.5
+        ],
+        "rotation_xyz_radians": [
+          1.127885,
+          0.0,
+          0.321751
+        ],
+        "type": "ORTHO",
+        "ortho_scale": 6.400000095367432
+      },
+      "lights": [
+        {
+          "name": "Key",
+          "type": "AREA",
+          "watts": 1100.0,
+          "size": 5.0,
+          "color": [
+            0.9,
+            0.96,
+            1.0
+          ],
+          "location": [
+            -3.0,
+            -4.0,
+            6.0
+          ],
+          "rotation_xyz_radians": [
+            0.694738,
+            -0.0,
+            -0.643501
+          ]
+        },
+        {
+          "name": "Fill",
+          "type": "AREA",
+          "watts": 650.0,
+          "size": 4.0,
+          "color": [
+            1.0,
+            0.88,
+            0.72
+          ],
+          "location": [
+            4.0,
+            -2.0,
+            2.0
+          ],
+          "rotation_xyz_radians": [
+            1.150262,
+            0.0,
+            1.107149
+          ]
+        },
+        {
+          "name": "Rim",
+          "type": "AREA",
+          "watts": 1400.0,
+          "size": 3.0,
+          "color": [
+            0.7,
+            0.84,
+            1.0
+          ],
+          "location": [
+            0.0,
+            4.0,
+            5.0
+          ],
+          "rotation_xyz_radians": [
+            0.674741,
+            -0.0,
+            -3.141593
+          ]
+        }
+      ],
+      "root_transforms": [
+        {
+          "name": "Megaphone_01",
+          "type": "MESH",
+          "location": [
+            0.334584,
+            -0.089101,
+            0.287762
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            0.0,
+            -0.261799
+          ],
+          "scale": [
+            8.09355,
+            8.09355,
+            8.093551
+          ]
+        }
+      ],
+      "visible_geometry_count": 1,
+      "external_sources": [
+        "vendor/polyhaven/Megaphone_01/Megaphone_01.blend"
+      ],
+      "unattributed_geometry": []
+    },
+    {
+      "scene_id": "context-network-connection",
+      "blend_sha256": "b65319b7b42e53a5fd06b991d76f4099ea2e143635a2f073f62995ea249e30d4",
+      "render_sha256": "2298ab1f8a0f24b230e909161e16262a411033140737ab8b3ebff0cc0ec3c2a3",
+      "resolution": [
+        1800,
+        1200
+      ],
+      "engine": "CYCLES",
+      "samples": 64,
+      "exposure_ev": 0.0,
+      "view_transform": "AgX",
+      "transparent": true,
+      "world": {
+        "color": [
+          0.12,
+          0.15,
+          0.2,
+          1.0
+        ],
+        "strength": 0.4000000059604645
+      },
+      "camera": {
+        "location": [
+          3.0,
+          -9.0,
+          4.5
+        ],
+        "rotation_xyz_radians": [
+          1.127885,
+          0.0,
+          0.321751
+        ],
+        "type": "ORTHO",
+        "ortho_scale": 6.400000095367432
+      },
+      "lights": [
+        {
+          "name": "Key",
+          "type": "AREA",
+          "watts": 1100.0,
+          "size": 5.0,
+          "color": [
+            0.9,
+            0.96,
+            1.0
+          ],
+          "location": [
+            -3.0,
+            -4.0,
+            6.0
+          ],
+          "rotation_xyz_radians": [
+            0.694738,
+            -0.0,
+            -0.643501
+          ]
+        },
+        {
+          "name": "Fill",
+          "type": "AREA",
+          "watts": 650.0,
+          "size": 4.0,
+          "color": [
+            1.0,
+            0.88,
+            0.72
+          ],
+          "location": [
+            4.0,
+            -2.0,
+            2.0
+          ],
+          "rotation_xyz_radians": [
+            1.150262,
+            0.0,
+            1.107149
+          ]
+        },
+        {
+          "name": "Rim",
+          "type": "AREA",
+          "watts": 1400.0,
+          "size": 3.0,
+          "color": [
+            0.7,
+            0.84,
+            1.0
+          ],
+          "location": [
+            0.0,
+            4.0,
+            5.0
+          ],
+          "rotation_xyz_radians": [
+            0.674741,
+            -0.0,
+            -3.141593
+          ]
+        }
+      ],
+      "root_transforms": [
+        {
+          "name": "Tplink router Archer C5 AC1200",
+          "type": "EMPTY",
+          "location": [
+            -1.353125,
+            0.344918,
+            -0.832294
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            -0.0,
+            3.141593
+          ],
+          "scale": [
+            8.240093,
+            8.240093,
+            8.240093
+          ]
+        },
+        {
+          "name": "Tplink router Archer C5 AC1200.001",
+          "type": "EMPTY",
+          "location": [
+            1.446875,
+            0.344918,
+            -0.832294
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            -0.0,
+            3.141593
+          ],
+          "scale": [
+            8.240093,
+            8.240093,
+            8.240093
+          ]
+        }
+      ],
+      "visible_geometry_count": 18,
+      "external_sources": [
+        "vendor/blendkit/fbadd47b-a2c2-44c4-b0a2-9a9d3b973ebf/model.blend"
+      ],
+      "unattributed_geometry": []
+    },
+    {
+      "scene_id": "context-prework-record",
+      "blend_sha256": "e0b4fcc00515cc928645cfcf75c5305eac032ae67c366cf9af3d95334134e63f",
+      "render_sha256": "d2580387f43c54bd576302c37b683493813fed79d75733455f7bfbfac006776d",
+      "resolution": [
+        1800,
+        1200
+      ],
+      "engine": "CYCLES",
+      "samples": 64,
+      "exposure_ev": 0.0,
+      "view_transform": "AgX",
+      "transparent": true,
+      "world": {
+        "color": [
+          0.12,
+          0.15,
+          0.2,
+          1.0
+        ],
+        "strength": 0.4000000059604645
+      },
+      "camera": {
+        "location": [
+          3.0,
+          -9.0,
+          4.5
+        ],
+        "rotation_xyz_radians": [
+          1.127885,
+          0.0,
+          0.321751
+        ],
+        "type": "ORTHO",
+        "ortho_scale": 6.400000095367432
+      },
+      "lights": [
+        {
+          "name": "Key",
+          "type": "AREA",
+          "watts": 1100.0,
+          "size": 5.0,
+          "color": [
+            0.9,
+            0.96,
+            1.0
+          ],
+          "location": [
+            -3.0,
+            -4.0,
+            6.0
+          ],
+          "rotation_xyz_radians": [
+            0.694738,
+            -0.0,
+            -0.643501
+          ]
+        },
+        {
+          "name": "Fill",
+          "type": "AREA",
+          "watts": 650.0,
+          "size": 4.0,
+          "color": [
+            1.0,
+            0.88,
+            0.72
+          ],
+          "location": [
+            4.0,
+            -2.0,
+            2.0
+          ],
+          "rotation_xyz_radians": [
+            1.150262,
+            0.0,
+            1.107149
+          ]
+        },
+        {
+          "name": "Rim",
+          "type": "AREA",
+          "watts": 1400.0,
+          "size": 3.0,
+          "color": [
+            0.7,
+            0.84,
+            1.0
+          ],
+          "location": [
+            0.0,
+            4.0,
+            5.0
+          ],
+          "rotation_xyz_radians": [
+            0.674741,
+            -0.0,
+            -3.141593
+          ]
+        }
+      ],
+      "root_transforms": [
+        {
+          "name": "Worn out construction helmet",
+          "type": "MESH",
+          "location": [
+            -1.304388,
+            0.074624,
+            -0.435106
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            6.095973,
+            6.095973,
+            6.095973
+          ]
+        },
+        {
+          "name": "clipboard",
+          "type": "MESH",
+          "location": [
+            1.001957,
+            0.307304,
+            -0.160265
+          ],
+          "rotation_xyz_radians": [
+            0.523599,
+            -0.0,
+            -0.261799
+          ],
+          "scale": [
+            7.725446,
+            7.725447,
+            7.725447
+          ]
+        }
+      ],
+      "visible_geometry_count": 2,
+      "external_sources": [
+        "vendor/blendkit/3b9d3e13-0f83-4965-ace2-c3c1254fb90f/model.blend",
+        "vendor/polyhaven/clipboard/clipboard.blend"
+      ],
+      "unattributed_geometry": []
+    },
+    {
+      "scene_id": "context-record-review",
+      "blend_sha256": "736e384756db500d9d22e3e662769edaed324662c8fc635f0f58a221f4a57b3f",
+      "render_sha256": "8641eef08163f7d4095ceee3751de42d801c3fc0158cecc353d142c602e3caa5",
+      "resolution": [
+        1800,
+        1200
+      ],
+      "engine": "CYCLES",
+      "samples": 64,
+      "exposure_ev": 0.0,
+      "view_transform": "AgX",
+      "transparent": true,
+      "world": {
+        "color": [
+          0.12,
+          0.15,
+          0.2,
+          1.0
+        ],
+        "strength": 0.4000000059604645
+      },
+      "camera": {
+        "location": [
+          3.0,
+          -9.0,
+          4.5
+        ],
+        "rotation_xyz_radians": [
+          1.127885,
+          0.0,
+          0.321751
+        ],
+        "type": "ORTHO",
+        "ortho_scale": 5.0
+      },
+      "lights": [
+        {
+          "name": "Key",
+          "type": "AREA",
+          "watts": 1100.0,
+          "size": 5.0,
+          "color": [
+            0.9,
+            0.96,
+            1.0
+          ],
+          "location": [
+            -3.0,
+            -4.0,
+            6.0
+          ],
+          "rotation_xyz_radians": [
+            0.694738,
+            -0.0,
+            -0.643501
+          ]
+        },
+        {
+          "name": "Fill",
+          "type": "AREA",
+          "watts": 650.0,
+          "size": 4.0,
+          "color": [
+            1.0,
+            0.88,
+            0.72
+          ],
+          "location": [
+            4.0,
+            -2.0,
+            2.0
+          ],
+          "rotation_xyz_radians": [
+            1.150262,
+            0.0,
+            1.107149
+          ]
+        },
+        {
+          "name": "Rim",
+          "type": "AREA",
+          "watts": 1400.0,
+          "size": 3.0,
+          "color": [
+            0.7,
+            0.84,
+            1.0
+          ],
+          "location": [
+            0.0,
+            4.0,
+            5.0
+          ],
+          "rotation_xyz_radians": [
+            0.674741,
+            -0.0,
+            -3.141593
+          ]
+        }
+      ],
+      "root_transforms": [
+        {
+          "name": "clipboard",
+          "type": "MESH",
+          "location": [
+            -0.001289,
+            -0.007313,
+            -0.184978
+          ],
+          "rotation_xyz_radians": [
+            0.436332,
+            0.0,
+            -0.174533
+          ],
+          "scale": [
+            8.913977,
+            8.913976,
+            8.913977
+          ]
+        }
+      ],
+      "visible_geometry_count": 1,
+      "external_sources": [
+        "vendor/polyhaven/clipboard/clipboard.blend"
+      ],
+      "unattributed_geometry": []
+    },
+    {
+      "scene_id": "context-safety-preparation",
+      "blend_sha256": "b458a94c2883efb3830a4d0a88fa334f0bbc1fb9c43e359efedc54a3a6630755",
+      "render_sha256": "ada2d40661729e6f67afb3d1617f5a1ddb7209c6accbdb932c2f351b39509467",
+      "resolution": [
+        1800,
+        1200
+      ],
+      "engine": "CYCLES",
+      "samples": 64,
+      "exposure_ev": 0.0,
+      "view_transform": "AgX",
+      "transparent": true,
+      "world": {
+        "color": [
+          0.12,
+          0.15,
+          0.2,
+          1.0
+        ],
+        "strength": 0.4000000059604645
+      },
+      "camera": {
+        "location": [
+          3.0,
+          -9.0,
+          4.5
+        ],
+        "rotation_xyz_radians": [
+          1.127885,
+          0.0,
+          0.321751
+        ],
+        "type": "ORTHO",
+        "ortho_scale": 6.0
+      },
+      "lights": [
+        {
+          "name": "Key",
+          "type": "AREA",
+          "watts": 1100.0,
+          "size": 5.0,
+          "color": [
+            0.9,
+            0.96,
+            1.0
+          ],
+          "location": [
+            -3.0,
+            -4.0,
+            6.0
+          ],
+          "rotation_xyz_radians": [
+            0.694738,
+            -0.0,
+            -0.643501
+          ]
+        },
+        {
+          "name": "Fill",
+          "type": "AREA",
+          "watts": 650.0,
+          "size": 4.0,
+          "color": [
+            1.0,
+            0.88,
+            0.72
+          ],
+          "location": [
+            4.0,
+            -2.0,
+            2.0
+          ],
+          "rotation_xyz_radians": [
+            1.150262,
+            0.0,
+            1.107149
+          ]
+        },
+        {
+          "name": "Rim",
+          "type": "AREA",
+          "watts": 1400.0,
+          "size": 3.0,
+          "color": [
+            0.7,
+            0.84,
+            1.0
+          ],
+          "location": [
+            0.0,
+            4.0,
+            5.0
+          ],
+          "rotation_xyz_radians": [
+            0.674741,
+            -0.0,
+            -3.141593
+          ]
+        }
+      ],
+      "root_transforms": [
+        {
+          "name": "Worn out construction helmet",
+          "type": "MESH",
+          "location": [
+            -1.255363,
+            0.091207,
+            -0.554018
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            7.450634,
+            7.450634,
+            7.450634
+          ]
+        },
+        {
+          "name": "garden_gloves_01",
+          "type": "MESH",
+          "location": [
+            1.208802,
+            0.142501,
+            -0.240903
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            0.0,
+            -0.261799
+          ],
+          "scale": [
+            6.353614,
+            6.353614,
+            6.353614
+          ]
+        }
+      ],
+      "visible_geometry_count": 2,
+      "external_sources": [
+        "vendor/blendkit/3b9d3e13-0f83-4965-ace2-c3c1254fb90f/model.blend",
+        "vendor/polyhaven/garden_gloves_01/garden_gloves_01.blend"
+      ],
+      "unattributed_geometry": []
+    },
+    {
+      "scene_id": "context-site-lighting",
+      "blend_sha256": "858b2956b254c1ceb84f6e20aae78d433c0d268108ca74fe5ccb85572d0a09e5",
+      "render_sha256": "1d41f46962d651c0a00226c5913a6b9a9362f55030c6640e5cd8cbf46692a481",
+      "resolution": [
+        1800,
+        1200
+      ],
+      "engine": "CYCLES",
+      "samples": 64,
+      "exposure_ev": 0.0,
+      "view_transform": "AgX",
+      "transparent": true,
+      "world": {
+        "color": [
+          0.12,
+          0.15,
+          0.2,
+          1.0
+        ],
+        "strength": 0.4000000059604645
+      },
+      "camera": {
+        "location": [
+          3.0,
+          -9.0,
+          4.5
+        ],
+        "rotation_xyz_radians": [
+          1.127885,
+          0.0,
+          0.321751
+        ],
+        "type": "ORTHO",
+        "ortho_scale": 4.5
+      },
+      "lights": [
+        {
+          "name": "Key",
+          "type": "AREA",
+          "watts": 1100.0,
+          "size": 5.0,
+          "color": [
+            0.9,
+            0.96,
+            1.0
+          ],
+          "location": [
+            -3.0,
+            -4.0,
+            6.0
+          ],
+          "rotation_xyz_radians": [
+            0.694738,
+            -0.0,
+            -0.643501
+          ]
+        },
+        {
+          "name": "Fill",
+          "type": "AREA",
+          "watts": 650.0,
+          "size": 4.0,
+          "color": [
+            1.0,
+            0.88,
+            0.72
+          ],
+          "location": [
+            4.0,
+            -2.0,
+            2.0
+          ],
+          "rotation_xyz_radians": [
+            1.150262,
+            0.0,
+            1.107149
+          ]
+        },
+        {
+          "name": "Rim",
+          "type": "AREA",
+          "watts": 1400.0,
+          "size": 3.0,
+          "color": [
+            0.7,
+            0.84,
+            1.0
+          ],
+          "location": [
+            0.0,
+            4.0,
+            5.0
+          ],
+          "rotation_xyz_radians": [
+            0.674741,
+            -0.0,
+            -3.141593
+          ]
+        }
+      ],
+      "root_transforms": [
+        {
+          "name": "LED Work Light",
+          "type": "EMPTY",
+          "location": [
+            0.092227,
+            -0.789527,
+            -0.639686
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "scale": [
+            1.11728,
+            1.11728,
+            1.11728
+          ]
+        }
+      ],
+      "visible_geometry_count": 32,
+      "external_sources": [
+        "vendor/blendkit/55bbf9ad-2d64-402d-9706-aa11f31a5e96/model.blend"
+      ],
+      "unattributed_geometry": []
+    },
+    {
+      "scene_id": "digital-radio-1",
+      "blend_sha256": "917113e8c8b8ed796f7d4e10438726515b644ea87c4da99a98e45dc8773df1db",
+      "render_sha256": "e52f1b16922d713b57e720eb6d0fb13eb63d1a55f13eaf8cd3a2a12bb5fe57e6",
+      "resolution": [
+        1800,
+        1200
+      ],
+      "engine": "CYCLES",
+      "samples": 64,
+      "exposure_ev": 0.0,
+      "view_transform": "AgX",
+      "transparent": true,
+      "world": {
+        "color": [
+          0.12,
+          0.15,
+          0.2,
+          1.0
+        ],
+        "strength": 0.4000000059604645
+      },
+      "camera": {
+        "location": [
+          0.0,
+          -10.0,
+          1.0
+        ],
+        "rotation_xyz_radians": [
+          1.471128,
+          -0.0,
+          0.0
+        ],
+        "type": "ORTHO",
+        "ortho_scale": 6.599999904632568
+      },
+      "lights": [
+        {
+          "name": "White Key",
+          "type": "AREA",
+          "watts": 1000.0,
+          "size": 4.0,
+          "color": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "location": [
+            -3.0,
+            -4.0,
+            5.0
+          ],
+          "rotation_xyz_radians": [
+            0.785398,
+            0.0,
+            -0.643501
+          ]
+        },
+        {
+          "name": "Fill",
+          "type": "AREA",
+          "watts": 900.0,
+          "size": 4.0,
+          "color": [
+            0.9,
+            0.96,
+            1.0
+          ],
+          "location": [
+            3.0,
+            -4.0,
+            2.0
+          ],
+          "rotation_xyz_radians": [
+            1.19029,
+            -0.0,
+            0.643501
+          ]
+        },
+        {
+          "name": "Rim",
+          "type": "AREA",
+          "watts": 1200.0,
+          "size": 2.0,
+          "color": [
+            0.72,
+            0.84,
+            1.0
+          ],
+          "location": [
+            3.0,
+            3.0,
+            3.0
+          ],
+          "rotation_xyz_radians": [
+            0.955317,
+            -0.0,
+            2.356194
+          ]
+        }
+      ],
+      "root_transforms": [
+        {
+          "name": "Handheld Walkie Talkie",
+          "type": "MESH",
+          "location": [
+            -1.963701,
+            0.003371,
+            -0.675679
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            -0.0,
+            1.570796
+          ],
+          "scale": [
+            8.824781,
+            8.824781,
+            8.824781
+          ]
+        },
+        {
+          "name": "Handheld Walkie Talkie.001",
+          "type": "MESH",
+          "location": [
+            0.132266,
+            0.002997,
+            -0.600604
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            -0.0,
+            1.570796
+          ],
+          "scale": [
+            7.844251,
+            7.844251,
+            7.844251
+          ]
+        },
+        {
+          "name": "Handheld Walkie Talkie.002",
+          "type": "MESH",
+          "location": [
+            1.232266,
+            0.002997,
+            -0.600604
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            -0.0,
+            1.570796
+          ],
+          "scale": [
+            7.844251,
+            7.844251,
+            7.844251
+          ]
+        },
+        {
+          "name": "Handheld Walkie Talkie.003",
+          "type": "MESH",
+          "location": [
+            2.332266,
+            0.002997,
+            -0.600604
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            -0.0,
+            1.570796
+          ],
+          "scale": [
+            7.844251,
+            7.844251,
+            7.844251
+          ]
+        }
+      ],
+      "visible_geometry_count": 4,
+      "external_sources": [
+        "vendor/blendkit/d192855d-fcf2-4ada-bd3e-7b2a17bcdf90/model.blend"
+      ],
+      "unattributed_geometry": []
+    },
+    {
+      "scene_id": "digital-radio-2",
+      "blend_sha256": "9f602e28c99b52535c23b3efedc21afa12f42fc558bf849db671f5c5671f5f82",
+      "render_sha256": "52578acaeed8b4cfe790c803d33553af7d9c7f0fc9971dead4fce9de6bcb8c4b",
+      "resolution": [
+        1800,
+        1200
+      ],
+      "engine": "CYCLES",
+      "samples": 64,
+      "exposure_ev": 0.0,
+      "view_transform": "AgX",
+      "transparent": true,
+      "world": {
+        "color": [
+          0.12,
+          0.15,
+          0.2,
+          1.0
+        ],
+        "strength": 0.4000000059604645
+      },
+      "camera": {
+        "location": [
+          0.0,
+          -10.0,
+          1.0
+        ],
+        "rotation_xyz_radians": [
+          1.471128,
+          -0.0,
+          0.0
+        ],
+        "type": "ORTHO",
+        "ortho_scale": 6.599999904632568
+      },
+      "lights": [
+        {
+          "name": "White Key",
+          "type": "AREA",
+          "watts": 1000.0,
+          "size": 4.0,
+          "color": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "location": [
+            -3.0,
+            -4.0,
+            5.0
+          ],
+          "rotation_xyz_radians": [
+            0.785398,
+            0.0,
+            -0.643501
+          ]
+        },
+        {
+          "name": "Fill",
+          "type": "AREA",
+          "watts": 900.0,
+          "size": 4.0,
+          "color": [
+            0.9,
+            0.96,
+            1.0
+          ],
+          "location": [
+            3.0,
+            -4.0,
+            2.0
+          ],
+          "rotation_xyz_radians": [
+            1.19029,
+            -0.0,
+            0.643501
+          ]
+        },
+        {
+          "name": "Rim",
+          "type": "AREA",
+          "watts": 1200.0,
+          "size": 2.0,
+          "color": [
+            0.72,
+            0.84,
+            1.0
+          ],
+          "location": [
+            3.0,
+            3.0,
+            3.0
+          ],
+          "rotation_xyz_radians": [
+            0.955317,
+            -0.0,
+            2.356194
+          ]
+        }
+      ],
+      "root_transforms": [
+        {
+          "name": "Handheld Walkie Talkie",
+          "type": "MESH",
+          "location": [
+            -1.30429,
+            0.004245,
+            -0.850855
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            -0.0,
+            1.570796
+          ],
+          "scale": [
+            11.112688,
+            11.112688,
+            11.112688
+          ]
+        },
+        {
+          "name": "Handheld Walkie Talkie.001",
+          "type": "MESH",
+          "location": [
+            1.385493,
+            0.153296,
+            -0.660664
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            -0.0,
+            1.570796
+          ],
+          "scale": [
+            8.628675,
+            8.628675,
+            8.628675
+          ]
+        }
+      ],
+      "visible_geometry_count": 2,
+      "external_sources": [
+        "vendor/blendkit/d192855d-fcf2-4ada-bd3e-7b2a17bcdf90/model.blend"
+      ],
+      "unattributed_geometry": []
+    },
+    {
+      "scene_id": "digital-radio-3",
+      "blend_sha256": "6735373703a28567030f3b78257d43213e2a106f02bde668c93f262476c5c00a",
+      "render_sha256": "03463d8cccdcc17e202d2da658bbeea16780b6c8d684a6efa3ce2c2f3e25700c",
+      "resolution": [
+        1800,
+        1200
+      ],
+      "engine": "CYCLES",
+      "samples": 64,
+      "exposure_ev": 0.0,
+      "view_transform": "AgX",
+      "transparent": true,
+      "world": {
+        "color": [
+          0.12,
+          0.15,
+          0.2,
+          1.0
+        ],
+        "strength": 0.4000000059604645
+      },
+      "camera": {
+        "location": [
+          0.0,
+          -10.0,
+          1.0
+        ],
+        "rotation_xyz_radians": [
+          1.471128,
+          -0.0,
+          0.0
+        ],
+        "type": "ORTHO",
+        "ortho_scale": 6.599999904632568
+      },
+      "lights": [
+        {
+          "name": "White Key",
+          "type": "AREA",
+          "watts": 1000.0,
+          "size": 4.0,
+          "color": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "location": [
+            -3.0,
+            -4.0,
+            5.0
+          ],
+          "rotation_xyz_radians": [
+            0.785398,
+            0.0,
+            -0.643501
+          ]
+        },
+        {
+          "name": "Fill",
+          "type": "AREA",
+          "watts": 900.0,
+          "size": 4.0,
+          "color": [
+            0.9,
+            0.96,
+            1.0
+          ],
+          "location": [
+            3.0,
+            -4.0,
+            2.0
+          ],
+          "rotation_xyz_radians": [
+            1.19029,
+            -0.0,
+            0.643501
+          ]
+        },
+        {
+          "name": "Rim",
+          "type": "AREA",
+          "watts": 1200.0,
+          "size": 2.0,
+          "color": [
+            0.72,
+            0.84,
+            1.0
+          ],
+          "location": [
+            3.0,
+            3.0,
+            3.0
+          ],
+          "rotation_xyz_radians": [
+            0.955317,
+            -0.0,
+            2.356194
+          ]
+        }
+      ],
+      "root_transforms": [
+        {
+          "name": "Handheld Walkie Talkie",
+          "type": "MESH",
+          "location": [
+            -2.109667,
+            0.003746,
+            -0.750755
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            -0.0,
+            1.570796
+          ],
+          "scale": [
+            9.805313,
+            9.805313,
+            9.805313
+          ]
+        },
+        {
+          "name": "Handheld Walkie Talkie.001",
+          "type": "MESH",
+          "location": [
+            -0.519616,
+            0.182822,
+            -0.565568
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            -0.0,
+            1.570796
+          ],
+          "scale": [
+            7.386669,
+            7.386669,
+            7.386669
+          ]
+        },
+        {
+          "name": "Handheld Walkie Talkie.002",
+          "type": "MESH",
+          "location": [
+            0.780384,
+            0.082822,
+            -0.565568
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            -0.0,
+            1.570796
+          ],
+          "scale": [
+            7.386669,
+            7.386669,
+            7.386669
+          ]
+        },
+        {
+          "name": "Handheld Walkie Talkie.003",
+          "type": "MESH",
+          "location": [
+            2.080384,
+            0.182822,
+            -0.565568
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            -0.0,
+            1.570796
+          ],
+          "scale": [
+            7.386669,
+            7.386669,
+            7.386669
+          ]
+        }
+      ],
+      "visible_geometry_count": 4,
+      "external_sources": [
+        "vendor/blendkit/d192855d-fcf2-4ada-bd3e-7b2a17bcdf90/model.blend"
+      ],
+      "unattributed_geometry": []
+    },
+    {
+      "scene_id": "industrial-concrete-record",
+      "blend_sha256": "f749d11c23031056bf619709d2c8fc00f9d042ec5d4c5de3e46da8c1f5d70fc1",
+      "render_sha256": "6cdef54b6f1b7bbb45d0296c057d1b7bc6e45a07b473254b4592c9115d577188",
+      "resolution": [
+        1800,
+        1200
+      ],
+      "engine": "CYCLES",
+      "samples": 64,
+      "exposure_ev": -1.649999976158142,
+      "view_transform": "AgX",
+      "transparent": true,
+      "world": {
+        "color": [
+          0.07,
+          0.1,
+          0.15,
+          1.0
+        ],
+        "strength": 0.44999998807907104
+      },
+      "camera": {
+        "location": [
+          1.676627,
+          -2.835512,
+          1.56473
+        ],
+        "rotation_xyz_radians": [
+          1.223345,
+          0.0,
+          0.552841
+        ],
+        "type": "ORTHO",
+        "ortho_scale": 2.6580140590667725
+      },
+      "lights": [
+        {
+          "name": "Key",
+          "type": "AREA",
+          "watts": 1100.0,
+          "size": 1.3135534524917603,
+          "color": [
+            0.94,
+            0.97,
+            1.0
+          ],
+          "location": [
+            -1.16909,
+            -1.282213,
+            2.741385
+          ],
+          "rotation_xyz_radians": [
+            0.61548,
+            0.0,
+            -0.785398
+          ]
+        },
+        {
+          "name": "Fill",
+          "type": "AREA",
+          "watts": 500.0,
+          "size": 1.3135534524917603,
+          "color": [
+            1.0,
+            0.78,
+            0.55
+          ],
+          "location": [
+            1.648648,
+            -1.76566,
+            2.057687
+          ],
+          "rotation_xyz_radians": [
+            0.955317,
+            -0.0,
+            0.785398
+          ]
+        },
+        {
+          "name": "Rim",
+          "type": "AREA",
+          "watts": 1200.0,
+          "size": 1.3135534524917603,
+          "color": [
+            0.55,
+            0.75,
+            1.0
+          ],
+          "location": [
+            -0.001945,
+            1.163476,
+            2.964182
+          ],
+          "rotation_xyz_radians": [
+            0.463648,
+            -0.0,
+            -3.141593
+          ]
+        }
+      ],
+      "root_transforms": [
+        {
+          "name": "concrete_road_barrier_LOD5",
+          "type": "MESH",
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "name": "concrete_road_barrier_LOD4",
+          "type": "MESH",
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "name": "concrete_road_barrier_LOD3",
+          "type": "MESH",
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "name": "concrete_road_barrier_LOD2",
+          "type": "MESH",
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "name": "concrete_road_barrier_LOD1",
+          "type": "MESH",
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "name": "concrete_road_barrier_LOD0",
+          "type": "MESH",
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "name": "clipboard",
+          "type": "MESH",
+          "location": [
+            -0.36,
+            -0.36,
+            0.28
+          ],
+          "rotation_xyz_radians": [
+            1.22,
+            -0.0,
+            0.0
+          ],
+          "scale": [
+            1.8,
+            1.8,
+            1.8
+          ]
+        }
+      ],
+      "visible_geometry_count": 2,
+      "external_sources": [
+        "vendor/polyhaven/concrete_road_barrier/concrete_road_barrier.blend",
+        "vendor/polyhaven/clipboard/clipboard.blend"
+      ],
+      "unattributed_geometry": []
+    },
+    {
+      "scene_id": "industrial-pipe-inspection",
+      "blend_sha256": "ade3e38ab4306558c4ef0c06d798fb38d1317df895de946d4e0b90aed5341b07",
+      "render_sha256": "c94f6d72f17883fb00f40048cedc16668159a52ce73746275737178788d35e79",
+      "resolution": [
+        1800,
+        1200
+      ],
+      "engine": "CYCLES",
+      "samples": 64,
+      "exposure_ev": -2.450000047683716,
+      "view_transform": "AgX",
+      "transparent": true,
+      "world": {
+        "color": [
+          0.07,
+          0.1,
+          0.15,
+          1.0
+        ],
+        "strength": 0.44999998807907104
+      },
+      "camera": {
+        "location": [
+          0.430803,
+          -0.714705,
+          0.305036
+        ],
+        "rotation_xyz_radians": [
+          1.19695,
+          0.0,
+          0.543477
+        ],
+        "type": "ORTHO",
+        "ortho_scale": 0.7803875207901001
+      },
+      "lights": [
+        {
+          "name": "Key",
+          "type": "AREA",
+          "watts": 1100.0,
+          "size": 0.3220045566558838,
+          "color": [
+            0.94,
+            0.97,
+            1.0
+          ],
+          "location": [
+            -0.25652,
+            -0.336749,
+            0.572899
+          ],
+          "rotation_xyz_radians": [
+            0.61548,
+            0.0,
+            -0.785398
+          ]
+        },
+        {
+          "name": "Fill",
+          "type": "AREA",
+          "watts": 500.0,
+          "size": 0.3220045566558838,
+          "color": [
+            1.0,
+            0.78,
+            0.55
+          ],
+          "location": [
+            0.434221,
+            -0.455262,
+            0.405297
+          ],
+          "rotation_xyz_radians": [
+            0.955317,
+            -0.0,
+            0.785398
+          ]
+        },
+        {
+          "name": "Rim",
+          "type": "AREA",
+          "watts": 1200.0,
+          "size": 0.3220045566558838,
+          "color": [
+            0.55,
+            0.75,
+            1.0
+          ],
+          "location": [
+            0.029594,
+            0.262787,
+            0.627515
+          ],
+          "rotation_xyz_radians": [
+            0.463648,
+            -0.0,
+            -3.141593
+          ]
+        }
+      ],
+      "root_transforms": [
+        {
+          "name": "modular_industrial_pipes_01_pipe08",
+          "type": "MESH",
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "name": "modular_industrial_pipes_01_pipe07",
+          "type": "MESH",
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "name": "modular_industrial_pipes_01_pipe06",
+          "type": "MESH",
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "name": "modular_industrial_pipes_01_pipe05",
+          "type": "MESH",
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "name": "modular_industrial_pipes_01_pipe04",
+          "type": "MESH",
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "name": "modular_industrial_pipes_01_pipe03",
+          "type": "MESH",
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "name": "modular_industrial_pipes_01_pipe02",
+          "type": "MESH",
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "name": "modular_industrial_pipes_01_pipe01",
+          "type": "MESH",
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ],
+      "visible_geometry_count": 1,
+      "external_sources": [
+        "vendor/polyhaven/modular_industrial_pipes_01/modular_industrial_pipes_01.blend"
+      ],
+      "unattributed_geometry": []
+    },
+    {
+      "scene_id": "industrial-utility-management",
+      "blend_sha256": "55c91a9d2f9c21e3eedfefd741f6ef0125a40c42de0ba29765ccfd56ba96e7cb",
+      "render_sha256": "2c78e6b562687065b95604e35f0cec82f6340bb57076c58c43360d144abc4e56",
+      "resolution": [
+        1800,
+        1200
+      ],
+      "engine": "CYCLES",
+      "samples": 64,
+      "exposure_ev": -3.25,
+      "view_transform": "AgX",
+      "transparent": true,
+      "world": {
+        "color": [
+          0.07,
+          0.1,
+          0.15,
+          1.0
+        ],
+        "strength": 0.44999998807907104
+      },
+      "camera": {
+        "location": [
+          0.533822,
+          -0.885924,
+          0.41059
+        ],
+        "rotation_xyz_radians": [
+          1.190784,
+          -0.0,
+          0.543477
+        ],
+        "type": "ORTHO",
+        "ortho_scale": 1.0163483619689941
+      },
+      "lights": [
+        {
+          "name": "Key",
+          "type": "AREA",
+          "watts": 1100.0,
+          "size": 0.4276713728904724,
+          "color": [
+            0.94,
+            0.97,
+            1.0
+          ],
+          "location": [
+            -0.377749,
+            -0.386092,
+            0.760007
+          ],
+          "rotation_xyz_radians": [
+            0.61548,
+            0.0,
+            -0.785398
+          ]
+        },
+        {
+          "name": "Fill",
+          "type": "AREA",
+          "watts": 500.0,
+          "size": 0.4276713728904724,
+          "color": [
+            1.0,
+            0.78,
+            0.55
+          ],
+          "location": [
+            0.53966,
+            -0.543494,
+            0.537406
+          ],
+          "rotation_xyz_radians": [
+            0.955317,
+            -0.0,
+            0.785398
+          ]
+        },
+        {
+          "name": "Rim",
+          "type": "AREA",
+          "watts": 1200.0,
+          "size": 0.4276713728904724,
+          "color": [
+            0.55,
+            0.75,
+            1.0
+          ],
+          "location": [
+            0.002254,
+            0.410184,
+            0.832545
+          ],
+          "rotation_xyz_radians": [
+            0.463648,
+            -0.0,
+            -3.141593
+          ]
+        }
+      ],
+      "root_transforms": [
+        {
+          "name": "wdg_root_square",
+          "type": "MESH",
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "name": "wdg_arrow_double_bended",
+          "type": "MESH",
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "name": "wdg_arrow_double",
+          "type": "MESH",
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        {
+          "name": "rig_power_box_01",
+          "type": "ARMATURE",
+          "location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        }
+      ],
+      "visible_geometry_count": 2,
+      "external_sources": [
+        "vendor/polyhaven/power_box_01/power_box_01.blend"
+      ],
+      "unattributed_geometry": []
+    },
+    {
+      "scene_id": "industrial-work-zone",
+      "blend_sha256": "6baf95a58665bc736253d663ce7265e73efa19e2eecebcaa66fe23f4b178c67d",
+      "render_sha256": "fd4d5e5ceabf264399a9c8ee082c9121a6b3c3ed7242e01d0de93a6017a03ba7",
+      "resolution": [
+        1800,
+        1200
+      ],
+      "engine": "CYCLES",
+      "samples": 64,
+      "exposure_ev": -1.2000000476837158,
+      "view_transform": "AgX",
+      "transparent": true,
+      "world": {
+        "color": [
+          0.07,
+          0.1,
+          0.15,
+          1.0
+        ],
+        "strength": 0.44999998807907104
+      },
+      "camera": {
+        "location": [
+          1.981177,
+          -2.890974,
+          1.788421
+        ],
+        "rotation_xyz_radians": [
+          1.184255,
+          0.0,
+          0.564084
+        ],
+        "type": "ORTHO",
+        "ortho_scale": 2.6431338787078857
+      },
+      "lights": [
+        {
+          "name": "Key",
+          "type": "AREA",
+          "watts": 1100.0,
+          "size": 1.440169095993042,
+          "color": [
+            0.94,
+            0.97,
+            1.0
+          ],
+          "location": [
+            -1.144309,
+            -1.253007,
+            2.942499
+          ],
+          "rotation_xyz_radians": [
+            0.61548,
+            0.0,
+            -0.785398
+          ]
+        },
+        {
+          "name": "Fill",
+          "type": "AREA",
+          "watts": 500.0,
+          "size": 1.440169095993042,
+          "color": [
+            1.0,
+            0.78,
+            0.55
+          ],
+          "location": [
+            1.945035,
+            -1.783055,
+            2.192898
+          ],
+          "rotation_xyz_radians": [
+            0.955317,
+            -0.0,
+            0.785398
+          ]
+        },
+        {
+          "name": "Rim",
+          "type": "AREA",
+          "watts": 1200.0,
+          "size": 1.440169095993042,
+          "color": [
+            0.55,
+            0.75,
+            1.0
+          ],
+          "location": [
+            0.135339,
+            1.428426,
+            3.186771
+          ],
+          "rotation_xyz_radians": [
+            0.463647,
+            -0.0,
+            -3.141593
+          ]
+        }
+      ],
+      "root_transforms": [
+        {
+          "name": "concrete_road_barrier_LOD5",
+          "type": "MESH",
+          "location": [
+            -0.34,
+            0.0,
+            0.0
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "scale": [
+            0.48,
+            0.48,
+            0.48
+          ]
+        },
+        {
+          "name": "concrete_road_barrier_LOD4",
+          "type": "MESH",
+          "location": [
+            -0.34,
+            0.0,
+            0.0
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "scale": [
+            0.48,
+            0.48,
+            0.48
+          ]
+        },
+        {
+          "name": "concrete_road_barrier_LOD3",
+          "type": "MESH",
+          "location": [
+            -0.34,
+            0.0,
+            0.0
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "scale": [
+            0.48,
+            0.48,
+            0.48
+          ]
+        },
+        {
+          "name": "concrete_road_barrier_LOD2",
+          "type": "MESH",
+          "location": [
+            -0.34,
+            0.0,
+            0.0
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "scale": [
+            0.48,
+            0.48,
+            0.48
+          ]
+        },
+        {
+          "name": "concrete_road_barrier_LOD1",
+          "type": "MESH",
+          "location": [
+            -0.34,
+            0.0,
+            0.0
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "scale": [
+            0.48,
+            0.48,
+            0.48
+          ]
+        },
+        {
+          "name": "concrete_road_barrier_LOD0",
+          "type": "MESH",
+          "location": [
+            -0.34,
+            0.0,
+            0.0
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "scale": [
+            0.48,
+            0.48,
+            0.48
+          ]
+        },
+        {
+          "name": "wdg_root_square",
+          "type": "MESH",
+          "location": [
+            0.78,
+            -0.02,
+            0.54
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            2.55,
+            2.55,
+            2.55
+          ]
+        },
+        {
+          "name": "wdg_pole",
+          "type": "MESH",
+          "location": [
+            0.78,
+            -0.02,
+            0.54
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "scale": [
+            2.55,
+            2.55,
+            2.55
+          ]
+        },
+        {
+          "name": "rig_security_camera_01",
+          "type": "ARMATURE",
+          "location": [
+            0.78,
+            -0.02,
+            0.54
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "scale": [
+            2.55,
+            2.55,
+            2.55
+          ]
+        }
+      ],
+      "visible_geometry_count": 4,
+      "external_sources": [
+        "vendor/polyhaven/concrete_road_barrier/concrete_road_barrier.blend",
+        "vendor/polyhaven/security_camera_01/security_camera_01.blend"
+      ],
+      "unattributed_geometry": []
+    },
+    {
+      "scene_id": "office-document-comparison",
+      "blend_sha256": "6ded21d3e289ded711bab3a5f7fa9b5da75e709375541ad76ff4cd9eb7ec459b",
+      "render_sha256": "3656630d5fb4c0a3bfb6bb6c1ab9c565a897cb59d29ee60b6fe4904530d4f163",
+      "resolution": [
+        1800,
+        1200
+      ],
+      "engine": "CYCLES",
+      "samples": 64,
+      "exposure_ev": 0.0,
+      "view_transform": "AgX",
+      "transparent": true,
+      "world": {
+        "color": [
+          0.105,
+          0.135,
+          0.19,
+          1.0
+        ],
+        "strength": 0.41999998688697815
+      },
+      "camera": {
+        "location": [
+          4.0,
+          -6.0,
+          3.6
+        ],
+        "rotation_xyz_radians": [
+          1.135209,
+          0.0,
+          0.57259
+        ],
+        "type": "ORTHO",
+        "ortho_scale": 5.699999809265137
+      },
+      "lights": [
+        {
+          "name": "Key softbox",
+          "type": "AREA",
+          "watts": 1350.0,
+          "size": 5.5,
+          "color": [
+            0.9,
+            0.95,
+            1.0
+          ],
+          "location": [
+            -3.5,
+            -4.2,
+            6.3
+          ],
+          "rotation_xyz_radians": [
+            0.744094,
+            0.0,
+            -0.702784
+          ]
+        },
+        {
+          "name": "Warm review",
+          "type": "AREA",
+          "watts": 900.0,
+          "size": 4.0,
+          "color": [
+            1.0,
+            0.84,
+            0.68
+          ],
+          "location": [
+            4.0,
+            -2.0,
+            3.5
+          ],
+          "rotation_xyz_radians": [
+            0.935255,
+            0.0,
+            1.086847
+          ]
+        },
+        {
+          "name": "Blue edge",
+          "type": "AREA",
+          "watts": 1450.0,
+          "size": 3.0,
+          "color": [
+            0.6,
+            0.82,
+            1.0
+          ],
+          "location": [
+            0.0,
+            4.2,
+            5.5
+          ],
+          "rotation_xyz_radians": [
+            0.669048,
+            0.0,
+            -3.117501
+          ]
+        }
+      ],
+      "root_transforms": [
+        {
+          "name": "Office monitor hp 27 inch black",
+          "type": "EMPTY",
+          "location": [
+            1.273728,
+            0.351166,
+            -1.074856
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            -0.0,
+            0.139626
+          ],
+          "scale": [
+            6.491098,
+            6.491098,
+            6.491098
+          ]
+        },
+        {
+          "name": "clipboard",
+          "type": "MESH",
+          "location": [
+            -1.113688,
+            -0.309289,
+            -0.087898
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            0.0,
+            -0.226893
+          ],
+          "scale": [
+            6.38835,
+            6.38835,
+            6.38835
+          ]
+        },
+        {
+          "name": "clipboard.001",
+          "type": "MESH",
+          "location": [
+            -0.135519,
+            -0.847364,
+            -0.075964
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            -0.0,
+            0.296706
+          ],
+          "scale": [
+            5.199821,
+            5.199821,
+            5.19982
+          ]
+        }
+      ],
+      "visible_geometry_count": 3,
+      "external_sources": [
+        "https://www.blendkit.com/asset-gallery-detail/69e5d155-db39-4fbd-bd26-addfe8922c7b/",
+        "https://polyhaven.com/a/clipboard"
+      ],
+      "unattributed_geometry": []
+    },
+    {
+      "scene_id": "office-drone-record",
+      "blend_sha256": "3d2a42e9f2b5940f23564b6d9fdc088d533c5b4a9d1c805dd183d95937c5f0fa",
+      "render_sha256": "3e9d74d8d13f317fca1dcf0f179f19bc74594927b738a1557bb32119ae9541b1",
+      "resolution": [
+        1800,
+        1200
+      ],
+      "engine": "CYCLES",
+      "samples": 64,
+      "exposure_ev": 0.0,
+      "view_transform": "AgX",
+      "transparent": true,
+      "world": {
+        "color": [
+          0.105,
+          0.135,
+          0.19,
+          1.0
+        ],
+        "strength": 0.41999998688697815
+      },
+      "camera": {
+        "location": [
+          4.2,
+          -6.3,
+          3.7
+        ],
+        "rotation_xyz_radians": [
+          1.179145,
+          0.0,
+          0.580003
+        ],
+        "type": "ORTHO",
+        "ortho_scale": 5.800000190734863
+      },
+      "lights": [
+        {
+          "name": "Key softbox",
+          "type": "AREA",
+          "watts": 1350.0,
+          "size": 5.5,
+          "color": [
+            0.9,
+            0.95,
+            1.0
+          ],
+          "location": [
+            -3.5,
+            -4.2,
+            6.3
+          ],
+          "rotation_xyz_radians": [
+            0.76694,
+            -0.0,
+            -0.688269
+          ]
+        },
+        {
+          "name": "Warm review",
+          "type": "AREA",
+          "watts": 900.0,
+          "size": 4.0,
+          "color": [
+            1.0,
+            0.84,
+            0.68
+          ],
+          "location": [
+            4.0,
+            -2.0,
+            3.5
+          ],
+          "rotation_xyz_radians": [
+            0.989581,
+            -0.0,
+            1.089222
+          ]
+        },
+        {
+          "name": "Blue edge",
+          "type": "AREA",
+          "watts": 1450.0,
+          "size": 3.0,
+          "color": [
+            0.6,
+            0.82,
+            1.0
+          ],
+          "location": [
+            0.0,
+            4.2,
+            5.5
+          ],
+          "rotation_xyz_radians": [
+            0.694148,
+            -0.0,
+            -3.136738
+          ]
+        }
+      ],
+      "root_transforms": [
+        {
+          "name": "DJI Mavic 3 Classic Drone",
+          "type": "EMPTY",
+          "location": [
+            -0.699031,
+            0.159146,
+            0.858388
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            0.0,
+            -0.314159
+          ],
+          "scale": [
+            3.180229,
+            3.180229,
+            3.180229
+          ]
+        },
+        {
+          "name": "Office monitor hp 27 inch black",
+          "type": "EMPTY",
+          "location": [
+            1.272861,
+            0.375662,
+            -0.907019
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            -0.0,
+            0.15708
+          ],
+          "scale": [
+            5.563798,
+            5.563798,
+            5.563799
+          ]
+        },
+        {
+          "name": "clipboard",
+          "type": "MESH",
+          "location": [
+            0.309533,
+            -0.894847,
+            -0.058835
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            -0.0,
+            0.20944
+          ],
+          "scale": [
+            4.813548,
+            4.813548,
+            4.813548
+          ]
+        }
+      ],
+      "visible_geometry_count": 16,
+      "external_sources": [
+        "https://www.blendkit.com/asset-gallery-detail/bcbafb5a-a09f-4218-a05e-7b784476929d/",
+        "https://www.blendkit.com/asset-gallery-detail/69e5d155-db39-4fbd-bd26-addfe8922c7b/",
+        "https://polyhaven.com/a/clipboard"
+      ],
+      "unattributed_geometry": []
+    },
+    {
+      "scene_id": "office-integrated-review",
+      "blend_sha256": "caf6c0a1c8ceac677c3a308d08a05d6b4eed29d3f6617862818ae9cd9d7ddb36",
+      "render_sha256": "16dcdfcccaf8202913a6f675e001591199503de0cf5e4dba4f82b92dd04570fa",
+      "resolution": [
+        1800,
+        1200
+      ],
+      "engine": "CYCLES",
+      "samples": 64,
+      "exposure_ev": 0.0,
+      "view_transform": "AgX",
+      "transparent": true,
+      "world": {
+        "color": [
+          0.105,
+          0.135,
+          0.19,
+          1.0
+        ],
+        "strength": 0.41999998688697815
+      },
+      "camera": {
+        "location": [
+          4.2,
+          -6.4,
+          3.5
+        ],
+        "rotation_xyz_radians": [
+          1.171495,
+          0.0,
+          0.561352
+        ],
+        "type": "ORTHO",
+        "ortho_scale": 6.0
+      },
+      "lights": [
+        {
+          "name": "Key softbox",
+          "type": "AREA",
+          "watts": 1350.0,
+          "size": 5.5,
+          "color": [
+            0.9,
+            0.95,
+            1.0
+          ],
+          "location": [
+            -3.5,
+            -4.2,
+            6.3
+          ],
+          "rotation_xyz_radians": [
+            0.748868,
+            0.0,
+            -0.694738
+          ]
+        },
+        {
+          "name": "Warm review",
+          "type": "AREA",
+          "watts": 900.0,
+          "size": 4.0,
+          "color": [
+            1.0,
+            0.84,
+            0.68
+          ],
+          "location": [
+            4.0,
+            -2.0,
+            3.5
+          ],
+          "rotation_xyz_radians": [
+            0.938816,
+            -0.0,
+            1.072888
+          ]
+        },
+        {
+          "name": "Blue edge",
+          "type": "AREA",
+          "watts": 1450.0,
+          "size": 3.0,
+          "color": [
+            0.6,
+            0.82,
+            1.0
+          ],
+          "location": [
+            0.0,
+            4.2,
+            5.5
+          ],
+          "rotation_xyz_radians": [
+            0.660793,
+            0.0,
+            -3.117088
+          ]
+        }
+      ],
+      "root_transforms": [
+        {
+          "name": "Office monitor hp 27 inch black",
+          "type": "EMPTY",
+          "location": [
+            -1.221718,
+            0.412879,
+            -0.836668
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            0.0,
+            -0.15708
+          ],
+          "scale": [
+            5.285608,
+            5.285608,
+            5.285609
+          ]
+        },
+        {
+          "name": "Office monitor hp 27 inch black.001",
+          "type": "EMPTY",
+          "location": [
+            1.408864,
+            0.564204,
+            -0.836668
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            -0.0,
+            0.20944
+          ],
+          "scale": [
+            5.285609,
+            5.285609,
+            5.285609
+          ]
+        },
+        {
+          "name": "clipboard",
+          "type": "MESH",
+          "location": [
+            0.0,
+            -0.678019,
+            -0.082414
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "scale": [
+            6.091218,
+            6.091218,
+            6.091218
+          ]
+        },
+        {
+          "name": "wdg_root_square",
+          "type": "MESH",
+          "location": [
+            -0.000571,
+            0.242688,
+            -0.148183
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            2.438261,
+            2.438261,
+            2.438261
+          ]
+        },
+        {
+          "name": "wdg_pole",
+          "type": "MESH",
+          "location": [
+            -0.000571,
+            0.242688,
+            -0.148183
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            0.0,
+            -0.488692
+          ],
+          "scale": [
+            2.438261,
+            2.438261,
+            2.438261
+          ]
+        },
+        {
+          "name": "rig_security_camera_01",
+          "type": "ARMATURE",
+          "location": [
+            -0.000571,
+            0.242688,
+            -0.148183
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            0.0,
+            -0.488692
+          ],
+          "scale": [
+            2.438261,
+            2.438261,
+            2.438261
+          ]
+        }
+      ],
+      "visible_geometry_count": 4,
+      "external_sources": [
+        "https://www.blendkit.com/asset-gallery-detail/69e5d155-db39-4fbd-bd26-addfe8922c7b/",
+        "https://polyhaven.com/a/clipboard",
+        "https://polyhaven.com/a/security_camera_01"
+      ],
+      "unattributed_geometry": []
+    },
+    {
+      "scene_id": "office-training-briefing",
+      "blend_sha256": "da28714b6d61a099a86cb7d5d06a4e9f6421ad752f97074c1d5d072a11ec0852",
+      "render_sha256": "b107bf99d64fbfc13dd11937363f7b7705fc13c2cccd01608b3245655d594bf8",
+      "resolution": [
+        1800,
+        1200
+      ],
+      "engine": "CYCLES",
+      "samples": 64,
+      "exposure_ev": 0.0,
+      "view_transform": "AgX",
+      "transparent": true,
+      "world": {
+        "color": [
+          0.105,
+          0.135,
+          0.19,
+          1.0
+        ],
+        "strength": 0.41999998688697815
+      },
+      "camera": {
+        "location": [
+          4.3,
+          -6.5,
+          3.1
+        ],
+        "rotation_xyz_radians": [
+          1.241659,
+          -0.0,
+          0.583054
+        ],
+        "type": "ORTHO",
+        "ortho_scale": 5.699999809265137
+      },
+      "lights": [
+        {
+          "name": "Key softbox",
+          "type": "AREA",
+          "watts": 1350.0,
+          "size": 5.5,
+          "color": [
+            0.9,
+            0.95,
+            1.0
+          ],
+          "location": [
+            -3.5,
+            -4.2,
+            6.3
+          ],
+          "rotation_xyz_radians": [
+            0.751382,
+            0.0,
+            -0.686114
+          ]
+        },
+        {
+          "name": "Warm review",
+          "type": "AREA",
+          "watts": 900.0,
+          "size": 4.0,
+          "color": [
+            1.0,
+            0.84,
+            0.68
+          ],
+          "location": [
+            4.0,
+            -2.0,
+            3.5
+          ],
+          "rotation_xyz_radians": [
+            0.971882,
+            0.0,
+            1.09922
+          ]
+        },
+        {
+          "name": "Blue edge",
+          "type": "AREA",
+          "watts": 1450.0,
+          "size": 3.0,
+          "color": [
+            0.6,
+            0.82,
+            1.0
+          ],
+          "location": [
+            0.0,
+            4.2,
+            5.5
+          ],
+          "rotation_xyz_radians": [
+            0.684984,
+            0.0,
+            3.136773
+          ]
+        }
+      ],
+      "root_transforms": [
+        {
+          "name": "Office monitor hp 27 inch black",
+          "type": "EMPTY",
+          "location": [
+            0.919294,
+            0.392865,
+            -0.990938
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            -0.0,
+            0.122173
+          ],
+          "scale": [
+            6.027449,
+            6.027449,
+            6.027449
+          ]
+        },
+        {
+          "name": "Worn out construction helmet",
+          "type": "MESH",
+          "location": [
+            -1.290787,
+            0.224744,
+            -0.167009
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            3.725317,
+            3.725317,
+            3.725317
+          ]
+        },
+        {
+          "name": "clipboard",
+          "type": "MESH",
+          "location": [
+            0.284957,
+            -0.796296,
+            -0.064318
+          ],
+          "rotation_xyz_radians": [
+            0.0,
+            0.0,
+            -0.314159
+          ],
+          "scale": [
+            5.11068,
+            5.11068,
+            5.11068
+          ]
+        }
+      ],
+      "visible_geometry_count": 3,
+      "external_sources": [
+        "https://www.blendkit.com/asset-gallery-detail/69e5d155-db39-4fbd-bd26-addfe8922c7b/",
+        "https://www.blendkit.com/asset-gallery-detail/3b9d3e13-0f83-4965-ace2-c3c1254fb90f/",
+        "https://polyhaven.com/a/clipboard"
+      ],
+      "unattributed_geometry": []
+    }
+  ]
+}

@@ -73,7 +73,7 @@
 .product-editorial [data-layout-family=wearable] .benefit-panels>.benefit-panel{background:#fff;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr)}
 .product-editorial [data-layout-family=wearable] .benefit-copy h3{color:#1d1d1f}
 .product-editorial [data-layout-family=wearable] .benefit-description{color:#4f5b69}
-.product-editorial [data-layout-family=wearable] .benefit-kicker,.product-editorial [data-layout-family=wearable] .benefit-detail-link{color:#1762a6!important}
+.product-editorial [data-layout-family=wearable] .benefit-kicker,.product-editorial [data-layout-family=wearable] .benefit-detail-link{color:#a4c9f6!important}
 .product-editorial [data-layout-family=sensing] .benefit-panels>.benefit-panel{grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);border-radius:8px}
 .product-editorial [data-layout-family=sensing] .benefit-chapter{background:#edf3f9;color:#1c2a3d}
 .product-editorial [data-layout-family=sensing] .benefit-heading h2{color:#1c2a3d}
@@ -406,3 +406,31 @@ html:has(body.product-editorial){scroll-padding-top:0}
 .product-editorial .revision-source [data-revision-surface=highlights]>article[data-highlight-card]{align-self:stretch}
 /* A scaled photo clipped by a square figure hides its rounded corners. */
 .product-editorial .revision-source .motion-depth img{transform:none!important}
+
+/* Source screenshots support the explanation at their readable native scale. */
+.product-editorial #report-preview .editorial-section-inner{width:min(1120px,calc(100% - 80px))}
+.product-editorial #report-preview .buyer-report-lead{max-width:46em;margin:20px 0 40px;font-size:19px;line-height:1.7;color:#515a66}
+.product-editorial #report-preview .buyer-report-layout{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:48px;align-items:start}
+.product-editorial #report-preview .buyer-report-reference{margin:0;padding:24px;background:#fff;border:1px solid #dce1e8;border-radius:24px}
+.product-editorial #report-preview .buyer-report-source{display:block;max-width:320px;margin:auto}
+.product-editorial #report-preview .buyer-report-source img{display:block;width:100%;height:auto;max-height:none;margin:0 0 16px;border:0;border-radius:8px;box-shadow:none;object-fit:contain}
+.product-editorial #report-preview .buyer-report-source>span{text-align:left;font-size:15px;color:#1558a6}
+.product-editorial #report-preview .buyer-report-reference>figcaption{margin:12px auto 0;max-width:320px;font-size:13px;line-height:1.6;color:#68727e}
+.product-editorial #report-preview .buyer-report-explanation{padding:8px 0 0}
+.product-editorial #report-preview .buyer-report-explanation>h3{font-size:26px;line-height:1.4;margin:0 0 24px;letter-spacing:-.025em}
+.product-editorial #report-preview .buyer-report-steps{display:grid;grid-template-columns:1fr;gap:24px;list-style:none;padding:0;margin:0}
+.product-editorial #report-preview .buyer-report-steps>li{display:grid;grid-template-columns:40px minmax(0,1fr);gap:16px;align-items:start;padding:0;margin:0;border:0}
+.product-editorial #report-preview .buyer-report-steps>li>span{display:grid;place-items:center;height:40px;background:#fff;border-radius:12px;color:#475577;font-size:14px;font-weight:600}
+.product-editorial #report-preview .buyer-report-steps h4{font-size:20px;line-height:1.5;margin:2px 0 6px}
+.product-editorial #report-preview .buyer-report-steps p{font-size:17px;line-height:1.7;color:#515a66;margin:0;word-break:keep-all}
+.product-editorial #report-preview .buyer-report-outcome{padding:20px 24px;margin:32px 0 0;border-radius:16px;background:#dce5f0;color:#39475a;font-size:16px;line-height:1.7}
+.product-editorial #report-preview .buyer-report-outcome strong{display:block;margin-bottom:6px;font-size:16px;color:#202b3b}
+@media(max-width:760px){
+ .product-editorial #report-preview .editorial-section-inner{width:calc(100% - 40px)}
+ .product-editorial #report-preview .buyer-report-layout{grid-template-columns:1fr;gap:32px}
+ .product-editorial #report-preview .buyer-report-explanation{order:-1;padding:0}
+ .product-editorial #report-preview .buyer-report-lead{font-size:17px;margin:16px 0 32px}
+ .product-editorial #report-preview .buyer-report-reference{padding:20px}
+ .product-editorial #report-preview .buyer-report-steps>li{grid-template-columns:36px minmax(0,1fr);gap:12px}
+ .product-editorial #report-preview .buyer-report-steps>li>span{height:36px}
+}

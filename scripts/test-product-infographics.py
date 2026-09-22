@@ -3,13 +3,25 @@ from pathlib import Path
 from bs4 import BeautifulSoup,NavigableString
 import json,subprocess,re,sys
 from PIL import Image
+from urllib.parse import urlsplit
 ROOT=Path(__file__).resolve().parents[1]
 BASE=sys.argv[1] if len(sys.argv)>1 else 'd4e1f83d7780eb623295d0e7cef36b487b38364a'
 FIGURES=json.loads((ROOT/'data/product-infographics.json').read_text());media=set();scenes=[]
+EXTERNAL=json.loads((ROOT/'data/external-render-assets.json').read_text())
 def canon(n):
  if isinstance(n,NavigableString):return re.sub(r'\s+',' ',str(n)).strip()
  return (n.name,sorted((k,tuple(v) if isinstance(v,list) else v) for k,v in n.attrs.items()),[v for c in n.children if (v:=canon(c))])
 def preserved(p,slug):
+ # These two buyer-facing sections have an explicit, idempotent revision.
+ # Normalize only that reviewed transform; unrelated source content is compared.
+ from product_buyer_proof import refine_proof
+ refine_proof(p,p.select_one('.product-story'),slug)
+ if slug=='mobile-cctv':
+  from product_buyer_mobile import refine_mobile
+  refine_mobile(p,p.select_one('.product-story'))
+  for n in p.select('link[href*="/product-buyer-mobile.css"]'):n.decompose()
+ from product_external_contexts import refine_external_contexts
+ refine_external_contexts(p,p.select_one('.product-story'),slug)
  # Intentional removal of one repeated photo; all checkpoint prose remains compared.
  if slug=='hook-bottom-camera':
   duplicate=p.select_one('#hook-checkpoints figure')
@@ -46,6 +58,8 @@ def preserved(p,slug):
  # Intentional layout-only component variants; preserve all their contents.
  for n in p.select('[data-revision-surface],[data-highlight-card]'):
   n.attrs.pop('data-revision-surface',None);n.attrs.pop('data-highlight-card',None)
+ for n in p.select('.pedestrian-story-panel.flow-with-image'):
+  n['class']=[c for c in n['class'] if c!='flow-with-image']
  # BeautifulSoup lowercases UTF-8 during serialization; encoding names are case-insensitive.
  for im in p.select('img[src*="/site-cms-stage-"]'):
   im['alt']=''
@@ -60,11 +74,13 @@ for slug in FIGURES:
   assert not n.select('button,[role=tab],script') and n.find_parent('li').has_attr('data-flow-panel'),slug
   scenes.append(n['data-infographic-scene'])
   for im in n.select('img'):
-   assert im.get('alt') and (ROOT/im['src'].lstrip('/')).is_file(),slug
-   assert (int(im['width']),int(im['height']))==Image.open(ROOT/im['src'].lstrip('/')).size,slug
-   if '/sunflex-infographics/' in im['src']:
-    assert im.get('width')=='1600' and im.get('height') in ['900','1200'],slug
-    media.add(im['src'])
+   assert im.get('alt') and (ROOT/urlsplit(im['src']).path.lstrip('/')).is_file(),slug
+   assert (int(im['width']),int(im['height']))==Image.open(ROOT/urlsplit(im['src']).path.lstrip('/')).size,slug
+   assert '/external-renders/' in im['src'],(slug,i,'Legacy illustration remains')
+   assert im.get('width')=='1800' and im.get('height')=='1200',slug
+   media.add(urlsplit(im['src']).path)
+  assert not n.select('svg,.operation-chain,.scene-drawing,.data-sheet'),(slug,i,'HTML illustration remains')
+  assert n.find_parent('figure').get('data-infographic-version')=='20260923-external'
   assert len(n.find_parent('figure').select('figcaption'))==1,slug
   for singleton in ['qa-deploy-flow','qa-detected-person','qa-part-link','qa-lift-poses','qa-case-transfer']:
    assert len(n.select('.'+singleton))<=1,(slug,i,'Repeated visual component',singleton)
@@ -77,18 +93,20 @@ for slug in FIGURES:
  for name in ['product-infographics','product-infographics-layout']:assert len(p.select(f'link[href*="/{name}.css?"]'))==1,slug
  old=BeautifulSoup(subprocess.check_output(['git','show',f'{BASE}:{file}'],cwd=ROOT,text=True),'html.parser')
  assert preserved(p,slug)==preserved(old,slug),f'Unexpected non-visual change: {slug}'
-assert len(scenes)==len(set(scenes))==144 and len(media)==29
+assert len(scenes)==len(set(scenes))==len(EXTERNAL)==144
+assert len(media)==len(set(x['render'] for x in EXTERNAL.values()))
 for slug,langs in {'ai-broadcast':['베트남어','태국어','중국어'],'tower-crane-hook-collision':['한국어','중국어','베트남어'],'safebridge':['중국어','힌디어','영어']}.items():
  p=BeautifulSoup((ROOT/f'products/{slug}/index.html').read_text(),'html.parser')
- assert [n.get_text() for n in p.select('.sunflex-infographic .language-lanes strong')]==langs
-for slug in ['chatgpt-cctv','ai-quick-risk-assessment']:
- assert 'data-sheet' in FIGURES[slug][1] and 'operation-chain' in FIGURES[slug][2],slug
-for slug,selector,count in [('co2-temp-humidity','.metric-mark path',3),('smart-environment-board','.instrument-icon path',3),('safety-box','.hub-node path,.tile-icon path',4)]:
- s=BeautifulSoup(FIGURES[slug][1 if slug=='smart-environment-board' else 0],'html.parser')
- assert len({n['d'] for n in s.select(selector)})==count,slug
+ assert all(lang in p.get_text() for lang in langs),(slug,'Documented languages removed')
 for slug,step in [('wireless-network',1),('ai-safety-index',0)]:assert '전체 공지' not in FIGURES[slug][step],slug
 cms=BeautifulSoup((ROOT/'products/site-cms/index.html').read_text(),'html.parser')
 for key,alt in {'early':'굴착 장비와 차량이 작업 중인 착공 초기 현장','mid':'타워크레인과 여러 층의 골조가 형성된 공정 전환 현장','late':'외벽 공사와 지상부 정리가 진행 중인 준공 전 현장'}.items():
  im=cms.select_one(f'img[src="/media/derived/site-cms-stage-{key}-768.avif"]')
  assert im['alt']==im.find_parent('figure').figcaption.get_text()==alt
-print('PASS: 48 pages / 144 scenes / 29 render assets; non-visual content, anchors, controls and language examples preserved')
+print(f'PASS: 48 pages / 144 external figures / {len(media)} context renders; non-visual content, anchors, controls and language examples preserved')
+
+# Preserve all four specified gases, including hydrogen sulfide.
+gas=(ROOT/"products/compact-gas-detector/index.html").read_text()
+from bs4 import BeautifulSoup
+labels=BeautifulSoup(gas,"html.parser").select_one(".external-render-labels").get_text(" ",strip=True)
+assert all(g in labels for g in ["O₂","CO","CH₄","H₂S"]),labels
