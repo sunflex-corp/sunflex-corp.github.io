@@ -14,6 +14,9 @@ for slug,spec in scenes.items():
     assert not page.select('.benefit-operation-list'),slug
     assert not page.select('[data-product-motion], [data-cctv-process]'),slug
     assert len(page.select('.revision-criteria li'))==3,slug
+    css=[n['href'].split('?')[0].rsplit('/',1)[-1] for n in page.select('link[rel=stylesheet]')]
+    assert css.index('product-revision.css') < css.index('product-infographics.css') < css.index('product-infographics-layout.css'),slug
+    for card in page.select('[data-highlight-card=feature]'):assert card.find('img'),slug
     assert page.select_one('.product-story > .revision-source'),slug
     assert not page.select('main details'),slug
     assert page.select_one('[data-layout-family]'),slug

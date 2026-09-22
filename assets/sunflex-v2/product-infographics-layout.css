@@ -13,8 +13,8 @@
 .product-editorial :is(#product-benefits,#blind-corner) .sunflex-infographic .render-annotations{padding:18px 20px;gap:12px 24px}
 .product-editorial :is(#product-benefits,#blind-corner) .sunflex-infographic .render-annotations strong{font-size:16px}
 .product-editorial :is(#product-benefits,#blind-corner) .sunflex-infographic svg{max-width:100%}
-.product-editorial :is(#product-benefits,#blind-corner) .flow-pinned .sunflex-infographic :is(h4,p,strong,small,.render-annotations,.technical-callouts,.scene-labels){opacity:var(--flow-copy-alpha,1)}
-@container sunflex-infographic (max-width:600px){
+.product-editorial :is(#product-benefits,#blind-corner) .flow-pinned .sunflex-infographic :is(h4,p,strong,small,.render-annotations,.technical-callouts,.scene-labels){opacity:1}
+@container sunflex-infographic (max-width:480px){
  .product-editorial :is(#product-benefits,#blind-corner) .sunflex-infographic .diagram{padding:22px 18px;min-height:0}
  .product-editorial :is(#product-benefits,#blind-corner) .sunflex-infographic .diagram h4{font-size:22px}
  .product-editorial :is(#product-benefits,#blind-corner) .sunflex-infographic .technical-layout{padding:20px 16px}
@@ -35,3 +35,60 @@
 @container sunflex-infographic (max-width:420px){
  .product-editorial :is(#product-benefits,#blind-corner) .sunflex-infographic .render-annotations{grid-template-columns:1fr;gap:8px}
 }
+
+/*
+ * Product-benefit layout contract
+ *
+ * This is intentionally the final product stylesheet. It owns the shared
+ * reading geometry; product-revision may provide colour and content family
+ * treatment, but must not change columns, tab alignment or visual sizing.
+ */
+.product-editorial :is(#product-benefits,#blind-corner){
+ --benefit-reading-surface:#101216;
+ --benefit-reading-ink:#f5f5f7;
+}
+
+.product-editorial :is(#product-benefits,#blind-corner) .benefit-panels>.benefit-panel{
+ grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+ align-items:stretch;
+ align-self:start;
+ border-radius:24px;
+}
+
+.product-editorial :is(#product-benefits,#blind-corner) .benefit-copy{order:initial;padding:clamp(32px,3.2vw,48px)}
+
+.product-editorial :is(#product-benefits,#blind-corner) .benefit-visual{min-height:0;padding:clamp(20px,2.2vw,32px)}
+
+.product-editorial :is(#product-benefits,#blind-corner) .benefit-visual.infographic-visual{display:block;min-height:0;padding:0;align-self:stretch}
+
+.product-editorial :is(#product-benefits,#blind-corner) .sunflex-infographic svg{margin:0}
+
+.product-editorial :is(#product-benefits,#blind-corner) .sunflex-infographic .render-annotations{margin:0;list-style:none}
+
+.product-editorial :is(#product-benefits,#blind-corner) .sunflex-infographic .render-annotations li{margin:0;padding:0;border:0;box-shadow:none;line-height:1.6}
+
+.product-editorial :is(#product-benefits,#blind-corner) .infographic-visual>figcaption{padding:16px 20px;font-size:13px;line-height:1.6}
+
+.product-editorial :is(#product-benefits,#blind-corner) .flow-reading .product-flow-tabs{margin-inline:0;padding-inline:0;border-radius:0;background:var(--benefit-reading-surface);color:var(--benefit-reading-ink)}
+
+.product-editorial [data-layout-family=wearable] :is(#product-benefits,#blind-corner){--benefit-reading-surface:#f5f5f7;--benefit-reading-ink:#1d1d1f}
+
+.product-editorial [data-layout-family=sensing] :is(#product-benefits,#blind-corner){--benefit-reading-surface:#edf3f9;--benefit-reading-ink:#1c2a3d}
+
+@container sunflex-infographic (min-width:481px){
+ .product-editorial :is(#product-benefits,#blind-corner) .sunflex-infographic .diagram{padding:28px}
+ .product-editorial :is(#product-benefits,#blind-corner) .sunflex-infographic .diagram h4{font-size:24px}
+ .product-editorial :is(#product-benefits,#blind-corner) .sunflex-infographic .info-tile{min-height:170px;padding:20px 18px}
+ .product-editorial :is(#product-benefits,#blind-corner) .sunflex-infographic .info-tile small{font-size:12px}
+ .product-editorial :is(#product-benefits,#blind-corner) .sunflex-infographic .info-tile strong{font-size:20px}
+}
+
+@media(max-width:760px){
+ .product-editorial :is(#product-benefits,#blind-corner) .benefit-panels>.benefit-panel{grid-template-columns:minmax(0,1fr);border-radius:20px}
+ .product-editorial :is(#product-benefits,#blind-corner) .benefit-visual{min-height:0;padding:16px}
+ .product-editorial :is(#product-benefits,#blind-corner) .sunflex-infographic .diagram{min-height:0}
+ .product-editorial :is(#product-benefits,#blind-corner) .benefit-copy{padding:24px 20px}
+ .product-editorial :is(#product-benefits,#blind-corner) .product-flow-tabs button{font-size:13px;line-height:1.4;min-height:52px;padding:8px 4px}
+}
+
+.product-editorial :is(#product-benefits,#blind-corner) .sunflex-infographic .diagram:is(.bc-diagram,.ctx-diagram){padding:0}

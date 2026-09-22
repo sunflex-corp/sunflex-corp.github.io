@@ -132,7 +132,7 @@
 .product-editorial .flow-pinned [data-flow-panel]{will-change:auto}
 .product-editorial .flow-pinned [data-flow-panel][aria-hidden=true]{pointer-events:none}
 .product-editorial .flow-enhanced .benefit-visual{min-height:0;padding:20px;overflow:hidden}
-.product-editorial .flow-enhanced .benefit-visual>svg{width:100%;height:clamp(180px,calc(var(--flow-available) - 220px),360px);max-height:none;margin:0 auto}
+.product-editorial .flow-enhanced .benefit-visual:not(.infographic-visual)>svg{width:100%;height:clamp(180px,calc(var(--flow-available) - 220px),360px);max-height:none;margin:0 auto}
 .product-editorial .flow-enhanced .benefit-visual>img{height:clamp(180px,calc(var(--flow-available) - 220px),360px);max-height:none;margin:0;object-fit:contain;transition:none}
 .product-editorial .flow-enhanced .story-photo-scene{padding:0}
 .product-editorial .flow-enhanced .story-photo-scene>img{object-fit:cover;width:100%}
@@ -171,7 +171,7 @@
 .product-editorial .revision-details+.revision-source{padding-top:40px!important}
 .product-editorial .revision-criteria{padding-left:0!important;margin-bottom:0}
 .product-editorial .revision-criteria li{padding:28px!important}
-.product-editorial .revision-source [data-composition=mosaic]>article:first-child{align-items:start}
+.product-editorial .revision-source [data-composition=mosaic]>article:first-child:not([data-highlight-card]){align-items:start}
 .product-editorial [data-motion-profile] .editorial-section-inner{animation:none!important}
 .product-editorial .motion-depth img{transition:none!important}
 @media(max-width:900px){.product-editorial .editorial-chapter .editorial-section-inner{width:calc(100% - 48px)}.product-editorial .revision-source [data-composition]{column-gap:32px}}
@@ -181,7 +181,7 @@
 .product-editorial .product-flow-tabs button{font-size:11px;min-height:50px;padding:6px 4px;display:flex;flex-direction:column;gap:4px;align-items:flex-start}
 .product-editorial .benefit-tab-number{font-size:15px;line-height:1.25;margin:0}
 .product-editorial .flow-enhanced .benefit-visual{padding:12px}
-.product-editorial .flow-enhanced .benefit-visual>svg{height:clamp(120px,calc(var(--flow-available) - 450px),210px)}
+.product-editorial .flow-enhanced .benefit-visual:not(.infographic-visual)>svg{height:clamp(120px,calc(var(--flow-available) - 450px),210px)}
 .product-editorial .flow-enhanced .benefit-visual>img{height:clamp(120px,calc(var(--flow-available) - 450px),200px)}
 .product-editorial .flow-enhanced .story-photo-scene{padding:0}
 .product-editorial .flow-enhanced .benefit-visual figcaption{padding:8px 16px;font-size:10px;line-height:1.4}
@@ -210,7 +210,7 @@
 @media(max-width:760px){
 .product-editorial .revision-source .content-grid[data-composition=mosaic]{grid-template-columns:minmax(0,1fr)!important}
 .product-editorial .flow-enhanced .pedestrian-scene{max-height:clamp(140px,calc(var(--flow-available) - 340px),250px)}
-.product-editorial .flow-enhanced .benefit-visual>svg{height:clamp(170px,calc(var(--flow-available) - 430px),220px)}
+.product-editorial .flow-enhanced .benefit-visual:not(.infographic-visual)>svg{height:clamp(170px,calc(var(--flow-available) - 430px),220px)}
 .product-editorial .flow-enhanced .benefit-copy .benefit-kicker{display:none}
 .product-editorial .flow-enhanced .benefit-copy{padding:18px 20px}
 .product-editorial .flow-enhanced .benefit-detail-link{margin-top:12px}
@@ -267,8 +267,142 @@ html:has(body.product-editorial){scroll-padding-top:0}
 .product-editorial .flow-pinned [data-flow-panel]>strong,
 .product-editorial .flow-pinned [data-flow-panel]>p,
 .product-editorial .flow-pinned [data-flow-panel]>span,
-.product-editorial .flow-pinned [data-flow-panel]>h3{opacity:var(--flow-copy-alpha,1)}
+.product-editorial .flow-pinned [data-flow-panel]>h3{opacity:1}
 
 .product-editorial .model-panel .cctv-physical dl{display:block;margin:12px 0 0}
 .product-editorial .model-panel .cctv-physical dd{font-size:16px;line-height:1.75;margin:0}
 .product-editorial .model-panel .cctv-physical{padding-bottom:0}
+
+/* Product-page alignment contract: one container, a predictable Korean type rhythm. */
+.product-editorial{
+ --product-content-width:min(1120px,calc(100% - 80px));
+ --product-section-space:clamp(64px,7vw,96px);
+}
+
+.product-editorial :is(.editorial-section-inner,.editorial-story>.revision-source>.editorial-section-inner){
+ width:var(--product-content-width);
+ margin-inline:auto;
+}
+
+.product-editorial :is(.editorial-hero-copy,.editorial-hero-media,.editorial-actions,.content-copy,.final-cta)>*{min-width:0}
+
+.product-editorial :is(.editorial-hero h1,.editorial-tagline,.editorial-lead,.editorial-chapter h2,.editorial-chapter h3,.revision-detail-label,.final-cta h2){
+ word-break:keep-all;
+ overflow-wrap:anywhere;
+ text-wrap:balance;
+}
+
+.product-editorial .editorial-story>.revision-source,.product-editorial .revision-details{padding-block:var(--product-section-space)!important}
+
+.product-editorial .revision-visible-detail{margin-top:32px;padding-block:32px}
+
+.product-editorial .final-cta{width:min(1120px,100%);margin-inline:auto;gap:32px}
+
+@media(max-width:760px){
+ .product-editorial{--product-content-width:calc(100% - 40px);--product-section-space:64px}
+ .product-editorial .revision-visible-detail{margin-top:24px;padding-block:24px}
+ .product-editorial .final-cta{gap:24px}
+}
+
+/* Shared content-card contract. Static HTML slots follow Card / Header / Content.
+   References: shadcn/ui Card composition; Material 3 card roles. Values are SUNPLEX tokens. */
+.product-editorial{
+ --sf-space-2:8px;--sf-space-3:12px;--sf-space-4:16px;--sf-space-6:24px;--sf-space-8:32px;--sf-space-12:48px;
+ --sf-radius-media:16px;--sf-radius-card:24px;--sf-radius-section:32px;
+ --sf-card-padding:var(--sf-space-8);--sf-card-gap:var(--sf-space-6);
+ --sf-card-ink:#172737;--sf-card-muted:#4b5e6e;
+ --sf-card-fill:linear-gradient(145deg,rgb(255 255 255 / 88%),rgb(234 241 247 / 72%));
+ --sf-card-edge:rgb(255 255 255 / 90%);
+ --sf-card-shadow:0 12px 32px rgb(32 53 72 / 7%),inset 0 1px 0 rgb(255 255 255 / 96%);
+}
+/* Restrained glass surfaces: compact decision cards and product highlights. */
+.product-editorial .revision-source [data-composition=portrait]>figure img{border-radius:var(--sf-radius-section)}
+
+.product-editorial .revision-choices[data-revision-surface=checklist] .revision-criteria{
+ display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;margin-top:36px;overflow:hidden;
+ border:1px solid rgb(255 255 255 / 78%);border-radius:var(--sf-radius-card);background:linear-gradient(135deg,rgb(255 255 255 / 86%),rgb(236 243 250 / 64%));
+ box-shadow:0 18px 42px rgb(32 53 72 / 10%),inset 0 1px 0 rgb(255 255 255 / 96%);
+}
+.product-editorial .revision-choices[data-revision-surface=checklist] .revision-criteria li{
+ display:grid;align-content:start;gap:var(--sf-space-4);min-height:148px;padding:var(--sf-card-padding)!important;border:0!important;border-radius:0;background:transparent;
+}
+.product-editorial .revision-choices[data-revision-surface=checklist] .revision-criteria li+li{border-left:1px solid rgb(89 111 132 / 22%)!important}
+.product-editorial .revision-choices[data-revision-surface=checklist] .revision-criteria span{margin:0;color:#486b88;font-size:14px;font-weight:760;letter-spacing:.08em}
+.product-editorial .revision-choices[data-revision-surface=checklist] .revision-criteria strong{color:var(--sf-card-ink);font-size:clamp(20px,2vw,25px);line-height:1.35;letter-spacing:-.035em}
+
+.product-editorial [data-revision-surface=highlights]{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--sf-space-4);margin-top:32px}
+.product-editorial [data-revision-surface=highlights]>article[data-highlight-card]{display:flex;flex-direction:column;min-width:0;gap:var(--sf-space-4);padding:var(--sf-card-padding);border:1px solid rgb(255 255 255 / 76%);border-radius:var(--sf-radius-card);background:var(--sf-card-fill);box-shadow:var(--sf-card-shadow);}
+.product-editorial [data-revision-surface=highlights]>article[data-highlight-card=feature]{grid-column:1/-1;display:grid;grid-template-columns:minmax(190px,.72fr) minmax(0,1.28fr);align-items:center;gap:clamp(24px,4vw,56px);min-height:244px;padding:24px clamp(28px,4vw,52px)}
+.product-editorial [data-revision-surface=highlights]>article[data-highlight-card=feature]>div:first-child{display:flex;align-items:center;justify-content:center;min-width:0}
+.product-editorial [data-revision-surface=highlights]>article[data-highlight-card=feature] figure{width:min(100%,220px);margin:0}
+.product-editorial [data-revision-surface=highlights]>article[data-highlight-card=feature] figure img{display:block;width:100%;height:184px;object-fit:contain;border-radius:var(--sf-radius-media);background:rgb(255 255 255 / 68%)}
+.product-editorial [data-revision-surface=highlights]>article[data-highlight-card=feature] figcaption{display:none}
+.product-editorial [data-revision-surface=highlights]>article[data-highlight-card=feature]>div:last-child{min-width:0}
+.product-editorial [data-revision-surface=highlights]>article[data-highlight-card=feature] h3{max-width:15ch;margin:0;color:var(--sf-card-ink);font-size:clamp(25px,3vw,38px);line-height:1.22;letter-spacing:-.045em}
+.product-editorial [data-revision-surface=highlights]>article[data-highlight-card=detail] h3{margin:0;color:var(--sf-card-ink);font-size:clamp(20px,2vw,25px);line-height:1.35;letter-spacing:-.035em}
+.product-editorial [data-revision-surface=highlights]>article[data-highlight-card=detail] p{margin:0;color:var(--sf-card-muted);font-size:16px;line-height:1.65}
+
+@media(prefers-reduced-transparency:reduce){
+ .product-editorial .revision-choices[data-revision-surface=checklist] .revision-criteria,.product-editorial [data-revision-surface=highlights]>article[data-highlight-card]{background:#fff;backdrop-filter:none}
+}
+@media(max-width:760px){
+ .product-editorial{--sf-card-padding:var(--sf-space-6)}
+ .product-editorial .revision-source [data-composition=portrait]>figure img{border-radius:var(--sf-radius-card)}
+ .product-editorial .revision-choices[data-revision-surface=checklist] .revision-criteria{grid-template-columns:1fr;margin-top:28px;border-radius:var(--sf-radius-card)}
+ .product-editorial .revision-choices[data-revision-surface=checklist] .revision-criteria li{min-height:0;padding:var(--sf-card-padding)!important;gap:8px;align-items:baseline}
+ .product-editorial .revision-choices[data-revision-surface=checklist] .revision-criteria li+li{border-top:1px solid rgb(89 111 132 / 22%)!important;border-left:0!important}
+ .product-editorial [data-revision-surface=highlights]{grid-template-columns:1fr;gap:var(--sf-space-4);margin-top:24px}
+ .product-editorial [data-revision-surface=highlights]>article[data-highlight-card]{padding:var(--sf-card-padding);border-radius:var(--sf-radius-card)}
+ .product-editorial [data-revision-surface=highlights]>article[data-highlight-card=feature]{grid-template-columns:1fr;gap:var(--sf-space-4);min-height:0;padding:24px}
+ .product-editorial [data-revision-surface=highlights]>article[data-highlight-card=feature]>div:first-child{justify-content:flex-start}
+ .product-editorial [data-revision-surface=highlights]>article[data-highlight-card=feature] figure{width:170px}
+ .product-editorial [data-revision-surface=highlights]>article[data-highlight-card=feature] figure img{height:144px}
+ .product-editorial [data-revision-surface=highlights]>article[data-highlight-card=feature] h3{font-size:28px}
+}
+
+/* Field capture and later review share one two-column media-card grid. */
+.product-editorial #bodycam-film header{margin-bottom:var(--sf-space-8)}
+.product-editorial #bodycam-film header h2{margin-block:var(--sf-space-4) var(--sf-space-6)}
+.product-editorial #bodycam-film [aria-label="이동식 바디캠 기록 흐름"]{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--sf-space-6);padding:0;border:0;background:none;box-shadow:none}
+.product-editorial #bodycam-film [aria-label="이동식 바디캠 기록 흐름"]>div{min-width:0;padding:var(--sf-card-padding);border:1px solid var(--sf-card-edge);border-radius:var(--sf-radius-card);background:var(--sf-card-fill);box-shadow:var(--sf-card-shadow)}
+.product-editorial #bodycam-film [aria-label="이동식 바디캠 기록 흐름"]>div:first-child{display:flex;flex-direction:column;gap:var(--sf-space-6)}
+.product-editorial #bodycam-film [aria-label="이동식 바디캠 기록 흐름"]>div:first-child>p{margin:0}
+.product-editorial #bodycam-film [aria-label="이동식 바디캠 기록 흐름"]>div:last-child{display:flex;flex-direction:column;gap:var(--sf-space-6)}
+.product-editorial #bodycam-film [aria-label="이동식 바디캠 기록 흐름"]>div:last-child>figure{order:-1}
+.product-editorial #bodycam-film [aria-label="이동식 바디캠 기록 흐름"]>div:last-child h2{font-size:26px;margin-block:12px;line-height:1.4}
+.product-editorial #bodycam-film [aria-label="이동식 바디캠 기록 흐름"]>div:last-child p{font-size:16px;margin:0}
+.product-editorial #bodycam-film figure{margin:0}
+.product-editorial #bodycam-film figure img{display:block;width:100%;height:240px;object-fit:cover;border-radius:var(--sf-radius-media)}
+.product-editorial #bodycam-film figcaption{margin-top:var(--sf-space-2);font-size:13px;line-height:1.5}
+.product-editorial #bodycam-film [aria-labelledby="bodycam-mount-title"]{order:2;grid-column:1/-1;display:grid;grid-template-columns:1fr 1.1fr 160px;align-items:center;gap:var(--sf-space-8)}
+.product-editorial #bodycam-film #bodycam-mount-title{font-size:26px;margin:12px 0 0;line-height:1.4}
+.product-editorial #bodycam-film [aria-label="설치 방식"]{display:grid;gap:var(--sf-space-4);padding:0;margin:0;border:0;background:none}
+.product-editorial #bodycam-film [aria-label="설치 방식"]>span{display:none}
+.product-editorial #bodycam-film [aria-label="설치 방식"]>div{display:grid;grid-template-columns:100px 1fr;gap:var(--sf-space-4);align-items:baseline}
+.product-editorial #bodycam-film [aria-label="설치 방식"] small{font-size:16px;color:var(--sf-card-muted)}
+.product-editorial #bodycam-film [aria-labelledby="bodycam-mount-title"] figure img{height:180px;object-fit:contain;background:#fff}
+@media(max-width:760px){
+ .product-editorial #bodycam-film [aria-label="이동식 바디캠 기록 흐름"]{grid-template-columns:1fr;gap:var(--sf-space-4)}
+ .product-editorial #bodycam-film [aria-labelledby="bodycam-mount-title"]{grid-template-columns:1fr;gap:var(--sf-space-6)}
+ .product-editorial #bodycam-film [aria-labelledby="bodycam-mount-title"] figure{max-width:160px}
+ .product-editorial #bodycam-film figure img{height:auto;aspect-ratio:4/3}
+}
+.product-editorial #bodycam-film [aria-label="이동식 바디캠 기록 흐름"]>div:last-child>div{display:contents}
+.product-editorial #bodycam-film [aria-label="이동식 바디캠 기록 흐름"]>div:last-child>div>span{order:0;min-height:28px;line-height:28px;font-size:16px}
+.product-editorial #bodycam-film [aria-label="이동식 바디캠 기록 흐름"]>div:last-child>figure{order:1}
+.product-editorial #bodycam-film [aria-label="이동식 바디캠 기록 흐름"]>div:last-child h2{order:2;font-size:22px;margin:0}
+.product-editorial #bodycam-film [aria-label="이동식 바디캠 기록 흐름"]>div:last-child p{order:3}
+.product-editorial #bodycam-film [aria-label="이동식 바디캠 기록 흐름"]>div:first-child>.editorial-label-pair{margin:0;min-height:28px;line-height:28px;font-size:16px}
+
+.product-editorial [data-revision-surface=highlights]:not(:has([data-highlight-card=feature]))>article:last-child:nth-child(odd){grid-column:1/-1}
+/* Card variants own their tracks; legacy mosaic placement must not leak in. */
+.product-editorial .revision-source [data-revision-surface=highlights]>article[data-highlight-card=detail]{grid-column:auto;grid-template-columns:none}
+.product-editorial .revision-source [data-revision-surface=highlights]:not(:has([data-highlight-card=feature]))>article:last-child:nth-child(odd){grid-column:1/-1}
+.product-editorial .revision-source [data-revision-surface=highlights]>article[data-highlight-card=detail]>p:first-child:has(>span+span){display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 6px;color:var(--sf-card-ink);font-size:24px;font-weight:650;line-height:1.4}
+.product-editorial .revision-source [data-revision-surface=highlights]>article[data-highlight-card=detail]>p:first-child>span{display:inline;font:inherit;line-height:inherit;letter-spacing:inherit}
+.product-editorial .revision-source [data-revision-surface=highlights]>article[data-highlight-card=detail]>p:first-child>span:first-child{color:#2866a0}
+.product-editorial .revision-source [data-revision-surface=highlights]>article[data-highlight-card=detail]>div:has(h3){display:flex;flex-direction:column;gap:16px}
+.product-editorial .revision-source [data-revision-surface=highlights]>article[data-highlight-card=detail]>div svg{display:block;width:28px;height:28px;margin:0}
+.product-editorial .revision-source [data-revision-surface=highlights]>article[data-highlight-card]{align-self:stretch}
+/* A scaled photo clipped by a square figure hides its rounded corners. */
+.product-editorial .revision-source .motion-depth img{transform:none!important}
