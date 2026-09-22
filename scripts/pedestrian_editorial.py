@@ -45,4 +45,5 @@ def enhance(soup):
         copy=soup.new_tag('div',attrs={'class':'pedestrian-story-copy'})
         span=step.find('span',recursive=False);span.name='h3'
         for node in list(step.contents):copy.append(node.extract())
-        step.append(BeautifulSoup(visual(i),'html.parser'));step.append(copy)
+        from product_infographics import figure as infographic_figure
+        step.append(BeautifulSoup(infographic_figure('pedestrian-collision-prevention',i) or visual(i),'html.parser'));step.append(copy)

@@ -80,6 +80,11 @@ def render(path,title,desc,body,active=''):
         for ext in ['css','js']:
             v=hashlib.sha256((ROOT/f'assets/sunflex-v2/product-revision.{ext}').read_bytes()).hexdigest()[:10]
             extra+=f'<link rel="stylesheet" href="/assets/sunflex-v2/product-revision.css?v={v}">' if ext=='css' else f'<script defer src="/assets/sunflex-v2/product-revision.js?v={v}"></script>'
+    if path.startswith('products/') and path!='products/index.html':
+        for name in ['product-infographics','product-infographics-layout']:
+            asset=ROOT/f'assets/sunflex-v2/{name}.css'
+            v=hashlib.sha256(asset.read_bytes()).hexdigest()[:10]
+            extra+=f'<link rel="stylesheet" href="/assets/sunflex-v2/{name}.css?v={v}">'
     s=s.replace('</head>',extra+'</head>')
     s=s.replace('적용 분야 보기','Solar 솔루션 보기').replace('적용 분야 살펴보기','Solar 솔루션 살펴보기')
     p.write_text(s)
