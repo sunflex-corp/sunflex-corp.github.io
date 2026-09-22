@@ -24,7 +24,9 @@ for slug,spec in scenes.items():
         assert (R/image['href'].lstrip('/')).is_file(),(slug,image['href'])
     assert page.select_one('script[src^="/assets/sunflex-v2/product-revision.js"]'),slug
 cms=BeautifulSoup((R/'products/site-cms/index.html').read_text(),'html.parser')
-assert [x['src'] for x in cms.select('#product-benefits img')]==[f'/media/derived/site-cms-stage-{phase}-768.avif' for phase in ['early','mid','late']]
+assert [x['data-infographic-scene'] for x in cms.select('#product-benefits .sunflex-infographic')]==[f'site-cms-{i}' for i in [1,2,3]]
+assert len(cms.select('#product-benefits img'))==2
+assert cms.select_one('#product-benefits .diagram-route')
 for slug in ['smart-airbag','chatgpt-cctv','inspectcut','safebridge']:
     page=BeautifulSoup((R/'products'/slug/'index.html').read_text(),'html.parser')
     assert page.select_one('.revision-proof img'),slug

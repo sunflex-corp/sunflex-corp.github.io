@@ -1,6 +1,7 @@
 """Product-specific benefit stories, backed by the preserved product references."""
 import json
 from product_story_visuals import scene
+from product_infographics import figure as infographic_figure
 from pathlib import Path
 from html import escape as esc
 ROOT=Path(__file__).resolve().parents[1]
@@ -22,6 +23,6 @@ def build(slug, name, kind, soup):
                 asset.update({k:old[i].get(k,asset.get(k,'')) for k in ['src','srcset','width','height']})
                 asset['alt']=['굴착 구간과 현장 동선이 보이는 착공 초기 공사 현장 도식','타워크레인과 골조가 올라가는 중기 공사 현장 도식','상층 골조와 외장 작업이 진행되는 준공 전 공사 현장 도식'][i]
         tabs+=f'<button type="button" role="tab" id="{ident}-tab" aria-controls="{ident}" aria-selected="{str(i==0).lower()}" tabindex="{0 if i==0 else -1}"><span class="benefit-tab-number">{i+1:02}</span>{esc(s["label"])}</button>'
-        figure=scene(slug,i,asset)
+        figure=infographic_figure(slug,i) or scene(slug,i,asset)
         panels+=f'<li class="benefit-panel" id="{ident}" data-flow-panel>{figure}<div class="benefit-copy"><p class="benefit-kicker">{esc(s["label"])}</p><h3>{esc(s["title"])}</h3><p class="benefit-description">{esc(s["body"])}</p><a class="benefit-detail-link" href="#{esc(s["reference"])}">관련 구성 자세히 보기 <span aria-hidden="true">↗</span></a></div></li>'
     return f'<section class="editorial-chapter benefit-chapter" id="product-benefits" data-benefit-kind="{kind}"><div class="editorial-section-inner"><header class="benefit-heading"><p class="editorial-kicker">{esc(name)}</p><h2>{esc(BENEFITS[slug]["heading"])}</h2></header><div class="product-flow-track" data-scroll-flow><div class="product-flow-stage"><div class="product-flow-tabs" role="tablist" aria-label="제품 강점 살펴보기" hidden>{tabs}</div><ol class="editorial-flow benefit-panels" aria-label="제품의 세 가지 강점">{panels}</ol></div></div></div></section>'

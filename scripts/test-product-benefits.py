@@ -19,7 +19,7 @@ for slug,story in data.items():
         assert panel.h3.get_text()==stage['title'] and panel.select_one('.benefit-description').get_text()==stage['body'],slug
         assert page.find(id=stage['reference']),slug
         visual=panel.select_one('.benefit-visual svg[role=img]')
-        assert (visual and visual.get('aria-label')) or panel.select_one('.benefit-visual img[alt]'),slug
+        assert (visual and visual.get('aria-label')) or panel.select_one('.benefit-visual img[alt]') or panel.select_one('.sunflex-infographic[role=group][aria-label]'),slug
         assert panel.select_one('.benefit-visual figcaption'),slug
         for image in visual.find_all('image') if visual else []:
             assert (root/image['href'].lstrip('/')).is_file(),slug
