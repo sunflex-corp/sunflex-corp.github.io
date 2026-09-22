@@ -4,6 +4,7 @@ Usage: python3 scripts/import-product-infographics.py /absolute/path/to/review-d
 from pathlib import Path
 from bs4 import BeautifulSoup
 import hashlib,json,sys
+from PIL import Image
 ROOT=Path(__file__).resolve().parents[1]
 DRAFT=Path(sys.argv[1]).resolve()
 page=BeautifulSoup((DRAFT/'index.html').read_text(),'html.parser')
@@ -21,7 +22,7 @@ for product in page.select('.product[data-slug]'):
   for node in wrapper.select('img[src]'):
    src=DRAFT/node['src'];data=src.read_bytes();target=f'{src.stem}.{hashlib.sha256(data).hexdigest()[:10]}{src.suffix}'
    (assets/target).write_bytes(data);node['src']='/assets/sunflex-infographics/'+target
-   node['width']='1600';node['height']='900';node['loading']='lazy';node['decoding']='async'
+   width,height=Image.open(src).size;node['width']=str(width);node['height']=str(height);node['loading']='lazy';node['decoding']='async'
    media.append(node['src'])
   for node in wrapper.select('[class]'):used.update(node['class'])
   figure=page.new_tag('figure',attrs={'class':'benefit-visual infographic-visual','data-infographic-version':'20260922'})

@@ -11,7 +11,7 @@
 ## Acceptance
 
 - 48 product pages × 3 distinct scene keys; no draft navigation embedded.
-- All captions remain HTML and all image markers use the same 16:9 frame as the render.
+- All captions remain HTML and all image markers use the same 16:9 or 4:3 frame as the render.
 - Every existing benefit title, description, detail link and other page section remains present.
 - All styles are scoped; long content remains readable through the existing reading-mode fallback.
 - Static/function checks pass and deployment status is successful.
