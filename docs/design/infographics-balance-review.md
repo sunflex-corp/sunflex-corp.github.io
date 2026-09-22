@@ -97,3 +97,9 @@ Claude Code 2.1.259, exact model `claude-sonnet-5`, effort `high`, read-only too
 - Final assets are inspected as image files. Browser-rendered spacing, clipping and device screenshots are still unverified because browser access is denied by the managed policy check. No browser QA pass is claimed.
 
 Editable Blender corrections are retained in the working design directory as four `*-focused.blend` and two `*-detailed.blend` files; originals are preserved. The production repository ships the rendered assets and HTML/CSS.
+
+## Focused independent re-review
+
+Claude Sonnet 5 high read 27 corrected scene fragments, six image assets, the generator, callout code and responsive styles. It found the targeted substantive issues resolved within static/image evidence and no clear new regression. The eight pin scenes were not included in that smaller image packet, so their pixel alignment was explicitly not independently certified in the follow-up.
+
+The implementation lead then opened all eight original rasters and compared target coordinates. Three scenes received more precise anchors: smart safety hook's attachment/locking sleeve, the drone's marked inspection point, and the CMS camera body. Pin and caption contracts passed again after those changes. The unused safety-box string replacement noted by the reviewer was removed from the design generator. Browser verification remains unavailable as stated above.
