@@ -117,11 +117,11 @@
 .product-editorial .product-flow-tabs{position:relative;gap:clamp(10px,2vw,24px);margin:0 0 16px;padding:0 0 8px;overflow:visible;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-bottom:1px solid #8392a344}
 .product-editorial .product-flow-tabs:has(>button:nth-child(4)){grid-template-columns:repeat(4,minmax(0,1fr))}
 .product-editorial .product-flow-tabs:has(>button:nth-child(5)){grid-template-columns:repeat(5,minmax(0,1fr))}
-.product-editorial .product-flow-tabs:after{content:"";position:absolute;inset:auto 0 -1px;height:2px;background:currentColor;transform:scaleX(var(--flow-progress));transform-origin:left;pointer-events:none}
+.product-editorial .product-flow-tabs:after{content:none}
 .product-editorial .product-flow-tabs button{min-width:0;padding:10px 8px;min-height:52px;font-size:14px;line-height:1.45;border:0;word-break:keep-all;overflow-wrap:anywhere;transition:opacity .2s ease;color:inherit}
 .product-editorial .product-flow-tabs button[data-step-state=upcoming]{opacity:.42}
 .product-editorial .product-flow-tabs button[data-step-state=previous]{opacity:.62}
-.product-editorial .product-flow-tabs button[aria-selected=true]{opacity:1;font-weight:650}
+.product-editorial .product-flow-tabs button[aria-selected=true]{opacity:1;font-weight:650;box-shadow:0 2px 0 currentColor}
 .product-editorial .benefit-tab-number{font-size:17px;margin-right:10px}
 .product-editorial .flow-pinned{height:calc(var(--flow-stage-height) + var(--flow-span));position:relative}
 .product-editorial .flow-pinned .product-flow-stage{position:sticky;top:var(--flow-top);padding:0}

@@ -16,6 +16,11 @@ KEEP={'mobile-cctv':['mobile-cctv-lineup','movingcam-engineering','movingcam-net
 
 def refine(body,slug):
  s=BeautifulSoup(body,'html.parser');spec=SCENES[slug];root=s.select_one('.product-story');root['data-story-revision']='20260920'
+ # The adjacent checkpoint story repeats the preceding scene without new visual information.
+ if slug=='hook-bottom-camera':
+  duplicate=root.select_one('#hook-checkpoints figure')
+  if duplicate and duplicate.select_one('img[src="/media/derived/product-hook-bottom-camera-problem-2560.avif"]'):
+   duplicate.decompose()
  overview=root.select_one('.editorial-overview')
  if overview:overview.decompose()
  for link in s.select('a[href="#product-content"]'):link['href']='#blind-corner' if slug=='pedestrian-collision-prevention' else '#product-benefits'

@@ -10,6 +10,11 @@ def canon(n):
  if isinstance(n,NavigableString):return re.sub(r'\s+',' ',str(n)).strip()
  return (n.name,sorted((k,tuple(v) if isinstance(v,list) else v) for k,v in n.attrs.items()),[v for c in n.children if (v:=canon(c))])
 def preserved(p,slug):
+ # Intentional removal of one repeated photo; all checkpoint prose remains compared.
+ if slug=='hook-bottom-camera':
+  duplicate=p.select_one('#hook-checkpoints figure')
+  if duplicate and duplicate.select_one('img[src="/media/derived/product-hook-bottom-camera-problem-2560.avif"]'):
+   duplicate.decompose()
  # Layout assets intentionally change in this review; their cache keys are not prose.
  for n in p.select('link[href],script[src]'):
   key='href' if n.name=='link' else 'src'
@@ -61,6 +66,8 @@ for slug in FIGURES:
     assert im.get('width')=='1600' and im.get('height') in ['900','1200'],slug
     media.add(im['src'])
   assert len(n.find_parent('figure').select('figcaption'))==1,slug
+  for singleton in ['qa-deploy-flow','qa-detected-person','qa-part-link','qa-lift-poses','qa-case-transfer']:
+   assert len(n.select('.'+singleton))<=1,(slug,i,'Repeated visual component',singleton)
   if n.select('.render-stage img'):assert len(n.select('.object-marker'))==len(n.select('.render-annotations li'))>0,(slug,i)
   assert not n.select('.data-row>b'),(slug,i)
  ids=[n['id'] for n in p.select('[id]')];assert len(ids)==len(set(ids)),slug

@@ -49,6 +49,8 @@ for width in [360,540,720]:
     large+=1
    if n.local_name=='svg' and n.parent is not None and n.parent.classes & {'bc-chest-focus','ctx-crane','ctx-cutaway','ctx-location-plan','ctx-drone-plan'}:
     assert style['width']=='100%' and style['height']=='auto',(slug,width,style)
+   if 'qa-lift-poses' in c:
+    assert style['width']=='100%' and style['height']=='auto',(slug,width,style)
    if 'render-stage' in c:
     assert style['aspect-ratio']==('4/3' if c&{'render-stage--focused','render-stage--portrait'} else '16/9'),(slug,style)
     renders+=1
@@ -59,6 +61,8 @@ for width in [360,540,720]:
     assert style['width']=='26px' and '13px' in style['font'],(slug,width,style)
     pins+=1
    if 'sunflex-infographic' in c:panels+=1
- assert large==15 and renders==29 and panels==144 and pins==15,(width,large,renders,panels)
+ # Heart-band now keeps one physical measurement pin; wearer/manager are output targets,
+ # Suit motion now uses two poses instead of three part-location markers.
+ assert large==15 and renders==29 and panels==144 and pins==10,(width,large,renders,panels,pins)
  count+=panels
-print(f'PASS: {count} scene/width cascade checks; 15 full-size SVG scenes, 29 render frames, readable compact card/route rules')
+print(f'PASS: {count} scene/width cascade checks; 15 subject SVG scenes plus suit poses, 29 render frames, 10 component pins, readable compact card/route rules')
