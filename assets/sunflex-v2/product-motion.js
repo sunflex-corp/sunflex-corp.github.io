@@ -5,6 +5,7 @@
  function pose(progress,mobile){const p=clamp(progress);return {scale:1.065-p*.065,y:(.5-p)*(mobile?12:36)};}
  if(typeof module!=='undefined')module.exports={pose};
  if(typeof document==='undefined')return;
+ if(document.documentElement?.dataset.motionEngine==='gsap'&&window.gsap&&window.ScrollTrigger)return;
  const root=document.querySelector('[data-motion-profile]');
  if(!root||typeof IntersectionObserver==='undefined'||!Element.prototype.animate)return;
  const reduced=matchMedia('(prefers-reduced-motion: reduce)'),mobile=matchMedia('(max-width:760px)');

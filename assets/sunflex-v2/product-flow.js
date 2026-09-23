@@ -10,6 +10,7 @@
  }
  if(typeof module!=='undefined')module.exports={sceneAt};
  if(typeof document==='undefined')return;
+ if(document.documentElement?.dataset.motionEngine==='gsap'&&window.gsap&&window.ScrollTrigger)return;
  const reduced=window.matchMedia('(prefers-reduced-motion: reduce)');
  document.querySelectorAll('[data-scroll-flow]').forEach((track,flowIndex)=>{
   const stage=track.querySelector('.product-flow-stage'),controls=track.querySelector('.product-flow-tabs');

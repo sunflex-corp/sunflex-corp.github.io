@@ -1,0 +1,16 @@
+/* GSAP owns entrance transforms; interactive and disclosure states keep their existing semantics. */
+html[data-motion-engine=gsap] .solar-reveal,html[data-motion-engine=gsap] .editorial-chapter.is-entering{animation:none!important}
+html[data-motion-engine=gsap] .flow-tabbed{height:auto!important}
+html[data-motion-engine=gsap] .flow-tabbed .product-flow-stage{position:relative;top:auto}
+html[data-motion-engine=gsap] .flow-tabbed .editorial-flow{display:block!important}
+html[data-motion-engine=gsap] .flow-tabbed [data-flow-panel][hidden]{display:none!important}
+html[data-motion-engine=gsap] .flow-pinned .benefit-photo img{transition:none}
+html[data-motion-engine=gsap] .flow-enhanced .product-flow-tabs button{position:relative;transition:color .22s,opacity .22s}
+html[data-motion-engine=gsap] .flow-tabbed .product-flow-tabs button[aria-selected=true]{box-shadow:0 2px 0 currentColor}
+html[data-motion-engine=gsap] :is(.company-photo,.feature-media){overflow:hidden}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){
+ html[data-motion-engine=gsap] :is(.solar-card-image img,.home-product img){transition:transform .65s cubic-bezier(.16,1,.3,1)}
+ html[data-motion-engine=gsap] :is(.solar-card,.home-product):hover img{transform:scale(1.035)}
+ html[data-motion-engine=gsap] :is(.btn,.support-choice){transition:background-color .25s,color .25s,border-color .25s}
+}
+@media(prefers-reduced-motion:reduce){html[data-motion-engine=gsap] .flow-enhanced img{transform:none!important}}

@@ -87,7 +87,8 @@ def render(path,title,desc,body,active=''):
             extra+=f'<link rel="stylesheet" href="/assets/sunflex-v2/{name}.css?v={v}">'
     s=s.replace('</head>',extra+'</head>')
     s=s.replace('적용 분야 보기','Solar 솔루션 보기').replace('적용 분야 살펴보기','Solar 솔루션 살펴보기')
-    p.write_text(s)
+    from site_motion import enhance
+    p.write_text(enhance(s))
 g.header=header;g.footer=footer;g.render=render
 
 def families():

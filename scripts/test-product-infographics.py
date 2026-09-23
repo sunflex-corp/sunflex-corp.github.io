@@ -12,6 +12,9 @@ def canon(n):
  if isinstance(n,NavigableString):return re.sub(r'\s+',' ',str(n)).strip()
  return (n.name,sorted((k,tuple(v) if isinstance(v,list) else v) for k,v in n.attrs.items()),[v for c in n.children if (v:=canon(c))])
 def preserved(p,slug):
+ # Shared motion adds only owned runtime tags and a root ownership marker.
+ for n in p.select('[data-site-motion]'):n.decompose()
+ if p.html:p.html.attrs.pop('data-motion-engine',None)
  # These two buyer-facing sections have an explicit, idempotent revision.
  # Normalize only that reviewed transform; unrelated source content is compared.
  from product_buyer_proof import refine_proof
@@ -35,7 +38,7 @@ def preserved(p,slug):
  # Layout assets intentionally change in this review; their cache keys are not prose.
  for n in p.select('link[href],script[src]'):
   key='href' if n.name=='link' else 'src'
-  if re.search(r'/product-(flow|revision)\.(css|js)\?v=',n[key]):
+  if re.search(r'/product-(flow|revision|motion)\.(css|js)\?v=',n[key]):
    n[key]=n[key].split('?')[0]
  # Approved copy revisions are constrained to their exact page and exact former/new pairs.
  copy_revisions={
