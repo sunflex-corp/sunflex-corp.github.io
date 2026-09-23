@@ -117,7 +117,8 @@
     "render": "context-record-review.png",
     "alt": "함께 검토의 사용 상황을 설명하는 참고 장면",
     "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
-    "context_only": true
+    "context_only": true,
+    "labels": []
   },
   "site-cms-1": {
     "render": "chatgpt-cctv-selection.png",
@@ -171,7 +172,8 @@
     "render": "context-prework-record.png",
     "alt": "유도원 안내의 사용 상황을 설명하는 참고 장면",
     "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
-    "context_only": true
+    "context_only": true,
+    "labels": []
   },
   "co2-temp-humidity-1": {
     "render": "industrial-pipe-inspection.png",
@@ -195,19 +197,22 @@
     "render": "industrial-pipe-inspection.png",
     "alt": "분사 배치의 사용 상황을 설명하는 참고 장면",
     "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
-    "context_only": true
+    "context_only": true,
+    "labels": []
   },
   "iot-mist-2": {
     "render": "context-broadcast-planning.png",
     "alt": "미스트 분사의 사용 상황을 설명하는 참고 장면",
     "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
-    "context_only": true
+    "context_only": true,
+    "labels": []
   },
   "iot-mist-3": {
     "render": "office-integrated-review.png",
     "alt": "가동 조절의 사용 상황을 설명하는 참고 장면",
     "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
-    "context_only": true
+    "context_only": true,
+    "labels": []
   },
   "lte-anemometer-1": {
     "render": "construction-tower-crane-operation.png",
@@ -231,7 +236,8 @@
     "render": "industrial-pipe-inspection.png",
     "alt": "환경 측정의 사용 상황을 설명하는 참고 장면",
     "caption": "설치·운영 상황을 설명하는 참고 장면입니다.",
-    "context_only": true
+    "context_only": true,
+    "labels": []
   },
   "smart-environment-board-2": {
     "render": "context-broadcast-planning.png",

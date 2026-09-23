@@ -20,8 +20,9 @@ for scene,m in mapping.items():
  version=hashlib.sha256(dest.read_bytes()).hexdigest()[:10]
  labels=m.get('labels',req['labels_from_existing_facts'])
  labelhtml=''.join(f'<span>{html.escape(x)}</span>' for x in labels)
+ labelblock=f'<div class="external-render-labels">{labelhtml}</div>' if labels else ''
  caption=m.get('caption','설치·운영 상황을 설명하는 참고 장면입니다.')
- figure=f'''<figure class="benefit-visual infographic-visual external-render" data-infographic-version="20260923-external" data-visual-kind="render"><div class="sunflex-infographic" data-infographic-scene="{scene}" role="group" aria-label="{html.escape(req['functional_message'],quote=True)}"><div class="visual-shell"><div class="external-render-stage"><img src="/media/external-renders/{dest.name}?v={version}" width="1800" height="1200" loading="lazy" decoding="async" alt="{html.escape(m['alt'],quote=True)}"></div><div class="external-render-labels">{labelhtml}</div></div></div><figcaption>{html.escape(caption)}</figcaption></figure>'''
+ figure=f'''<figure class="benefit-visual infographic-visual external-render" data-infographic-version="20260923-external" data-visual-kind="render"><div class="sunflex-infographic" data-infographic-scene="{scene}" role="group" aria-label="{html.escape(req['functional_message'],quote=True)}"><div class="visual-shell"><div class="external-render-stage"><img src="/media/external-renders/{dest.name}?v={version}" width="1800" height="1200" loading="lazy" decoding="async" alt="{html.escape(m['alt'],quote=True)}"></div>{labelblock}</div></div><figcaption>{html.escape(caption)}</figcaption></figure>'''
  figures[req['slug']][req['step']-1]=figure
 (ROOT/'data/product-infographics.json').write_text(json.dumps(figures,ensure_ascii=False,indent=2)+'\n')
 print(f'Applied {len(mapping)} external Blender figures from {len(converted)} context renders')

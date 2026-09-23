@@ -78,3 +78,36 @@ def refine_external_contexts(s,root,slug):
    if h:h.string=title
    description=panel.select_one('.benefit-description')
    if description:description.string=body
+
+ # Use the actual bodycam photograph for mounting choices. A generic CCTV render
+ # cannot explain wearing or mounting this product.
+ if slug=='mobile-bodycam':
+  refine_bodycam_mount(s,root)
+ if slug=='vehicle-entry-alert':
+  for caption in root.select('figcaption'):
+   if caption.get_text(strip=True)=='차량 진출입 알림용 카메라 2대와 방송 스피커':
+    caption.decompose()
+
+
+def refine_bodycam_mount(s,root):
+ mount=root.select_one('[aria-labelledby="bodycam-mount-title"]')
+ if not mount or 'bodycam-mount-choice' in mount.get('class',[]):return
+ photo=mount.find('figure',recursive=False)
+ if not photo:return
+ photo.extract()
+ mount.clear();mount['class']=['bodycam-mount-choice']
+ mount['id']='bodycam-mount'
+ photo['class']=['bodycam-mount-photo']
+ for node in photo.select('img,source'):
+  node['sizes']='(max-width:760px) 220px, 280px'
+ mount.append(photo)
+ copy=BeautifulSoup('''<div class="bodycam-mount-copy">
+ <p class="bodycam-mount-kicker">착용·거치 방식</p>
+ <h3 id="bodycam-mount-title">촬영할 위치에 맞춰,<br>착용하거나 거치하세요.</h3>
+ <p class="bodycam-mount-intro">작업자의 이동 여부와 촬영할 구간에 따라 거치 방식을 선택합니다.</p>
+ <dl class="bodycam-mount-options">
+ <div><dt>착용</dt><dd>이동하며 작업 구간을 기록할 때</dd></div>
+ <div><dt>자석 크래들</dt><dd>구조물 가까이에 촬영 위치를 잡을 때</dd></div>
+ <div><dt>삼각대</dt><dd>정해 둔 작업면을 같은 위치에서 촬영할 때</dd></div>
+ </dl></div>''','html.parser')
+ mount.append(copy)
