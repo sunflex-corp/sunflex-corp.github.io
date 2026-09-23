@@ -1,0 +1,542 @@
+[
+  {
+    "page": "/products/ai-broadcast/",
+    "sections": [
+      {
+        "id": "product-benefits",
+        "steps": 3
+      }
+    ]
+  },
+  {
+    "page": "/products/ai-drone-inspection/",
+    "sections": [
+      {
+        "id": "product-benefits",
+        "steps": 3
+      },
+      {
+        "id": "flight-route",
+        "steps": 3
+      }
+    ]
+  },
+  {
+    "page": "/products/ai-equipment-collision/",
+    "sections": [
+      {
+        "id": "product-benefits",
+        "steps": 3
+      },
+      {
+        "id": "warning-state",
+        "steps": 3
+      }
+    ]
+  },
+  {
+    "page": "/products/ai-quick-risk-assessment/",
+    "sections": [
+      {
+        "id": "product-benefits",
+        "steps": 3
+      },
+      {
+        "id": "ai-quick-risk-assessment-flow",
+        "steps": 3
+      }
+    ]
+  },
+  {
+    "page": "/products/ai-risk-assessment-review/",
+    "sections": [
+      {
+        "id": "product-benefits",
+        "steps": 3
+      },
+      {
+        "id": "ai-risk-assessment-review-flow",
+        "steps": 3
+      }
+    ]
+  },
+  {
+    "page": "/products/ai-safety-index/",
+    "sections": [
+      {
+        "id": "product-benefits",
+        "steps": 3
+      },
+      {
+        "id": "morning-index-line",
+        "steps": 3
+      }
+    ]
+  },
+  {
+    "page": "/products/ai-similar-accident-alert/",
+    "sections": [
+      {
+        "id": "product-benefits",
+        "steps": 3
+      },
+      {
+        "id": "ai-similar-accident-alert-flow",
+        "steps": 3
+      }
+    ]
+  },
+  {
+    "page": "/products/ai-subcontractor-safety/",
+    "sections": [
+      {
+        "id": "product-benefits",
+        "steps": 3
+      },
+      {
+        "id": "ai-subcontractor-safety-flow",
+        "steps": 3
+      }
+    ]
+  },
+  {
+    "page": "/products/alcohol-detection/",
+    "sections": [
+      {
+        "id": "product-benefits",
+        "steps": 3
+      },
+      {
+        "id": "shift-start-gate",
+        "steps": 3
+      }
+    ]
+  },
+  {
+    "page": "/products/chatgpt-cctv/",
+    "sections": [
+      {
+        "id": "product-benefits",
+        "steps": 3
+      },
+      {
+        "id": "scene-to-record",
+        "steps": 3
+      }
+    ]
+  },
+  {
+    "page": "/products/co2-temp-humidity/",
+    "sections": [
+      {
+        "id": "product-benefits",
+        "steps": 3
+      },
+      {
+        "id": "air-check-line",
+        "steps": 3
+      }
+    ]
+  },
+  {
+    "page": "/products/compact-gas-detector/",
+    "sections": [
+      {
+        "id": "product-benefits",
+        "steps": 3
+      },
+      {
+        "id": "gas-measurement-flow",
+        "steps": 3
+      }
+    ]
+  },
+  {
+    "page": "/products/concrete-curing/",
+    "sections": [
+      {
+        "id": "product-benefits",
+        "steps": 3
+      },
+      {
+        "id": "curing-rail",
+        "steps": 5
+      }
+    ]
+  },
+  {
+    "page": "/products/digital-radio/",
+    "sections": [
+      {
+        "id": "product-benefits",
+        "steps": 3
+      }
+    ]
+  },
+  {
+    "page": "/products/emergency-signal-location/",
+    "sections": [
+      {
+        "id": "product-benefits",
+        "steps": 3
+      }
+    ]
+  },
+  {
+    "page": "/products/equipment-approach-alarm/",
+    "sections": [
+      {
+        "id": "product-benefits",
+        "steps": 3
+      },
+      {
+        "id": "work-radius-line",
+        "steps": 3
+      }
+    ]
+  },
+  {
+    "page": "/products/fire-detection/",
+    "sections": [
+      {
+        "id": "product-benefits",
+        "steps": 3
+      },
+      {
+        "id": "first-signal-line",
+        "steps": 3
+      }
+    ]
+  },
+  {
+    "page": "/products/gas-alarm/",
+    "sections": [
+      {
+        "id": "product-benefits",
+        "steps": 3
+      },
+      {
+        "id": "entrance-decision-line",
+        "steps": 3
+      }
+    ]
+  },
+  {
+    "page": "/products/hazard-area-broadcast/",
+    "sections": [
+      {
+        "id": "product-benefits",
+        "steps": 3
+      },
+      {
+        "id": "walking-boundary",
+        "steps": 3
+      }
+    ]
+  },
+  {
+    "page": "/products/healthcare-heart-band/",
+    "sections": [
+      {
+        "id": "product-benefits",
+        "steps": 3
+      }
+    ]
+  },
+  {
+    "page": "/products/hook-bottom-camera/",
+    "sections": [
+      {
+        "id": "product-benefits",
+        "steps": 3
+      }
+    ]
+  },
+  {
+    "page": "/products/inspectcut/",
+    "sections": [
+      {
+        "id": "product-benefits",
+        "steps": 3
+      }
+    ]
+  },
+  {
+    "page": "/products/iot-mist/",
+    "sections": [
+      {
+        "id": "product-benefits",
+        "steps": 3
+      }
+    ]
+  },
+  {
+    "page": "/products/iot-small-tower-crane/",
+    "sections": [
+      {
+        "id": "product-benefits",
+        "steps": 3
+      }
+    ]
+  },
+  {
+    "page": "/products/ir3-flame-detector/",
+    "sections": [
+      {
+        "id": "product-benefits",
+        "steps": 3
+      }
+    ]
+  },
+  {
+    "page": "/products/led-logo-light/",
+    "sections": [
+      {
+        "id": "product-benefits",
+        "steps": 3
+      }
+    ]
+  },
+  {
+    "page": "/products/lte-anemometer/",
+    "sections": [
+      {
+        "id": "product-benefits",
+        "steps": 3
+      }
+    ]
+  },
+  {
+    "page": "/products/mobile-bodycam/",
+    "sections": [
+      {
+        "id": "product-benefits",
+        "steps": 3
+      }
+    ]
+  },
+  {
+    "page": "/products/mobile-cctv/",
+    "sections": [
+      {
+        "id": "story",
+        "steps": 3
+      }
+    ]
+  },
+  {
+    "page": "/products/opening-open-close-sensor/",
+    "sections": [
+      {
+        "id": "product-benefits",
+        "steps": 3
+      },
+      {
+        "id": "opening-alert-line",
+        "steps": 3
+      }
+    ]
+  },
+  {
+    "page": "/products/pedestrian-collision-prevention/",
+    "sections": [
+      {
+        "id": "blind-corner",
+        "steps": 3
+      }
+    ]
+  },
+  {
+    "page": "/products/power-assist-suit/",
+    "sections": [
+      {
+        "id": "product-benefits",
+        "steps": 3
+      }
+    ]
+  },
+  {
+    "page": "/products/safebridge/",
+    "sections": [
+      {
+        "id": "product-benefits",
+        "steps": 3
+      },
+      {
+        "id": "safebridge-training-timeline",
+        "steps": 4
+      }
+    ]
+  },
+  {
+    "page": "/products/safety-box/",
+    "sections": [
+      {
+        "id": "product-benefits",
+        "steps": 3
+      }
+    ]
+  },
+  {
+    "page": "/products/site-cms/",
+    "sections": [
+      {
+        "id": "product-benefits",
+        "steps": 3
+      },
+      {
+        "id": "process-transition-line",
+        "steps": 3
+      }
+    ]
+  },
+  {
+    "page": "/products/smart-airbag/",
+    "sections": [
+      {
+        "id": "product-benefits",
+        "steps": 3
+      }
+    ]
+  },
+  {
+    "page": "/products/smart-beacon/",
+    "sections": [
+      {
+        "id": "product-benefits",
+        "steps": 3
+      }
+    ]
+  },
+  {
+    "page": "/products/smart-environment-board/",
+    "sections": [
+      {
+        "id": "product-benefits",
+        "steps": 3
+      },
+      {
+        "id": "environment-link",
+        "steps": 3
+      }
+    ]
+  },
+  {
+    "page": "/products/smart-helmet/",
+    "sections": [
+      {
+        "id": "product-benefits",
+        "steps": 3
+      }
+    ]
+  },
+  {
+    "page": "/products/smart-safety-hook/",
+    "sections": [
+      {
+        "id": "product-benefits",
+        "steps": 3
+      }
+    ]
+  },
+  {
+    "page": "/products/tbm-solution/",
+    "sections": [
+      {
+        "id": "product-benefits",
+        "steps": 3
+      },
+      {
+        "id": "tbm-delivery-flow",
+        "steps": 3
+      }
+    ]
+  },
+  {
+    "page": "/products/tilt-acceleration-sensor/",
+    "sections": [
+      {
+        "id": "product-benefits",
+        "steps": 3
+      },
+      {
+        "id": "tilt-decision-record",
+        "steps": 4
+      }
+    ]
+  },
+  {
+    "page": "/products/tower-crane-hook-collision/",
+    "sections": [
+      {
+        "id": "product-benefits",
+        "steps": 3
+      },
+      {
+        "id": "hook-warning-flow",
+        "steps": 3
+      }
+    ]
+  },
+  {
+    "page": "/products/vehicle-entry-alert/",
+    "sections": [
+      {
+        "id": "product-benefits",
+        "steps": 3
+      },
+      {
+        "id": "entry-alert-flow",
+        "steps": 3
+      }
+    ]
+  },
+  {
+    "page": "/products/wireless-emergency-broadcast/",
+    "sections": [
+      {
+        "id": "product-benefits",
+        "steps": 3
+      },
+      {
+        "id": "broadcast-reach-line",
+        "steps": 4
+      }
+    ]
+  },
+  {
+    "page": "/products/wireless-network/",
+    "sections": [
+      {
+        "id": "product-benefits",
+        "steps": 3
+      },
+      {
+        "id": "network-signal-path",
+        "steps": 3
+      }
+    ]
+  },
+  {
+    "page": "/products/worker-access-gate/",
+    "sections": [
+      {
+        "id": "product-benefits",
+        "steps": 3
+      }
+    ]
+  },
+  {
+    "page": "/products/worker-attendance-card/",
+    "sections": [
+      {
+        "id": "product-benefits",
+        "steps": 3
+      },
+      {
+        "id": "attendance-card-flow",
+        "steps": 3
+      }
+    ]
+  }
+]

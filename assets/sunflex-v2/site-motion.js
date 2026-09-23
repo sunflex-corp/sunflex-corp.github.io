@@ -28,7 +28,7 @@
  $$('[data-scroll-flow]').forEach((track,flowIndex)=>{
   const stage=$('.product-flow-stage',track),controls=$('.product-flow-tabs',track),panels=$$('[data-flow-panel]',track),buttons=controls?$$('button',controls):[];
   if(!stage||panels.length<2||buttons.length!==panels.length)return;
-  let selected=0,timeline,pinned=false,top=0,span=0;
+  let selected=0,trigger,pinned=false,top=0,span=0;
   const images=panels.map(p=>$('img',p));
   controls.hidden=false;controls.setAttribute('role','tablist');track.classList.add('flow-enhanced');
   panels.forEach((p,i)=>{p.id||=`motion-flow-${flowIndex}-${i}`;buttons[i].id||=p.id+'-tab';buttons[i].setAttribute('role','tab');buttons[i].setAttribute('aria-controls',p.id);p.setAttribute('role','tabpanel');p.setAttribute('aria-labelledby',buttons[i].id);});
@@ -38,34 +38,38 @@
   }
   function seek(index,focus=false){
    if(focus)buttons[index].focus({preventScroll:true});
-   if(pinned){go(timeline.scrollTrigger.start+(index+.3)*span/panels.length);return;}
+   if(pinned){go(trigger.start+(index+.5)*span/panels.length);return;}
    const previous=selected;select(index);panels.forEach((p,i)=>p.hidden=i!==index);
    if(!reduced.matches&&previous!==index){gsap.killTweensOf(panels);gsap.fromTo(panels[index],{opacity:0,y:20},{opacity:1,y:0,duration:.55,ease:'power3.out',clearProps:'opacity,transform'});}
    ScrollTrigger.refresh();
   }
   buttons.forEach((b,i)=>{b.addEventListener('click',()=>seek(i));b.addEventListener('keydown',e=>{const next={ArrowRight:(i+1)%panels.length,ArrowLeft:(i+panels.length-1)%panels.length,Home:0,End:panels.length-1}[e.key];if(next===undefined)return;e.preventDefault();seek(next,true);});});
   function configure(){
-   timeline?.scrollTrigger?.kill();timeline?.kill();timeline=null;
+   trigger?.kill();trigger=null;
    gsap.killTweensOf(panels);gsap.set(panels,{clearProps:'opacity,visibility,transform,--flow-shift,--flow-copy-alpha'});
    images.filter(Boolean).forEach(im=>gsap.set(im,{clearProps:'transform'}));
    panels.forEach(p=>p.hidden=false);track.classList.remove('flow-pinned','flow-tabbed','flow-reading');
    top=headerOffset();const view=innerHeight,available=view-top-24;
    track.style.setProperty('--flow-view',view+'px');track.style.setProperty('--flow-available',Math.max(180,available)+'px');
    track.classList.add('flow-measuring');const panelHeight=Math.max(...panels.map(p=>p.offsetHeight)),height=panelHeight+controls.offsetHeight+24;track.classList.remove('flow-measuring');
-   pinned=desktop.matches&&!reduced.matches&&height<=available;
+   pinned=!reduced.matches&&height<=available;
    track.classList.add(pinned?'flow-pinned':'flow-tabbed');track.dataset.flowMode=pinned?'pinned':'tabbed';
    track.style.setProperty('--flow-top',top+'px');track.style.setProperty('--flow-stage-height',height+'px');
    if(!pinned){select(selected);panels.forEach((p,i)=>p.hidden=i!==selected);return;}
    span=Math.max(480,view*.88)*panels.length;track.style.setProperty('--flow-span',span+'px');
-   gsap.set(panels,{autoAlpha:0,'--flow-shift':'0px'});gsap.set(panels[0],{autoAlpha:1});select(0);
-   // CSS owns the stable sticky frame; ScrollTrigger owns only its child timeline.
-   // Tween endpoints are fixed; configure() rebuilds them when the layout changes.
-   // Invalidating here can revert pending entrance tweens during a nested refresh.
-   timeline=gsap.timeline({scrollTrigger:{trigger:track,start:()=>`top ${top}px`,end:()=>'+='+span,scrub:.6},onUpdate(){const i=Math.min(panels.length-1,Math.floor(this.time()+.04));if(i!==selected)select(i);}});
-   panels.forEach((panel,i)=>{
-    if(i){timeline.to(panels[i-1],{autoAlpha:0,'--flow-shift':'-14px',duration:.22,ease:'power2.in'},i-.18);timeline.fromTo(panel,{autoAlpha:0,'--flow-shift':'24px'},{autoAlpha:1,'--flow-shift':'0px',duration:.32,ease:'power3.out'},i-.03);}
-    if(images[i])timeline.fromTo(images[i],{scale:1.035},{scale:1,duration:1,ease:'none'},i);
-    timeline.to(track,{'--flow-progress':(i+1)/panels.length,duration:1,ease:'none'},i);
+   // Each native-scroll interval is a reading stop. Only a change of step animates.
+   const show=(index,animate=true)=>{
+    gsap.killTweensOf(panels);select(index);
+    panels.forEach((panel,i)=>{
+     if(i!==index)gsap.set(panel,{autoAlpha:0,'--flow-shift':'0px'});
+     else if(animate)gsap.fromTo(panel,{autoAlpha:0,'--flow-shift':'14px'},{autoAlpha:1,'--flow-shift':'0px',duration:.32,ease:'power3.out',lazy:false});
+     else gsap.set(panel,{autoAlpha:1,'--flow-shift':'0px'});
+    });
+   };
+   show(selected,false);
+   trigger=ScrollTrigger.create({trigger:track,start:()=>`top ${top}px`,end:()=>'+='+span,
+    snap:{snapTo:progress=>progress<.025?0:progress>.975?1:(Math.min(panels.length-1,Math.floor(progress*panels.length))+.5)/panels.length,inertia:false,delay:.18,duration:{min:.18,max:.38},ease:'power2.out'},
+    onUpdate:self=>{const index=Math.min(panels.length-1,Math.floor(self.progress*panels.length));if(index!==selected)show(index);}
    });
   }
   flows.push({configure,track});configure();
