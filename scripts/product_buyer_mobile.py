@@ -171,3 +171,41 @@ def refine_mobile(soup, root):
                 copy.append(child.extract())
         card.append(copy)
     return soup
+
+
+def refine_installation_brief(soup, root):
+    """Replace the repeated relocation diagram with a useful installation brief.
+
+    Run after external-context conversion, including when normalizing old pages.
+    The photographic three-step story remains the single explanation of moving.
+    """
+    section = root.select_one('#moving-control-pin')
+    if not section or section.select_one('#movingcam-installation-brief'):
+        return
+    process = section.select_one('.cctv-process')
+    if not process:
+        return
+    for repeated in process.select(':scope > .external-detail-context, :scope > .cctv-process-detail'):
+        repeated.decompose()
+    checks = section.select_one('.buyer-install-source-checks')
+    if checks:
+        checks.decompose()
+    note = process.select_one('.cctv-process-note')
+    if note:
+        note.string = '현장 이해를 돕는 연출 이미지입니다. 실제 설치 구성은 현장 조건에 따라 달라집니다.'
+    brief = BeautifulSoup('''
+<section class="buyer-install-brief" id="movingcam-installation-brief" aria-labelledby="movingcam-installation-title">
+  <div class="buyer-install-intro">
+    <p class="buyer-install-eyebrow">설치·이설 전 확인</p>
+    <h3 id="movingcam-installation-title">옮길 자리가 정해졌다면,<br>설치 조건을 확인하세요.</h3>
+    <p class="buyer-install-lead">촬영할 구간과 현장의 전원·통신 여건을 알려주세요. 조건에 맞는 무빙캠 구성을 함께 검토합니다.</p>
+    <a class="buyer-install-cta" href="/contact/?product=mobile-cctv">우리 현장에 맞는 구성 상담 <span aria-hidden="true">↗</span></a>
+  </div>
+  <dl class="buyer-install-conditions">
+    <div><dt>촬영 범위</dt><dd><strong>작업 동선과 장비 주변</strong><p>옮긴 위치에서 필요한 작업 구간이 화면에 들어오는지 확인합니다.</p></dd></div>
+    <div><dt>전원 방식</dt><dd><strong>상시전원·배터리·태양광 충전</strong><p>설치 위치에서 사용할 수 있는 전원에 맞춰 구성을 선택합니다.</p></dd></div>
+    <div><dt>통신 방식</dt><dd><strong>WiFi형(W) 또는 LTE형(L)</strong><p>설치 위치의 무선망 연결 또는 LTE 수신 상태를 확인합니다.</p><a href="#movingcam-network">통신 방식과 모델명 확인 <span aria-hidden="true">↗</span></a></dd></div>
+  </dl>
+</section>
+''', 'html.parser').section
+    process.insert_after(brief)

@@ -92,3 +92,61 @@
  .product-editorial #detail-8 .buyer-model-gallery :is(picture,img){height:200px}
  .product-editorial #detail-8 .buyer-gallery-label{text-align:left}
 }
+
+/* After the visual relocation story, help a buyer prepare installation details.
+   No second process diagram, nested cards, or decorative product substitutes. */
+.product-editorial #moving-control-pin .buyer-install-brief {
+ display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:clamp(32px,5vw,72px);
+ margin:48px 0 0;padding:44px 0 0;border-top:1px solid #343941;
+ background:none;border-radius:0;align-items:start;
+}
+.product-editorial #moving-control-pin .buyer-install-intro {min-width:0}
+.product-editorial #moving-control-pin .buyer-install-eyebrow {
+ margin:0 0 16px;color:#a5bfdf;font-size:13px;font-weight:500;line-height:1.5;
+}
+.product-editorial #moving-control-pin .buyer-install-intro h3 {
+ margin:0 0 20px;font-size:clamp(26px,2.5vw,36px);font-weight:600;
+ line-height:1.35;letter-spacing:-.035em;word-break:keep-all;overflow-wrap:anywhere;
+}
+.product-editorial #moving-control-pin .buyer-install-lead {
+ max-width:390px;margin:0;font-size:16px;line-height:1.8;color:#b7c0cc;word-break:keep-all;
+}
+.product-editorial #moving-control-pin .buyer-install-cta {
+ display:inline-flex;justify-content:center;align-items:center;gap:20px;max-width:100%;
+ box-sizing:border-box;margin-top:28px;padding:14px 20px;border-radius:10px;
+ background:#f2f5f8;color:#152335;font-size:15px;font-weight:600;line-height:1.5;text-decoration:none;
+}
+.product-editorial #moving-control-pin .buyer-install-cta:hover {background:#dce9f8}
+.product-editorial #moving-control-pin .buyer-install-cta:focus-visible,
+.product-editorial #moving-control-pin .buyer-install-conditions a:focus-visible {outline:2px solid #9cc8ff;outline-offset:5px}
+.product-editorial #moving-control-pin .buyer-install-conditions {
+ display:block;margin:0;padding:0;background:none;border:0;
+}
+.product-editorial #moving-control-pin .buyer-install-conditions>div {
+ display:grid;grid-template-columns:76px minmax(0,1fr);gap:20px;
+ padding:22px 0;margin:0;border:0;border-bottom:1px solid #343941;
+ border-radius:0;background:none;box-shadow:none;
+}
+.product-editorial #moving-control-pin .buyer-install-conditions>div:first-child {padding-top:0}
+.product-editorial #moving-control-pin .buyer-install-conditions dt {
+ margin:0;padding-top:4px;font-size:14px;font-weight:500;line-height:1.6;color:#9aabc0;
+}
+.product-editorial #moving-control-pin .buyer-install-conditions dd {margin:0;min-width:0}
+.product-editorial #moving-control-pin .buyer-install-conditions strong {
+ display:block;margin:0 0 7px;font-size:20px;font-weight:600;line-height:1.45;word-break:keep-all;
+}
+.product-editorial #moving-control-pin .buyer-install-conditions p {
+ margin:0;font-size:15px;line-height:1.7;color:#b7c0cc;word-break:keep-all;
+}
+.product-editorial #moving-control-pin .buyer-install-conditions a {
+ display:inline-flex;gap:8px;margin-top:12px;padding-block:6px;
+ font-size:14px;line-height:1.5;color:#a8caff;text-underline-offset:4px;
+}
+@media(max-width:760px) {
+ .product-editorial #moving-control-pin .buyer-install-brief {grid-template-columns:1fr;gap:32px;margin-top:32px;padding-top:32px}
+ .product-editorial #moving-control-pin .buyer-install-intro h3 {font-size:28px}
+ .product-editorial #moving-control-pin .buyer-install-conditions>div {grid-template-columns:1fr;gap:6px;padding-block:20px}
+ .product-editorial #moving-control-pin .buyer-install-conditions dt {padding:0;font-size:13px}
+ .product-editorial #moving-control-pin .buyer-install-conditions strong {font-size:20px}
+ .product-editorial #moving-control-pin .buyer-install-cta {min-height:48px}
+}
