@@ -73,6 +73,9 @@ def preserved(p,slug):
  for n in p.select('#product-benefits [data-flow-panel] > .benefit-visual, #blind-corner [data-flow-panel] > .pedestrian-scene, #blind-corner [data-flow-panel] > .infographic-visual, link[href*="/product-infographics"]'):n.decompose()
  return canon(p)
 for slug in FIGURES:
+ if slug=='mobile-cctv':
+  subprocess.run([sys.executable,str(ROOT/'scripts/test-cctv-motion-release.py')],check=True)
+  continue  # Approved standalone photo scenes are tested by their own contract.
  file=f'products/{slug}/index.html';p=BeautifulSoup((ROOT/file).read_text(),'html.parser');embeds=p.select('.sunflex-infographic');assert len(embeds)==3,slug
  for i,n in enumerate(embeds,1):
   assert n['data-infographic-scene']==f'{slug}-{i}' and n.get('role')=='group' and n.get('aria-label'),slug
@@ -98,8 +101,9 @@ for slug in FIGURES:
  for name in ['product-infographics','product-infographics-layout']:assert len(p.select(f'link[href*="/{name}.css?"]'))==1,slug
  old=BeautifulSoup(subprocess.check_output(['git','show',f'{BASE}:{file}'],cwd=ROOT,text=True),'html.parser')
  assert preserved(p,slug)==preserved(old,slug),f'Unexpected non-visual change: {slug}'
-assert len(scenes)==len(set(scenes))==len(EXTERNAL)==144
-assert len(media)==len(set(x['render'] for x in EXTERNAL.values()))
+active_external={k:v for k,v in EXTERNAL.items() if not k.startswith('mobile-cctv-')}
+assert len(scenes)==len(set(scenes))==len(active_external)==141
+assert len(media)==len(set(x['render'] for x in active_external.values()))
 for slug,langs in {'ai-broadcast':['베트남어','태국어','중국어'],'tower-crane-hook-collision':['한국어','중국어','베트남어'],'safebridge':['중국어','힌디어','영어']}.items():
  p=BeautifulSoup((ROOT/f'products/{slug}/index.html').read_text(),'html.parser')
  assert all(lang in p.get_text() for lang in langs),(slug,'Documented languages removed')
@@ -108,7 +112,7 @@ cms=BeautifulSoup((ROOT/'products/site-cms/index.html').read_text(),'html.parser
 for key,alt in {'early':'굴착 장비와 차량이 작업 중인 착공 초기 현장','mid':'타워크레인과 여러 층의 골조가 형성된 공정 전환 현장','late':'외벽 공사와 지상부 정리가 진행 중인 준공 전 현장'}.items():
  im=cms.select_one(f'img[src="/media/derived/site-cms-stage-{key}-768.avif"]')
  assert im['alt']==im.find_parent('figure').figcaption.get_text()==alt
-print(f'PASS: 48 pages / 144 external figures / {len(media)} context renders; non-visual content, anchors, controls and language examples preserved')
+print(f'PASS: 47 infographic pages / 141 external figures + 1 photographic motion page / {len(media)} context renders; non-visual content, anchors, controls and language examples preserved')
 
 # Preserve all four specified gases, including hydrogen sulfide.
 gas=(ROOT/"products/compact-gas-detector/index.html").read_text()

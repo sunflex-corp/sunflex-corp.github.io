@@ -101,6 +101,10 @@ def catalog():
     render('products/index.html','Solar 제품','Solar Detect, Alert, Respond, Record. 현장 조건과 필요한 기능으로 48개 산업안전 제품을 찾아보세요.',body,'/products/')
 
 def detail(p):
+    if p['slug']=='mobile-cctv':
+        # Approved standalone GSAP design; source lives alongside the product data.
+        (ROOT/'products/mobile-cctv/index.html').write_text((ROOT/'data/mobile-cctv-motion-page.html').read_text())
+        return
     group=GROUPS[p['category']];slug=p['slug']
     body=product_editorial.build(p,group,g)
     motion_version=hashlib.sha256((ROOT/'assets/sunflex-v2/product-motion.js').read_bytes()).hexdigest()[:10]

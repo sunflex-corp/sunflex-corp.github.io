@@ -8,6 +8,8 @@ PATTERN=re.compile(r'<figure\b(?=[^>]*\bclass="[^"]*\bbenefit-visual\b)[^>]*>.*?
 for slug,figures in FIGURES.items():
     file=ROOT/'products'/slug/'index.html';text=file.read_text()
     page=BeautifulSoup(text,'html.parser')
+    if page.body and page.body.get('data-page-design')=='cctv-motion-20260923':
+        continue  # Approved photographic motion page owns its three scene panels.
     if slug=='pedestrian-collision-prevention':
         old=page.select('#blind-corner [data-flow-panel] > .pedestrian-scene, #blind-corner [data-flow-panel] > .infographic-visual')
         assert len(old)==3,slug
