@@ -5,6 +5,7 @@
  const params=new URLSearchParams(location.search);
  let reduced=preference.matches || params.get('motion')==='off', ctx, lenis, ticker, storyTrigger, activeStep=0, activeModel=0;
  const panels=$$('.story-panel'), tabs=$$('.story-tabs button'), modelButtons=$$('[data-model]');
+ function paintStoryProgress(progress){tabs.forEach((t,i)=>$('i',t).style.transform=`scaleX(${Math.max(0,Math.min(1,progress*tabs.length-i))})`);}
  function goTo(target,options={}) { if(lenis)lenis.scrollTo(target,{offset:-98,duration:1.1,...options}); else {const top=typeof target==='number'?target:target.getBoundingClientRect().top+scrollY-98;scrollTo({top,behavior:reduced?'instant':'smooth'});} }
  function syncStep(index){activeStep=index;tabs.forEach((t,i)=>{t.setAttribute('aria-selected',String(i===index));t.tabIndex=i===index?0:-1});panels.forEach((p,i)=>{p.setAttribute('aria-hidden',String(i!==index));p.inert=i!==index;});}
  function selectStep(index){
@@ -55,14 +56,15 @@
     const show=(index,animate=true)=>{
      gsap.killTweensOf(panels);syncStep(index);
      panels.forEach((p,i)=>{p.hidden=false;if(i!==index)gsap.set(p,{autoAlpha:0,y:0});else if(animate)gsap.fromTo(p,{autoAlpha:0,y:14},{autoAlpha:1,y:0,duration:.32,ease:'power3.out',lazy:false});else gsap.set(p,{autoAlpha:1,y:0});});
-     tabs.forEach((t,i)=>gsap.set($('i',t),{scaleX:i===index?1:0}));
     };
     show(activeStep,false);stage.classList.add('story-stepped');
     storyTrigger=ScrollTrigger.create({id:'movingcam-story',trigger:stage,start:`top ${top}px`,end:()=>'+='+Math.max(480,innerHeight*.88)*3,pin:true,anticipatePin:1,
      snap:{snapTo:p=>p<.025?0:p>.975?1:(Math.min(2,Math.floor(p*3))+.5)/3,inertia:false,delay:.18,duration:{min:.18,max:.38},ease:'power2.out'},
-     onUpdate:self=>{const index=Math.min(2,Math.floor(self.progress*3));if(index!==activeStep)show(index);}
+     onUpdate:self=>{paintStoryProgress(self.progress);const index=Math.min(2,Math.floor(self.progress*3));if(index!==activeStep)show(index);},
+     onRefresh:self=>paintStoryProgress(self.progress)
     });
-   }else{syncStep(activeStep);panels.forEach((p,i)=>p.hidden=i!==activeStep);gsap.set($('i',tabs[activeStep]),{scaleX:1});}
+    paintStoryProgress(storyTrigger.progress);
+   }else{syncStep(activeStep);panels.forEach((p,i)=>p.hidden=i!==activeStep);tabs.forEach((t,i)=>$('i',t).style.transform=`scaleX(${i===activeStep?1:0})`);}
    gsap.from('.model-display',{opacity:0,y:50,scale:.94,duration:1.1,ease:'power3.out',scrollTrigger:{trigger:'.model-layout',start:'top 83%',once:true}});
    gsap.from('.model-choices',{opacity:0,y:35,duration:.9,ease:'power3.out',scrollTrigger:{trigger:'.model-layout',start:'top 80%',once:true}});
    gsap.from('.configure-inner>.eyebrow,.configure h2',{opacity:0,y:38,stagger:.12,duration:.9,ease:'power3.out',scrollTrigger:{trigger:'.configure',start:'top 76%',once:true}});

@@ -23,7 +23,7 @@ for scene_id, scene in SCENES.items():
     rel = f'products/{slug}/index.html'
     old = BeautifulSoup(subprocess.check_output(['git', 'show', f'{base}:{rel}'], cwd=ROOT, text=True), 'html.parser')
     new = BeautifulSoup((ROOT / rel).read_text(), 'html.parser')
-    previous = old.select('img[src*="context-safety-preparation.webp"]')
+    previous = old.select('img[src*="context-safety-preparation.webp"], img[src*="/product-scenes/"]')
     current = new.select('img[src*="/product-scenes/"]')
     assert len(previous) == len(current) == (2 if slug == 'healthcare-heart-band' else 1)
     for before, after in zip(previous, current):
@@ -35,6 +35,14 @@ for scene_id, scene in SCENES.items():
         before_figure, after_figure = before.find_parent('figure'), after.find_parent('figure')
         before_figure.attrs = after_figure.attrs.copy()
         before_figure.figcaption.string = after_figure.figcaption.get_text()
+    # Motion bundles have independently verified content hashes and may change
+    # between image releases. Ignore only their version query, not path/order.
+    for document in (old, new):
+        for tag in document.select('script[src], link[href]'):
+            attr = 'src' if tag.name == 'script' else 'href'
+            path = tag[attr].split('?')[0]
+            if path in ('/assets/sunflex-v2/site-motion.js', '/assets/sunflex-v2/site-motion.css'):
+                tag[attr] = path
     assert str(old) == str(new), (slug, 'unrelated page change')
     assert new.select_one('#product-benefits [data-visual-kind="product-scene"] img')
     assert len(new.select('#product-benefits [data-flow-panel]')) == 3

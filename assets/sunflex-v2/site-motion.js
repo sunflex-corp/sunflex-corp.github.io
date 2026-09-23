@@ -29,6 +29,8 @@
   const stage=$('.product-flow-stage',track),controls=$('.product-flow-tabs',track),panels=$$('[data-flow-panel]',track),buttons=controls?$$('button',controls):[];
   if(!stage||panels.length<2||buttons.length!==panels.length)return;
   let selected=0,trigger,pinned=false,top=0,span=0;
+  // Paint the actual scroll distance in each interval, including reverse scrolling.
+  function paintProgress(progress){buttons.forEach((b,i)=>b.style.setProperty('--step-progress',String(Math.max(0,Math.min(1,progress*panels.length-i)))));}
   const images=panels.map(p=>$('img',p));
   controls.hidden=false;controls.setAttribute('role','tablist');track.classList.add('flow-enhanced');
   panels.forEach((p,i)=>{p.id||=`motion-flow-${flowIndex}-${i}`;buttons[i].id||=p.id+'-tab';buttons[i].setAttribute('role','tab');buttons[i].setAttribute('aria-controls',p.id);p.setAttribute('role','tabpanel');p.setAttribute('aria-labelledby',buttons[i].id);});
@@ -69,8 +71,10 @@
    show(selected,false);
    trigger=ScrollTrigger.create({trigger:track,start:()=>`top ${top}px`,end:()=>'+='+span,
     snap:{snapTo:progress=>progress<.025?0:progress>.975?1:(Math.min(panels.length-1,Math.floor(progress*panels.length))+.5)/panels.length,inertia:false,delay:.18,duration:{min:.18,max:.38},ease:'power2.out'},
-    onUpdate:self=>{const index=Math.min(panels.length-1,Math.floor(self.progress*panels.length));if(index!==selected)show(index);}
+    onUpdate:self=>{paintProgress(self.progress);const index=Math.min(panels.length-1,Math.floor(self.progress*panels.length));if(index!==selected)show(index);},
+    onRefresh:self=>paintProgress(self.progress)
    });
+   paintProgress(trigger.progress);
   }
   flows.push({configure,track});configure();
  });
