@@ -7,3 +7,15 @@
 /* Preserve the scene subject and keep preview chrome clear of copy. */
 .hero-product{background:#f9fafb}.story-panel:first-child img{object-position:75% center}.preview-label{left:auto;right:20px}
 @media(max-width:760px){.preview-label{left:auto;right:12px}.product-word{font-size:clamp(85px,29vw,125px);left:0}}
+
+/* The same complete reading stops on touch and desktop. */
+.motion-active :is(.story-stepped,.story-measuring) .story-panels{display:grid;height:auto;min-height:0}
+.motion-active :is(.story-stepped,.story-measuring) .story-panel{position:relative;inset:auto;grid-area:1/1;margin:0;min-height:0}
+@media(max-width:760px){
+ .motion-active .story-panel figure{height:clamp(100px,22svh,180px)}
+ .motion-active .step-copy{padding:20px}
+ .motion-active .step-copy h3{font-size:28px}
+ .motion-active .step-copy>p:not(.eyebrow){font-size:15px;line-height:1.65;margin-top:14px}
+ .motion-active .step-copy .eyebrow{margin-bottom:10px}
+ .motion-active .step-index{margin-top:14px}
+}
