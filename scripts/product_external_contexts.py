@@ -79,6 +79,12 @@ def refine_external_contexts(s,root,slug):
    description=panel.select_one('.benefit-description')
    if description:description.string=body
 
+ # Keep the documented measurement types in the explanatory copy after label removal.
+ if slug=='compact-gas-detector':
+  description=root.select_one('#product-benefits .benefit-description')
+  if description:
+   description.string='산소(O₂), 일산화탄소(CO), 메탄(CH₄), 황화수소(H₂S) 등 작업 구역에 필요한 항목을 측정합니다. 측정 대상에 맞는 구성을 확인하세요.'
+
  # Use the actual bodycam photograph for mounting choices. A generic CCTV render
  # cannot explain wearing or mounting this product.
  if slug=='mobile-bodycam':
