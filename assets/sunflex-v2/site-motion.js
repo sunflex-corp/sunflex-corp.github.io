@@ -59,7 +59,9 @@
    span=Math.max(480,view*.88)*panels.length;track.style.setProperty('--flow-span',span+'px');
    gsap.set(panels,{autoAlpha:0,'--flow-shift':'0px'});gsap.set(panels[0],{autoAlpha:1});select(0);
    // CSS owns the stable sticky frame; ScrollTrigger owns only its child timeline.
-   timeline=gsap.timeline({scrollTrigger:{trigger:track,start:()=>`top ${top}px`,end:()=>'+='+span,scrub:.6,invalidateOnRefresh:true},onUpdate(){const i=Math.min(panels.length-1,Math.floor(this.time()+.04));if(i!==selected)select(i);}});
+   // Tween endpoints are fixed; configure() rebuilds them when the layout changes.
+   // Invalidating here can revert pending entrance tweens during a nested refresh.
+   timeline=gsap.timeline({scrollTrigger:{trigger:track,start:()=>`top ${top}px`,end:()=>'+='+span,scrub:.6},onUpdate(){const i=Math.min(panels.length-1,Math.floor(this.time()+.04));if(i!==selected)select(i);}});
    panels.forEach((panel,i)=>{
     if(i){timeline.to(panels[i-1],{autoAlpha:0,'--flow-shift':'-14px',duration:.22,ease:'power2.in'},i-.18);timeline.fromTo(panel,{autoAlpha:0,'--flow-shift':'24px'},{autoAlpha:1,'--flow-shift':'0px',duration:.32,ease:'power3.out'},i-.03);}
     if(images[i])timeline.fromTo(images[i],{scale:1.035},{scale:1,duration:1,ease:'none'},i);
@@ -71,10 +73,11 @@
  // Reveal leaves, never sticky ancestors. Form fields, tables and filtered cards remain immediate.
  const mm=gsap.matchMedia();
  mm.add('(prefers-reduced-motion: no-preference)',()=>{
-  const reveal=(nodes,trigger,duration=.8)=>{if(!nodes.length)return;return gsap.from(nodes,{opacity:0,y:28,duration,stagger:.09,ease:'power3.out',clearProps:'opacity,transform',scrollTrigger:{trigger,start:'top 90%',once:true}});};
+  // Establish entrance styles now, not in a lazy render inside another trigger's revert.
+  const reveal=(nodes,trigger,duration=.8)=>{if(!nodes.length)return;return gsap.from(nodes,{lazy:false,opacity:0,y:28,duration,stagger:.09,ease:'power3.out',clearProps:'opacity,transform',scrollTrigger:{trigger,start:'top 90%',once:true}});};
   const hero=$('.editorial-hero-copy,.page-head .wrap,.simple-hero .hero-copy,.solar-category-hero .category-intro');
-  if(hero){gsap.from(hero.children,{opacity:0,y:30,duration:.95,stagger:.12,ease:'power3.out',clearProps:'opacity,transform'});}
-  const heroImage=$('.editorial-hero-media');if(heroImage)gsap.from(heroImage,{opacity:0,y:42,scale:.965,duration:1.15,ease:'power3.out',clearProps:'opacity,transform'});
+  if(hero){gsap.from(hero.children,{lazy:false,opacity:0,y:30,duration:.95,stagger:.12,ease:'power3.out',clearProps:'opacity,transform'});}
+  const heroImage=$('.editorial-hero-media');if(heroImage)gsap.from(heroImage,{lazy:false,opacity:0,y:42,scale:.965,duration:1.15,ease:'power3.out',clearProps:'opacity,transform'});
   const headings=$$('main h2').filter(n=>!n.closest('[data-scroll-flow],.solar-story,.home-families,.editorial-hero,.page-head,[hidden]'));
   headings.forEach(h=>reveal([h],h));
   $$('.company-intro,.contact-info,.home-contact,.final-cta,.support-choice,.principle,.inquiry-steps').forEach(n=>{

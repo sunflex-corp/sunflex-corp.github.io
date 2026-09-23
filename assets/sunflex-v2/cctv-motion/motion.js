@@ -49,7 +49,7 @@
    $$('.section-head').forEach(h=>gsap.from(h.children,{opacity:0,y:36,stagger:.1,duration:.9,ease:'power3.out',scrollTrigger:{trigger:h,start:'top 82%',once:true}}));
    if(desktop.matches){
     panels.forEach((p,i)=>{p.hidden=false;gsap.set(p,{autoAlpha:i===0?1:0,y:i===0?0:36});});syncStep(0);
-    const tl=gsap.timeline({scrollTrigger:{id:'movingcam-story',trigger:'.story-stage',start:'top 100px',end:()=>'+='+Math.max(1800,innerHeight*2.7),pin:true,scrub:.65,anticipatePin:1,invalidateOnRefresh:true,onUpdate:self=>{const index=Math.min(2,Math.floor(self.progress*3));if(index!==activeStep)syncStep(index);}}});
+    const tl=gsap.timeline({scrollTrigger:{id:'movingcam-story',trigger:'.story-stage',start:'top 100px',end:()=>'+='+Math.max(1800,innerHeight*2.7),pin:true,scrub:.65,anticipatePin:1,onUpdate:self=>{const index=Math.min(2,Math.floor(self.progress*3));if(index!==activeStep)syncStep(index);}}});
     panels.forEach((p,i)=>{
      const at=i;
      if(i>0){tl.to(panels[i-1],{autoAlpha:0,y:-24,duration:.22,ease:'power2.in'},at-.12);tl.fromTo(p,{autoAlpha:0,y:36},{autoAlpha:1,y:0,duration:.32,ease:'power3.out'},at-.03);tl.fromTo($('.step-copy',p),{y:24},{y:0,duration:.38,ease:'power2.out'},at);}
