@@ -2,6 +2,7 @@
 import json
 from pathlib import Path
 from bs4 import BeautifulSoup
+from product_scene_assets import SCENES, scene_image
 ROOT=Path(__file__).resolve().parents[1]
 
 def refine_external_contexts(s,root,slug):
@@ -55,8 +56,10 @@ def refine_external_contexts(s,root,slug):
   groups=readable_groups.get(slug,groups)
   d.clear();d['class']=['external-detail-context'];d.attrs.pop('role',None)
   figure=s.new_tag('figure',attrs={'class':'external-detail-render'})
-  im=s.new_tag('img',src='/media/external-renders/'+image.name,alt=m['alt'],width='1800',height='1200',loading='lazy',decoding='async')
-  figure.append(im);cap=s.new_tag('figcaption');cap.string='설치·운영 상황을 설명하는 참고 장면';figure.append(cap);d.append(figure)
+  scene=SCENES.get(f'{slug}-1')
+  attrs=scene_image(scene) if scene else dict(src='/media/external-renders/'+image.name,alt=m['alt'],width='1800',height='1200')
+  im=s.new_tag('img',attrs={**attrs,'loading':'lazy','decoding':'async'})
+  figure.append(im);cap=s.new_tag('figcaption');cap.string=scene['caption'] if scene else '설치·운영 상황을 설명하는 참고 장면';figure.append(cap);d.append(figure)
   facts=s.new_tag('div',attrs={'class':'external-detail-facts'})
   for text in groups:
    p=s.new_tag('p');p.string=text;facts.append(p)

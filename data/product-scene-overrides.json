@@ -1,0 +1,62 @@
+{
+  "healthcare-heart-band-1": {
+    "asset": "/media/product-scenes/healthcare-heart-band-wearing-20260923.webp",
+    "width": 1536,
+    "height": 1024,
+    "alt": "손목에 심박수밴드를 착용하고 스트랩을 조절하는 작업자",
+    "caption": "제품 사진을 바탕으로 구성한 착용·사용 예시입니다.",
+    "reference": "/media/derived/product-healthcare-heart-band-white-approved-20260912-1622.webp",
+    "provenance": "Product-photo-conditioned raster generation; not a Blender render or an editable 3D model. Existing free-model Blender asset is superseded at these placements.",
+    "prompt": "Create one photorealistic premium industrial product usage image, landscape 3:2, for a Korean construction safety website. Use the attached product photograph as strict visual reference. Show ONE black rectangular heart-monitor wristband from that reference correctly fitted directly on the bare wrist of an adult construction worker, dark navy work jacket sleeve rolled back. Tight close-up, wrist and band dominate center, other hand lightly adjusts strap, realistic anatomy. Preserve the rectangular rounded black case, broad black silicone strap, and small side control; do NOT turn it into a round smartwatch or Apple Watch. Use the unlit black screen version visible in the middle reference so no fabricated readings or medical claims. The wristband is the focal point, not gloves or helmet. Background softly blurred graphite industrial workspace, restrained blue-grey palette, realistic soft large-area key light and subtle warm edge light, readable separation against dark background #1d222b. Detailed commercial photography / physically based studio rendering quality. Product centered inside middle 70 percent safe area, no collage, no inset product, no text, no arrows, no labels, no watermarks. Convey wearing a sensor during ordinary work, no medical treatment. Output a finished raster image.",
+    "generated_file": "exec-97591c61-2112-45d3-a7bd-9ab9d3d73e27.png",
+    "sha256": "9db602326df9616d71502000c27c2ff6072f717f65ff886cc101efa1a626ecce"
+  },
+  "emergency-signal-location-1": {
+    "asset": "/media/product-scenes/emergency-signal-location-wearing-20260923.webp",
+    "width": 1536,
+    "height": 1024,
+    "alt": "안전모 전면의 응급호출 버튼을 누르는 작업자",
+    "caption": "제품 사진을 바탕으로 구성한 착용·사용 예시입니다.",
+    "reference": "/media/derived/product-emergency-signal-location-restored-20260913-1280.webp",
+    "provenance": "Product-photo-conditioned raster generation; not a Blender render or an editable 3D model. Existing free-model Blender asset is superseded at these placements.",
+    "prompt": "Create ONE landscape 3:2 photorealistic industrial product usage image for a premium Korean construction safety website. The attached actual product photograph is the strict identity reference, retain construction, proportions and hardware. A close-up of an adult construction worker wearing EXACTLY the white safety helmet in the reference, with its orange rim band, large black circular emergency pushbutton in a silver ring on the FRONT of the helmet, red semicircular label above the button. Three-quarter front view at helmet level. One gloved index finger gently presses the lower edge of the actual front circular button, leaving its shape visible. Preserve actual button placement; DO NOT move it to the side or invent other electronics. Helmet dominates center, face lower portion partly visible, neutral attentive expression, ordinary safe workshop setting. Preserve the product's existing decals faithfully, do not add new text. Never show injury, falling, emergency services or a GPS map. Clear visual story: the wearer can initiate a call from the helmet. Background is a softly blurred industrial workspace in graphite and restrained blue-grey, sophisticated soft large-area key light, gentle edge light separates black parts, realistic material texture and human anatomy, high-end commercial photography / physically based render quality. Product and meaningful action occupy middle 70 percent safe area. No collage, inset, typography, annotations, arrows, CGI glow, extra equipment or watermarks. Finished raster illustration grounded in the real product.",
+    "generated_file": "exec-c2595fc9-c9a9-4c80-88b0-1b8572284c56.png",
+    "sha256": "c0cf9c81867beffe253edb88ad3f12bbcbaa3c4d9d86f6dc829fce71847bba86"
+  },
+  "smart-airbag-1": {
+    "asset": "/media/product-scenes/smart-airbag-wearing-20260923.webp",
+    "width": 1536,
+    "height": 1024,
+    "alt": "미전개 상태의 스마트 에어백을 착용하고 허리 버클을 체결한 모습",
+    "caption": "제품 사진을 바탕으로 구성한 착용·사용 예시입니다.",
+    "reference": "/media/derived/product-smart-airbag-reference-white-stage3-20260912-1024.webp",
+    "provenance": "Product-photo-conditioned raster generation; not a Blender render or an editable 3D model. Existing free-model Blender asset is superseded at these placements.",
+    "prompt": "Create ONE landscape 3:2 photorealistic industrial product usage image for a premium Korean construction safety website. The attached actual product photograph is the strict identity reference, retain construction, proportions and hardware. An adult construction worker seen from upper thighs to just above shoulders wearing EXACTLY the uninflated black airbag vest in the reference over a plain muted grey-blue long-sleeve work shirt. Front three-quarter view, center product large and fully visible. Preserve the open central chest, two elongated padded black front lobes, silver vertical shoulder reflective strips and short horizontal reflective chest strips, red round fasteners on viewer-left, small red-and-black hardware, white animal shield badge on viewer-right, black waist belt and CLOSED central buckle. Hands naturally beside hips so product not obscured. No invented tubes, chest zipper or armor. This is a soft textile wearable airbag in its UNINFLATED state, not a life jacket or a fall-arrest harness. Do not depict deployment or falling. Convey correctly fastened everyday wearing state. Background is a softly blurred industrial workspace in graphite and restrained blue-grey, sophisticated soft large-area key light, gentle edge light separates black parts, realistic material texture and human anatomy, high-end commercial photography / physically based render quality. Product and meaningful action occupy middle 70 percent safe area. No collage, inset, typography, annotations, arrows, CGI glow, extra equipment or watermarks. Finished raster illustration grounded in the real product.",
+    "generated_file": "exec-7fc531f8-d901-45ca-aeb3-b5866e4856bb.png",
+    "sha256": "720ebd2640a9b4f53c4dbf515cbc4c666360a7d6a239efb2fd305c1e0e50f516"
+  },
+  "power-assist-suit-1": {
+    "asset": "/media/product-scenes/power-assist-suit-wearing-20260923.webp",
+    "width": 1536,
+    "height": 1024,
+    "alt": "근력보조 슈트를 등에 착용하고 작업대의 자재를 다루는 모습",
+    "caption": "제품 사진을 바탕으로 구성한 착용·사용 예시입니다.",
+    "reference": "/media/derived/product-power-assist-suit-restored-white-20260912-902.webp",
+    "provenance": "Product-photo-conditioned raster generation; not a Blender render or an editable 3D model. Existing free-model Blender asset is superseded at these placements.",
+    "prompt": "Create ONE landscape 3:2 photorealistic industrial product usage image for a premium Korean construction safety website. The attached actual product photograph is the strict identity reference, retain construction, proportions and hardware. Adult construction worker viewed from the rear, slightly three-quarter, from just above shoulders to mid thighs, lifting a small plain cardboard box from a waist-height workbench with a modest forward hip hinge. The attached BLACK BACK-SUPPORT WEARABLE is correctly fitted on the worker's back OVER navy workwear. Make the device the large center focal point: exact broad rounded oval upper back housing, narrower long segmented vertical central spine, black lower lumbar triangular support pad, fabric padded shoulder harness and side straps from reference. Preserve the coiled black loop emerging from the top. Do not invent powered robotic arms, metal leg braces, extra battery packs, motors or tubes. Rear view should clearly show device and fitting without box obstructing it. Product shape and proportions are paramount. Ordinary demonstration only, no heavy loads or strength effects. Background softly blurred graphite industrial workspace, restrained blue-grey, sophisticated soft large-area key light and subtle rim light clearly separate the product. Realistic materials and anatomy, high-end commercial photography / physically based rendering quality. Entire key product and action in middle 75 percent safe area, no collage, inset, text overlays, captions, arrows, watermark or new logos. Finished raster illustration grounded in actual product.",
+    "generated_file": "exec-347e9aa1-77a5-4156-b981-8f4ac1f921ad.png",
+    "sha256": "08ed300635cc609694921966c2734d29c029b29083b6eacfc6e93711178679c2"
+  },
+  "smart-helmet-1": {
+    "asset": "/media/product-scenes/smart-helmet-wearing-20260923.webp",
+    "width": 1536,
+    "height": 1024,
+    "alt": "스마트 안전모의 측면 부착 모듈과 턱끈 착용 상태",
+    "caption": "제품 사진을 바탕으로 구성한 착용·사용 예시입니다.",
+    "reference": "/media/derived/product-smart-helmet-reference-white-20260912-1254.webp",
+    "provenance": "Product-photo-conditioned raster generation; not a Blender render or an editable 3D model. Existing free-model Blender asset is superseded at these placements.",
+    "prompt": "Create ONE landscape 3:2 photorealistic industrial product usage image for a premium Korean construction safety website. The attached actual product photograph is the strict identity reference, retain construction, proportions and hardware. Close-up three-quarter side portrait of an adult construction worker wearing the EXACT white smart safety helmet from the reference. The actual bright green rectangular clip-on module with lower extension on the SIDE near the rim is large and plainly visible. Preserve green module shape, the olive chin cord with small green rectangular sliding piece and pale lower sleeve, black rear helmet fitting; chinstrap passes naturally beneath chin in a fitted state. Worker looking slightly away, face secondary. Preserve safety decals from reference without adding any new symbols. No black emergency button on front; this is the green clip-on wearing/chinstrap sensing module, not the other helmet product. No glowing radio beams, screens or imaginary sensors. Tight composition from upper chest to just above helmet so the module and chinstrap can both be understood. Background softly blurred graphite industrial workspace, restrained blue-grey, sophisticated soft large-area key light and subtle rim light clearly separate the product. Realistic materials and anatomy, high-end commercial photography / physically based rendering quality. Entire key product and action in middle 75 percent safe area, no collage, inset, text overlays, captions, arrows, watermark or new logos. Finished raster illustration grounded in actual product.",
+    "generated_file": "exec-1f45cf6f-f3d1-46ff-8395-ec02c2b30319.png",
+    "sha256": "8cf589a4aa46d6950c52bd7f79413239d315c756967736cb40f354aa276be54e"
+  }
+}
