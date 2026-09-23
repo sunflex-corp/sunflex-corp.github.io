@@ -9,6 +9,12 @@ html[data-motion-engine=gsap] .flow-tabbed [data-flow-panel][hidden]{display:non
 html[data-motion-engine=gsap] .flow-pinned .benefit-photo img{transition:none}
 html[data-motion-engine=gsap] .flow-enhanced .product-flow-tabs button{position:relative;transition:color .22s,opacity .22s}
 html[data-motion-engine=gsap] .flow-tabbed .product-flow-tabs button[aria-selected=true]{box-shadow:0 2px 0 currentColor}
+/* Scroll progress is independent of the selected-tab label and panel transition. */
+html[data-motion-engine=gsap] .flow-pinned .product-flow-tabs button{border-bottom-color:transparent;box-shadow:none}
+html[data-motion-engine=gsap] .flow-pinned .product-flow-tabs button::before,
+html[data-motion-engine=gsap] .flow-pinned .product-flow-tabs button::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:3px;background:currentColor;pointer-events:none}
+html[data-motion-engine=gsap] .flow-pinned .product-flow-tabs button::before{opacity:.18}
+html[data-motion-engine=gsap] .flow-pinned .product-flow-tabs button::after{transform:scaleX(var(--step-progress,0));transform-origin:left;transition:none}
 html[data-motion-engine=gsap] :is(.company-photo,.feature-media){overflow:hidden}
 @media(hover:hover) and (prefers-reduced-motion:no-preference){
  html[data-motion-engine=gsap] :is(.solar-card-image img,.home-product img){transition:transform .65s cubic-bezier(.16,1,.3,1)}
