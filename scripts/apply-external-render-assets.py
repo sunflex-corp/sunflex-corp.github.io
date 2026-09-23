@@ -2,6 +2,7 @@
 from pathlib import Path
 import json,hashlib,html
 from PIL import Image
+from product_scene_assets import apply_scene_overrides
 ROOT=Path(__file__).resolve().parents[1]
 SOURCE=ROOT.parent/'drafts/sunflex-external-assets-v5'
 MAPPING=ROOT/'data/external-render-assets.json'
@@ -22,5 +23,6 @@ for scene,m in mapping.items():
  caption=m.get('caption','설치·운영 상황을 설명하는 참고 장면입니다.')
  figure=f'''<figure class="benefit-visual infographic-visual external-render" data-infographic-version="20260923-external" data-visual-kind="render"><div class="sunflex-infographic" data-infographic-scene="{scene}" role="group" aria-label="{html.escape(req['functional_message'],quote=True)}"><div class="visual-shell"><div class="external-render-stage"><img src="/media/external-renders/{dest.name}?v={version}" width="1800" height="1200" loading="lazy" decoding="async" alt="{html.escape(m['alt'],quote=True)}"></div></div></div><figcaption>{html.escape(caption)}</figcaption></figure>'''
  figures[req['slug']][req['step']-1]=figure
+apply_scene_overrides(figures)
 (ROOT/'data/product-infographics.json').write_text(json.dumps(figures,ensure_ascii=False,indent=2)+'\n')
 print(f'Applied {len(mapping)} external Blender figures from {len(converted)} context renders')
