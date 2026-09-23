@@ -113,5 +113,5 @@ print(f'PASS: 48 pages / 144 external figures / {len(media)} context renders; no
 # Preserve all four specified gases, including hydrogen sulfide.
 gas=(ROOT/"products/compact-gas-detector/index.html").read_text()
 from bs4 import BeautifulSoup
-labels=BeautifulSoup(gas,"html.parser").select_one(".external-render-labels").get_text(" ",strip=True)
+labels=BeautifulSoup(gas,"html.parser").select_one("#product-benefits .benefit-description").get_text(" ",strip=True)
 assert all(g in labels for g in ["O₂","CO","CH₄","H₂S"]),labels
