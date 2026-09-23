@@ -1,5 +1,7 @@
 /* GSAP owns entrance transforms; interactive and disclosure states keep their existing semantics. */
 html[data-motion-engine=gsap] .solar-reveal,html[data-motion-engine=gsap] .editorial-chapter.is-entering{animation:none!important}
+/* The shared tab tween is the sole opacity/transform owner. */
+html[data-motion-engine=gsap] .models-enhanced .model-panel:not([hidden]),html[data-motion-engine=gsap] .use-panels article:not([hidden]){animation:none!important}
 html[data-motion-engine=gsap] .flow-tabbed{height:auto!important}
 html[data-motion-engine=gsap] .flow-tabbed .product-flow-stage{position:relative;top:auto}
 html[data-motion-engine=gsap] .flow-tabbed .editorial-flow{display:block!important}

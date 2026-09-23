@@ -82,7 +82,7 @@
     media.add({animated:'(prefers-reduced-motion: no-preference)',reduced:'(prefers-reduced-motion: reduce)'},context=>{
       if(context.conditions.reduced){reset();return;}
       story.classList.add('is-scrubbing');const state={p:progress()};paint(state.p);
-      gsap.fromTo(state,{p:0},{p:1,ease:'none',onUpdate:()=>paint(state.p),scrollTrigger:{trigger:story,start:'top top',end:()=>'+='+Math.max(1,story.offsetHeight-stage.offsetHeight),scrub:.65,invalidateOnRefresh:true,onToggle:self=>stage.classList.toggle('is-motion-active',self.isActive)}});
+      gsap.fromTo(state,{p:0},{p:1,ease:'none',onUpdate:()=>paint(state.p),scrollTrigger:{trigger:story,start:'top top',end:()=>'+='+Math.max(1,story.offsetHeight-stage.offsetHeight),scrub:.65,onToggle:self=>stage.classList.toggle('is-motion-active',self.isActive)}});
       return()=>{copy.inert=false;stage.classList.remove('is-motion-active');};
     });
     return;
