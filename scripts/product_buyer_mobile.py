@@ -162,6 +162,9 @@ def refine_mobile(soup, root):
     _make_network_matrix(soup, root)
     _make_installation_flow(soup, root)
     _remove_gallery_caption_duplicates(root)
+    for label in root.select('#detail-8 .revision-detail-label'):
+        if label.get_text(strip=True) == '현장 맞춤 구성과 제품 사진':
+            label.decompose()
     for card in root.select('#mobile-cctv-lineup .buyer-model-card'):
         if card.select_one('.buyer-model-copy'):
             continue
