@@ -50,7 +50,8 @@ def render(path, title, desc, body, active=''):
             motion += (f'<link rel="stylesheet" href="/assets/sunflex-v2/home-motion.css?v={version}">' if ext=='css' else f'<script src="/assets/sunflex-v2/home-motion.js?v={version}" defer></script>')
     page = f'''<!doctype html>
 <html lang="ko"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{escape(title)} | 썬플렉스</title><meta name="description" content="{escape(desc)}"><meta name="theme-color" content="#08090b">{robots}<link rel="canonical" href="{DOMAIN}{url}"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><meta property="og:type" content="website"><meta property="og:locale" content="ko_KR"><meta property="og:title" content="{escape(title)} | SUNPLEX"><meta property="og:description" content="{escape(desc)}"><meta property="og:url" content="{DOMAIN}{url}"><meta property="og:image" content="{DOMAIN}/brand/sunplex-wordmark.png"><link rel="preload" href="/fonts/AstaSans-Medium.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/assets/sunflex-v2/site.css?v={css}"><script src="/assets/sunflex-v2/site.js?v={js}" defer></script>{motion}<script type="application/ld+json">{json.dumps(schema,ensure_ascii=False)}</script><style>@media(min-width:761px){{.mobile-nav{{display:none}}}}</style></head><body class="sunflex-v2">{header(active)}<main id="main-content" tabindex="-1">{body}</main>{footer()}</body></html>\n'''
-    (ROOT/path).write_text(page, encoding='utf-8')
+    from site_motion import enhance
+    (ROOT/path).write_text(enhance(page), encoding='utf-8')
 
 def product_links(items):
     return '<ul class="product-links">' + ''.join(f'<li>{link("/products/"+slug+"/",name, "")}</li>' for slug,name in items) + '</ul>'

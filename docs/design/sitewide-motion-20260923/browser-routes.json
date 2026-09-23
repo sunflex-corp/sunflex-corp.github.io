@@ -1,0 +1,1546 @@
+{
+  "desktop": [
+    {
+      "route": "/",
+      "flows": [],
+      "overflow": false,
+      "ready": "true",
+      "toggle": false
+    },
+    {
+      "route": "/404.html",
+      "flows": [],
+      "overflow": false,
+      "ready": "true",
+      "toggle": false
+    },
+    {
+      "route": "/cases/",
+      "flows": [],
+      "overflow": false,
+      "ready": "true",
+      "toggle": false
+    },
+    {
+      "route": "/company/",
+      "flows": [],
+      "overflow": false,
+      "ready": "true",
+      "toggle": false
+    },
+    {
+      "route": "/contact/",
+      "flows": [],
+      "overflow": false,
+      "ready": "true",
+      "toggle": false
+    },
+    {
+      "route": "/privacy/",
+      "flows": [],
+      "overflow": false,
+      "ready": "true",
+      "toggle": false
+    },
+    {
+      "route": "/products/",
+      "flows": [],
+      "overflow": false,
+      "ready": "true",
+      "toggle": false
+    },
+    {
+      "route": "/products/ai-broadcast/",
+      "flows": [
+        {
+          "mode": "pinned",
+          "selected": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "toggle": false
+    },
+    {
+      "route": "/products/ai-drone-inspection/",
+      "flows": [
+        {
+          "mode": "pinned",
+          "selected": 1
+        },
+        {
+          "mode": "pinned",
+          "selected": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "toggle": false
+    },
+    {
+      "route": "/products/ai-equipment-collision/",
+      "flows": [
+        {
+          "mode": "pinned",
+          "selected": 1
+        },
+        {
+          "mode": "pinned",
+          "selected": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "toggle": false
+    },
+    {
+      "route": "/products/ai-quick-risk-assessment/",
+      "flows": [
+        {
+          "mode": "pinned",
+          "selected": 1
+        },
+        {
+          "mode": "pinned",
+          "selected": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "toggle": false
+    },
+    {
+      "route": "/products/ai-risk-assessment-review/",
+      "flows": [
+        {
+          "mode": "pinned",
+          "selected": 1
+        },
+        {
+          "mode": "pinned",
+          "selected": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "toggle": false
+    },
+    {
+      "route": "/products/ai-safety-index/",
+      "flows": [
+        {
+          "mode": "pinned",
+          "selected": 1
+        },
+        {
+          "mode": "pinned",
+          "selected": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "toggle": false
+    },
+    {
+      "route": "/products/ai-similar-accident-alert/",
+      "flows": [
+        {
+          "mode": "pinned",
+          "selected": 1
+        },
+        {
+          "mode": "pinned",
+          "selected": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "toggle": false
+    },
+    {
+      "route": "/products/ai-subcontractor-safety/",
+      "flows": [
+        {
+          "mode": "pinned",
+          "selected": 1
+        },
+        {
+          "mode": "pinned",
+          "selected": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "toggle": false
+    },
+    {
+      "route": "/products/alcohol-detection/",
+      "flows": [
+        {
+          "mode": "pinned",
+          "selected": 1
+        },
+        {
+          "mode": "pinned",
+          "selected": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "toggle": false
+    },
+    {
+      "route": "/products/chatgpt-cctv/",
+      "flows": [
+        {
+          "mode": "pinned",
+          "selected": 1
+        },
+        {
+          "mode": "pinned",
+          "selected": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "toggle": false
+    },
+    {
+      "route": "/products/co2-temp-humidity/",
+      "flows": [
+        {
+          "mode": "pinned",
+          "selected": 1
+        },
+        {
+          "mode": "pinned",
+          "selected": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "toggle": false
+    },
+    {
+      "route": "/products/compact-gas-detector/",
+      "flows": [
+        {
+          "mode": "pinned",
+          "selected": 1
+        },
+        {
+          "mode": "pinned",
+          "selected": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "toggle": false
+    },
+    {
+      "route": "/products/concrete-curing/",
+      "flows": [
+        {
+          "mode": "pinned",
+          "selected": 1
+        },
+        {
+          "mode": "pinned",
+          "selected": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "toggle": false
+    },
+    {
+      "route": "/products/digital-radio/",
+      "flows": [
+        {
+          "mode": "pinned",
+          "selected": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "toggle": false
+    },
+    {
+      "route": "/products/emergency-signal-location/",
+      "flows": [
+        {
+          "mode": "pinned",
+          "selected": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "toggle": false
+    },
+    {
+      "route": "/products/equipment-approach-alarm/",
+      "flows": [
+        {
+          "mode": "pinned",
+          "selected": 1
+        },
+        {
+          "mode": "pinned",
+          "selected": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "toggle": false
+    },
+    {
+      "route": "/products/fire-detection/",
+      "flows": [
+        {
+          "mode": "pinned",
+          "selected": 1
+        },
+        {
+          "mode": "pinned",
+          "selected": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "toggle": false
+    },
+    {
+      "route": "/products/gas-alarm/",
+      "flows": [
+        {
+          "mode": "pinned",
+          "selected": 1
+        },
+        {
+          "mode": "pinned",
+          "selected": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "toggle": false
+    },
+    {
+      "route": "/products/hazard-area-broadcast/",
+      "flows": [
+        {
+          "mode": "pinned",
+          "selected": 1
+        },
+        {
+          "mode": "pinned",
+          "selected": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "toggle": false
+    },
+    {
+      "route": "/products/healthcare-heart-band/",
+      "flows": [
+        {
+          "mode": "pinned",
+          "selected": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "toggle": false
+    },
+    {
+      "route": "/products/hook-bottom-camera/",
+      "flows": [
+        {
+          "mode": "pinned",
+          "selected": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "toggle": false
+    },
+    {
+      "route": "/products/inspectcut/",
+      "flows": [
+        {
+          "mode": "pinned",
+          "selected": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "toggle": false
+    },
+    {
+      "route": "/products/iot-mist/",
+      "flows": [
+        {
+          "mode": "pinned",
+          "selected": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "toggle": false
+    },
+    {
+      "route": "/products/iot-small-tower-crane/",
+      "flows": [
+        {
+          "mode": "pinned",
+          "selected": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "toggle": false
+    },
+    {
+      "route": "/products/ir3-flame-detector/",
+      "flows": [
+        {
+          "mode": "pinned",
+          "selected": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "toggle": false
+    },
+    {
+      "route": "/products/led-logo-light/",
+      "flows": [
+        {
+          "mode": "pinned",
+          "selected": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "toggle": false
+    },
+    {
+      "route": "/products/lte-anemometer/",
+      "flows": [
+        {
+          "mode": "pinned",
+          "selected": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "toggle": false
+    },
+    {
+      "route": "/products/mobile-bodycam/",
+      "flows": [
+        {
+          "mode": "pinned",
+          "selected": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "toggle": false
+    },
+    {
+      "route": "/products/mobile-cctv/",
+      "flows": [],
+      "overflow": false,
+      "ready": "cctv-motion-20260923",
+      "toggle": false
+    },
+    {
+      "route": "/products/opening-open-close-sensor/",
+      "flows": [
+        {
+          "mode": "pinned",
+          "selected": 1
+        },
+        {
+          "mode": "pinned",
+          "selected": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "toggle": false
+    },
+    {
+      "route": "/products/pedestrian-collision-prevention/",
+      "flows": [
+        {
+          "mode": "pinned",
+          "selected": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "toggle": false
+    },
+    {
+      "route": "/products/power-assist-suit/",
+      "flows": [
+        {
+          "mode": "pinned",
+          "selected": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "toggle": false
+    },
+    {
+      "route": "/products/safebridge/",
+      "flows": [
+        {
+          "mode": "pinned",
+          "selected": 1
+        },
+        {
+          "mode": "pinned",
+          "selected": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "toggle": false
+    },
+    {
+      "route": "/products/safety-box/",
+      "flows": [
+        {
+          "mode": "pinned",
+          "selected": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "toggle": false
+    },
+    {
+      "route": "/products/site-cms/",
+      "flows": [
+        {
+          "mode": "pinned",
+          "selected": 1
+        },
+        {
+          "mode": "pinned",
+          "selected": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "toggle": false
+    },
+    {
+      "route": "/products/smart-airbag/",
+      "flows": [
+        {
+          "mode": "pinned",
+          "selected": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "toggle": false
+    },
+    {
+      "route": "/products/smart-beacon/",
+      "flows": [
+        {
+          "mode": "pinned",
+          "selected": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "toggle": false
+    },
+    {
+      "route": "/products/smart-environment-board/",
+      "flows": [
+        {
+          "mode": "pinned",
+          "selected": 1
+        },
+        {
+          "mode": "pinned",
+          "selected": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "toggle": false
+    },
+    {
+      "route": "/products/smart-helmet/",
+      "flows": [
+        {
+          "mode": "pinned",
+          "selected": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "toggle": false
+    },
+    {
+      "route": "/products/smart-safety-hook/",
+      "flows": [
+        {
+          "mode": "pinned",
+          "selected": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "toggle": false
+    },
+    {
+      "route": "/products/tbm-solution/",
+      "flows": [
+        {
+          "mode": "pinned",
+          "selected": 1
+        },
+        {
+          "mode": "pinned",
+          "selected": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "toggle": false
+    },
+    {
+      "route": "/products/tilt-acceleration-sensor/",
+      "flows": [
+        {
+          "mode": "pinned",
+          "selected": 1
+        },
+        {
+          "mode": "pinned",
+          "selected": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "toggle": false
+    },
+    {
+      "route": "/products/tower-crane-hook-collision/",
+      "flows": [
+        {
+          "mode": "pinned",
+          "selected": 1
+        },
+        {
+          "mode": "pinned",
+          "selected": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "toggle": false
+    },
+    {
+      "route": "/products/vehicle-entry-alert/",
+      "flows": [
+        {
+          "mode": "pinned",
+          "selected": 1
+        },
+        {
+          "mode": "pinned",
+          "selected": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "toggle": false
+    },
+    {
+      "route": "/products/wireless-emergency-broadcast/",
+      "flows": [
+        {
+          "mode": "pinned",
+          "selected": 1
+        },
+        {
+          "mode": "pinned",
+          "selected": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "toggle": false
+    },
+    {
+      "route": "/products/wireless-network/",
+      "flows": [
+        {
+          "mode": "pinned",
+          "selected": 1
+        },
+        {
+          "mode": "pinned",
+          "selected": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "toggle": false
+    },
+    {
+      "route": "/products/worker-access-gate/",
+      "flows": [
+        {
+          "mode": "pinned",
+          "selected": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "toggle": false
+    },
+    {
+      "route": "/products/worker-attendance-card/",
+      "flows": [
+        {
+          "mode": "pinned",
+          "selected": 1
+        },
+        {
+          "mode": "pinned",
+          "selected": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "toggle": false
+    },
+    {
+      "route": "/solutions/",
+      "flows": [],
+      "overflow": false,
+      "ready": "true",
+      "toggle": false
+    },
+    {
+      "route": "/solutions/alert/",
+      "flows": [],
+      "overflow": false,
+      "ready": "true",
+      "toggle": false
+    },
+    {
+      "route": "/solutions/detect/",
+      "flows": [],
+      "overflow": false,
+      "ready": "true",
+      "toggle": false
+    },
+    {
+      "route": "/solutions/record/",
+      "flows": [],
+      "overflow": false,
+      "ready": "true",
+      "toggle": false
+    },
+    {
+      "route": "/solutions/respond/",
+      "flows": [],
+      "overflow": false,
+      "ready": "true",
+      "toggle": false
+    },
+    {
+      "route": "/solutions/safety-box/",
+      "flows": [],
+      "overflow": false,
+      "ready": "true",
+      "toggle": false
+    }
+  ],
+  "mobile": [
+    {
+      "route": "/",
+      "flows": [],
+      "overflow": false,
+      "ready": "true",
+      "width": 390
+    },
+    {
+      "route": "/404.html",
+      "flows": [],
+      "overflow": false,
+      "ready": "true",
+      "width": 390
+    },
+    {
+      "route": "/cases/",
+      "flows": [],
+      "overflow": false,
+      "ready": "true",
+      "width": 390
+    },
+    {
+      "route": "/company/",
+      "flows": [],
+      "overflow": false,
+      "ready": "true",
+      "width": 390
+    },
+    {
+      "route": "/contact/",
+      "flows": [],
+      "overflow": false,
+      "ready": "true",
+      "width": 390
+    },
+    {
+      "route": "/privacy/",
+      "flows": [],
+      "overflow": false,
+      "ready": "true",
+      "width": 390
+    },
+    {
+      "route": "/products/",
+      "flows": [],
+      "overflow": false,
+      "ready": "true",
+      "width": 390
+    },
+    {
+      "route": "/products/ai-broadcast/",
+      "flows": [
+        {
+          "mode": "tabbed",
+          "visible": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "width": 390
+    },
+    {
+      "route": "/products/ai-drone-inspection/",
+      "flows": [
+        {
+          "mode": "tabbed",
+          "visible": 1
+        },
+        {
+          "mode": "tabbed",
+          "visible": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "width": 390
+    },
+    {
+      "route": "/products/ai-equipment-collision/",
+      "flows": [
+        {
+          "mode": "tabbed",
+          "visible": 1
+        },
+        {
+          "mode": "tabbed",
+          "visible": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "width": 390
+    },
+    {
+      "route": "/products/ai-quick-risk-assessment/",
+      "flows": [
+        {
+          "mode": "tabbed",
+          "visible": 1
+        },
+        {
+          "mode": "tabbed",
+          "visible": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "width": 390
+    },
+    {
+      "route": "/products/ai-risk-assessment-review/",
+      "flows": [
+        {
+          "mode": "tabbed",
+          "visible": 1
+        },
+        {
+          "mode": "tabbed",
+          "visible": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "width": 390
+    },
+    {
+      "route": "/products/ai-safety-index/",
+      "flows": [
+        {
+          "mode": "tabbed",
+          "visible": 1
+        },
+        {
+          "mode": "tabbed",
+          "visible": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "width": 390
+    },
+    {
+      "route": "/products/ai-similar-accident-alert/",
+      "flows": [
+        {
+          "mode": "tabbed",
+          "visible": 1
+        },
+        {
+          "mode": "tabbed",
+          "visible": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "width": 390
+    },
+    {
+      "route": "/products/ai-subcontractor-safety/",
+      "flows": [
+        {
+          "mode": "tabbed",
+          "visible": 1
+        },
+        {
+          "mode": "tabbed",
+          "visible": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "width": 390
+    },
+    {
+      "route": "/products/alcohol-detection/",
+      "flows": [
+        {
+          "mode": "tabbed",
+          "visible": 1
+        },
+        {
+          "mode": "tabbed",
+          "visible": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "width": 390
+    },
+    {
+      "route": "/products/chatgpt-cctv/",
+      "flows": [
+        {
+          "mode": "tabbed",
+          "visible": 1
+        },
+        {
+          "mode": "tabbed",
+          "visible": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "width": 390
+    },
+    {
+      "route": "/products/co2-temp-humidity/",
+      "flows": [
+        {
+          "mode": "tabbed",
+          "visible": 1
+        },
+        {
+          "mode": "tabbed",
+          "visible": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "width": 390
+    },
+    {
+      "route": "/products/compact-gas-detector/",
+      "flows": [
+        {
+          "mode": "tabbed",
+          "visible": 1
+        },
+        {
+          "mode": "tabbed",
+          "visible": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "width": 390
+    },
+    {
+      "route": "/products/concrete-curing/",
+      "flows": [
+        {
+          "mode": "tabbed",
+          "visible": 1
+        },
+        {
+          "mode": "tabbed",
+          "visible": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "width": 390
+    },
+    {
+      "route": "/products/digital-radio/",
+      "flows": [
+        {
+          "mode": "tabbed",
+          "visible": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "width": 390
+    },
+    {
+      "route": "/products/emergency-signal-location/",
+      "flows": [
+        {
+          "mode": "tabbed",
+          "visible": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "width": 390
+    },
+    {
+      "route": "/products/equipment-approach-alarm/",
+      "flows": [
+        {
+          "mode": "tabbed",
+          "visible": 1
+        },
+        {
+          "mode": "tabbed",
+          "visible": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "width": 390
+    },
+    {
+      "route": "/products/fire-detection/",
+      "flows": [
+        {
+          "mode": "tabbed",
+          "visible": 1
+        },
+        {
+          "mode": "tabbed",
+          "visible": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "width": 390
+    },
+    {
+      "route": "/products/gas-alarm/",
+      "flows": [
+        {
+          "mode": "tabbed",
+          "visible": 1
+        },
+        {
+          "mode": "tabbed",
+          "visible": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "width": 390
+    },
+    {
+      "route": "/products/hazard-area-broadcast/",
+      "flows": [
+        {
+          "mode": "tabbed",
+          "visible": 1
+        },
+        {
+          "mode": "tabbed",
+          "visible": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "width": 390
+    },
+    {
+      "route": "/products/healthcare-heart-band/",
+      "flows": [
+        {
+          "mode": "tabbed",
+          "visible": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "width": 390
+    },
+    {
+      "route": "/products/hook-bottom-camera/",
+      "flows": [
+        {
+          "mode": "tabbed",
+          "visible": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "width": 390
+    },
+    {
+      "route": "/products/inspectcut/",
+      "flows": [
+        {
+          "mode": "tabbed",
+          "visible": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "width": 390
+    },
+    {
+      "route": "/products/iot-mist/",
+      "flows": [
+        {
+          "mode": "tabbed",
+          "visible": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "width": 390
+    },
+    {
+      "route": "/products/iot-small-tower-crane/",
+      "flows": [
+        {
+          "mode": "tabbed",
+          "visible": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "width": 390
+    },
+    {
+      "route": "/products/ir3-flame-detector/",
+      "flows": [
+        {
+          "mode": "tabbed",
+          "visible": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "width": 390
+    },
+    {
+      "route": "/products/led-logo-light/",
+      "flows": [
+        {
+          "mode": "tabbed",
+          "visible": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "width": 390
+    },
+    {
+      "route": "/products/lte-anemometer/",
+      "flows": [
+        {
+          "mode": "tabbed",
+          "visible": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "width": 390
+    },
+    {
+      "route": "/products/mobile-bodycam/",
+      "flows": [
+        {
+          "mode": "tabbed",
+          "visible": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "width": 390
+    },
+    {
+      "route": "/products/mobile-cctv/",
+      "flows": [],
+      "overflow": false,
+      "ready": "cctv-motion-20260923",
+      "width": 390
+    },
+    {
+      "route": "/products/opening-open-close-sensor/",
+      "flows": [
+        {
+          "mode": "tabbed",
+          "visible": 1
+        },
+        {
+          "mode": "tabbed",
+          "visible": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "width": 390
+    },
+    {
+      "route": "/products/pedestrian-collision-prevention/",
+      "flows": [
+        {
+          "mode": "tabbed",
+          "visible": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "width": 390
+    },
+    {
+      "route": "/products/power-assist-suit/",
+      "flows": [
+        {
+          "mode": "tabbed",
+          "visible": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "width": 390
+    },
+    {
+      "route": "/products/safebridge/",
+      "flows": [
+        {
+          "mode": "tabbed",
+          "visible": 1
+        },
+        {
+          "mode": "tabbed",
+          "visible": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "width": 390
+    },
+    {
+      "route": "/products/safety-box/",
+      "flows": [
+        {
+          "mode": "tabbed",
+          "visible": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "width": 390
+    },
+    {
+      "route": "/products/site-cms/",
+      "flows": [
+        {
+          "mode": "tabbed",
+          "visible": 1
+        },
+        {
+          "mode": "tabbed",
+          "visible": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "width": 390
+    },
+    {
+      "route": "/products/smart-airbag/",
+      "flows": [
+        {
+          "mode": "tabbed",
+          "visible": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "width": 390
+    },
+    {
+      "route": "/products/smart-beacon/",
+      "flows": [
+        {
+          "mode": "tabbed",
+          "visible": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "width": 390
+    },
+    {
+      "route": "/products/smart-environment-board/",
+      "flows": [
+        {
+          "mode": "tabbed",
+          "visible": 1
+        },
+        {
+          "mode": "tabbed",
+          "visible": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "width": 390
+    },
+    {
+      "route": "/products/smart-helmet/",
+      "flows": [
+        {
+          "mode": "tabbed",
+          "visible": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "width": 390
+    },
+    {
+      "route": "/products/smart-safety-hook/",
+      "flows": [
+        {
+          "mode": "tabbed",
+          "visible": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "width": 390
+    },
+    {
+      "route": "/products/tbm-solution/",
+      "flows": [
+        {
+          "mode": "tabbed",
+          "visible": 1
+        },
+        {
+          "mode": "tabbed",
+          "visible": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "width": 390
+    },
+    {
+      "route": "/products/tilt-acceleration-sensor/",
+      "flows": [
+        {
+          "mode": "tabbed",
+          "visible": 1
+        },
+        {
+          "mode": "tabbed",
+          "visible": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "width": 390
+    },
+    {
+      "route": "/products/tower-crane-hook-collision/",
+      "flows": [
+        {
+          "mode": "tabbed",
+          "visible": 1
+        },
+        {
+          "mode": "tabbed",
+          "visible": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "width": 390
+    },
+    {
+      "route": "/products/vehicle-entry-alert/",
+      "flows": [
+        {
+          "mode": "tabbed",
+          "visible": 1
+        },
+        {
+          "mode": "tabbed",
+          "visible": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "width": 390
+    },
+    {
+      "route": "/products/wireless-emergency-broadcast/",
+      "flows": [
+        {
+          "mode": "tabbed",
+          "visible": 1
+        },
+        {
+          "mode": "tabbed",
+          "visible": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "width": 390
+    },
+    {
+      "route": "/products/wireless-network/",
+      "flows": [
+        {
+          "mode": "tabbed",
+          "visible": 1
+        },
+        {
+          "mode": "tabbed",
+          "visible": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "width": 390
+    },
+    {
+      "route": "/products/worker-access-gate/",
+      "flows": [
+        {
+          "mode": "tabbed",
+          "visible": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "width": 390
+    },
+    {
+      "route": "/products/worker-attendance-card/",
+      "flows": [
+        {
+          "mode": "tabbed",
+          "visible": 1
+        },
+        {
+          "mode": "tabbed",
+          "visible": 1
+        }
+      ],
+      "overflow": false,
+      "ready": "true",
+      "width": 390
+    },
+    {
+      "route": "/solutions/",
+      "flows": [],
+      "overflow": false,
+      "ready": "true",
+      "width": 390
+    },
+    {
+      "route": "/solutions/alert/",
+      "flows": [],
+      "overflow": false,
+      "ready": "true",
+      "width": 390
+    },
+    {
+      "route": "/solutions/detect/",
+      "flows": [],
+      "overflow": false,
+      "ready": "true",
+      "width": 390
+    },
+    {
+      "route": "/solutions/record/",
+      "flows": [],
+      "overflow": false,
+      "ready": "true",
+      "width": 390
+    },
+    {
+      "route": "/solutions/respond/",
+      "flows": [],
+      "overflow": false,
+      "ready": "true",
+      "width": 390
+    },
+    {
+      "route": "/solutions/safety-box/",
+      "flows": [],
+      "overflow": false,
+      "ready": "true",
+      "width": 390
+    }
+  ]
+}

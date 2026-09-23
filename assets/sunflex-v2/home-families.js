@@ -10,7 +10,8 @@
   const counter = section.querySelector('.families-count');
   const guidance = section.querySelector('.families-guidance > span');
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
-  let active = -1, pinned = false, start = 0, step = 1, frame = 0;
+  let active = -1, pinned = false, start = 0, step = 1, frame = 0, motionTrigger;
+  const gsapOwned=document.documentElement.dataset.motionEngine==='gsap'&&window.gsap&&window.ScrollTrigger;
   section.querySelector('.map-panels').setAttribute('aria-live', 'off');
   // Keep both panels rendered for a real crossfade; inert prevents hidden links taking focus.
   panels.forEach(panel => { panel.hidden = false; });
@@ -28,6 +29,7 @@
     });
     scenes.forEach((scene, i) => scene.setAttribute('aria-hidden', String(i !== index)));
     counter.textContent = `0${index + 1} / 04`;
+    if(gsapOwned&&!reduced.matches){const image=scenes[index]?.querySelector('img');if(image){gsap.killTweensOf(image);gsap.fromTo(image,{scale:1.045},{scale:1,duration:1.05,ease:'power3.out',clearProps:'transform'});}}
   }
   function update() {
     frame = 0;
@@ -71,6 +73,7 @@
     }
     start = section.getBoundingClientRect().top + window.scrollY - top;
     guidance.textContent = pinned ? '스크롤하여 솔루션 살펴보기' : '제품군을 선택하여 살펴보기';
+    if(gsapOwned){motionTrigger?.kill();if(pinned)motionTrigger=ScrollTrigger.create({trigger:section,start:()=>`top ${top}px`,end:()=>'+='+step*4,onUpdate:update,invalidateOnRefresh:true});}
     if (pinned) update();
   }
   choices.forEach((button, index) => {
@@ -91,7 +94,7 @@
       choices[next].click();
     });
   });
-  addEventListener('scroll', schedule, {passive:true});
+  if(!gsapOwned)addEventListener('scroll', schedule, {passive:true});
   addEventListener('resize', configure);
   addEventListener('pageshow', configure);
   reduced.addEventListener('change', configure);
