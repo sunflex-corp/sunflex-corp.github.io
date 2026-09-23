@@ -159,6 +159,9 @@ def refine(body,slug):
   refine_mobile(s,root)
  from product_external_contexts import refine_external_contexts
  refine_external_contexts(s,root,slug)
+ if slug=='mobile-cctv':
+  from product_buyer_mobile import refine_installation_brief
+  refine_installation_brief(s,root)
  from product_operating_images import refine_operating_images
  refine_operating_images(s,root,slug)
  return str(s)

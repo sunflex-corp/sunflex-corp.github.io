@@ -22,6 +22,9 @@ def preserved(p,slug):
   for n in p.select('link[href*="/product-buyer-mobile.css"]'):n.decompose()
  from product_external_contexts import refine_external_contexts
  refine_external_contexts(p,p.select_one('.product-story'),slug)
+ if slug=='mobile-cctv':
+  from product_buyer_mobile import refine_installation_brief
+  refine_installation_brief(p,p.select_one('.product-story'))
  from product_operating_images import refine_operating_images
  refine_operating_images(p,p.select_one('.product-story'),slug)
  # Intentional removal of one repeated photo; all checkpoint prose remains compared.
