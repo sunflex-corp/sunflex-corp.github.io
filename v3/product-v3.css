@@ -1,0 +1,163 @@
+/* v3 layer for product pages — WHITE toss.im service template, black global header only.
+   Content DOM is untouched; this only restyles surfaces, type and spacing. */
+body.pv3{--t-ink:#191f28;--t-ink2:#333d4b;--t-sub:#4e5968;--t-mute:#8b95a1;--t-line:#e5e8eb;--t-bg2:#f9fafb;--t-card:#f2f4f6;--t-blue:#3182f6;--t-amber:#f5a524;
+  background:#fff!important;color:var(--t-ink)}
+body.pv3 main{background:#fff!important;padding-top:64px;color:var(--t-ink)}
+body.pv3 .skip{position:absolute;left:-9999px}
+body.pv3 .skip:focus{left:16px;top:72px;z-index:60;background:#000;color:#fff;padding:8px 12px;border-radius:8px}
+
+/* sticky local nav: white glass under the black header */
+body.pv3 .product-local-nav{position:sticky;top:64px;z-index:40;background:rgba(255,255,255,.86)!important;backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid var(--t-line)!important;box-shadow:none!important}
+body.pv3 .product-local-nav *{color:var(--t-sub)!important}
+body.pv3 .product-local-nav .product-local-name{color:var(--t-ink)!important;font-weight:700}
+body.pv3 .product-local-nav .editorial-button{background:var(--t-card)!important;border:0!important;border-radius:10px!important;color:var(--t-ink)!important}
+body.pv3 .product-local-nav .editorial-button:hover{background:var(--t-ink)!important;color:#fff!important}
+
+/* neutralise the old navy/grey surfaces everywhere except infographics & photo stages */
+body.pv3 main :is(section,div,article,aside,li,ol,ul,figure,figcaption,header,table,thead,tbody,tr,th,td,dl,dt,dd,p,span,strong,b,button,label,fieldset):not(.sunflex-infographic,.sunflex-infographic *,.infographic-visual,.infographic-visual *,.solar-card-image,.solar-card-image *,.product-local-nav,.product-local-nav *,.final-cta,.btn,.btn *,.editorial-button,.studio-hero-media *){background-color:transparent!important;background-image:none!important;border-color:var(--t-line)!important;box-shadow:none!important}
+body.pv3 main :is(p,li,dd,td,figcaption,span,label):not(.sunflex-infographic *,.infographic-visual *,.solar-card-image *,.btn *,.editorial-button *,.product-local-nav *){color:var(--t-sub)!important}
+body.pv3 main :is(h1,h2,h3,h4,strong,b,th,dt,button,legend):not(.sunflex-infographic *,.infographic-visual *,.btn *,.editorial-button,.product-local-nav *){color:var(--t-ink)!important}
+body.pv3 section.editorial-chapter.chapter-soft,body.pv3 section.studio-benefits{background:var(--t-bg2)!important}
+body.pv3 section.editorial-chapter,body.pv3 section.studio-benefits{padding-top:clamp(96px,11vw,176px)!important;padding-bottom:clamp(64px,6vw,112px)!important}
+
+/* typography: toss service scale */
+body.pv3 main h1{font-size:clamp(36px,3.9vw,56px)!important;font-weight:700!important;line-height:1.28!important;letter-spacing:-.01em!important}
+body.pv3 main h2{font-size:clamp(28px,2.8vw,40px)!important;font-weight:700!important;line-height:1.35!important;letter-spacing:-.01em!important}
+body.pv3 main h3{letter-spacing:-.01em}
+body.pv3 main :is(.editorial-kicker,.studio-breadcrumb,.eyebrow),body.pv3 main .editorial-section-inner header>p:first-child{color:var(--t-mute)!important;font-size:16px!important;font-weight:500!important;letter-spacing:0!important;text-transform:none!important}
+body.pv3 main .studio-display{color:var(--t-ink2)!important;font-size:clamp(22px,2vw,28px)!important;font-weight:700!important;line-height:1.4!important}
+body.pv3 main .editorial-lead{font-size:18px!important;line-height:1.7!important}
+body.pv3 main a{color:inherit}
+
+/* hero → toss service hero: label + title left, copy right, 1224 x ~560 media r52 */
+body.pv3 section.studio-hero{display:block!important;min-height:0!important;padding:96px 0 0!important;background:#fff!important}
+body.pv3 .studio-hero-copy{max-width:1224px;margin:0 auto;padding:0 24px;display:grid!important;grid-template-columns:1.3fr 1fr;column-gap:48px;align-items:end}
+body.pv3 .studio-hero-copy .studio-breadcrumb{grid-column:1/-1;margin-bottom:18px}
+body.pv3 .studio-hero-copy .content-copy{display:contents!important}
+body.pv3 .studio-hero-copy h1{grid-column:1;margin:0 0 8px!important}
+body.pv3 .studio-hero-copy .studio-display{grid-column:1}
+body.pv3 .studio-hero-copy .editorial-lead{grid-column:2;grid-row:2/span 2;align-self:end;margin:0!important}
+body.pv3 .studio-hero-copy .source-hero-link{grid-column:2;justify-self:start;margin-top:16px;font-size:15px;color:var(--t-mute)!important}
+body.pv3 .studio-hero-copy .editorial-actions{grid-column:1/-1;display:flex;gap:16px;align-items:center;margin-top:32px}
+body.pv3 .studio-hero-media{max-width:1224px;margin:56px auto 0!important;padding:0 24px;position:relative;background:none!important}
+body.pv3 .studio-hero-media figure{margin:0;height:min(560px,62vh);border-radius:52px!important;overflow:hidden;background:var(--t-card)!important}
+body.pv3 .studio-hero-media figure picture,body.pv3 .studio-hero-media figure img{display:block;width:100%;height:100%;object-fit:cover!important;border-radius:0!important}
+body.pv3 .studio-hero-media figure.v3-stage{background:linear-gradient(180deg,#f7f8fa,#eceef1)!important}
+body.pv3 .studio-hero-media figure.v3-stage img{object-fit:contain!important;padding:5% 0;transform:none!important}
+body.pv3 .studio-hero-media figcaption{position:static!important;margin-top:14px;font-size:13px;color:var(--t-mute)!important;background:none!important}
+body.pv3 .studio-viewfinder{display:none!important}
+
+/* buttons: toss primary = near-black on white, secondary = grey */
+body.pv3 main .editorial-button,body.pv3 main .btn{background:var(--t-ink)!important;color:#fff!important;border:0!important;border-radius:14px!important;font-weight:700!important;padding:14px 22px!important;box-shadow:none!important;transition:background .2s}
+body.pv3 main .editorial-button *,body.pv3 main .btn *{color:#fff!important}
+body.pv3 main .editorial-button:hover,body.pv3 main .btn:hover{background:#000!important}
+body.pv3 main .editorial-actions a:not(.editorial-button){color:var(--t-sub)!important}
+
+/* cards: toss grey card, radius 32, no borders */
+body.pv3 main :is(.content-tile,.revision-criteria>li,.editorial-step-grid>*,.content-grid>article,.use-panels>article,.conditions>div,.model-choices>button,.external-detail-facts,.gas-elements>li):not(.sunflex-infographic *){background:var(--t-card)!important;border:0!important;border-radius:32px!important}
+body.pv3 main :is(.revision-criteria>li,.content-tile)>span:first-child,body.pv3 main :is(.benefit-tab-number,.editorial-number){color:var(--t-blue)!important}
+body.pv3 main :is(.operating-step-image,.content-grid>figure,.buyer-report-reference,.gas-frame-visual,.gas-product-media,.hero-product):not(.sunflex-infographic *){background:var(--t-card)!important;border-radius:32px!important;overflow:hidden}
+body.pv3 main .editorial-chapter figure img,body.pv3 main .operating-step-image img{border-radius:32px}
+body.pv3 .infographic-visual,body.pv3 .sunflex-infographic{border-radius:40px!important;overflow:hidden}
+
+/* tabs (benefits + flow): toss underline tabs */
+body.pv3 main :is(.product-flow-tabs,.studio-tabs) button{color:var(--t-mute)!important;border-color:var(--t-line)!important}
+body.pv3 main :is(.product-flow-tabs,.studio-tabs) button[aria-selected=true]{color:var(--t-ink)!important;border-color:var(--t-ink)!important}
+/* flow step copy originally sat on a dark half-panel → give it a grey card */
+body.pv3 main :is(.editorial-flow-step,.operating-image-panel)>.content-copy{background:var(--t-card)!important}
+
+/* tables */
+body.pv3 main table{border-collapse:collapse;width:100%}
+body.pv3 main :is(th,td){border-bottom:1px solid var(--t-line)!important;padding:16px 12px}
+body.pv3 main thead th{color:var(--t-mute)!important;font-weight:500}
+
+/* related products → toss "더 읽어보기" */
+body.pv3 #related{padding:clamp(96px,11vw,176px) 0 40px!important;background:#fff!important}
+body.pv3 #related .lead h2{font-size:clamp(24px,2.3vw,32px)!important}
+body.pv3 .solar-card{background:transparent!important;border:0!important;box-shadow:none!important}
+body.pv3 .solar-card-image{border-radius:28px!important;overflow:hidden;background:var(--t-card)!important}
+body.pv3 .card-arrow{background:#fff!important;color:var(--t-ink)!important;box-shadow:0 4px 12px rgba(0,0,0,.08)}
+
+/* final CTA */
+body.pv3 #consultation{padding:clamp(96px,11vw,176px) 24px 140px!important;max-width:1272px;background:#fff!important}
+body.pv3 .final-cta{background:var(--t-card)!important;border:0!important;border-radius:52px!important;padding:clamp(40px,6vw,88px)!important;box-shadow:none!important}
+body.pv3 .final-cta h2{color:var(--t-ink)!important}
+body.pv3 .final-cta p{color:var(--t-sub)!important}
+body.pv3 .final-cta .eyebrow{color:var(--t-blue)!important}
+
+/* white footer on product pages (header stays black) */
+body.pv3 .gf{background:#fff;border-top:1px solid var(--t-line)}
+body.pv3 .gf .slogan{color:var(--t-ink)}
+body.pv3 .gf h5,body.pv3 .gf .biz{color:var(--t-mute);border-color:var(--t-line)}
+body.pv3 .gf li a{color:var(--t-sub)}
+body.pv3 .gf li a:hover{color:var(--t-ink)}
+body.pv3 .gf .mark{background:linear-gradient(180deg,#191f28,rgba(25,31,40,.06));-webkit-background-clip:text;background-clip:text}
+body.pv3 .gh{background:#000}
+
+/* reveal */
+body.pv3 .v3-rv{opacity:0;transform:translateY(32px);transition:opacity .9s cubic-bezier(.22,1,.36,1),transform .9s cubic-bezier(.22,1,.36,1)}
+body.pv3 .v3-rv.v3-in{opacity:1;transform:none}
+
+@media (max-width:900px){
+  body.pv3 .studio-hero-copy{grid-template-columns:1fr}
+  body.pv3 .studio-hero-copy .editorial-lead,body.pv3 .studio-hero-copy .source-hero-link{grid-column:1;grid-row:auto;margin-top:16px!important}
+  body.pv3 .studio-hero-media figure{border-radius:28px!important;height:46vh}
+  body.pv3 .final-cta{border-radius:28px!important}
+  body.pv3 main :is(.content-tile,.revision-criteria>li){border-radius:24px!important}
+}
+@media (prefers-reduced-motion:reduce){body.pv3 .v3-rv{opacity:1;transform:none}}
+
+/* ---- toss place device page: centered hero, blue primary, black feature bands ---- */
+body.pv3 .studio-hero-copy{display:flex!important;flex-direction:column;align-items:center;text-align:center;max-width:860px}
+body.pv3 .studio-hero-copy .content-copy{display:flex!important;flex-direction:column;align-items:center}
+body.pv3 .studio-hero-copy .studio-breadcrumb{margin-bottom:14px}
+body.pv3 .studio-hero-copy .editorial-lead{max-width:640px;margin-top:18px!important}
+body.pv3 .studio-hero-copy .source-hero-link{margin-top:14px}
+body.pv3 .studio-hero-copy .editorial-actions{justify-content:center}
+body.pv3 main .editorial-button,body.pv3 main .btn{background:var(--t-blue)!important}
+body.pv3 main .editorial-button:hover,body.pv3 main .btn:hover{background:var(--t-blue-d)!important}
+body.pv3 .product-local-nav .editorial-button{background:var(--t-blue)!important;color:#fff!important}
+body.pv3 .product-local-nav .editorial-button:hover{background:var(--t-blue-d)!important}
+/* black full-bleed band (media chapters that are not "soft") */
+body.pv3 section.editorial-chapter.chapter-media:not(.chapter-soft):not(.chapter-highlights){background:#000!important}
+body.pv3 section.editorial-chapter.chapter-media:not(.chapter-soft):not(.chapter-highlights) :is(h2,h3,strong,b){color:#fff!important}
+body.pv3 section.editorial-chapter.chapter-media:not(.chapter-soft):not(.chapter-highlights) :is(p,li,span,figcaption):not(.sunflex-infographic *){color:rgba(255,255,255,.64)!important}
+body.pv3 section.editorial-chapter.chapter-media:not(.chapter-soft):not(.chapter-highlights) .editorial-kicker,
+body.pv3 section.editorial-chapter.chapter-media:not(.chapter-soft):not(.chapter-highlights) header>p:first-child{color:rgba(255,255,255,.45)!important}
+body.pv3 section.editorial-chapter.chapter-media:not(.chapter-soft):not(.chapter-highlights) :is(.content-tile,.content-grid>article){background:#1a1b1f!important}
+body.pv3 .fbar{bottom:24px}
+@media (max-width:900px){body.pv3 .studio-hero-copy{padding:0 20px}}
+/* product meta line (e.g. "착용 · 턱끈 체결 · 비상 신호") sits above the title as a small label */
+body.pv3 .studio-product-meta{display:flex!important;flex-direction:column-reverse;align-items:center;gap:0}
+body.pv3 .studio-product-meta>p{order:-1;font-size:16px!important;color:var(--t-blue)!important;font-weight:600!important;margin:0 0 10px!important}
+body.pv3 .studio-product-meta{flex-direction:column!important}
+
+/* ---- contrast pass 2 ---- */
+body.pv3 main .benefit-kicker{color:var(--t-blue)!important;font-weight:700!important}
+body.pv3 main a.benefit-detail-link{color:var(--t-blue)!important;font-weight:600}
+body.pv3 main section.configure a.cta{color:#fff!important;background:var(--t-blue)!important}
+/* flow steps keep their dark stage (toss place black band) → light text on it */
+body.pv3 main :is(.editorial-flow-step,.operating-image-panel){background:#16181d!important;border-radius:32px!important;overflow:hidden}
+body.pv3 main :is(.editorial-flow-step,.operating-image-panel) :is(h3,strong,b){color:#fff!important}
+body.pv3 main :is(.editorial-flow-step,.operating-image-panel) :is(p,small,span,figcaption):not(.benefit-tab-number){color:rgba(255,255,255,.66)!important}
+body.pv3 main :is(.editorial-flow-step,.operating-image-panel)>.content-copy,body.pv3 main .operating-step-copy{background:transparent!important}
+body.pv3 main .content-grid>figure figcaption,body.pv3 main figure.motion-depth figcaption{color:var(--t-sub)!important;background:transparent!important}
+body.pv3 main .external-detail-facts p{color:var(--t-ink2)!important}
+/* id-level overrides for rules that ship with #id + !important */
+body.pv3 #main-content .studio-panel .benefit-kicker,body.pv3 #main-content .gas-scene-panel .benefit-kicker{color:var(--t-blue)!important;font-weight:700}
+body.pv3 #main-content .benefit-detail-link{color:var(--t-blue)!important;font-weight:600}
+body.pv3 #main-content .editorial-label-pair :is(span,strong,small){color:var(--t-ink2)!important}
+body.pv3 #main-content .editorial-label-pair{color:var(--t-ink2)!important}
+body.pv3 #main-content figure figcaption:not(.sunflex-infographic *){color:var(--t-sub)!important}
+body.pv3 #main-content .external-detail-facts p{color:var(--t-ink2)!important}
+body.pv3 #main-content :is(.editorial-flow-step,.operating-image-panel) :is(h3,strong,b){color:#fff!important}
+body.pv3 #main-content :is(.editorial-flow-step,.operating-image-panel) :is(p,small,span):not(.benefit-tab-number){color:rgba(255,255,255,.7)!important}
+body.pv3 #main-content :is(.editorial-flow-step,.operating-image-panel){background:#16181d!important}
+body.pv3 #main-content #product-benefits .studio-panel .benefit-detail-link,body.pv3 #main-content #product-benefits .benefit-detail-link{color:var(--t-blue)!important}
+body.pv3 #main-content #product-benefits .studio-panel .benefit-kicker{color:var(--t-blue)!important}
+/* QA pass: product photos on light stages */
+body.pv3 .studio-hero-media figure.v3-stage img,body.pv3 .solar-card-image img{mix-blend-mode:multiply}
+/* QA: the "구성과 운영, 더 자세히" intro is a lead-in, not a section → no double padding */
+body.pv3 section.revision-details{padding-bottom:0!important}
+body.pv3 section.revision-details+section{padding-top:clamp(56px,6vw,88px)!important}
+body.pv3 section.revision-choices{padding-bottom:clamp(40px,4vw,64px)!important}

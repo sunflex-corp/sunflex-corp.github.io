@@ -1,7 +1,461 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>기업소개 | 썬플렉스 (프로토타입)</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+<link rel="stylesheet" href="/v3/v3.css">
+<link rel="stylesheet" href="/v3/tds.css">
+<style>
+:root{
+  --bg:#000;--bg2:#0c0d0f;--card:#141518;--line:rgba(255,255,255,.1);
+  --ink:#fff;--sub:rgba(255,255,255,.7);--mute:rgba(255,255,255,.45);--dim:rgba(255,255,255,.16);--ghost:#2a2c30;
+  --amber:#f5a524;--ease:cubic-bezier(.22,1,.36,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{font-family:"Pretendard Variable",Pretendard,-apple-system,sans-serif;background:var(--bg);color:var(--ink);-webkit-font-smoothing:antialiased;word-break:keep-all;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img,video{display:block}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+.label{font-size:15px;font-weight:600;color:var(--amber);margin-bottom:18px}
+.pin{position:relative}
+.sticky{position:sticky;top:0;height:100vh;overflow:hidden}
 
-<html data-motion-engine="gsap" lang="ko"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><title>기업소개 | 썬플렉스</title><link data-site-motion="lenis" href="/assets/sunflex-v2/cctv-motion/vendor/lenis.css?v=2f668ae84a" rel="stylesheet"/><script data-site-motion="vendor" defer="" src="/assets/sunflex-v2/cctv-motion/vendor/gsap.min.js?v=92bb9a9647"></script><script data-site-motion="vendor" defer="" src="/assets/sunflex-v2/cctv-motion/vendor/ScrollTrigger.min.js?v=b0b14d67b5"></script><script data-site-motion="vendor" defer="" src="/assets/sunflex-v2/cctv-motion/vendor/lenis.min.js?v=53195c9797"></script><meta content="썬플렉스가 소개하는 산업안전 제품과 적용 분야, 도입 전 확인할 조건 및 기업정보를 알아보세요." name="description"/><meta content="#08090b" name="theme-color"/><link href="https://sunflex-corp.github.io/company/" rel="canonical"/><link href="/favicon.svg" rel="icon" type="image/svg+xml"/><meta content="website" property="og:type"/><meta content="ko_KR" property="og:locale"/><meta content="기업소개 | SUNPLEX" property="og:title"/><meta content="썬플렉스가 소개하는 산업안전 제품과 적용 분야, 도입 전 확인할 조건 및 기업정보를 알아보세요." property="og:description"/><meta content="https://sunflex-corp.github.io/company/" property="og:url"/><meta content="https://sunflex-corp.github.io/brand/sunplex-wordmark.png" property="og:image"/><link as="font" crossorigin="" href="/fonts/AstaSans-Medium.woff2" rel="preload" type="font/woff2"/><link href="/assets/sunflex-v2/site.css?v=74f283af5f" rel="stylesheet"/><script defer="" src="/assets/sunflex-v2/site.js?v=b862072df9"></script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "(주)썬플렉스", "url": "https://sunflex-corp.github.io", "logo": "https://sunflex-corp.github.io/brand/sunplex-wordmark.png", "telephone": "031-991-2285", "email": "jiyoueng@daum.net", "address": {"@type": "PostalAddress", "streetAddress": "신천동 845-18", "addressLocality": "시흥시", "addressRegion": "경기도", "addressCountry": "KR"}}</script><style>@media(min-width:761px){.mobile-nav{display:none}}</style><link href="/assets/sunflex-v2/solar-site.css?v=d033b86e8a" rel="stylesheet"/><script defer="" src="/assets/sunflex-v2/solar-site.js?v=a504865d60"></script><link data-site-motion="style" href="/assets/sunflex-v2/site-motion.css?v=3264fd0c8a" rel="stylesheet"/><link href="/assets/sunflex-v2/site-studio.css?v=34a0f5ade3" rel="stylesheet"/><link href="/assets/sunflex-v2/corporate-studio.css?v=61994ea844" rel="stylesheet"/></head><body class="sunflex-v2 site-studio studio-corporate corporate-black company-editorial" data-studio-page="company"><a class="skip" href="#main-content">본문으로 건너뛰기</a>
-<header class="site-header"><div class="wrap header-inner"><a aria-label="썬플렉스 홈" class="logo" href="/"><img alt="SUNPLEX" height="35" src="/brand/sunplex-wordmark-white.svg" width="150"/></a><nav aria-label="주 메뉴" class="desktop-nav"><a href="/solutions/">Solar 솔루션</a><a href="/products/">제품</a><a aria-current="page" href="/company/">기업소개</a><a href="/cases/">고객지원</a></nav><a class="header-cta" href="/contact/">도입 문의 <span aria-hidden="true" class="arrow">↗</span></a><button aria-controls="mobile-nav" aria-expanded="false" class="menu-toggle" hidden="" type="button">메뉴</button></div><nav aria-label="모바일 메뉴" class="mobile-nav" id="mobile-nav"><a href="/solutions/">Solar 솔루션</a><a href="/products/">제품</a><a aria-current="page" href="/company/">기업소개</a><a href="/cases/">고객지원</a><a href="/contact/">도입 문의 <span aria-hidden="true" class="arrow">↗</span></a></nav><details class="solar-menu"><summary>제품군 둘러보기 <span aria-hidden="true">＋</span></summary><div class="solar-menu-panel"><div class="wrap family-links"><a href="/solutions/detect/"><span>01 / 감지</span><strong>Solar Detect</strong><span aria-hidden="true">↗</span></a><a href="/solutions/alert/"><span>02 / 경보</span><strong>Solar Alert</strong><span aria-hidden="true">↗</span></a><a href="/solutions/respond/"><span>03 / 대응</span><strong>Solar Respond</strong><span aria-hidden="true">↗</span></a><a href="/solutions/record/"><span>04 / 기록</span><strong>Solar Record</strong><span aria-hidden="true">↗</span></a></div><div class="wrap mega-bottom"><a href="/products/">48개 제품 전체 보기 ↗</a><a href="/solutions/safety-box/">안전종합상황판 ↗</a></div></div></details></header><main data-company-owned="" id="main-content" tabindex="-1"><section class="company-hero"><div class="company-hero-inner"><span class="eyebrow">기업소개</span><h1>현장 안전관리에 필요한<br/>기술을 제안합니다.</h1><p>건설·제조·물류 현장의 안전장비와 솔루션. 썬플렉스는 현장 담당자가 필요한 제품을 검토할 수 있도록 제품 정보와 상담을 제공합니다.</p><div class="company-hero-links"><a href="/products/">제품 살펴보기 <span aria-hidden="true">↗</span></a><a href="/contact/">도입 문의 <span aria-hidden="true">↗</span></a></div></div><p class="company-image-caption">현장 적용 상황을 설명하는 이미지</p><div class="company-hero-photo"><picture><img alt="작업 전 현장 도면을 함께 확인하는 장면" decoding="async" fetchpriority="high" height="1080" loading="eager" sizes="(max-width: 760px) 100vw, 55vw" src="/media/derived/field-tbm-briefing-generated-1920.webp" srcset="/media/derived/field-tbm-briefing-generated-480.webp 480w, /media/derived/field-tbm-briefing-generated-768.webp 768w, /media/derived/field-tbm-briefing-generated-1280.webp 1280w, /media/derived/field-tbm-briefing-generated-1920.webp 1920w" width="1920"/></picture></div></section><div class="company-chapters wrap"><nav aria-label="페이지 목차"><a href="#chapter-1"><small>01</small>현장에 필요한 장비를 선택하실 수 있도록.</a><a href="#chapter-2"><small>02</small>제품 도입 시 함께 확인할 사항</a><a href="#chapter-3"><small>03</small>제품 정보와 상담 안내</a><a href="#company-info"><small>04</small>기업정보</a></nav></div><section class="company-introduction wrap" id="chapter-1"><div><span class="eyebrow">썬플렉스</span><h2>현장에 필요한 장비를<br/>선택하실 수 있도록.</h2></div><div><p class="statement">영상관제와 위험 알림,<br/>작업 환경 측정과 출입 관리.<br/>현장에 필요한 기능을 살펴보세요.</p><p>썬플렉스는 산업현장의 안전관리에 필요한 제품을 안내합니다. 설치할 장소와 사용 목적에 맞춰 제품별 기능을 확인하고, 도입에 필요한 사항을 문의하실 수 있습니다.</p><a class="text-link" href="/solutions/">Solar 솔루션 살펴보기<span aria-hidden="true" class="arrow">↗</span></a></div></section><section aria-labelledby="company-fields-title" class="company-fields wrap" id="company-fields"><header class="company-fields-heading"><span class="eyebrow">SOLAR SOLUTIONS</span><h2 id="company-fields-title">현장의 질문에서.<br/>필요한 기능으로.</h2><p>각 제품군의 기능을 살펴보고, 현장 조건에 맞는 제품을 확인하세요.</p></header><nav aria-label="기능별 소개" class="company-field-nav"><a href="#company-detect">감지</a><a href="#company-alert">경보</a><a href="#company-respond">대응</a><a href="#company-record">기록</a></nav><div class="company-field-layout"><div aria-hidden="true" class="company-field-stage"><picture class="company-field-image" data-company-image="0"><img alt="" decoding="async" height="1080" loading="lazy" sizes="(max-width: 1000px) 1px, 55vw" src="/media/derived/field-crane-hook-rigging-generated-1920.webp" srcset="/media/derived/field-crane-hook-rigging-generated-480.webp 480w, /media/derived/field-crane-hook-rigging-generated-768.webp 768w, /media/derived/field-crane-hook-rigging-generated-1280.webp 1280w, /media/derived/field-crane-hook-rigging-generated-1920.webp 1920w" width="1920"/></picture><picture class="company-field-image" data-company-image="1"><img alt="" decoding="async" height="1080" loading="lazy" sizes="(max-width: 1000px) 1px, 55vw" src="/media/derived/field-vehicle-pedestrian-generated-1920.webp" srcset="/media/derived/field-vehicle-pedestrian-generated-480.webp 480w, /media/derived/field-vehicle-pedestrian-generated-768.webp 768w, /media/derived/field-vehicle-pedestrian-generated-1280.webp 1280w, /media/derived/field-vehicle-pedestrian-generated-1920.webp 1920w" width="1920"/></picture><picture class="company-field-image" data-company-image="2"><img alt="" decoding="async" height="1080" loading="lazy" sizes="(max-width: 1000px) 1px, 55vw" src="/media/derived/company-promise-night-worker-generated-1920.webp" srcset="/media/derived/company-promise-night-worker-generated-480.webp 480w, /media/derived/company-promise-night-worker-generated-768.webp 768w, /media/derived/company-promise-night-worker-generated-1280.webp 1280w, /media/derived/company-promise-night-worker-generated-1920.webp 1920w" width="1920"/></picture><picture class="company-field-image" data-company-image="3"><img alt="" decoding="async" height="1080" loading="lazy" sizes="(max-width: 1000px) 1px, 55vw" src="/media/derived/field-office-handover-generated-1920.webp" srcset="/media/derived/field-office-handover-generated-480.webp 480w, /media/derived/field-office-handover-generated-768.webp 768w, /media/derived/field-office-handover-generated-1280.webp 1280w, /media/derived/field-office-handover-generated-1920.webp 1920w" width="1920"/></picture><span aria-hidden="true" class="company-field-crosshair"></span><span class="company-field-stage-caption">적용 환경을 설명하는 이미지</span></div><div class="company-field-stories"><article class="company-field-story" data-company-field="0" id="company-detect"><p class="company-field-category">Solar Detect</p><h3>감지</h3><p class="company-field-question">무엇을 확인해야 할까요?</p><p>작업 구역의 영상과 환경 정보를 확인합니다.</p><picture class="company-field-mobile"><img alt="인양 구역을 살펴보는 작업 장면" decoding="async" height="1080" loading="lazy" sizes="(max-width: 1000px) 90vw, 1px" src="/media/derived/field-crane-hook-rigging-generated-1920.webp" srcset="/media/derived/field-crane-hook-rigging-generated-480.webp 480w, /media/derived/field-crane-hook-rigging-generated-768.webp 768w, /media/derived/field-crane-hook-rigging-generated-1280.webp 1280w, /media/derived/field-crane-hook-rigging-generated-1920.webp 1920w" width="1920"/></picture><a class="text-link" href="/solutions/detect/">감지 제품 살펴보기<span aria-hidden="true" class="arrow">↗</span></a></article><article class="company-field-story" data-company-field="1" id="company-alert"><p class="company-field-category">Solar Alert</p><h3>경보</h3><p class="company-field-question">누구에게 알려야 할까요?</p><p>접근과 위험 상황을 소리와 빛으로 알립니다.</p><picture class="company-field-mobile"><img alt="차량과 작업자가 함께 이동하는 구역" decoding="async" height="1080" loading="lazy" sizes="(max-width: 1000px) 90vw, 1px" src="/media/derived/field-vehicle-pedestrian-generated-1920.webp" srcset="/media/derived/field-vehicle-pedestrian-generated-480.webp 480w, /media/derived/field-vehicle-pedestrian-generated-768.webp 768w, /media/derived/field-vehicle-pedestrian-generated-1280.webp 1280w, /media/derived/field-vehicle-pedestrian-generated-1920.webp 1920w" width="1920"/></picture><a class="text-link" href="/solutions/alert/">경보 제품 살펴보기<span aria-hidden="true" class="arrow">↗</span></a></article><article class="company-field-story" data-company-field="2" id="company-respond"><p class="company-field-category">Solar Respond</p><h3>대응</h3><p class="company-field-question">어떤 대응 장비가 필요할까요?</p><p>작업자 보호와 현장 대응에 필요한 장비를 안내합니다.</p><picture class="company-field-mobile"><img alt="현장을 점검하는 작업자" decoding="async" height="1080" loading="lazy" sizes="(max-width: 1000px) 90vw, 1px" src="/media/derived/company-promise-night-worker-generated-1920.webp" srcset="/media/derived/company-promise-night-worker-generated-480.webp 480w, /media/derived/company-promise-night-worker-generated-768.webp 768w, /media/derived/company-promise-night-worker-generated-1280.webp 1280w, /media/derived/company-promise-night-worker-generated-1920.webp 1920w" width="1920"/></picture><a class="text-link" href="/solutions/respond/">대응 제품 살펴보기<span aria-hidden="true" class="arrow">↗</span></a></article><article class="company-field-story" data-company-field="3" id="company-record"><p class="company-field-category">Solar Record</p><h3>기록</h3><p class="company-field-question">어떤 정보를 남겨야 할까요?</p><p>점검과 작업 정보를 기록하고 관리합니다.</p><picture class="company-field-mobile"><img alt="현장 정보를 함께 확인하는 담당자" decoding="async" height="1080" loading="lazy" sizes="(max-width: 1000px) 90vw, 1px" src="/media/derived/field-office-handover-generated-1920.webp" srcset="/media/derived/field-office-handover-generated-480.webp 480w, /media/derived/field-office-handover-generated-768.webp 768w, /media/derived/field-office-handover-generated-1280.webp 1280w, /media/derived/field-office-handover-generated-1920.webp 1920w" width="1920"/></picture><a class="text-link" href="/solutions/record/">기록 제품 살펴보기<span aria-hidden="true" class="arrow">↗</span></a></article></div></div></section>
-<section class="company-criteria" id="chapter-2"><div class="wrap"><div class="lead"><h2>제품 도입 시<br/>함께 확인할 사항</h2><p>기능이 같아 보여도 설치 조건과 사용 방식은 다를 수 있습니다. 현장 적용 여부는 아래 사항을 바탕으로 확인합니다.</p></div><div class="company-principles"><article class="company-principle"><h3>사용 목적</h3><p>관리할 구역과 필요한 기능을 정리해 주세요. 차량 접근 알림, 작업 구역 영상 확인, 가스 농도 측정 등 사용 목적이 제품 선택의 기준이 됩니다.</p></article><article class="company-principle"><h3>설치 환경</h3><p>실내·실외 여부, 설치 위치, 전원 공급과 통신 환경을 확인합니다. 기존 장비와 연결해야 한다면 모델명과 연결 방식도 필요합니다.</p></article><article class="company-principle"><h3>운영 방식</h3><p>알림 수신자와 운영 담당자를 정하고, 확인할 정보와 기록 범위를 검토합니다. 제품에 따라 연동 기능과 데이터 처리 조건은 별도 확인이 필요합니다.</p></article></div></div></section>
-<section class="company-information wrap" id="chapter-3"><div class="lead"><h2>제품 정보와 상담 안내</h2><p>제품별 기능과 적용 조건은 상세 안내에서 확인할 수 있습니다. 추가로 필요한 자료는 제품명과 함께 문의해 주세요.</p></div><div class="resource-list"><a class="row-link" href="/products/"><strong>제품별 상세 안내</strong><span aria-hidden="true" class="arrow">↗</span></a><a class="row-link" href="/cases/"><strong>자료와 사용 관련 문의</strong><span aria-hidden="true" class="arrow">↗</span></a></div></section>
-<section class="company-information wrap" id="company-info"><div class="lead"><h2>기업정보</h2><p>썬플렉스의 연락처와 사업장 안내입니다.</p></div><dl class="info-table"><div><dt>법인명</dt><dd>(주)썬플렉스</dd></div><div><dt>사업장</dt><dd>경기도 시흥시 신천동 845-18</dd></div><div><dt>전화</dt><dd><a href="tel:0319912285">031-991-2285</a></dd></div><div><dt>이메일</dt><dd><a href="mailto:jiyoueng@daum.net">jiyoueng@daum.net</a></dd></div></dl></section><div class="wrap"><section class="final-cta"><div><h2>우리 현장에 맞는 제품이 궁금하신가요?</h2><p>관심 제품과 설치 환경을 알려주시면 상담에 도움이 됩니다.</p></div><a class="btn" href="/contact/">도입 문의<span aria-hidden="true" class="arrow">↗</span></a></section></div></main><footer class="site-footer"><div class="wrap"><div class="footer-top"><div class="footer-brand"><a aria-label="썬플렉스 홈" href="/"><img alt="SUNPLEX" height="39" loading="lazy" src="/brand/sunplex-wordmark-white.svg" width="170"/></a><p>산업현장을 위한 스마트 안전 솔루션.<br/>Solar 제품군과 현장 도입을 안내합니다.</p></div><nav aria-label="하단 메뉴" class="footer-links"><a href="/solutions/">Solar 솔루션</a><a href="/products/">제품</a><a href="/company/">기업소개</a><a href="/cases/">고객지원</a><a href="/contact/">도입 문의</a></nav><div class="footer-contact"><strong>(주)썬플렉스</strong><a href="tel:0319912285">031-991-2285</a><a href="mailto:jiyoueng@daum.net">jiyoueng@daum.net</a><p>경기도 시흥시 신천동 845-18</p></div></div><div class="footer-bottom"><span>© 2026 SUNPLEX. All rights reserved.</span><a href="/privacy/">개인정보·현장 데이터 안내</a></div><div aria-hidden="true" class="wordmark-end">SUNPLEX</div></div></footer><script data-site-motion="runtime" defer="" src="/assets/sunflex-v2/site-motion.js?v=d0e9a4b478"></script><script defer="" src="/assets/sunflex-v2/site-studio.js?v=732e10d795"></script><script defer="" src="/assets/sunflex-v2/company-studio.js?v=c39cf5d035"></script></body></html>
+/* S1 hero: inset card -> full-bleed -> card */
+#s1{height:340vh}
+#s1 .media{position:absolute;inset:0;will-change:clip-path}
+#s1 video{width:100%;height:100%;object-fit:cover;will-change:transform}
+#s1 .media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.1) 35%,rgba(0,0,0,.7));pointer-events:none}
+#s1 .side::before{content:"";position:absolute;inset:-40vh -30vw -40vh -40vw;background:radial-gradient(closest-side,rgba(0,0,0,.55),transparent);z-index:-1}
+#s1 h1{position:absolute;left:0;right:0;bottom:64px;z-index:2;text-align:center;font-size:clamp(38px,5.6vw,80px);font-weight:700;letter-spacing:-.035em;line-height:1.15}
+#s1 h1 span{display:inline-block;margin:0 .26em;opacity:0;filter:blur(16px);transform:translateY(24px);animation:in 1.2s var(--ease) forwards}
+#s1 h1 span:nth-child(2){animation-delay:.3s}#s1 h1 span:nth-child(3){animation-delay:.6s}
+@keyframes in{to{opacity:1;filter:none;transform:none}}
+#s1 .side{position:absolute;left:max(8vw,40px);top:50%;transform:translateY(-50%);z-index:2;max-width:460px;opacity:0}
+#s1 .side b{display:block;font-size:clamp(28px,3vw,40px);font-weight:700;letter-spacing:-.025em;line-height:1.35}
+#s1 .side p{margin-top:18px;font-size:17px;line-height:1.7;color:var(--sub)}
+.hint{position:absolute;left:50%;bottom:22px;transform:translateX(-50%);z-index:2;font-size:12px;letter-spacing:.14em;color:var(--mute)}
+
+/* S2 vision */
+#s2{position:relative;padding:220px 0 220px;overflow:hidden}
+#s2::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#000,rgba(0,0,0,.6) 45%,#000),url(img/vision-dawn.jpg) center/cover;opacity:.6}
+#s2 .wrap{position:relative}
+#s2 h2{font-size:clamp(40px,6vw,84px);font-weight:700;letter-spacing:-.04em;line-height:1.12;filter:blur(18px);opacity:.15;transition:filter 1.2s var(--ease),opacity 1.2s var(--ease)}
+#s2 h2.in{filter:none;opacity:1}
+#s2 .lead{margin-top:56px;font-size:clamp(22px,2.4vw,32px);font-weight:600;line-height:1.55;letter-spacing:-.02em;max-width:900px}
+#s2 .wd{color:var(--ghost);transition:color .3s}
+#s2 .wd.on{color:var(--ink)}
+.marquee{position:relative;margin-top:120px;overflow:hidden;-webkit-mask:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.mq{display:flex;gap:16px;width:max-content;animation:mq 60s linear infinite}
+.mq img{height:clamp(150px,18vw,240px);aspect-ratio:4/3;object-fit:cover;border-radius:20px;filter:brightness(.8)}
+.mq img:nth-child(odd){margin-top:36px}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* S3 solar accordion + swapping image */
+#s3{height:440vh}
+#s3 .grid{height:100%;max-width:1200px;margin:0 auto;padding:64px 24px 0;display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
+#s3 h2{font-size:clamp(32px,3.8vw,52px);font-weight:700;letter-spacing:-.03em;line-height:1.25;margin-bottom:44px}
+.acc{border-top:1px solid var(--line)}
+.it{border-bottom:1px solid var(--line);padding:22px 0;cursor:pointer}
+.it .t{display:flex;align-items:baseline;gap:14px;font-size:22px;font-weight:700;color:var(--mute);transition:color .4s}
+.it .t small{font-size:13px;font-weight:600;color:var(--mute)}
+.it .t em{font-style:normal;font-weight:500;font-size:16px;color:var(--mute)}
+.it .d{display:grid;grid-template-rows:0fr;transition:grid-template-rows .5s var(--ease)}
+.it .d>div{overflow:hidden}
+.it .d p{padding-top:12px;font-size:17px;line-height:1.65;color:var(--sub)}
+.it .d a{display:inline-flex;margin-top:16px;font-size:14px;font-weight:600;padding:9px 14px;border-radius:999px;background:rgba(255,255,255,.1)}
+.it .d a:hover{background:var(--amber);color:#000}
+.it.on .t,.it.on .t small{color:var(--ink)}.it.on .t em{color:var(--amber)}
+.it.on .d{grid-template-rows:1fr}
+.frame{position:relative;aspect-ratio:4/5;max-height:74vh;width:100%;border-radius:28px;overflow:hidden;background:var(--card);justify-self:end}
+.frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.08);transition:opacity .7s var(--ease),transform 1.2s var(--ease)}
+.frame img.on{opacity:1;transform:none}
+.frame .cnt{position:absolute;right:18px;bottom:18px;z-index:2;font-size:13px;font-weight:600;padding:7px 12px;border-radius:999px;background:rgba(0,0,0,.5);backdrop-filter:blur(8px)}
+
+/* S4 pill -> fullscreen */
+#s4{height:500vh}
+#s4 .sticky{background:var(--bg2)}
+#s4 .layer{position:absolute;inset:0;will-change:clip-path}
+#s4 .layer img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.06);transition:opacity .9s var(--ease),transform 1.6s var(--ease)}
+#s4 .layer img.on{opacity:1;transform:none}
+#s4 .layer::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.75),rgba(0,0,0,.25) 60%)}
+#s4 .word{position:absolute;top:50%;transform:translateY(-50%);font-size:clamp(26px,3.4vw,48px);font-weight:700;letter-spacing:-.03em;white-space:nowrap;z-index:2}
+#s4 .steps{position:absolute;left:max(8vw,40px);top:50%;transform:translateY(-50%);z-index:3;width:min(460px,80vw);height:240px}
+#s4 .st{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;opacity:0;transform:translateY(24px);transition:opacity .6s var(--ease),transform .6s var(--ease)}
+#s4 .st.on{opacity:1;transform:none}
+#s4 .st span{font-size:14px;font-weight:600;color:var(--amber)}
+#s4 .st b{margin-top:10px;font-size:clamp(28px,3vw,40px);font-weight:700;letter-spacing:-.025em;line-height:1.3}
+#s4 .st p{margin-top:14px;font-size:17px;color:var(--sub);line-height:1.65}
+
+/* S5 horizontal rail */
+#s5{height:340vh}
+#s5 .head{position:absolute;top:0;left:0;right:0;padding:120px 0 0}
+#s5 h2{font-size:clamp(30px,3.6vw,48px);font-weight:700;letter-spacing:-.03em;line-height:1.3}
+#s5 .head p{margin-top:14px;font-size:18px;color:var(--sub);line-height:1.6}
+.rail{position:absolute;left:0;bottom:8vh;display:flex;gap:20px;padding:0 max(24px,calc((100vw - 1200px)/2 + 24px));will-change:transform}
+.rc{flex:0 0 min(440px,78vw);border-radius:28px;background:var(--card);overflow:hidden;border:1px solid var(--line)}
+.rc .im{aspect-ratio:16/10;overflow:hidden}
+.rc img{width:100%;height:100%;object-fit:cover;filter:brightness(.8)}
+.rc .c{padding:26px 26px 30px}
+.rc .n{font-size:13px;font-weight:700;color:var(--amber)}
+.rc h3{margin-top:8px;font-size:24px;font-weight:700;letter-spacing:-.02em}
+.rc p{margin-top:10px;font-size:15.5px;line-height:1.65;color:var(--sub)}
+.rc a{display:inline-flex;margin-top:14px;font-size:14px;font-weight:600;color:var(--amber)}
+.railbar{position:absolute;left:50%;bottom:3.5vh;transform:translateX(-50%);width:160px;height:3px;border-radius:2px;background:var(--line);overflow:hidden}
+.railbar i{display:block;height:100%;width:25%;background:var(--ink)}
+
+/* S6 typing */
+#s6{height:220vh}
+#s6 .sticky{display:grid;place-items:center;text-align:center}
+#s6 .bg{position:absolute;inset:0;background:url(img/s6-bokeh.jpg) center/cover;opacity:.55}
+#s6 .bg::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(0,0,0,.75),rgba(0,0,0,.2))}
+#s6 .fl{position:absolute;border-radius:18px;overflow:hidden;will-change:transform;box-shadow:0 30px 60px rgba(0,0,0,.5)}
+#s6 .fl img{width:100%;height:100%;object-fit:cover;filter:brightness(.75)}
+#s6 .f1{left:6%;top:14%;width:15vw;aspect-ratio:3/4}
+#s6 .f2{right:7%;top:10%;width:13vw;aspect-ratio:1}
+#s6 .f3{left:11%;bottom:8%;width:12vw;aspect-ratio:4/3}
+#s6 .f4{right:10%;bottom:12%;width:16vw;aspect-ratio:4/3}
+#s6 .sticky>div:last-child{position:relative;z-index:2}
+#s6 .big{font-size:clamp(40px,6.4vw,88px);font-weight:800;letter-spacing:-.04em;line-height:1.18}
+#s6 .l2{color:var(--amber);min-height:1.18em}
+#s6 .caret{display:inline-block;width:.06em;height:.9em;background:var(--amber);margin-left:.06em;vertical-align:-.08em;animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+#s6 .sub{margin-top:32px;font-size:18px;line-height:1.7;color:var(--sub);opacity:0;transition:opacity .8s}
+#s6 .sub.on{opacity:1}
+
+/* S7 collage -> zoom -> CTA */
+#s7{height:460vh}
+#s7 .head{position:absolute;top:13vh;left:0;right:0;z-index:2}
+#s7 h2{font-size:clamp(30px,3.6vw,48px);font-weight:700;letter-spacing:-.03em;line-height:1.3}
+#s7 .head p{margin-top:14px;font-size:17px;color:var(--sub);line-height:1.6}
+.collage{position:absolute;left:50%;top:60%;transform:translate(-50%,-50%);width:min(1100px,94vw);height:min(360px,40vh);z-index:1}
+.tile{position:absolute;border-radius:22px;overflow:hidden;background:var(--card)}
+.tile img{width:100%;height:100%;object-fit:cover;filter:brightness(.85)}
+.tile.t1{left:0;top:14%;width:19%;height:74%}
+.tile.t2{left:21%;top:0;width:17%;height:62%}
+.tile.t3{left:40%;top:10%;width:19%;height:84%;background:transparent}
+.tile.t4{left:61%;top:18%;width:17%;height:70%}
+.tile.t5{left:80%;top:4%;width:20%;height:64%}
+#s7 .zoom{position:absolute;inset:0;z-index:3;will-change:clip-path}
+#s7 .zoom img{width:100%;height:100%;object-fit:cover;will-change:transform}
+#s7 .zoom .shade{position:absolute;inset:0;background:rgba(0,0,0,.55);opacity:0}
+#s7 .cta{position:absolute;inset:0;z-index:4;display:grid;place-items:center;text-align:center;padding:0 24px;opacity:0;pointer-events:none}
+#s7 .cta.live{pointer-events:auto}
+#s7 .cta h2{font-size:clamp(34px,4.8vw,62px);line-height:1.28}
+#s7 .cta p{margin-top:18px;font-size:19px;color:var(--sub)}
+.btn{display:inline-block;margin-top:40px;background:#fff;color:#000;font-size:18px;font-weight:700;padding:18px 36px;border-radius:16px;transition:background .2s,transform .2s}
+.btn:hover{background:var(--amber)}.btn:active{transform:scale(.97)}
+
+/* S8 info + footer */
+#s8{background:linear-gradient(180deg,rgba(0,0,0,.35),rgba(0,0,0,.7) 35%,#000 72%),url(img/footer-aerial.jpg) top center/100% auto no-repeat,#000;padding:44vw 0 0}
+@media (max-width:900px){#s8{padding-top:60vw}}
+#s8 h2{font-size:clamp(30px,3.6vw,48px);font-weight:700;letter-spacing:-.03em}
+.info{margin-top:48px;border-top:1px solid rgba(255,255,255,.35)}
+.info div{display:grid;grid-template-columns:200px 1fr;padding:26px 0;border-bottom:1px solid var(--line);font-size:19px}
+.info dt{color:var(--mute)}.info dd{font-weight:600}
+
+@media (max-width:900px){
+  .ticks{display:none}
+  #s1{height:260vh}#s3{height:380vh}#s4{height:400vh}#s7{height:380vh}
+  #s1 .side{left:24px;right:24px}
+  #s3 .grid{grid-template-columns:1fr;grid-template-rows:auto 1fr;gap:20px;padding-top:80px;align-items:start}
+  #s3 .frame{order:-1;aspect-ratio:16/10;max-height:32vh;justify-self:stretch;border-radius:20px}
+  #s3 h2{margin-bottom:16px;font-size:26px}
+  .it{padding:14px 0}.it .t{font-size:18px}.it .d p{font-size:15px}
+  #s4 .steps{left:24px}
+  .info div{grid-template-columns:96px 1fr;font-size:16px}
+  .collage{height:30vh;top:62%}
+  .tile{border-radius:14px}
+}
+/* reduced motion: no scroll-scrubbed zooms, plain document flow */
+.rm .pin{height:auto!important}
+.rm .sticky{position:relative;height:auto;min-height:100vh}
+.rm #s1 h1 span{animation:none;opacity:1;filter:none;transform:none}
+.rm #s2 h2{filter:none;opacity:1}.rm #s2 .wd{color:var(--ink)}
+.rm .it .d{grid-template-rows:1fr}.rm .it .t{color:var(--ink)}
+.rm .rail{position:relative;bottom:auto;overflow-x:auto;width:100vw;margin-top:40px;padding-bottom:40px}
+.rm #s5 .head{position:relative}
+.rm #s6 .sub{opacity:1}.rm .caret{animation:none}.rm .mq{animation:none}
+</style>
+</head>
+<body class="v3">
+<header class="gh"><div class="bar">
+  <a class="logo" href="/" aria-label="SUNPLEX 홈"><img src="/brand/sunplex-wordmark-white.svg" alt="SUNPLEX"></a>
+  <nav aria-label="주요 메뉴">
+    <button type="button" data-mega aria-expanded="false" aria-haspopup="true">Solar 솔루션</button>
+    <a href="/products/">제품</a><a href="/company/" aria-current="page">기업소개</a><a href="/cases/">고객지원</a>
+    <div class="mnav"><a href="/solutions/detect/">감지 · Solar Detect<em>17</em></a><a href="/solutions/alert/">경보 · Solar Alert<em>14</em></a><a href="/solutions/respond/">대응 · Solar Respond<em>7</em></a><a href="/solutions/record/">기록 · Solar Record<em>10</em></a></div>
+  </nav>
+  <a class="cta" href="/contact/">도입 문의</a><button class="burger" type="button" aria-label="메뉴">☰</button>
+</div>
+<div class="mega"><div class="in">
+  <div class="pv"><img src="/img/fam/detect-1.jpg" alt="" class=on><img src="/img/fam/alert-1.jpg" alt=""><img src="/img/fam/respond-1.jpg" alt=""><img src="/img/fam/record-1.jpg" alt=""><p>작업 구역의 영상과 환경 정보를 확인하는 제품을 살펴보세요.</p></div>
+  <div class="col" data-tag="작업 구역의 영상과 환경 정보를 확인하는 제품을 살펴보세요."><h4>현장의 변화를 살피다.</h4><a href="/solutions/detect/">감지 · Solar Detect<em>17</em></a><ul><li><a href="/products/?category=detect&amp;q=CCTV·카메라">CCTV·카메라</a></li><li><a href="/products/?category=detect&amp;q=통합 관제">통합 관제</a></li><li><a href="/products/?category=detect&amp;q=시각 안내">시각 안내</a></li><li><a href="/products/?category=detect&amp;q=환경·가스 측정">환경·가스 측정</a></li><li><a href="/products/?category=detect&amp;q=구조물 계측">구조물 계측</a></li><li><a href="/products/?category=detect&amp;q=화재·불꽃 감지">화재·불꽃 감지</a></li></ul></div><div class="col" data-tag="접근과 위험 상황을 소리와 빛으로 알리는 제품을 확인하세요."><h4>위험을 알아차릴 수 있도록.</h4><a href="/solutions/alert/">경보 · Solar Alert<em>14</em></a><ul><li><a href="/products/?category=alert&amp;q=방송·소통">방송·소통</a></li><li><a href="/products/?category=alert&amp;q=접근·위험 경보">접근·위험 경보</a></li><li><a href="/products/?category=alert&amp;q=응급·위험 안내">응급·위험 안내</a></li><li><a href="/products/?category=alert&amp;q=작업자 안전·위치">작업자 안전·위치</a></li><li><a href="/products/?category=alert&amp;q=현장 통신">현장 통신</a></li></ul></div><div class="col" data-tag="작업자 보호와 현장 대응에 필요한 장비를 살펴보세요."><h4>대응이 필요한 순간을 위해.</h4><a href="/solutions/respond/">대응 · Solar Respond<em>7</em></a><ul><li><a href="/products/?category=respond&amp;q=착용 보호구">착용 보호구</a></li><li><a href="/products/?category=respond&amp;q=출입·출역 관리">출입·출역 관리</a></li><li><a href="/products/?category=respond&amp;q=건강 관리">건강 관리</a></li></ul></div><div class="col" data-tag="점검과 작업 정보를 기록하고 관리하는 제품을 확인하세요."><h4>현장의 정보를 남기다.</h4><a href="/solutions/record/">기록 · Solar Record<em>10</em></a><ul><li><a href="/products/?category=record&amp;q=AI 안전관리">AI 안전관리</a></li><li><a href="/products/?category=record&amp;q=영상 점검·기록">영상 점검·기록</a></li><li><a href="/products/?category=record&amp;q=안전교육·사례">안전교육·사례</a></li><li><a href="/products/?category=record&amp;q=시공·운영 관리">시공·운영 관리</a></li></ul></div>
+  <div class="foot"><a href="/products/">48개 제품 전체 보기 ↗</a><a href="/solutions/safety-box/">안전종합상황판 ↗</a><a href="/contact/">도입 문의 ↗</a></div>
+</div></div></header>
+<div class="ticks" id="ticks" data-own aria-hidden="true"></div>
+
+<main>
+  <section class="pin" id="s1" data-sec>
+    <div class="sticky">
+      <div class="media" id="s1media"><video src="lib/site-intro-tunnel.mp4" poster="img/hero.jpg" autoplay muted loop playsinline></video></div>
+      <h1 id="s1title"><span>현장의 안전을</span><span>기술로</span><span>제안합니다</span></h1>
+      <div class="side" id="s1side"><b>현장 안전관리에 필요한<br>기술을 제안합니다.</b><p>건설·제조·물류 현장의 안전장비와 솔루션.<br>썬플렉스는 현장 담당자가 필요한 제품을 검토할 수 있도록<br>제품 정보와 상담을 제공합니다.</p></div>
+      <div class="hint" id="s1hint">SCROLL</div>
+    </div>
+  </section>
+
+  <section id="s2" data-sec><div class="wrap">
+    <div class="label">Vision</div>
+    <h2 id="s2h">현장에 필요한 장비를<br>선택하실 수 있도록.</h2>
+    <p class="lead" id="s2p">영상관제와 위험 알림, 작업 환경 측정과 출입 관리. 썬플렉스는 산업현장의 안전관리에 필요한 제품을 안내합니다. 설치할 장소와 사용 목적에 맞춰 제품별 기능을 확인하고, 도입에 필요한 사항을 문의하실 수 있습니다.</p>
+  </div>
+  <div class="marquee" aria-hidden="true"><div class="mq"><img src="lib/crane-operator-1536.webp" alt="" loading="lazy"><img src="lib/beacon-zone-1536.webp" alt="" loading="lazy"><img src="lib/gas-remote-review-1536.webp" alt="" loading="lazy"><img src="lib/pedestrian-gate-1536.webp" alt="" loading="lazy"><img src="lib/cctv-relocation-1536.webp" alt="" loading="lazy"><img src="lib/mist-droplets-1536.webp" alt="" loading="lazy"><img src="lib/curing-record-1536.webp" alt="" loading="lazy"><img src="lib/network-field-1536.webp" alt="" loading="lazy"><img src="lib/crane-operator-1536.webp" alt="" loading="lazy"><img src="lib/beacon-zone-1536.webp" alt="" loading="lazy"><img src="lib/gas-remote-review-1536.webp" alt="" loading="lazy"><img src="lib/pedestrian-gate-1536.webp" alt="" loading="lazy"><img src="lib/cctv-relocation-1536.webp" alt="" loading="lazy"><img src="lib/mist-droplets-1536.webp" alt="" loading="lazy"><img src="lib/curing-record-1536.webp" alt="" loading="lazy"><img src="lib/network-field-1536.webp" alt="" loading="lazy"></div></div>
+  </section>
+
+  <section class="pin" id="s3" data-sec>
+    <div class="sticky"><div class="grid">
+      <div>
+        <div class="label">Solar Solutions</div>
+        <h2>현장에 필요한<br>기능부터.</h2>
+        <div class="acc">
+          <div class="it"><div class="t"><small>01</small>감지 <em>Solar Detect</em></div><div class="d"><div><p>작업 구역의 영상과 환경 정보를 확인합니다.</p><a href="#">감지 제품 살펴보기 ↗</a></div></div></div>
+          <div class="it"><div class="t"><small>02</small>경보 <em>Solar Alert</em></div><div class="d"><div><p>접근과 위험 상황을 소리와 빛으로 알립니다.</p><a href="#">경보 제품 살펴보기 ↗</a></div></div></div>
+          <div class="it"><div class="t"><small>03</small>대응 <em>Solar Respond</em></div><div class="d"><div><p>작업자 보호와 현장 대응에 필요한 장비를 안내합니다.</p><a href="#">대응 제품 살펴보기 ↗</a></div></div></div>
+          <div class="it"><div class="t"><small>04</small>기록 <em>Solar Record</em></div><div class="d"><div><p>점검과 작업 정보를 기록하고 관리합니다.</p><a href="#">기록 제품 살펴보기 ↗</a></div></div></div>
+        </div>
+      </div>
+      <div class="frame" id="frame">
+        <img src="lib/cctv-monitor-1536.webp" alt="작업 구역 영상 확인">
+        <img src="lib/beacon-zone-1536.webp" alt="경광등 경보 구역">
+        <img src="lib/helmet-check-1536.webp" alt="작업자 보호 장비 확인">
+        <img src="lib/signed-record-1536.webp" alt="점검 기록 서명">
+        <span class="cnt" id="cnt">01 / 04</span>
+      </div>
+    </div></div>
+  </section>
+
+  <section class="pin" id="s4" data-sec>
+    <div class="sticky">
+      <div class="word" id="wl">현장과 관제실</div>
+      <div class="word" id="wr">경계 없이</div>
+      <div class="layer" id="s4layer"><img class="on" src="img/sensor.jpg" alt=""><img src="img/s4-cctv.jpg" alt=""><img src="img/s4-alert.jpg" alt=""><img src="img/s4-gate.jpg" alt=""></div>
+      <div class="steps">
+        <div class="st"><span>영상관제</span><b>작업 구역을<br>영상으로 확인합니다</b><p>현장에 가지 않아도 필요한 구역을 볼 수 있도록.</p></div>
+        <div class="st"><span>위험 알림</span><b>접근과 위험 상황을<br>소리와 빛으로</b><p>차량 접근 알림처럼 사용 목적에 맞춰 알립니다.</p></div>
+        <div class="st"><span>환경 측정 · 출입 관리</span><b>보이지 않는 위험과<br>출입까지</b><p>가스 농도 측정과 출입 관리로 현장을 기록합니다.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pin" id="s5" data-sec>
+    <div class="sticky">
+      <div class="head"><div class="wrap">
+        <div class="label">Before you start</div>
+        <h2>제품 도입 시<br>함께 확인할 사항</h2>
+        <p>기능이 같아 보여도 설치 조건과 사용 방식은 다를 수 있습니다.</p>
+      </div></div>
+      <div class="rail" id="rail">
+        <div class="rc"><div class="im"><img src="lib/crane-operator-1536.webp" alt=""></div><div class="c"><span class="n">01</span><h3>사용 목적</h3><p>관리할 구역과 필요한 기능을 정리해 주세요. 차량 접근 알림, 작업 구역 영상 확인, 가스 농도 측정 등 사용 목적이 제품 선택의 기준이 됩니다.</p></div></div>
+        <div class="rc"><div class="im"><img src="lib/network-field-1536.webp" alt=""></div><div class="c"><span class="n">02</span><h3>설치 환경</h3><p>실내·실외 여부, 설치 위치, 전원 공급과 통신 환경을 확인합니다. 기존 장비와 연결해야 한다면 모델명과 연결 방식도 필요합니다.</p></div></div>
+        <div class="rc"><div class="im"><img src="lib/control-review-1536.webp" alt=""></div><div class="c"><span class="n">03</span><h3>운영 방식</h3><p>알림 수신자와 운영 담당자를 정하고, 확인할 정보와 기록 범위를 검토합니다. 제품에 따라 연동 기능과 데이터 처리 조건은 별도 확인이 필요합니다.</p></div></div>
+        <div class="rc"><div class="im"><img src="lib/multilingual-briefing-1536.webp" alt=""></div><div class="c"><span class="n">04</span><h3>제품 정보와 상담 안내</h3><p>제품별 기능과 적용 조건은 상세 안내에서 확인할 수 있습니다. 추가로 필요한 자료는 제품명과 함께 문의해 주세요.</p><a href="#">제품별 상세 안내 ↗</a></div></div>
+      </div>
+      <div class="railbar"><i id="railbar"></i></div>
+    </div>
+  </section>
+
+  <section class="pin" id="s6" data-sec>
+    <div class="sticky">
+      <div class="bg"></div>
+      <div class="fl f1" data-sp="-220"><img src="lib/fire-response-1536.webp" alt=""></div>
+      <div class="fl f2" data-sp="-360"><img src="lib/mist-gate-1536.webp" alt=""></div>
+      <div class="fl f3" data-sp="-300"><img src="lib/cctv-monitor-1536.webp" alt=""></div>
+      <div class="fl f4" data-sp="-180"><img src="lib/helmet-check-1536.webp" alt=""></div>
+      <div>
+      <div class="big">현장에 필요한 장비를,</div>
+      <div class="big l2"><span id="typed"></span><span class="caret"></span></div>
+      <p class="sub" id="s6sub">설치할 장소와 사용 목적에 맞춰 제품별 기능을 확인하세요.</p>
+    </div></div>
+  </section>
+
+  <section class="pin" id="s7" data-sec>
+    <div class="sticky">
+      <div class="head" id="s7head"><div class="wrap">
+        <div class="label">SUNPLEX</div>
+        <h2>산업현장을 위한<br>스마트 안전 솔루션</h2>
+        <p>건설 · 제조 · 물류, 현장에 필요한 기능을 살펴보세요.</p>
+      </div></div>
+      <div class="collage" id="collage">
+        <div class="tile t1"><img src="lib/pedestrian-gate-1536.webp" alt=""></div>
+        <div class="tile t2"><img src="lib/gas-remote-review-1536.webp" alt=""></div>
+        <div class="tile t3" id="t3"></div>
+        <div class="tile t4"><img src="lib/mist-gate-1536.webp" alt=""></div>
+        <div class="tile t5"><img src="lib/fire-response-1536.webp" alt=""></div>
+      </div>
+      <div class="zoom" id="zoom"><img src="img/dusk.jpg" alt=""><div class="shade" id="shade"></div></div>
+      <div class="cta" id="cta"><div>
+        <h2>우리 현장에 맞는 제품이<br>궁금하신가요?</h2>
+        <p>관심 제품과 설치 환경을 알려주시면 상담에 도움이 됩니다.</p>
+        <a class="btn" href="#">도입 문의하기</a>
+      </div></div>
+    </div>
+  </section>
+
+  <section id="s8" data-sec><div class="wrap">
+    <div class="label">Company</div>
+    <h2>기업정보</h2>
+    <dl class="info">
+      <div><dt>법인명</dt><dd>(주)썬플렉스</dd></div>
+      <div><dt>사업장</dt><dd>경기도 시흥시 신천동 845-18</dd></div>
+      <div><dt>전화</dt><dd>031-991-2285</dd></div>
+      <div><dt>이메일</dt><dd>jiyoueng@daum.net</dd></div>
+    </dl>
+  </div></section>
+</main>
+<footer class="gf"><div class="w">
+  <div class="top">
+    <div class="slogan">산업현장을 위한 스마트 안전 솔루션.<br>Solar 제품군과 현장 도입을 안내합니다.</div>
+    <div><h5>Solar 솔루션</h5><ul><li><a href="/solutions/detect/">Solar Detect · 감지</a></li><li><a href="/solutions/alert/">Solar Alert · 경보</a></li><li><a href="/solutions/respond/">Solar Respond · 대응</a></li><li><a href="/solutions/record/">Solar Record · 기록</a></li></ul></div>
+    <div><h5>썬플렉스</h5><ul><li><a href="/company/">기업소개</a></li><li><a href="/products/">제품</a></li><li><a href="/solutions/safety-box/">안전종합상황판</a></li></ul></div>
+    <div><h5>고객지원</h5><ul><li><a href="/cases/">고객지원</a></li><li><a href="/contact/">도입 문의</a></li><li><a href="/privacy/">개인정보·현장 데이터 안내</a></li></ul></div>
+  </div>
+  <div class="biz">(주)썬플렉스 · 경기도 시흥시 신천동 845-18 · 031-991-2285 · jiyoueng@daum.net<br>© 2026 SUNPLEX. All rights reserved.</div>
+  <div class="mark" aria-hidden="true">SUNPLEX</div>
+</div></footer>
+<script src="/v3/v3.js" defer></script>
+
+<script>
+(() => {
+const RM = matchMedia('(prefers-reduced-motion: reduce)').matches;
+if (RM) document.documentElement.classList.add('rm');
+const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
+const cl = (v, a = 0, b = 1) => Math.min(b, Math.max(a, v));
+const lerp = (a, b, t) => a + (b - a) * t;
+const ease = t => 1 - Math.pow(1 - t, 3);
+const seg = (p, a, b) => cl((p - a) / (b - a));           // progress of p within [a,b]
+const prog = el => { const r = el.getBoundingClientRect(); return cl(-r.top / (r.height - innerHeight)); };
+
+const s2p = $('#s2p');
+s2p.innerHTML = s2p.textContent.trim().split(/\s+/).map(w => `<span class="wd">${w}</span>`).join(' ');
+const words = $$('#s2p .wd');
+
+const secs = $$('[data-sec]'), ticks = $('#ticks');
+secs.forEach(() => ticks.appendChild(document.createElement('i')));
+
+const accItems = $$('.it'), frameImgs = $$('#frame img'), cnt = $('#cnt');
+const typedEl = $('#typed'), TYPE = '현장에 맞게.';
+let lastIdx = -2, lastTyped = -1;
+
+accItems.forEach((it, i) => it.addEventListener('click', () => {
+  const s = $('#s3'); const top = s.offsetTop + (s.offsetHeight - innerHeight) * ((i + .5) / 4);
+  scrollTo({ top, behavior: RM ? 'auto' : 'smooth' });
+}));
+
+function frame() {
+  const W = innerWidth, H = innerHeight, mob = W < 900;
+  
+
+  // S1: card -> full-bleed -> card
+  {
+    const p = RM ? 0 : prog($('#s1'));
+    const g = ease(seg(p, 0, .22)), s = ease(seg(p, .8, 1));
+    const pad = mob ? 10 : 16;
+    let t = lerp(64, 0, g), x = lerp(pad, 0, g), b = lerp(pad, 0, g), r = lerp(mob ? 20 : 28, 0, g);
+    if (s > 0) { t = s * H * .12; x = s * W * (mob ? .05 : .1); b = t; r = s * 32; }
+    $('#s1media').style.clipPath = `inset(${t}px ${x}px ${b}px ${x}px round ${r}px)`;
+    $('#s1media video').style.transform = `scale(${1 + .1 * seg(p, .22, .8)})`;
+    const to = 1 - seg(p, .1, .2);
+    $('#s1title').style.opacity = to; $('#s1hint').style.opacity = to;
+    const so = RM ? 1 : seg(p, .3, .42) * (1 - seg(p, .72, .8));
+    const side = $('#s1side'); side.style.opacity = so; side.style.transform = `translateY(calc(-50% + ${(1 - seg(p, .3, .42)) * 30}px))`;
+  }
+
+  // S2: blur headline + word reveal
+  {
+    const h = $('#s2h');
+    if (h.getBoundingClientRect().top < H * .8) h.classList.add('in');
+    const pr = s2p.getBoundingClientRect(), p = cl((H * .85 - pr.top) / (pr.height + H * .3));
+    words.forEach((w, i) => w.classList.toggle('on', i < p * words.length));
+  }
+
+  // S3: accordion index + image swap
+  {
+    const p = prog($('#s3')), idx = RM ? -1 : Math.min(3, Math.floor(p * 4));
+    if (idx !== lastIdx) {
+      accItems.forEach((it, i) => it.classList.toggle('on', i === idx));
+      frameImgs.forEach((im, i) => im.classList.toggle('on', i === Math.max(0, idx)));
+      cnt.textContent = `0${Math.max(0, idx) + 1} / 04`; lastIdx = idx;
+    }
+  }
+
+  // S4: pill grows into full screen, steps, then shrinks to a card
+  {
+    const p = RM ? .6 : prog($('#s4'));
+    const g = ease(seg(p, .08, .4)), s = ease(seg(p, .88, 1));
+    const pw = mob ? 48 : 72, ph = mob ? 150 : 220;
+    let w = lerp(pw, W, g), h = lerp(ph, H, g), r = lerp(pw / 2, 0, g);
+    if (s > 0) { w = lerp(W, W * .82, s); h = lerp(H, H * .74, s); r = s * 32; }
+    const ix = (W - w) / 2, iy = (H - h) / 2;
+    $('#s4layer').style.clipPath = `inset(${iy}px ${ix}px ${iy}px ${ix}px round ${r}px)`;
+    const gap = mob ? 18 : 40, wo = 1 - seg(p, .2, .34);
+    const wl = $('#wl'), wr = $('#wr');
+    wl.style.right = `${W / 2 + w / 2 + gap}px`; wr.style.left = `${W / 2 + w / 2 + gap}px`;
+    wl.style.opacity = wr.style.opacity = wo;
+    const si = p < .42 || p > .86 ? -1 : Math.min(2, Math.floor(seg(p, .42, .86) * 3));
+    $$('#s4 .st').forEach((el, i) => el.classList.toggle('on', RM ? i === 0 : i === si));
+    const bi = p > .86 ? 3 : si + 1;
+    $$('#s4layer img').forEach((im, i) => im.classList.toggle('on', i === Math.max(0, bi)));
+  }
+
+  // S5: vertical scroll drives horizontal rail
+  {
+    const rail = $('#rail'), p = prog($('#s5'));
+    if (!RM) {
+      const max = Math.max(0, rail.scrollWidth - W);
+      rail.style.transform = `translateX(${-max * ease(seg(p, .08, .92))}px)`;
+    }
+    $('#railbar').style.transform = `translateX(${seg(p, .08, .92) * 300}%)`;
+  }
+
+  // S6: scrubbed typing
+  {
+    const p = RM ? 1 : prog($('#s6')), n = Math.round(seg(p, .12, .55) * TYPE.length);
+    if (n !== lastTyped) { typedEl.textContent = TYPE.slice(0, n); lastTyped = n; }
+    $('#s6sub').classList.toggle('on', p > .6);
+    $$('#s6 .fl').forEach(f => { f.style.transform = `translateY(${(p - .5) * +f.dataset.sp}px)`; f.style.opacity = mob ? .35 : 1; });
+  }
+
+  // S7: collage tile zooms to full screen, then CTA
+  {
+    const p = RM ? 1 : prog($('#s7'));
+    const st = $('#s7 .sticky').getBoundingClientRect(), tr = $('#t3').getBoundingClientRect();
+    const g = ease(seg(p, .22, .56));
+    const t = lerp(tr.top - st.top, 0, g), l = lerp(tr.left - st.left, 0, g);
+    const rr = lerp(st.right - tr.right, 0, g), bb = lerp(st.bottom - tr.bottom, 0, g);
+    $('#zoom').style.clipPath = `inset(${t}px ${rr}px ${bb}px ${l}px round ${lerp(mob ? 14 : 22, 0, g)}px)`;
+    // slide the lit warehouse (left of the photo) under the small tile, settle to centered at full screen
+    $('#zoom img').style.transform = `translateX(${(1 - g) * 32}vw) scale(${lerp(1.25, 1, g)})`;
+    const fo = 1 - seg(p, .2, .4);
+    $('#collage').style.opacity = fo; $('#collage').style.transform = `translate(-50%,-50%) scale(${lerp(1, .9, seg(p, .2, .5))})`;
+    $('#s7head').style.opacity = fo;
+    $('#shade').style.opacity = seg(p, .55, .7);
+    const co = seg(p, .6, .74), cta = $('#cta');
+    cta.style.opacity = co; cta.style.transform = `translateY(${(1 - co) * 30}px)`; cta.classList.toggle('live', co > .5);
+  }
+
+  let cur = 0; secs.forEach((s, i) => { if (s.getBoundingClientRect().top < H * .5) cur = i; });
+  [...ticks.children].forEach((d, i) => d.classList.toggle('on', i === cur));
+}
+
+let queued = false;
+const req = () => { if (!queued) { queued = true; requestAnimationFrame(() => { queued = false; frame(); }); } };
+addEventListener('scroll', req, { passive: true });
+addEventListener('resize', req);
+frame();
+})();
+</script>
+</body>
+</html>
