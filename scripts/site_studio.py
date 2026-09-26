@@ -3,6 +3,7 @@ import hashlib,json
 from pathlib import Path
 from bs4 import BeautifulSoup
 from company_studio import enhance_company
+from discovery_studio import enhance_discovery
 ROOT=Path(__file__).resolve().parents[1]
 CAT={p['slug']:p for p in json.loads((ROOT/'data/solar-catalog.json').read_text())}
 PROFILES=json.loads((ROOT/'data/product-editorial-map.json').read_text())
@@ -108,6 +109,7 @@ def enhance(text,path):
     if path in ('products/index.html','company/index.html','cases/index.html','contact/index.html'):
         addclass(body,'corporate-black')
     if path=='company/index.html':enhance_company(soup)
+    if path in ('products/index.html','cases/index.html'):enhance_discovery(soup,path)
     for ext in ('css','js'):
         asset=ROOT/f'assets/sunflex-v2/site-studio.{ext}'
         url='/'+str(asset.relative_to(ROOT))+'?v='+hashlib.sha256(asset.read_bytes()).hexdigest()[:10]
@@ -122,6 +124,13 @@ def enhance(text,path):
         asset=ROOT/'assets/sunflex-v2/company-studio.js'
         url='/'+str(asset.relative_to(ROOT))+'?v='+hashlib.sha256(asset.read_bytes()).hexdigest()[:10]
         tag=soup.new_tag('script',src=url);tag['defer']='';soup.body.append(tag)
+    if path in ('products/index.html','cases/index.html'):
+        for ext in ('css','js'):
+            asset=ROOT/f'assets/sunflex-v2/discovery-studio.{ext}'
+            url='/'+str(asset.relative_to(ROOT))+'?v='+hashlib.sha256(asset.read_bytes()).hexdigest()[:10]
+            if ext=='css':soup.head.append(soup.new_tag('link',rel='stylesheet',href=url))
+            else:
+                tag=soup.new_tag('script',src=url);tag['defer']='';soup.body.append(tag)
     return str(soup)
 
 def apply_all():
