@@ -1,0 +1,67 @@
+/* TDS alignment layer — loaded last on every v3 page.
+   Sources: TDS Mobile foundation (typography t1–t7/st1–st13, grey/blue scales) +
+   measured toss.im service pages & tossplace.com product pages (2026-09-26).
+   Web display sizes extend the TDS scale the way toss.im does (48/56/80). */
+:root{
+  /* TDS colors */
+  --grey50:#f9fafb;--grey100:#f2f4f6;--grey200:#e5e8eb;--grey300:#d1d6db;--grey400:#b0b8c1;--grey500:#8b95a1;
+  --grey600:#6b7684;--grey700:#4e5968;--grey800:#333d4b;--grey900:#191f28;
+  --blue50:#e8f3ff;--blue500:#3182f6;--blue600:#2272eb;--blue700:#1b64da;
+  /* type: size / line-height / letter-spacing (toss.im: -1% text, -2% large titles) */
+  --ls-text:-0.01em;--ls-title:-0.02em;
+  --lh-display:1.28;--lh-title:1.4;--lh-body:1.6;
+  /* 4pt spacing scale */
+  --sp4:4px;--sp8:8px;--sp12:12px;--sp16:16px;--sp20:20px;--sp24:24px;--sp32:32px;--sp40:40px;--sp48:48px;--sp64:64px;--sp80:80px;
+  --section:160px;
+}
+@media (max-width:900px){:root{--section:112px}}
+
+.v3{letter-spacing:var(--ls-text);line-height:var(--lh-body)}
+
+/* type roles */
+.v3 :is(.h56,.t56){font-size:clamp(34px,3.9vw,56px);line-height:var(--lh-display);letter-spacing:var(--ls-title);font-weight:700}
+.v3 :is(.h40,.t40){font-size:clamp(26px,2.8vw,40px);line-height:var(--lh-title);letter-spacing:var(--ls-title);font-weight:700}
+.v3 .h32{font-size:clamp(22px,2.3vw,32px);line-height:var(--lh-title);letter-spacing:var(--ls-text);font-weight:700}
+.v3 .t24{font-size:clamp(19px,1.7vw,24px);line-height:var(--lh-title);letter-spacing:var(--ls-text)}
+.v3 :is(.body,.p18){font-size:18px;line-height:var(--lh-body);letter-spacing:var(--ls-text)}
+.v3 :is(.lbl,.kick,.ol,.lu-card .fam){font-size:14px;line-height:var(--lh-body);font-weight:500;letter-spacing:var(--ls-text)}
+.v3 .lbl{margin-bottom:var(--sp12)}
+@media (max-width:700px){.v3 :is(.body,.p18){font-size:16px}}
+
+/* heading → body rhythm: 24 after ≥40px titles, 12 after ≤32px titles; body → action 32 */
+.v3 :is(.h56,.t56,.h40,.t40)+:is(.body,.p18){margin-top:var(--sp24)}
+.v3 :is(.h32,.t24)+:is(.body,.p18){margin-top:var(--sp12)}
+.v3 .ft .h40{margin-bottom:var(--sp24)}
+.v3 .ft .body{margin-bottom:var(--sp32)}
+.v3 .rt .h32{margin-bottom:var(--sp8)}
+.v3 .rt .body{margin-bottom:var(--sp20)}
+
+/* section rhythm */
+.v3 :is(.feat,.stats,.more,.hub,.sp-sec){padding-top:var(--section)}
+.v3 .center{padding-top:var(--section)}
+.v3 .scene-sec{padding-top:var(--section)}
+.v3 .cta-sec{padding:var(--section) 0 var(--section)}
+
+/* buttons — TDS sizes: large 56 (r16), medium 48 (r14), small 40 (r10); pill for inline links */
+.v3 :is(.btnw,.bb,.bg2){display:inline-flex;align-items:center;justify-content:center;height:56px;padding:0 28px;border-radius:16px;font-size:17px;font-weight:600;letter-spacing:var(--ls-text)}
+.v3 .pill{height:40px;padding:0 16px 0 18px;font-size:15px;font-weight:600;letter-spacing:var(--ls-text)}
+.v3 .gh .cta{height:40px;display:inline-flex;align-items:center;padding:0 16px;border-radius:10px;font-size:15px;font-weight:600}
+.v3 .gh nav>a,.v3 .gh nav>button{font-size:15px;font-weight:500;letter-spacing:var(--ls-text)}
+.v3 .fbar a{height:48px;display:inline-flex;align-items:center;padding:0 22px;font-size:16px;font-weight:600}
+.v3 .fbar{padding:6px 6px 6px 20px}
+@media (max-width:700px){.v3 :is(.btnw,.bb,.bg2){height:52px;padding:0 22px;font-size:16px}}
+
+/* cards: TDS radius steps 16 / 24 / 32, titles 17–24 bold, body 15–16 */
+.v3 .qc b,.v3 .sp-e b{font-size:20px;line-height:1.4;letter-spacing:var(--ls-text)}
+.v3 .lu-card h3{font-size:20px;line-height:1.4;margin-top:var(--sp4)}
+.v3 .lu-card p{font-size:15px;line-height:var(--lh-body);margin-top:var(--sp8)}
+.v3 .lu-card .fam{margin-top:var(--sp16)}
+
+/* product pages (white) share the same scale */
+body.pv3 main :is(p,li){letter-spacing:var(--ls-text)}
+body.pv3 main .editorial-lead{line-height:var(--lh-body)!important}
+body.pv3 main h1{line-height:var(--lh-display)!important;letter-spacing:var(--ls-title)!important}
+body.pv3 main h2{line-height:var(--lh-title)!important;letter-spacing:var(--ls-title)!important}
+body.pv3 main h3{line-height:var(--lh-title)!important;letter-spacing:var(--ls-text)!important}
+body.pv3 main .editorial-button,body.pv3 main .btn{height:48px;display:inline-flex!important;align-items:center;padding:0 22px!important;font-size:16px!important;font-weight:600!important}
+body.pv3 .final-cta .btn{height:56px;padding:0 28px!important;font-size:17px!important;border-radius:16px!important}

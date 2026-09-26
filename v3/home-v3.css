@@ -1,0 +1,4 @@
+/* home page: live content + v3 chrome. Old header offsets become the v3 64px header. */
+body.hv3 main{padding-top:0}
+body.hv3 .site-header,body.hv3 .mobile-nav{display:none!important}
+body.hv3 .gh:not(.scrolled){background:linear-gradient(180deg,rgba(0,0,0,.55),transparent)}
