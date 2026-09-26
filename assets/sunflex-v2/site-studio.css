@@ -1,7 +1,7 @@
 /* SUNPLEX field studio — six product compositions, one spacing system. */
 body.site-studio{--ss-ink:#173244;--ss-muted:#506775;--ss-paper:#f4f7f8;--ss-line:#c8d5dc;--ss-accent:#b94c1b;--ss-gutter:48px;--ss-width:1280px;color:var(--ss-ink);background:#fff;color-scheme:light}
 body.site-studio .wrap,body.site-studio #main-content .editorial-section-inner{width:min(var(--ss-width),calc(100% - 2*var(--ss-gutter)));max-width:var(--ss-width);padding-inline:0;margin-inline:auto}
-body.site-studio .site-header{background:#172f40;color:white}
+body.site-studio .site-header{background:#08090b;color:white}
 body.site-studio .header-inner{min-height:84px}
 body.site-studio .site-footer{background:#172f40;color:#fff}
 body.site-studio .site-footer .wordmark-end{font-size:clamp(68px,15vw,240px);letter-spacing:-.065em;line-height:1.1;color:#aec0ca;opacity:.22;padding-block:32px 0}
