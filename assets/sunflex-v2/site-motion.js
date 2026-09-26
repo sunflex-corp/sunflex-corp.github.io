@@ -86,7 +86,7 @@
   const hero=$('.editorial-hero-copy,.page-head .wrap,.simple-hero .hero-copy,.solar-category-hero .category-intro');
   if(hero){gsap.from(hero.children,{lazy:false,opacity:0,y:30,duration:.95,stagger:.12,ease:'power3.out',clearProps:'opacity,transform'});}
   const heroImage=$('.editorial-hero-media');if(heroImage)gsap.from(heroImage,{lazy:false,opacity:0,y:42,scale:.965,duration:1.15,ease:'power3.out',clearProps:'opacity,transform'});
-  const headings=$$('main h2').filter(n=>!n.closest('[data-scroll-flow],.solar-story,.home-families,.editorial-hero,.page-head,[hidden]'));
+  const headings=$$('main h2').filter(n=>!n.closest('[data-company-owned],[data-scroll-flow],.solar-story,.home-families,.editorial-hero,.page-head,[hidden]'));
   headings.forEach(h=>reveal([h],h));
   $$('.company-intro,.contact-info,.home-contact,.final-cta,.support-choice,.principle,.inquiry-steps').forEach(n=>{
    const leaves=[...n.children].filter(c=>!c.matches('h2,form')&&!c.querySelector('h2,form'));reveal(leaves,n,$('#inquiry-form') ? .55 : .8);
