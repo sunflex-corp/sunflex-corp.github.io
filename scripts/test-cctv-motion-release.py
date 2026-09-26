@@ -3,10 +3,13 @@ from pathlib import Path
 from urllib.parse import urlsplit
 from bs4 import BeautifulSoup
 import subprocess
+from site_studio import enhance
 ROOT=Path(__file__).resolve().parents[1]
 page=ROOT/'products/mobile-cctv/index.html'
 s=BeautifulSoup(page.read_text(),'html.parser')
-assert page.read_bytes()==(ROOT/'data/mobile-cctv-motion-page.html').read_bytes()
+source=(ROOT/'data/mobile-cctv-motion-page.html').read_text()
+assert page.read_text()==enhance(source,'products/mobile-cctv/index.html')
+assert str(s.main)==str(BeautifulSoup(source,'html.parser').main)
 assert s.body['data-page-design']=='cctv-motion-20260923'
 assert not s.select('#motion-toggle,.preview-label,meta[name=robots]')
 assert '로컬' not in s.get_text() and 'LOCAL PREVIEW' not in s.get_text()

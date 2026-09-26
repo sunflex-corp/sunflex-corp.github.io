@@ -1,0 +1,8 @@
+{
+  "baseline": "c540937af3ae6a5cba6d598be9f8472ebe748d77",
+  "baseline_failures": 60,
+  "current_failures": 60,
+  "affected_products": 15,
+  "new_regressions": [],
+  "resolved": []
+}

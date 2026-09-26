@@ -88,7 +88,19 @@ def render(path,title,desc,body,active=''):
     s=s.replace('</head>',extra+'</head>')
     s=s.replace('적용 분야 보기','Solar 솔루션 보기').replace('적용 분야 살펴보기','Solar 솔루션 살펴보기')
     from site_motion import enhance
-    p.write_text(enhance(s))
+    from product_studio import enhance as enhance_studio
+    result=enhance(s)
+    if path == 'products/site-cms/index.html':
+        cms=BeautifulSoup(result,'html.parser')
+        for phase,description in {'early':'굴착 장비와 차량이 작업 중인 착공 초기 현장','mid':'타워크레인과 여러 층의 골조가 형성된 공정 전환 현장','late':'외벽 공사와 지상부 정리가 진행 중인 준공 전 현장'}.items():
+            image=cms.select_one(f'img[src="/media/derived/site-cms-stage-{phase}-768.avif"]')
+            if image:
+                image['alt']=description
+                caption=image.find_parent('figure').find('figcaption')
+                if caption: caption.string=description
+        result=str(cms)
+    result=enhance_studio(result, path.split('/')[1] if path.startswith('products/') else '')
+    p.write_text(result)
 g.header=header;g.footer=footer;g.render=render
 
 def families():
@@ -207,9 +219,13 @@ def redirects():
         s=re.sub(r'<link rel="canonical"[^>]+>',f'<link rel="canonical" href="{g.DOMAIN}{dest}">',s);p.write_text(s)
 
 if __name__=='__main__':
-    for fn in [g.home,g.company,g.support,g.contact,g.privacy,g.error]:fn()
+    # The current authored home has an independent scene layout, like mobile CCTV.
+    (ROOT/'index.html').write_text((ROOT/'data/home-solar-page.html').read_text())
+    for fn in [g.company,g.support,g.contact,g.privacy,g.error]:fn()
     solar_landing();catalog()
     for p in CAT:detail(p)
     for k in GROUPS:category(k)
     safety_box();enhance_corporate();redirects()
+    from site_studio import apply_all
+    apply_all()
     print('Generated 61 content pages and 5 redirects; preserved 48 product detail sources.')

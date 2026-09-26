@@ -1,0 +1,225 @@
+/* SUNPLEX field studio — six product compositions, one spacing system. */
+body.site-studio{--ss-ink:#173244;--ss-muted:#506775;--ss-paper:#f4f7f8;--ss-line:#c8d5dc;--ss-accent:#b94c1b;--ss-gutter:48px;--ss-width:1280px;color:var(--ss-ink);background:#fff;color-scheme:light}
+body.site-studio .wrap,body.site-studio #main-content .editorial-section-inner{width:min(var(--ss-width),calc(100% - 2*var(--ss-gutter)));max-width:var(--ss-width);padding-inline:0;margin-inline:auto}
+body.site-studio .site-header{background:#172f40;color:white}
+body.site-studio .header-inner{min-height:84px}
+body.site-studio .site-footer{background:#172f40;color:#fff}
+body.site-studio .site-footer .wordmark-end{font-size:clamp(68px,15vw,240px);letter-spacing:-.065em;line-height:1.1;color:#aec0ca;opacity:.22;padding-block:32px 0}
+body.site-studio a:focus-visible,body.site-studio button:focus-visible,body.site-studio input:focus-visible,body.site-studio select:focus-visible{outline:3px solid #d26d2d;outline-offset:5px}
+body.site-studio .btn,body.site-studio .editorial-button{border-radius:4px;min-height:48px;padding:13px 24px;font-size:15px;background:var(--ss-ink);color:#fff;box-shadow:none}
+body.site-studio .product-local-nav{background:#fffffff5;backdrop-filter:blur(14px);border-bottom:1px solid var(--ss-line)}
+body.site-studio .product-local-nav>.wrap{min-height:64px}
+body.site-studio .product-local-name{font-size:14px}
+body.site-studio .product-local-nav .editorial-button{background:transparent;color:var(--ss-ink);border:1px solid #839ba9;min-height:44px;padding:10px 22px}
+body.site-studio #main-content [id]{scroll-margin-top:90px}
+/* Products: existing imagery and copy become the composition, not a universal card. */
+body.studio-product .studio-hero{max-width:1440px;margin:auto;padding:56px 80px 64px;display:grid;grid-template-columns:1.05fr 1fr;gap:56px;align-items:center;background:#fff;isolation:isolate}
+.studio-hero-copy{min-width:0}.studio-hero-copy>div{min-width:0}
+body.studio-product .studio-breadcrumb{color:var(--ss-accent);font-size:12px;font-weight:600;letter-spacing:.04em;margin:0 0 24px}
+body.studio-product .studio-hero h1{font-size:clamp(17px,1.45vw,21px);font-weight:500;line-height:1.5;letter-spacing:-.025em;color:var(--ss-muted);margin:0 0 18px;word-break:keep-all}
+body.studio-product .studio-display{font-size:clamp(36px,4.5vw,64px);line-height:1.15;font-weight:700;letter-spacing:-.04em;color:var(--ss-ink);margin:0 0 28px;word-break:keep-all;text-wrap:balance;max-width:850px}
+body.studio-product .studio-hero .editorial-lead{font-size:18px;line-height:1.8;color:var(--ss-muted);max-width:510px;word-break:keep-all;margin:0}
+body.studio-product .studio-hero-copy p:not([class]){font-size:13px;color:var(--ss-muted);margin:0 0 12px}
+body.studio-product .studio-hero .source-hero-link{display:inline-flex;margin-top:20px;font-size:13px;min-height:36px;align-items:center;color:var(--ss-muted)}
+body.studio-product .studio-hero .editorial-actions{display:flex;justify-content:flex-start;align-items:center;flex-wrap:wrap;gap:24px;margin:26px 0 0}
+body.studio-product .studio-hero .editorial-actions>a:not(.editorial-button){color:var(--ss-ink);font-size:14px;min-height:48px;display:inline-flex;align-items:center}
+body.studio-product .studio-hero .editorial-button{min-width:136px;display:inline-flex;align-items:center;justify-content:center}
+.studio-hero-media{position:relative;min-width:0;background:#edf2f5;overflow:hidden;border-radius:3px;min-height:480px;display:grid;place-items:center;padding:32px}
+.studio-hero-media>div:not(.studio-viewfinder){width:100%;min-width:0}.studio-hero-media figure{margin:0}.studio-hero-media picture{display:block}
+body.studio-product .studio-hero-media img{display:block;height:430px;width:100%;object-fit:contain;margin:0;mix-blend-mode:multiply}
+body.studio-product .studio-hero-media figcaption{font-size:12px;line-height:1.6;color:var(--ss-muted);margin:12px 0 0}
+.studio-viewfinder{position:absolute;inset:24px;pointer-events:none;z-index:1}.studio-viewfinder i{position:absolute;width:28px;height:28px;border:1px solid #728c9d}.studio-viewfinder i:nth-child(1){left:0;top:0;border-right:0;border-bottom:0}.studio-viewfinder i:nth-child(2){right:0;top:0;border-left:0;border-bottom:0}.studio-viewfinder i:nth-child(3){left:0;bottom:0;border-right:0;border-top:0}.studio-viewfinder i:nth-child(4){right:0;bottom:0;border-left:0;border-top:0}
+.studio-intro{width:min(1280px,calc(100% - 96px));margin:0 auto;padding:0 0 56px;border-bottom:1px solid var(--ss-line)}.studio-intro p{font-size:17px;line-height:1.8;color:var(--ss-muted);max-width:860px}
+/* Wearable: tall equipment portrait and restrained orange field markings. */
+body[data-studio-kind=wearable] .studio-hero{grid-template-columns:1fr 1.1fr;gap:72px}
+body[data-studio-kind=wearable] .studio-hero-media{min-height:560px;background:#eef1ed;border-bottom:6px solid #be6534}
+body[data-studio-kind=wearable] .studio-hero-media img{height:480px}
+body[data-studio-kind=wearable] .studio-viewfinder{inset:32px}
+/* Communication: clear speech and equipment against a quiet night-shift field. */
+body[data-studio-kind=communication] .studio-hero{background:#173244;max-width:none;padding-inline:max(48px,calc((100% - 1280px)/2));gap:72px}
+body[data-studio-kind=communication] .studio-display{color:#fff}
+body[data-studio-kind=communication] .studio-hero h1,body[data-studio-kind=communication] .studio-hero .editorial-lead,body[data-studio-kind=communication] .studio-hero .source-hero-link,body[data-studio-kind=communication] .studio-hero-copy p:not([class]){color:#c1d2dd}
+body[data-studio-kind=communication] .studio-breadcrumb{color:#ffb17c}
+body[data-studio-kind=communication] .studio-hero .editorial-button{background:#fff;color:#173244}
+body[data-studio-kind=communication] .studio-hero .editorial-actions>a:not(.editorial-button){color:#fff}
+body[data-studio-kind=communication] .studio-intro{padding-top:32px}
+/* Workspace: the field is the hero, seen as a large photographic contact sheet. */
+body[data-studio-kind=workspace] .studio-hero{grid-template-columns:1fr;padding-bottom:56px;gap:40px}
+body[data-studio-kind=workspace] .studio-hero-copy{display:grid;grid-template-columns:1.45fr 1fr;gap:0 64px;align-items:end}
+body[data-studio-kind=workspace] .studio-breadcrumb{grid-column:1/-1}
+body[data-studio-kind=workspace] .studio-hero .editorial-actions{align-self:end;justify-content:flex-end}
+body[data-studio-kind=workspace] .studio-hero-media{height:490px;min-height:0;padding:0;background:#e5edf2}
+body[data-studio-kind=workspace] .studio-hero-media img{height:490px;object-fit:cover;mix-blend-mode:normal}
+body[data-studio-kind=workspace] .studio-hero-media figcaption{position:absolute;bottom:0;left:0;right:0;background:#173244ed;color:white;margin:0;padding:16px 24px}
+body[data-studio-kind=workspace] .studio-viewfinder i{border-color:#fff}
+/* Workflow: document-oriented editorial split with generous reading width. */
+body[data-studio-kind=workflow] .studio-hero{grid-template-columns:1.2fr 1fr;gap:64px;border-bottom:1px solid var(--ss-line)}
+body[data-studio-kind=workflow] .studio-display{font-size:clamp(36px,4vw,58px)}
+body[data-studio-kind=workflow] .studio-hero-media{min-height:380px;padding:0;background:#e6edf1}
+body[data-studio-kind=workflow] .studio-hero-media img{height:380px;object-fit:cover;mix-blend-mode:normal}
+body[data-studio-kind=workflow] .studio-hero-media figcaption{padding:12px 20px}
+body[data-studio-kind=lineup] .studio-hero{grid-template-columns:1fr 1.25fr}.studio-hero-media .content-grid{display:flex;gap:12px}.studio-hero-media .content-grid>*{min-width:0;flex:1}
+/* Every product has manual, accessible feature choices. No forced scroll sequence. */
+body.studio-product #product-benefits{padding:72px 0 80px;background:#173244;color:white;overflow:hidden}
+body.studio-product #product-benefits .benefit-heading{margin:0 0 32px;max-width:none;text-align:left}
+body.studio-product #product-benefits .benefit-heading h2{font-size:clamp(28px,3vw,42px);line-height:1.35;letter-spacing:-.035em;word-break:keep-all;color:#fff;opacity:1!important;transform:none!important;margin:12px 0 0}
+body.studio-product #product-benefits .benefit-heading .editorial-kicker{color:#b7ccd9;font-size:12px;margin:0}
+.studio-tabs{display:flex;gap:0;border-bottom:1px solid #587080;margin:0 0 28px}.studio-tabs[hidden]{display:none}
+.studio-tabs button{flex:1;min-width:0;min-height:64px;border:0;border-bottom:3px solid transparent;background:transparent;color:#bccfda;font:500 16px/1.5 Asta,sans-serif;padding:18px 14px;text-align:left;cursor:pointer}
+.studio-tabs button[aria-selected=true],.studio-tabs button[aria-pressed=true]{border-color:#ffb17c;color:#fff}
+.studio-tabs .benefit-tab-number{font:11px Inter,sans-serif;margin-right:16px;opacity:.8}
+.studio-panels{list-style:none;padding:0;margin:0;display:grid;gap:24px}
+body.studio-product #product-benefits .studio-panel{display:grid;grid-template-columns:1.1fr 1fr;gap:0;align-items:stretch;border:1px solid #60798a;border-radius:3px;overflow:hidden;background:#173244;color:#fff;min-width:0}
+.studio-panel[hidden]{display:none!important}
+body.studio-product #product-benefits .studio-panel .benefit-copy{padding:42px;display:flex;flex-direction:column;align-items:start;justify-content:center;min-height:390px;min-width:0}
+body.studio-product #product-benefits .studio-panel h3{color:#fff;font-size:clamp(26px,2.7vw,38px);line-height:1.35;letter-spacing:-.035em;word-break:keep-all;margin:0 0 22px}
+body.studio-product #product-benefits .studio-panel .benefit-kicker{color:#ffb17c!important;font-size:13px;margin:0 0 18px}
+body.studio-product #product-benefits .studio-panel .benefit-description{color:#cfdae2;font-size:16px;line-height:1.85;margin:0 0 26px;max-width:510px}
+body.studio-product #product-benefits .studio-panel .benefit-detail-link{color:#fff!important;font-size:14px;margin-top:auto;padding:12px 0}
+body.studio-product #product-benefits .studio-panel .benefit-visual{display:flex;flex-direction:column;justify-content:center;padding:24px;background:#eef3f6;min-width:0;min-height:0;margin:0}
+body.studio-product #product-benefits .studio-panel .external-render-stage,body.studio-product #product-benefits .studio-panel .sunflex-infographic,body.studio-product #product-benefits .studio-panel .visual-shell{min-height:0!important;height:auto!important;padding:0!important;aspect-ratio:auto!important;background:transparent!important;border:0}
+body.studio-product #product-benefits .studio-panel .external-render-stage img{position:static;width:100%;height:290px;object-fit:contain;transform:none}
+body.studio-product #product-benefits .studio-panel figcaption{font-size:12px;line-height:1.6;color:#526977;margin:14px 0 0;padding:0;border:0;text-align:center}
+body.studio-product #product-benefits .studio-panel .benefit-visual>img{height:290px;width:100%;object-fit:contain}
+body[data-studio-kind=workflow] #product-benefits .studio-panel{grid-template-columns:.9fr 1.1fr}
+body[data-studio-kind=wearable] #product-benefits .studio-panel{grid-template-columns:1fr 1fr}
+/* Detail sections share the same grid as their introduction. */
+body.studio-product .editorial-chapter{padding-block:80px;background:#fff}
+body.studio-product .editorial-chapter:nth-of-type(even){background:#f1f5f7}
+body.studio-product .editorial-chapter h2{font-size:clamp(28px,3vw,42px);line-height:1.4;letter-spacing:-.035em;word-break:keep-all;color:#173244}
+body.studio-product .revision-source p{line-height:1.85}
+body.studio-product #product-specifications{padding-block:48px 16px}
+body.studio-product .revision-criteria{gap:20px}.studio-product .revision-criteria li{border-radius:3px;border-top:2px solid #a2b7c3;box-shadow:none}
+body.studio-product #related{padding-block:80px}.site-studio .solar-grid{gap:28px}
+body.site-studio .solar-card{border:0;border-radius:3px;box-shadow:none;overflow:hidden;background:#fff}
+body.site-studio .solar-card-image{background:#eaf0f4;overflow:hidden}.site-studio .solar-card-image img{transition:transform .45s cubic-bezier(.2,.65,.25,1)}
+body.site-studio .solar-card:hover .solar-card-image img{transform:scale(1.045)}
+body.site-studio .solar-card-copy{padding:24px 0 28px;border-bottom:1px solid #b8c9d2}.site-studio .solar-card h3{font-size:23px;line-height:1.4;letter-spacing:-.025em}.site-studio .solar-card p{font-size:15px;line-height:1.75;color:#506775}
+body.site-studio .final-cta{padding-block:64px;border-top:1px solid #b7c8d3;background:transparent;color:#173244}
+body.site-studio .final-cta h2{color:#173244;font-size:clamp(28px,3.1vw,44px)}
+/* CMS: all three construction phases remain visible for comparison. */
+body.studio-product #process-transition-line .studio-tabs button{color:#506775}
+body.studio-product #process-transition-line .studio-tabs button[aria-pressed=true]{color:#173244;border-color:#b94c1b}
+.studio-comparison .studio-panels{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;align-items:start}
+.studio-comparison .studio-panel{display:flex;flex-direction:column;min-width:0;border-top:3px solid #bacbd4;background:#fff;padding:0 0 24px;overflow:hidden;transition:border-color .3s ease}
+.studio-comparison .studio-panel.is-selected{border-color:#b94c1b}
+.studio-comparison .studio-panel>span{display:none}.studio-comparison .studio-panel figure{margin:0}
+body.studio-product #process-transition-line .studio-panel img{width:100%;height:330px;object-fit:cover;transition:filter .4s ease}
+.studio-comparison.is-enhanced .studio-panel:not(.is-selected) img{filter:saturate(.35)}
+.studio-comparison .studio-panel .content-copy{padding:24px 24px 0}
+.studio-comparison .studio-panel figcaption{font-size:12px;line-height:1.6;color:#506775;padding:12px 18px;background:#edf3f6}
+.studio-comparison .studio-panel h3{font-size:25px;line-height:1.4;letter-spacing:-.025em}.studio-comparison .studio-panel p{font-size:15px;line-height:1.75}
+/* Corporate and discovery pages keep strong imagery and usable navigation. */
+body.studio-corporate #main-content .page-head{padding-block:88px 72px;background:#edf3f6;color:#173244}
+body.studio-corporate #main-content .page-head h1{font-size:clamp(44px,5.5vw,80px);line-height:1.13;letter-spacing:-.05em;color:#173244}
+body.studio-corporate #main-content .page-head h1 em{color:#355e77;font-style:normal}
+body.studio-corporate #main-content .page-head p{font-size:18px;line-height:1.8;color:#506775;max-width:780px}
+body.studio-corporate #main-content .section{padding-block:80px}.studio-corporate .lead h2{font-size:clamp(32px,3.5vw,48px);letter-spacing:-.04em;line-height:1.35}
+body.studio-corporate #main-content .catalog-tools{background:#fff;color:#173244;border-block:1px solid #bacbd4;padding-block:28px;border-radius:0;box-shadow:none}
+body.studio-corporate #main-content .catalog-tabs{gap:8px;flex-wrap:wrap}.studio-corporate .catalog-tabs button{border-radius:3px;min-height:46px}
+body.studio-corporate #main-content .catalog-tabs button[aria-pressed=true]{background:#173244;color:#fff}
+body.studio-corporate #main-content .catalog-search input,body.studio-corporate #main-content .filter-grid select{background:#f1f5f7;color:#173244;border:1px solid #adbfcb;border-radius:3px;min-height:48px}
+body.studio-corporate #main-content .solar-category-hero{min-height:620px;padding-block:72px;color:#fff}.studio-corporate .solar-category-hero h1{font-size:clamp(64px,9vw,128px);line-height:.95;letter-spacing:-.06em}.studio-corporate .solar-category-hero .category-intro{max-width:560px}
+body.studio-corporate #main-content .solar-family{border-radius:3px;padding:36px;border:1px solid #b8c9d2;background:#edf3f6;color:#173244}.studio-corporate .solar-family h3{font-size:48px;line-height:1.05;letter-spacing:-.05em}
+body.studio-corporate #main-content .solar-family p{color:#506775}.studio-corporate .solar-family:hover{background:#dce8ef}
+body.studio-corporate #main-content .contact-grid,body.studio-corporate #main-content .support-layout{gap:64px}
+body.studio-corporate #main-content input,body.studio-corporate #main-content textarea,body.studio-corporate #main-content select{border-radius:3px}
+body.studio-corporate #main-content .support-choice,body.studio-corporate #main-content .principle{border-radius:3px;box-shadow:none}
+body[data-studio-page=home] .home-products{padding-block:96px}
+body[data-studio-page=home] .home-contact{padding-block:88px}
+body[data-studio-page=home] .simple-hero .hero-copy h1{letter-spacing:-.055em;text-wrap:balance}
+body.studio-cctv .header{border-bottom:1px solid #566b78}
+body.studio-cctv .model-card{border-radius:3px}
+@media(max-width:1439px){body.studio-product .studio-hero{padding-inline:48px}}
+@media(max-width:1100px){body.studio-product .studio-hero{gap:32px}.studio-hero-media{min-height:390px;padding:24px}body.studio-product .studio-hero-media img{height:350px}body[data-studio-kind=workspace] .studio-hero-media,body[data-studio-kind=workspace] .studio-hero-media img{height:420px}body[data-studio-kind=workspace] .studio-hero-copy{display:block}body[data-studio-kind=workspace] .studio-hero .editorial-actions{justify-content:flex-start}body.studio-product #product-benefits .studio-panel .benefit-copy{padding:30px}body.studio-product #process-transition-line .studio-panel img{height:260px}}
+@media(max-width:760px){
+ body.site-studio{--ss-gutter:20px}.site-studio .header-inner{min-height:64px!important}
+ body.site-studio .product-local-nav>.wrap{min-height:56px;gap:10px}.site-studio .product-local-name{font-size:12px!important;max-width:52%}
+ body.site-studio .product-local-nav nav{gap:12px}.site-studio .product-local-nav nav>a:not(.editorial-button){display:none}
+ body.site-studio .product-local-nav .editorial-button{padding:9px 14px;min-height:40px;font-size:12px}
+ body.studio-product .studio-hero{grid-template-columns:1fr;padding:30px 20px 40px;gap:28px}
+ body.studio-product .studio-breadcrumb{font-size:11px;margin-bottom:18px}
+ body.studio-product .studio-hero h1{font-size:16px;margin-bottom:14px}
+ body.studio-product .studio-display{font-size:clamp(33px,9.5vw,48px);line-height:1.2;margin-bottom:20px}
+ body.studio-product .studio-hero .editorial-lead{font-size:16px;line-height:1.75}
+ body.studio-product .studio-hero .source-hero-link{font-size:12px;margin-top:12px}
+ body.studio-product .studio-hero .editorial-actions{margin-top:20px;gap:18px}
+ body.studio-product .studio-hero .editorial-button{min-width:124px}
+ .studio-hero-media{min-height:320px;padding:24px}.studio-viewfinder{inset:18px}
+ body.studio-product .studio-hero-media img{height:280px}
+ body[data-studio-kind=wearable] .studio-hero-media{min-height:370px}body[data-studio-kind=wearable] .studio-hero-media img{height:320px}
+ body[data-studio-kind=workspace] .studio-hero-media,body[data-studio-kind=workspace] .studio-hero-media img{height:300px}
+ body[data-studio-kind=workflow] .studio-hero-media{min-height:240px}body[data-studio-kind=workflow] .studio-hero-media img{height:260px}
+ .studio-intro{width:calc(100% - 40px);padding-bottom:36px}.studio-intro p{font-size:15px}
+ body.studio-product #product-benefits{padding:48px 0 56px}.studio-tabs{margin-bottom:20px}.studio-tabs button{font-size:13px;padding:14px 4px;min-height:60px}.studio-tabs .benefit-tab-number{font-size:9px;margin-right:5px}
+ body.studio-product #product-benefits .studio-panel{grid-template-columns:1fr}
+ body.studio-product #product-benefits .studio-panel .benefit-copy{min-height:0;padding:28px 24px}
+ body.studio-product #product-benefits .studio-panel h3{font-size:28px!important}
+ body.studio-product #product-benefits .studio-panel .benefit-description{font-size:15px}
+ body.studio-product #product-benefits .studio-panel .benefit-visual{padding:18px}
+ body.studio-product #product-benefits .studio-panel .external-render-stage img,body.studio-product #product-benefits .studio-panel .benefit-visual>img{height:220px}
+ body.studio-product .editorial-chapter{padding-block:56px}.studio-product #related{padding-block:56px!important}
+ body.site-studio .solar-grid{gap:24px}.site-studio .solar-card h3{font-size:21px}.site-studio .solar-card-copy{padding:20px 0 24px}
+ body.site-studio .final-cta{padding-block:48px}.site-studio .final-cta h2{font-size:30px}
+ .studio-comparison .studio-panels{grid-template-columns:1fr;gap:20px}.studio-comparison .studio-panel{display:grid;grid-template-columns:1fr 1fr;padding-bottom:0}
+ body.studio-product #process-transition-line .studio-panel img{height:220px}.studio-comparison .studio-panel .content-copy{padding:22px 18px}.studio-comparison .studio-panel h3{font-size:23px}.studio-comparison .studio-panel figcaption{font-size:11px;padding:10px}
+ body.studio-corporate #main-content .page-head{padding-block:48px}.studio-corporate .page-head h1{font-size:42px!important}.studio-corporate .page-head p{font-size:16px!important}
+ body.studio-corporate #main-content .section{padding-block:56px}.studio-corporate .catalog-tools{padding-block:22px}
+ body.studio-corporate #main-content .solar-category-hero{min-height:520px;padding-block:48px}.studio-corporate .solar-category-hero h1{font-size:76px}
+ body.studio-corporate #main-content .solar-family{padding:28px}.studio-corporate .solar-family h3{font-size:42px}
+ body.studio-corporate #main-content .contact-grid,body.studio-corporate #main-content .support-layout{gap:36px}
+ body[data-studio-page=home] .home-products,body[data-studio-page=home] .home-contact{padding-block:56px}
+}
+@media(prefers-reduced-motion:reduce){body.site-studio *,body.site-studio *::before,body.site-studio *::after{transition:none!important;scroll-behavior:auto!important}.site-studio .solar-card:hover .solar-card-image img{transform:none}}
+body[data-studio-kind=workspace] .studio-hero-aside{padding-bottom:6px}
+body[data-studio-kind=workspace] .studio-hero-aside .editorial-actions{justify-content:flex-start;margin-top:24px}
+body[data-studio-kind=workspace] .studio-hero-copy>.revision-hero-content{min-width:0}
+.studio-phase-note{font-size:13px;color:#506775;line-height:1.7}
+@media(max-width:1100px){body[data-studio-kind=workspace] .studio-hero-aside{margin-top:24px}}
+/* CMS source used its own dark skin; the comparison is a light reading surface. */
+body.studio-product #process-transition-line{background:#edf3f6;color:#173244}
+body.studio-product #process-transition-line h2,body.studio-product #process-transition-line h3{color:#173244}
+body.studio-product #process-transition-line p{color:#506775}
+body.studio-product #process-transition-line .studio-panel{padding:0 0 24px;background:#fff;border-radius:3px;color:#173244;display:flex;flex-direction:column}
+body.studio-product #process-transition-line .studio-panel>span{display:none}
+body.studio-product #process-transition-line .studio-panel img{border-radius:0;margin:0}
+body.studio-product #process-transition-line .studio-panel .content-copy{padding:24px 24px 0}
+@media(max-width:760px){body.studio-product #process-transition-line .studio-panel{display:grid;grid-template-columns:1fr 1fr;padding-bottom:0}body.studio-product #process-transition-line .studio-panel .content-copy{padding:22px 18px}}
+/* Preserve contrast where source-specific diagrams deliberately keep a dark field. */
+body.studio-product[data-studio-kind=workspace] .chapter-focus h2,
+body.studio-product[data-studio-kind=communication] .chapter-focus h2{color:#fff}
+body.studio-product #process-transition-line h2{color:#173244}
+body.studio-product[data-studio-kind=workspace] .studio-hero-media figcaption{background:#173244}
+body.studio-cctv #configure .eyebrow{color:#506775}
+body.studio-product #blind-corner{background:#173244;color:#fff;--secondary:#c7d7e2}
+body.studio-product #blind-corner h2{color:#fff}
+body.studio-product #blind-corner p{color:#c7d7e2}
+body[data-studio-kind=workspace] .studio-hero-media[data-studio-image=portrait]{padding:28px;background:#edf3f6}
+body[data-studio-kind=workspace] .studio-hero-media[data-studio-image=portrait] img{object-fit:contain;height:430px;mix-blend-mode:multiply}
+body[data-studio-kind=workspace] .studio-hero-media[data-studio-image=portrait] .studio-viewfinder i{border-color:#728c9d}
+@media(max-width:1100px){body[data-studio-kind=workspace] .studio-hero-media[data-studio-image=portrait] img{height:360px}}
+@media(max-width:760px){body[data-studio-kind=workspace] .studio-hero-media[data-studio-image=portrait]{padding:24px;min-height:340px;height:auto}body[data-studio-kind=workspace] .studio-hero-media[data-studio-image=portrait] img{height:280px}}
+/* Corporate reading surfaces and the cinematic home have different contrast contexts. */
+body[data-studio-page=home]{background:#090d13;color:#fff}
+body.studio-corporate{--muted:#506775}
+body.studio-corporate #main-content .feature,body.studio-corporate #main-content .support-choice,body.studio-corporate #inquiry-form{background:#edf3f6;color:#173244}
+body.studio-corporate #main-content h3,body.studio-corporate #main-content .legal p,body.studio-corporate #main-content .platform-chapter p,body.studio-corporate #main-content .platform-chapter figcaption,body.studio-corporate #main-content .detail-block p{color:#506775}
+body.studio-corporate #main-content h3{color:#173244}
+body.studio-corporate #inquiry-form input,body.studio-corporate #inquiry-form textarea{background:#fff;color:#173244;border-color:#8da4b3}
+body.studio-corporate #inquiry-form label{color:#173244}
+body.studio-corporate #main-content .solar-category-hero{background-color:#173244}
+body.studio-corporate #main-content .solar-category-hero p{color:#e0e9ef}
+body.studio-corporate #main-content .catalog-search{font-size:14px;gap:12px;display:grid;margin-bottom:24px}
+body.studio-corporate #main-content .catalog-search input{height:64px;min-height:64px;font-size:21px;padding:16px 20px;line-height:1.4}
+body.studio-product[data-studio-kind=workspace] .studio-hero-media figcaption{min-height:52px;padding:15px 24px;font-size:14px;line-height:22px}
+body[data-studio-kind=workspace] .studio-hero-media:has(figcaption) .studio-viewfinder{bottom:84px}
+body[data-studio-kind=communication] .studio-hero{padding-bottom:24px}
+body.studio-product[data-studio-kind=communication] #product-benefits{padding-top:56px}
+.studio-product-meta{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap;margin-bottom:20px}
+body.studio-product .studio-product-meta h1,body.studio-product .studio-product-meta p{margin:0;font-size:15px;line-height:1.6}
+.studio-context-link{display:block;max-width:1280px;margin:0 auto;padding:0 48px 24px;font-size:13px;color:#506775}
+@media(max-width:760px){body.studio-corporate #main-content .catalog-search input{font-size:17px;padding-inline:14px}body.studio-product .studio-product-meta{gap:8px;margin-bottom:20px}body.studio-product .studio-product-meta p,body.studio-product .studio-product-meta h1{font-size:13px}.studio-context-link{padding-inline:20px}body[data-studio-kind=communication] .studio-hero{padding-bottom:24px}body.studio-product[data-studio-kind=communication] #product-benefits{padding-top:40px}}
+body.studio-corporate #main-content .inquiry,body.studio-corporate #main-content .faq details,body.studio-corporate #main-content .platform-chapter>div>a{background:#edf3f6;color:#173244}
+body.studio-corporate{--blue:#36586d;--solar-accent:#36586d}
+body.studio-corporate .site-header,body.studio-corporate .site-footer{--muted:#bdcbd5;--solar-accent:#bad3ff}
+body.studio-corporate #main-content .solar-category-hero{--muted:#c7d7e2;--solar-accent:#bad3ff}
