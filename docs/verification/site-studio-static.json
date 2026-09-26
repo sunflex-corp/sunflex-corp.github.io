@@ -1,0 +1,336 @@
+{
+  "baseline": "c540937af3ae6a5cba6d598be9f8472ebe748d77",
+  "routes": [
+    {
+      "path": "index.html",
+      "redirect": false,
+      "type": "home"
+    },
+    {
+      "path": "404.html",
+      "redirect": false,
+      "type": "404.html"
+    },
+    {
+      "path": "company/index.html",
+      "redirect": false,
+      "type": "company"
+    },
+    {
+      "path": "cases/index.html",
+      "redirect": false,
+      "type": "cases"
+    },
+    {
+      "path": "contact/index.html",
+      "redirect": false,
+      "type": "contact"
+    },
+    {
+      "path": "privacy/index.html",
+      "redirect": false,
+      "type": "privacy"
+    },
+    {
+      "path": "products/index.html",
+      "redirect": false,
+      "type": "products"
+    },
+    {
+      "path": "products/mobile-bodycam/index.html",
+      "redirect": false,
+      "type": "wearable"
+    },
+    {
+      "path": "products/fire-detection/index.html",
+      "redirect": false,
+      "type": "sensing"
+    },
+    {
+      "path": "products/compact-gas-detector/index.html",
+      "redirect": false,
+      "type": "sensing"
+    },
+    {
+      "path": "products/wireless-network/index.html",
+      "redirect": false,
+      "type": "communication"
+    },
+    {
+      "path": "products/concrete-curing/index.html",
+      "redirect": false,
+      "type": "sensing"
+    },
+    {
+      "path": "products/tilt-acceleration-sensor/index.html",
+      "redirect": false,
+      "type": "sensing"
+    },
+    {
+      "path": "products/iot-small-tower-crane/index.html",
+      "redirect": false,
+      "type": "workspace"
+    },
+    {
+      "path": "products/tower-crane-hook-collision/index.html",
+      "redirect": false,
+      "type": "communication"
+    },
+    {
+      "path": "products/hook-bottom-camera/index.html",
+      "redirect": false,
+      "type": "workspace"
+    },
+    {
+      "path": "products/chatgpt-cctv/index.html",
+      "redirect": false,
+      "type": "workflow"
+    },
+    {
+      "path": "products/inspectcut/index.html",
+      "redirect": false,
+      "type": "workflow"
+    },
+    {
+      "path": "products/ai-safety-index/index.html",
+      "redirect": false,
+      "type": "workflow"
+    },
+    {
+      "path": "products/ai-broadcast/index.html",
+      "redirect": false,
+      "type": "communication"
+    },
+    {
+      "path": "products/gas-alarm/index.html",
+      "redirect": false,
+      "type": "sensing"
+    },
+    {
+      "path": "products/smart-environment-board/index.html",
+      "redirect": false,
+      "type": "workspace"
+    },
+    {
+      "path": "products/ai-risk-assessment-review/index.html",
+      "redirect": false,
+      "type": "workflow"
+    },
+    {
+      "path": "products/worker-attendance-card/index.html",
+      "redirect": false,
+      "type": "workspace"
+    },
+    {
+      "path": "products/healthcare-heart-band/index.html",
+      "redirect": false,
+      "type": "wearable"
+    },
+    {
+      "path": "products/smart-beacon/index.html",
+      "redirect": false,
+      "type": "sensing"
+    },
+    {
+      "path": "products/wireless-emergency-broadcast/index.html",
+      "redirect": false,
+      "type": "communication"
+    },
+    {
+      "path": "products/lte-anemometer/index.html",
+      "redirect": false,
+      "type": "sensing"
+    },
+    {
+      "path": "products/ai-subcontractor-safety/index.html",
+      "redirect": false,
+      "type": "workflow"
+    },
+    {
+      "path": "products/co2-temp-humidity/index.html",
+      "redirect": false,
+      "type": "sensing"
+    },
+    {
+      "path": "products/ai-quick-risk-assessment/index.html",
+      "redirect": false,
+      "type": "workflow"
+    },
+    {
+      "path": "products/pedestrian-collision-prevention/index.html",
+      "redirect": false,
+      "type": "workspace"
+    },
+    {
+      "path": "products/ai-drone-inspection/index.html",
+      "redirect": false,
+      "type": "workflow"
+    },
+    {
+      "path": "products/smart-helmet/index.html",
+      "redirect": false,
+      "type": "wearable"
+    },
+    {
+      "path": "products/smart-airbag/index.html",
+      "redirect": false,
+      "type": "wearable"
+    },
+    {
+      "path": "products/equipment-approach-alarm/index.html",
+      "redirect": false,
+      "type": "workspace"
+    },
+    {
+      "path": "products/ai-equipment-collision/index.html",
+      "redirect": false,
+      "type": "workspace"
+    },
+    {
+      "path": "products/led-logo-light/index.html",
+      "redirect": false,
+      "type": "communication"
+    },
+    {
+      "path": "products/ai-similar-accident-alert/index.html",
+      "redirect": false,
+      "type": "workflow"
+    },
+    {
+      "path": "products/opening-open-close-sensor/index.html",
+      "redirect": false,
+      "type": "sensing"
+    },
+    {
+      "path": "products/worker-access-gate/index.html",
+      "redirect": false,
+      "type": "workspace"
+    },
+    {
+      "path": "products/mobile-cctv/index.html",
+      "redirect": false,
+      "type": "lineup"
+    },
+    {
+      "path": "products/safety-box/index.html",
+      "redirect": false,
+      "type": "workspace"
+    },
+    {
+      "path": "products/ir3-flame-detector/index.html",
+      "redirect": false,
+      "type": "lineup"
+    },
+    {
+      "path": "products/alcohol-detection/index.html",
+      "redirect": false,
+      "type": "sensing"
+    },
+    {
+      "path": "products/safebridge/index.html",
+      "redirect": false,
+      "type": "workflow"
+    },
+    {
+      "path": "products/power-assist-suit/index.html",
+      "redirect": false,
+      "type": "wearable"
+    },
+    {
+      "path": "products/hazard-area-broadcast/index.html",
+      "redirect": false,
+      "type": "communication"
+    },
+    {
+      "path": "products/digital-radio/index.html",
+      "redirect": false,
+      "type": "communication"
+    },
+    {
+      "path": "products/iot-mist/index.html",
+      "redirect": false,
+      "type": "communication"
+    },
+    {
+      "path": "products/tbm-solution/index.html",
+      "redirect": false,
+      "type": "communication"
+    },
+    {
+      "path": "products/emergency-signal-location/index.html",
+      "redirect": false,
+      "type": "wearable"
+    },
+    {
+      "path": "products/vehicle-entry-alert/index.html",
+      "redirect": false,
+      "type": "communication"
+    },
+    {
+      "path": "products/site-cms/index.html",
+      "redirect": false,
+      "type": "workspace"
+    },
+    {
+      "path": "products/smart-safety-hook/index.html",
+      "redirect": false,
+      "type": "wearable"
+    },
+    {
+      "path": "solutions/index.html",
+      "redirect": false,
+      "type": "solutions"
+    },
+    {
+      "path": "solutions/detect/index.html",
+      "redirect": false,
+      "type": "solutions"
+    },
+    {
+      "path": "solutions/record/index.html",
+      "redirect": false,
+      "type": "solutions"
+    },
+    {
+      "path": "solutions/alert/index.html",
+      "redirect": false,
+      "type": "solutions"
+    },
+    {
+      "path": "solutions/air/index.html",
+      "redirect": true,
+      "type": "redirect"
+    },
+    {
+      "path": "solutions/respond/index.html",
+      "redirect": false,
+      "type": "solutions"
+    },
+    {
+      "path": "solutions/safety-box/index.html",
+      "redirect": false,
+      "type": "solutions"
+    },
+    {
+      "path": "solutions/guard/index.html",
+      "redirect": true,
+      "type": "redirect"
+    },
+    {
+      "path": "solutions/sound/index.html",
+      "redirect": true,
+      "type": "redirect"
+    },
+    {
+      "path": "solutions/eyes/index.html",
+      "redirect": true,
+      "type": "redirect"
+    },
+    {
+      "path": "solutions/story/index.html",
+      "redirect": true,
+      "type": "redirect"
+    }
+  ],
+  "errors": []
+}

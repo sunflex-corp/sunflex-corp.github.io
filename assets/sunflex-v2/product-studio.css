@@ -1,0 +1,113 @@
+/* Gas pilot: a precision instrument, a clear field-to-record story. */
+body.gas-studio{--studio-ink:#132e40;--studio-muted:#536672;--studio-surface:#edf3f7;--studio-line:#cedbe3;--studio-orange:#b44613;--accent:#194f70;background:#fff;color:var(--studio-ink);color-scheme:light}
+.gas-studio .wrap,.gas-studio .editorial-section-inner{width:min(1280px,calc(100% - 96px));max-width:1280px;padding-inline:0}
+.gas-studio .site-header{background:#102a3c}.gas-studio .product-local-nav{background:#ffffffed}
+.gas-studio .product-local-nav>.wrap{min-height:64px}.gas-studio .product-local-name{font-size:15px}
+.gas-studio .editorial-button{border-radius:6px;background:var(--studio-ink);min-height:44px;padding:12px 22px;font-size:14px;font-weight:600}
+.gas-studio main a:focus-visible,.gas-studio main button:focus-visible{outline:3px solid #b44613;outline-offset:5px}
+.gas-studio .product-story [id]{scroll-margin-top:90px}
+.gas-studio .gas-hero{position:relative;display:grid;grid-template-columns:1.12fr 1fr;gap:24px 64px;align-items:center;max-width:1440px;margin:0 auto;padding:54px 80px 0;background:#fff}
+.gas-hero-copy{min-width:0}.gas-title-group>p:first-child{color:var(--studio-orange);font-size:13px;font-weight:600;margin:0 0 20px;letter-spacing:.015em}
+.gas-title-group h1{font-size:19px;line-height:1.5;font-weight:500;letter-spacing:-.02em;margin:0 0 18px;color:var(--studio-muted)}
+.gas-title-group .gas-display{font-size:clamp(40px,4.65vw,68px);font-weight:700;line-height:1.22;letter-spacing:-.055em;word-break:keep-all;margin:0 0 28px;color:var(--studio-ink)}
+.gas-title-group .editorial-lead{font-size:18px;line-height:1.75;max-width:370px;margin:0;color:var(--studio-muted);word-break:keep-all}
+.gas-studio .gas-hero .editorial-actions{justify-content:flex-start;margin:30px 0 0;gap:24px;flex-wrap:wrap}
+.gas-hero .editorial-actions>a:not(.editorial-button){font-size:14px;font-weight:500;color:var(--studio-ink);padding-block:12px}
+.gas-product-media{position:relative;min-width:0;align-self:stretch;min-height:480px;display:flex;flex-direction:column;justify-content:center;align-items:center;background:var(--studio-surface);border-radius:2px;overflow:hidden;padding:45px 28px 38px}
+.gas-product-media figure{margin:0;width:100%;background:transparent}.gas-product-media img{display:block;width:auto;max-width:100%;height:405px;object-fit:contain;margin:auto;mix-blend-mode:multiply;transform:rotate(5deg)}
+.gas-media-label{position:absolute;top:23px;left:24px;font:10px/1.5 Inter,sans-serif;font-weight:600;letter-spacing:.1em;color:#526a7a}
+.gas-media-note{position:absolute;bottom:19px;right:24px;font-size:11px;color:#526a7a}
+.gas-product-frame{position:absolute;inset:65px 33px 51px;pointer-events:none}.gas-product-frame i{position:absolute;width:17px;height:17px;border-color:#a1b5c1;border-style:solid}.gas-product-frame i:nth-child(1){left:0;top:0;border-width:1px 0 0 1px}.gas-product-frame i:nth-child(2){right:0;top:0;border-width:1px 1px 0 0}.gas-product-frame i:nth-child(3){left:0;bottom:0;border-width:0 0 1px 1px}.gas-product-frame i:nth-child(4){right:0;bottom:0;border-width:0 1px 1px 0}
+.gas-elements{grid-column:1/-1;display:grid;grid-template-columns:repeat(4,1fr);list-style:none;margin:24px 0 0;padding:27px 0;border-block:1px solid var(--studio-line)}
+.gas-elements li{display:flex;align-items:center;justify-content:center;gap:18px;border-right:1px solid var(--studio-line)}.gas-elements li:last-child{border:0}.gas-elements strong{font:500 32px/1.2 Inter,sans-serif;letter-spacing:-.04em;color:var(--studio-ink)}.gas-elements span{font-size:13px;color:var(--studio-muted)}
+.gas-intro{max-width:1280px;margin:0 auto;padding:42px 0 72px;display:flex;justify-content:space-between;align-items:start;gap:50px}.gas-intro>p{max-width:720px;font-size:17px;line-height:1.8;margin:0;color:var(--studio-muted);word-break:keep-all}.gas-intro>a{flex:none;padding-top:5px;font-size:14px;color:var(--studio-ink)}
+.gas-studio .gas-benefits{background:var(--studio-ink);padding:88px 0 96px;color:white;overflow:hidden}.gas-benefits .benefit-heading{display:block;margin:0 0 38px;text-align:left}.gas-benefits .editorial-kicker{color:#adc6d6;font-size:12px;margin:0 0 16px}.gas-benefits .benefit-heading h2{color:#fff;font-size:clamp(28px,3.2vw,46px);max-width:760px;letter-spacing:-.045em;line-height:1.35;margin:0;word-break:keep-all}
+.gas-scene-tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin:0 0 28px;border-bottom:1px solid #526676}.gas-scene-tabs[hidden]{display:none}.gas-scene-tabs button{background:none;color:#b6c9d5;border:0;border-bottom:3px solid transparent;padding:20px 12px;text-align:left;font:500 17px/1.4 Asta,sans-serif;cursor:pointer;min-height:64px}.gas-scene-tabs button[aria-selected=true]{border-bottom-color:#ffb16c;color:#fff}.gas-scene-tabs .benefit-tab-number{font:11px Inter,sans-serif;color:inherit;margin-right:18px}
+.gas-scene-panels{padding:0;margin:0;list-style:none;display:grid}.gas-studio .gas-scene-panel{display:grid;grid-template-columns:1.2fr 1fr;gap:0;background:#f1f5f8;color:var(--studio-ink);align-items:stretch;margin:0 0 20px;border-radius:4px;overflow:hidden;min-width:0}.gas-scene-panel[hidden]{display:none!important}.gas-studio .gas-scene-panel .benefit-copy{padding:44px 44px 36px;display:flex;flex-direction:column;align-items:start;justify-content:center;min-width:0}.gas-scene-panel .benefit-kicker{color:var(--studio-orange);font-size:13px;margin:0 0 22px}.gas-studio .gas-scene-panel h3{font-size:clamp(26px,2.6vw,36px);line-height:1.4;letter-spacing:-.04em;word-break:keep-all;color:var(--studio-ink);margin:0 0 20px}.gas-studio .gas-scene-panel .benefit-description{font-size:16px;line-height:1.85;color:var(--studio-muted);margin:0 0 28px;max-width:440px}.gas-scene-panel .benefit-detail-link{font-size:13px;color:var(--studio-ink);margin-top:auto;padding-block:12px}.gas-studio .gas-scene-panel .benefit-visual{margin:0;padding:24px;display:flex;flex-direction:column;justify-content:center;min-width:0;border:0;background:white}.gas-scene-panel .sunflex-infographic,.gas-scene-panel .visual-shell,.gas-scene-panel .external-render-stage{min-height:0!important;height:auto!important;aspect-ratio:auto!important;background:transparent!important;padding:0!important;border:0!important}.gas-studio .gas-scene-panel .external-render-stage img{position:static;width:100%;height:310px;object-fit:contain;transform:none}.gas-scene-panel figcaption{font-size:11px;line-height:1.5;color:#657681;text-align:center;padding-top:12px}
+.gas-studio .editorial-chapter{padding-block:88px;background:#fff}.gas-studio .editorial-chapter:nth-of-type(even){background:#f4f7f9}.gas-studio .revision-choices{background:#edf3f7;padding-block:76px}.gas-studio .editorial-chapter h2{font-size:clamp(28px,3vw,44px);line-height:1.4;letter-spacing:-.045em;word-break:keep-all;color:var(--studio-ink)}.gas-studio .revision-details{padding:60px 0 0;background:#fff}.gas-studio .revision-details + .editorial-chapter{padding-top:52px}
+.gas-studio .revision-criteria{gap:20px;margin-top:32px}.gas-studio .revision-criteria li{border-radius:4px;background:white;padding:24px}.gas-studio .revision-criteria strong{font-size:20px}.gas-studio .revision-source dl{gap:0}.gas-studio .revision-source dl>div{border-radius:0;border:0;border-top:1px solid var(--studio-line);background:transparent;padding:26px 0}.gas-studio .revision-source dd{color:var(--studio-muted);font-size:16px;line-height:1.8}
+.gas-studio #detail-2 .editorial-section-inner>div:last-child{max-width:650px;margin:36px auto 0}.gas-studio #detail-2 img{max-height:360px;object-fit:contain}.gas-studio #detail-2 figcaption{font-size:12px;color:var(--studio-muted)}
+.gas-studio #related{padding-block:88px}.gas-studio #related .solar-grid{gap:28px}.gas-studio .final-cta{border-top:1px solid var(--studio-line);color:var(--studio-ink);padding-block:72px}.gas-studio .final-cta h2{font-size:clamp(28px,3vw,42px);color:var(--studio-ink)}.gas-studio .final-cta .btn{background:var(--studio-ink);color:white;border-radius:6px}.gas-studio .site-footer{background:#102a3c;color:#fff}
+@media(min-width:1600px){.gas-studio .gas-hero{padding-inline:80px}}
+@media(max-width:1439px){.gas-studio .gas-hero{padding-inline:48px}.gas-intro{margin-inline:48px}}
+@media(max-width:1000px){.gas-studio .gas-hero{gap:24px 32px;padding-top:40px}.gas-product-media{min-height:430px}.gas-product-media img{height:350px}.gas-title-group .gas-display{font-size:48px}.gas-studio .gas-scene-panel .benefit-copy{padding:30px}.gas-elements li{gap:12px}.gas-elements strong{font-size:27px}.gas-elements span{font-size:12px}}
+@media(max-width:760px){.gas-studio .wrap,.gas-studio .editorial-section-inner{width:calc(100% - 40px)}.gas-studio .product-local-nav>.wrap{min-height:60px;gap:10px}.gas-studio .product-local-name{font-size:12px;max-width:45%}.gas-studio .product-local-nav nav{gap:13px;font-size:11px}.gas-studio .product-local-nav nav>a:first-child{display:none}.gas-studio .product-local-nav .editorial-button{padding:10px 14px;font-size:12px;min-height:40px}.gas-studio .gas-hero{grid-template-columns:1fr;gap:28px;padding:36px 20px 0}.gas-title-group>p:first-child{font-size:12px;margin-bottom:13px}.gas-title-group h1{font-size:15px;margin-bottom:15px}.gas-title-group .gas-display{font-size:clamp(36px,10vw,52px);line-height:1.24;margin-bottom:20px}.gas-title-group .editorial-lead{font-size:16px;max-width:330px}.gas-studio .gas-hero .editorial-actions{margin-top:22px;gap:22px}.gas-product-media{min-height:380px;padding:48px 24px 32px}.gas-product-media img{height:300px;max-width:82%}.gas-media-label{font-size:9px;top:18px;left:18px}.gas-elements{grid-template-columns:repeat(2,1fr);gap:24px 0;margin:0;padding:25px 0}.gas-elements li{justify-content:flex-start;padding-left:14px;gap:16px}.gas-elements li:nth-child(2){border:0}.gas-elements strong{font-size:28px;min-width:55px}.gas-elements span{font-size:12px}.gas-intro{display:block;margin:0;padding:28px 20px 52px}.gas-intro>p{font-size:15px;line-height:1.85}.gas-intro>a{display:inline-flex;margin-top:19px;font-size:13px}.gas-studio .gas-benefits{padding:56px 0}.gas-benefits .benefit-heading{margin-bottom:20px}.gas-benefits .benefit-heading h2{font-size:30px}.gas-scene-tabs{margin-bottom:22px}.gas-scene-tabs button{font-size:13px;padding:16px 3px;min-height:59px}.gas-scene-tabs .benefit-tab-number{font-size:9px;margin-right:6px}.gas-studio .gas-scene-panel{grid-template-columns:1fr;margin:0 0 20px}.gas-studio .gas-scene-panel .benefit-visual{padding:16px}.gas-studio .gas-scene-panel .external-render-stage img{height:220px}.gas-studio .gas-scene-panel .benefit-copy{padding:27px 24px 22px}.gas-studio .gas-scene-panel h3{font-size:28px}.gas-scene-panel .benefit-kicker{margin-bottom:13px}.gas-studio .gas-scene-panel .benefit-description{font-size:15px;margin-bottom:18px}.gas-studio .editorial-chapter{padding-block:56px}.gas-studio .revision-details{padding:48px 0 0}.gas-studio .revision-details+.editorial-chapter{padding-top:36px}.gas-studio .editorial-chapter h2{font-size:29px}.gas-studio .revision-criteria{gap:10px}.gas-studio .revision-criteria li{padding:20px}.gas-studio #related{padding-block:56px}.gas-studio .final-cta{padding-block:48px}}
+@media(prefers-reduced-motion:reduce){.gas-product-media img{transform:none}}
+
+/* Compact mobile masthead keeps the instrument in the first viewport. */
+@media(max-width:760px){
+ .gas-studio .header-inner{min-height:64px;height:64px}
+ .gas-studio .product-local-nav>.wrap{min-height:54px}
+ .gas-studio .gas-hero{padding-top:26px;gap:24px}
+ .gas-title-group>p:first-child{margin-bottom:10px}
+ .gas-title-group h1{margin-bottom:12px}
+ .gas-title-group .gas-display{margin-bottom:16px}
+ .gas-title-group .editorial-lead{line-height:1.65}
+ .gas-studio .gas-hero .editorial-actions{margin-top:18px}
+ .gas-product-media{min-height:320px;padding-block:42px 28px}
+ .gas-product-media img{height:250px}
+ .gas-product-frame{inset:52px 26px 40px}
+}
+/* Keep the pilot's light panels independent of the legacy dark product skin. */
+body.gas-studio #product-benefits>.editorial-section-inner{width:min(1280px,calc(100% - 96px));max-width:1280px}
+body.gas-studio #product-benefits .benefit-heading h2{color:#fff}
+body.gas-studio #product-benefits .benefit-heading .editorial-kicker{color:#adc6d6}
+body.gas-studio #product-benefits .gas-scene-panel .benefit-visual{display:flex;flex-direction:column;justify-content:center;padding:24px;background:white}
+body.gas-studio #product-benefits .external-render-stage{padding:0;min-height:0;background:white}
+body.gas-studio #product-benefits .external-render-stage img{position:static;height:310px;width:100%;object-fit:contain}
+body.gas-studio #product-benefits .gas-scene-panel figcaption{color:#536672;margin:12px 0 0;padding:0;border:0;text-align:center;font-size:12px}
+body.gas-studio #product-benefits .benefit-detail-link{color:#132e40!important}
+@media(max-width:760px){body.gas-studio #product-benefits>.editorial-section-inner{width:calc(100% - 40px)}body.gas-studio #product-benefits .gas-scene-panel .benefit-visual{padding:18px}body.gas-studio #product-benefits .external-render-stage img{height:220px}}
+/* Pro visual review 1: hierarchy and a consistent spacing rhythm. */
+.gas-studio .gas-hero{padding-top:44px}
+.gas-title-group>p:first-child{margin-bottom:8px}
+.gas-title-group h1{margin-bottom:16px}
+.gas-title-group .gas-display{line-height:1.14;letter-spacing:-.03em;margin-bottom:24px}
+.gas-title-group .editorial-lead{line-height:30px}
+.gas-studio .gas-hero .editorial-button{min-width:136px;min-height:48px;font-size:15px;text-align:center;display:inline-flex;align-items:center;justify-content:center}
+.gas-hero .editorial-actions>a:not(.editorial-button){min-height:48px;display:inline-flex;align-items:center}
+.gas-studio .product-local-nav .editorial-button{background:transparent;border:1px solid #8a9ba7;color:var(--studio-ink)}
+.gas-product-media{padding-block:44px 24px}
+.gas-product-media img{height:440px}
+.gas-media-note{display:none}
+.gas-elements{padding-block:20px}.gas-elements span{font-size:14px}
+.gas-intro{padding-top:24px;padding-bottom:48px}
+.gas-studio .gas-benefits{padding-top:64px}
+@media(max-width:1000px) and (min-width:761px){.gas-product-media img{height:350px}}
+@media(max-width:760px){
+ .gas-studio .gas-hero{padding-top:26px}
+ .gas-title-group .gas-display{line-height:1.2;margin-bottom:16px}
+ .gas-title-group .editorial-lead{line-height:1.65}
+ .gas-studio .gas-hero .editorial-actions{gap:20px}
+ .gas-studio .gas-hero .editorial-button{min-width:124px}
+ .gas-product-media{padding-block:42px 28px}.gas-product-media img{height:250px}
+ .gas-elements{padding-block:24px}.gas-elements span{font-size:13px}
+ .gas-intro{padding-top:24px;padding-bottom:44px}
+ .gas-studio .gas-benefits{padding-top:48px}
+}
+body.gas-studio #main-content .editorial-section-inner{width:min(1280px,calc(100% - 96px));max-width:1280px;margin-inline:auto}
+body.gas-studio #product-specifications{padding-block:48px 16px}
+@media(max-width:760px){body.gas-studio #main-content .editorial-section-inner{width:calc(100% - 40px)}body.gas-studio #product-specifications{padding-block:40px 12px}}
+/* A measurement frame opens into the remote-viewing explanation. */
+body.gas-studio #product-benefits .benefit-heading h2{font-size:clamp(28px,2.5vw,36px)}
+body.gas-studio #product-benefits .benefit-heading{margin-bottom:28px}
+.gas-frame-layout{position:relative;display:grid;grid-template-columns:46% 54%;min-height:420px;isolation:isolate}
+.gas-frame-outline{position:absolute;inset:0;width:100%;height:100%;z-index:-1;overflow:visible;pointer-events:none}
+.gas-frame-outline rect{fill:none;stroke:#a8bdca;stroke-width:1}
+.gas-frame-visual{margin:0;padding:28px 40px;display:flex;flex-direction:column;align-items:center;justify-content:center;min-width:0;background:#edf3f7;position:relative;z-index:-2}
+.gas-frame-visual img{height:290px;max-width:90%;object-fit:contain;mix-blend-mode:multiply;transform-origin:center}
+.gas-frame-visual figcaption{font-size:15px;color:#132e40;text-align:center;margin-top:18px;line-height:1.6}
+.gas-frame-visual figcaption span{display:block;font:13px/1.8 Inter,sans-serif;letter-spacing:.12em;margin-top:4px;color:#536672}
+body.gas-studio #product-benefits .gas-scene-panels{min-width:0;background:transparent}
+body.gas-studio #product-benefits .gas-scene-panel{display:block;margin:0;background:transparent;min-height:420px;border-radius:0;overflow:visible}
+body.gas-studio #product-benefits .gas-scene-panel .benefit-copy{padding:44px 48px;min-height:420px}
+body.gas-studio #product-benefits .gas-scene-panel h3{color:white;font-size:clamp(26px,2.7vw,38px)}
+body.gas-studio #product-benefits .gas-scene-panel .benefit-description{color:#cad8e2}
+body.gas-studio #product-benefits .gas-scene-panel .benefit-kicker{color:#ffb16c}
+body.gas-studio #product-benefits .benefit-detail-link{color:#fff!important}
+@media(max-width:1000px) and (min-width:761px){body.gas-studio #product-benefits .gas-scene-panel .benefit-copy{padding:32px}.gas-frame-visual{padding-inline:24px}}
+@media(max-width:760px){.gas-frame-layout{grid-template-columns:1fr;min-height:0}.gas-frame-outline{display:none}.gas-frame-visual{padding:24px;z-index:0}.gas-frame-visual img{height:220px}.gas-frame-visual figcaption{margin-top:10px}body.gas-studio #product-benefits .gas-scene-panel{min-height:0;border:1px solid #7c95a5;border-top:0}body.gas-studio #product-benefits .gas-scene-panel .benefit-copy{min-height:310px;padding:28px 24px}body.gas-studio #product-benefits .gas-scene-panel h3{font-size:28px}}
+
+/* This orientation heading stays readable even before the shared entrance trigger. */
+body.gas-studio [data-studio-visible]{opacity:1!important;transform:none!important}
+.gas-scene:not([data-gas-step]) .gas-frame-visual{align-self:start;min-height:420px}

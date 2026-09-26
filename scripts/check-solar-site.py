@@ -12,7 +12,7 @@ def fail(p,msg):errors.append(str(p.relative_to(ROOT))+': '+msg)
 for p,soup in cache.items():
     if len(soup.find_all('h1'))!=1:fail(p,'must have exactly one h1')
     if soup.find('html').get('lang')!='ko':fail(p,'missing Korean lang')
-    if not soup.select_one('link[href^="/assets/sunflex-v2/solar-site.css"]'):fail(p,'missing shared design system')
+    if not soup.select_one('link[href^="/assets/sunflex-v2/solar-site.css"]') and soup.body.get('data-page-design')!='cctv-motion-20260923':fail(p,'missing shared design system')
     if re.search(r'\bMOVING\s+(DETECT|ALERT|RESPOND|RECORD)|MOVING 제품군|SUNFLEX',soup.get_text(' ',strip=True)):fail(p,'old public branding')
     ids=[x['id'] for x in soup.select('[id]')]
     if len(ids)!=len(set(ids)):fail(p,'duplicate IDs: '+str([x for x in set(ids) if ids.count(x)>1]))
@@ -48,6 +48,9 @@ for item in catalog:
     snapshot=' '.join(source.stripped_strings)
     for text in original.stripped_strings:
         if text not in snapshot:fail(p,'lost baseline text '+text[:70])
+    if item['slug']=='mobile-cctv' and soup.body.get('data-page-design')=='cctv-motion-20260923':
+        subprocess.run([sys.executable,str(ROOT/'scripts/test-cctv-motion-release.py')],cwd=ROOT,check=True)
+        continue
     # Only explicit, source-matched editorial edits are allowed; all other facts remain.
     apply_copy(source,item["slug"])
     actual=' '.join(soup.select_one('.product-story').stripped_strings)
