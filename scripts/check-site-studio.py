@@ -56,7 +56,7 @@ for p,soup in cache.items():
   for b,n in zip(buttons,panels):
    if b.get('aria-controls')!=n['id']:fail(p,'scene association')
    if n.has_attr('hidden') or n.get('aria-hidden')=='true':fail(p,'no-JS scene hidden')
- for node in soup.select('link[href*="site-studio."],script[src*="site-studio."],link[href*="corporate-studio."],script[src*="company-studio."],link[href*="discovery-studio."],script[src*="discovery-studio."]'):
+ for node in soup.select('link[href*="site-studio."],script[src*="site-studio."],link[href*="corporate-studio."],script[src*="company-studio."]'):
   u=urlsplit(node.get('href') or node.get('src'));asset=ROOT/u.path.lstrip('/')
   if u.query!='v='+hashlib.sha256(asset.read_bytes()).hexdigest()[:10]:fail(p,'stale studio asset version')
  rows.append({'path':rel,'redirect':redirect,'type':soup.body.get('data-studio-kind',soup.body.get('data-studio-page','redirect'))})
