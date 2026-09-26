@@ -2,6 +2,7 @@
 import hashlib,json
 from pathlib import Path
 from bs4 import BeautifulSoup
+from company_studio import enhance_company
 ROOT=Path(__file__).resolve().parents[1]
 CAT={p['slug']:p for p in json.loads((ROOT/'data/solar-catalog.json').read_text())}
 PROFILES=json.loads((ROOT/'data/product-editorial-map.json').read_text())
@@ -104,12 +105,23 @@ def enhance(text,path):
     else:
         body['data-studio-page']=parts[0] if path!='index.html' else 'home'
         if path!='index.html':addclass(body,'studio-corporate')
+    if path in ('products/index.html','company/index.html','cases/index.html','contact/index.html'):
+        addclass(body,'corporate-black')
+    if path=='company/index.html':enhance_company(soup)
     for ext in ('css','js'):
         asset=ROOT/f'assets/sunflex-v2/site-studio.{ext}'
         url='/'+str(asset.relative_to(ROOT))+'?v='+hashlib.sha256(asset.read_bytes()).hexdigest()[:10]
         if ext=='css':soup.head.append(soup.new_tag('link',rel='stylesheet',href=url))
         else:
             tag=soup.new_tag('script',src=url);tag['defer']='';soup.body.append(tag)
+    if 'corporate-black' in body.get('class',[]):
+        asset=ROOT/'assets/sunflex-v2/corporate-studio.css'
+        url='/'+str(asset.relative_to(ROOT))+'?v='+hashlib.sha256(asset.read_bytes()).hexdigest()[:10]
+        soup.head.append(soup.new_tag('link',rel='stylesheet',href=url))
+    if path=='company/index.html':
+        asset=ROOT/'assets/sunflex-v2/company-studio.js'
+        url='/'+str(asset.relative_to(ROOT))+'?v='+hashlib.sha256(asset.read_bytes()).hexdigest()[:10]
+        tag=soup.new_tag('script',src=url);tag['defer']='';soup.body.append(tag)
     return str(soup)
 
 def apply_all():
