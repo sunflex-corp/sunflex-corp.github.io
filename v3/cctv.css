@@ -38,7 +38,7 @@ body.cctv-v3 .conditions p{font-size:15px;line-height:1.7}
 /* nothing under 13px */
 body.cctv-v3 :is(.hero-bottom span,.hero-bottom a,.product-caption span,.model-purpose,.model-connect,.step-index,.conditions span){font-size:14px!important}
 body.cctv-v3 :is(.scene-note,.story-note){font-size:13px!important;color:rgba(255,255,255,.75)}
-body.cctv-v3 .story-note{color:var(--mute-t)!important}
+body.cctv-v3 .story-note{color:rgba(255,255,255,.72)!important}
 body.cctv-v3 .story-tabs button{font-size:15px!important}
 body.cctv-v3 .hero-bottom a{display:inline-flex;align-items:center;min-height:44px}
 
@@ -86,3 +86,11 @@ body.cctv-v3 .pd-w{max-width:none;padding-left:max(24px,5.5vw);padding-right:max
 html body.cctv-v3 main #consultation.pd-cta{width:100%!important;max-width:none!important;margin-left:0!important;margin-right:0!important;border-radius:0!important}
 body.cctv-v3 .hero-copy h1,body.cctv-v3 .hero-copy h1 *{color:#191f28}
 html body.cctv-v3 main .pd-rel .pd-rel-i{background-color:#f2f4f6!important;border-radius:24px;overflow:hidden}
+
+/* AA for the page's muted grey (#697582 sat just under 4.5:1 on white) */
+body.cctv-v3 :is(.hero-copy .eyebrow,.hero-description,.product-caption span,.hero-bottom span,.hero-bottom a,.model-connect,.model-purpose,.section-head p,.conditions span,.conditions p){color:#5b6674}
+body.cctv-v3 .model-choices [aria-selected=true] .model-name{color:#1b64da}
+body.cctv-v3 .pd-rel-e{color:#5b6674}
+body.cctv-v3 .pd-rel-d{color:#4e5968}
+body.cctv-v3 .pd-rel h3{color:#191f28}
+body.cctv-v3 .story .section-head p{color:rgba(255,255,255,.72)}
