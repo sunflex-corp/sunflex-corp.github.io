@@ -10,7 +10,8 @@
 .v3{margin:0;background:var(--bg);color:var(--ink);font-family:"Pretendard Variable",Pretendard,-apple-system,sans-serif;-webkit-font-smoothing:antialiased;word-break:keep-all;overflow-x:hidden}
 .v3 a{color:inherit;text-decoration:none}
 .v3 img{display:block;max-width:100%}
-.v3 h1,.v3 h2,.v3 h3,.v3 p,.v3 dl,.v3 dd{margin:0}
+.v3:not(:where(.pd)) h1,.v3:not(:where(.pd)) h2,.v3:not(:where(.pd)) h3,.v3:not(:where(.pd)) p,.v3:not(:where(.pd)) dl,.v3:not(:where(.pd)) dd{margin:0}
+:where(.v3.pd) :where(h1,h2,h3,h4,p,dl,dd,ul,ol,figure){margin:0}
 .w{max-width:var(--wrap);margin:0 auto;padding:0 24px;box-sizing:content-box}
 @media (max-width:1272px){.w{padding:0 24px;box-sizing:border-box;max-width:none}}
 
