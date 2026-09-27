@@ -610,3 +610,31 @@
 .pd .pd-band .pd-ig>figcaption{color:rgba(255,255,255,.62)}
 .pd .pd-card .pd-card-fig figcaption,.pd .pd-card .pd-ig>figcaption{color:#4e5968}
 .pd .pd-p+.pd-p{margin-top:12px}
+
+/* ===== round 9 — tempo: one spacing system (toss) =====
+   white→white: --section (160/112) · content→colour edge: --edge · inside colour: --bandpad */
+.pd{--edge:128px;--bandpad:128px}
+@media (max-width:900px){.pd{--edge:96px;--bandpad:96px}}
+@media (max-width:700px){.pd{--edge:80px;--bandpad:80px}}
+.pd :is(.pd-band,.pd-choices.is-dark,.pd-hl.is-rail){margin-top:var(--edge)!important;padding-top:var(--bandpad)!important;padding-bottom:var(--bandpad)!important}
+.pd .pd-cta{margin-top:var(--edge)!important;padding-top:var(--bandpad)!important;padding-bottom:var(--bandpad)!important}
+.pd .pd-full{margin-top:var(--edge);padding-top:0!important}
+/* whatever follows a colour block starts one edge below it */
+.pd :is(.pd-band,.pd-choices.is-dark,.pd-hl.is-rail,.pd-full)+:is(.pd-sec,.pd-divider){padding-top:var(--edge)!important}
+/* colour meets colour: no white strip between them */
+.pd :is(.pd-band,.pd-full)+:is(.pd-band,.pd-full){margin-top:0!important}
+.pd .pd-band+.pd-band{padding-top:calc(var(--bandpad) * .5)!important}
+.pd :is(.pd-band,.pd-choices.is-dark,.pd-hl.is-rail)+.pd-cta{margin-top:0!important}
+.pd .pd-hl.is-rail+.pd-related{padding-top:var(--edge)!important}
+/* divider introduces the next block: a shorter step */
+.pd .pd-divider+.pd-sec:not(.pd-band):not(.pd-full){padding-top:88px!important}
+@media (max-width:700px){.pd .pd-divider+.pd-sec:not(.pd-band):not(.pd-full){padding-top:64px!important}}
+/* split hero: no forced tall box (it left an empty band under the product) */
+.pd-hs-g{min-height:0!important;padding-bottom:24px}
+@media (max-width:900px){.pd-hs-word{display:none!important}}
+/* notes / disclaimers under a card group, table or step list: 20px below, muted, never hugging */
+.pd :is(.pd-cards,.pd-steps,.pd-tabs,.pd-table,.pd-rows,.pd-tiles,.pd-bento,.pd-note)+.pd-p{margin-top:20px}
+/* full-bleed photo caption: bottom-right, clear of the copy */
+@media (max-width:700px){.pd-full-fig figcaption{top:auto!important;bottom:14px;right:16px;left:auto!important;max-width:60%;text-align:right;font-size:12px}.pd-full-c{padding-bottom:56px!important}}
+.pd .pd-hero-split+.pd-sec{padding-top:var(--edge)!important}
+@media (max-width:900px){.pd .pd-hero-split+.pd-sec{padding-top:120px!important}}

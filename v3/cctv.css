@@ -94,3 +94,17 @@ body.cctv-v3 .pd-rel-e{color:#5b6674}
 body.cctv-v3 .pd-rel-d{color:#4e5968}
 body.cctv-v3 .pd-rel h3{color:#191f28}
 body.cctv-v3 .story .section-head p{color:rgba(255,255,255,.72)}
+/* tempo on the motion page: same edge rhythm as the other product pages */
+body.cctv-v3{--edge:128px}
+@media (max-width:900px){body.cctv-v3{--edge:96px}}
+@media (max-width:700px){body.cctv-v3{--edge:80px}}
+body.cctv-v3 .field{padding-top:var(--edge)!important}
+body.cctv-v3 .story{margin-top:var(--edge)!important}
+body.cctv-v3 .story-note{margin-top:20px!important;display:block}
+body.cctv-v3 .models{padding-bottom:0!important;margin-bottom:0!important}
+body.cctv-v3 .configure{margin-top:var(--edge)!important;padding-top:var(--edge)!important;padding-bottom:var(--edge)!important}
+body.cctv-v3 .configure+.pd-related,body.cctv-v3 main .pd-related{padding-top:var(--edge)!important}
+html body.cctv-v3 main #consultation.pd-cta{margin-top:var(--edge)!important;padding-top:var(--edge)!important;padding-bottom:var(--edge)!important}
+/* pinned story stage: clear the product sub-nav (the pin sits at 80px/100px) */
+body.cctv-v3 .story-stage{padding-top:clamp(48px,calc((100vh - 698px) / 2 + 21px),180px)!important}
+@media (max-width:700px){body.cctv-v3 .story-stage{padding-top:clamp(56px,calc((100svh - 676px) / 2 + 45px),160px)!important}}
