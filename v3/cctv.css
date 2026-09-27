@@ -1,0 +1,88 @@
+/* Mobile CCTV (motion page): shared product chrome + fixes on top of cctv-motion/motion.css.
+   Keeps the page's own interactions (hero word, field frame, story tabs, model picker). */
+body.cctv-v3{--ink:#191f28;--ink2:#333d4b;--sub:#4e5968;--mute:#8b95a1;--line:#e5e8eb;--card:#f2f4f6;--blue:#3182f6;--blue-d:#1b64da;--blue-w:#e8f3ff;--blue-t:#1b64da;--mute-t:#6b7684}
+
+/* header CTA: motion.css `.cta` rule was pushing the shared header button 55px down */
+body.cctv-v3 .gh .cta{margin:0!important;transform:none!important;opacity:1!important}
+
+/* product sub-nav (same as the other product pages) */
+body.cctv-v3 .pd-local{top:64px}
+body.cctv-v3 .pd-local-a a{color:var(--sub)}
+body.cctv-v3 .pd .pd-local-a .pd-local-cta,body.cctv-v3 .pd-local-a .pd-local-cta{background:var(--blue-t);color:#fff}
+body.cctv-v3 .pd-btn{background:var(--blue-t)}
+body.cctv-v3 .fbar a{background:var(--blue-t)}
+
+/* type scale + rhythm (global reset zeroed the page's own margins) */
+body.cctv-v3 main :is(h1,h2,h3){word-break:keep-all;text-wrap:balance;letter-spacing:-.03em}
+body.cctv-v3 main p{word-break:keep-all;text-wrap:pretty}
+body.cctv-v3 .hero-copy .eyebrow{margin:0 0 20px;font-size:15px}
+body.cctv-v3 .hero-copy h1{font-size:clamp(40px,4.6vw,64px);line-height:1.18;letter-spacing:-.035em}
+body.cctv-v3 .hero-copy .hero-description{margin-top:24px;font-size:18px;line-height:1.7}
+body.cctv-v3 .cctv-acts{display:flex;flex-wrap:wrap;align-items:center;gap:20px;margin-top:40px}
+body.cctv-v3 .cctv-acts .text-link{margin:0}
+body.cctv-v3 .cctv-acts .pd-btn{display:inline-flex;align-items:center;height:52px;padding:0 24px;border-radius:14px;color:#fff;font-size:16px;font-weight:600}
+body.cctv-v3 .field-copy .eyebrow,body.cctv-v3 .section-head .eyebrow,body.cctv-v3 .configure-inner .eyebrow,body.cctv-v3 .step-copy .eyebrow{margin:0 0 16px;font-size:15px}
+body.cctv-v3 .field-copy h2{font-size:clamp(30px,3.4vw,48px);line-height:1.3}
+body.cctv-v3 .field-copy p:not(.eyebrow){margin-top:20px;font-size:18px;line-height:1.7;color:rgba(255,255,255,.86)}
+body.cctv-v3 .section-head h2,body.cctv-v3 .configure-inner h2{font-size:clamp(30px,3.4vw,48px);line-height:1.3}
+body.cctv-v3 .section-head p:not(.eyebrow){margin-top:20px;font-size:18px;line-height:1.7}
+body.cctv-v3 .step-copy h3{margin-bottom:16px}
+body.cctv-v3 .step-copy p:not(.eyebrow){font-size:17px;line-height:1.7}
+body.cctv-v3 .model-detail h3{margin-bottom:12px}
+body.cctv-v3 .model-detail p{font-size:16px;line-height:1.7}
+body.cctv-v3 .model-detail .model-connect{display:inline-block;margin-top:12px}
+body.cctv-v3 .conditions span{display:block;margin-bottom:10px}
+body.cctv-v3 .conditions h3{margin-bottom:8px}
+body.cctv-v3 .conditions p{font-size:15px;line-height:1.7}
+
+/* nothing under 13px */
+body.cctv-v3 :is(.hero-bottom span,.hero-bottom a,.product-caption span,.model-purpose,.model-connect,.step-index,.conditions span){font-size:14px!important}
+body.cctv-v3 :is(.scene-note,.story-note){font-size:13px!important;color:rgba(255,255,255,.75)}
+body.cctv-v3 .story-note{color:var(--mute-t)!important}
+body.cctv-v3 .story-tabs button{font-size:15px!important}
+body.cctv-v3 .hero-bottom a{display:inline-flex;align-items:center;min-height:44px}
+
+/* configure CTA: AA contrast */
+body.cctv-v3 .configure .cta{background:var(--blue-t)!important;color:#fff!important}
+body.cctv-v3 .configure .cta span{color:#fff!important}
+
+/* related + closing band spacing after the configure block */
+body.cctv-v3 .pd-related{padding-top:var(--section,160px)}
+body.cctv-v3 .pd-cta{margin-top:var(--section,160px)}
+
+/* phones: keep the giant word inside the screen */
+@media (max-width:700px){
+  body.cctv-v3 .hero-product{overflow:hidden}
+  body.cctv-v3 .product-word{font-size:clamp(56px,21vw,88px)!important;max-width:100%;overflow:hidden}
+  body.cctv-v3 .hero-copy h1{font-size:38px}
+  body.cctv-v3 .cctv-acts{flex-direction:column;align-items:stretch;gap:8px;max-width:360px}
+  body.cctv-v3 .cctv-acts .pd-btn{justify-content:center;width:100%}
+  body.cctv-v3 .cctv-acts .text-link{justify-content:center;min-height:44px;display:inline-flex;align-items:center}
+  body.cctv-v3 .field-copy p:not(.eyebrow),body.cctv-v3 .section-head p:not(.eyebrow){font-size:16px}
+}
+html body.cctv-v3 main .configure a.cta{background:#1b64da!important;color:#fff!important}
+body.cctv-v3 .pd-rel-h{margin-bottom:40px}
+body.cctv-v3 .pd-rel-h .pd-p{margin-top:12px}
+body.cctv-v3 .pd-rel-i{margin-bottom:20px}
+body.cctv-v3 .pd-rel-e{margin:0 0 6px}
+body.cctv-v3 .pd-rel h3{margin:0 0 8px}
+body.cctv-v3 .pd-cta .pd-k{margin:0 0 12px}
+body.cctv-v3 .pd-cta h2{margin:0}
+body.cctv-v3 .pd-cta .pd-p{margin:16px auto 0}
+body.cctv-v3 .pd-cta .pd-btn{margin-top:32px}
+body.cctv-v3 .pd-btn{display:inline-flex;align-items:center;justify-content:center;height:52px;padding:0 24px;border-radius:14px;color:#fff;font-size:16px;font-weight:600;transition:background .2s}
+body.cctv-v3 .pd-btn:hover{background:#1957c2}
+body.cctv-v3 .pd-btn.lg{height:56px;padding:0 28px;border-radius:16px;font-size:17px}
+body.cctv-v3 .pd-local-a .pd-local-cta{display:inline-flex;align-items:center;height:40px;padding:0 16px;margin-left:6px;border-radius:10px;font-weight:600}
+body.cctv-v3 .pd-cta .pd-k{color:#90c2ff}
+html body.cctv-v3 main section.pd-cta{background:#000!important;color:#fff!important;padding:120px 0}
+html body.cctv-v3 main section.pd-cta h2{color:#fff!important;font-size:clamp(28px,2.8vw,40px)}
+html body.cctv-v3 main section.pd-cta .pd-p{color:rgba(255,255,255,.7)!important}
+html body.cctv-v3 main section.pd-related{background:#fff}
+html body.cctv-v3 main #consultation.pd-cta{background:#000!important}
+html body.cctv-v3 main #consultation .pd-k{color:#90c2ff!important}
+/* align the added chrome to this page's own grid (5.5vw gutters) */
+body.cctv-v3 .pd-w{max-width:none;padding-left:max(24px,5.5vw);padding-right:max(24px,5.5vw)}
+html body.cctv-v3 main #consultation.pd-cta{width:100%!important;max-width:none!important;margin-left:0!important;margin-right:0!important;border-radius:0!important}
+body.cctv-v3 .hero-copy h1,body.cctv-v3 .hero-copy h1 *{color:#191f28}
+html body.cctv-v3 main .pd-rel .pd-rel-i{background-color:#f2f4f6!important;border-radius:24px;overflow:hidden}
