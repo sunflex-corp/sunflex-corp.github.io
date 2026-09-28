@@ -211,3 +211,96 @@ document.querySelectorAll("[data-tour]").forEach(function (tr) {
   }
   all.forEach(function (st) { st.hold.querySelectorAll("img").forEach(function (im) { if (!im.complete) im.addEventListener("load", relayout); }); });
 })();
+
+/* generic scroll-pin: benefit tabs, 관제 순서 tour, 강점 rail hold still while scrolling steps / slides them */
+(function () {
+  var still = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches, items = [];
+  function headH() { var l = document.querySelector(".pd-local"); var b = l ? l.getBoundingClientRect().bottom : 64; return Math.max(56, Math.min(160, b)); }
+  function make(sec, target, n, onP, stepK) {
+    var w = sec.querySelector(":scope > .pd-w") || target.parentNode;
+    var pin = document.createElement("div"); pin.className = "gp-pin";
+    var hold = document.createElement("div"); hold.className = "gp-hold";
+    var room = document.createElement("div"); room.className = "gp-room"; room.setAttribute("aria-hidden", "true");
+    // hold = everything in the section's inner wrapper (heading + target), so the title stays with it
+    var host = w.contains(target) ? w : target.parentNode;
+    while (host.firstChild) hold.appendChild(host.firstChild);
+    // rail lives outside .pd-w: pull it in too
+    if (!hold.contains(target)) hold.appendChild(target);
+    pin.appendChild(hold); pin.appendChild(room); host.appendChild(pin);
+    var roomIn = document.createElement("div"); roomIn.className = "gp-room"; roomIn.setAttribute("aria-hidden", "true");
+    target.parentNode.insertBefore(roomIn, target.nextSibling);
+    var it = { pin: pin, hold: hold, room: room, roomIn: roomIn, target: target, n: n, onP: onP, stepK: stepK, on: false, k: -1 };
+    items.push(it);
+    return it;
+  }
+  function layout() {
+    var vh = innerHeight, hh = headH(), wide = innerWidth > 900;
+    items.forEach(function (it) {
+      [it.hold, it.target].forEach(function (e) { e.classList.remove("is-sticky"); e.style.top = ""; });
+      it.room.style.height = it.roomIn.style.height = "0px"; it.on = false; it.el = null;
+      if (!wide || still) return;
+      if (it.hold.offsetHeight + 24 < vh - hh) { it.el = it.hold; it.r = it.room; }
+      else if (it.target.offsetHeight + 24 < vh - hh) { it.el = it.target; it.r = it.roomIn; }
+      else return;
+      var h = it.el.offsetHeight;
+      it.off = it.el.getBoundingClientRect().top - it.pin.getBoundingClientRect().top;
+      it.top = Math.round(hh + Math.max(12, (vh - hh - h) / 2));
+      it.range = it.n * vh * 0.5;
+      it.r.style.height = it.range + "px";
+      it.el.classList.add("is-sticky"); it.el.style.top = it.top + "px";
+      it.on = true;
+    });
+  }
+  function update() {
+    items.forEach(function (it) {
+      if (!it.on) return;
+      var r = it.pin.getBoundingClientRect();
+      if (r.bottom < -50 || r.top > innerHeight + 50) return;
+      var p = Math.max(0, Math.min(.999, (it.top - (r.top + it.off)) / it.range));
+      it.onP(p);
+    });
+  }
+  function jump(it, i) {
+    if (!it.on) return false;
+    scrollTo({ top: it.pin.getBoundingClientRect().top + scrollY + it.off - it.top + it.range * (i + .5) / it.n, behavior: "smooth" });
+    return true;
+  }
+  // 1) benefit tabs
+  document.querySelectorAll(".pd-benefits.is-tabs").forEach(function (sec) {
+    var tabs = sec.querySelector("[data-tabs]"); if (!tabs) return;
+    var bs = [].slice.call(tabs.querySelectorAll("[role=tab]"));
+    var it = make(sec, tabs, bs.length, function (p) {
+      var k = Math.floor(p * bs.length);
+      if (k !== it.k) { it.k = k; bs[k].click(); }
+      tabs.style.setProperty("--tp", ((p * bs.length) % 1).toFixed(3));
+    });
+    bs.forEach(function (b, i) { b.addEventListener("click", function (e) { if (e.isTrusted) { it.k = i; jump(it, i); } }); });
+  });
+  // 2) 관제 순서 tour
+  document.querySelectorAll("[data-tour]").forEach(function (tr) {
+    var sec = tr.closest("section"), btns = [].slice.call(tr.querySelectorAll(".tour-steps li > button"));
+    tr.dataset.picked = "1";   // scroll drives it; no auto-advance
+    var it = make(sec, tr, btns.length, function (p) {
+      var f = p * btns.length, k = Math.floor(f);
+      if (k !== it.k) { it.k = k; btns[k].click(); }
+      tr.style.setProperty("--tp", (f - k).toFixed(3));
+    });
+    btns.forEach(function (b, i) { b.addEventListener("click", function (e) { if (e.isTrusted) { it.k = i; jump(it, i); } }); });
+  });
+  // 3) 한눈에 보는 강점 rail: vertical scroll slides the cards sideways
+  document.querySelectorAll(".pd-hl.is-rail").forEach(function (sec) {
+    var rail = sec.querySelector(".pd-rail"); if (!rail) return;
+    var cards = rail.querySelectorAll(".pd-card").length;
+    var it = make(sec, rail, Math.max(2, cards - 1), function (p) {
+      var max = rail.scrollWidth - rail.clientWidth;
+      rail.style.scrollSnapType = "none"; rail.scrollLeft = max * Math.min(1, p / .96);
+    });
+  });
+  if (!items.length) return;
+  addEventListener("scroll", function () { requestAnimationFrame(update); }, { passive: true });
+  addEventListener("resize", function () { layout(); update(); });
+  addEventListener("load", function () { layout(); update(); });
+  var lastY = -1; setInterval(function () { if (scrollY !== lastY) { lastY = scrollY; update(); } }, 200);
+  items.forEach(function (it) { it.hold.querySelectorAll("img").forEach(function (im) { if (!im.complete) im.addEventListener("load", function () { layout(); update(); }); }); });
+  layout(); update();
+})();
