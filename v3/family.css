@@ -154,3 +154,42 @@
 .hb3{grid-column:3;grid-row:2}
 .hb{min-height:0}
 @media (max-width:900px){.hbg{grid-template-columns:1fr;grid-template-rows:none}.hb0,.hb1,.hb2,.hb3{grid-column:auto;grid-row:auto;min-height:380px}}
+
+/* family colours (same as the home "현장에 필요한 기능부터" tabs) */
+.fam-detect{color:#a9caff!important}.fam-alert{color:#efbf7a!important}.fam-respond{color:#8dd9c1!important}.fam-record{color:#c9aff5!important}
+.fh .fam-k{font-size:15px;letter-spacing:.02em;margin-bottom:14px}
+.fh h1.fam-name{font-weight:500;letter-spacing:-.035em;line-height:1.05}
+.fh .fh-top{align-items:end}
+
+/* mobile quick categories: 2-col glass grid (Toss "전체" menu / Apple Store "카테고리별 쇼핑"), PC unchanged */
+.quick[data-fam=detect]{--fam:#a9caff}.quick[data-fam=alert]{--fam:#efbf7a}.quick[data-fam=respond]{--fam:#8dd9c1}.quick[data-fam=record]{--fam:#c9aff5}
+@media (max-width:900px){
+  .quick{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:-36px 16px 0;overflow:visible;padding:0;scroll-snap-type:none}
+  .qc{flex:none;min-height:0;aspect-ratio:1/1;padding:16px;border-radius:22px;justify-content:flex-end;
+    background:linear-gradient(160deg,rgba(44,46,54,.92),rgba(20,21,25,.94));
+    -webkit-backdrop-filter:saturate(160%) blur(18px);backdrop-filter:saturate(160%) blur(18px);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.08),0 0 0 1px rgba(255,255,255,.06),0 18px 36px -18px rgba(0,0,0,.7)}
+  .qc .qi{width:52px;height:52px;top:14px;left:14px}
+  .qc span{font-size:13px;margin-bottom:4px;color:var(--fam,#8b95a1);font-weight:600}
+  .qc b{font-size:17px;line-height:1.3;word-break:keep-all}
+  .qc i{top:14px;right:16px;font-size:14px}
+  /* odd count: the last card runs full width, icon left */
+  .qc:last-child:nth-child(odd){grid-column:1/-1;aspect-ratio:auto;min-height:92px;padding:18px 44px 18px 84px;justify-content:center}
+  .qc:last-child:nth-child(odd) .qi{top:50%;left:18px;transform:translateY(-50%)}
+  /* motion: staggered rise (shared [data-reveal] delays) + icon pop + press feedback */
+  .qc[data-reveal]{transform:translateY(24px) scale(.96)}
+  .qc[data-reveal].in{transform:none}
+  .qc .qi{opacity:0;scale:.6;transition:opacity .5s ease,scale .6s cubic-bezier(.3,1.6,.5,1),transform .4s var(--ease)}
+  .qc.in .qi{opacity:1;scale:1;transition-delay:inherit}
+  .qc:active{transform:scale(.97)!important;transition:transform .12s}
+  .qc:hover{transform:none}
+}
+@media (max-width:900px) and (prefers-reduced-motion:reduce){.qc .qi{opacity:1;scale:1}.qc[data-reveal]{transform:none}}
+@media (max-width:900px){
+  .qc{aspect-ratio:auto;min-height:150px}
+  .qc .qi{position:static;margin:0 0 auto;flex:none}
+  .qc span{margin-top:14px}
+  .qc:last-child:nth-child(odd){display:grid;grid-template-columns:52px 1fr;grid-template-rows:auto auto;column-gap:16px;align-content:center;padding:18px 44px 18px 18px;min-height:92px}
+  .qc:last-child:nth-child(odd) .qi{grid-row:1/3;align-self:center;transform:none;margin:0}
+  .qc:last-child:nth-child(odd) span{margin-top:0}
+}
