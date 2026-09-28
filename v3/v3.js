@@ -90,3 +90,20 @@
   };
   addEventListener('scroll', () => requestAnimationFrame(f), { passive: true }); f();
 })();
+
+/* header hides while scrolling down, returns on any upward scroll (never while the menu is open) */
+(function () {
+  var gh = document.querySelector(".gh");
+  if (!gh) return;
+  var last = window.scrollY, acc = 0;
+  function tick() {
+    var y = window.scrollY, d = y - last;
+    last = y;
+    if (gh.classList.contains("open") || y < 120) { acc = 0; gh.classList.remove("is-hidden"); document.body.classList.remove("gh-off"); return; }
+    acc = (d > 0) === (acc > 0) ? acc + d : d;          // accumulate in one direction
+    if (acc > 24) { gh.classList.add("is-hidden"); document.body.classList.add("gh-off"); }
+    else if (acc < -8) { gh.classList.remove("is-hidden"); document.body.classList.remove("gh-off"); }
+  }
+  window.addEventListener("scroll", tick, { passive: true });
+  gh.addEventListener("focusin", function () { gh.classList.remove("is-hidden"); document.body.classList.remove("gh-off"); });
+})();

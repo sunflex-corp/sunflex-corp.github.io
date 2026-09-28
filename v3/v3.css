@@ -111,3 +111,39 @@ a:hover .studio img,.studio:hover img{transform:scale(1.04)}
 .studio:not(.scene) img{mix-blend-mode:multiply}
 /* footer wordmark fully visible */
 .gf .mark{margin:48px 0 0;padding-bottom:.08em;line-height:1}
+
+/* header: identical logo box on every page, nav centred on the viewport, hides while scrolling down */
+.gh .logo{display:flex;align-items:center;height:44px;flex:none}
+.gh .logo img{height:18px!important;width:auto!important;display:block}
+@media (min-width:901px){
+  .gh .bar{display:grid;grid-template-columns:1fr auto 1fr;align-items:center}
+  .gh .bar>.logo{justify-self:start}
+  .gh .bar>nav{justify-self:center}
+  .gh .bar>.cta{justify-self:end}
+}
+.gh{transition:background .3s,transform .35s cubic-bezier(.2,.8,.2,1)}
+.gh.is-hidden:not(.open){transform:translateY(-100%)}
+.pd-local{transition:top .35s cubic-bezier(.2,.8,.2,1)}
+body.gh-off .pd-local{top:0}
+@media (prefers-reduced-motion:reduce){.gh,.pd-local{transition:none}}
+@media (max-width:900px){.gh .burger{height:44px;line-height:1;display:flex;align-items:center;justify-content:center;font-family:inherit}}
+
+/* mega menu: one colour per Solar family (same as the home tabs / family pages) */
+.mega .fam-detect,.mnav .fam-detect{--fc:#a9caff}.mega .fam-alert,.mnav .fam-alert{--fc:#efbf7a}
+.mega .fam-respond,.mnav .fam-respond{--fc:#8dd9c1}.mega .fam-record,.mnav .fam-record{--fc:#c9aff5}
+.mega .col{position:relative;padding-top:20px}
+.mega .col::before{content:"";position:absolute;left:0;top:0;width:28px;height:3px;border-radius:2px;background:var(--fc)}
+.mega .col h4{margin-bottom:18px}
+.mega .col>a{display:flex;flex-direction:column;gap:4px;margin-bottom:16px}
+.mega .col>a .mk{font-size:14px;font-weight:600;color:var(--fc)}
+.mega .col>a .mn{font-size:22px;font-weight:700;color:var(--fc);white-space:nowrap}
+.mega .col>a em{color:var(--fc);opacity:.7}
+.mega .col>a:hover .mn{filter:brightness(1.15)}
+.mega .col li a:hover{color:var(--fc)}
+.mega .col ul{border-left:1px solid color-mix(in srgb,var(--fc) 35%,transparent);padding-left:14px}
+.mnav a{color:var(--fc,inherit)!important}
+.mnav a em{color:var(--fc)}
+.mega{background:#0b0b0e!important;-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
+/* mega menu: no accent bar / tagline above the family name */
+.mega .col::before,.mega .col h4{display:none}
+.mega .col{padding-top:0}

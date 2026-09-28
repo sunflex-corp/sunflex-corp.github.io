@@ -108,3 +108,13 @@ html body.cctv-v3 main #consultation.pd-cta{margin-top:var(--edge)!important;pad
 /* pinned story stage: clear the product sub-nav (the pin sits at 80px/100px) */
 body.cctv-v3 .story-stage{padding-top:clamp(48px,calc((100vh - 698px) / 2 + 21px),180px)!important}
 @media (max-width:700px){body.cctv-v3 .story-stage{padding-top:clamp(56px,calc((100svh - 676px) / 2 + 45px),160px)!important}}
+/* local nav: same box as every other product page, follows the header when it hides */
+body.cctv-v3 .pd-local .pd-w{max-width:1224px!important;margin:0 auto!important;padding:0 24px!important;height:56px}
+body.cctv-v3.gh-off .pd-local{top:0}
+body.cctv-v3 .pd-local-a .pd-local-cta{height:40px;padding:0 16px;border-radius:10px}
+/* the old page's reading-progress line ran through the local nav: pin it to the nav's bottom edge */
+body.cctv-v3 .page-progress{top:120px;transition:top .35s cubic-bezier(.2,.8,.2,1)}
+body.cctv-v3.gh-off .page-progress{top:56px}
+/* models: pinned while scrolling S -> M -> L */
+.model-pin{position:relative}
+.model-layout.is-pinned{position:sticky}
