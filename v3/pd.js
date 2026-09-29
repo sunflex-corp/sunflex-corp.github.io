@@ -16,6 +16,8 @@
       const idx = Math.floor(p * n);
       st.querySelectorAll('.pd-st').forEach((li, i) => li.classList.toggle('on', i === idx));
       st.querySelectorAll('.pd-st-vis > .pd-st-fig, .pd-st-vis > .pd-fig').forEach((fg, i) => fg.classList.toggle('on', i === idx));
+      const vis = st.querySelector('.pd-st-vis'); if (vis) { vis.setAttribute('data-n', String(idx + 1).padStart(2, '0') + ' / ' + String(n).padStart(2, '0')); vis.style.setProperty('--sp', ((p * n) % 1).toFixed(3)); }
+      st.querySelectorAll('.pd-st').forEach((li, i) => li.style.setProperty('--sp', i < idx ? 1 : i === idx ? ((p * n) % 1).toFixed(3) : 0));
     });
   };
   addEventListener('scroll', () => requestAnimationFrame(f), { passive: true }); addEventListener('resize', f); f();
@@ -84,6 +86,8 @@ document.querySelectorAll("[data-tour]").forEach(function (tr) {
     cur = k;
     lis.forEach(function (li, i) { li.classList.toggle("on", i === k); li.querySelector("button").setAttribute("aria-expanded", i === k ? "true" : "false"); });
     pins.forEach(function (p, i) { p.classList.toggle("on", i === k); });
+    var ap = pins[k]; if (ap) { tr.style.setProperty("--px", ap.style.left); tr.style.setProperty("--py", ap.style.top); }
+    tr.setAttribute("data-k", k); var ti = tr.querySelector(".tour-img"); if (ti) { ti.setAttribute("data-step", "0" + (k + 1)); ti.style.setProperty("--px", ap ? ap.style.left : "50%"); ti.style.setProperty("--py", ap ? ap.style.top : "50%"); }
     var bar = lis[k].querySelector(".tour-bar"); if (bar) { bar.style.animation = "none"; void bar.offsetWidth; bar.style.animation = ""; }
   }
   function pick(k) { clearInterval(timer); timer = null; tr.classList.remove("is-auto"); tr.dataset.picked = "1"; set(k); }
@@ -143,6 +147,7 @@ document.querySelectorAll("[data-tour]").forEach(function (tr) {
       });
       btns.forEach(function (b, i) { b.setAttribute("aria-selected", i === k ? "true" : "false"); b.classList.toggle("done", i < k); });
       pans.forEach(function (p, i) { p.classList.toggle("on", i === k); });
+      sc.setAttribute("data-step", k);
       st.cur = k;
     };
     // tab click: scroll to that step inside the pinned range (or just show it when not pinned)
@@ -296,11 +301,132 @@ document.querySelectorAll("[data-tour]").forEach(function (tr) {
       rail.style.scrollSnapType = "none"; rail.scrollLeft = max * Math.min(1, p / .96);
     });
   });
-  if (!items.length) return;
+  // 5) 후크 하방 카메라 두 시선: blocked view fades as the hook-camera view comes up
+  document.querySelectorAll("[data-pd=hook-bottom-camera] #hook-two-views").forEach(function (sec) {
+    var cards = sec.querySelector(".pd-cards"); if (!cards) return;
+    cards.classList.add("is-scrub");
+    make(sec, cards, 2, function (p) { cards.style.setProperty("--tv", Math.max(0, Math.min(1, (p - .15) / .6)).toFixed(3)); });
+  });
+  // 6) 이동식 바디캠: viewfinder story (REC timecode runs with scroll, shots cut per step)
+  document.querySelectorAll("[data-bc]").forEach(function (bc) {
+    var sec = bc.closest("section"), fs = bc.querySelectorAll(".bc-f"), ps = bc.querySelectorAll(".bc-pan"), ls = bc.querySelectorAll(".bc-nav li");
+    var tc = bc.querySelector(".bc-tc"), nn = bc.querySelector(".bc-n"), k0 = -1;
+    function set(k) {
+      if (k === k0) return; k0 = k; bc.setAttribute("data-step", k);
+      [fs, ps, ls].forEach(function (g) { g.forEach(function (e, i) { e.classList.toggle("on", i === k); e.classList.toggle("done", i < k); }); });
+      nn.textContent = "0" + (k + 1) + " / 03";
+      bc.classList.remove("cut"); void bc.offsetWidth; bc.classList.add("cut");
+    }
+    ls.forEach(function (li, i) { li.addEventListener("click", function () { set(i); }); });
+    make(sec, bc, 3, function (p) {
+      var f = p * 3, k = Math.floor(f);
+      set(k);
+      bc.style.setProperty("--bp", (f - k).toFixed(3));
+      var s = 14 * 60 + 32 + Math.round(p * 420), hh = "00", mm = ("0" + Math.floor(s / 60)).slice(-2), ss = ("0" + (s % 60)).slice(-2);
+      tc.textContent = hh + ":" + mm + ":" + ss;
+    });
+  });
+  // 7) 후크 하방 카메라 도입 전 확인: rows step through, the 3D scene points at each part
+  document.querySelectorAll("[data-hf]").forEach(function (g) {
+    var sec = g.closest("section"), li = g.querySelectorAll(".hf-steps li"), sp = g.querySelectorAll(".hf-spot"), k0 = -1;
+    function set(k) {
+      if (k === k0) return; k0 = k; g.setAttribute("data-k", k);
+      var n = g.querySelector(".hf-num"); if (n) n.textContent = "0" + (k + 1);
+      [li, sp].forEach(function (a) { a.forEach(function (e, i) { e.classList.toggle("on", i === k); e.classList.toggle("done", i < k); }); });
+    }
+    li.forEach(function (e, i) { e.addEventListener("click", function () { set(i); }); });
+    set(0);
+    make(sec, g.querySelector(".hf-v"), 3, function (p) { var f = p * 3, k = Math.floor(f); set(k); g.style.setProperty("--hp", (f - k).toFixed(3)); });
+  });
+  // 8) 후크 하방 카메라 인양 전 체크포인트: hook-cam screen locks on to each checkpoint
+  document.querySelectorAll("[data-cp]").forEach(function (g) {
+    var sec = g.closest("section"), li = g.querySelectorAll(".cp-list li"), k0 = -1;
+    function set(k) {
+      if (k === k0) return; k0 = k; g.setAttribute("data-k", k);
+      li.forEach(function (e, i) { e.classList.toggle("on", i === k); e.classList.toggle("done", i < k); });
+    }
+    li.forEach(function (e, i) { e.addEventListener("click", function () { set(i); }); });
+    set(0);
+    var n = li.length;
+    make(sec, g.querySelector(".cp-v"), n + 1, function (p) {
+      var f = p * (n + 1), k = Math.min(n - 1, Math.floor(f));
+      set(k); g.classList.toggle("all", f >= n);
+      g.style.setProperty("--cp", Math.min(1, f - Math.floor(f)).toFixed(3));
+    });
+  });
+  // 9) 바디캠 도입 전 확인: cards open one at a time with scroll
+  document.querySelectorAll("[data-bf]").forEach(function (ol) {
+    var sec = ol.closest("section"), li = ol.querySelectorAll("li"), k0 = -1;
+    function set(k) { if (k === k0) return; k0 = k; li.forEach(function (e, i) { e.classList.toggle("on", i === k); e.classList.toggle("done", i < k); }); }
+    li.forEach(function (e, i) { e.addEventListener("mouseenter", function () { if (innerWidth > 900 && !ol.closest(".is-sticky")) set(i); }); e.addEventListener("click", function () { set(i); }); });
+    make(sec, ol, li.length, function (p) { var f = p * li.length; set(Math.floor(f)); ol.style.setProperty("--bfp", (f - Math.floor(f)).toFixed(3)); });
+  });
+  // 10) numbered rows -> pinned showcase
+  document.querySelectorAll("[data-rs]").forEach(function (rs) {
+    var sec = rs.closest("section"), nav = rs.querySelectorAll(".rs-i"), fs = rs.querySelectorAll(".rs-f"), ps = rs.querySelectorAll(".rs-pan"), big = rs.querySelector(".rs-big"), k0 = -1;
+    function set(k) {
+      if (k === k0) return; k0 = k; rs.setAttribute("data-k", k); big.textContent = (k < 9 ? "0" : "") + (k + 1);
+      [nav, fs, ps].forEach(function (g) { g.forEach(function (e, i) { e.classList.toggle("on", i === k); e.classList.toggle("done", i < k); }); });
+    }
+    var it = make(sec, rs, nav.length, function (p) { var f = p * nav.length; set(Math.floor(f)); rs.style.setProperty("--rp", (f - Math.floor(f)).toFixed(3)); });
+    nav.forEach(function (e, i) { e.querySelector("button").addEventListener("click", function (ev) { set(i); if (ev.isTrusted) jump(it, i); }); });
+  });
+  // 4) 안전종합상황판 확인 질문: scattered sources gather into the board as you scroll (and scatter back going up)
+  document.querySelectorAll(".ss-story").forEach(function (sec) {
+    var m = sec.querySelector(".ss-merge"); if (!m) return;
+    m.classList.add("is-scrub");
+    make(sec, m, 3, function (p) { m.style.setProperty("--mp", Math.min(1, p / .85).toFixed(3)); });
+  });
+  // shared for session-2 scripts (v3/pd-s2.js): pin a section target, step it with scroll
+  window.pdPin = { make: function (sec, target, n, onP) { var it = make(sec, target, n, onP); layout(); update(); return it; }, jump: jump, relayout: function () { layout(); update(); } };
   addEventListener("scroll", function () { requestAnimationFrame(update); }, { passive: true });
   addEventListener("resize", function () { layout(); update(); });
   addEventListener("load", function () { layout(); update(); });
   var lastY = -1; setInterval(function () { if (scrollY !== lastY) { lastY = scrollY; update(); } }, 200);
   items.forEach(function (it) { it.hold.querySelectorAll("img").forEach(function (im) { if (!im.complete) im.addEventListener("load", function () { layout(); update(); }); }); });
   layout(); update();
+})();
+
+/* feature tiles: image rises with scroll, tilt/glare follows the pointer */
+(function () {
+  var tiles = [].slice.call(document.querySelectorAll(".pd-tile")); if (!tiles.length) return;
+  var still = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  tiles.forEach(function (t, i) {
+    var n = t.querySelector(".pd-num"); t.setAttribute("data-n", n ? n.textContent.trim() : ("0" + (i + 1)));
+    if (still) return;
+    t.addEventListener("pointermove", function (e) {
+      var r = t.getBoundingClientRect(), x = (e.clientX - r.left) / r.width, y = (e.clientY - r.top) / r.height;
+      t.style.setProperty("--ry", ((x - .5) * 6).toFixed(2) + "deg"); t.style.setProperty("--rx", ((.5 - y) * 6).toFixed(2) + "deg");
+      t.style.setProperty("--gx", (x * 100).toFixed(1) + "%"); t.style.setProperty("--gy", (y * 100).toFixed(1) + "%");
+    });
+    t.addEventListener("pointerleave", function () { t.style.setProperty("--rx", "0deg"); t.style.setProperty("--ry", "0deg"); });
+  });
+  if (still) return;
+  function upd() {
+    var vh = innerHeight;
+    tiles.forEach(function (t) {
+      var r = t.getBoundingClientRect(), p = Math.max(0, Math.min(1, (vh - r.top) / (vh * .55)));
+      t.style.setProperty("--tp2", p.toFixed(3));
+    });
+  }
+  addEventListener("scroll", function () { requestAnimationFrame(upd); }, { passive: true }); addEventListener("resize", upd); upd();
+})();
+
+/* S1 pages (이동식 CCTV ~ TBM): big photos open up as they scroll in (inset card -> full, slow zoom-out) */
+(function () {
+  var main = document.querySelector("main[data-pd]"); if (!main) return;
+  var S1 = ["mobile-bodycam","hook-bottom-camera","chatgpt-cctv","safety-box","site-cms","led-logo-light","vehicle-entry-alert","co2-temp-humidity","iot-mist","lte-anemometer","smart-environment-board","compact-gas-detector","gas-alarm","tilt-acceleration-sensor","fire-detection","ir3-flame-detector","ai-broadcast","wireless-emergency-broadcast","digital-radio","tbm-solution"];
+  if (S1.indexOf(main.getAttribute("data-pd")) < 0) return;
+  if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  var figs = [].slice.call(document.querySelectorAll(".pd-full-fig, .pd-scene .pd-split-fig, .pd-media .pd-fig:not(.is-stage)"));
+  figs.forEach(function (f) { f.classList.add("px-rv"); });
+  function upd() {
+    var vh = innerHeight;
+    figs.forEach(function (f) {
+      var r = f.getBoundingClientRect(); if (r.bottom < -100 || r.top > vh + 100) return;
+      var p = Math.max(0, Math.min(1, (vh - r.top) / (vh * .75)));
+      f.style.setProperty("--px", p.toFixed(3));
+    });
+  }
+  addEventListener("scroll", function () { requestAnimationFrame(upd); }, { passive: true }); addEventListener("resize", upd); upd();
 })();
