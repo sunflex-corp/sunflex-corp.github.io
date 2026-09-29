@@ -888,3 +888,8 @@
 
 /* 자료와 확인 절차 (2-col lead + check cards): breathing room between the lead and the cards */
 :is([data-pd=ai-quick-risk-assessment],[data-pd=ai-risk-assessment-review],[data-pd=ai-safety-index],[data-pd=ai-subcontractor-safety],[data-pd=ai-similar-accident-alert]) .pd-2col-c .pd-p+.bk{margin-top:20px}
+
+/* phones held sideways (short viewport): a stuck stage would cover the whole screen and hide the steps -> keep it in flow */
+@media (max-width:900px) and (max-height:520px){
+  [data-pd] .s2-sy-v{position:relative;top:auto;width:100%;max-width:480px;margin-left:auto;margin-right:auto}
+}

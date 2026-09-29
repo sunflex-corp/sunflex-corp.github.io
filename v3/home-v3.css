@@ -10,3 +10,18 @@ body.hv3 .gh:not(.scrolled){background:linear-gradient(180deg,rgba(0,0,0,.55),tr
 .map-choice .family-step{font-size:13px;letter-spacing:.08em}
 .map-choice .family-ko{font-size:23px;font-weight:500;line-height:1.3}
 @media (max-width:760px){.map-choice .family-ko{font-size:18px}}
+
+/* ===== mobile sweep 2026-09-29 (home, phones only; legacy home css is more specific, hence !important) ===== */
+@media (max-width:900px){
+  .hv3 .families-guidance{display:none!important}
+  .hv3 .eyebrow{font-size:13px!important}
+  .hv3 .solar-story-heading p{font-size:15px!important}
+  .hv3 .solar-path-number,.hv3 .solar-story-paths small{font-size:13px!important}
+  .hv3 .map-choice .family-step{font-size:13px!important}
+  .hv3 .map-choice .family-ko{font-size:15px!important}
+  .hv3 .map-choice{min-height:48px}
+  .hv3 .solar-story-paths>a+a{margin-top:6px}
+  .hv3 .map-panel .text-link{min-height:44px;display:inline-flex;align-items:center}
+  .hv3 .home-contact-secondary a{font-size:14px!important;min-height:44px;display:inline-flex;align-items:center}
+}
+@media (max-width:380px){.hv3 .product-spotlight h3{font-size:21px!important;word-break:keep-all}}

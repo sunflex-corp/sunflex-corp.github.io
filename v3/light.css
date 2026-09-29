@@ -110,3 +110,29 @@
 /* QA pass */
 .lu-card .ph:not(.scene)>img{mix-blend-mode:multiply}
 .lu-cats{-webkit-mask:linear-gradient(90deg,#000 92%,transparent);mask:linear-gradient(90deg,#000 92%,transparent);padding-right:48px}
+
+/* ===== mobile sweep 2026-09-29 (라인업·고객지원, phones/tablets only) ===== */
+@media (max-width:900px){
+  .v3.lt{--t-mute:#6b7684}
+  .lt .kick{color:var(--t-blue-d)}
+  .lu-help .row b{white-space:nowrap}
+  .lu-help .row{flex-wrap:wrap;gap:16px 32px}
+  .lu-card .ic{font-size:13px}
+  .v3.lt .lu-card h3{margin-top:10px;text-wrap:balance}
+  .lu-bar .reset{min-height:44px}
+  .lu-fam span,.sp-e .n,.sp-notice{color:var(--t-sub)}
+  .v3.lt .text-link{color:var(--t-blue-d);min-height:44px;display:inline-flex;align-items:center}
+  .lu-help .acts .bb{background:var(--t-blue-d)}
+  .sp-contact a,.lu-help a{min-height:44px;display:inline-flex;align-items:center}
+}
+@media (max-width:560px){
+  /* 48 products: two compact columns instead of one tall column */
+  .lu-grid{grid-template-columns:1fr 1fr;gap:28px 12px}
+  .lu-card .ph{border-radius:18px}
+  .lu-card .ic{left:8px;top:8px;padding:3px 8px 3px 3px;gap:4px}
+  .lu-card .ic img{width:20px!important;height:20px!important}
+  .lu-card .fam{margin-top:12px;font-size:13px}
+  .v3.lt .lu-card h3{font-size:16px;line-height:1.4;word-break:keep-all;margin-top:10px}
+  .lu-card p{font-size:14px;line-height:1.5}
+  .lu-help{padding:28px 22px}
+}

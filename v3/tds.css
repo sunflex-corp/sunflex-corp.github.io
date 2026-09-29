@@ -65,3 +65,21 @@ body.pv3 main h2{line-height:var(--lh-title)!important;letter-spacing:var(--ls-t
 body.pv3 main h3{line-height:var(--lh-title)!important;letter-spacing:var(--ls-text)!important}
 body.pv3 main .editorial-button,body.pv3 main .btn{height:48px;display:inline-flex!important;align-items:center;padding:0 22px!important;font-size:16px!important;font-weight:600!important}
 body.pv3 .final-cta .btn{height:56px;padding:0 28px!important;font-size:17px!important;border-radius:16px!important}
+
+/* ===== mobile sweep 2026-09-29: shared chrome on phones (PC untouched) ===== */
+@media (max-width:900px){
+  /* 44px tap targets: header CTA, pill links */
+  .v3 .gh .cta{min-height:44px;display:inline-flex;align-items:center;box-sizing:border-box}
+  .v3 .pill{height:44px}
+  .v3 .pill i{font-size:13px}
+  /* full-screen menu follows the visible viewport (iOS address bar) */
+  /* menu open: the button reads as close, and the page behind stays put */
+  .gh.open .burger{font-size:0}
+  .gh.open .burger::after{content:"\2715";font-size:22px;line-height:1}
+  html:has(.gh.open),html:has(.gh.open) body{overflow:hidden}
+  .gh.open nav{height:calc(100vh - 64px);height:calc(100dvh - 64px);overscroll-behavior:contain;padding-bottom:calc(32px + env(safe-area-inset-bottom))}
+  /* floating consult bar clears the iPhone home indicator */
+  .v3 .fbar{bottom:calc(16px + env(safe-area-inset-bottom))}
+  .v3 .fbar span.t{white-space:normal;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;line-height:1.3;font-size:14px}
+  .v3 .fbar a{background:#1b64da}
+}

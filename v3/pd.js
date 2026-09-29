@@ -318,6 +318,11 @@ document.querySelectorAll("[data-tour]").forEach(function (tr) {
       bc.classList.remove("cut"); void bc.offsetWidth; bc.classList.add("cut");
     }
     ls.forEach(function (li, i) { li.addEventListener("click", function () { set(i); }); });
+    // phones/tablets (no pin): the three notes are stacked, the viewfinder follows whichever note crosses mid-screen
+    if (innerWidth <= 900 && "IntersectionObserver" in window) {
+      var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) set([].indexOf.call(ps, e.target)); }); }, { rootMargin: "-50% 0px -40% 0px" });
+      ps.forEach(function (e) { io.observe(e); });
+    }
     make(sec, bc, 3, function (p) {
       var f = p * 3, k = Math.floor(f);
       set(k);
