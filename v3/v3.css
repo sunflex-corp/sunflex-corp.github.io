@@ -147,3 +147,16 @@ body.gh-off .pd-local{top:0}
 /* mega menu: no accent bar / tagline above the family name */
 .mega .col::before,.mega .col h4{display:none}
 .mega .col{padding-top:0}
+
+/* ===== mobile sweep 2026-09-29 (기업소개 .co, phones only) ===== */
+@media (max-width:900px){
+  .v3.co .hint{font-size:13px}
+  .v3.co .it .d a,.v3.co .rc .c a{min-height:44px;display:inline-flex;align-items:center}
+  .v3.co .info{margin-top:28px}
+  /* 현장과 관제실 / 경계 없이: on a phone the words slid past the screen edges -> stack them above and below the pillar */
+  .v3.co #s4 .word{left:0!important;right:0!important;text-align:center;font-size:28px}
+  .v3.co #wl{top:calc(50% - 124px)}
+  .v3.co #wr{top:calc(50% + 124px)}
+  /* shorter holds: the pinned chapters stopped for 3.8–4 screens each */
+  .v3.co #s3{height:300vh}.v3.co #s4{height:320vh}.v3.co #s7{height:300vh}
+}

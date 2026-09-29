@@ -118,3 +118,6 @@ body.cctv-v3.gh-off .page-progress{top:56px}
 /* models: pinned while scrolling S -> M -> L */
 .model-pin{position:relative}
 .model-layout.is-pinned{position:sticky}
+
+/* ===== mobile sweep 2026-09-29 ===== */
+@media (max-width:900px){body.cctv-v3 .pd-local-a .pd-local-cta{height:44px}}
