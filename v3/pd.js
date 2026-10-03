@@ -354,6 +354,11 @@ document.querySelectorAll("[data-tour]").forEach(function (tr) {
     li.forEach(function (e, i) { e.addEventListener("click", function () { set(i); }); });
     set(0);
     var n = li.length;
+    // phones/tablets (no pin): the row crossing mid-screen drives the hook-cam view
+    if (innerWidth <= 900 && "IntersectionObserver" in window) {
+      var cio = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) set([].indexOf.call(li, e.target)); }); }, { rootMargin: "-45% 0px -45% 0px" });
+      li.forEach(function (e) { cio.observe(e); });
+    }
     make(sec, g.querySelector(".cp-v"), n + 1, function (p) {
       var f = p * (n + 1), k = Math.min(n - 1, Math.floor(f));
       set(k); g.classList.toggle("all", f >= n);

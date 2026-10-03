@@ -1542,3 +1542,20 @@ html{overflow-anchor:none}
 /* heading emphasis: colour, not faux-italic Hangul */
 .pd .pd-t em{font-style:normal;color:var(--blue-t)}
 .hf-mon i{font-size:12px}
+
+/* scroll audit 2026-10, third pass */
+@media (max-width:900px){
+  /* flow steps: the text column shrank to its words, so step photos filled only ~55% of the card */
+  .pd-st>div{flex:1 1 auto;min-width:0}
+}
+/* step visual: contain is for white-background 3D art; photos letterboxed inside the frame */
+.pd-st-vis .pd-st-fig:not(.is-stage) img:not([data-3d]){object-fit:cover}
+/* compact gas detector system diagram: show the whole drawing instead of cropping its labels */
+[data-pd=compact-gas-detector] #detail-2 .pd-split-fig{background:#fff}
+[data-pd=compact-gas-detector] #detail-2 .pd-split-fig img{object-fit:contain}
+/* two dark sections in a row: their paddings added up to a near-empty black screen */
+.pd .pd-sec:is(.pd-band,.pd-full,.is-dark):has(+.pd-sec:is(.pd-band,.pd-full,.is-dark)){padding-bottom:64px!important}
+@media (max-width:900px){.pd .pd-sec:is(.pd-band,.pd-full,.is-dark):has(+.pd-sec:is(.pd-band,.pd-full,.is-dark)){padding-bottom:40px!important}}
+/* page end: the stuck product nav (and the CCTV progress line) no longer linger as a sliver over the footer */
+.pd-local,.page-progress{transition:opacity .2s}
+.pd-local.at-foot,.page-progress.at-foot{opacity:0;pointer-events:none}

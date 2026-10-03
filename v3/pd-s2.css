@@ -901,3 +901,5 @@
 }
 /* 협력업체 phone mock-up: names and trades on one line */
 [data-pd=ai-subcontractor-safety] .asd-ps li b,[data-pd=ai-subcontractor-safety] .asd-ps li span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+/* "위험 구역" sat on the overhead rail line: move it just under the rail */
+[data-pd=smart-safety-hook] .ssh-zl{top:84px}
