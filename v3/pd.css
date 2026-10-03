@@ -1518,7 +1518,27 @@ html{overflow-anchor:none}
   /* highlight rail: the next card peeks in from the right; show it with the rail instead of waiting for its own reveal */
   .pd .pd-rail.in [data-rv]{opacity:1;transform:none}
 }
-@media (max-width:700px){
-  /* local nav product name: ellipsis only works on a block box (inline-flex clipped it mid-letter) */
+@media (max-width:900px){
+  /* local nav product name: ellipsis only works on a block box (inline-flex clipped it mid-letter); 44px tap height on tablets too */
   .pd-local-n{display:block;line-height:44px;min-width:0}
+  /* bento lead card: text was centred as a narrow block, reading as an odd indent */
+  .pd-bento .pd-cards .pd-card:first-child .pd-card-c{align-self:stretch;padding:28px 32px 32px}
+  /* "도입 전에 확인할 세 가지" cards don't step with scroll on narrow screens: give all three the same open look */
+  .pd .bf-cards li{background:#fff;box-shadow:inset 0 0 0 1px #e5e8eb}
+  .pd .bf-cards li .bf-img img{opacity:1;transform:none;filter:none}
+  .pd .bf-cards li .bf-c{flex-direction:row;gap:12px}
+  .pd .bf-cards li .bf-c span{color:#1b64da}
+  .pd .bf-cards li .bf-c b{color:#191f28;font-size:20px;white-space:normal}
 }
+@media (max-width:600px){
+  /* scene diagram labels rendered ~7-9px on phones */
+  .sc-lab{font-size:25px}
+}
+/* bento: one card in a 2-column row left half the row empty */
+.pd-bento .pd-cards .pd-card:not(:first-child):last-child:nth-child(even){grid-column:1/-1}
+/* bento cards: white like the illustration area instead of a grey text half */
+.pd .pd-bento .pd-card{background:#fff}
+.pd .pd-bento .pd-card-fig.is-hl3d{border-bottom:0}
+/* heading emphasis: colour, not faux-italic Hangul */
+.pd .pd-t em{font-style:normal;color:var(--blue-t)}
+.hf-mon i{font-size:12px}

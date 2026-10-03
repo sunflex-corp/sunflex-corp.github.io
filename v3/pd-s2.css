@@ -899,3 +899,5 @@
   [data-pd] .s2-tag{bottom:10px;right:10px;padding:3px 10px;border-radius:999px;background:rgba(255,255,255,.9);font-size:12px;line-height:1.5;z-index:3}
   [data-pd] .s2-story.is-dark .s2-tag{background:rgba(11,13,16,.78)}
 }
+/* 협력업체 phone mock-up: names and trades on one line */
+[data-pd=ai-subcontractor-safety] .asd-ps li b,[data-pd=ai-subcontractor-safety] .asd-ps li span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
