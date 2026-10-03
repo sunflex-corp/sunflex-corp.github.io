@@ -83,10 +83,13 @@
 (() => {
   const bar = document.querySelector('[data-fbar]'); if (!bar) return;
   const foot = document.querySelector('.gf');
+  // the page's own consult block makes the bar redundant (and the bar used to sit on its button)
+  const cta = document.querySelector('#consultation, .pd-cta');
   const f = () => {
     const past = scrollY > innerHeight * .6;
     const nearFoot = foot && foot.getBoundingClientRect().top < innerHeight - 40;
-    bar.classList.toggle('on', past && !nearFoot);
+    const atCta = cta && cta.getBoundingClientRect().top < innerHeight - 40;
+    bar.classList.toggle('on', past && !nearFoot && !atCta);
   };
   addEventListener('scroll', () => requestAnimationFrame(f), { passive: true }); f();
 })();

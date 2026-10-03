@@ -893,3 +893,9 @@
 @media (max-width:900px) and (max-height:520px){
   [data-pd] .s2-sy-v{position:relative;top:auto;width:100%;max-width:480px;margin-left:auto;margin-right:auto}
 }
+
+/* scroll audit 2026-10: the "예시 화면" tag hung below the stuck stage and printed over the steps scrolling underneath */
+@media (max-width:900px){
+  [data-pd] .s2-tag{bottom:10px;right:10px;padding:3px 10px;border-radius:999px;background:rgba(255,255,255,.9);font-size:12px;line-height:1.5;z-index:3}
+  [data-pd] .s2-story.is-dark .s2-tag{background:rgba(11,13,16,.78)}
+}

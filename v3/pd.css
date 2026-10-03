@@ -1499,3 +1499,26 @@
 @media (max-width:900px) and (max-height:520px){
   .bc-vis{position:relative;top:auto;width:100%;max-width:480px;margin:0 auto}
 }
+
+/* scroll audit 2026-10 (SCROLL_REVIEW_AUDIT.md) */
+/* pinned sections re-measure while the page scrolls; with scroll anchoring on, Chrome then jumped ~2000px past them */
+html{overflow-anchor:none}
+/* two dark sections in a row: the section margin showed the white page between them as a stripe */
+.pd :is(.pd-sec,.pd-hero):is(.pd-band,.pd-full,.is-dark,.pd-hero-ov)+.pd-sec:is(.pd-band,.pd-full,.is-dark){margin-top:0!important}
+/* benefits footnote ("참고 장면") floated 100-150px under the last feature: pull it up to read as that list's note */
+.pd .pd-feat+.pd-fig-note{margin-top:-24px}
+@media (min-width:901px){
+  .pd .pd-feat+.pd-fig-note{margin-top:-72px}
+  /* consult bar: room for the full product name on desktop */
+  .v3.pd .fbar{width:min(680px,calc(100vw - 32px))}
+}
+@media (max-width:900px){
+  /* hero photo: .pd-fig img{height:auto} beat the hero's height:100%, leaving a grey strip under the picture */
+  .pd-hero-fig.pd-fig img,.pd-hero-fig.pd-fig picture{height:100%}
+  /* highlight rail: the next card peeks in from the right; show it with the rail instead of waiting for its own reveal */
+  .pd .pd-rail.in [data-rv]{opacity:1;transform:none}
+}
+@media (max-width:700px){
+  /* local nav product name: ellipsis only works on a block box (inline-flex clipped it mid-letter) */
+  .pd-local-n{display:block;line-height:44px;min-width:0}
+}

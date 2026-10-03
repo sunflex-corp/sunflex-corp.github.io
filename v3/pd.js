@@ -107,7 +107,7 @@ document.querySelectorAll("[data-tour]").forEach(function (tr) {
    a pulse travels each newly lit link; tabs jump the scroll to their step */
 (function () {
   var still = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  var NS = "http://www.w3.org/2000/svg", all = [], HEAD = 121, STEP = 0.55;
+  var NS = "http://www.w3.org/2000/svg", all = [], HEAD = 121, STEP = 0.55, STEP_NARROW = 0.4;
   function headH() {
     var b = 0;
     document.querySelectorAll("header.gh, .pd-local").forEach(function (e) { var r = e.getBoundingClientRect(); if (getComputedStyle(e).position !== "static") b = Math.max(b, r.bottom); });
@@ -171,13 +171,14 @@ document.querySelectorAll("[data-tour]").forEach(function (tr) {
       st.pin.style.height = ""; st.room.style.height = "0px";
       st.on = false; st.el = null;
       if (st.n < 2) return;
-      if (wide && st.hold.offsetHeight + 32 < room) st.el = st.hold;
+      // phones/tablets too: pinning the heading with the scene keeps its title on screen instead of a blank band above it
+      if (st.hold.offsetHeight + 32 < room) st.el = st.hold;
       else if (st.sc.offsetHeight + 24 < room) st.el = st.sc;
       if (!st.el) return;
       var h = st.el.offsetHeight;
       st.off = st.el.getBoundingClientRect().top - st.pin.getBoundingClientRect().top;
       st.top = Math.round(hh + Math.max(16, (room - h) / 2));
-      st.range = st.n * vh * STEP;
+      st.range = st.n * vh * (wide ? STEP : STEP_NARROW);
       // the scroll room must live in the sticky element's own parent: pin for the hold, hold for the scene
       if (st.el === st.hold) st.pin.style.height = (st.hold.offsetHeight + st.range) + "px";
       else st.room.style.height = st.range + "px";
