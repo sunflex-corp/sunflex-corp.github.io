@@ -100,6 +100,11 @@ def render(path,title,desc,body,active=''):
                 if caption: caption.string=description
         result=str(cms)
     result=enhance_studio(result, path.split('/')[1] if path.startswith('products/') else '')
+    if path.startswith('products/'):
+        from product_repeated_scenes import apply_repeated_scenes
+        result=apply_repeated_scenes(result, path.split('/')[1])
+        from product_quality_d import apply_quality_d
+        result=apply_quality_d(result, path.split('/')[1])
     p.write_text(result)
 g.header=header;g.footer=footer;g.render=render
 
