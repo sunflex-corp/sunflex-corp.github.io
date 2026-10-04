@@ -886,5 +886,113 @@
     "prompt": "Use case stylized-concept. ONE new white-background 4:3 soft 3D illustration matching reference site's smooth rounded toy-like mannequin people. Scene for attendance-card flow final explanation: using entry/exit records to reconcile actual people at an outdoor assembly point. NO card reader or gate hardware in this scene. A yellow-hardhat worker in foreground hands his plain white attendance card to a white-hardhat supervisor standing beside a SMALL waist-height white folding table; supervisor compares it with two paper roster sheets on tabletop. Three other faceless mannequin workers stand spaced in a shallow line behind them within a simple blue floor boundary. Roster sheets contain only matching columns of tiny person icons and short gray bars; no letters or digits. This is a human cross-check of records against workers, not an automated evacuation guarantee. No tablet or giant monitor, no checkmarks floating, no beacons, no emergency lamps, no megaphone. Smooth blank heads NO hair eyes mouth nose facial features, gray workwear yellow safety vests, white/gray/blue palette, clean white seamless studio background with soft shadows, full scene centered and generous margin, minimally textured surfaces. No readable words logos numbers watermark.",
     "generated_file": "output/repeated-scenes-nine-20261004/exec-e0621cd5-ee7a-48ee-b191-23a783417118.png",
     "sha256": "4d5e4da96bd6958957a08a737fab4de95cc3b038e9bb4a662e0963a4305cf532"
+  },
+  "compact-gas-detector-product-benefits-1-20261004": {
+    "asset": "/media/product-scenes/compact-gas-detector-product-benefits-field-measurement-20261004-1083.webp",
+    "width": 1083,
+    "height": 1452,
+    "alt": "배관 설비 앞에서 소형 복합가스 측정기를 들고 측정 상태를 확인하는 작업자의 손",
+    "caption": "배관 설비 앞에서 소형 복합가스 측정기를 들고 측정 상태를 확인하는 작업자의 손",
+    "reference": "/media/derived/product-compact-gas-detector-reference-white-stage3-20260912-1083.webp",
+    "provenance": "Product-reference-conditioned photorealistic scene generated with built-in image_gen. No readable text or logos. All original responsive dimensions retained; each WebP/AVIF export is no larger than the corresponding original WebP. SHA256 identifies the largest WebP export. Screens use illustrative icons/bars, not actual readings.",
+    "prompt": "Use case: photorealistic-natural. One final website installation/use photograph. Reference image 1 is authoritative product shape and color. Portrait 1083:1452 composition. Close editorial photo of a gloved hand holding the reference orange compact multi-gas detector upright at waist level beside a gray industrial pipe inspection point. Device fills middle half of image, realistic handheld scale. Gray workwear torso is cropped at shoulders; NO head. Softly blurred pipework behind. Preserve exactly two round white upper sensor grilles, horizontal white vents, orange protective housing, existing rectangular screen and single bottom button, no added probe or cable. Screen has only faint horizontal bars, no numerals. This is on-site measurement, not office review. Match restrained natural-light industrial photography of existing product-scenes 20260923. Absolute constraints: NO readable text, letters, numbers, brand logos (including JIYOU SUNFLEX), watermark, captions, graphic layout, invented product functions or hardware. If any human head accidentally enters frame it must be smooth blank mannequin with no eyes mouth nose hair; prefer no heads. Do not turn the whole scene into a toy or 3D cartoon. Preserve real materials and plausible scale.",
+    "generated_file": "output/product-photo-b-20261004/compact-gas-detector-generated.png",
+    "sha256": "0230b6058ef4ef2f1bac2d43a6259e89c76474bdae75da7d94e436cf7c02410d"
+  },
+  "digital-radio-detail-4-1-20261004": {
+    "asset": "/media/product-scenes/digital-radio-detail-4-radio-handover-20261004-1254.webp",
+    "width": 1254,
+    "height": 1254,
+    "alt": "작업 전 현장 지급대에서 디지털 무전기를 건네는 작업자들의 손",
+    "caption": "작업 전 현장 지급대에서 디지털 무전기를 건네는 작업자들의 손",
+    "reference": "/media/derived/product-digital-radio-white-approved-20260912-1254.webp",
+    "provenance": "Product-reference-conditioned photorealistic scene generated with built-in image_gen. No readable text or logos. All original responsive dimensions retained; each WebP/AVIF export is no larger than the corresponding original WebP. SHA256 identifies the largest WebP export. Screens use illustrative icons/bars, not actual readings.",
+    "prompt": "Use case: photorealistic-natural. One final website installation/use photograph. Reference image 1 is authoritative product shape and color. Square 1:1 photograph. Quiet site equipment issue counter at morning, tightly framed at waist with two workers' gray sleeved gloved hands passing ONE reference black radio to each other above a clean pale gray counter. One identical spare radio lying softly out of focus to side. Product foreground: exact long antenna, two top knobs, tiny red top button, horizontal speaker grille, pale-bordered small screen and six lower buttons in reference. Remove all brand lettering and button lettering, retain unlettered buttons and chevron icons. No chargers or invented components. No heads in frame. Soft daylight, blurred neutral site locker background. Match restrained natural-light industrial photography of existing product-scenes 20260923. Absolute constraints: NO readable text, letters, numbers, brand logos (including JIYOU SUNFLEX), watermark, captions, graphic layout, invented product functions or hardware. If any human head accidentally enters frame it must be smooth blank mannequin with no eyes mouth nose hair; prefer no heads. Do not turn the whole scene into a toy or 3D cartoon. Preserve real materials and plausible scale.",
+    "generated_file": "output/product-photo-b-20261004/digital-radio-generated.png",
+    "sha256": "e5659ff1d7403e239a0807b11649d382021fe93343ded6f88c97e26aef1030f1"
+  },
+  "emergency-signal-location-detail-4-1-20261004": {
+    "asset": "/media/product-scenes/emergency-signal-location-detail-4-response-check-20261004-1280.webp",
+    "width": 1280,
+    "height": 1226,
+    "alt": "안전모 호출 장치를 착용한 작업자 곁에서 휴대전화의 위치 표시를 확인하는 안전관리자",
+    "caption": "안전모 호출 장치를 착용한 작업자 곁에서 휴대전화의 위치 표시를 확인하는 안전관리자",
+    "reference": "/media/derived/product-emergency-signal-location-restored-20260913-1280.webp",
+    "provenance": "Product-reference-conditioned photorealistic scene generated with built-in image_gen. No readable text or logos. All original responsive dimensions retained; each WebP/AVIF export is no larger than the corresponding original WebP. SHA256 identifies the largest WebP export. Screens use illustrative icons/bars, not actual readings.",
+    "prompt": "Use case: photorealistic-natural. One final website installation/use photograph. Reference image 1 is authoritative product shape and color. Nearly square 1280:1226 photo. On construction site a supervisor and a worker stand together after a call. Close over-the-shoulder composition: back-side of worker's white helmet with orange rim band and the exact small black circular side button in silver ring visible foreground left. On right, supervisor gloved hands hold a plain smartphone showing just ONE location pin and three neutral short bars, NO map labels text or numbers. Shoulder and helmet backs only, heads not visible. No pressing button here; scene is receiving and checking the reported location together, distinct from existing button-press image. Preserve helmet device, delete all printed wording. Match restrained natural-light industrial photography of existing product-scenes 20260923. Absolute constraints: NO readable text, letters, numbers, brand logos (including JIYOU SUNFLEX), watermark, captions, graphic layout, invented product functions or hardware. If any human head accidentally enters frame it must be smooth blank mannequin with no eyes mouth nose hair; prefer no heads. Do not turn the whole scene into a toy or 3D cartoon. Preserve real materials and plausible scale.\nRefinement: Edit only the worker head area under the white helmet in this photograph: remove ALL visible black hair and skin features at the nape/ear. Replace exposed head and neck with smooth matte neutral-gray featureless mannequin material: no hair, ears, eyes, nose, mouth or other facial anatomy. Keep helmet, exact small button, orange rim, smartphone with pin and bars, hands, clothing, site background, lighting, framing and all other pixels unchanged. Also remove any residual tiny marks on orange helmet band; plain orange stripe. No readable words or numbers or logo.",
+    "generated_file": "output/product-photo-b-20261004/emergency-signal-location-generated.png",
+    "sha256": "df0843ccb23770ff25a195d9d3a3ec9220b42455223509d72617f6423296530c"
+  },
+  "equipment-approach-alarm-detail-5-1-20261004": {
+    "asset": "/media/product-scenes/equipment-approach-alarm-detail-5-rear-mount-20261004-1254.webp",
+    "width": 1254,
+    "height": 1254,
+    "alt": "정차한 굴착기 뒤편에 고정한 접근경보 장치의 설치 상태를 점검하는 손",
+    "caption": "정차한 굴착기 뒤편에 고정한 접근경보 장치의 설치 상태를 점검하는 손",
+    "reference": "/media/derived/product-equipment-approach-alarm-restored-white-20260912-1254.webp",
+    "provenance": "Product-reference-conditioned photorealistic scene generated with built-in image_gen. No readable text or logos. All original responsive dimensions retained; each WebP/AVIF export is no larger than the corresponding original WebP. SHA256 identifies the largest WebP export. Screens use illustrative icons/bars, not actual readings.",
+    "prompt": "Use case: photorealistic-natural. One final website installation/use photograph. Reference image 1 is authoritative product shape and color. Square 1:1 editorial photo of reference yellow warning sensor housing with its existing red domed beacon installed vertically on rear-side flat metal surface of a parked yellow excavator. Camera at device height, cropped close to mounting point. A single gray work sleeve and gloved hand checks mounting screws at edge, no human heads, no people walking nearby. Show exact yellow enclosure, black square front sensor and white circular lower element, existing red beacon and dark rings. Only that unit from reference, omit separate cabin indicator. No additional lamps, sensors, wires or hardware except ordinary fastening screws. Background softly blurred outdoor maintenance area. Match restrained natural-light industrial photography of existing product-scenes 20260923. Absolute constraints: NO readable text, letters, numbers, brand logos (including JIYOU SUNFLEX), watermark, captions, graphic layout, invented product functions or hardware. If any human head accidentally enters frame it must be smooth blank mannequin with no eyes mouth nose hair; prefer no heads. Do not turn the whole scene into a toy or 3D cartoon. Preserve real materials and plausible scale.",
+    "generated_file": "output/product-photo-b-20261004/equipment-approach-alarm-generated.png",
+    "sha256": "1a8bd817c8791d021deef79f64d0189c22a67dd7de11ae1150093b1359f9d10c"
+  },
+  "gas-alarm-detail-5-1-20261004": {
+    "asset": "/media/product-scenes/gas-alarm-detail-5-sensor-position-20261004-933.webp",
+    "width": 933,
+    "height": 1686,
+    "alt": "설비실 벽면에 가스 경보기를 고정하고 설치 위치를 점검하는 장면",
+    "caption": "설비실 벽면에 가스 경보기를 고정하고 설치 위치를 점검하는 장면",
+    "reference": "/media/derived/product-gas-alarm-white-approved-20260912-933.webp",
+    "provenance": "Product-reference-conditioned photorealistic scene generated with built-in image_gen. No readable text or logos. All original responsive dimensions retained; each WebP/AVIF export is no larger than the corresponding original WebP. SHA256 identifies the largest WebP export. Screens use illustrative icons/bars, not actual readings.",
+    "prompt": "Use case: photorealistic-natural. One final website installation/use photograph. Reference image 1 is authoritative product shape and color. Tall portrait 933:1686 photo. Reference tall yellow gas detector mounted vertically on a smooth gray metal structural panel in an industrial service alcove, with a soft out-of-focus pipe elbow behind. Exact four black round magnetic mounting discs two each side, yellow metal rectangular enclosure, white upper inner panel, small existing gray LED dot, dark rectangular screen, four yellow lower louvers, black top cable through silver gland. Preserve geometry; remove ALL lettering including GAS MOVING EYES RADIONODE and logos; screen only dim bars. A gloved hand at very bottom right checks mounting edge without covering device, no head or body. No added external alarm beacon. Soft diffuse light, natural restrained tone. Match restrained natural-light industrial photography of existing product-scenes 20260923. Absolute constraints: NO readable text, letters, numbers, brand logos (including JIYOU SUNFLEX), watermark, captions, graphic layout, invented product functions or hardware. If any human head accidentally enters frame it must be smooth blank mannequin with no eyes mouth nose hair; prefer no heads. Do not turn the whole scene into a toy or 3D cartoon. Preserve real materials and plausible scale.",
+    "generated_file": "output/product-photo-b-20261004/gas-alarm-generated.png",
+    "sha256": "f636d5eca45b186e3ada3ea7cc9da6f1b13860e0a9fd826a5024387da60a51dc"
+  },
+  "hazard-area-broadcast-detail-5-1-20261004": {
+    "asset": "/media/product-scenes/hazard-area-broadcast-detail-5-tripod-install-20261004-1254.webp",
+    "width": 1254,
+    "height": 1254,
+    "alt": "공사 구역 가장자리에 삼각대로 세운 위험지역 안내방송 장치",
+    "caption": "공사 구역 가장자리에 삼각대로 세운 위험지역 안내방송 장치",
+    "reference": "/media/derived/product-hazard-area-broadcast-reference-white-20260912-1254.webp",
+    "provenance": "Product-reference-conditioned photorealistic scene generated with built-in image_gen. No readable text or logos. All original responsive dimensions retained; each WebP/AVIF export is no larger than the corresponding original WebP. SHA256 identifies the largest WebP export. Screens use illustrative icons/bars, not actual readings.",
+    "prompt": "Use case: photorealistic-natural. One final website installation/use photograph. Reference image 1 is authoritative product shape and color. Square 1:1 documentary product installation photograph. Exact reference off-white rectangular broadcast box with yellow top carry handle, one upper small round motion sensor and single large white circular wave-grille speaker below mounted on a simple sturdy black tripod on a level concrete construction floor. Tripod is supported by section text. Camera three-quarter front, full box and tripod feet visible, equipment fills 65 percent height. Softly blurred unfinished structural bay and safe barrier in background. No human, no separate horn, no beacon, no solar panel, no added controls, no labels or logos. Quiet neutral daylight, subdued gray site palette. Match restrained natural-light industrial photography of existing product-scenes 20260923. Absolute constraints: NO readable text, letters, numbers, brand logos (including JIYOU SUNFLEX), watermark, captions, graphic layout, invented product functions or hardware. If any human head accidentally enters frame it must be smooth blank mannequin with no eyes mouth nose hair; prefer no heads. Do not turn the whole scene into a toy or 3D cartoon. Preserve real materials and plausible scale.",
+    "generated_file": "output/product-photo-b-20261004/hazard-area-broadcast-generated.png",
+    "sha256": "be77ca88d525bd908eba5338bf0467a473bff377ea54978a2eb672a19fc2bae7"
+  },
+  "healthcare-heart-band-detail-5-1-20261004": {
+    "asset": "/media/product-scenes/healthcare-heart-band-detail-5-emergency-press-20261004-1622.webp",
+    "width": 1622,
+    "height": 969,
+    "alt": "작업자가 손목 밴드 측면의 응급버튼을 누르는 장면",
+    "caption": "작업자가 손목 밴드 측면의 응급버튼을 누르는 장면",
+    "reference": "/media/derived/product-healthcare-heart-band-white-approved-20260912-1622.webp",
+    "provenance": "Product-reference-conditioned photorealistic scene generated with built-in image_gen. No readable text or logos. All original responsive dimensions retained; each WebP/AVIF export is no larger than the corresponding original WebP. SHA256 identifies the largest WebP export. Screens use illustrative icons/bars, not actual readings.",
+    "prompt": "Use case: photorealistic-natural. One final website installation/use photograph. Reference image 1 is authoritative product shape and color. Wide landscape 1622:969 editorial macro photograph. Reference black rectangular heart band worn on LEFT wrist with black silicone strap, right index fingertip clearly pressing the existing gold-ring SIDE button on right edge of watch case. Show contact specifically at side button, not strap or screen. Crop to gray sleeves, wrists and hands only, NO faces or heads. Band screen dark with one small pale phone handset icon, no other UI, text or digits. Exact case and strap proportions reference; no invented red emergency button, no floating overlays, no new parts. Background softly blurred gray construction rest alcove. Distinct from strap-adjustment shot by lower three-quarter side angle making button contact unmistakable. Match restrained natural-light industrial photography of existing product-scenes 20260923. Absolute constraints: NO readable text, letters, numbers, brand logos (including JIYOU SUNFLEX), watermark, captions, graphic layout, invented product functions or hardware. If any human head accidentally enters frame it must be smooth blank mannequin with no eyes mouth nose hair; prefer no heads. Do not turn the whole scene into a toy or 3D cartoon. Preserve real materials and plausible scale.",
+    "generated_file": "output/product-photo-b-20261004/healthcare-heart-band-generated.png",
+    "sha256": "c7291ccb5b0f3f6a3491efed02acddb6fbe8042abbeb9e4d737b10441e2d83a7"
+  },
+  "hook-bottom-camera-hook-two-views-1-20261004": {
+    "asset": "/media/product-scenes/hook-bottom-camera-hook-two-views-cab-view-20261004-1254.webp",
+    "width": 1254,
+    "height": 1254,
+    "alt": "기둥에 가려진 착지 구역을 후크 카메라의 운전석 화면으로 확인하는 장면",
+    "caption": "기둥에 가려진 착지 구역을 후크 카메라의 운전석 화면으로 확인하는 장면",
+    "reference": "/media/derived/product-hook-bottom-camera-reference-white-20260912-1254.webp",
+    "provenance": "Product-reference-conditioned photorealistic scene generated with built-in image_gen. No readable text or logos. All original responsive dimensions retained; each WebP/AVIF export is no larger than the corresponding original WebP. SHA256 identifies the largest WebP export. Screens use illustrative icons/bars, not actual readings.",
+    "prompt": "Use case photorealistic-natural. Single square 1:1 editorial photograph for crane downward camera usage website section: viewing the hook's downward camera feed from operator cabin when concrete walls obscure direct view. Over-shoulder composition cropped below head, gray-sleeved operator's gloved hand beside ONE small plain black cabin monitor in foreground. Monitor contains only simple pictograms of a suspended rectangular crate over an outlined landing area, no photo, no lettering or numerals or complex UI; symbolic screen content. Through cabin window behind monitor are softly blurred tall concrete columns obscuring ground landing zone. Operator head entirely outside frame. Natural daylight realistic materials, subdued neutral site photography. Reference photo is product identity context only; the physical camera is OUTSIDE the cabin and must NOT be shown inside cabin or as a floating overlay. Do not invent controls or camera hardware, no visible logos, brands, numbers, captions, watermarks, new warning lamps or antennas, no collage or product inset. Composition focuses on monitoring from cabin and blocked direct line of sight, distinct from camera mount closeup or ground rigging closeup.",
+    "generated_file": "output/product-photo-b-20261004/hook-bottom-camera-generated.png",
+    "sha256": "397c0dff28a817754cda40a4462f027eab3a57f6df215bf500af4bcfca880396"
+  },
+  "iot-small-tower-crane-detail-4-1-20261004": {
+    "asset": "/media/product-scenes/iot-small-tower-crane-detail-4-office-monitor-20261004-1280.webp",
+    "width": 1280,
+    "height": 772,
+    "alt": "현장사무실에서 담당자가 크레인 표시기와 PC의 같은 상태 표시를 확인하는 장면",
+    "caption": "현장사무실에서 담당자가 크레인 표시기와 PC의 같은 상태 표시를 확인하는 장면",
+    "reference": "/media/derived/product-iot-small-tower-crane-reference-white-20260912-1280.webp",
+    "provenance": "Product-reference-conditioned photorealistic scene generated with built-in image_gen. No readable text or logos. All original responsive dimensions retained; each WebP/AVIF export is no larger than the corresponding original WebP. SHA256 identifies the largest WebP export. Screens use illustrative icons/bars, not actual readings.",
+    "prompt": "Use case: photorealistic-natural. One final website installation/use photograph. Reference image 1 is authoritative product shape and color. Wide landscape 1280:772 photo. Construction site office desk beside window with softly blurred tower crane outside. Foreground exact reference low wide black crane monitoring indicator with four large silver corner screws, existing top-right red power button, lower red and green lights, small knob, reference yellow fan and hook pictograms. Preserve overall 1.65:1 rectangular housing and control positions. Replace all numeric readouts with short red horizontal bars and retain tiny green battery bars; all printed text removed. Beside it a modest desktop computer shows a simple dark panel with the SAME arrangement of red bars and yellow fan/hook icons, no text numbers labels or complex dashboards. A gray-sleeved supervisor's hand rests next to indicator without pointing at new controls, head excluded. Natural soft daylight, realistic understated scene, no floating graphics. Match restrained natural-light industrial photography of existing product-scenes 20260923. Absolute constraints: NO readable text, letters, numbers, brand logos (including JIYOU SUNFLEX), watermark, captions, graphic layout, invented product functions or hardware. If any human head accidentally enters frame it must be smooth blank mannequin with no eyes mouth nose hair; prefer no heads. Do not turn the whole scene into a toy or 3D cartoon. Preserve real materials and plausible scale.",
+    "generated_file": "output/product-photo-b-20261004/iot-small-tower-crane-generated.png",
+    "sha256": "614fe259b3ac78043f2be7bb258444c3ba09efdd3de9efe970cafa3594f6ef64"
   }
 }

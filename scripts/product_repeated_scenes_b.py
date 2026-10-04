@@ -63,11 +63,17 @@ PLACEMENTS = {
         },
     },
     'healthcare-heart-band': {
+        'detail-5': {
+            'media/derived/product-healthcare-heart-band-white-approved-20260912': (1,),
+        },
         'band-functions': {
             'media/product-scenes/healthcare-heart-band-wearing-20260923': (1,),
         },
     },
     'hook-bottom-camera': {
+        'hook-two-views': {
+            'media/derived/product-hook-bottom-camera-reference-white-20260912': (1,),
+        },
         'highlights': {'img/pd/hookfit-3d-01': (1,)},
         'hook-checkpoints': {'img/pd/hookcp-3d-01': (1,)},
     },
@@ -82,6 +88,41 @@ PLACEMENTS = {
     },
     'mobile-bodycam': {
         'bodycam-film': {'media/derived/product-mobile-bodycam-problem': (1,)},
+    },
+    'compact-gas-detector': {
+        'product-benefits': {
+            'media/derived/product-compact-gas-detector-reference-white-stage3-20260912': (1,),
+        },
+    },
+    'digital-radio': {
+        'detail-4': {
+            'media/derived/product-digital-radio-white-approved-20260912': (1,),
+        },
+    },
+    'emergency-signal-location': {
+        'detail-4': {
+            'media/derived/product-emergency-signal-location-restored-20260913': (1,),
+        },
+    },
+    'equipment-approach-alarm': {
+        'detail-5': {
+            'media/derived/product-equipment-approach-alarm-restored-white-20260912': (1,),
+        },
+    },
+    'gas-alarm': {
+        'detail-5': {
+            'media/derived/product-gas-alarm-white-approved-20260912': (1,),
+        },
+    },
+    'hazard-area-broadcast': {
+        'detail-5': {
+            'media/derived/product-hazard-area-broadcast-reference-white-20260912': (1,),
+        },
+    },
+    'iot-small-tower-crane': {
+        'detail-4': {
+            'media/derived/product-iot-small-tower-crane-reference-white-20260912': (1,),
+        },
     },
 }
 
@@ -125,7 +166,7 @@ def apply_repeated_scenes_b(text, slug):
                 url = match_url[0]
                 if not any(stem in url for stem in (*aliases, *stems.values())):
                     return url
-                size = re.search(r'-(480|640|768|1280|1536|1600|1920|2560)\.(webp|avif)(?:\?[^\s,]*)?$', url)
+                size = re.search(r'-(\d+)\.(webp|avif)(?:\?[^\s,]*)?$', url)
                 if size:
                     width, ext = size[1], size[2]
                 else:
