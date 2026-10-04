@@ -27,16 +27,25 @@ PLACEMENTS = {
         },
     },
     'tilt-acceleration-sensor': {
+        'detail-5': {
+            'media/derived/product-tilt-acceleration-sensor-reference-white-20260912': (1,),
+        },
         'tilt-decision-record': {
             'img/3d/context-record-review': (1, 2,),
         },
     },
     'tower-crane-hook-collision': {
+        'detail-6': {
+            'media/derived/product-tower-crane-hook-collision-reference-white-20260912': (1,),
+        },
         'detail-4': {
             'img/3d/construction-tower-crane-operation': (1,),
         },
     },
     'wireless-emergency-broadcast': {
+        'detail-5': {
+            'media/derived/product-wireless-emergency-broadcast-reference-white-20260912': (1,),
+        },
         'broadcast-reach-line': {
             'img/3d/context-broadcast-planning': (1, 2,),
         },
@@ -81,13 +90,35 @@ PLACEMENTS = {
         'dust-gate': {'img/3d/industrial-pipe-inspection': (1,)},
     },
     'led-logo-light': {
-        'night-route-plan': {'img/3d/context-site-lighting': (1,)},
+        'night-route-plan': {
+            'img/3d/context-site-lighting': (1,),
+            'media/derived/product-led-logo-light-reference-white-20260912': (2,),
+        },
+        'detail-4': {
+            'media/derived/product-led-logo-light-reference-white-20260912': (1,),
+        },
     },
     'lte-anemometer': {
+        'detail-4': {
+            'media/derived/product-lte-anemometer-white-approved-20260912': (1,),
+        },
         'vertical-wind-section': {'img/3d/construction-tower-crane-operation': (1,)},
     },
     'mobile-bodycam': {
-        'bodycam-film': {'media/derived/product-mobile-bodycam-problem': (1,)},
+        'bodycam-film': {
+            'media/derived/product-mobile-bodycam-problem': (1,),
+            'media/derived/product-mobile-bodycam-restored-white-20260912': (2,),
+        },
+    },
+    'power-assist-suit': {
+        'detail-5': {
+            'media/derived/product-power-assist-suit-restored-white-20260912': (1,),
+        },
+    },
+    'vehicle-entry-alert': {
+        'detail-5': {
+            'media/derived/product-vehicle-entry-alert-reference-white-stage3-20260912': (1,),
+        },
     },
     'compact-gas-detector': {
         'product-benefits': {
