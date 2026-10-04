@@ -1,4 +1,4 @@
-"""Preserve the 2026-10-04 B replacements in the seven affected product pages.
+"""Preserve the 2026-10-04 B replacements in the affected product pages.
 
 Only media attributes inside the named later sections change. Earlier images,
 copy, classes and source MIME types remain intact. Inspectcut is intentionally
@@ -11,6 +11,51 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 PLACEMENTS = {
+    'safebridge': {
+        'safebridge-training-timeline': {
+            'img/3d/office-training-briefing': (1, 2,),
+        },
+    },
+    'safety-box': {
+        'control-screen': {
+            'img/3d/office-integrated-review': (1,),
+        },
+    },
+    'smart-beacon': {
+        'beacon-flow': {
+            'img/3d/construction-site-entry-warning': (1,),
+        },
+    },
+    'tilt-acceleration-sensor': {
+        'tilt-decision-record': {
+            'img/3d/context-record-review': (1, 2,),
+        },
+    },
+    'tower-crane-hook-collision': {
+        'detail-4': {
+            'img/3d/construction-tower-crane-operation': (1,),
+        },
+    },
+    'wireless-emergency-broadcast': {
+        'broadcast-reach-line': {
+            'img/3d/context-broadcast-planning': (1, 2,),
+        },
+    },
+    'wireless-network': {
+        'network-signal-path': {
+            'img/3d/context-network-connection': (1,),
+        },
+    },
+    'worker-access-gate': {
+        'access-gate-rhythm': {
+            'img/3d/construction-site-entry-warning': (1,),
+        },
+    },
+    'worker-attendance-card': {
+        'attendance-card-flow': {
+            'img/3d/construction-site-entry-warning': (1,),
+        },
+    },
     'concrete-curing': {
         'curing-rail': {
             'img/3d/industrial-concrete-record': (1, 3),
