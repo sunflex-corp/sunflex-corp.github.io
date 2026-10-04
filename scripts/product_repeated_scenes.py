@@ -21,6 +21,8 @@ def apply_repeated_scenes(text, slug):
     Older source rebuilds have one copy there and use the first scene. Both
     /img/3d exports and legacy /media/external-renders URLs are recognized.
     """
+    from product_repeated_scenes_b import apply_repeated_scenes_b
+    text = apply_repeated_scenes_b(text, slug)
     if slug not in PLACEMENTS:
         return text
     section_id, old_stem, count = PLACEMENTS[slug]
