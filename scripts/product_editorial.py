@@ -38,6 +38,12 @@ def build(p,group,g):
     for child in children:(media if child.find('img') or child.name=='figure' else copy).append(child.extract())
     hero.append(copy);hero.append(media)
     for image in media.find_all('img'):image['loading']='eager';image['sizes']='(max-width:760px) 90vw, 1100px'
+    from product_scene_assets import hero_scene_picture
+    scene_picture = hero_scene_picture(slug)
+    if scene_picture:
+        current = media.find('picture') or media.find('img')
+        if current:
+            current.replace_with(BeautifulSoup(scene_picture, 'html.parser').picture)
     benefit_target='product-benefits' if slug!='pedestrian-collision-prevention' else profile['focus']
     actions=BeautifulSoup(f'<div class="editorial-actions"><a class="editorial-button" href="/contact/?product={slug}">도입 문의</a><a href="#{benefit_target}">핵심 기능 살펴보기 <span aria-hidden="true">↓</span></a></div>','html.parser')
     copy.append(actions)

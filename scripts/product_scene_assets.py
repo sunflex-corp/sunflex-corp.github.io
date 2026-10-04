@@ -2,11 +2,33 @@
 import hashlib
 import json
 import re
+from html import escape
 from pathlib import Path
 from bs4 import BeautifulSoup
 
 ROOT = Path(__file__).resolve().parents[1]
-SCENES = json.loads((ROOT / 'data/product-scene-overrides.json').read_text())
+_OVERRIDES = json.loads((ROOT / 'data/product-scene-overrides.json').read_text())
+# Hero records are separate from the numbered infographic placements.
+SCENES = {key: value for key, value in _OVERRIDES.items() if '-hero-' not in key}
+HERO_SCENES = {key.rsplit('-hero-', 1)[0]: value
+               for key, value in _OVERRIDES.items() if '-hero-' in key}
+
+
+def hero_scene_picture(slug):
+    scene = HERO_SCENES.get(slug)
+    if not scene:
+        return None
+    stem = scene['asset'].removesuffix('-2560.webp')
+    widths = (2560, 1600, 1280, 768, 480)
+    def srcset(ext):
+        return ', '.join(f'{stem}-{width}.{ext} {width}w' for width in widths)
+    source_sizes = '(max-width: 760px) 90vw, 680px'
+    image_sizes = '(max-width: 760px) 90vw, (max-width: 1100px) 48vw, 680px'
+    return (f'<picture><source sizes="{source_sizes}" srcset="{srcset("avif")}" type="image/avif"/>'
+            f'<source sizes="{source_sizes}" srcset="{srcset("webp")}" type="image/webp"/>'
+            f'<img alt="{escape(scene["alt"], quote=True)}" decoding="async" fetchpriority="high" '
+            f'height="{scene["height"]}" loading="eager" sizes="{image_sizes}" '
+            f'src="{stem}-1280.webp" srcset="{srcset("webp")}" width="{scene["width"]}"/></picture>')
 
 
 def scene_image(scene):
