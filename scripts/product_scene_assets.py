@@ -8,10 +8,25 @@ from bs4 import BeautifulSoup
 
 ROOT = Path(__file__).resolve().parents[1]
 _OVERRIDES = json.loads((ROOT / 'data/product-scene-overrides.json').read_text())
-# Hero records are separate from the numbered infographic placements.
-SCENES = {key: value for key, value in _OVERRIDES.items() if '-hero-' not in key}
+# Hero/highlight records are separate from the numbered infographic placements.
+SCENES = {key: value for key, value in _OVERRIDES.items()
+          if '-hero-' not in key and '-hl-' not in key}
 HERO_SCENES = {key.rsplit('-hero-', 1)[0]: value
                for key, value in _OVERRIDES.items() if '-hero-' in key}
+HIGHLIGHT_SCENES = {key.rsplit('-hl-0-', 1)[0]: value
+                    for key, value in _OVERRIDES.items() if '-hl-0-' in key}
+
+
+def highlight_scene_figure(slug):
+    """Keep the first highlight's approved 3D asset on source-based rebuilds."""
+    scene = HIGHLIGHT_SCENES.get(slug)
+    if not scene:
+        return None
+    stem = scene['asset'].removesuffix('-1280.webp')
+    return (f'<figure class="pd-fig pd-card-fig is-hl3d"><img src="{stem}-640.webp" '
+            f'srcset="{stem}-640.webp 640w, {stem}-1280.webp 1280w" '
+            'sizes="(max-width:600px) 90vw, 420px" alt="" width="1280" height="960" '
+            'loading="lazy" decoding="async" data-3d></figure>')
 
 
 def hero_scene_picture(slug):

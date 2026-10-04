@@ -27,6 +27,13 @@ def build(p,group,g):
     slug=p['slug'];profile=PROFILES[slug];kind=profile['archetype']
     soup=BeautifulSoup((ROOT/f'data/solar-products/{slug}.html').read_text(),'html.parser')
     apply_copy(soup,slug)
+    from product_scene_assets import highlight_scene_figure
+    highlight = highlight_scene_figure(slug)
+    if highlight:
+        first_card = soup.select_one('#highlights article')
+        if first_card is None or first_card.find('figure') is None:
+            raise ValueError(f'Missing first highlight figure: {slug}')
+        first_card.figure.replace_with(BeautifulSoup(highlight, 'html.parser').figure)
     sections=soup.select('section.detail-block');hero=sections[0]
     hero['class']=['editorial-hero'];hero['data-product-hero']=''
     heading=hero.find('h2');heading.name='h1'
