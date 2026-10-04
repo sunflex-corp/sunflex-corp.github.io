@@ -8,9 +8,10 @@ from bs4 import BeautifulSoup
 
 ROOT = Path(__file__).resolve().parents[1]
 _OVERRIDES = json.loads((ROOT / 'data/product-scene-overrides.json').read_text())
-# Hero/highlight records are separate from the numbered infographic placements.
+# Only legacy, unversioned numbered keys belong to infographic placements.
+# Dated hero/highlight/benefit/section records are applied by their own helpers.
 SCENES = {key: value for key, value in _OVERRIDES.items()
-          if '-hero-' not in key and '-hl-' not in key and '-benefit-' not in key}
+          if re.fullmatch(r'.+-[1-9]\d?', key)}
 BENEFIT_SCENES = {
     (match[1], int(match[2])): value
     for key, value in _OVERRIDES.items()
