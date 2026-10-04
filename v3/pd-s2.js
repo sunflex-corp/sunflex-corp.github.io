@@ -8,6 +8,8 @@
     off = off === undefined ? 1 : off;
     var it = pin && !still ? pin.make(sec, target, n, function (p) { set(Math.floor(p * n), p * n % 1); }) : null;
     if (still) { set(n - 1, 1); return it; }
+    // checklist without a pin (phones/tablets): only the visitor's taps tick rows, scrolling past should not report "3/3 준비 완료"
+    if (off === 1) return it;
     if (!("IntersectionObserver" in window)) { set(n - 1, 1); return it; }
     var seen = -1;
     var io = new IntersectionObserver(function (es) {

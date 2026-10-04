@@ -83,10 +83,13 @@
 (() => {
   const bar = document.querySelector('[data-fbar]'); if (!bar) return;
   const foot = document.querySelector('.gf');
+  // the page's own consult block makes the bar redundant (and the bar used to sit on its button)
+  const cta = document.querySelector('#consultation, .pd-cta');
   const f = () => {
     const past = scrollY > innerHeight * .6;
     const nearFoot = foot && foot.getBoundingClientRect().top < innerHeight - 40;
-    bar.classList.toggle('on', past && !nearFoot);
+    const atCta = cta && cta.getBoundingClientRect().top < innerHeight - 40;
+    bar.classList.toggle('on', past && !nearFoot && !atCta);
   };
   addEventListener('scroll', () => requestAnimationFrame(f), { passive: true }); f();
 })();
@@ -106,4 +109,18 @@
   }
   window.addEventListener("scroll", tick, { passive: true });
   gh.addEventListener("focusin", function () { gh.classList.remove("is-hidden"); document.body.classList.remove("gh-off"); });
+})();
+
+/* page end: the stuck product nav (and progress line) fade out once the footer reaches them, instead of a 15px sliver */
+(function () {
+  var foot = document.querySelector(".gf"); if (!foot) return;
+  var els = [].slice.call(document.querySelectorAll(".pd-local, .page-progress")); if (!els.length) return;
+  var q = false;
+  function f() {
+    q = false;
+    var ft = foot.getBoundingClientRect().top;
+    els.forEach(function (e) { e.classList.toggle("at-foot", ft < e.getBoundingClientRect().bottom + 24); });
+  }
+  addEventListener("scroll", function () { if (!q) { q = true; requestAnimationFrame(f); } }, { passive: true });
+  addEventListener("resize", f); f();
 })();

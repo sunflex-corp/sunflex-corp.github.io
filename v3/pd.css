@@ -1499,3 +1499,63 @@
 @media (max-width:900px) and (max-height:520px){
   .bc-vis{position:relative;top:auto;width:100%;max-width:480px;margin:0 auto}
 }
+
+/* scroll audit 2026-10 (SCROLL_REVIEW_AUDIT.md) */
+/* pinned sections re-measure while the page scrolls; with scroll anchoring on, Chrome then jumped ~2000px past them */
+html{overflow-anchor:none}
+/* two dark sections in a row: the section margin showed the white page between them as a stripe */
+.pd :is(.pd-sec,.pd-hero):is(.pd-band,.pd-full,.is-dark,.pd-hero-ov)+.pd-sec:is(.pd-band,.pd-full,.is-dark){margin-top:0!important}
+/* benefits footnote ("참고 장면") floated 100-150px under the last feature: pull it up to read as that list's note */
+.pd .pd-feat+.pd-fig-note{margin-top:-24px}
+@media (min-width:901px){
+  .pd .pd-feat+.pd-fig-note{margin-top:-72px}
+  /* consult bar: room for the full product name on desktop */
+  .v3.pd .fbar{width:min(680px,calc(100vw - 32px))}
+}
+@media (max-width:900px){
+  /* hero photo: .pd-fig img{height:auto} beat the hero's height:100%, leaving a grey strip under the picture */
+  .pd-hero-fig.pd-fig img,.pd-hero-fig.pd-fig picture{height:100%}
+  /* highlight rail: the next card peeks in from the right; show it with the rail instead of waiting for its own reveal */
+  .pd .pd-rail.in [data-rv]{opacity:1;transform:none}
+}
+@media (max-width:900px){
+  /* local nav product name: ellipsis only works on a block box (inline-flex clipped it mid-letter); 44px tap height on tablets too */
+  .pd-local-n{display:block;line-height:44px;min-width:0}
+  /* bento lead card: text was centred as a narrow block, reading as an odd indent */
+  .pd-bento .pd-cards .pd-card:first-child .pd-card-c{align-self:stretch;padding:28px 32px 32px}
+  /* "도입 전에 확인할 세 가지" cards don't step with scroll on narrow screens: give all three the same open look */
+  .pd .bf-cards li{background:#fff;box-shadow:inset 0 0 0 1px #e5e8eb}
+  .pd .bf-cards li .bf-img img{opacity:1;transform:none;filter:none}
+  .pd .bf-cards li .bf-c{flex-direction:row;gap:12px}
+  .pd .bf-cards li .bf-c span{color:#1b64da}
+  .pd .bf-cards li .bf-c b{color:#191f28;font-size:20px;white-space:normal}
+}
+@media (max-width:600px){
+  /* scene diagram labels rendered ~7-9px on phones */
+  .sc-lab{font-size:25px}
+}
+/* bento: one card in a 2-column row left half the row empty */
+.pd-bento .pd-cards .pd-card:not(:first-child):last-child:nth-child(even){grid-column:1/-1}
+/* bento cards: white like the illustration area instead of a grey text half */
+.pd .pd-bento .pd-card{background:#fff}
+.pd .pd-bento .pd-card-fig.is-hl3d{border-bottom:0}
+/* heading emphasis: colour, not faux-italic Hangul */
+.pd .pd-t em{font-style:normal;color:var(--blue-t)}
+.hf-mon i{font-size:12px}
+
+/* scroll audit 2026-10, third pass */
+@media (max-width:900px){
+  /* flow steps: the text column shrank to its words, so step photos filled only ~55% of the card */
+  .pd-st>div{flex:1 1 auto;min-width:0}
+}
+/* step visual: contain is for white-background 3D art; photos letterboxed inside the frame */
+.pd-st-vis .pd-st-fig:not(.is-stage) img:not([data-3d]){object-fit:cover}
+/* compact gas detector system diagram: show the whole drawing instead of cropping its labels */
+[data-pd=compact-gas-detector] #detail-2 .pd-split-fig{background:#fff}
+[data-pd=compact-gas-detector] #detail-2 .pd-split-fig img{object-fit:contain}
+/* two dark sections in a row: their paddings added up to a near-empty black screen */
+.pd .pd-sec:is(.pd-band,.pd-full,.is-dark):has(+.pd-sec:is(.pd-band,.pd-full,.is-dark)){padding-bottom:64px!important}
+@media (max-width:900px){.pd .pd-sec:is(.pd-band,.pd-full,.is-dark):has(+.pd-sec:is(.pd-band,.pd-full,.is-dark)){padding-bottom:40px!important}}
+/* page end: the stuck product nav (and the CCTV progress line) no longer linger as a sliver over the footer */
+.pd-local,.page-progress{transition:opacity .2s}
+.pd-local.at-foot,.page-progress.at-foot{opacity:0;pointer-events:none}
