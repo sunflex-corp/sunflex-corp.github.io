@@ -10,7 +10,12 @@ ROOT = Path(__file__).resolve().parents[1]
 _OVERRIDES = json.loads((ROOT / 'data/product-scene-overrides.json').read_text())
 # Hero/highlight records are separate from the numbered infographic placements.
 SCENES = {key: value for key, value in _OVERRIDES.items()
-          if '-hero-' not in key and '-hl-' not in key}
+          if '-hero-' not in key and '-hl-' not in key and '-benefit-' not in key}
+BENEFIT_SCENES = {
+    (match[1], int(match[2])): value
+    for key, value in _OVERRIDES.items()
+    if (match := re.fullmatch(r'(.+)-benefit-(\d+)-20261004', key))
+}
 HERO_SCENES = {key.rsplit('-hero-', 1)[0]: value
                for key, value in _OVERRIDES.items() if '-hero-' in key}
 HIGHLIGHT_SCENES = {key.rsplit('-hl-0-', 1)[0]: value
@@ -77,4 +82,34 @@ def apply_scene_overrides(figures):
     for scene_id in SCENES:
         slug, step = scene_id.rsplit('-', 1)
         figures[slug][int(step) - 1] = replace_scene_figure(figures[slug][int(step) - 1], scene_id)
+    return apply_benefit_scene_overrides(figures)
+
+
+def replace_benefit_scene(markup, slug, step):
+    """Replace only image URLs and existing alt text; retain layout and copy."""
+    scene = BENEFIT_SCENES.get((slug, step))
+    if not scene:
+        return markup
+    match = re.search(r'<(?:img|image)\b[^>]*>', markup)
+    if not match:
+        raise ValueError(f'Missing benefit image: {slug}-{step}')
+    image = match[0]
+    stem = scene['asset'].removesuffix('-1280.webp')
+    values = {
+        'src': scene['asset'],
+        'href': scene['asset'],
+        'srcset': f'{stem}-640.webp 640w, {stem}-1280.webp 1280w',
+        'alt': scene['alt'],
+    }
+    for attr, value in values.items():
+        image = re.sub(r'(?<![\w:-])' + attr + r'="[^"]*"',
+                       lambda m: f'{attr}="{escape(value, quote=True)}"', image)
+    return markup[:match.start()] + image + markup[match.end():]
+
+
+def apply_benefit_scene_overrides(figures):
+    for slug, step in BENEFIT_SCENES:
+        if slug in figures and step <= len(figures[slug]):
+            figures[slug][step - 1] = replace_benefit_scene(
+                figures[slug][step - 1], slug, step)
     return figures

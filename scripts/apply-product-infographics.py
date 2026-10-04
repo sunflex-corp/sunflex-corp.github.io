@@ -2,8 +2,9 @@
 from pathlib import Path
 import hashlib,json,re
 from bs4 import BeautifulSoup
+from product_scene_assets import apply_benefit_scene_overrides
 ROOT=Path(__file__).resolve().parents[1]
-FIGURES=json.loads((ROOT/'data/product-infographics.json').read_text())
+FIGURES=apply_benefit_scene_overrides(json.loads((ROOT/'data/product-infographics.json').read_text()))
 PATTERN=re.compile(r'<figure\b(?=[^>]*\bclass="[^"]*\bbenefit-visual\b)[^>]*>.*?</figure>',re.S)
 for slug,figures in FIGURES.items():
     file=ROOT/'products'/slug/'index.html';text=file.read_text()
