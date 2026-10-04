@@ -43,8 +43,8 @@ def hero_scene_picture(slug):
     widths = (2560, 1600, 1280, 768, 480)
     def srcset(ext):
         return ', '.join(f'{stem}-{width}.{ext} {width}w' for width in widths)
-    source_sizes = '(max-width: 760px) 90vw, 680px'
-    image_sizes = '(max-width: 760px) 90vw, (max-width: 1100px) 48vw, 680px'
+    source_sizes = '(max-width: 760px) 200vw, (max-width: 1100px) 150vw, 100vw'
+    image_sizes = '(max-width: 760px) 200vw, (max-width: 1100px) 150vw, 100vw'
     return (f'<picture><source sizes="{source_sizes}" srcset="{srcset("avif")}" type="image/avif"/>'
             f'<source sizes="{source_sizes}" srcset="{srcset("webp")}" type="image/webp"/>'
             f'<img alt="{escape(scene["alt"], quote=True)}" decoding="async" fetchpriority="high" '

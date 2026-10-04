@@ -1102,5 +1102,841 @@
     "prompt": "Use case: photorealistic-natural. Asset type: Korean construction safety product website installation/use photograph. Input image 1 is the strict real-product identity reference, preserve exact shape, materials and colours; remove all brand markings including JIYOU and SUNFLEX. Input image 2 is lighting/material tone reference ONLY, never copy its activity or product. Commercial photographic realism with muted graphite and blue-grey industrial environment, natural soft light, restrained detail, softly blurred background suitable for efficient web compression. No readable text, numbers, logos, watermarks, labels, added controls or unsupported functionality. If any person is visible, use smooth featureless mannequin head without eyes, mouth or hair, face tiny/hidden; gloves allowed. One coherent scene, no collage, diagram, borders or floating product cutout. Landscape photograph ratio 707:548. Tight waist-to-chest crop of a navy-clad worker carrying the exact white horn loudspeaker from reference in both gloved hands through a quiet unfinished concrete floor. Head completely outside frame. White flared rectangular mouth, tapered horn, cylindrical rear driver, existing silver pivot bracket and short white cable loop exactly as reference. Product centered occupying half frame. Carry by supporting the body and bracket naturally, no added carrying handle. Background softly blurred pale concrete doorway and cool grey interior. Emphasize relocating the device to another work floor. No installed speaker on a wall, no beacons, antennas, emergency buttons, transmitters, radio waves, text or screens.",
     "generated_file": "output/product-photo-repeats-20261004/wireless-emergency-broadcast-detail-5-1-20261004.png",
     "sha256": "4c05a19f1c6fa00073026594c19c61657910085c9bfad79d2e1079f28284f6de"
+  },
+  "ai-quick-risk-assessment-d-1-20261004": {
+    "asset": "/media/derived/product-ai-quick-risk-assessment-scene-20261004-2560.webp",
+    "width": 2560,
+    "height": 1440,
+    "sha256": "c9efce560dc705f6e6626397597b5473125edb8079667356c96b05991b499832",
+    "alt": "현장 담당자가 작업 구간과 기록 자료를 확인하는 모습",
+    "reference": "/media/derived/product-ai-quick-risk-assessment-scene-1280.webp",
+    "provenance": "upscaled/cleaned from existing product photo; no new content",
+    "method": "Lanczos resize; UnsharpMask(radius=0.65, percent=40, threshold=3); no generative reconstruction",
+    "section": "top",
+    "original_sha256": "e06992d12f189bd33b1ac9480efa7c30f2776c87d8853410f30c18fd17a6a14b",
+    "variants": [
+      {
+        "asset": "/media/derived/product-ai-quick-risk-assessment-scene-20261004-480.webp",
+        "width": 480,
+        "height": 270,
+        "bytes": 35594,
+        "format": "webp",
+        "quality": 90,
+        "lossless": false,
+        "sha256": "352350906c203c7706506d0f9fd1c45e9ed18246423abdf1d59771b18e54bf0d"
+      },
+      {
+        "asset": "/media/derived/product-ai-quick-risk-assessment-scene-20261004-480.avif",
+        "width": 480,
+        "height": 270,
+        "bytes": 38932,
+        "format": "avif",
+        "quality": 83,
+        "lossless": false,
+        "sha256": "16a7f94b8155bf2937ef7ea9f3bbabef13a17d42641f5ea0056cf274ad53a640"
+      },
+      {
+        "asset": "/media/derived/product-ai-quick-risk-assessment-scene-20261004-768.webp",
+        "width": 768,
+        "height": 432,
+        "bytes": 77826,
+        "format": "webp",
+        "quality": 90,
+        "lossless": false,
+        "sha256": "50461b4fc6b85a0627e517020ac51c33ca519d314103975efdd3acc7f31483a8"
+      },
+      {
+        "asset": "/media/derived/product-ai-quick-risk-assessment-scene-20261004-768.avif",
+        "width": 768,
+        "height": 432,
+        "bytes": 83428,
+        "format": "avif",
+        "quality": 83,
+        "lossless": false,
+        "sha256": "1a0b66b16e27e8f31d8fd2807bf5a452acc8100f572d77b8e19d923c55c1afa7"
+      },
+      {
+        "asset": "/media/derived/product-ai-quick-risk-assessment-scene-20261004-1280.webp",
+        "width": 1280,
+        "height": 720,
+        "bytes": 127632,
+        "format": "webp",
+        "quality": 90,
+        "lossless": false,
+        "sha256": "afc8c85d8bbb4269132a9f66886b85b8527bfe41ac625ff2bd4bf9d913291ec4"
+      },
+      {
+        "asset": "/media/derived/product-ai-quick-risk-assessment-scene-20261004-1280.avif",
+        "width": 1280,
+        "height": 720,
+        "bytes": 155843,
+        "format": "avif",
+        "quality": 83,
+        "lossless": false,
+        "sha256": "da3e97e7b175201924a345c87eb0a0d24bd3fb19345d7f05eeaa74d543856e1b"
+      },
+      {
+        "asset": "/media/derived/product-ai-quick-risk-assessment-scene-20261004-1600.webp",
+        "width": 1600,
+        "height": 900,
+        "bytes": 213400,
+        "format": "webp",
+        "quality": 90,
+        "lossless": false,
+        "sha256": "7165b6905b0992258e5c57af10128993ad1d08c0a7088d2006eaa94ae28ecb9b"
+      },
+      {
+        "asset": "/media/derived/product-ai-quick-risk-assessment-scene-20261004-1600.avif",
+        "width": 1600,
+        "height": 900,
+        "bytes": 207770,
+        "format": "avif",
+        "quality": 83,
+        "lossless": false,
+        "sha256": "781f5ce6af27bed3e703fe312d46a3cffa80d9eabf8cad85e0b5352583af437d"
+      },
+      {
+        "asset": "/media/derived/product-ai-quick-risk-assessment-scene-20261004-2560.webp",
+        "width": 2560,
+        "height": 1440,
+        "bytes": 335492,
+        "format": "webp",
+        "quality": 90,
+        "lossless": false,
+        "sha256": "c9efce560dc705f6e6626397597b5473125edb8079667356c96b05991b499832"
+      },
+      {
+        "asset": "/media/derived/product-ai-quick-risk-assessment-scene-20261004-2560.avif",
+        "width": 2560,
+        "height": 1440,
+        "bytes": 302413,
+        "format": "avif",
+        "quality": 83,
+        "lossless": false,
+        "sha256": "63004edb23296d10c69f530bad7fe79d1ad1f8c77148075d5176844b511937fe"
+      }
+    ]
+  },
+  "ai-risk-assessment-review-d-1-20261004": {
+    "asset": "/media/derived/product-ai-risk-assessment-review-scene-20261004-2560.webp",
+    "width": 2560,
+    "height": 1440,
+    "sha256": "0bcfb80e082c681a36d5c86117d6ebfedccc8bbbb692a15faeee31f262a5f5a6",
+    "alt": "사무실에서 현장 기록과 문서를 검토하는 담당자",
+    "reference": "/media/derived/product-ai-risk-assessment-review-scene-1280.webp",
+    "provenance": "upscaled/cleaned from existing product photo; no new content",
+    "method": "Lanczos resize; UnsharpMask(radius=0.65, percent=40, threshold=3); no generative reconstruction",
+    "section": "top",
+    "original_sha256": "1f3d8d89e15349bc64df0288383dab8bfa81c4e26710bf3be1ee4f83f58809f7",
+    "variants": [
+      {
+        "asset": "/media/derived/product-ai-risk-assessment-review-scene-20261004-480.webp",
+        "width": 480,
+        "height": 270,
+        "bytes": 12278,
+        "format": "webp",
+        "quality": 90,
+        "lossless": false,
+        "sha256": "f11693a840a6ee6dde1411af166b3b4b721ada2b9eebca317eec157030afa4cc"
+      },
+      {
+        "asset": "/media/derived/product-ai-risk-assessment-review-scene-20261004-480.avif",
+        "width": 480,
+        "height": 270,
+        "bytes": 13319,
+        "format": "avif",
+        "quality": 83,
+        "lossless": false,
+        "sha256": "f6ead2a7f514d683d7fc34fff65fb29c5a2e7bda9dab32935d30008aca8724c7"
+      },
+      {
+        "asset": "/media/derived/product-ai-risk-assessment-review-scene-20261004-768.webp",
+        "width": 768,
+        "height": 432,
+        "bytes": 22442,
+        "format": "webp",
+        "quality": 90,
+        "lossless": false,
+        "sha256": "e4c8b327767788680c38ada7e831b24add7e7af6a24d79d7f389aad9e514f0c0"
+      },
+      {
+        "asset": "/media/derived/product-ai-risk-assessment-review-scene-20261004-768.avif",
+        "width": 768,
+        "height": 432,
+        "bytes": 23556,
+        "format": "avif",
+        "quality": 83,
+        "lossless": false,
+        "sha256": "202395c3f9f564d19031765dfddb62a152090107ab9c995c0dd4cbe2f60e7f89"
+      },
+      {
+        "asset": "/media/derived/product-ai-risk-assessment-review-scene-20261004-1280.webp",
+        "width": 1280,
+        "height": 720,
+        "bytes": 34150,
+        "format": "webp",
+        "quality": 90,
+        "lossless": false,
+        "sha256": "b1203cefa6637464a364cea177de147b837e088c0fcadb6e7cc5dbb3c9ccc80a"
+      },
+      {
+        "asset": "/media/derived/product-ai-risk-assessment-review-scene-20261004-1280.avif",
+        "width": 1280,
+        "height": 720,
+        "bytes": 39958,
+        "format": "avif",
+        "quality": 83,
+        "lossless": false,
+        "sha256": "85b568b870c334c83e0760e6cbed3fd2c55edba391baa5920ce71d8dab95a2e9"
+      },
+      {
+        "asset": "/media/derived/product-ai-risk-assessment-review-scene-20261004-1600.webp",
+        "width": 1600,
+        "height": 900,
+        "bytes": 53388,
+        "format": "webp",
+        "quality": 90,
+        "lossless": false,
+        "sha256": "8908f06bebd08db6df3944308d185591526f6f7ae4d394d756f1c5c024fc4f15"
+      },
+      {
+        "asset": "/media/derived/product-ai-risk-assessment-review-scene-20261004-1600.avif",
+        "width": 1600,
+        "height": 900,
+        "bytes": 51776,
+        "format": "avif",
+        "quality": 83,
+        "lossless": false,
+        "sha256": "fd786dfc9c3eb7dc4cbcb41c7b6d001d111da7468e5c0705682bc5128eeb3b35"
+      },
+      {
+        "asset": "/media/derived/product-ai-risk-assessment-review-scene-20261004-2560.webp",
+        "width": 2560,
+        "height": 1440,
+        "bytes": 88048,
+        "format": "webp",
+        "quality": 90,
+        "lossless": false,
+        "sha256": "0bcfb80e082c681a36d5c86117d6ebfedccc8bbbb692a15faeee31f262a5f5a6"
+      },
+      {
+        "asset": "/media/derived/product-ai-risk-assessment-review-scene-20261004-2560.avif",
+        "width": 2560,
+        "height": 1440,
+        "bytes": 77163,
+        "format": "avif",
+        "quality": 83,
+        "lossless": false,
+        "sha256": "e9de767164c2d959e9f6b41b4172ff75aa7194b2a17f6e4eba08b4f2979ca70a"
+      }
+    ]
+  },
+  "ai-similar-accident-alert-d-1-20261004": {
+    "asset": "/media/derived/product-ai-similar-accident-alert-scene-20261004-2560.webp",
+    "width": 2560,
+    "height": 1440,
+    "sha256": "9da772dfca23dfad2175c393790ba6b79075a990b198c9c3d8e0cc9ff27143b6",
+    "alt": "근로자에게 작업 전 안전 내용을 안내하는 조회장",
+    "reference": "/media/derived/product-ai-similar-accident-alert-scene-1280.webp",
+    "provenance": "upscaled/cleaned from existing product photo; no new content",
+    "method": "Lanczos resize; UnsharpMask(radius=0.65, percent=40, threshold=3); no generative reconstruction",
+    "section": "top",
+    "original_sha256": "dc7ddd92d5e98202a3151e944142297861d6be8856d3c8307c294324489c68bc",
+    "variants": [
+      {
+        "asset": "/media/derived/product-ai-similar-accident-alert-scene-20261004-480.webp",
+        "width": 480,
+        "height": 270,
+        "bytes": 34136,
+        "format": "webp",
+        "quality": 90,
+        "lossless": false,
+        "sha256": "2b313ca6d84be74b0744f77ebe00036bc5cbf08530491f69a43743fd79434957"
+      },
+      {
+        "asset": "/media/derived/product-ai-similar-accident-alert-scene-20261004-480.avif",
+        "width": 480,
+        "height": 270,
+        "bytes": 35195,
+        "format": "avif",
+        "quality": 83,
+        "lossless": false,
+        "sha256": "373f4991791ce61505c0cef4a257ac99a513f22249ad7d39972c8617aff9e5dc"
+      },
+      {
+        "asset": "/media/derived/product-ai-similar-accident-alert-scene-20261004-768.webp",
+        "width": 768,
+        "height": 432,
+        "bytes": 74862,
+        "format": "webp",
+        "quality": 90,
+        "lossless": false,
+        "sha256": "146c6070d23fe45ac0ca19230db57557f87ab366c2ab531ea0d99f2182fd5107"
+      },
+      {
+        "asset": "/media/derived/product-ai-similar-accident-alert-scene-20261004-768.avif",
+        "width": 768,
+        "height": 432,
+        "bytes": 76278,
+        "format": "avif",
+        "quality": 83,
+        "lossless": false,
+        "sha256": "82a9c251310f261ef10c3c4427322ed8249891e8d8f331dd72a01f69b9146541"
+      },
+      {
+        "asset": "/media/derived/product-ai-similar-accident-alert-scene-20261004-1280.webp",
+        "width": 1280,
+        "height": 720,
+        "bytes": 127980,
+        "format": "webp",
+        "quality": 90,
+        "lossless": false,
+        "sha256": "7a08acb924e4a191d152c7e3c50447dd7e72cdc2e97530a6895e335e57c9ca44"
+      },
+      {
+        "asset": "/media/derived/product-ai-similar-accident-alert-scene-20261004-1280.avif",
+        "width": 1280,
+        "height": 720,
+        "bytes": 147328,
+        "format": "avif",
+        "quality": 83,
+        "lossless": false,
+        "sha256": "92277a9fccad8c9ac5ba39df557b9d9f48265be875c3e72d7c24964ba1a61268"
+      },
+      {
+        "asset": "/media/derived/product-ai-similar-accident-alert-scene-20261004-1600.webp",
+        "width": 1600,
+        "height": 900,
+        "bytes": 200240,
+        "format": "webp",
+        "quality": 90,
+        "lossless": false,
+        "sha256": "a460461c3f08050ec7c8ca55f6bde48c4787344d56682049acc56dac8a499fb2"
+      },
+      {
+        "asset": "/media/derived/product-ai-similar-accident-alert-scene-20261004-1600.avif",
+        "width": 1600,
+        "height": 900,
+        "bytes": 194397,
+        "format": "avif",
+        "quality": 83,
+        "lossless": false,
+        "sha256": "df3c19979483e891378ae10bf16d93df69d64100ded200d07d016fa433ccbe9f"
+      },
+      {
+        "asset": "/media/derived/product-ai-similar-accident-alert-scene-20261004-2560.webp",
+        "width": 2560,
+        "height": 1440,
+        "bytes": 328970,
+        "format": "webp",
+        "quality": 90,
+        "lossless": false,
+        "sha256": "9da772dfca23dfad2175c393790ba6b79075a990b198c9c3d8e0cc9ff27143b6"
+      },
+      {
+        "asset": "/media/derived/product-ai-similar-accident-alert-scene-20261004-2560.avif",
+        "width": 2560,
+        "height": 1440,
+        "bytes": 287442,
+        "format": "avif",
+        "quality": 83,
+        "lossless": false,
+        "sha256": "e81937ef27a958dbd602a13cc2d3392b8bbd08e8cae8e54fe77d0d89bcdea491"
+      }
+    ]
+  },
+  "ai-subcontractor-safety-d-1-20261004": {
+    "asset": "/media/derived/product-ai-subcontractor-safety-scene-20261004-2560.webp",
+    "width": 2560,
+    "height": 1440,
+    "sha256": "f1cdc233ba0d439a27531ff58fc782347870b11ab6adbc90d884de92e6e79248",
+    "alt": "현장사무실에서 여러 담당자가 작업 현황을 함께 논의하는 모습",
+    "reference": "/media/derived/product-ai-subcontractor-safety-scene-1280.webp",
+    "provenance": "upscaled/cleaned from existing product photo; no new content",
+    "method": "Lanczos resize; UnsharpMask(radius=0.65, percent=40, threshold=3); no generative reconstruction",
+    "section": "top",
+    "original_sha256": "d61fa7a1f1d352851c0e098c5dbc8cad98fbab26c99afe1ae3f03f4df19633d1",
+    "variants": [
+      {
+        "asset": "/media/derived/product-ai-subcontractor-safety-scene-20261004-480.webp",
+        "width": 480,
+        "height": 270,
+        "bytes": 21992,
+        "format": "webp",
+        "quality": 90,
+        "lossless": false,
+        "sha256": "368ce0b21f49e368e3cb2917f71bcbd479cc58e6fe06ed3116649ffe39107a15"
+      },
+      {
+        "asset": "/media/derived/product-ai-subcontractor-safety-scene-20261004-480.avif",
+        "width": 480,
+        "height": 270,
+        "bytes": 22714,
+        "format": "avif",
+        "quality": 83,
+        "lossless": false,
+        "sha256": "9cdff2f423c8cf19e8869fa5686ebe084835480ae27193f7cf4da7fdb1c64d00"
+      },
+      {
+        "asset": "/media/derived/product-ai-subcontractor-safety-scene-20261004-768.webp",
+        "width": 768,
+        "height": 432,
+        "bytes": 39600,
+        "format": "webp",
+        "quality": 90,
+        "lossless": false,
+        "sha256": "dffc26dfc7a7b939396d8f9818462de40554e14169c92d7d2811888fe77cbf51"
+      },
+      {
+        "asset": "/media/derived/product-ai-subcontractor-safety-scene-20261004-768.avif",
+        "width": 768,
+        "height": 432,
+        "bytes": 37933,
+        "format": "avif",
+        "quality": 83,
+        "lossless": false,
+        "sha256": "fd756fb4dc1212bbb4795cb3c03b8be4d8e6d51f7768689751e48f9fe0393339"
+      },
+      {
+        "asset": "/media/derived/product-ai-subcontractor-safety-scene-20261004-1280.webp",
+        "width": 1280,
+        "height": 720,
+        "bytes": 60612,
+        "format": "webp",
+        "quality": 90,
+        "lossless": false,
+        "sha256": "3e7a93bbabdd6deb9759845b195dd5f5c9b3696cf333f4a11614c0e7bbd7d271"
+      },
+      {
+        "asset": "/media/derived/product-ai-subcontractor-safety-scene-20261004-1280.avif",
+        "width": 1280,
+        "height": 720,
+        "bytes": 64950,
+        "format": "avif",
+        "quality": 83,
+        "lossless": false,
+        "sha256": "0da48481ac4325437d40ce22715d840553517bbb9dddf4872001040a2fecabfd"
+      },
+      {
+        "asset": "/media/derived/product-ai-subcontractor-safety-scene-20261004-1600.webp",
+        "width": 1600,
+        "height": 900,
+        "bytes": 88190,
+        "format": "webp",
+        "quality": 90,
+        "lossless": false,
+        "sha256": "6018aee3c911b76af75039600d6e5f21ddf17bdc54169e589da2be5022cbbe28"
+      },
+      {
+        "asset": "/media/derived/product-ai-subcontractor-safety-scene-20261004-1600.avif",
+        "width": 1600,
+        "height": 900,
+        "bytes": 82742,
+        "format": "avif",
+        "quality": 83,
+        "lossless": false,
+        "sha256": "f9a0bf3860eadaacdd1e8529e0fe33731374246b8a00b7bf9be5e5e6e9b74066"
+      },
+      {
+        "asset": "/media/derived/product-ai-subcontractor-safety-scene-20261004-2560.webp",
+        "width": 2560,
+        "height": 1440,
+        "bytes": 141678,
+        "format": "webp",
+        "quality": 90,
+        "lossless": false,
+        "sha256": "f1cdc233ba0d439a27531ff58fc782347870b11ab6adbc90d884de92e6e79248"
+      },
+      {
+        "asset": "/media/derived/product-ai-subcontractor-safety-scene-20261004-2560.avif",
+        "width": 2560,
+        "height": 1440,
+        "bytes": 127083,
+        "format": "avif",
+        "quality": 83,
+        "lossless": false,
+        "sha256": "42f3e19a5ddef84faafb960418b08fb7a07a5d4ee18ca247061f0fe9e92a65aa"
+      }
+    ]
+  },
+  "wireless-emergency-broadcast-d-2-20261004": {
+    "asset": "/media/derived/product-wireless-emergency-broadcast-reference-white-20260912-20261004-1254.webp",
+    "width": 1254,
+    "height": 972,
+    "sha256": "2209a0d0ddef0238912dd42135123367a8d3d76ae30e9f24b879fbc23786672a",
+    "alt": "무선 비상방송 장치 제품",
+    "reference": "/media/derived/product-wireless-emergency-broadcast-reference-white-20260912-707.webp",
+    "provenance": "upscaled/cleaned from existing product photo; no new content",
+    "method": "Lanczos resize; UnsharpMask(radius=0.65, percent=40, threshold=3); no generative reconstruction",
+    "section": "top",
+    "original_sha256": "b6e887574ac48231716c0af0085168384538733a54f1229ea10a3e6130fb7264",
+    "variants": [
+      {
+        "asset": "/media/derived/product-wireless-emergency-broadcast-reference-white-20260912-20261004-480.webp",
+        "width": 480,
+        "height": 372,
+        "bytes": 5396,
+        "format": "webp",
+        "quality": 90,
+        "lossless": false,
+        "sha256": "d221cdaf15102b2ad9e81c8210dd111864a0345ccc2e9ee67a7b035db5f9496a"
+      },
+      {
+        "asset": "/media/derived/product-wireless-emergency-broadcast-reference-white-20260912-20261004-768.webp",
+        "width": 768,
+        "height": 595,
+        "bytes": 9858,
+        "format": "webp",
+        "quality": 90,
+        "lossless": false,
+        "sha256": "9781ce1a8e34371061cae007234b2bb9eb4f71aec7fecd8322c667694622071b"
+      },
+      {
+        "asset": "/media/derived/product-wireless-emergency-broadcast-reference-white-20260912-20261004-1254.webp",
+        "width": 1254,
+        "height": 972,
+        "bytes": 17960,
+        "format": "webp",
+        "quality": 90,
+        "lossless": false,
+        "sha256": "2209a0d0ddef0238912dd42135123367a8d3d76ae30e9f24b879fbc23786672a"
+      }
+    ]
+  },
+  "compact-gas-detector-d-3-20261004": {
+    "asset": "/media/derived/product-compact-gas-detector-diagram-20261004-1812.webp",
+    "width": 1812,
+    "height": 1020,
+    "sha256": "375cc2955da76e8bb12527aa970c9f048ebdee01c65fb829b5c64038daff07be",
+    "alt": "주황색 소형 복합가스 측정기와 LTE 원격 확인 구성도",
+    "reference": "/media/derived/product-compact-gas-detector-diagram-453.webp",
+    "provenance": "upscaled/cleaned from existing product photo; no new content",
+    "method": "4x deterministic redraw of original boxes, arrows, LTE/cloud icons and Korean labels; original photo inserts retained as Lanczos-upscaled crops",
+    "section": "detail-2",
+    "original_sha256": "f0725d69dbba5ee12e4ac50f92dae841621082905ebcc14fe4ef5542aa63b09d",
+    "variants": [
+      {
+        "asset": "/media/derived/product-compact-gas-detector-diagram-20261004-480.webp",
+        "width": 480,
+        "height": 270,
+        "bytes": 16756,
+        "format": "webp",
+        "quality": 90,
+        "lossless": false,
+        "sha256": "2dd3c251c6f0019e187fd04acfdd9266f02fdba76b1573cf840af21b30306d9d"
+      },
+      {
+        "asset": "/media/derived/product-compact-gas-detector-diagram-20261004-480.avif",
+        "width": 480,
+        "height": 270,
+        "bytes": 15555,
+        "format": "avif",
+        "quality": 83,
+        "lossless": false,
+        "sha256": "35c022734dc7fe57a8b9308ccbded66b77ebc9797e32fc964d0998624194aaeb"
+      },
+      {
+        "asset": "/media/derived/product-compact-gas-detector-diagram-20261004-768.webp",
+        "width": 768,
+        "height": 432,
+        "bytes": 30306,
+        "format": "webp",
+        "quality": 90,
+        "lossless": false,
+        "sha256": "6acfdd31ffbf93f59439d9029f196fc776f44835a6bfd3cd56950f3bcf8e0870"
+      },
+      {
+        "asset": "/media/derived/product-compact-gas-detector-diagram-20261004-768.avif",
+        "width": 768,
+        "height": 432,
+        "bytes": 27880,
+        "format": "avif",
+        "quality": 83,
+        "lossless": false,
+        "sha256": "5e9e622f146f93a8cca24ec156127f76e451bc8323cf60d641ad36332c45d2c5"
+      },
+      {
+        "asset": "/media/derived/product-compact-gas-detector-diagram-20261004-1280.webp",
+        "width": 1280,
+        "height": 721,
+        "bytes": 56266,
+        "format": "webp",
+        "quality": 90,
+        "lossless": false,
+        "sha256": "749dc47664c24f58394989dfb633375329d6eda64b8c937b1c234e04d2dd813e"
+      },
+      {
+        "asset": "/media/derived/product-compact-gas-detector-diagram-20261004-1280.avif",
+        "width": 1280,
+        "height": 721,
+        "bytes": 48748,
+        "format": "avif",
+        "quality": 83,
+        "lossless": false,
+        "sha256": "ae32fb0bdd3da36cf4f971b05740d2e87e77a09b375e3de25c85bb77be3f2fd0"
+      },
+      {
+        "asset": "/media/derived/product-compact-gas-detector-diagram-20261004-1812.webp",
+        "width": 1812,
+        "height": 1020,
+        "bytes": 84616,
+        "format": "webp",
+        "quality": 90,
+        "lossless": false,
+        "sha256": "375cc2955da76e8bb12527aa970c9f048ebdee01c65fb829b5c64038daff07be"
+      },
+      {
+        "asset": "/media/derived/product-compact-gas-detector-diagram-20261004-1812.avif",
+        "width": 1812,
+        "height": 1020,
+        "bytes": 42242,
+        "format": "avif",
+        "quality": 83,
+        "lossless": false,
+        "sha256": "4d17aa2c4c803e47df71162e99a49e55c1d498d54c07624404fad9a6a7874071"
+      }
+    ]
+  },
+  "iot-small-tower-crane-d-4-20261004": {
+    "asset": "/media/derived/product-iot-small-tower-crane-reference-white-20260912-20261004-2560.webp",
+    "width": 2560,
+    "height": 1544,
+    "sha256": "a38b468cfb60432c3241dc2fda4c41ae5bd6e2e11396a70d0cec664d744b0a95",
+    "alt": "IoT 소형 타워크레인 운영관리 제품",
+    "reference": "/media/derived/product-iot-small-tower-crane-reference-white-20260912-1280.webp",
+    "provenance": "upscaled/cleaned from existing product photo; no new content",
+    "method": "Lanczos resize; UnsharpMask(radius=0.65, percent=40, threshold=3); no generative reconstruction",
+    "section": "top",
+    "original_sha256": "8363d1107a2fa3bcf7ca75fc01aad19fabf15dead9b9202dc30d72b566c9e774",
+    "variants": [
+      {
+        "asset": "/media/derived/product-iot-small-tower-crane-reference-white-20260912-20261004-480.webp",
+        "width": 480,
+        "height": 290,
+        "bytes": 23364,
+        "format": "webp",
+        "quality": 90,
+        "lossless": false,
+        "sha256": "e9260d5f388b4d92f381bed309cd29d2c1d98ef284b8bc1d75724237e3a5f72f"
+      },
+      {
+        "asset": "/media/derived/product-iot-small-tower-crane-reference-white-20260912-20261004-768.webp",
+        "width": 768,
+        "height": 463,
+        "bytes": 40776,
+        "format": "webp",
+        "quality": 90,
+        "lossless": false,
+        "sha256": "c4d41e4c76c52d8fe51f2ab4ce3c4f0cc78b29c04835ae4396dc2ffc950083e0"
+      },
+      {
+        "asset": "/media/derived/product-iot-small-tower-crane-reference-white-20260912-20261004-1280.webp",
+        "width": 1280,
+        "height": 772,
+        "bytes": 70488,
+        "format": "webp",
+        "quality": 90,
+        "lossless": false,
+        "sha256": "71e8f4dcb11bacbe4d18a9170b8a2cac00ab6ebb0fdc4d763971afd2eda02bbd"
+      },
+      {
+        "asset": "/media/derived/product-iot-small-tower-crane-reference-white-20260912-20261004-1600.webp",
+        "width": 1600,
+        "height": 965,
+        "bytes": 91826,
+        "format": "webp",
+        "quality": 90,
+        "lossless": false,
+        "sha256": "7b1da3bf2fdd311f449e4776ee9a839878cbd2ecce98a36a477d771bed64d6dd"
+      },
+      {
+        "asset": "/media/derived/product-iot-small-tower-crane-reference-white-20260912-20261004-2560.webp",
+        "width": 2560,
+        "height": 1544,
+        "bytes": 156548,
+        "format": "webp",
+        "quality": 90,
+        "lossless": false,
+        "sha256": "a38b468cfb60432c3241dc2fda4c41ae5bd6e2e11396a70d0cec664d744b0a95"
+      }
+    ]
+  },
+  "emergency-signal-location-d-5-20261004": {
+    "asset": "/media/derived/product-emergency-signal-location-restored-20260913-20261004-1280.webp",
+    "width": 1280,
+    "height": 1226,
+    "sha256": "acfa3d1b54e33c206e3f147d9bc978642f764ec5b2596d53cdee59ef02bea28a",
+    "alt": "안전모 응급호출·위치알림 제품",
+    "reference": "/media/derived/product-emergency-signal-location-restored-20260913-1280.webp",
+    "provenance": "upscaled/cleaned from existing product photo; no new content",
+    "method": "Exterior-connected neutral background mask to pure white; product pixels unchanged; full-size lossless WebP Re-encoded lossy WebP q90 to keep size below the original.",
+    "section": "top",
+    "original_sha256": "2dd3a2e813870eb4f3183768ce5636b8d7a3499a515dd931c2a01444366802e0",
+    "variants": [
+      {
+        "asset": "/media/derived/product-emergency-signal-location-restored-20260913-20261004-480.webp",
+        "width": 480,
+        "height": 460,
+        "bytes": 17778,
+        "format": "webp",
+        "quality": 90,
+        "lossless": false,
+        "sha256": "bf5880ddd973d207bf6ae94c6c4784f78a6cbf910d80685007279c14ae797237"
+      },
+      {
+        "asset": "/media/derived/product-emergency-signal-location-restored-20260913-20261004-768.webp",
+        "width": 768,
+        "height": 736,
+        "bytes": 34260,
+        "format": "webp",
+        "quality": 90,
+        "lossless": false,
+        "sha256": "345e22fbee748358f5209334fd3f2efff83c4170ed9461cace587d11cb23adc9"
+      },
+      {
+        "asset": "/media/derived/product-emergency-signal-location-restored-20260913-20261004-1280.webp",
+        "width": 1280,
+        "height": 1226,
+        "bytes": 534796,
+        "format": "webp",
+        "quality": 90,
+        "lossless": true,
+        "sha256": "e453e7516fd415ecf82021509d41a1e19c937bcb98d0bba10f84a405e286f14b"
+      }
+    ]
+  },
+  "opening-open-close-sensor-d-6-20261004": {
+    "asset": "/media/derived/product-opening-open-close-sensor-scene-20261004-2560.webp",
+    "width": 2560,
+    "height": 1441,
+    "sha256": "f7f59f939b420cc30f88bafb2ffe116c4b096056a582c189087b6f6fcc66d9ef",
+    "alt": "슬래브 개구부 덮개에 마그네틱 센서를 설치하고 확인하는 모습",
+    "reference": "/media/derived/product-opening-open-close-sensor-scene-2560.webp",
+    "provenance": "upscaled/cleaned from existing product photo; no new content",
+    "method": "3x3 bilateral deblocking (sigma spatial 0.8, range 12); high-quality re-encode under 1.5x original WebP bytes",
+    "section": "top",
+    "original_sha256": "2799e15ced7611dc5c246e358c2c990b4facfe8534693c8c8b8679ed65228ec1",
+    "variants": [
+      {
+        "asset": "/media/derived/product-opening-open-close-sensor-scene-20261004-480.webp",
+        "width": 480,
+        "height": 270,
+        "bytes": 38142,
+        "format": "webp",
+        "quality": 90,
+        "lossless": false,
+        "sha256": "493e01fea2ac450b04679664cf34b92900011c5b8290afa779ad56f706f62b78"
+      },
+      {
+        "asset": "/media/derived/product-opening-open-close-sensor-scene-20261004-480.avif",
+        "width": 480,
+        "height": 270,
+        "bytes": 39818,
+        "format": "avif",
+        "quality": 83,
+        "lossless": false,
+        "sha256": "cb20ed1f0b94fb944598b6eda475f08526f88c1bde9ea0ec1313130342ac5e3d"
+      },
+      {
+        "asset": "/media/derived/product-opening-open-close-sensor-scene-20261004-768.webp",
+        "width": 768,
+        "height": 432,
+        "bytes": 94096,
+        "format": "webp",
+        "quality": 90,
+        "lossless": false,
+        "sha256": "9c0fb0f38941fa8de540d32f80c40f0296a75b14950335320ad78046dea4af34"
+      },
+      {
+        "asset": "/media/derived/product-opening-open-close-sensor-scene-20261004-768.avif",
+        "width": 768,
+        "height": 432,
+        "bytes": 95785,
+        "format": "avif",
+        "quality": 83,
+        "lossless": false,
+        "sha256": "d20872614ae241ecfdea17de9ea4ef19c26fd2d34f0b97ce7b83d4f33daaa775"
+      },
+      {
+        "asset": "/media/derived/product-opening-open-close-sensor-scene-20261004-1280.webp",
+        "width": 1280,
+        "height": 720,
+        "bytes": 222152,
+        "format": "webp",
+        "quality": 90,
+        "lossless": false,
+        "sha256": "c0172e1170f51c7f17970617c6591a642c345c5fefc7816735e83aed232affc6"
+      },
+      {
+        "asset": "/media/derived/product-opening-open-close-sensor-scene-20261004-1280.avif",
+        "width": 1280,
+        "height": 720,
+        "bytes": 217469,
+        "format": "avif",
+        "quality": 83,
+        "lossless": false,
+        "sha256": "2d281b20f0dfa9ecf5a9dcdee0bb4c9d2a4f30a23bf8fc260a19455683081ddf"
+      },
+      {
+        "asset": "/media/derived/product-opening-open-close-sensor-scene-20261004-1600.webp",
+        "width": 1600,
+        "height": 901,
+        "bytes": 296036,
+        "format": "webp",
+        "quality": 90,
+        "lossless": false,
+        "sha256": "d3e7c6930e3cd6206720507d69421251bb95b74651091820506e4e8e7cfbd438"
+      },
+      {
+        "asset": "/media/derived/product-opening-open-close-sensor-scene-20261004-1600.avif",
+        "width": 1600,
+        "height": 901,
+        "bytes": 283997,
+        "format": "avif",
+        "quality": 83,
+        "lossless": false,
+        "sha256": "c0b230b26b04b1e78b27193d2b6a249a8230ae5faf734613613305503539de21"
+      },
+      {
+        "asset": "/media/derived/product-opening-open-close-sensor-scene-20261004-1920.webp",
+        "width": 1920,
+        "height": 1081,
+        "bytes": 375702,
+        "format": "webp",
+        "quality": 90,
+        "lossless": false,
+        "sha256": "2faabb0672ee414971cb4ec9c600e119f5401b6415bf3eb5f186b891dd394652"
+      },
+      {
+        "asset": "/media/derived/product-opening-open-close-sensor-scene-20261004-1920.avif",
+        "width": 1920,
+        "height": 1081,
+        "bytes": 353886,
+        "format": "avif",
+        "quality": 83,
+        "lossless": false,
+        "sha256": "cfe2d9786a5f9f75beb2cda1575689846341d758b08238184c71046b16c4e139"
+      },
+      {
+        "asset": "/media/derived/product-opening-open-close-sensor-scene-20261004-2560.webp",
+        "width": 2560,
+        "height": 1441,
+        "bytes": 361438,
+        "format": "webp",
+        "quality": 87,
+        "lossless": false,
+        "sha256": "f7f59f939b420cc30f88bafb2ffe116c4b096056a582c189087b6f6fcc66d9ef"
+      },
+      {
+        "asset": "/media/derived/product-opening-open-close-sensor-scene-20261004-2560.avif",
+        "width": 2560,
+        "height": 1441,
+        "bytes": 472453,
+        "format": "avif",
+        "quality": 83,
+        "lossless": false,
+        "sha256": "339ca056c44c245b1c064d7b7da589b23efc8562926ed47fc1b7971bd983d276"
+      }
+    ]
   }
 }
