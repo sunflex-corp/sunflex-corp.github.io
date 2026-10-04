@@ -121,3 +121,8 @@ body.cctv-v3.gh-off .page-progress{top:56px}
 
 /* ===== mobile sweep 2026-09-29 ===== */
 @media (max-width:900px){body.cctv-v3 .pd-local-a .pd-local-cta{height:44px}}
+
+/* tablets held upright: a 100svh hero left ~300px empty above and below the copy */
+@media (min-width:601px) and (max-width:900px) and (orientation:portrait){
+  body.cctv-v3 .hero{height:auto;min-height:0}
+}
